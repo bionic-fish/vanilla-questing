@@ -1,0 +1,254 @@
+{
+   "1": {
+     "zone": "elwynn",
+      "waypoints": {
+         "1": {
+            "coords": { "x": 49, "y": 42 },
+            "header": "Marshal McBride",
+            "ends": [],
+            "starts": ["Report to Goldshire"],
+            "objectives": [],
+            "type": "quest"
+         },
+         "2": {
+            "coords": { "x": 46, "y": 48 },
+            "header": "Falkhaan Isenstrider",
+            "ends": [],
+            "starts": ["Rest and Relaxation"],
+            "objectives": [],
+            "type": "quest"
+         },
+         "3": {
+            "coords": { "x": 42, "y": 66 },
+            "header": "Goldshire",
+            "ends": ["Report to Goldshire", "Rest and Relaxation"],
+            "starts": ["The Fargodeep Mine", "Gold Dust Exchange", "Kobold Candles"],
+            "objectives": ["Set Hearthstone"],
+            "type": "location"
+         },
+         "4": {
+            "coords": { "x": 43, "y": 90 },
+            "header": "Maybell Maclure",
+            "ends": [],
+            "starts": ["Young Lovers"],
+            "objectives": [],
+            "type": "quest"
+         },
+         "5": {
+            "coords": { "x": 34, "y": 84 },
+            "header": "Bernice Stonefield",
+            "ends": [],
+            "starts": ["Lost Necklace"],
+            "objectives": [],
+            "type": "quest"
+         },
+         "6": {
+            "coords": { "x": 30, "y": 86 },
+            "header": "Tommy Joe Stonefield",
+            "ends": ["Young Lovers"],
+            "starts": ["Speak with Gamma"],
+            "objectives": [],
+            "type": "quest"
+         },
+         "7": {
+            "coords": { "x": 43, "y": 86 },
+            "header": "Billy Maclure",
+            "ends": [],
+            "starts": ["Goldtooth"],
+            "objectives": [],
+            "type": "quest"
+         },
+         "8": {
+            "coords": { "x": 39, "y": 81 },
+            "header": "Fargodeep Mine",
+            "ends": [],
+            "starts": [],
+            "objectives": ["Kobold Candles", "Gold Dust Exchange", "The Fargodeep Mine", "Goldtooth"],
+            "type": "objective"
+         }
+      }
+   },
+   "2": {
+      "zone": "elwynn",
+       "waypoints": {
+         "1": {
+            "coords": { "x": 39, "y": 81 },
+            "header": "Fargodeep Mine",
+            "ends": [],
+            "starts": [],
+            "objectives": ["Kobold Candles", "Gold Dust Exchange", "The Fargodeep Mine", "Goldtooth"],
+            "type": "objective"
+         },
+         "2": {
+            "coords": { "x": 35, "y": 84 },
+            "header": "Stonefield Farm",
+            "ends": ["Goldtooth"],
+            "starts": ["Princess Must Die!"],
+            "objectives": [],
+            "type": "location"
+         },
+         "3": {
+            "coords": { "x": 42, "y": 66 },
+            "header": "Goldshire",
+            "ends": ["Gold Dust Exchange", "The Fargomine Deep", "Kobold Candles", "Note to William"],
+            "starts": ["Further Concerns", "Westbrook Garrison Needs Help!", "The Jasperlode Mine", "Collecting Kelp", "Shipment to Stormwind"],
+            "objectives": [],
+            "type": "location"
+         },
+         "4": {
+            "coords": { "x": 52, "y": 63 },
+            "header": "Crystal Lake",
+            "ends": [],
+            "starts": [],
+            "objectives": ["Collecting Kelp"],
+            "type": "objective"
+         },
+         "5": {
+            "coords": { "x": 61, "y": 52 },
+            "header": "Fargomine Deep",
+            "ends": [],
+            "starts": [],
+            "objectives": ["The Fargomine Deep"],
+            "type": "objective"
+         },
+         "6": {
+            "coords": { "x": 74, "y": 72 },
+            "header": "Guard Thomas",
+            "ends": ["Further Concerns"],
+            "starts": ["Find the Lost Guards", "Bountry on Murlocs", "Protect the Frontier"],
+            "objectives": [],
+            "type": "quest"
+         },
+         "7": {
+            "coords": { "x": 73, "y": 60 },
+            "header": "Half-Eaten Corpse",
+            "ends": ["Find the Lost Guards"],
+            "starts": ["Discover Rolf's Fate"],
+            "objectives": [],
+            "type": "quest"
+         },
+         "8": {
+            "coords": { "x": 72, "y": 66 },
+            "header": "",
+            "ends": [],
+            "starts": [],
+            "objectives": ["Bountry on Murlocs"],
+            "type": "objective"
+         },
+         "9": {
+            "coords": { "x": 80, "y": 56 },
+            "header": "Rolf's Corpse",
+            "ends": ["Discover Rolf's Fate"],
+            "starts": ["Report to Thomas"],
+            "objectives": [],
+            "type": "quest"
+         },
+         "10": {
+            "coords": { "x": 80, "y": 67 },
+            "header": "Logging Camp",
+            "ends": [],
+            "starts": ["A Bundle of Trouble", "Red Linen Goods"],
+            "objectives": [],
+            "type": "location"
+         },
+         "11": {
+            "coords": { "x": 79, "y": 61 },
+            "header": "",
+            "ends": [],
+            "starts": [],
+            "objectives": ["Protect the Frontier", "A Bundle of Trouble"],
+            "type": "objective"
+         }
+       }
+    },
+    "3": {
+      "zone": "elwynn",
+      "waypoints": {
+         "1": {
+            "coords": { "x": 79, "y": 61 },
+            "header": "",
+            "ends": [],
+            "starts": [],
+            "objectives": ["Protect the Frontier", "A Bundle of Trouble"],
+            "type": "objective"
+         },
+         "2": {
+            "coords": { "x": 69, "y": 79 },
+            "header": "",
+            "ends": [],
+            "starts": [],
+            "objectives": ["Princess Must Die!", "Red Linen Goods"],
+            "type": "objective"
+         },
+         "3": {
+            "coords": { "x": 74, "y": 72 },
+            "header": "Guard Thomas",
+            "ends": ["Bountry on Murlocs", "Protect the Frontier", "Report to Thomas"],
+            "starts": ["Deliver Thomas's Report", "Report to Gryan Stoutmantle"],
+            "objectives": [],
+            "type": "quest"
+         },
+         "4": {
+            "coords": { "x": 80, "y": 67 },
+            "header": "Logging Camp",
+            "ends": ["A Bundle of Trouble", "Red Linen Goods"],
+            "starts": [],
+            "objectives": [],
+            "type": "location"
+         },
+         "5": {
+            "coords": { "x": 92, "y": 72 },
+            "header": "",
+            "ends": [],
+            "starts": [],
+            "objectives": ["Learn Lakeshire Flightpath", "Hearthstone to Goldshire"],
+            "type": "objective"
+         }
+      }
+    },
+    "4": {
+      "zone": "elwynn",
+      "waypoints": {
+         "1": {
+            "coords": { "x": 42, "y": 66 },
+            "header": "Goldshire",
+            "ends": ["Collecting Kelp", "Deliver Thomas's Report", "The Jasperlode Mine"],
+            "starts": ["The Escape", "Elmore's Task"],
+            "objectives": [],
+            "type": "location" 
+         },
+         "2": {
+            "coords": { "x": 43, "y": 90 },
+            "header": "Maybell Maclure",
+            "ends": ["The Escape"],
+            "starts": [],
+            "objectives": [],
+            "type": "quest"
+         },
+         "3": {
+            "coords": { "x": 35, "y": 84 },
+            "header": "Ma Stonefield",
+            "ends": ["Princess Must Die!"],
+            "starts": [],
+            "objectives": [],
+            "type": "quest"
+         },
+         "4": {
+            "coords": { "x": 24, "y": 75 },
+            "header": "Westbrook Garrison",
+            "ends": ["Westbrook Garrison Needs Help!"],
+            "starts": ["Riverpaw Gnoll Bounty", "Wanted: Hogger"],
+            "objectives": [],
+            "type": "location"
+         },
+         "5": {
+            "coords": { "x": 26, "y": 94 },
+            "header": "Forest's Edge",
+            "ends": [],
+            "starts": [],
+            "objectives": ["Riverpaw Gnoll Bounty", "Wanted: Hogger"],
+            "type": "objective"
+         }
+      }
+    }
+}
