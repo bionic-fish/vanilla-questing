@@ -71,16 +71,22 @@ a:hover {
    position: absolute;
 }
 
-#tooltip .header {
-   padding: 3px;
-   padding-bottom: 6px;
-}
-
-#tooltip .ends, #tooltip .starts, #tooltip .objectives {
-   background: url('img/success.png');
+#tooltip .header, #tooltip .ends, #tooltip .starts, #tooltip .objectives {
+   background: url('img/dark.png');
    margin-bottom: 2px;
-   padding: 3px;
+   padding: 4px;
 }
 
+#tooltip .ends { background: url('img/success.png'); }
 #tooltip .starts { background: url('img/caution.png'); }
 #tooltip .objectives { background: url('img/error.png'); }
+
+svg {
+   width: 772px;
+   height: 515px;
+}
+
+line {
+   stroke-width: 2;
+   stroke: red;
+}
