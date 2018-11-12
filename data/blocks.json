@@ -3680,14 +3680,6 @@
                "type": "location"
             },
             {
-               "coords": { "x": 80, "y": 48 },
-               "header": "Viktori Prism'Antras",
-               "ends": ["Look to the Stars P1"],
-               "starts": ["Look to the Stars P1", "Look to the Stars P2"],
-               "objectives": [],
-               "type": "objective"
-            },
-            {
                "coords": { "x": 74, "y": 47 },
                "header": "Darkshire",
                "ends": ["The Legend of Stalvan P1"],
@@ -3789,6 +3781,14 @@
                "type": "objective"
             },
             {
+               "coords": { "x": 18, "y": 29 },
+               "header": "A Weathered Grave",
+               "ends": [],
+               "starts": ["The Weathered Grave"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
                "coords": { "x": 8, "y": 34 },
                "header": "The Hushed Bank",
                "ends": ["Wolves at Out Heels"],
@@ -3865,8 +3865,8 @@
             {
                "coords": { "x": 74, "y": 47 },
                "header": "Darkshire",
-               "ends": ["Worgen in the Woods P1", "The Totem of Infliction", "Supplies from Darkshire", "Seasoned Wolf Kabobs", "Jitters' Growling Gut", "The Legend of Stalvan P3"],
-               "starts": ["Worgen in the Woods P2", "Ghost Hair Thread", "Dusky Crab Cakes", "The Legend of Stalvan P4"],
+               "ends": ["Worgen in the Woods P1", "The Totem of Infliction", "Supplies from Darkshire", "Jitters' Growling Gut", "The Legend of Stalvan P3", "The Weathered Grave", "Morgan Ladimore"],
+               "starts": ["Worgen in the Woods P2", "Ghost Hair Thread", "Dusky Crab Cakes", "The Legend of Stalvan P4", "Morgan Ladimore", "Mor'Ladim"],
                "objectives": ["Set Hearthstone"],
                "type": "location"
             },
@@ -3897,6 +3897,159 @@
                "ends": ["The Legend of Stalvan P4"],
                "starts": ["The Legend of Stalvan P5"],
                "objectives": ["Loot the Chest Upstairs"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 50, "y": 40 },
+               "header": "Brother Paxton",
+               "ends": ["Rethban Ore"],
+               "starts": ["Return to Kristoff"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 32, "y": 49 },
+               "header": "Gates of Stormwind",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            }
+         ]
+      },
+      {
+         "zone": "stormwind",
+         "waypoints": [
+            {
+               "coords": { "x": 70, "y": 87 },
+               "header": "Gates of Stormwind",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 65, "y": 60 },
+               "header": "Felicia Gump",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Buy a 5x Stormwind Seasoning Herbs"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 53, "y": 60 },
+               "header": "Auction House",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Buy a Bronze Tube"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 46, "y": 38 },
+               "header": "Brother Kristoff",
+               "ends": ["Return to Brother Kristoff"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 30, "y": 62 },
+               "header": "Caretaker Folsom",
+               "ends": ["The Legend of Stalvan P5", "The Legend of Stalvan P6"],
+               "starts": ["The Legend of Stalvan P6", "The Legend of Stalvan P7"],
+               "objectives": ["Hearthstone to Darkshire"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "duskwood",
+         "waypoints": [
+            {
+               "coords": { "x": 74, "y": 44 },
+               "header": "Darkshire Inn",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 82, "y": 17 },
+               "header": "Duskwood Riverside",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Run to Goldshire"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "elwynn",
+         "waypoints": [
+            {
+               "coords": { "x": 84, "y": 88 },
+               "header": "Elwynn Riverside",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Run to the Logging Camp"],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 85, "y": 69 },
+               "header": "Marshal Haggard",
+               "ends": ["The Legend of Stalvan P7", "The Legend of Stalvan P8"],
+               "starts": ["The Legend of Stalvan P8", "The Legend of Stalvan P9"],
+               "objectives": ["Loot the Chest Upstairs"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "elwynn",
+         "waypoints": [
+            {
+               "coords": { "x": 85, "y": 69 },
+               "header": "Marshal Haggard",
+               "ends": ["The Legend of Stalvan P7", "The Legend of Stalvan P8"],
+               "starts": ["The Legend of Stalvan P8", "The Legend of Stalvan P9"],
+               "objectives": ["Loot the Chest Upstairs"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 84, "y": 88 },
+               "header": "Elwynn Riverside",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Run back to Darkshire"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "duskwood",
+         "waypoints": [
+            {
+               "coords": { "x": 82, "y": 17 },
+               "header": "Duskwood Riverside",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 74, "y": 47 },
+               "header": "Darkshire",
+               "ends": ["Seasoned Wolf Kabobs", "The Legend of Stalvan P9", "The Legend of Stalvan P10", "The Legend of Stalvan P11", "The Legend of Stalvan P12"],
+               "starts": ["The Legend of Stalvan P10", "The Legend of Stalvan P11", "The Legend of Stalvan P12", "The Legend of Stalvan P13"],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 80, "y": 48 },
+               "header": "Viktori Prism'Antras",
+               "ends": ["Look to the Stars P1"],
+               "starts": ["Look to the Stars P1", "Look to the Stars P2"],
+               "objectives": [],
                "type": "quest"
             }
          ]
