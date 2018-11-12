@@ -1,7 +1,7 @@
 // LOAD WAYPOINT BLOCKS
-$.getJSON('https://wickstjo.github.io/vanilla-questing/data/blocks.json').then((response) => {
+$.getJSON('../data/blocks.json').then((response) => {
 
-   var current = 0; // response.blocks.length - 1
+   var current = response.blocks.length - 1;
    var max = response.blocks.length;
 
    // RUN WHEN FIRST LOADED IN

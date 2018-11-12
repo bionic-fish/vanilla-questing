@@ -2060,7 +2060,7 @@
                "coords": { "x": 49, "y": 30 },
                "header": "Baros Alexston",
                "ends": ["The Unsent Letter"],
-               "starts": ["Bazil Thredd"],
+               "starts": [],
                "objectives": [],
                "type": "quest"
             },
@@ -3241,10 +3241,10 @@
          "waypoints": [
             {
                "coords": { "x": 5, "y": 57 },
-               "header": "",
+               "header": "Wetlands Harbor",
                "ends": [],
                "starts": [],
-               "objectives": ["Take the boat to Darkshore"],
+               "objectives": [],
                "type": "objective"
             },
             {
@@ -3260,15 +3260,643 @@
                "header": "",
                "ends": ["The Absent Minded Prospector P3", "The Third Fleet"],
                "starts": ["The Absent Minded Prospector P4", "The Third Fleet", "The Greenwarden", "The Cursed Crew", "Digging Through the Ooze"],
-               "objectives": ["Buy a Flagon of Mead"],
+               "objectives": ["Buy a Flagon of Mead", "Set Hearthstone"],
                "type": "quest"
             },
             {
                "coords": { "x": 10, "y": 57 },
                "header": "",
                "ends": ["Report to Captain Stoutfist"],
-               "starts": ["Report to Captain Stoutfist", "War Banners"],
+               "starts": ["Report to Captain Stoutfist", "War Banners", "Fall of Dun Modr"],
                "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 11, "y": 52 },
+               "header": "Tarrel Rockweaver",
+               "ends": [],
+               "starts": ["In Search of the Excavation Team P1"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 18, "y": 46 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Young Crocolisk  Skins"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 18, "y": 40 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Claws from the Deep"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 15, "y": 29 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["The Cursed Crew"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 39, "y": 52 },
+               "header": "Whelgar's Excavation Site",
+               "ends": ["In Search of the Excavation Team P1"],
+               "starts": ["Uncovering the Past", "Ormer's Revenge", "In Search of the Excavation Team P2"],
+               "objectives": ["Loot the fossil in the cave"],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 44, "y": 44 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["War Banners"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 50, "y": 39 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Daily Delivery"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 56, "y": 40 },
+               "header": "Rethiel the Greenwarden",
+               "ends": ["The Greenwarden"],
+               "starts": ["Tramping Paws"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 62, "y": 71 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Tramping Paws"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "wetlands",
+         "waypoints": [
+            {
+               "coords": { "x": 62, "y": 71 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Tramping Paws"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 56, "y": 40 },
+               "header": "Rethiel the Greenwarden",
+               "ends": ["Tramping Paws"],
+               "starts": ["Fire Taboo"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 52, "y": 29 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fire Taboo"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "wetlands",
+         "waypoints": [
+            {
+               "coords": { "x": 52, "y": 29 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fire Taboo"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 56, "y": 40 },
+               "header": "Rethiel the Greenwarden",
+               "ends": ["Tramping Paws"],
+               "starts": ["Fire Taboo"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 44, "y": 26 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Digging Through the Ooze"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 50, "y": 18 },
+               "header": "",
+               "ends": ["Fall of Dun Modr"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 51, "y": 10 },
+               "header": "Arathi Highlands Bridge",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            }
+         ]
+      },
+      {
+         "zone": "arathi",
+         "waypoints": [
+            {
+               "coords": { "x": 45, "y": 89 },
+               "header": "Arathi Highlands Bridge",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 46, "y": 46 },
+               "header": "Refuge Point Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Learn the Flightpath", "Fly to Menethil Harbor"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "wetlands",
+         "waypoints": [
+            {
+               "coords": { "x": 9, "y": 60 },
+               "header": "Menethil Harbor Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Learn the Flightpath"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 8, "y": 57 },
+               "header": "",
+               "ends": ["Young Crocolisk Skins", "Claws from the Deep", "Daily Delivery"],
+               "starts": ["Reclaiming Goods", "Apprentice's Duties"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 11, "y": 60 },
+               "header": "",
+               "ends": ["The Absent Minded Prospector P4", "The Cursed Crew", "Digging Through the Ooze"],
+               "starts": ["Lifting the Curse"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 10, "y": 57 },
+               "header": "",
+               "ends": ["War Banners"],
+               "starts": ["Nek'Rosh's Gambit"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 11, "y": 52 },
+               "header": "Tarrel Rockweaver",
+               "ends": ["In Search of the Excavation Team P2"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "wetlands",
+         "waypoints": [
+            {
+               "coords": { "x": 11, "y": 52 },
+               "header": "Tarrel Rockweaver",
+               "ends": ["In Search of the Excavation Team P2"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 9, "y": 60 },
+               "header": "Menethil Harbor Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fly to Lakeshire"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "redridge",
+         "waypoints": [
+            {
+               "coords": { "x": 31, "y": 59 },
+               "header": "Lakeshire Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 32, "y": 58 },
+               "header": "Guard Howe",
+               "ends": [],
+               "starts": ["Blackrock Bounty"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 28, "y": 47 },
+               "header": "Lakeshire",
+               "ends": [],
+               "starts": ["Wanted: Lieutenant Fangore", "Wanted: Gath'llzogg", "Solomon's Law", "Howling in the Hills", "Tharil'Zun", "Shadow Magic"],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 28, "y": 21 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Howling in the Hills"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 79, "y": 41 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Wanted: Lieutenant Fangore", "Solomon's Law"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 84, "y": 47 },
+               "header": "",
+               "ends": ["A Watchful Eye"],
+               "starts": ["Looking Further"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 70, "y": 56 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Wanted: Gath'llzogg", "Shadow Magic"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 69, "y": 60 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Tharil'Zun", "Shadow Magic"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 63, "y": 50 },
+               "header": "An Empty Jar",
+               "ends": ["Looking Further"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 32, "y": 7 },
+               "header": "Render's Rock",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Blackrock Bounty"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 28, "y": 13 },
+               "header": "Corporal Keeshan",
+               "ends": [],
+               "starts": ["Missing in Action"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 35, "y": 44 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Missing in Action"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "redridge",
+         "waypoints": [
+            {
+               "coords": { "x": 35, "y": 44 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Missing in Action"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 33, "y": 49 },
+               "header": "Marshal Morris",
+               "ends": ["Tharil'Zun", "Shadow Magic", "Missing in Action"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 31, "y": 47 },
+               "header": "Vernon Osgood",
+               "ends": ["Howling in the Hills"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 30, "y": 44 },
+               "header": "Lakeshire Town Hall",
+               "ends": ["Solomon's Law", "Wanted: Lieutenant Fangore", "Wanted: Gath'llzogg"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 26, "y": 47 },
+               "header": "Guard Berton",
+               "ends": [],
+               "starts": ["What Comes Around..."],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 32, "y": 58 },
+               "header": "Guard Howe",
+               "ends": ["Blackrock Bounty"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 31, "y": 59 },
+               "header": "Lakeshire Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fly to Darkshire"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "duskwood",
+         "waypoints": [
+            {
+               "coords": { "x": 78, "y": 44 },
+               "header": "Darkshire Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Learn the Flightpath", "Fly to Westfall"],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 80, "y": 48 },
+               "header": "Viktori Prism'Antras",
+               "ends": ["Look to the Stars P1"],
+               "starts": ["Look to the Stars P1", "Look to the Stars P2"],
+               "objectives": [],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 74, "y": 47 },
+               "header": "Darkshire",
+               "ends": ["The Legend of Stalvan P1"],
+               "starts": ["The Night Watch", "Seasoned Wolf Kabobs", "Worgen in the Woods P1", "Raven Hill", "Deliveries to Sven", "The Hermit", "The Totem of Infliction", "The Legend of Stalvan P1", "The Legend of Stalvan P2"],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 63, "y": 70 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Worgen in the Woods P1"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 45, "y": 67 },
+               "header": "Watcher Dodds",
+               "ends": [],
+               "starts": ["Eight-Legged Menaces"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 19, "y": 58 },
+               "header": "Jitters",
+               "ends": ["Raven Hill"],
+               "starts": ["Jitters' Growling Gut"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 11, "y": 55 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Eight-Legged Menaces", "The Totem of Infliction"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 16, "y": 48 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["The Totem of Infliction"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 8, "y": 34 },
+               "header": "The Hushed Bank",
+               "ends": ["Delivery to Sven"],
+               "starts": ["Sven's Revenge", "Wolves at Out Heels"],
+               "objectives": [],
+               "type": "quest"
+            },            
+            {
+               "coords": { "x": 12, "y": 31 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Seasoned Wolf Kabobs", "Wolves at Out Heels"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 22, "y": 27 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Seasoned Wolf Kabobs", "Wolves at Out Heels"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 28, "y": 31 },
+               "header": "Abercrombie",
+               "ends": ["The Hermit"],
+               "starts": ["Supplies from Darkshirem"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 26, "y": 35 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["The Totem of Infliction"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "duskwood",
+         "waypoints": [
+            {
+               "coords": { "x": 26, "y": 35 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["The Totem of Infliction"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 8, "y": 34 },
+               "header": "The Hushed Bank",
+               "ends": ["Wolves at Out Heels"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 3, "y": 36 },
+               "header": "Westfall Riverside",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "westfall",
+         "waypoints": [
+            {
+               "coords": { "x": 64, "y": 42 },
+               "header": "Westfall Riverside",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 41, "y": 67 },
+               "header": "Old Footlocker",
+               "ends": ["The Legend of Stalvan P2"],
+               "starts": ["The Legend of Stalvan P3"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 67, "y": 63 },
+               "header": "Westfall Bridge",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            }
+         ]
+      },
+      {
+         "zone": "duskwood",
+         "waypoints": [
+            {
+               "coords": { "x": 9, "y": 64 },
+               "header": "Westfall Bridge",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 45, "y": 67 },
+               "header": "Watcher Dodds",
+               "ends": ["Eight-Legged Menaces"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 50, "y": 78 },
+               "header": "Mound of Loose Dirt",
+               "ends": ["Sven's Revenge"],
+               "starts": ["Sven's Camp"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 74, "y": 47 },
+               "header": "Darkshire",
+               "ends": ["Worgen in the Woods P1", "The Totem of Infliction", "Supplies from Darkshire", "Seasoned Wolf Kabobs", "Jitters' Growling Gut", "The Legend of Stalvan P3"],
+               "starts": ["Worgen in the Woods P2", "Ghost Hair Thread", "Dusky Crab Cakes", "The Legend of Stalvan P4"],
+               "objectives": ["Set Hearthstone"],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 67, "y": 16 },
+               "header": "Duskwood Riverside",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Run to Goldshire"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "elwynn",
+         "waypoints": [
+            {
+               "coords": { "x": 72, "y": 85 },
+               "header": "Elwynn Riverside",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 42, "y": 66 },
+               "header": "Goldshire",
+               "ends": ["The Legend of Stalvan P4"],
+               "starts": ["The Legend of Stalvan P5"],
+               "objectives": ["Loot the Chest Upstairs"],
                "type": "quest"
             }
          ]
