@@ -885,8 +885,532 @@
                "coords": { "x": 39, "y": 43 },
                "header": "Auberdine",
                "ends": [],
-               "starts": ["For Love Eternal", "Buzzbox 827", "Cave Mushrooms", "The Red Crystal", "Deep Ocean, Vast Sea", "Bashal'Aran", "Tools of the Highbourne", "Plagued Lands", "How Big a Threat?", "The Tower of Althalaxx"],
+               "starts": ["For Love Eternal", "Buzzbox 827", "Washed Ashore P1", "Cave Mushrooms", "The Red Crystal", "Deep Ocean, Vast Sea", "Bashal'Aran P1", "Tools of the Highbourne", "Plagued Lands", "How Big a Threat? P1", "The Tower of Althalaxx P1"],
                "objectives": ["Learn the Flightpath"],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 44, "y": 36 },
+               "header": "Asterion",
+               "ends": ["Bashal'Aran P1"],
+               "starts": ["Bashal'Aran P2"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 46, "y": 37 },
+               "header": "Bashal'Aran",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Bashal'Aran P2"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "darkshore",
+         "waypoints": [
+            {
+               "coords": { "x": 46, "y": 37 },
+               "header": "Bashal'Aran",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Bashal'Aran P2"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 44, "y": 36 },
+               "header": "Asterion",
+               "ends": ["Bashal'Aran P2"],
+               "starts": ["Bashal'Aran P3"],
+               "objectives": [],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "darkshore",
+         "waypoints": [
+            {
+               "coords": { "x": 44, "y": 36 },
+               "header": "Asterion",
+               "ends": ["Bashal'Aran P2"],
+               "starts": ["Bashal'Aran P3"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 48, "y": 37 },
+               "header": "Bashal'Aran",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Bashal'Aran P3"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "darkshore",
+         "waypoints": [
+            {
+               "coords": { "x": 48, "y": 37 },
+               "header": "Bashal'Aran",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Bashal'Aran P3"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 44, "y": 36 },
+               "header": "Asterion",
+               "ends": ["Bashal'Aran P3"],
+               "starts": ["Bashal'Aran P4"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 47, "y": 29 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Plagued Lands"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 39, "y": 43 },
+               "header": "Auberdine",
+               "ends": ["Plagued Lands"],
+               "starts": ["Cleansing of the Infected"],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 36, "y": 48 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Buzzbox 827"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 36, "y": 51 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Washed Ashore P1"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 39, "y": 53 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["How Big a Threat? P1"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "darkshore",
+         "waypoints": [
+            {
+               "coords": { "x": 39, "y": 53 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["How Big a Threat? P1"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 39, "y": 43 },
+               "header": "Auberdine",
+               "ends": ["Washed Ashore P1", "Buzzbox 827", "How Big a Threat? P1", "Thundris Windweaver"],
+               "starts": ["Washed Ashore P2", "Buzzbox 411", "How Big a Threat? P2", "Thundris Windweaver", "The Cliffspring River"],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 33, "y": 40 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Buzzbox 411"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 32, "y": 46 },
+               "header": "Washed Ashore P2",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Buzzbox 411"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "darkshore",
+         "waypoints": [
+            {
+               "coords": { "x": 32, "y": 46 },
+               "header": "Washed Ashore P2",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Buzzbox 411"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 40, "y": 54 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["How Big a Threat? P2"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 39, "y": 64 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Rabid Thistle Bear"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 40, "y": 60 },
+               "header": "Sentinel Tysha Moonblade",
+               "ends": [],
+               "starts": ["The Fall of Ameth'Aran"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 43, "y": 61 },
+               "header": "Ameth'Aran",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Bashal'Aran P3", "The Fall of Ameth'Aran", "Highborne Relic", "For Love Eternal"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "darkshore",
+         "waypoints": [
+            {
+               "coords": { "x": 43, "y": 61 },
+               "header": "Ameth'Aran",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Bashal'Aran P3", "The Fall of Ameth'Aran", "Highborne Relic", "For Love Eternal"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 40, "y": 60 },
+               "header": "Sentinel Tysha Moonblade",
+               "ends": ["The Fall of Ameth'Aran"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 47, "y": 49 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["The Red Crystal"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 39, "y": 43 },
+               "header": "Auberdine",
+               "ends": ["Cleansing The Infected", "How Big a Threat? P2", "The Red Crystal", "Washed Ashore P2", "For Love Eternal", "Tools of the Highbourne"],
+               "starts": ["Tharnariun's Hope", "As Water Cascades", "Fruit of the Sea"],
+               "objectives": ["Fill the empty vial at the Moonwell."],
+               "type": "location"
+            }
+         ]
+      },
+      {
+         "zone": "darkshore",
+         "waypoints": [
+            {
+               "coords": { "x": 39, "y": 43 },
+               "header": "Auberdine",
+               "ends": ["Cleansing The Infected", "How Big a Threat? P2", "The Red Crystal", "Washed Ashore P2", "For Love Eternal", "Tools of the Highbourne"],
+               "starts": ["Tharnariun's Hope", "As Water Cascades", "Fruit of the Sea"],
+               "objectives": ["Fill the empty vial at the Moonwell."],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 47, "y": 49 },
+               "header": "The Red Crystal",
+               "ends": ["As Water Cascades"],
+               "starts": ["The Fragments Within"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 44, "y": 36 },
+               "header": "Asterion",
+               "ends": ["Bashal'Aran P3"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 42, "y": 29 },
+               "header": "Buzzbox",
+               "ends": ["Buzzbox 411"],
+               "starts": ["Buzzbox 323"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 38, "y": 29 },
+               "header": "Shipwreck",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Deep Ocean, Vast Sea"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 40, "y": 27 },
+               "header": "Shipwreck",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Deep Ocean, Vast Sea"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 46, "y": 26 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Buzzbox 323"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 50, "y": 21 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fruit of the Sea"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 50, "y": 21 },
+               "header": "",
+               "ends": ["Buzzbox 323"],
+               "starts": ["Buzzbox 525"],
+               "objectives": ["The Cliffspring River"],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 55, "y": 25 },
+               "header": "Bathule Shadowstrike",
+               "ends": ["The Tower of Althalaxx P1"],
+               "starts": ["The Tower of Althalaxx P2"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 56, "y": 27 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["The Tower of Althalaxx P2"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "darkshore",
+         "waypoints": [
+            {
+               "coords": { "x": 56, "y": 27 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["The Tower of Althalaxx P2"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 55, "y": 25 },
+               "header": "Bathule Shadowstrike",
+               "ends": ["The Tower of Althalaxx P2"],
+               "starts": ["The Tower of Althalaxx P3"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 55, "y": 34 },
+               "header": "Cliffspring Falls Cave",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Cave Mushrooms"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 52, "y": 38 },
+               "header": "The Den Mothers Cave",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Tharnariun's Hope"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 39, "y": 43 },
+               "header": "Auberdine",
+               "ends": ["The Cliffspring River", "Deep Ocean, Vast Sea", "Tharnariun's Hope", "The Fragments Within", "Cave Mushrooms", "Fruit of the Sea"],
+               "starts": ["The Blackwood Corruption"],
+               "objectives": ["Fill your bowl at the Moonwell"],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 51, "y": 35 },
+               "header": "Furbolg Encampment",
+               "ends": [],
+               "starts": [],
+               "objectives": ["The Blackwood Corruption", "Loot Barrels", "Combine at bonfire"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "darkshore",
+         "waypoints": [
+            {
+               "coords": { "x": 51, "y": 35 },
+               "header": "Furbolg Encampment",
+               "ends": [],
+               "starts": [],
+               "objectives": ["The Blackwood Corruption", "Loot Barrels", "Combine at bonfire"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 39, "y": 43 },
+               "header": "Auberdine",
+               "ends": ["The Blackwood Corruption"],
+               "starts": [],
+               "objectives": ["Hearthstone to Ironforge", "Take the Train to Stormwind"],
+               "type": "location"
+            }
+         ]
+      },
+      {
+         "zone": "ironforge",
+         "waypoints": [
+            {
+               "coords": { "x": 19, "y": 51 },
+               "header": "Ironforge Inn",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 69, "y": 51 },
+               "header": "Gnoarn",
+               "ends": [],
+               "starts": ["Speak with Shoni"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 77, "y": 51 },
+               "header": "Deeprun Tram",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Ride to Stormwind"],
+               "type": "location"
+            }
+         ]
+      },
+      {
+         "zone": "stormwind",
+         "waypoints": [
+            {
+               "coords": { "x": 63, "y": 8 },
+               "header": "Deeprun Tram",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 55, "y": 12 },
+               "header": "Shoni the Silent",
+               "ends": ["Speak with Shoni"],
+               "starts": ["Underground Assault"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 58, "y": 17 },
+               "header": "Furen Longbeard",
+               "ends": ["Stormpike's Order"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 65, "y": 21 },
+               "header": "Wilder Thistlenettle",
+               "ends": [],
+               "starts": ["Oh Brother...", "Collecting Memories"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 66, "y": 62 },
+               "header": "Dungar Longdrink",
+               "ends": ["Dungar Longdrink"],
+               "starts": ["Return to Lewis"],
+               "objectives": ["Fly to Westfall"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "westfall",
+         "waypoints": [
+            {
+               "coords": { "x": 57, "y": 53 },
+               "header": "Sentinel Hill Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 54, "y": 53 },
+               "header": "Scout Galiaan",
+               "ends": [],
+               "starts": ["Red Leather Bandanas"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 57, "y": 47 },
+               "header": "Sentinel Tower",
+               "ends": ["Return to Lewis"],
+               "starts": ["The People's Militia", "The Defias Brotherhood", "Patrolling Westfall"],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 56, "y": 31 },
+               "header": "Saldean's Farm",
+               "ends": [],
+               "starts": ["The Killing Fields", "Goretusk Liver Pie", "Westfall Stew"],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 56, "y": 31 },
+               "header": "The Jansen Stead",
+               "ends": [],
+               "starts": ["Poor Old Blanchy", "The Forgotten Heirloom"],
+               "objectives": [],
                "type": "location"
             }
          ]
