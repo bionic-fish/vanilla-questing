@@ -257,10 +257,31 @@
             },
             {
                "coords": { "x": 92, "y": 72 },
-               "header": "",
+               "header": "Redridge Road",
                "ends": [],
                "starts": [],
-               "objectives": ["Learn Lakeshire Flightpath", "Hearthstone to Goldshire"],
+               "objectives": [],
+               "type": "location"
+            }
+         ]
+      },
+      {
+         "zone": "redridge",
+         "waypoints": [
+            {
+               "coords": { "x": 8, "y": 72 },
+               "header": "Redridge Road",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 31, "y": 59 },
+               "header": "Lakeshire Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Learn Flightpath", "Hearthstone to Goldshire"],
                "type": "objective"
             }
          ]
@@ -277,12 +298,12 @@
                "type": "location" 
             },
             {
-               "coords": { "x": 43, "y": 90 },
-               "header": "Maybell Maclure",
-               "ends": ["The Escape"],
-               "starts": [],
+               "coords": { "x": 42, "y": 66 },
+               "header": "Goldshire",
+               "ends": ["Collecting Kelp", "Deliver Thomas's Report", "The Jasperlode Mine"],
+               "starts": ["The Escape", "Elmore's Task"],
                "objectives": [],
-               "type": "quest"
+               "type": "location" 
             },
             {
                "coords": { "x": 35, "y": 84 },
@@ -1383,17 +1404,17 @@
             },
             {
                "coords": { "x": 54, "y": 53 },
-               "header": "Scout Galiaan",
+               "header": "Sentinel Hill",
                "ends": [],
                "starts": ["Red Leather Bandanas"],
-               "objectives": [],
-               "type": "quest"
+               "objectives": ["Set Hearthstone"],
+               "type": "location"
             },
             {
                "coords": { "x": 57, "y": 47 },
                "header": "Sentinel Tower",
                "ends": ["Return to Lewis"],
-               "starts": ["The People's Militia", "The Defias Brotherhood", "Patrolling Westfall"],
+               "starts": ["The People's Militia P1", "The Defias Brotherhood", "Patrolling Westfall"],
                "objectives": [],
                "type": "location"
             },
@@ -1406,12 +1427,764 @@
                "type": "location"
             },
             {
-               "coords": { "x": 56, "y": 31 },
+               "coords": { "x": 60, "y": 19 },
                "header": "The Jansen Stead",
                "ends": [],
                "starts": ["Poor Old Blanchy", "The Forgotten Heirloom"],
                "objectives": [],
                "type": "location"
+            },
+            {
+               "coords": { "x": 57, "y": 20 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Poor Old Blanchy", "Loot Oats"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 49, "y": 19 },
+               "header": "Furlbrow's Pumpin Farm",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Poor Old Blanchy", "The Forgotten Heirloom", "The Killing Fields"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 45, "y": 24 },
+               "header": "Jangolode Mine",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Red Leather Bandanas", "The People's Militia P1"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 45, "y": 36 },
+               "header": "The Molsen Farm",
+               "ends": [],
+               "starts": [],
+               "objectives": ["The Killing Fields"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 42, "y": 45 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Westfall Stew", "8x Fleshripper spawn"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 27, "y": 43 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Westfall Stew", "3x Fleshripper spawn"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 26, "y": 48 },
+               "header": "Shipwreck",
+               "ends": ["Captain Sander's Hidden Treasure P1"],
+               "starts": ["Captain Sander's Hidden Treasure P1", "Captain Sander's Hidden Treasure P2"],
+               "objectives": ["Westfall Stew", "Murloc Eyes"],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 30, "y": 50 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Patrolling Westfall"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 36, "y": 55 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Humble Beginnings", "The Killing Fields"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 41, "y": 48 },
+               "header": "",
+               "ends": ["Captain Sander's Hidden Treasure P2"],
+               "starts": ["Captain Sander's Hidden Treasure P3"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 30, "y": 86 },
+               "header": "Captain Grayson",
+               "ends": [],
+               "starts": ["Keeper of the Flame", "The Coastal Menace", "The Coast Isn't Clear"],
+               "objectives": ["Heathstone to Westfall"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "westfall",
+         "waypoints": [
+            {
+               "coords": { "x": 52, "y": 53 },
+               "header": "Westfall Inn",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 54, "y": 53 },
+               "header": "Scout Galiaan",
+               "ends": ["Red Leather Bandanas"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 57, "y": 47 },
+               "header": "Sentinel Tower",
+               "ends": ["The People's Militia P1", "Patrolling Westfall"],
+               "starts": ["The People's Militia P2"],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 61, "y": 46 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Westfall Stew", "Goretusk Liver Pie"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 56, "y": 31 },
+               "header": "Saldean's Farm",
+               "ends": ["The Killing Fields", "Goretusk Liver Pie", "Westfall Stew"],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 60, "y": 19 },
+               "header": "The Jansen Stead",
+               "ends": ["Poor Old Blanchy", "The Forgotten Heirloom"],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 45, "y": 9 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["The Coast Isn't Clear", "Murloc Coastalrunners"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 41, "y": 17 },
+               "header": "",
+               "ends": ["Captain Sander's Hidden Treasure P3"],
+               "starts": ["Captain Sander's Hidden Treasure P4"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 26, "y": 17 },
+               "header": "",
+               "ends": ["Captain Sander's Hidden Treasure P4"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 31, "y": 46 },
+               "header": "Gold Coast Quarry",
+               "ends": [],
+               "starts": [],
+               "objectives": ["The People's Militia P2"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "westfall",
+         "waypoints": [
+            {
+               "coords": { "x": 31, "y": 46 },
+               "header": "Gold Coast Quarry",
+               "ends": [],
+               "starts": [],
+               "objectives": ["The People's Militia P2"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 57, "y": 47 },
+               "header": "Sentinel Tower",
+               "ends": ["The People's Militia P2"],
+               "starts": ["The People's Militia P3"],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 38, "y": 52 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Check that you have 5x Hops"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 27, "y": 48 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["The Coast Isn't Clear", "Murloc Warriors"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 29, "y": 55 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["The Coast Isn't Clear", "Murloc Oracles"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 35, "y": 85 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["The Coastal Menace", "The Coast Isn't Clear", "Murloc Oracles"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 30, "y": 86 },
+               "header": "Captain Grayson",
+               "ends": ["Keeper of the Flame", "The Coastal Menace", "The Coast Isn't Clear"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 37, "y": 80 },
+               "header": "The Dagger Hills",
+               "ends": [],
+               "starts": [],
+               "objectives": ["The People's Militia P3"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 45, "y": 80 },
+               "header": "Grimbooze Thunderbrew",
+               "ends": ["Thunderbrew Lager"],
+               "starts": ["Thunderbrew Lager"],
+               "objectives": ["Save the Keg for Lakeshire"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "westfall",
+         "waypoints": [
+            {
+               "coords": { "x": 45, "y": 80 },
+               "header": "Grimbooze Thunderbrew",
+               "ends": ["Thunderbrew Lager"],
+               "starts": ["Thunderbrew Lager"],
+               "objectives": ["Save the Keg for Lakeshire"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 57, "y": 47 },
+               "header": "Sentinel Tower",
+               "ends": ["The People's Militia P3"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 57, "y": 53 },
+               "header": "Sentinel Hill Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fly to Lakeshire"],
+               "type": "location"
+            }
+         ]
+      },
+      {
+         "zone": "redridge",
+         "waypoints": [
+            {
+               "coords": { "x": 31, "y": 59 },
+               "header": "Lakeshire Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 27, "y": 44 },
+               "header": "Lakeshire Inn",
+               "ends": ["The Defian Brotherhood P1"],
+               "starts": ["The Defian Brotherhood P2", "Dry Times", "A Free Lunch"],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 30, "y": 44 },
+               "header": "Magistrate Solomon",
+               "ends": [],
+               "starts": ["Messenger to Westfall P1", "Messenger to Stormwind P1", "Messenger to Darkshire P1"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 31, "y": 47 },
+               "header": "Verner Osgood",
+               "ends": [],
+               "starts": ["The Price of Shoes"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 15, "y": 71 },
+               "header": "Guard Parker",
+               "ends": ["A Free Lunch"],
+               "starts": ["Visit the Herbalist", "Encroaching Gnolls"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 6, "y": 93 },
+               "header": "Duskwood Passageway",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Run to Darkshire"],
+               "type": "location"
+            }
+         ]
+      },
+      {
+         "zone": "duskwood",
+         "waypoints": [
+            {
+               "coords": { "x": 94, "y": 11 },
+               "header": "Duskwood Passageway",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 74, "y": 47 },
+               "header": "Darkshire",
+               "ends": ["Messenger to Darkshire P1"],
+               "starts": ["Messenger to Darkshire P2"],
+               "objectives": ["Buy Moonshine from the Bar"],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 78, "y": 44 },
+               "header": "Darkshire Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Learn the Flightpath", "Fly to Westfall"],
+               "type": "location"
+            }
+         ]
+      },
+      {
+         "zone": "westfall",
+         "waypoints": [
+            {
+               "coords": { "x": 57, "y": 53 },
+               "header": "Sentinel Hill Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 57, "y": 47 },
+               "header": "Sentinel Tower",
+               "ends": ["The Defias Brotherhood P2", "Messenger to Westfall P1"],
+               "starts": ["The Defias Brotherhood P3", "Messenger to Westfall P2"],
+               "objectives": [],
+               "type": "location"
+            }
+         ]
+      },
+      {
+         "zone": "westfall",
+         "waypoints": [
+            {
+               "coords": { "x": 57, "y": 47 },
+               "header": "Sentinel Tower",
+               "ends": ["The Defias Brotherhood P2", "Messenger to Westfall P1"],
+               "starts": ["The Defias Brotherhood P3", "Messenger to Westfall P2"],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 57, "y": 53 },
+               "header": "Sentinel Hill Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fly to Stormwind"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "stormwind",
+         "waypoints": [
+            {
+               "coords": { "x": 66, "y": 62 },
+               "header": "Stormwind Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 76, "y": 60 },
+               "header": "Master Mathias Shaw",
+               "ends": ["The Defias Brotherhood P3"],
+               "starts": ["The Defias Brotherhood P4"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 49, "y": 30 },
+               "header": "Baros Alexston",
+               "ends": ["Humble Beginnings"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 21, "y": 56 },
+               "header": "Argos Nightwhisper",
+               "ends": [],
+               "starts": ["The Corruption Abroad"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 52, "y": 68 },
+               "header": "Roberto Pupellyverbos",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Buy Merlotm"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 64, "y": 75 },
+               "header": "General Marcus Jonathan",
+               "ends": ["Messenger to Stormwind P1"],
+               "starts": ["Messenger to Stormwind P2"],
+               "objectives": [],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "stormwind",
+         "waypoints": [
+            {
+               "coords": { "x": 64, "y": 75 },
+               "header": "General Marcus Jonathan",
+               "ends": ["Messenger to Stormwind P1"],
+               "starts": ["Messenger to Stormwind P2"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 66, "y": 62 },
+               "header": "Stormwind Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fly to Westfall"],
+               "type": "location"
+            }
+         ]
+      },
+      {
+         "zone": "westfall",
+         "waypoints": [
+            {
+               "coords": { "x": 57, "y": 53 },
+               "header": "Sentinel Hill Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 57, "y": 47 },
+               "header": "Sentinel Tower",
+               "ends": ["The Defias Brotherhood P4"],
+               "starts": ["The Defias Brotherhood P5"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 46, "y": 69 },
+               "header": "Moonbrook",
+               "ends": [],
+               "starts": [],
+               "objectives": ["The Defias Brotherhood P5"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "westfall",
+         "waypoints": [
+            {
+               "coords": { "x": 46, "y": 69 },
+               "header": "Moonbrook",
+               "ends": [],
+               "starts": [],
+               "objectives": ["The Defias Brotherhood P5"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 57, "y": 47 },
+               "header": "Sentinel Tower",
+               "ends": ["The Defias Brotherhood P5"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 56, "y": 48 },
+               "header": "The Defias Traitor",
+               "ends": ["The Defias Brotherhood P6"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 43, "y": 72 },
+               "header": "Deadmines Enterance",
+               "ends": [],
+               "starts": [],
+               "objectives": ["The Defias Brotherhood P5"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "westfall",
+         "waypoints": [
+            {
+               "coords": { "x": 43, "y": 72 },
+               "header": "Deadmines Enterance",
+               "ends": [],
+               "starts": [],
+               "objectives": ["The Defias Brotherhood P5"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 57, "y": 47 },
+               "header": "Sentinel Tower",
+               "ends": ["The Defias Brotherhood P5"],
+               "starts": ["The Defias Brotherhood P6", "Red Silk Bandanas"],
+               "objectives": ["Do the Deadmines with 5 quests."],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "westfall",
+         "waypoints": [
+            {
+               "coords": { "x": 52, "y": 53 },
+               "header": "Westfall Inn",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 61, "y": 71 },
+               "header": "The Dust Plains",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Grind mobs to level 20."],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 57, "y": 47 },
+               "header": "Sentinel Tower",
+               "ends": ["The People's Militia P1", "Patrolling Westfall"],
+               "starts": ["The People's Militia P2"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 57, "y": 53 },
+               "header": "Sentinel Hill Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fly to Stormwind"],
+               "type": "location"
+            }
+         ]
+      },
+      {
+         "zone": "stormwind",
+         "waypoints": [
+            {
+               "coords": { "x": 66, "y": 62 },
+               "header": "Stormwind Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 46, "y": 38 },
+               "header": "Brother Kristoff",
+               "ends": [],
+               "starts": ["Speaking of Fortitude"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 55, "y": 12 },
+               "header": "Shoni the Silent",
+               "ends": ["Speak with Shoni"],
+               "starts": ["Underground Assault"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 65, "y": 21 },
+               "header": "Wilder Thistlenettle",
+               "ends": [],
+               "starts": ["Oh Brother...", "Collecting Memories"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 74, "y": 8 },
+               "header": "Brother Kristoff",
+               "ends": ["Speaking of Fortitude"],
+               "starts": ["Brother Paxton"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 79, "y": 46 },
+               "header": "Wu Shen",
+               "ends": [],
+               "starts": ["Yorus Barleybrew,"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 70, "y": 87 },
+               "header": "Gates of Stormwind",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Run to Northshire Abbey"],
+               "type": "location"
+            }
+         ]
+      },
+      {
+         "zone": "elwynn",
+         "waypoints": [
+            {
+               "coords": { "x": 32, "y": 49 },
+               "header": "Gates of Stormwind",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 50, "y": 40 },
+               "header": "Brother Paxton",
+               "ends": ["Brother Paxton"],
+               "starts": ["Ink Supplies"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 42, "y": 66 },
+               "header": "Goldshire",
+               "ends": ["The Price of Shoes"],
+               "starts": ["Return to Verner"],
+               "objectives": ["Buy Sweet Rum"],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 65, "y": 70 },
+               "header": "Theocritus",
+               "ends": [],
+               "starts": ["A Watchful Eye"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 92, "y": 72 },
+               "header": "Redridge Road",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            }
+         ]
+      },
+      {
+         "zone": "redridge",
+         "waypoints": [
+            {
+               "coords": { "x": 8, "y": 72 },
+               "header": "Redridge Road",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 31, "y": 59 },
+               "header": "",
+               "ends": ["Encroaching Gnolls"],
+               "starts": ["Assessing the Threat", "Blackrock Bounty"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 32, "y": 48 },
+               "header": "",
+               "ends": ["Return to Verner", "Ink Supplies"],
+               "starts": ["Rethban Ore", "The Lost Tools", "Underbelly Scales", "A Baying of Gnolls", "Blackrock Menace"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 27, "y": 44 },
+               "header": "",
+               "ends": ["Messenger to Westfall", "Messenger to Darkshire", "Messenger to Stormwind", "Yorus Barleybrew", "Dry Times"],
+               "starts": ["Selling Sunfish", "Murloc Poachers", "The Rethban Gauntlet"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 22, "y": 45 },
+               "header": "",
+               "ends": ["Visit the Herbalist"],
+               "starts": ["Delivering Daffodils", "An Unwelcome Guest", "Redridge Goulash"],
+               "objectives": [],
+               "type": "quest"
             }
          ]
       }
