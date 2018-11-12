@@ -1,5 +1,5 @@
 // LOAD WAYPOINT BLOCKS
-$.getJSON('../data/blocks.json').then((response) => {
+$.getJSON('../docs/data/blocks.json').then((response) => {
 
    var current = 0; // response.blocks.length - 1
    var max = response.blocks.length;
