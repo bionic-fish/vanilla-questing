@@ -1,5 +1,5 @@
 // LOAD WAYPOINT BLOCKS
-$.getJSON('../vanilla-questing/data/blocks.json').then((response) => {
+$.getJSON('https://wickstjo.github.io/vanilla-questing/data/blocks.json').then((response) => {
 
    var current = 0; // response.blocks.length - 1
    var max = response.blocks.length;
