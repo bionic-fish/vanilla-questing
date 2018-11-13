@@ -3307,7 +3307,7 @@
                "coords": { "x": 39, "y": 52 },
                "header": "Whelgar's Excavation Site",
                "ends": ["In Search of the Excavation Team P1"],
-               "starts": ["Uncovering the Past", "Ormer's Revenge", "In Search of the Excavation Team P2"],
+               "starts": ["Uncovering the Past", "Ormer's Revenge P1", "In Search of the Excavation Team P2"],
                "objectives": ["Loot the fossil in the cave"],
                "type": "location"
             },
@@ -3683,7 +3683,7 @@
                "coords": { "x": 74, "y": 47 },
                "header": "Darkshire",
                "ends": ["The Legend of Stalvan P1"],
-               "starts": ["The Night Watch", "Seasoned Wolf Kabobs", "Worgen in the Woods P1", "Raven Hill", "Deliveries to Sven", "The Hermit", "The Totem of Infliction", "The Legend of Stalvan P1", "The Legend of Stalvan P2"],
+               "starts": ["The Night Watch P1", "Seasoned Wolf Kabobs", "Worgen in the Woods P1", "Raven Hill", "Deliveries to Sven", "The Hermit", "The Totem of Infliction", "The Legend of Stalvan P1", "The Legend of Stalvan P2"],
                "objectives": [],
                "type": "location"
             },
@@ -4050,6 +4050,1892 @@
                "ends": ["Look to the Stars P1"],
                "starts": ["Look to the Stars P1", "Look to the Stars P2"],
                "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 82, "y": 59 },
+               "header": "Blind Mary",
+               "ends": ["Ghost Hair Thread", "Look to the Stars P2"],
+               "starts": ["Return the Comb", "Look to the Stars P3"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 86, "y": 53 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Dusky Crab Cakes"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "duskwood",
+         "waypoints": [
+            {
+               "coords": { "x": 86, "y": 53 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Dusky Crab Cakes"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 79, "y": 72 },
+               "header": "Tranquil Gardens Cemetary",
+               "ends": [],
+               "starts": [],
+               "objectives": ["The Night Watch P1", "Look to the Stars P3"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 74, "y": 47 },
+               "header": "Darkshire",
+               "ends": ["Return the Comb", "The Night Watch P1", "Dusky Crab Cakes"],
+               "starts": ["Deliver the Thread", "The Night Watch P2", "Return the Jitters"],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 80, "y": 48 },
+               "header": "Viktori Prism'Antras",
+               "ends": ["Look to the Stars P3"],
+               "starts": ["Look to the Stars P4"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 78, "y": 44 },
+               "header": "Darkshire Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fly to Sentinel Hill"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "westfall",
+         "waypoints": [
+            {
+               "coords": { "x": 57, "y": 53 },
+               "header": "Sentinel Hill Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 65, "y": 45 },
+               "header": "Westfall Riverside",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "duskwood",
+         "waypoints": [
+            {
+               "coords": { "x": 5, "y": 37 },
+               "header": "Duskwood Riverside",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 8, "y": 34 },
+               "header": "Sven Yorgen",
+               "ends": ["Sven's Camp"],
+               "starts": ["The Shadowy Figure"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 28, "y": 31 },
+               "header": "Abercrombie",
+               "ends": ["Deliver the Thread"],
+               "starts": ["Zombie Juice"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 23, "y": 45 },
+               "header": "Raven Hill Cemetary",
+               "ends": [],
+               "starts": [],
+               "objectives": ["The Night Watch P2"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 19, "y": 58 },
+               "header": "Jitters",
+               "ends": ["Return to Jitters"],
+               "starts": [],
+               "objectives": ["Hearthstone to Darkshire"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "duskwood",
+         "waypoints": [
+            {
+               "coords": { "x": 74, "y": 47 },
+               "header": "Darkshire",
+               "ends": ["The Shadowy Figure", "The Shadowy Search Continues", "Inquire at the Inn", "Zombie Juice", "The Night Watch P2"],
+               "starts": ["The Shadowy Search Continues", "Inquire at the Inn", "Finding the Shadowy Figure", "Gather Rot Blossoms", "The Night Watch P3", "Crime and Punishment"],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 78, "y": 44 },
+               "header": "Darkshire Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fly to Westfall"],
+               "type": "location"
+            }
+         ]
+      },
+      {
+         "zone": "westfall",
+         "waypoints": [
+            {
+               "coords": { "x": 57, "y": 53 },
+               "header": "Sentinel Hill Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 67, "y": 56 },
+               "header": "Westfall Riverside",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "duskwood",
+         "waypoints": [
+            {
+               "coords": { "x": 9, "y": 56 },
+               "header": "Duskwood Riverside",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 19, "y": 58 },
+               "header": "Jitters",
+               "ends": ["Finding the Shadowy FIGURE"],
+               "starts": ["Return to Sven"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 8, "y": 34 },
+               "header": "Sven Yorgen",
+               "ends": ["Return to Sven"],
+               "starts": ["Proving Your Worth"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 15, "y": 38 },
+               "header": "Dawning Wood Catacombs",
+               "ends": [],
+               "starts": ["An Old History Book"],
+               "objectives": ["Proving Your Worth", "The History Book drops from Mobs"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 18, "y": 46 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Gather Rot Blossoms"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "duskwood",
+         "waypoints": [
+            {
+               "coords": { "x": 18, "y": 46 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Gather Rot Blossoms"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 8, "y": 34 },
+               "header": "Sven Yorgen",
+               "ends": ["Proving Your Worth"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 5, "y": 37 },
+               "header": "Duskwood Riverside",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "westfall",
+         "waypoints": [
+            {
+               "coords": { "x": 65, "y": 45 },
+               "header": "Westfall Riverside",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 57, "y": 53 },
+               "header": "Sentinel Hill Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fly to Stormwind"],
+               "type": "location"
+            }
+         ]
+      },
+      {
+         "zone": "stormwind",
+         "waypoints": [
+            {
+               "coords": { "x": 66, "y": 62 },
+               "header": "Stormwind Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 40, "y": 29 },
+               "header": "Cathedral of Light",
+               "ends": ["Seeking Wisdom"],
+               "starts": ["The Doomed Fleet", "The Missing Diplomat P1"],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 78, "y": 25 },
+               "header": "Bishop DeLavey",
+               "ends": ["The Missing Diplomat P1"],
+               "starts": ["The Missing Diplomat P2"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 73, "y": 78 },
+               "header": "Jorgen",
+               "ends": ["The Missing Diplomat P2"],
+               "starts": ["The Missing Diplomat P3"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 60, "y": 64 },
+               "header": "Elling Trias",
+               "ends": ["The Missing Diplomat P3"],
+               "starts": ["The Missing Diplomat P4"],
+               "objectives": [],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "stormwind",
+         "waypoints": [
+            {
+               "coords": { "x": 60, "y": 64 },
+               "header": "Elling Trias",
+               "ends": ["The Missing Diplomat P3"],
+               "starts": ["The Missing Diplomat P4"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 66, "y": 62 },
+               "header": "Stormwind Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fly to Menethil Harbor"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "wetlands",
+         "waypoints": [
+            {
+               "coords": { "x": 9, "y": 60 },
+               "header": "Menethil Harbor Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 11, "y": 61 },
+               "header": "Glorin Steelbrow",
+               "ends": ["The Doomed Fleet"],
+               "starts": ["Lightforge Iron"],
+               "objectives": ["Set Hearthstone"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 12, "y": 64 },
+               "header": "Waterlogged Chest",
+               "ends": ["Lightforge Iron"],
+               "starts": ["The Lost Ingots"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 12, "y": 67 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["The Lost Ingots"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "wetlands",
+         "waypoints": [
+            {
+               "coords": { "x": 12, "y": 67 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["The Lost Ingots"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 11, "y": 61 },
+               "header": "Glorin Steelbrow",
+               "ends": ["The Lost Ingots"],
+               "starts": ["Blessed Arm"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 13, "y": 41 },
+               "header": "Damaged Crate",
+               "ends": ["Reclaiming Goods"],
+               "starts": ["The Search Continues"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 14, "y": 38 },
+               "header": "Sealed Barrel",
+               "ends": ["The Search Continues"],
+               "starts": ["Search More Howels"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 14, "y": 35 },
+               "header": "Half-Buried Barrel",
+               "ends": ["Search More Howels"],
+               "starts": ["Return the Statuette"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 14, "y": 24 },
+               "header": "Shipwreck",
+               "ends": ["Lifting the Curse"],
+               "starts": ["The Eye of Paleth"],
+               "objectives": ["Lifting the Curse", "Lockbox downstairs"],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 19, "y": 25 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Apprentice's Duties"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 24, "y": 50 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["The Absent Minded Prospector P4", "Ormer's Revenge P1"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 29, "y": 44 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["The Absent Minded Prospector P4", "Ormer's Revenge P1"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 39, "y": 52 },
+               "header": "Whelgar's Excavation Site",
+               "ends": ["Ormer's Revenge P1"],
+               "starts": ["Ormer's Revenge P2"],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 35, "y": 47 },
+               "header": "Ancient Relic",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Uncovering the Past", "Ormer's Revenge P2"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 34, "y": 45 },
+               "header": "Ancient Relic",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Uncovering the Past", "Ormer's Revenge P2"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 35, "y": 44 },
+               "header": "Ancient Relic",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Uncovering the Past", "Ormer's Revenge P2"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 37, "y": 42 },
+               "header": "Ancient Relic",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Uncovering the Past", "Ormer's Revenge P2"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "wetlands",
+         "waypoints": [
+            {
+               "coords": { "x": 37, "y": 42 },
+               "header": "Ancient Relic",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Uncovering the Past", "Ormer's Revenge P2"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 39, "y": 52 },
+               "header": "Whelgar's Excavation Site",
+               "ends": ["Ormer's Revenge P2", "Uncovering the Past"],
+               "starts": ["Ormer's Revenge P3"],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 33, "y": 52 },
+               "header": "Sarltooth",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Ormer's Revenge P3"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "wetlands",
+         "waypoints": [
+            {
+               "coords": { "x": 33, "y": 52 },
+               "header": "Sarltooth",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Ormer's Revenge P3"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 39, "y": 52 },
+               "header": "Whelgar's Excavation Site",
+               "ends": ["Ormer's Revenge P3"],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 47, "y": 47 },
+               "header": "Dragonmaw Catapult",
+               "ends": ["Nek'Rosh's Gambit"],
+               "starts": ["Defeat Nek'Roshm"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 53, "y": 55 },
+               "header": "Angerfang Encampment",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Defeat Nek'Roshm"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 50, "y": 18 },
+               "header": "Dun Modr",
+               "ends": [],
+               "starts": ["The Thandol Span P1", "A Grim Task", "The Dark Iron War"],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 47, "y": 16 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["The Dark Iron War"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 51, "y": 8 },
+               "header": "Ebenezer Rustlocke's Corpse",
+               "ends": ["The Thandol Span P1"],
+               "starts": ["The Thandol Span P2"],
+               "objectives": ["The Dark Iron War"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 62, "y": 27 },
+               "header": "Direforge Hill",
+               "ends": [],
+               "starts": [],
+               "objectives": ["The Dark Iron War", "A Grim Task"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "wetlands",
+         "waypoints": [
+            {
+               "coords": { "x": 62, "y": 27 },
+               "header": "Direforge Hill",
+               "ends": [],
+               "starts": [],
+               "objectives": ["The Dark Iron War", "A Grim Task"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 50, "y": 18 },
+               "header": "Dun Modr",
+               "ends": ["The Thandol Span P2", "A Grim Task", "The Dark Iron War"],
+               "starts": ["The Thandol Span P3", "The Fury Runs Deep"],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 51, "y": 9 },
+               "header": "Arathi Highlands Bridge",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "arathi",
+         "waypoints": [
+            {
+               "coords": { "x": 45, "y": 93 },
+               "header": "Arathi Highlands Bridge",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 49, "y": 88 },
+               "header": "Cache of Explosives",
+               "ends": [],
+               "starts": [],
+               "objectives": ["The Thandol Span P3"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "arathi",
+         "waypoints": [
+            {
+               "coords": { "x": 49, "y": 88 },
+               "header": "Cache of Explosives",
+               "ends": [],
+               "starts": [],
+               "objectives": ["The Thandol Span P3"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 45, "y": 93 },
+               "header": "Arathi Highlands Bridge",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "wetlands",
+         "waypoints": [
+            {
+               "coords": { "x": 51, "y": 9 },
+               "header": "Arathi Highlands Bridge",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 50, "y": 18 },
+               "header": "Dun Modr",
+               "ends": ["The Thandol Span P3"],
+               "starts": ["Plea to the Alliance"],
+               "objectives": ["Hearthstone to Menethil Harbor"],
+               "type": "location"
+            }
+         ]
+      },
+      {
+         "zone": "wetlands",
+         "waypoints": [
+            {
+               "coords": { "x": 11, "y": 60 },
+               "header": "",
+               "ends": ["The Eye of Paleth", "The Absent Minded Prospector P4"],
+               "starts": ["Cleansing the Eye"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 10, "y": 57 },
+               "header": "",
+               "ends": ["Defeat Nek'Rosh"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 8, "y": 57 },
+               "header": "",
+               "ends": ["Return the Statuette", "Apprentice's Duties"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 9, "y": 60 },
+               "header": "Menethil Harbor Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fly to Stormwind"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "stormwind",
+         "waypoints": [
+            {
+               "coords": { "x": 66, "y": 62 },
+               "header": "Stormwind Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 73, "y": 45 },
+               "header": "Nikova Raskol",
+               "ends": [],
+               "starts": ["The Color of Blood"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 52, "y": 12 },
+               "header": "Grimand Elmore",
+               "ends": ["Blessed Arm"],
+               "starts": ["Armed and Ready"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 49, "y": 30 },
+               "header": "Baros Alexston",
+               "ends": [],
+               "starts": ["Bazil Thredd"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 40, "y": 29 },
+               "header": "Cathedral of Light",
+               "ends": ["Cleansing the Eye"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 41, "y": 58 },
+               "header": "The Stockade Enterance",
+               "ends": ["Bazil Thredd"],
+               "starts": ["Quell The Uprising", "The Stockade Riots"],
+               "objectives": ["Do the Stockade with 5 quests."],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "stormwind",
+         "waypoints": [
+            {
+               "coords": { "x": 41, "y": 58 },
+               "header": "The Stockade Enterance",
+               "ends": ["Quell The Uprising", "The Stockade Riots"],
+               "starts": ["The Curious Visitor"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 49, "y": 30 },
+               "header": "Baros Alexston",
+               "ends": ["The Curious Visitor"],
+               "starts": ["Shadow of the Past"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 73, "y": 45 },
+               "header": "Nikova Raskol",
+               "ends": ["The Color of Blood"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 79, "y": 46 },
+               "header": "Wu Shen",
+               "ends": [],
+               "starts": ["The Islander"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 76, "y": 60 },
+               "header": "Master Mathias Shaw",
+               "ends": ["Shadow of the Past"],
+               "starts": ["Look to an Old Friend"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 60, "y": 64 },
+               "header": "Elling Trias",
+               "ends": ["Look to an Old Friend"],
+               "starts": ["Infiltrating the Castle"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 69, "y": 15 },
+               "header": "Tyrion",
+               "ends": ["Infiltrating the Castle"],
+               "starts": ["Items of some Consequence"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 66, "y": 62 },
+               "header": "Stormwind Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fly to Lakeshire"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "redridge",
+         "waypoints": [
+            {
+               "coords": { "x": 31, "y": 59 },
+               "header": "Lakeshire Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 26, "y": 47 },
+               "header": "Guard Berton",
+               "ends": ["What Comes Around..."],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "redridge",
+         "waypoints": [
+            {
+               "coords": { "x": 26, "y": 47 },
+               "header": "Guard Berton",
+               "ends": ["What Comes Around..."],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 31, "y": 59 },
+               "header": "Lakeshire Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fly to Duskwood"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "duskwood",
+         "waypoints": [
+            {
+               "coords": { "x": 78, "y": 44 },
+               "header": "Darkshire Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 74, "y": 47 },
+               "header": "Darkshire",
+               "ends": ["Gather Rot Blossoms", "Crime and Punishment"],
+               "starts": ["Juice Delivery"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 77, "y": 36 },
+               "header": "Manor Mistmantle",
+               "ends": [],
+               "starts": [],
+               "objectives": ["The Legend of Stalvan P13"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 72, "y": 35 },
+               "header": "Watcher Backus",
+               "ends": ["The Missing Diplomat P4"],
+               "starts": ["The Missing Diplomat P5"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 61, "y": 41 },
+               "header": "Brightwood Grove",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Worgen in the Woods P2"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "duskwood",
+         "waypoints": [
+            {
+               "coords": { "x": 61, "y": 41 },
+               "header": "Brightwood Grove",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Worgen in the Woods P2"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 74, "y": 47 },
+               "header": "Darkshire",
+               "ends": ["The Legend of Stalvan P13", "Worgen in the Woods P2"],
+               "starts": ["Worgen in the Woods P3"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 78, "y": 44 },
+               "header": "Darkshire Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fly to Westfall"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "westfall",
+         "waypoints": [
+            {
+               "coords": { "x": 57, "y": 53 },
+               "header": "Sentinel Hill Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 65, "y": 45 },
+               "header": "Westfall Riverside",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "duskwood",
+         "waypoints": [
+            {
+               "coords": { "x": 5, "y": 37 },
+               "header": "Duskwood Riverside",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 8, "y": 34 },
+               "header": "Sven Yorgen",
+               "ends": ["Armed and Ready"],
+               "starts": ["Morbent Fel"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 17, "y": 33 },
+               "header": "Forlorn Rowe",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Morbent Fel"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 19, "y": 37 },
+               "header": "Raven Hill Cemetary",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Mor'Ladim"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 28, "y": 31 },
+               "header": "Abercrombie",
+               "ends": ["Juice Delivery"],
+               "starts": ["Ghoulish Effigy"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 24, "y": 37 },
+               "header": "Dawning Wood Catacombs",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Ghoulish Effigy", "The Night Watch"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "duskwood",
+         "waypoints": [
+            {
+               "coords": { "x": 24, "y": 37 },
+               "header": "Dawning Wood Catacombs",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Ghoulish Effigy", "The Night Watch"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 28, "y": 31 },
+               "header": "Abercrombie",
+               "ends": ["Ghoulish Effigy"],
+               "starts": ["Ogre Thieves"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 8, "y": 34 },
+               "header": "Sven Yorgen",
+               "ends": ["Morbent Fel"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 24, "y": 72 },
+               "header": "Defias Strongbox",
+               "ends": [],
+               "starts": [],
+               "objectives": ["The Missing Diplomat P5"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 33, "y": 76 },
+               "header": "Abercrombies Crate",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Ogre Thieves"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 36, "y": 78 },
+               "header": "Vol'Gol Ogre Mound",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Look to the Stars P4"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "duskwood",
+         "waypoints": [
+            {
+               "coords": { "x": 36, "y": 78 },
+               "header": "Vol'Gol Ogre Mound",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Look to the Stars P4"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 28, "y": 31 },
+               "header": "Abercrombie",
+               "ends": ["Ogre Thieves"],
+               "starts": ["Note to the Mayor"],
+               "objectives": ["Hearthstone to Darkshire"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "duskwood",
+         "waypoints": [
+            {
+               "coords": { "x": 74, "y": 47 },
+               "header": "Darkshire",
+               "ends": ["The Night Watch P3", "Mor'Ladim", "Note to the Mayor", "Translate Abercrombies Letter", "Wait for Sirra to Finish", "Translation to Ello"],
+               "starts": ["The Daughter Who Lived", "Translate Abercrombies Letter", "Wait for Sirra to Finish", "Translation to Ello", "Bride of the Embalmer", "A Daughter's Love"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 72, "y": 35 },
+               "header": "Watcher Backus",
+               "ends": ["The Missing Diplomat P5"],
+               "starts": ["The Missing Diplomat P6"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 80, "y": 48 },
+               "header": "Viktori Prism'Antras",
+               "ends": ["Look to the Stars P4"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 79, "y": 43 },
+               "header": "Darkshire Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fly to Westfall"],
+               "type": "location"
+            }
+         ]
+      },
+      {
+         "zone": "westfall",
+         "waypoints": [
+            {
+               "coords": { "x": 57, "y": 53 },
+               "header": "Sentinel Hill Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 65, "y": 45 },
+               "header": "Westfall Riverside",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "duskwood",
+         "waypoints": [
+            {
+               "coords": { "x": 5, "y": 37 },
+               "header": "Duskwood Riverside",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 18, "y": 29 },
+               "header": "A Weathered Grave",
+               "ends": ["A Daughters Love"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 29, "y": 31 },
+               "header": "Eliza's Grave Dirt",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Bride of the Embalmer"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "duskwood",
+         "waypoints": [
+            {
+               "coords": { "x": 29, "y": 31 },
+               "header": "Eliza's Grave Dirt",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Bride of the Embalmer"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 5, "y": 37 },
+               "header": "Duskwood Riverside",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            }
+         ]
+      },
+      {
+         "zone": "westfall",
+         "waypoints": [
+            {
+               "coords": { "x": 65, "y": 45 },
+               "header": "Westfall Riverside",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 57, "y": 53 },
+               "header": "Sentinel Hill Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fly to Darkshire"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "duskwood",
+         "waypoints": [
+            {
+               "coords": { "x": 78, "y": 44 },
+               "header": "Darkshire Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Learn the Flightpath", "Fly to Westfall"],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 73, "y": 73 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Worgen in the Woods P3"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "duskwood",
+         "waypoints": [
+            {
+               "coords": { "x": 73, "y": 73 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Worgen in the Woods P3"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 74, "y": 47 },
+               "header": "Darkshire",
+               "ends": ["Worgen in the Woods P3", "Worgen in the Woods P4", "Bride of the Embalmer"],
+               "starts": ["Worgen in the Woods P4"],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 78, "y": 44 },
+               "header": "Darkshire Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fly to Stormwind"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "stormwind",
+         "waypoints": [
+            {
+               "coords": { "x": 66, "y": 62 },
+               "header": "Stormwind Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 70, "y": 87 },
+               "header": "Gates of Stormwind",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Run to Elwynn Forest"],
+               "type": "location"
+            }
+         ]
+      },
+      {
+         "zone": "elwynn",
+         "waypoints": [
+            {
+               "coords": { "x": 32, "y": 49 },
+               "header": "Gates of Stormwind",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 34, "y": 57 },
+               "header": "Clara's Fresh Apples",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Items of Some Consequence"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "elwynn",
+         "waypoints": [
+            {
+               "coords": { "x": 34, "y": 57 },
+               "header": "Clara's Fresh Apples",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Items of Some Consequence"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 32, "y": 49 },
+               "header": "Gates of Stormwind",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "stormwind",
+         "waypoints": [
+            {
+               "coords": { "x": 70, "y": 87 },
+               "header": "Gates of Stormwind",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Run to Elwynn Forest"],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 60, "y": 64 },
+               "header": "Elling Trias",
+               "ends": ["The Missing Diplomat P6"],
+               "starts": ["The Missing Diplomat P7"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 53, "y": 60 },
+               "header": "Stormwind Auction House",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Buy x3 Silk Cloth"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 70, "y": 45 },
+               "header": "Dashel Stonefist",
+               "ends": ["The Missing Diplomat P7", "The Missing Diplomat P8"],
+               "starts": ["The Missing Diplomat P8", "The Missing Diplomat P9"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 69, "y": 15 },
+               "header": "Tyrion",
+               "ends": ["Items of some Consequence"],
+               "starts": ["The Attack!"],
+               "objectives": ["The Attack!"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 74, "y": 8 },
+               "header": "Milton Sheaf",
+               "ends": ["An Old History Book"],
+               "starts": ["Southshore"],
+               "objectives": [],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "stormwind",
+         "waypoints": [
+            {
+               "coords": { "x": 74, "y": 8 },
+               "header": "Milton Sheaf",
+               "ends": ["An Old History Book"],
+               "starts": ["Southshore"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 60, "y": 64 },
+               "header": "Elling Trias",
+               "ends": ["The Missing Diplomat P9", "The Attack!"],
+               "starts": ["The Missing Diplomat P10", "The Head of the Beast"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 76, "y": 60 },
+               "header": "Master Mathias Shaw",
+               "ends": ["The Head of the Beast"],
+               "starts": ["Brotherhood'd End"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 49, "y": 30 },
+               "header": "Baros Alexston",
+               "ends": ["Brotherhood'd End"],
+               "starts": ["An Audience with the King"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 78, "y": 18 },
+               "header": "Lady Katrana Prestor",
+               "ends": ["An Audience with the King"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "stormwind",
+         "waypoints": [
+            {
+               "coords": { "x": 78, "y": 18 },
+               "header": "Lady Katrana Prestor",
+               "ends": ["An Audience with the King"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 40, "y": 82 },
+               "header": "Archmage Malin",
+               "ends": [],
+               "starts": ["Malin's Request"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 41, "y": 89 },
+               "header": "Angus Stern",
+               "ends": [],
+               "starts": ["Morgan Stern"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 66, "y": 62 },
+               "header": "Stormwind Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fly to Menethil Harbor"],
+               "type": "location"
+            }
+         ]
+      },
+      {
+         "zone": "wetlands",
+         "waypoints": [
+            {
+               "coords": { "x": 9, "y": 60 },
+               "header": "Menethil Harbor Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Learn the Flightpath"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 11, "y": 61 },
+               "header": "Menethil Bar",
+               "ends": ["The Missing Diplomat P10", "The Missing Diplomat P11", "The Missing Diplomat P12"],
+               "starts": ["The Missing Diplomat P11", "The Missing Diplomat P12", "The Missing Diplomat P13"],
+               "objectives": ["The Missing Diplomat P11", "Buy 5x Sooting Spices"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 5, "y": 63 },
+               "header": "Menethil Harbor Boat",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Ride to Theramore"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "dustwallow",
+         "waypoints": [
+            {
+               "coords": { "x": 71, "y": 56 },
+               "header": "Theramore Harbor",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 67, "y": 51 },
+               "header": "Theramore Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Learn the Flightpath"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 68, "y": 49 },
+               "header": "Commander Samaul",
+               "ends": ["The Missing Diplomat P11"],
+               "starts": ["The Missing Diplomat P12"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 66, "y": 45 },
+               "header": "Theramore Inn",
+               "ends": ["Morgan Stern"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 60, "y": 41 },
+               "header": "Sentry Point",
+               "ends": [],
+               "starts": [],
+               "objectives": ["The Missing Diplomat P12"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 55, "y": 26 },
+               "header": "Swamp Eye Jael",
+               "ends": ["Soothing Spices"],
+               "starts": ["Soothing Spices"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 56, "y": 10 },
+               "header": "Dreadmurk Shore",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Swim to the Barrens"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "barrens",
+         "waypoints": [
+            {
+               "coords": { "x": 64, "y": 59 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 69, "y": 49 },
+               "header": "Fray Island",
+               "ends": ["The Islander", "The Affray"],
+               "starts": ["The Affray", "The Windwatcher"],
+               "objectives": ["Stand in the Pit"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 63, "y": 37 },
+               "header": "Ratchet Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Learn the Flightpath"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 64, "y": 39 },
+               "header": "Ratchet Harbor",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Ride to Booty Bay"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "stv",
+         "waypoints": [
+            {
+               "coords": { "x": 26, "y": 73 },
+               "header": "Booty Bay Harbor",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 27, "y": 77 },
+               "header": "Booty Bay",
+               "ends": ["The Haunted Isle"],
+               "starts": ["Supplies to Private Thorsen", "Investigate the Camp", "The Haunted Isle", "Bloodscalp Ears", "The Stone of the Tides", "Supply and Demand"],
+               "objectives": ["SE""Learn the Flightpath", "Fly to Arathi Highlands"],
+               "type": "location"
+            }
+         ]
+      },
+      {
+         "zone": "arathi",
+         "waypoints": [
+            {
+               "coords": { "x": 46, "y": 47 },
+               "header": "Refuge Point",
+               "ends": ["Malin's Request", "Plea to the Alliance"],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 22, "y": 31 },
+               "header": "Arathi Wall",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Run to Southshore"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "hillsbrad",
+         "waypoints": [
+            {
+               "coords": { "x": 82, "y": 57 },
+               "header": "Arathi Wall",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 49, "y": 52 },
+               "header": "Southshore Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Learn the Flightpath"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 49, "y": 52 },
+               "header": "Southshore",
+               "ends": ["Southshore"],
+               "starts": ["Hints of a New Plague? P1"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 78, "y": 8 },
+               "header": "Bath'rah the Windwatcher",
+               "ends": ["The Windwatcher"],
+               "starts": ["Cyclonian"],
+               "objectives": ["Hearthstone to Darkshire"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "duskwood",
+         "waypoints": [
+            {
+               "coords": { "x": 74, "y": 47 },
+               "header": "Darkshire Inn",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 78, "y": 44 },
+               "header": "Darkshire Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fly to Westfall"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "westfall",
+         "waypoints": [
+            {
+               "coords": { "x": 57, "y": 53 },
+               "header": "Sentinel Hill Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 87, "y": 95 },
+               "header": "Stranglethorn Vale River",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Supply and Demand"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "stv",
+         "waypoints": [
+            {
+               "coords": { "x": 33, "y": 8 },
+               "header": "Stranglethorn Vale River",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Supply and Demand"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 36, "y": 11 },
+               "header": "Nesingwary's Expedition",
+               "ends": ["Welcome to the Jungle"],
+               "starts": ["Welcome to the Jungle", "Raptor Mastery P1", "Tiger Mastery P1", "Panther Mastery P1"],
+               "objectives": ["Investigate the Camp"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 38, "y": 3 },
+               "header": "Rebel Camp",
+               "ends": ["Supplies to Private Thorsen", "Jungle Secrets"],
+               "starts": ["Jungle Secrets", "Bookie Herod", "The Second Rebellion", "Bad Medicine", "Krazel's Cookery"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 42, "y": 12 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Panther Mastery P1"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 44, "y": 10 },
+               "header": "Kurzens Compound",
+               "ends": ["Bookie Herod"],
+               "starts": ["The Hidden Key"],
+               "objectives": ["The Second Rebellion", "Bad Medicine", "Krazel's Cookery"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "stv",
+         "waypoints": [
+            {
+               "coords": { "x": 44, "y": 10 },
+               "header": "Kurzens Compound",
+               "ends": ["Bookie Herod"],
+               "starts": ["The Hidden Key"],
+               "objectives": ["The Second Rebellion", "Bad Medicine", "Krazel's Cookery"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 33, "y": 12 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Tiger Mastery P1"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 26, "y": 16 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Raptor Mastery P1"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 21, "y": 22 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["The Stone of the Tides"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "stv",
+         "waypoints": [
+            {
+               "coords": { "x": 21, "y": 22 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["The Stone of the Tides"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 36, "y": 11 },
+               "header": "Nesingwary's Expedition",
+               "ends": ["Raptor Mastery P1", "Tiger Mastery P1", "Panther Mastery P1"],
+               "starts": ["Raptor Mastery P2", "Tiger Mastery P2", "Panther Mastery P2"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 29, "y": 10 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Tiger Mastery P2", "Panther Mastery P2"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "stv",
+         "waypoints": [
+            {
+               "coords": { "x": 29, "y": 10 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Tiger Mastery P2", "Panther Mastery P2"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 28, "y": 15 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Tiger Mastery P2", "Panther Mastery P2"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 33, "y": 14 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Cyclonian", "Bloodscalp Ears"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 32, "y": 23 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Raptor Mastery P2"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 36, "y": 11 },
+               "header": "Nesingwary's Expedition",
+               "ends": ["Raptor Mastery P2", "Tiger Mastery P2", "Panther Mastery P2"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 38, "y": 3 },
+               "header": "Rebel Camp",
+               "ends": ["The Second Rebellion", "Bad Medicine"],
+               "starts": [],
+               "objectives": ["Hearthstone to Booty Bay"],
                "type": "quest"
             }
          ]
