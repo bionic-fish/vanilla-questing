@@ -6451,14 +6451,281 @@
                "ends": ["Reassignment"],
                "starts": [],
                "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 74, "y": 30 },
+               "header": "Major Samuelson",
+               "ends": [],
+               "starts": ["The Perenholde Tiara"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 43, "y": 24 },
+               "header": "Brother Crowley",
+               "ends": [],
+               "starts": ["Brother Anton"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 66, "y": 62 },
+               "header": "Stormwind Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fly to Booty Bay"],
+               "type": "location"
+            }
+         ]
+      },
+      {
+         "zone": "stv",
+         "waypoints": [
+            {
+               "coords": { "x": 28, "y": 78 },
+               "header": "Booy Bay Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
                "type": "objective"
             },
             {
-               "coords": { "x": 73, "y": 16 },
-               "header": "Major Samuelson",
-               "ends": ["Reassignment"],
+               "coords": { "x": 27, "y": 77 },
+               "header": "Booty Bay",
+               "ends": ["Favor for Krazek"],
                "starts": [],
                "objectives": [],
+               "type": "location"
+            }
+         ]
+      },
+      {
+         "zone": "barrens",
+         "waypoints": [
+            {
+               "coords": { "x": 64, "y": 39 },
+               "header": "Ratchet Harbor",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Ride to Booty Bay"],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 63, "y": 37 },
+               "header": "Ratchet Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Learn the Flightpath"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "dustwallow",
+         "waypoints": [
+            {
+               "coords": { "x": 67, "y": 51 },
+               "header": "Theramore Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 66, "y": 49 },
+               "header": "Theramore Tower",
+               "ends": ["The Missing Diplomat P12"],
+               "starts": ["The Missing Diplomat P13"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 66, "y": 45 },
+               "header": "Theramore Inn",
+               "ends": [],
+               "starts": ["Highperch Venom"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 47, "y": 17 },
+               "header": "Stinky Ignaz",
+               "ends": [],
+               "starts": ["Stinky's Escape"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 45, "y": 25 },
+               "header": "Private Hendel",
+               "ends": ["The Missing Diplomat P13", "The Missing Diplomat P14", "The Missing Diplomat P15"],
+               "starts": ["The Missing Diplomat P14", "The Missing Diplomat P15"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 35, "y": 38 },
+               "header": "Mudcrush Durtfeet",
+               "ends": [],
+               "starts": ["Hungry!"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 31, "y": 47 },
+               "header": "The Barrens Border",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            }
+         ]
+      },
+      {
+         "zone": "barrens",
+         "waypoints": [
+            {
+               "coords": { "x": 50, "y": 78 },
+               "header": "Dustwallw Marsh Border",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 44, "y": 91 },
+               "header": "Thousand Needles Lifts",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            }
+         ]
+      },
+      {
+         "zone": "thousand-needles",
+         "waypoints": [
+            {
+               "coords": { "x": 32, "y": 21 },
+               "header": "Thousand Needles Lifts",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 8, "y": 18 },
+               "header": "Thalanaar Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Learn the Flightpath"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 11, "y": 35 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Highperch Venom"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 79, "y": 77 },
+               "header": "The Shimmering Flats",
+               "ends": ["The Brassbolts Brothers"],
+               "starts": ["Hardened Shells", "Salt Flat Venom", "Martek the Exiled", "Rocket Car Parts", "Wharfmaster Dizzywig", "Hemet Nesingwary", "Load Lightening", "A Bump In the Road"],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 78, "y": 88 },
+               "header": "Tahonda Ruins",
+               "ends": [],
+               "starts": [],
+               "objectives": ["A Bump In the Road", "Rocket Car Parts"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 88, "y": 65 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Load Lightening"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 84, "y": 60 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Salt Flat Venom", "Rocket Car Parts"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 82, "y": 54 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Hardened Shells"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 75, "y": 60 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["A Bump In the Road", "Rocket Car Parts"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "thousand-needles",
+         "waypoints": [
+            {
+               "coords": { "x": 75, "y": 60 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["A Bump In the Road", "Rocket Car Parts"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 79, "y": 77 },
+               "header": "The Shimmering Flats",
+               "ends": ["Hardened Shells", "Salt Flat Venom", "Rocket Car Parts", "Load Lightening", "A Bump In the Road"],
+               "starts": ["Goblin Sponsorship"],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 75, "y": 96 },
+               "header": "Tanaris Border",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Run to Tanaris"],
+               "type": "location"
+            }
+         ]
+      },
+      {
+         "zone": "tanaris",
+         "waypoints": [
+            {
+               "coords": { "x": 51, "y": 22 },
+               "header": "Thousand Needles Border",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 51, "y": 29 },
+               "header": "Tanaris Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Learn the Flightpath", "Fly to Ratchet"],
                "type": "objective"
             }
          ]
