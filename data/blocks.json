@@ -5671,8 +5671,16 @@
                "header": "Booty Bay",
                "ends": ["The Haunted Isle"],
                "starts": ["Supplies to Private Thorsen", "Investigate the Camp", "The Haunted Isle", "Bloodscalp Ears", "The Stone of the Tides", "Supply and Demand"],
-               "objectives": ["SE""Learn the Flightpath", "Fly to Arathi Highlands"],
+               "objectives": ["Set Hearthstone"],
                "type": "location"
+            },
+            {
+               "coords": { "x": 28, "y": 78 },
+               "header": "Booy Bay Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Learn the Flightpath", "Fly to Arathi Highlands"],
+               "type": "objective"
             }
          ]
       },
@@ -5717,7 +5725,7 @@
                "type": "objective"
             },
             {
-               "coords": { "x": 49, "y": 52 },
+               "coords": { "x": 50, "y": 54 },
                "header": "Southshore",
                "ends": ["Southshore"],
                "starts": ["Hints of a New Plague? P1"],
@@ -5729,25 +5737,25 @@
                "header": "Bath'rah the Windwatcher",
                "ends": ["The Windwatcher"],
                "starts": ["Cyclonian"],
-               "objectives": ["Hearthstone to Darkshire"],
+               "objectives": ["Hearthstone to Booty Bay"],
                "type": "quest"
             }
          ]
       },
       {
-         "zone": "duskwood",
+         "zone": "stv",
          "waypoints": [
             {
-               "coords": { "x": 74, "y": 47 },
-               "header": "Darkshire Inn",
+               "coords": { "x": 27, "y": 77 },
+               "header": "Booty Bay",
                "ends": [],
                "starts": [],
                "objectives": [],
                "type": "location"
             },
             {
-               "coords": { "x": 78, "y": 44 },
-               "header": "Darkshire Flightpath",
+               "coords": { "x": 28, "y": 78 },
+               "header": "Booy Bay Flightpath",
                "ends": [],
                "starts": [],
                "objectives": ["Fly to Westfall"],
@@ -5937,6 +5945,521 @@
                "starts": [],
                "objectives": ["Hearthstone to Booty Bay"],
                "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "stv",
+         "waypoints": [
+            {
+               "coords": { "x": 27, "y": 77 },
+               "header": "Booty Bay",
+               "ends": ["Investigate the Camp", "Krazek's Cookery", "Bloodscalp Ears", "The Stone of the Tides", "Supply and Demand"],
+               "starts": ["Favor for Krazek"],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 28, "y": 78 },
+               "header": "Booy Bay Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fly to Stormwind"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "stormwind",
+         "waypoints": [
+            {
+               "coords": { "x": 66, "y": 62 },
+               "header": "Stormwind Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 53, "y": 60 },
+               "header": "Stormwind Auction House",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Buy x8 Liferoot", "Buy 8x Burning Charm", "Buy 8x Thundering Charm", "Buy 8x Cresting Charm", "Hillman's Cloak", "Bolt of Woolen Cloth"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 43, "y": 74 },
+               "header": "Alexandra Bolero",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Buy 1x Fine Thread"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "stormwind",
+         "waypoints": [
+            {
+               "coords": { "x": 43, "y": 74 },
+               "header": "Alexandra Bolero",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Buy 1x Fine Thread"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 66, "y": 62 },
+               "header": "Stormwind Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fly to Southshore"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "hillsbrad",
+         "waypoints": [
+            {
+               "coords": { "x": 49, "y": 52 },
+               "header": "Southshore Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Learn the Flightpath"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 50, "y": 54 },
+               "header": "Southshore",
+               "ends": ["Bartolo's Yeti Fur Cloak", "Soothing Turtle Bisque", "Down the Coast", "Syndicate Assassins", "Costly Menace", "Crushridge Bounty"],
+               "starts": [],
+               "objectives": ["Set Hearthstone", "Buy 1x Southshore Stout"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 66, "y": 36 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Soothing Turtle Bisque"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 78, "y": 8 },
+               "header": "Bath'rah the Windwatcher",
+               "ends": ["Cyclonian", "The Summoning", "Whirlwind Weapon"],
+               "starts": ["The Summoning", "Whirlwind Weapon"],
+               "objectives": ["Interact with the Cauldron"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 59, "y": 9 },
+               "header": "Henchman Valik",
+               "ends": ["Valik"],
+               "starts": ["Valik"],
+               "objectives": ["Syndicate Assassins"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 53, "y": 4 },
+               "header": "Gallows' Corner",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Crushridge Bounty"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 51, "y": 20 },
+               "header": "Corrahn's Dagger",
+               "ends": [],
+               "starts": ["Foreboding Plans", "Encrypted Letter"],
+               "objectives": ["Syndicate Assassins"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 47, "y": 17 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Costly Menace"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 43, "y": 25 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Costly Menace"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 45, "y": 31 },
+               "header": "Darrow Hill Cave",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Bartolo's Yeti Fur Cloak", "Hearthstone to Southshore"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "hillsbrad",
+         "waypoints": [
+            {
+               "coords": { "x": 45, "y": 31 },
+               "header": "Darrow Hill Cave",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Bartolo's Yeti Fur Cloak", "Hearthstone to Southshore"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 50, "y": 54 },
+               "header": "Southshore",
+               "ends": ["Bartolo's Yeti Fur Cloak", "Soothing Turtle Bisque", "Syndicate Assassins", "Costly Menace", "Crushridge Bounty", "Encrypted Letter", "Foreboding Plans"],
+               "starts": ["Letter to Stormpike"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 46, "y": 66 },
+               "header": "Western Strand",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Down the Coast"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "hillsbrad",
+         "waypoints": [
+            {
+               "coords": { "x": 46, "y": 66 },
+               "header": "Western Strand",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Down the Coast"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 50, "y": 54 },
+               "header": "Southshore",
+               "ends": ["Down the Coast"],
+               "starts": ["Farren's Proof P1"],
+               "objectives": [],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "hillsbrad",
+         "waypoints": [
+            {
+               "coords": { "x": 50, "y": 54 },
+               "header": "Southshore",
+               "ends": ["Down the Coast"],
+               "starts": ["Farren's Proof P1"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 50, "y": 54 },
+               "header": "Southshore",
+               "ends": ["Farren's Proof P1", "Farren's Proof P2"],
+               "starts": ["Farren's Proof P2", "Stormwind Ho!"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 58, "y": 68 },
+               "header": "Eastern Strand",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Stormwind Ho!"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "hillsbrad",
+         "waypoints": [
+            {
+               "coords": { "x": 58, "y": 68 },
+               "header": "Eastern Strand",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Stormwind Ho!"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 50, "y": 54 },
+               "header": "Southshore",
+               "ends": ["Stormwind Ho!"],
+               "starts": ["Reassignment"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 49, "y": 52 },
+               "header": "Southshore Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fly to Arathi Highlands"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "arathi",
+         "waypoints": [
+            {
+               "coords": { "x": 46, "y": 47 },
+               "header": "Refuge Point",
+               "ends": [],
+               "starts": ["Worth Its Weight in Gold", "Northfold Manor"],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 60, "y": 54 },
+               "header": "Quae",
+               "ends": ["Hints of a New Plague? P1"],
+               "starts": ["Hints of a New Plague? P2"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 60, "y": 61 },
+               "header": "Go'Shek Farm",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Hints of a New Plague? P2", "Patrol Spawn"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "arathi",
+         "waypoints": [
+            {
+               "coords": { "x": 60, "y": 61 },
+               "header": "Go'Shek Farm",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Hints of a New Plague? P2", "Patrol Spawn"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 60, "y": 54 },
+               "header": "Quae",
+               "ends": ["Hints of a New Plague? P2", "Hints of a New Plague? P3", "Hints of a New Plague? P4"],
+               "starts": ["Hints of a New Plague? P3", "Hints of a New Plague? P4", "Hints of a New Plague? P5"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 68, "y": 76 },
+               "header": "Witherbark Village",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Worth Its Weight in Gold"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 62, "y": 34 },
+               "header": "Shard of Myzrael",
+               "ends": [],
+               "starts": ["The Princess Trapped"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 83, "y": 36 },
+               "header": "Drywhisper Gorge",
+               "ends": ["The Princess Trapped"],
+               "starts": ["Stones of Binding"],
+               "objectives": ["The Princess Trapped", "Favor for Krazek"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 67, "y": 30 },
+               "header": "Stone of East Binding",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Stones of Binding"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 52, "y": 51 },
+               "header": "Stone of Outer Binding",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Stones of Binding"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 32, "y": 29 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Northfold Manor"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 26, "y": 30 },
+               "header": "Stone of West Binding",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Stones of Binding"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 36, "y": 57 },
+               "header": "Stone of Inner Binding",
+               "ends": ["Stones of Binding"],
+               "starts": ["Breaking the Keystone"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 45, "y": 89 },
+               "header": "Arathi Highlands Bridge",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            }
+         ]
+      },
+      {
+         "zone": "wetlands",
+         "waypoints": [
+            {
+               "coords": { "x": 51, "y": 10 },
+               "header": "Arathi Highlands Bridge",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 50, "y": 18 },
+               "header": "Motley Garmason",
+               "ends": ["The Fury Runs Deep"],
+               "starts": [],
+               "objectives": ["Hearthstone to Southshore"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "hillsbrad",
+         "waypoints": [
+            {
+               "coords": { "x": 50, "y": 54 },
+               "header": "Southshore",
+               "ends": ["Hints of a New Plague? P5"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 49, "y": 52 },
+               "header": "Southshore Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fly to Arathi"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "arathi",
+         "waypoints": [
+            {
+               "coords": { "x": 46, "y": 48 },
+               "header": "Refuge Point",
+               "ends": ["Northfold Manor", "Worth Its Weight In Gold"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 46, "y": 46 },
+               "header": "Refuge Point Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fly to Ironforge"],
+               "type": "location"
+            }
+         ]
+      },
+      {
+         "zone": "ironforge",
+         "waypoints": [
+            {
+               "coords": { "x": 56, "y": 48 },
+               "header": "Ironforge Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 71, "y": 17 },
+               "header": "",
+               "ends": ["Letter to Stormpike"],
+               "starts": ["Further Mysteries", "Reclaimers' Business in Desolace"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 72, "y": 94 },
+               "header": "",
+               "ends": [],
+               "starts": ["The Brassbolts Brothers"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 78, "y": 52 },
+               "header": "Deeprun Tram",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            }
+         ]
+      },
+      {
+         "zone": "stormwind",
+         "waypoints": [
+            {
+               "coords": { "x": 65, "y": 6 },
+               "header": "Deeprun Tram",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 73, "y": 16 },
+               "header": "Major Samuelson",
+               "ends": ["Reassignment"],
+               "starts": [],
+               "objectives": [],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 73, "y": 16 },
+               "header": "Major Samuelson",
+               "ends": ["Reassignment"],
+               "starts": [],
+               "objectives": [],
+               "type": "objective"
             }
          ]
       }
