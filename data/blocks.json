@@ -6325,6 +6325,22 @@
                "type": "quest"
             },
             {
+               "coords": { "x": 46, "y": 48 },
+               "header": "Refuge Point",
+               "ends": ["Northfold Manor", "Worth Its Weight In Gold"],
+               "starts": ["Wand over Fist"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 54, "y": 81 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Wand over Fist"],
+               "type": "location"
+            },
+            {
                "coords": { "x": 45, "y": 89 },
                "header": "Arathi Highlands Bridge",
                "ends": [],
@@ -6382,7 +6398,7 @@
             {
                "coords": { "x": 46, "y": 48 },
                "header": "Refuge Point",
-               "ends": ["Northfold Manor", "Worth Its Weight In Gold"],
+               "ends": ["Wand over Fist"],
                "starts": [],
                "objectives": [],
                "type": "quest"
@@ -7278,6 +7294,389 @@
                "ends": ["The Karnitol Shipwreck P3", "Reagents for Reclaimers Inc. P4"],
                "starts": [],
                "objectives": ["Grind to level 40 and buy a Mount"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "ironforge",
+         "waypoints": [
+            {
+               "coords": { "x": 75, "y": 12 },
+               "header": "The Library",
+               "ends": [],
+               "starts": ["Mythology of the Titans"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 56, "y": 48 },
+               "header": "Ironforge Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fly to Southshore"],
+               "type": "location"
+            }
+         ]
+      },
+      {
+         "zone": "hillsbrad",
+         "waypoints": [
+            {
+               "coords": { "x": 49, "y": 52 },
+               "header": "Southshore Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 50, "y": 54 },
+               "header": "Southshore",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Set Hearthstone"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "hillsbrad",
+         "waypoints": [
+            {
+               "coords": { "x": 50, "y": 54 },
+               "header": "Southshore",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Set Hearthstone"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 49, "y": 52 },
+               "header": "Southshore Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fly to Arathi Highlands"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "arathi",
+         "waypoints": [
+            {
+               "coords": { "x": 46, "y": 46 },
+               "header": "Refuge Point",
+               "ends": [],
+               "starts": ["Trelane's Defenses", "Wanted: Marez Cowl", "Wanted: Otto and Falconcrest", "Stromgarde Badges"],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 67, "y": 36 },
+               "header": "Fozruk Spawn Point",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Breaking the Keystone"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 36, "y": 58 },
+               "header": "Keystone Monument",
+               "ends": ["Breaking the Keystone"],
+               "starts": ["Myzrael's Allies"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 30, "y": 63 },
+               "header": "Stromgarde Keep",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Wanted: Marez Cowl", "Stromgarde Badges"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 26, "y": 66 },
+               "header": "Stromgarde Keep",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Wanted: Otto and Falconcrest", "Stromgarde Badges"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 21, "y": 68 },
+               "header": "Stromgarde Keep",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Trelane's Defenses", "Drops from the Shamans"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "arathi",
+         "waypoints": [
+            {
+               "coords": { "x": 21, "y": 68 },
+               "header": "Stromgarde Keep",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Trelane's Defenses", "Drops from the Shamans"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 46, "y": 46 },
+               "header": "Refuge Point",
+               "ends": ["Trelane's Defenses", "Wanted: Marez Cowl", "Wanted: Otto and Falconcrest", "Stromgarde Badges", "An Apprentice's Enchantment"],
+               "starts": ["An Apprentice's Enchantment", "Attack the Tower"],
+               "objectives": [],
+               "type": "location"
+            }
+         ]
+      },
+      {
+         "zone": "arathi",
+         "waypoints": [
+            {
+               "coords": { "x": 46, "y": 46 },
+               "header": "Refuge Point",
+               "ends": ["Trelane's Defenses", "Wanted: Marez Cowl", "Wanted: Otto and Falconcrest", "Stromgarde Badges", "An Apprentice's Enchantment"],
+               "starts": ["An Apprentice's Enchantment", "Attack the Tower"],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 18, "y": 68 },
+               "header": "The Tower of Arathi",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Attack the Tower", "Loot the three lockboxes"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 26, "y": 54 },
+               "header": "Move Here",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 31, "y": 65 },
+               "header": "Move Here",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 22, "y": 80 },
+               "header": "Move Here",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 32, "y": 82 },
+               "header": "Faldir's Cove",
+               "ends": ["Land Ho!", "Sunken Treasure P1"],
+               "starts": ["Land Ho!", "Deep Sea Salvage", "Drowned Sorrows", "Sunken Treasure P1", "Sunken Treasure P2"],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 22, "y": 89 },
+               "header": "The Drowned Reef",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Sunken Treasure P2", "Drowned Sorrows"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 23, "y": 85 },
+               "header": "Shipwreck 1",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Deep Sea Salvage", "Drowned Sorrows"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 21, "y": 86 },
+               "header": "Shipwreck 2",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Deep Sea Salvage", "Drowned Sorrows"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "arathi",
+         "waypoints": [
+            {
+               "coords": { "x": 21, "y": 86 },
+               "header": "Shipwreck 2",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Deep Sea Salvage", "Drowned Sorrows"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 32, "y": 82 },
+               "header": "Faldir's Cove",
+               "ends": ["Deep Sea Salvage", "Drowned Sorrows", "Sunken Treasure P2", "Sunken Treasure P3"],
+               "starts": ["Sunken Treasure P3", "Sunken Treasure P4"],
+               "objectives": ["Hearthstone to Southshire"],
+               "type": "location"
+            }
+         ]
+      },
+      {
+         "zone": "hillsbrad",
+         "waypoints": [
+            {
+               "coords": { "x": 50, "y": 54 },
+               "header": "Southshore",
+               "ends": ["Down the Scarlet Path P2", "Further Mysteries"],
+               "starts": ["In the Name of the Light", "Preserving Knowledge", "Crushridge Warmongers", "Dark Council", "Noble Deaths"],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 54, "y": 10 },
+               "header": "Alterac Mountains Border",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "alterac",
+         "waypoints": [
+            {
+               "coords": { "x": 52, "y": 69 },
+               "header": "Hillsbrad Foothills Border",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 38, "y": 46 },
+               "header": "Weathered Bookcase",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Preserving Knowledge"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 38, "y": 52 },
+               "header": "Grel'Borg the Miser",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Perenolde Tiara"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 38, "y": 56 },
+               "header": "Ruins of Alterac",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Preserving Knowledge", "Crushridge Warmongers"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 56, "y": 27 },
+               "header": "The Uplands",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Noble Deaths", "Dark Council", "Mages"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 53, "y": 21 },
+               "header": "The Uplands",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Noble Deaths", "Dark Council", "Mages"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 48, "y": 17 },
+               "header": "The Uplands",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Noble Deaths", "Dark Council", "Mages"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 39, "y": 15 },
+               "header": "Dandred's Fold",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Dark Council", "Nagaz"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 19, "y": 12 },
+               "header": "Lordamere Lake",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Move to Scarlet Monastery"],
+               "type": "location"
+            }
+         ]
+      },
+      {
+         "zone": "tirisfal",
+         "waypoints": [
+            {
+               "coords": { "x": 60, "y": 84 },
+               "header": "Lordamere Lake",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Move to Scarlet Monastery"],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 55, "y": 75 },
+               "header": "Lordaeron Road",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Move to Scarlet Monastery"],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 84, "y": 32 },
+               "header": "Scarlet Monastery",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Do Scarlet Monastery with 2 quests", "Remember to Loot the Key", "Hearthstone to Southshore"],
+               "type": "location"
+            }
+         ]
+      },
+      {
+         "zone": "hillsbrad",
+         "waypoints": [
+            {
+               "coords": { "x": 50, "y": 54 },
+               "header": "Southshore",
+               "ends": ["Noble Deaths", "Dark Council", "Preserving Knowledge", "Crushridge Warmongers", "In the Name of the Light"],
+               "starts": ["Return to Milton"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 49, "y": 52 },
+               "header": "Southshore Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fly to Arathi Highlands"],
                "type": "objective"
             }
          ]
