@@ -8082,6 +8082,14 @@
                "type": "quest"
             },
             {
+               "coords": { "x": 54, "y": 44 },
+               "header": "Uldaman Enterance",
+               "ends": [],
+               "starts": ["Shattered Necklace"],
+               "objectives": ["Farm a Shattered Necklace from the dwarves outside"],
+               "type": "quest"
+            },
+            {
                "coords": { "x": 49, "y": 8 },
                "header": "Loch Modan Border",
                "ends": [],
@@ -8138,6 +8146,14 @@
                "starts": [],
                "objectives": [],
                "type": "location"
+            },
+            {
+               "coords": { "x": 53, "y": 60 },
+               "header": "Stormwind Auction House",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Buy the remaining STV Pages"],
+               "type": "objective"
             },
             {
                "coords": { "x": 74, "y": 30 },
@@ -8205,8 +8221,1139 @@
                "header": "Stormwind Flightpath",
                "ends": [],
                "starts": [],
+               "objectives": ["Fly to Booty Bay"],
+               "type": "location"
+            }
+         ]
+      },
+      {
+         "zone": "stv",
+         "waypoints": [
+            {
+               "coords": { "x": 28, "y": 78 },
+               "header": "Booty Bay Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 27, "y": 77 },
+               "header": "Booty Bay",
+               "ends": ["Sunken Treasure P4", "Goblin Sponsorship P2", "Goblin Sponsorship P3"],
+               "starts": ["Singing Blue Shards", "Return to Corporal Kaleb", "Skullsplitter Tusks", "Hostile Takeover", "Water Elementals", "Some Assembly Required", "Goblin Sponsorship P3", "Goblin Sponsorship P4"],
+               "objectives": ["Set Hearthstone"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "stv",
+         "waypoints": [
+            {
+               "coords": { "x": 27, "y": 77 },
+               "header": "Booty Bay",
+               "ends": ["Sunken Treasure P4", "Goblin Sponsorship P2", "Goblin Sponsorship P3"],
+               "starts": ["Singing Blue Shards", "Return to Corporal Kaleb", "Skullsplitter Tusks", "Hostile Takeover", "Water Elementals", "Some Assembly Required", "Goblin Sponsorship P3", "Goblin Sponsorship P4"],
+               "objectives": ["Set Hearthstone"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 28, "y": 78 },
+               "header": "Booty Bay Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fly to Westfall"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "westfall",
+         "waypoints": [
+            {
+               "coords": { "x": 57, "y": 53 },
+               "header": "Sentinel Hill Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 87, "y": 95 },
+               "header": "Stranglethorn Vale River",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "stv",
+         "waypoints": [
+            {
+               "coords": { "x": 33, "y": 8 },
+               "header": "Stranglethorn Vale River",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 36, "y": 11 },
+               "header": "Nesingwary's Expedition",
+               "ends": ["Hemet Nesingwary", "Chapter 1", "Chapter 2", "Chapter 3", "Chapter 4", "The Green Hills of Stranglethorn"],
+               "starts": ["Panther Mastery P3", "Tiger Mastery P3", "Raptor Mastery P3", "Chapter 1", "Chapter 2", "Chapter 3", "Chapter 4", "The Green Hills of Stranglethorn"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 38, "y": 3 },
+               "header": "Rebel Camp",
+               "ends": ["Return to Corporal Kaleb"],
+               "starts": ["Kurzen's Mystery", "Special Forces"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 46, "y": 8 },
+               "header": "The Stock Pile",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Special Forces"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 50, "y": 8 },
+               "header": "Bookie Herod's Strongbox",
+               "ends": ["The Hidden Key"],
+               "starts": ["The Spy Revealed"],
+               "objectives": ["Special Forces"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "stv",
+         "waypoints": [
+            {
+               "coords": { "x": 50, "y": 8 },
+               "header": "Bookie Herod's Strongbox",
+               "ends": ["The Hidden Key"],
+               "starts": ["The Spy Revealed"],
+               "objectives": ["Special Forces"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 38, "y": 3 },
+               "header": "Rebel Camp",
+               "ends": ["The Spy Revealed", "Special Forces", "Patrol Schedule", "Report to Doren"],
+               "starts": ["Colonel Kurzen", "Patrol Schedule", "Report to Doren"],
+               "objectives": [],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "stv",
+         "waypoints": [
+            {
+               "coords": { "x": 38, "y": 3 },
+               "header": "Rebel Camp",
+               "ends": ["The Spy Revealed", "Special Forces", "Patrol Schedule", "Report to Doren"],
+               "starts": ["Colonel Kurzen", "Patrol Schedule", "Report to Doren"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 50, "y": 4 },
+               "header": "The Stockpile",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Colonel Kurzen"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 42, "y": 18 },
+               "header": "Venture Co. Base",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Hostile Takeover", "Goblin Sponsorship P4", "Kill the Foreman", "Loot the chest"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 41, "y": 22 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Some Assembly Required"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 49, "y": 22 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Panther Mastery P3", "6x Panther spawns"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 38, "y": 37 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Panther Mastery P3", "6x Panther spawns"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 37, "y": 42 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Singing Blue Shards"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 31, "y": 43 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Raptor Mastery P3"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 21, "y": 23 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Water Elementals"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 25, "y": 23 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Kurzen's Mystery"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 29, "y": 19 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Kurzen's Mystery"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 32, "y": 17 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Tiger Mastery P3"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 23, "y": 12 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Kurzen's Mystery"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 25, "y": 9 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Kurzen's Mystery"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 36, "y": 11 },
+               "header": "Nesingwary's Expedition",
+               "ends": ["Raptor Mastery P3", "Tiger Mastery P3", "Panther Mastery P3"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "stv",
+         "waypoints": [
+            {
+               "coords": { "x": 36, "y": 11 },
+               "header": "Nesingwary's Expedition",
+               "ends": ["Raptor Mastery P3", "Tiger Mastery P3", "Panther Mastery P3"],
+               "starts": ["Raptor Mastery P4", "Tiger Mastery P4", "Panther Mastery P4"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 38, "y": 3 },
+               "header": "Rebel Camp",
+               "ends": ["Kurzen's Mystery", "Colonel Kurzen"],
+               "starts": ["Troll Witchery"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 32, "y": 17 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Tiger Mastery P4"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 50, "y": 24 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Panther Mastery P4"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 44, "y": 34 },
+               "header": "Balia'mah Ruins",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Skullsplitter Tusks", "Troll Witchery"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 29, "y": 45 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Raptor Mastery P4", "Hearthstone to Booty Bay"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "stv",
+         "waypoints": [
+            {
+               "coords": { "x": 27, "y": 77 },
+               "header": "Booty Bay",
+               "ends": ["Some Assembly Required", "Singing Blue Shards", "Skullsplitter Tusks", "Hostile Takeover", "Water Elementals", "Goblin Sponsorship P4"],
+               "starts": ["Excelsior", "Venture Company Mining", "Magical Analysis", "Goblin Sponsorship P5", "Scaring Shaky", "The Bloodsail Buccaneers P1"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 28, "y": 78 },
+               "header": "Booty Bay Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fly to Westfall"],
+               "type": "location"
+            }
+         ]
+      },
+      {
+         "zone": "westfall",
+         "waypoints": [
+            {
+               "coords": { "x": 57, "y": 53 },
+               "header": "Sentinel Hill Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 87, "y": 95 },
+               "header": "Stranglethorn Vale River",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "stv",
+         "waypoints": [
+            {
+               "coords": { "x": 30, "y": 6 },
+               "header": "Stranglethorn Vale River",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 36, "y": 11 },
+               "header": "Nesingwary's Expedition",
+               "ends": ["Panther Mastery P4", "Tiger Mastery P4", "Raptor Mastery P4"],
+               "starts": ["Big Game Hunter"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 38, "y": 3 },
+               "header": "Rebel Camp",
+               "ends": ["Troll Witchery"],
+               "starts": ["Mai'Zoth"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 30, "y": 25 },
+               "header": "The Savage Coast",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Excelsior"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 38, "y": 36 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Big Game Hunter"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 41, "y": 44 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Venture Company Mining"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 32, "y": 66 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Scaring Shaky"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 27, "y": 69 },
+               "header": "Bloodsail Correspondence",
+               "ends": ["The Bloodsail Buccaneers P1"],
+               "starts": ["The Bloodsail Buccaneers P2"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 27, "y": 77 },
+               "header": "Booty Bay",
+               "ends": ["Scaring Shakey", "The Bloodsail Buccaneers P2", "Return to MacKinley", "Venture Company Mining", "The Bloodsail Buccaneers P3", "Excelsior"],
+               "starts": ["Return to MacKinley", "The Bloodsail Buccaneers P3"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 28, "y": 78 },
+               "header": "Booty Bay Flightpath",
+               "ends": [],
+               "starts": [],
                "objectives": ["Fly to Duskwood"],
                "type": "location"
+            }
+         ]
+      },
+      {
+         "zone": "duskwood",
+         "waypoints": [
+            {
+               "coords": { "x": 78, "y": 44 },
+               "header": "Darkshire Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 76, "y": 46 },
+               "header": "Watchmaster Sorigal",
+               "ends": ["Vital Supplies"],
+               "starts": ["Supplies to Nethergarde"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 87, "y": 41 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Deadwind Pass"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "deadwind",
+         "waypoints": [
+            {
+               "coords": { "x": 32, "y": 36 },
+               "header": "Duskwood Pass",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 58, "y": 42 },
+               "header": "Swamp of Sorrows Border",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            }
+         ]
+      },
+      {
+         "zone": "swamp",
+         "waypoints": [
+            {
+               "coords": { "x": 5, "y": 61 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 11, "y": 32 },
+               "header": "Misty Valley",
+               "ends": [],
+               "starts": ["Mazen's Behest"],
+               "objectives": [],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 26, "y": 31 },
+               "header": "Magtoor",
+               "ends": [],
+               "starts": ["Draenethyst Crystals"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 27, "y": 60 },
+               "header": "Watcher Biggs",
+               "ends": [],
+               "starts": ["Encroaching Wildlife"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 34, "y": 66 },
+               "header": "Blasted Lands Border",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            }
+         ]
+      },
+      {
+         "zone": "blasted",
+         "waypoints": [
+            {
+               "coords": { "x": 52, "y": 7 },
+               "header": "Swamp of Sorrows Border",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 67, "y": 19 },
+               "header": "Nethergarde Keep",
+               "ends": ["Mazen's Behest", "Supplies to Nethergarde"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 66, "y": 24 },
+               "header": "Nethergarde Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Learn the Flightpath"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "blasted",
+         "waypoints": [
+            {
+               "coords": { "x": 66, "y": 24 },
+               "header": "Nethergarde Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Learn the Flightpath"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 52, "y": 7 },
+               "header": "Swamp of Sorrows Border",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            }
+         ]
+      },
+      {
+         "zone": "swamp",
+         "waypoints": [
+            {
+               "coords": { "x": 34, "y": 66 },
+               "header": "Blasted Lands Border",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 28, "y": 52 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Encroaching Wildlife"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 27, "y": 60 },
+               "header": "Watcher Biggs",
+               "ends": ["Encroaching Wildlife"],
+               "starts": ["The Lost Caravan"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 65, "y": 18 },
+               "header": "Caravan Chest",
+               "ends": [],
+               "starts": [],
+               "objectives": ["The Lost Caravan"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 66, "y": 18 },
+               "header": "Galen Goodward",
+               "ends": [],
+               "starts": ["Galen's Escape"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 62, "y": 23 },
+               "header": "Fallow Sanctuary",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Draenethyst Crystals"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 48, "y": 40 },
+               "header": "Galen's Strongbox",
+               "ends": ["Galen's Escape"],
+               "starts": ["Noboru the Cudgel"],
+               "objectives": ["Kill Noboru and loot his quest item"],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 26, "y": 31 },
+               "header": "Magtoor",
+               "ends": ["Draenethyst Crystals", "Noboru the Cudgel"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "swamp",
+         "waypoints": [
+            {
+               "coords": { "x": 26, "y": 31 },
+               "header": "Magtoor",
+               "ends": ["Draenethyst Crystals", "Noboru the Cudgel"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 27, "y": 60 },
+               "header": "Watcher Biggs",
+               "ends": ["The Lost Caravan"],
+               "starts": ["Driftwood"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 66, "y": 56 },
+               "header": "Pool of Tears",
+               "ends": [],
+               "starts": [],
+               "objectives": ["In Search of the Sunken Temple"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 90, "y": 74 },
+               "header": "Misty Reed Strand",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Driftwood"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "swamp",
+         "waypoints": [
+            {
+               "coords": { "x": 90, "y": 74 },
+               "header": "Misty Reed Strand",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Driftwood"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 27, "y": 60 },
+               "header": "Watcher Biggs",
+               "ends": ["Driftwood"],
+               "starts": ["Deliver the Shipment"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 34, "y": 66 },
+               "header": "Blasted Lands Border",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            }
+         ]
+      },
+      {
+         "zone": "blasted",
+         "waypoints": [
+            {
+               "coords": { "x": 52, "y": 7 },
+               "header": "Swamp of Sorrows Border",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 67, "y": 19 },
+               "header": "Nethergarde Keep",
+               "ends": ["Deliver the Shipment"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 66, "y": 24 },
+               "header": "Nethergarde Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fly to Stormwind"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "stormwind",
+         "waypoints": [
+            {
+               "coords": { "x": 66, "y": 62 },
+               "header": "Stormwind Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 64, "y": 21 },
+               "header": "Brohann Caskbelly",
+               "ends": ["In Search of the Temple"],
+               "starts": ["To the Hinterlands"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 65, "y": 6 },
+               "header": "Deeprun Tram",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Move to Ironforge"],
+               "type": "location"
+            }
+         ]
+      },
+      {
+         "zone": "ironforge",
+         "waypoints": [
+            {
+               "coords": { "x": 78, "y": 52 },
+               "header": "Deeprun Tram",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 75, "y": 12 },
+               "header": "The Library",
+               "ends": [],
+               "starts": ["The Lost Dwarves", "Reclaimed Treasures"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 25, "y": 74 },
+               "header": "Ironforge Auction House",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Buy 5x Silver Bar"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 36, "y": 4 },
+               "header": "Talvash del Kissel",
+               "ends": ["The Shattered Necklace", "Lore for a Price"],
+               "starts": ["Lore for a Price", "Back to Uldaman"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 56, "y": 48 },
+               "header": "Ironforge Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fly to Loch Modan"],
+               "type": "location"
+            }
+         ]
+      },
+      {
+         "zone": "loch-modan",
+         "waypoints": [
+            {
+               "coords": { "x": 34, "y": 51 },
+               "header": "Loch Modan Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 37, "y": 49 },
+               "header": "Ghak Healtouch",
+               "ends": [],
+               "starts": ["Uldaman Reagent Run"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 66, "y": 66 },
+               "header": "Prospector Ironband",
+               "ends": [],
+               "starts": ["Agmond's Fate"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 47, "y": 81 },
+               "header": "Badlands Border",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "badlands",
+         "waypoints": [
+            {
+               "coords": { "x": 49, "y": 8 },
+               "header": "Loch Modan Border",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 51, "y": 77 },
+               "header": "Thelduin the Lost",
+               "ends": [],
+               "starts": ["Summoning the Princess", "Solution to Doom"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 43, "y": 54 },
+               "header": "Valley of Fangs",
+               "ends": [],
+               "starts": ["Power Stones"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 54, "y": 44 },
+               "header": "Hillside Camp",
+               "ends": [],
+               "starts": ["A Sign of Hope"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 40, "y": 11 },
+               "header": "Uldaman",
+               "ends": [],
+               "starts": [],
+               "objectives": ["After the run, die and take ress sickness"],
+               "type": "location"
+            }
+         ]
+      },
+      {
+         "zone": "badlands",
+         "waypoints": [
+            {
+               "coords": { "x": 64, "y": 30 },
+               "header": "Spirit Healer",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Take ress sickness"],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 51, "y": 77 },
+               "header": "Thelduin the Lost",
+               "ends": ["Solution to Doom"],
+               "starts": ["To Ironforge for Yagyin's Digest"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 43, "y": 54 },
+               "header": "Valley of Fangs",
+               "ends": ["Power Stones"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 54, "y": 44 },
+               "header": "Hillside Camp",
+               "ends": ["Prospect of Faith P1"],
+               "starts": ["Prospect of Faith P2"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 49, "y": 8 },
+               "header": "Loch Modan Border",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            }
+         ]
+      },
+      {
+         "zone": "loch-modan",
+         "waypoints": [
+            {
+               "coords": { "x": 47, "y": 81 },
+               "header": "Badlands Border",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 66, "y": 66 },
+               "header": "Prospector Ironband",
+               "ends": ["Agmond's Fate"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 37, "y": 49 },
+               "header": "Ghak Healtouch",
+               "ends": ["Uldaman Reagent Run"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 34, "y": 51 },
+               "header": "Loch Modan Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fly to Ironforge"],
+               "type": "location"
+            }
+         ]
+      },
+      {
+         "zone": "ironforge",
+         "waypoints": [
+            {
+               "coords": { "x": 56, "y": 48 },
+               "header": "Ironforge Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 75, "y": 12 },
+               "header": "The Library",
+               "ends": ["The Platinum Disks P2", "The Hidden Chamber", "Reclaimed Treasure", "Prospect of Faith P2", "Passing Word of Threat P1", "Passing Word of Threat P2"],
+               "starts": ["The Platinum Disks P3", "Passing Word of Threat P1", "Passing Word of Threat P2"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 51, "y": 5 },
+               "header": "Gerrig Bonegrip",
+               "ends": ["To Ironforge for Yagyin's Digest"],
+               "starts": ["The Star, the Hand and the Heart"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 36, "y": 4 },
+               "header": "Talvash del Kissel",
+               "ends": ["Restoring the Necklace P1", "Restoring the Necklace P2"],
+               "starts": ["Restoring the Necklace P2"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 34, "y": 60 },
+               "header": "Dina Stonemantle",
+               "ends": ["The Platinum Disks P3"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "ironforge",
+         "waypoints": [
+            {
+               "coords": { "x": 34, "y": 60 },
+               "header": "Dina Stonemantle",
+               "ends": ["The Platinum Disks P3"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 56, "y": 48 },
+               "header": "Ironforge Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fly to Arathi Highlands"],
+               "type": "location"
+            }
+         ]
+      },
+      {
+         "zone": "arathi",
+         "waypoints": [
+            {
+               "coords": { "x": 46, "y": 46 },
+               "header": "Refuge Point Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 63, "y": 34 },
+               "header": "Shard of Myzrael",
+               "ends": ["Summoning the Princess"],
+               "starts": [],
+               "objectives": ["Summoning the Princess"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "arathi",
+         "waypoints": [
+            {
+               "coords": { "x": 63, "y": 34 },
+               "header": "Shard of Myzrael",
+               "ends": ["Summoning the Princess"],
+               "starts": [],
+               "objectives": ["Summoning the Princess"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 46, "y": 46 },
+               "header": "Refuge Point Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fly to Southshore"],
+               "type": "location"
+            }
+         ]
+      },
+      {
+         "zone": "hillsbrad",
+         "waypoints": [
+            {
+               "coords": { "x": 49, "y": 52 },
+               "header": "Southshore Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Learn the Flightpath"],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 25, "y": 17 },
+               "header": "Archmage Ansirem Runeweaver",
+               "ends": ["Magical Analysis"],
+               "starts": ["Ansirem's Key"],
+               "objectives": [],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "alterac",
+         "waypoints": [
+            {
+               "coords": { "x": 19, "y": 79 },
+               "header": "Archmage Ansirem Runeweaver",
+               "ends": ["Magical Analysis"],
+               "starts": ["Ansirem's Key"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 38, "y": 52 },
+               "header": "Ruins of Alterac",
+               "ends": [],
+               "starts": [],
+               "objectives": ["The Star, the Hand and the Heart", "Hearthstone to Booty Bay"],
+               "type": "objective"
             }
          ]
       }
