@@ -174,7 +174,7 @@
                "coords": { "x": 74, "y": 72 },
                "header": "Guard Thomas",
                "ends": ["Further Concerns"],
-               "starts": ["Find the Lost Guards", "Bountry on Murlocs", "Protect the Frontier"],
+               "starts": ["Find the Lost Guards", "Bounty on Murlocs", "Protect the Frontier"],
                "objectives": [],
                "type": "quest"
             },
@@ -199,7 +199,7 @@
                "header": "Rolf's Corpse",
                "ends": ["Discover Rolf's Fate"],
                "starts": ["Report to Thomas"],
-               "objectives": [],
+               "objectives": ["Bounty on Murlocs"],
                "type": "quest"
             },
             {
@@ -242,7 +242,7 @@
             {
                "coords": { "x": 74, "y": 72 },
                "header": "Guard Thomas",
-               "ends": ["Bountry on Murlocs", "Protect the Frontier", "Report to Thomas"],
+               "ends": ["Bounty on Murlocs", "Protect the Frontier", "Report to Thomas"],
                "starts": ["Deliver Thomas's Report", "Report to Gryan Stoutmantle"],
                "objectives": [],
                "type": "quest"
@@ -5506,7 +5506,7 @@
                "coords": { "x": 40, "y": 82 },
                "header": "Archmage Malin",
                "ends": [],
-               "starts": ["Malin's Request"],
+               "starts": ["Malin's Request P1"],
                "objectives": [],
                "type": "quest"
             },
@@ -5690,7 +5690,7 @@
             {
                "coords": { "x": 46, "y": 47 },
                "header": "Refuge Point",
-               "ends": ["Malin's Request", "Plea to the Alliance"],
+               "ends": ["Malin's Request P1", "Plea to the Alliance"],
                "starts": [],
                "objectives": [],
                "type": "location"
@@ -6471,9 +6471,9 @@
             },
             {
                "coords": { "x": 74, "y": 30 },
-               "header": "Major Samuelson",
+               "header": "Count Remington Ridgewell",
                "ends": [],
-               "starts": ["The Perenholde Tiara"],
+               "starts": ["The Perenolde Tiara"],
                "objectives": [],
                "type": "quest"
             },
@@ -7578,7 +7578,7 @@
                "header": "Grel'Borg the Miser",
                "ends": [],
                "starts": [],
-               "objectives": ["Perenolde Tiara"],
+               "objectives": ["The Perenolde Tiara"],
                "type": "objective"
             },
             {
@@ -7678,6 +7678,535 @@
                "starts": [],
                "objectives": ["Fly to Arathi Highlands"],
                "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "arathi",
+         "waypoints": [
+            {
+               "coords": { "x": 46, "y": 48 },
+               "header": "Refuge Point",
+               "ends": ["Attack of the Tower"],
+               "starts": ["Malin's Request P2"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 46, "y": 46 },
+               "header": "Refuge Point Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fly to Ironforge"],
+               "type": "location"
+            }
+         ]
+      },
+      {
+         "zone": "ironforge",
+         "waypoints": [
+            {
+               "coords": { "x": 56, "y": 48 },
+               "header": "Ironforge Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 51, "y": 5 },
+               "header": "Gerrig Bonegrip",
+               "ends": ["Myzrael's Allies"],
+               "starts": ["Thelduin the Lost"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 75, "y": 12 },
+               "header": "The Library",
+               "ends": ["Mythology of the Titans"],
+               "starts": ["Ironband Wants You"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 68, "y": 46 },
+               "header": "Klockmort Spannerspan",
+               "ends": [],
+               "starts": ["The Brassbolts Brothers"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 25, "y": 74 },
+               "header": "Ironforge Auction House",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Buy 1x Frost Oil", "Buy 1x Gyrochronatom", "Buy 1x Healing Potion", "Buy 1x Lesser Invisibility Potion", "Buy 1x Patterned Bronze Bracers"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "ironforge",
+         "waypoints": [
+            {
+               "coords": { "x": 25, "y": 74 },
+               "header": "Ironforge Auction House",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Buy 1x Frost Oil", "Buy 1x Gyrochronatom", "Buy 1x Healing Potion", "Buy 1x Lesser Invisibility Potion", "Buy 1x Patterned Bronze Bracers"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 56, "y": 48 },
+               "header": "Ironforge Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fly to Loch Modan"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "loch-modan",
+         "waypoints": [
+            {
+               "coords": { "x": 34, "y": 51 },
+               "header": "Loch Modan Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 37, "y": 49 },
+               "header": "Ghak Healtouch",
+               "ends": [],
+               "starts": ["Badlands Reagent Run"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 66, "y": 66 },
+               "header": "Prospector Ironband",
+               "ends": ["Ironband Wants You"],
+               "starts": ["Find Agmond"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 47, "y": 81 },
+               "header": "Badlands Border",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "badlands",
+         "waypoints": [
+            {
+               "coords": { "x": 49, "y": 8 },
+               "header": "Loch Modan Border",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 54, "y": 44 },
+               "header": "Hillside Camp",
+               "ends": [],
+               "starts": ["A Dwarf and His Tools", "Mirages", "Fiery Blaze Enchantments"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 54, "y": 33 },
+               "header": "Hammertoe's Digsite",
+               "ends": [],
+               "starts": ["A Sign of Hope"],
+               "objectives": ["Look for the Crumpled Map", "A Dwarf and His Tools"],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 67, "y": 23 },
+               "header": "Excavation Supply Crate",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Mirages"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "badlands",
+         "waypoints": [
+            {
+               "coords": { "x": 67, "y": 23 },
+               "header": "Excavation Supply Crate",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Mirages"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 54, "y": 44 },
+               "header": "Hillside Camp",
+               "ends": ["A Dwarf and His Tools", "Mirages", "A Sign of Hope"],
+               "starts": ["Scrounging"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 57, "y": 53 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Badlands Reagent Run", "Coyotes"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 62, "y": 54 },
+               "header": "Garek",
+               "ends": [],
+               "starts": ["Tremors of the Earth"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 43, "y": 54 },
+               "header": "Valley of Fangs",
+               "ends": ["Martek the Exiled"],
+               "starts": ["Indurium", "Barbequed Buzzard Wings"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 51, "y": 62 },
+               "header": "Battered Dwarven Skeleton",
+               "ends": ["Find Agmond"],
+               "starts": ["Murdaloc"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 50, "y": 70 },
+               "header": "Agmond's End",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Murdaloc", "Indurium"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 51, "y": 77 },
+               "header": "Thelduin the Lost",
+               "ends": ["Thelduin the Lost"],
+               "starts": ["The Lost Fragments"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 54, "y": 83 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["The Lost Fragments"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "badlands",
+         "waypoints": [
+            {
+               "coords": { "x": 54, "y": 83 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["The Lost Fragments"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 51, "y": 77 },
+               "header": "Thelduin the Lost",
+               "ends": ["The Lost Fragments"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 26, "y": 45 },
+               "header": "Gnome Encampment",
+               "ends": ["Coolant Heads Prevail", "Gyro.. What?"],
+               "starts": ["Coolant Heads Prevail", "Gyro.. What?", "Study of the Elements: Rock P1"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 20, "y": 45 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Study of the Elements: Rock P1", "Badlands Reagent Run"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "badlands",
+         "waypoints": [
+            {
+               "coords": { "x": 20, "y": 45 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Study of the Elements: Rock P1", "Badlands Reagent Run"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 26, "y": 45 },
+               "header": "Gnome Encampment",
+               "ends": ["Study of the Elements: Rock P1"],
+               "starts": ["Study of the Elements: Rock P2"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 15, "y": 37 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Study of the Elements: Rock P2", "Badlands Reagent Run"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "badlands",
+         "waypoints": [
+            {
+               "coords": { "x": 15, "y": 37 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Study of the Elements: Rock P2", "Badlands Reagent Run"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 26, "y": 45 },
+               "header": "Gnome Encampment",
+               "ends": ["Study of the Elements: Rock P2"],
+               "starts": ["Study of the Elements: Rock P3"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 16, "y": 60 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Barbecued Buzzard Wings", "Badlands Reagent Run"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 13, "y": 76 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Scrounging", "Tremors of the Earth"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 2, "y": 80 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Study of the Elements: Rock P3"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "badlands",
+         "waypoints": [
+            {
+               "coords": { "x": 2, "y": 80 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Study of the Elements: Rock P3"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 26, "y": 45 },
+               "header": "Gnome Encampment",
+               "ends": ["Study of the Elements: Rock P3", "This Is Going to Be Hard P1", "This Is Going to Be Hard P2", "This Is Going to Be Hard P3", "Liquid Stone", "Stone is Better Than Cloth"],
+               "starts": ["This Is Going to Be Hard P1", "This Is Going to Be Hard P2", "This Is Going to Be Hard P3", "Liquid Stone", "Stone is Better Than Cloth"],
+               "objectives": ["This Is Going to Be Hard P3"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 43, "y": 54 },
+               "header": "Valley of Fangs",
+               "ends": ["Indurium", "Barbequed Buzzard Wings"],
+               "starts": ["News For Fizzle"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 62, "y": 54 },
+               "header": "Garek",
+               "ends": ["Tremors of the Earth"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 73, "y": 59 },
+               "header": "Lethlor Ravine",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fiery Blaze Enchantments"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 54, "y": 44 },
+               "header": "Hillside Camp",
+               "ends": ["Scrounging", "Fiery Blaze Enchantments"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 49, "y": 8 },
+               "header": "Loch Modan Border",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            }
+         ]
+      },
+      {
+         "zone": "loch-modan",
+         "waypoints": [
+            {
+               "coords": { "x": 47, "y": 81 },
+               "header": "Badlands Border",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 66, "y": 66 },
+               "header": "Prospector Ironband",
+               "ends": ["Murdaloc"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 37, "y": 49 },
+               "header": "Ghak Healtouch",
+               "ends": ["Badlands Reagent Run"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 34, "y": 51 },
+               "header": "Loch Modan Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fly to Stormwind"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "stormwind",
+         "waypoints": [
+            {
+               "coords": { "x": 66, "y": 62 },
+               "header": "Stormwind Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 74, "y": 30 },
+               "header": "Count Remington Ridgewell",
+               "ends": ["The Perenolde Tiara"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 74, "y": 8 },
+               "header": "Milton Sheaf",
+               "ends": ["Return to Milton"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 64, "y": 21 },
+               "header": "Brohann Caskbelly",
+               "ends": [],
+               "starts": ["In Search of the Temple"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 41, "y": 64 },
+               "header": "Mazens House",
+               "ends": ["Mazens Behest P1"],
+               "starts": ["Mazens Behest P1", "Mazens Behest P2"],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 40, "y": 82 },
+               "header": "Archmage Malin",
+               "ends": ["Malin's Request"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 38, "y": 82 },
+               "header": "Mage Tower",
+               "ends": [],
+               "starts": ["Vital Supplies"],
+               "objectives": [],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "stormwind",
+         "waypoints": [
+            {
+               "coords": { "x": 38, "y": 82 },
+               "header": "Mage Tower",
+               "ends": [],
+               "starts": ["Vital Supplies"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 66, "y": 62 },
+               "header": "Stormwind Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fly to Duskwood"],
+               "type": "location"
             }
          ]
       }
