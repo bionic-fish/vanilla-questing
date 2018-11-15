@@ -1,0 +1,21 @@
+{
+   "zone": "",
+   "waypoints": [
+      {
+         "coords": { "x": 0, "y": 0 },
+         "header": "",
+         "ends": [],
+         "starts": [],
+         "objectives": [],
+         "type": "quest"
+      },
+      {
+         "coords": { "x": 0, "y": 0 },
+         "header": "",
+         "ends": [],
+         "starts": [],
+         "objectives": [],
+         "type": "quest"
+      }
+   ]
+}

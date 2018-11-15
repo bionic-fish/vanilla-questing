@@ -9647,6 +9647,870 @@
                "type": "location"
             }
          ]
+      },
+      {
+         "zone": "tanaris",
+         "waypoints": [
+            {
+               "coords": { "x": 51, "y": 29 },
+               "header": "Tanaris Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 52, "y": 28 },
+               "header": "Gadgetzan",
+               "ends": ["Tran'Rek"],
+               "starts": ["Thistleshrub Valley", "Handle With Care", "The Dunemaul Compound", "Wanted: Caliph Scorpidsting", "Wanted: Andre Firebeard", "Gadgetzan Water Survey", "The Thirsty Goblin", "Wastewander Justice", "Water Pouch Bounty"],
+               "objectives": ["Set Hearthstone"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 60, "y": 23 },
+               "header": "Noonshade Ruins",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Wastewander Justice", "Water Pouch Bounty"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "tanaris",
+         "waypoints": [
+            {
+               "coords": { "x": 60, "y": 23 },
+               "header": "Noonshade Ruins",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Wastewander Justice", "Water Pouch Bounty"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 52, "y": 28 },
+               "header": "Gadgetzan",
+               "ends": ["Wastewander Justice", "Water Pouch Bounty"],
+               "starts": ["More Wastewander Justice"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 39, "y": 29 },
+               "header": "Sandsorrow Watch",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Gadgetzan Water Survey"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 61, "y": 38 },
+               "header": "Waterspring Field",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Wanted: Caliph Scorpidsting", "More Wastewander Justice"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 67, "y": 23 },
+               "header": "Steamwheedle Port",
+               "ends": ["Stoley's Debt"],
+               "starts": ["Pirate Hats Ahoy!", "Screecher Spirits", "Stoley's Shipment", "Southsea Shakedown"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 72, "y": 47 },
+               "header": "Lost Rigger Cove",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Wanted: Andre Firebeard", "Pirate Hats Ahoy!", "Southsea Shake Down", "Stoley's Shipment", "Hearthstone to Gadgetzan"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "tanaris",
+         "waypoints": [
+            {
+               "coords": { "x": 52, "y": 28 },
+               "header": "Gadgetzan",
+               "ends": ["Gadgetzan Water Survey", "More Wastewander Justice", "Wanted: Caliph Scorpidsting"],
+               "starts": ["Noxious Lair Investigation"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 67, "y": 23 },
+               "header": "Steamwheedle Port",
+               "ends": ["Pirate Hats Ahoy!", "Stoley's Shipment", "Southsea Shakedown"],
+               "starts": ["Deliver To MacKinley"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 53, "y": 46 },
+               "header": "Marvon",
+               "ends": [],
+               "starts": ["Gahz'Ridian"],
+               "objectives": ["Equip the Helmet"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 36, "y": 42 },
+               "header": "The Noxious Lair",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Noxious Lair Investigation"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "tanaris",
+         "waypoints": [
+            {
+               "coords": { "x": 36, "y": 42 },
+               "header": "The Noxious Lair",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Noxious Lair Investigation"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 52, "y": 28 },
+               "header": "Gadgetzan",
+               "ends": ["Noxious Lair Investigation"],
+               "starts": ["The Shrimshank Redemption"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 41, "y": 56 },
+               "header": "Dunemaul Compound",
+               "ends": [],
+               "starts": [],
+               "objectives": ["The Dunemaul Compound"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 29, "y": 65 },
+               "header": "Thistleshrub Valley",
+               "ends": [],
+               "starts": [],
+               "objectives": ["The Thirsty Goblin", "Thistleshrub Valley"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 41, "y": 73 },
+               "header": "Southmoon Ruins",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Ghaz'Ridian"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 47, "y": 66 },
+               "header": "Eastmoon Ruins",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Ghaz'Ridian"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 55, "y": 71 },
+               "header": "The Gaping Chasm",
+               "ends": [],
+               "starts": [],
+               "objectives": ["The Shrimshank Redemption", "Hearthstone to Gadgetzan"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "tanaris",
+         "waypoints": [
+            {
+               "coords": { "x": 52, "y": 28 },
+               "header": "Gadgetzan",
+               "ends": ["The Shrimshank Redemption", "Insect Part Analysis P1", "Insect Part Analysis P2", "The Thirsty Goblin", "Thistleshrub Valley", "In Good Taste", "The Dunemaul Compound"],
+               "starts": ["Insect Part Analysis P1", "Insect Part Analysis P2", "Insect Part Analysis P3", "In Good Taste", "Sprinkle's Secret Ingredient"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 53, "y": 46 },
+               "header": "Marvon",
+               "ends": ["Gahz'Ridian"],
+               "starts": [],
+               "objectives": ["Equip your Helmet"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 51, "y": 29 },
+               "header": "Tanaris Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fly to Feralas"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "feralas",
+         "waypoints": [
+            {
+               "coords": { "x": 89, "y": 46 },
+               "header": "Thalanaar Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 66, "y": 46 },
+               "header": "",
+               "ends": ["Freedom for All Creatures", "Doling Justice P1"],
+               "starts": ["Freedom for All Creatures", "Doling Justice P1", "Doling Justice P2"],
+               "objectives": ["Freedom for All Creatures", "Doling Justice P1"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 46, "y": 49 },
+               "header": "The Forgotten Coast",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 45, "y": 43 },
+               "header": "Zorbin Fandazzle",
+               "ends": [],
+               "starts": ["Zapped Giants", "Fuel for the Zapping"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 31, "y": 45 },
+               "header": "Feathermoon Stronghold",
+               "ends": ["The Missing Courier P1"],
+               "starts": ["In Search of Knowledge", "The High Wilderness", "The Sunken Temple", "The Mark of Quality", "The Ruins of Solarsal", "The Missing Courier P1", "The Missing Courier P2"],
+               "objectives": ["Set Hearthstone"],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 30, "y": 43 },
+               "header": "Feathermoon Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Learn the Flightpath"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 26, "y": 52 },
+               "header": "Solarsal Gazebo",
+               "ends": ["The Ruins of Solarsal"],
+               "starts": ["Return to Feathermoon Stronghold"],
+               "objectives": [],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "feralas",
+         "waypoints": [
+            {
+               "coords": { "x": 26, "y": 52 },
+               "header": "Solarsal Gazebo",
+               "ends": ["The Ruins of Solarsal"],
+               "starts": ["Return to Feathermoon Stronghold"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 30, "y": 46 },
+               "header": "Shandris Feathermoon",
+               "ends": ["Return to Feathermoon Stronghold", "Against the Hatecrest P1"],
+               "starts": ["Against the Hatecrest P1", "Against the Hatecrest P2"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 29, "y": 55 },
+               "header": "The Ruins of Solarsal",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Against the Hatecrest P2"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "feralas",
+         "waypoints": [
+            {
+               "coords": { "x": 29, "y": 55 },
+               "header": "The Ruins of Solarsal",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Against the Hatecrest P2"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 30, "y": 46 },
+               "header": "Shandris Feathermoon",
+               "ends": ["Return to Feathermoon Stronghold", "Against the Hatecrest P1"],
+               "starts": ["Against the Hatecrest P1", "Against the Hatecrest P2"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 30, "y": 46 },
+               "header": "Latronicus Moonspear",
+               "ends": ["Against the Hatecrest P2"],
+               "starts": ["Against Lord Shalzaru"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 29, "y": 70 },
+               "header": "Shalzaru's Lair",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Against Lord Shalzaru"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 45, "y": 65 },
+               "header": "Wrecked Row Boat",
+               "ends": ["The Missing Courier P2"],
+               "starts": ["Boat Wreckage"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 46, "y": 59 },
+               "header": "The Forgotten Coast",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Zapped Giants", "Fuel for the Zapping"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 47, "y": 54 },
+               "header": "The Forgotten Coast",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Zapped Giants", "Fuel for the Zapping"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 45, "y": 48 },
+               "header": "The Forgotten Coast",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Zapped Giants", "Fuel for the Zapping"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 45, "y": 43 },
+               "header": "Zorbin Fandazzle",
+               "ends": ["Zapped Giants", "Fuel for the Zapping"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 55, "y": 56 },
+               "header": "Feral Scar Vale",
+               "ends": [],
+               "starts": [],
+               "objectives": ["The Mark of Quality"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 60, "y": 64 },
+               "header": "Ruins of Isildien",
+               "ends": [],
+               "starts": [],
+               "objectives": ["The High Wilderness"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 61, "y": 57 },
+               "header": "Ruins of Isildien",
+               "ends": [],
+               "starts": [],
+               "objectives": ["The High Wilderness", "Hearthstone to Feathermoon Stronghold"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "feralas",
+         "waypoints": [
+            {
+               "coords": { "x": 31, "y": 45 },
+               "header": "Feathermoon Stronghold",
+               "ends": ["The Mark of Quality", "The High Wilderness", "Against Lord Shalzaru", "Delivering the Relics", "Boat Wreckage", "The Knife Revealed", "Psychometric Reading"],
+               "starts": ["Improved Quality", "Delivering the Relics", "The Knife Revealed", "Psychometric Reading", "The Woodpaw Gnolls"],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 53, "y": 32 },
+               "header": "Rage Scar Hold",
+               "ends": [],
+               "starts": ["Pristine Yeti Hide"],
+               "objectives": ["Improved Quality"],
+               "type": "location"
+            }
+         ]
+      },
+      {
+         "zone": "feralas",
+         "waypoints": [
+            {
+               "coords": { "x": 53, "y": 32 },
+               "header": "Rage Scar Hold",
+               "ends": [],
+               "starts": ["Pristine Yeti Hide"],
+               "objectives": ["Improved Quality"],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 31, "y": 45 },
+               "header": "Feathermoon Stronghold",
+               "ends": ["Pristine Yeti Hide", "Improved Quality"],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 30, "y": 43 },
+               "header": "Feathermoon Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fly to Thalanaar"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 89, "y": 46 },
+               "header": "Thalanaar Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 73, "y": 56 },
+               "header": "Large Leather Backpack",
+               "ends": ["The Woodpaw Gnolls"],
+               "starts": ["The Writhing Deep", "Thalanaar Delivery"],
+               "objectives": ["Quest Starting Drop"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 74, "y": 64 },
+               "header": "The Writhing Deep",
+               "ends": ["The Writhing Deep"],
+               "starts": ["Freed From the Hive"],
+               "objectives": ["At the bottom of the Hive"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "feralas",
+         "waypoints": [
+            {
+               "coords": { "x": 74, "y": 64 },
+               "header": "The Writhing Deep",
+               "ends": ["The Writhing Deep"],
+               "starts": ["Freed From the Hive"],
+               "objectives": ["At the bottom of the Hive"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 89, "y": 46 },
+               "header": "Thalanaar Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fly to Feathermoon"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 30, "y": 43 },
+               "header": "Feathermoon Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 31, "y": 45 },
+               "header": "Feathermoon Stronghold",
+               "ends": ["Freed From the Hive", "A Hero's Welcome"],
+               "starts": ["A Hero's Welcome", "Rise of the Silithis"],
+               "objectives": [],
+               "type": "location"
+            }
+         ]
+      },
+      {
+         "zone": "feralas",
+         "waypoints": [
+            {
+               "coords": { "x": 31, "y": 45 },
+               "header": "Feathermoon Stronghold",
+               "ends": ["Freed From the Hive", "A Hero's Welcome"],
+               "starts": ["A Hero's Welcome", "Rise of the Silithis"],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 30, "y": 43 },
+               "header": "Feathermoon Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fly to Darnassus"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "teldrassil",
+         "waypoints": [
+            {
+               "coords": { "x": 58, "y": 94 },
+               "header": "Rut'theran Village Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 55, "y": 92 },
+               "header": "Erelas Ambersky",
+               "ends": ["Handle With Care"],
+               "starts": ["Favored of Elune?"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 56, "y": 90 },
+               "header": "Darnassus Teleporter",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "darnassus",
+         "waypoints": [
+            {
+               "coords": { "x": 31, "y": 41 },
+               "header": "Darnassus Teleporter",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 40, "y": 85 },
+               "header": "Temple of the Moon",
+               "ends": ["Rise of the Silithid", "Rise of the Silithid", "Doling Justice"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 56, "y": 54 },
+               "header": "Darnassus Auction House",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Buy 15x Morrograin", "Buy 2x Elixir of Fortitude", "Hearthstone to Feathermoon Stronghold"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "feralas",
+         "waypoints": [
+            {
+               "coords": { "x": 31, "y": 45 },
+               "header": "Feathermoon Stronghold",
+               "ends": ["The Mystery of Morrowgrain", "Morrowgrain to Feathermoon Stronghold"],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 30, "y": 43 },
+               "header": "Feathermoon Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fly to Thalanaar"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 89, "y": 46 },
+               "header": "Thalanaar Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 66, "y": 46 },
+               "header": "",
+               "ends": [],
+               "starts": ["An Orphan Looking For a Home"],
+               "objectives": [],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "feralas",
+         "waypoints": [
+            {
+               "coords": { "x": 66, "y": 46 },
+               "header": "",
+               "ends": [],
+               "starts": ["An Orphan Looking For a Home"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 89, "y": 46 },
+               "header": "Thalanaar Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fly to Tanaris"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "tanaris",
+         "waypoints": [
+            {
+               "coords": { "x": 51, "y": 29 },
+               "header": "Tanaris Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 53, "y": 46 },
+               "header": "Marvon",
+               "ends": ["The Sunken Temple"],
+               "starts": ["The Stone Circle"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 67, "y": 23 },
+               "header": "Steamwheedle Port",
+               "ends": ["Screecher Spirits"],
+               "starts": ["The Prophecy of Mosh'aru"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 51, "y": 22 },
+               "header": "Thousand Needles Border",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "thousand-needles",
+         "waypoints": [
+            {
+               "coords": { "x": 75, "y": 96 },
+               "header": "Tanaris Border",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Run to Tanaris"],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 79, "y": 77 },
+               "header": "The Shimmering Flats",
+               "ends": ["The Brassbolts Brothers", "News For Fizzle", "Parts For Kravel", "Goblin Sponsorship P5", "Goblin Sponsorship P6", "An Orphan Looking For A Home", "A Short incubation"],
+               "starts": ["Goblin Sponsorship P6", "Gahz'Rilla", "A Short incubation", "The Newest Member of the Family"],
+               "objectives": [],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "thousand-needles",
+         "waypoints": [
+            {
+               "coords": { "x": 79, "y": 77 },
+               "header": "The Shimmering Flats",
+               "ends": ["The Brassbolts Brothers", "News For Fizzle", "Parts For Kravel", "Goblin Sponsorship P5", "Goblin Sponsorship P6", "An Orphan Looking For A Home", "A Short incubation"],
+               "starts": ["Goblin Sponsorship P6", "Gahz'Rilla", "A Short incubation", "The Newest Member of the Family"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 75, "y": 96 },
+               "header": "Tanaris Border",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Run to Tanaris"],
+               "type": "location"
+            }
+         ]
+      },
+      {
+         "zone": "tanaris",
+         "waypoints": [
+            {
+               "coords": { "x": 51, "y": 22 },
+               "header": "Thousand Needles Border",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 51, "y": 29 },
+               "header": "Tanaris Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fly to Ratchet"],
+               "type": "location"
+            }
+         ]
+      },
+      {
+         "zone": "barrens",
+         "waypoints": [
+            {
+               "coords": { "x": 63, "y": 37 },
+               "header": "Ratchet Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Learn the Flightpath"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 63, "y": 39 },
+               "header": "Marvon's Chest",
+               "ends": [],
+               "starts": [],
+               "objectives": ["The Stone Circle"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 64, "y": 39 },
+               "header": "Ratchet Harbor",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Ride to Booty Bay"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "stv",
+         "waypoints": [
+            {
+               "coords": { "x": 26, "y": 73 },
+               "header": "Booty Bay Harbor",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 27, "y": 77 },
+               "header": "Booty Bay",
+               "ends": ["Deliver to MacKinley"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 28, "y": 78 },
+               "header": "Booy Bay Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fly to Southshore"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "hillsbrad",
+         "waypoints": [
+            {
+               "coords": { "x": 49, "y": 52 },
+               "header": "Southshore Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 50, "y": 54 },
+               "header": "Southshore Inn",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Set Hearthstone"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 89, "y": 26 },
+               "header": "Hinterlands Border",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "hinterlands",
+         "waypoints": [
+            {
+               "coords": { "x": 6, "y": 62 },
+               "header": "Hillsbrad Foothills Border",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 11, "y": 46 },
+               "header": "Hinterlands Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Learn the Flightpath"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 13, "y": 46 },
+               "header": "Wildhammer Keep",
+               "ends": ["To The Hinterlands", "Gryphon Master Talonaxe", "The Newest Member of the Family"],
+               "starts": ["Gryphon Master Talonaxe", "Rhapsody Shindigger", "Witherbark Cages", "Skult Rock Clean-up", "Food for Baby"],
+               "objectives": [],
+               "type": "quest"
+            }
+         ]
       }
    ]
 }
