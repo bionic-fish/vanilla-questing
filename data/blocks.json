@@ -9356,6 +9356,297 @@
                "type": "objective"
             }
          ]
+      },
+      {
+         "zone": "stv",
+         "waypoints": [
+            {
+               "coords": { "x": 27, "y": 77 },
+               "header": "Booty Bay",
+               "ends": ["Ansirem's Key"],
+               "starts": ["The Captain's Chest", "Keep An Eye Out", "Stranglethorn Fever", "Akiris By the Bundle P1", "Zanzil's Secret", "Pretty Boy Duncan", "Up To Snuff", "Tran'Rek", "The Bloodsail Buccaneers P3", "Voodoo Dues", "Stoley's Debt"],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 27, "y": 69 },
+               "header": "South Savage Coast",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Pretty Boy Duncan"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 26, "y": 61 },
+               "header": "The Cape of Stranglethorn",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Akirus By the Bundle P1"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "stv",
+         "waypoints": [
+            {
+               "coords": { "x": 26, "y": 61 },
+               "header": "The Cape of Stranglethorn",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Akirus By the Bundle P1"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 27, "y": 77 },
+               "header": "Booty Bay",
+               "ends": ["Pretty Boy Duncan", "Akiris By the Bundle P1"],
+               "starts": ["The Curse of the Tides", "Akiris By the Bundle P2"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 27, "y": 83 },
+               "header": "Wild Shore",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Up To Snuff", "Keep An Eye Out", "The Bloodsail Buccaneers P3"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 37, "y": 69 },
+               "header": "The Crystal Shore",
+               "ends": [],
+               "starts": [],
+               "objectives": ["The Captain's Chest"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 35, "y": 61 },
+               "header": "Spirit Den",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Stranglethorn Fever"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 40, "y": 58 },
+               "header": "Ruins of Aboraz",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Zanzil's Secret", "Voodoo Dues", "Chucky's Location"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 35, "y": 52 },
+               "header": "Ruins of Aboraz",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Zanzil's Secret", "Voodoo Dues", "Maury's Location", "Chucky's Location"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "stv",
+         "waypoints": [
+            {
+               "coords": { "x": 35, "y": 52 },
+               "header": "Ruins of Aboraz",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Zanzil's Secret", "Voodoo Dues", "Maury's Location", "Chucky's Location"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 27, "y": 77 },
+               "header": "Booty Bay",
+               "ends": ["The Captain's Chest", "Stranglethorn Fever", "Keep an Eye Out", "Voodoo Dues", "Zanzil's Mixture", "Up To Snuff", "The Bloodsail Buccaneers P3"],
+               "starts": ["The Bloodsail Buccaneers P4", "Cracking Maury's Foot"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 31, "y": 90 },
+               "header": "Ruins of Zul'Mamwe",
+               "ends": [],
+               "starts": [],
+               "objectives": ["The Bloodsail Buccaneers P4"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 48, "y": 44 },
+               "header": "Ruins of Zul'Mamwe",
+               "ends": [],
+               "starts": [],
+               "objectives": ["The Star, the Hand and the Heart"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 51, "y": 28 },
+               "header": "Mosh'Ogg Ogre Mound",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Mai'Zoth", "Cracking Maury's Foot"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 25, "y": 24 },
+               "header": "The Vile Reef",
+               "ends": [],
+               "starts": [],
+               "objectives": ["The Curse of the Tides"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 36, "y": 11 },
+               "header": "Nesingwary's Expedition",
+               "ends": ["Big Game Hunter"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 38, "y": 3 },
+               "header": "Rebel Camp",
+               "ends": ["Mai'Zoth"],
+               "starts": [],
+               "objectives": ["Hearthstone to Booty Bay"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "stv",
+         "waypoints": [
+            {
+               "coords": { "x": 27, "y": 77 },
+               "header": "Booty Bay",
+               "ends": ["The Bloodsail Buccaneers P4", "Cracking Maury's Foot"],
+               "starts": ["Whiskey Slim's Lost Grog"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 26, "y": 73 },
+               "header": "Booty Bay Harbor",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Ride to Ratchet"],
+               "type": "location"
+            }
+         ]
+      },
+      {
+         "zone": "barrens",
+         "waypoints": [
+            {
+               "coords": { "x": 64, "y": 39 },
+               "header": "Ratchet Harbor",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 63, "y": 37 },
+               "header": "Ratchet Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fly to Theramore"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "dustwallow",
+         "waypoints": [
+            {
+               "coords": { "x": 67, "y": 51 },
+               "header": "Theramore Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 69, "y": 53 },
+               "header": "Private Groy",
+               "ends": ["Akiris By the Bundle P2"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 66, "y": 45 },
+               "header": "Theramore Inn",
+               "ends": [],
+               "starts": ["Mudrock Soup and Bugs"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 60, "y": 26 },
+               "header": "Duskwallow Shore",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Mudrock Soup and Bugs"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 59, "y": 10 },
+               "header": "Dreadmurk Shore",
+               "ends": [],
+               "starts": [],
+               "objectives": ["The Star, the Hand and the Heart", "Hungry!"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 35, "y": 38 },
+               "header": "Mudcrush Durtfeet",
+               "ends": ["Hungry!"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 46, "y": 57 },
+               "header": "Tabetha",
+               "ends": [],
+               "starts": ["Tiara of the Deep"],
+               "objectives": [],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "dustwallow",
+         "waypoints": [
+            {
+               "coords": { "x": 46, "y": 57 },
+               "header": "Tabetha",
+               "ends": [],
+               "starts": ["Tiara of the Deep"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 66, "y": 45 },
+               "header": "Theramore Inn",
+               "ends": ["Mudrock Soup and Bugs"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 67, "y": 51 },
+               "header": "Theramore Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fly to Tanaris"],
+               "type": "location"
+            }
+         ]
       }
    ]
 }
