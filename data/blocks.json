@@ -8789,7 +8789,7 @@
          "waypoints": [
             {
                "coords": { "x": 66, "y": 24 },
-               "header": "Nethergarde Flightpath",
+               "header": "Blasted Lands Flightpath",
                "ends": [],
                "starts": [],
                "objectives": ["Learn the Flightpath"],
@@ -10319,7 +10319,7 @@
                "coords": { "x": 67, "y": 23 },
                "header": "Steamwheedle Port",
                "ends": ["Screecher Spirits"],
-               "starts": ["The Prophecy of Mosh'aru"],
+               "starts": [],
                "objectives": [],
                "type": "quest"
             },
@@ -10406,14 +10406,6 @@
                "starts": [],
                "objectives": ["Learn the Flightpath"],
                "type": "objective"
-            },
-            {
-               "coords": { "x": 63, "y": 39 },
-               "header": "Marvon's Chest",
-               "ends": [],
-               "starts": [],
-               "objectives": ["The Stone Circle"],
-               "type": "quest"
             },
             {
                "coords": { "x": 64, "y": 39 },
@@ -10506,8 +10498,936 @@
                "coords": { "x": 13, "y": 46 },
                "header": "Wildhammer Keep",
                "ends": ["To The Hinterlands", "Gryphon Master Talonaxe", "The Newest Member of the Family"],
-               "starts": ["Gryphon Master Talonaxe", "Rhapsody Shindigger", "Witherbark Cages", "Skult Rock Clean-up", "Food for Baby"],
+               "starts": ["Gryphon Master Talonaxe", "Rhapsody Shindigger", "Witherbark Cages", "Troll Necklace Bounty", "Skult Rock Clean-up", "Food for Baby"],
                "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 20, "y": 52 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Favored of Elune?", "Loot feathers from the ground"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 23, "y": 59 },
+               "header": "Zun'Watha",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Witherbark Cages", "Troll Necklace Bounty"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 27, "y": 48 },
+               "header": "Rhapsody Shindigger",
+               "ends": ["Rhapsody Shindigger"],
+               "starts": ["Rhapsody's Kalimdor Kocktail"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 30, "y": 53 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Favored of Elune?", "Loot feathers from the ground"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 32, "y": 58 },
+               "header": "Hiri'Watha",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Witherbark Cages", "Troll Necklace Bounty"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 40, "y": 60 },
+               "header": "Vaorwind Lake",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Sprinkle's Secret Ingredient"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 49, "y": 52 },
+               "header": "Vaorwind Lake",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Skulk Rock Clean-up"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 46, "y": 40 },
+               "header": "Vaorwind Lake",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Skulk Rock Clean-up"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 59, "y": 52 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Foor For Baby", "Kill Stealthed Wolves"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 69, "y": 59 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Foor For Baby", "Kill Stealthed Wolves"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 79, "y": 70 },
+               "header": "The Overlook Cliffs",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Whiskey Slim's Lost Grog", "Loot Bottles on the Beach", "Hearthstone to Southshore"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "hillsbrad",
+         "waypoints": [
+            {
+               "coords": { "x": 50, "y": 54 },
+               "header": "Southshore",
+               "ends": ["Southshore"],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 49, "y": 52 },
+               "header": "Southshore Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fly to the Hinterlands"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "hinterlands",
+         "waypoints": [
+            {
+               "coords": { "x": 11, "y": 46 },
+               "header": "Hinterlands Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 13, "y": 46 },
+               "header": "Wildhammer Keep",
+               "ends": ["Witherbark Cages", "Skulk Rock Clean-up", "Troll Necklace Bounty", "Food For Baby", "Becoming A Parent"],
+               "starts": ["The Altar of Zul", "Becoming A Parent"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 49, "y": 68 },
+               "header": "The Altar of Zul",
+               "ends": [],
+               "starts": [],
+               "objectives": ["The Altar of Zul", "Kill Qiaga and loot the Mallet"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "hinterlands",
+         "waypoints": [
+            {
+               "coords": { "x": 49, "y": 68 },
+               "header": "The Altar of Zul",
+               "ends": [],
+               "starts": [],
+               "objectives": ["The Altar of Zul", "Kill Qiaga and loot the Mallet"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 13, "y": 46 },
+               "header": "Wildhammer Keep",
+               "ends": ["The Altar of Zul"],
+               "starts": ["Thadius Grimshade"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 11, "y": 46 },
+               "header": "Hinterlands Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fly to Ironforge"],
+               "type": "location"
+            }
+         ]
+      },
+      {
+         "zone": "ironforge",
+         "waypoints": [
+            {
+               "coords": { "x": 56, "y": 48 },
+               "header": "Ironforge Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 25, "y": 74 },
+               "header": "Ironforge Auction House",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Buy 15x Silk Cloth"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 19, "y": 51 },
+               "header": "Ironforge Inn",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Set Hearthstone"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 75, "y": 12 },
+               "header": "The Library",
+               "ends": ["Portents of Uldum"],
+               "starts": ["Portents of Uldum", "Seeing What Happens"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 51, "y": 5 },
+               "header": "Gerrig Bonegrip",
+               "ends": ["The Star, the Hand and the Heart"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "ironforge",
+         "waypoints": [
+            {
+               "coords": { "x": 51, "y": 5 },
+               "header": "Gerrig Bonegrip",
+               "ends": ["The Star, the Hand and the Heart"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 56, "y": 48 },
+               "header": "Ironforge Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fly to Lakeshire"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "redridge",
+         "waypoints": [
+            {
+               "coords": { "x": 31, "y": 59 },
+               "header": "Lakeshire Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 48, "y": 11 },
+               "header": "Burning Steppes Border",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "steppes",
+         "waypoints": [
+            {
+               "coords": { "x": 79, "y": 80 },
+               "header": "Redridge Mountains Border",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 84, "y": 68 },
+               "header": "Burning Steppes Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Learn the Flightpath"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 29, "y": 37 },
+               "header": "Blackrock Mountain",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Run to Searing Gorge"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "searing",
+         "waypoints": [
+            {
+               "coords": { "x": 35, "y": 84 },
+               "header": "Blackrock Mountain",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 39, "y": 39 },
+               "header": "Kalaran Windblade",
+               "ends": ["Divine Retribution"],
+               "starts": ["Divine Retribution", "The Flawless Flame"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 38, "y": 31 },
+               "header": "Searing Gorge Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Learn the Flightpath"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 37, "y": 27 },
+               "header": "Thorium Point",
+               "ends": [],
+               "starts": ["Wanted: Overseer Maltorius", "Stolen: Smithing Tuyere and Lookout's Spyglass", "Job Opportunity: Culling the Competition", "Curse These Fat Fingers", "Fiery Menace!", "Incendosaurs? Whateverosaur is More Like It", "What the Flux?"],
+               "objectives": [],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "searing",
+         "waypoints": [
+            {
+               "coords": { "x": 37, "y": 27 },
+               "header": "Thorium Point",
+               "ends": [],
+               "starts": ["Wanted: Overseer Maltorius", "Stolen: Smithing Tuyere and Lookout's Spyglass", "Job Opportunity: Culling the Competition", "Curse These Fat Fingers", "Fiery Menace!", "Incendosaurs? Whateverosaur is More Like It", "What the Flux?"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 38, "y": 49 },
+               "header": "The Cauldron",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Curse These Fat Fingers", "The Flawless Flame", "Stolen: Smithing Tuyere and Lookout's Spyglass", "Farm a Spyglass from the Steamsmiths"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 66, "y": 63 },
+               "header": "Grimesilk Dig Site",
+               "ends": ["Caught!"],
+               "starts": ["Caught!"],
+               "objectives": ["Caught!"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 64, "y": 60 },
+               "header": "Dorius Stonetender",
+               "ends": [],
+               "starts": ["Suntara Stones P1"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 75, "y": 19 },
+               "header": "Signed Letter",
+               "ends": ["Suntara Stones P1"],
+               "starts": ["Suntara Stones P2"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 56, "y": 45 },
+               "header": "The Cauldron",
+               "ends": [],
+               "starts": [],
+               "objectives": ["The Flawless Flame"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 39, "y": 39 },
+               "header": "Kalaran Windblade",
+               "ends": ["The Flawless Flame"],
+               "starts": ["Forging the Shaft"],
+               "objectives": ["Take the Lift Up"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "searing",
+         "waypoints": [
+            {
+               "coords": { "x": 39, "y": 39 },
+               "header": "Kalaran Windblade",
+               "ends": ["The Flawless Flame"],
+               "starts": ["Forging the Shaft"],
+               "objectives": ["Take the Lift Up"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 35, "y": 42 },
+               "header": "The Slag Pit Opening",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Jump Down"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 39, "y": 36 },
+               "header": "The Slag Pit - Underground",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Job Opportunity: Culling the Competition", "Forging the Shaft"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 42, "y": 24 },
+               "header": "The Slag Pit - Underground",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Job Opportunity: Culling the Competition", "Forging the Shaft"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 41, "y": 36 },
+               "header": "The Slag Pit - Underground",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Wanted: Overseer Maltorius", "What the Flux?"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 49, "y": 25 },
+               "header": "The Slag Pit - Underground",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Incendosaurs? Whateverosaur is More Like It"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 50, "y": 47 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Run Back Outside"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 28, "y": 73 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fiery Menace!"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 28, "y": 56 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fiery Menace!"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 30, "y": 44 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fiery Menace!"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 34, "y": 49 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Curse These Fat Fingers", "Stolen: Smithing Tuyere and Lookout's Spyglass"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "searing",
+         "waypoints": [
+            {
+               "coords": { "x": 34, "y": 49 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Curse These Fat Fingers", "Stolen: Smithing Tuyere and Lookout's Spyglass"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 37, "y": 27 },
+               "header": "Thorium Point",
+               "ends": ["Wanted: Overseer Maltorius", "Stolen: Smithing Tuyere and Lookout's Spyglass", "Job Opportunity: Culling the Competition", "Curse These Fat Fingers", "Fiery Menace!", "Incendosaurs? Whateverosaur is More Like It", "What the Flux?"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 39, "y": 39 },
+               "header": "Kalaran Windblade",
+               "ends": ["Forging the Shaft"],
+               "starts": ["The Flame's Casing"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 30, "y": 26 },
+               "header": "Zamael Lunthistle",
+               "ends": ["Prayer to Elune P1"],
+               "starts": ["Prayer to Elune P1", "Prayer to Elune P2"],
+               "objectives": ["The Flame's Casing", "Prayer to Elune P2"],
+               "type": "location"
+            }
+         ]
+      },
+      {
+         "zone": "searing",
+         "waypoints": [
+            {
+               "coords": { "x": 30, "y": 26 },
+               "header": "Zamael Lunthistle",
+               "ends": ["Prayer to Elune P1"],
+               "starts": ["Prayer to Elune P1", "Prayer to Elune P2"],
+               "objectives": ["The Flame's Casing", "Prayer to Elune P2"],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 39, "y": 39 },
+               "header": "Kalaran Windblade",
+               "ends": ["The Flame's Casing", "The Torch of Retribution", "Squire Maltrake"],
+               "starts": ["The Torch of Retribution", "Squire Maltrake", "Set Them Ablaze!"],
+               "objectives": ["Check your bags for Grimesilt Outhouse Key - Start the Quest"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 33, "y": 54 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Set Them Ablaze!"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 36, "y": 61 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Set Them Ablaze!"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 44, "y": 61 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Set Them Ablaze!"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 50, "y": 55 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Set Them Ablaze!"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 66, "y": 63 },
+               "header": "Grimesilk Dig Site",
+               "ends": ["The Key to Freedom"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 73, "y": 79 },
+               "header": "Margol the Rager",
+               "ends": [],
+               "starts": ["The Horn of the Beast"],
+               "objectives": ["Drops from the Dinosaur", "Die Somehow and take Ress Sickness"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "searing",
+         "waypoints": [
+            {
+               "coords": { "x": 35, "y": 23 },
+               "header": "Thorium Point Spirit Healer",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 39, "y": 39 },
+               "header": "Kalaran Windblade",
+               "ends": ["Set Them Ablaze!"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 38, "y": 31 },
+               "header": "Searing Gorge Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fly to Loch Modan"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "loch-modan",
+         "waypoints": [
+            {
+               "coords": { "x": 34, "y": 51 },
+               "header": "Loch Modan Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 18, "y": 84 },
+               "header": "Mountaineer Bebblebitty",
+               "ends": ["The Horn of the Beast"],
+               "starts": ["Proof of Deed"],
+               "objectives": ["Hearthstone to Ironforge"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "ironforge",
+         "waypoints": [
+            {
+               "coords": { "x": 19, "y": 51 },
+               "header": "Ironforge Inn",
+               "ends": [],
+               "starts": ["Assisting Arch Druid Staghelm"],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 75, "y": 12 },
+               "header": "The Library",
+               "ends": ["Suntara Stones", "Proof of Deed"],
+               "starts": ["At Last!", "A Little Slime Goes a Long Way"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 56, "y": 48 },
+               "header": "Ironforge Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fly to Loch Modan"],
+               "type": "location"
+            }
+         ]
+      },
+      {
+         "zone": "loch-modan",
+         "waypoints": [
+            {
+               "coords": { "x": 34, "y": 51 },
+               "header": "Loch Modan Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 18, "y": 84 },
+               "header": "Mountaineer Bebblebitty",
+               "ends": ["At Last!"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "loch-modan",
+         "waypoints": [
+            {
+               "coords": { "x": 18, "y": 84 },
+               "header": "Mountaineer Bebblebitty",
+               "ends": ["At Last!"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 34, "y": 51 },
+               "header": "Loch Modan Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fly to Blasted Lands"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "blasted",
+         "waypoints": [
+            {
+               "coords": { "x": 66, "y": 24 },
+               "header": "Blasted Lands Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 67, "y": 19 },
+               "header": "Thadis Grimshade",
+               "ends": ["Thadis Grimshade"],
+               "starts": ["Nekrum's Medallion"],
+               "objectives": [],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "blasted",
+         "waypoints": [
+            {
+               "coords": { "x": 67, "y": 19 },
+               "header": "Thadis Grimshade",
+               "ends": ["Thadis Grimshade"],
+               "starts": ["Nekrum's Medallion"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 66, "y": 24 },
+               "header": "Blasted Lands Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fly to Booty Bay"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "stv",
+         "waypoints": [
+            {
+               "coords": { "x": 28, "y": 78 },
+               "header": "Booty Bay Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 27, "y": 77 },
+               "header": "Booty Bay",
+               "ends": ["Whiskey Slim's Lost Grog"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 34, "y": 74 },
+               "header": "Half-Buried Bottle",
+               "ends": [],
+               "starts": ["Message in a Bottle P1"],
+               "objectives": ["Entire Coast"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 39, "y": 81 },
+               "header": "Princess Poobah",
+               "ends": ["Message in a Bottle P1"],
+               "starts": ["Message in a Bottle P2"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 41, "y": 84 },
+               "header": "Januero Isle",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Message in a Bottle P2"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "stv",
+         "waypoints": [
+            {
+               "coords": { "x": 41, "y": 84 },
+               "header": "Januero Isle",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Message in a Bottle P2"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 39, "y": 81 },
+               "header": "Princess Poobah",
+               "ends": ["Message in a Bottle P2"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 26, "y": 73 },
+               "header": "Booty Bay Harbor",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Ride to Ratchet"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "barrens",
+         "waypoints": [
+            {
+               "coords": { "x": 64, "y": 39 },
+               "header": "Ratchet Harbor",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 62, "y": 39 },
+               "header": "Liv Rizzlefix",
+               "ends": [],
+               "starts": ["Volcanic Activity"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 63, "y": 39 },
+               "header": "Marvon's Chest",
+               "ends": [],
+               "starts": [],
+               "objectives": ["The Stone Circle"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 63, "y": 37 },
+               "header": "Ratchet Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fly to Tanaris"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "tanaris",
+         "waypoints": [
+            {
+               "coords": { "x": 51, "y": 29 },
+               "header": "Tanaris Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 52, "y": 28 },
+               "header": "Gadgetzan",
+               "ends": ["Sprinkle's Secret Ingredient", "Delivery for Marin", "Noggenfogger Elixir"],
+               "starts": ["Delivery for Marin", "Noggenfogger Elixir", "Divino-matic Rod", "Troll Temper", "Scarab Shells", "Super Sticky"],
+               "objectives": ["Set Hearthstone"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 67, "y": 23 },
+               "header": "Steamwheedle Port",
+               "ends": [],
+               "starts": ["The Prophecy of Mosh'Aru", "Yuka Screwspigot"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 49, "y": 36 },
+               "header": "Abyssal Sands",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Rhapsody's Kalimdor Kocktail"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 53, "y": 46 },
+               "header": "Marvon",
+               "ends": ["The Stone of Circle"],
+               "starts": ["Into the Depths", "Secret of the Circle"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 38, "y": 81 },
+               "header": "Uldum Pedestal",
+               "ends": ["Seeing What Happens", "The Stone Watcher"],
+               "starts": ["The Stone Watcher", "Return to Ironforge"],
+               "objectives": ["Hearthstone to Gadgetzan"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "tanaris",
+         "waypoints": [
+            {
+               "coords": { "x": 52, "y": 28 },
+               "header": "Gadgetzan",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 39, "y": 20 },
+               "header": "Zul'Farrak",
+               "ends": [],
+               "starts": [],
+               "objectives": ["With 7 quests."],
                "type": "quest"
             }
          ]
