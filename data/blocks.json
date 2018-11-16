@@ -11394,14 +11394,6 @@
                "type": "objective"
             },
             {
-               "coords": { "x": 53, "y": 46 },
-               "header": "Marvon",
-               "ends": ["The Stone of Circle"],
-               "starts": ["Into the Depths", "Secret of the Circle"],
-               "objectives": [],
-               "type": "quest"
-            },
-            {
                "coords": { "x": 38, "y": 81 },
                "header": "Uldum Pedestal",
                "ends": ["Seeing What Happens", "The Stone Watcher"],
@@ -11780,7 +11772,174 @@
                "header": "Bloof Elf Encampment",
                "ends": [],
                "starts": ["Snickerfang Jowls", "A Boar's Vitality", "The Decisive Striker", "The Basilisk's Bite", "Vulture's Vigor"],
+               "objectives": ["14x Vulture Gizzard", "5x Snickerfang Jowl", "11x Basilisk Brain", "6x Blasted Boar Lung", "6x Scorpok Pincer"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 48, "y": 19 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Scorpions"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 46, "y": 35 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Hyenas"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 52, "y": 36 },
+               "header": "Kum'Isha the Collector",
+               "ends": [],
+               "starts": ["Everything Counts In Large Amounts"],
                "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 55, "y": 41 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Birds"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 61, "y": 42 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Boards and Basilisks"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 61, "y": 28 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Boards and Basilisks"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "blasted",
+         "waypoints": [
+            {
+               "coords": { "x": 61, "y": 28 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Boards and Basilisks"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 51, "y": 14 },
+               "header": "Bloof Elf Encampment",
+               "ends": ["Snickerfang Jowls", "A Boar's Vitality", "The Decisive Striker", "The Basilisk's Bite", "Vulture's Vigor"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 66, "y": 24 },
+               "header": "Blasted Lands Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fly to Hinterlands"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "hinterlands",
+         "waypoints": [
+            {
+               "coords": { "x": 11, "y": 46 },
+               "header": "Hinterlands Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Learn the Flightpath"],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 10, "y": 44 },
+               "header": "Gryphon Master Talonaxe",
+               "ends": ["Return to Hinterlands"],
+               "starts": ["Saving Sharpbeak"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 27, "y": 48 },
+               "header": "Rhapsody Shindigger",
+               "ends": ["Rhapsody's Kalimdor Kocktail"],
+               "starts": ["Rhapsody's Tale"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 66, "y": 65 },
+               "header": "Jintha'Alor Enterance",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 60, "y": 78 },
+               "header": "Jintha'Alor Altar",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Use your mallet ontop of the Altar", "Kill the priestress for her key"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 58, "y": 87 },
+               "header": "Ancient Egg",
+               "ends": [],
+               "starts": [],
+               "objectives": ["The Ancient Egg"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 53, "y": 67 },
+               "header": "Saving Sharpbeak",
+               "ends": [],
+               "starts": [],
+               "objectives": ["The Cage"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 34, "y": 75 },
+               "header": "Atal'Ai Exile",
+               "ends": [],
+               "starts": ["Jammal'An the Prophet"],
+               "objectives": [],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "hinterlands",
+         "waypoints": [
+            {
+               "coords": { "x": 34, "y": 75 },
+               "header": "Atal'Ai Exile",
+               "ends": [],
+               "starts": ["Jammal'An the Prophet"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 10, "y": 44 },
+               "header": "Gryphon Master Talonaxe",
+               "ends": ["Saving Sharpbeak"],
+               "starts": [],
+               "objectives": ["Hearthstone to Tanaris"],
                "type": "quest"
             }
          ]
