@@ -8776,7 +8776,7 @@
             },
             {
                "coords": { "x": 66, "y": 24 },
-               "header": "Nethergarde Flightpath",
+               "header": "Blasted Lands Flightpath",
                "ends": [],
                "starts": [],
                "objectives": ["Learn the Flightpath"],
@@ -11373,7 +11373,7 @@
                "coords": { "x": 52, "y": 28 },
                "header": "Gadgetzan",
                "ends": ["Sprinkle's Secret Ingredient", "Delivery for Marin", "Noggenfogger Elixir"],
-               "starts": ["Delivery for Marin", "Noggenfogger Elixir", "Divino-matic Rod", "Troll Temper", "Scarab Shells", "Super Sticky"],
+               "starts": ["Delivery for Marin", "Noggenfogger Elixir", "Divino-matic Rod", "Troll Temper", "Scarab Shells"],
                "objectives": ["Set Hearthstone"],
                "type": "quest"
             },
@@ -11427,7 +11427,360 @@
                "header": "Zul'Farrak",
                "ends": [],
                "starts": [],
-               "objectives": ["With 7 quests."],
+               "objectives": ["With 7 quests.", "Hearthstone to Gadgetzan"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "tanaris",
+         "waypoints": [
+            {
+               "coords": { "x": 52, "y": 28 },
+               "header": "Gadgetzan",
+               "ends": ["Troll Temper", "Scarab Shells", "Divino-matic Rod"],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 67, "y": 23 },
+               "header": "Steamwheedle Port",
+               "ends": ["The Prophecy of Mosh'Aru"],
+               "starts": ["The Ancient Egg"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 51, "y": 30 },
+               "header": "Tanaris Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fly to Theramore"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "dustwallow",
+         "waypoints": [
+            {
+               "coords": { "x": 67, "y": 51 },
+               "header": "Theramore Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 66, "y": 49 },
+               "header": "Theramore Tower",
+               "ends": [],
+               "starts": ["Shadowshard Fragments"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 46, "y": 57 },
+               "header": "Tabetha",
+               "ends": ["Tiara of the Deep"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "dustwallow",
+         "waypoints": [
+            {
+               "coords": { "x": 46, "y": 57 },
+               "header": "Tabetha",
+               "ends": ["Tiara of the Deep"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 67, "y": 51 },
+               "header": "Theramore Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fly to Desolace"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "desolace",
+         "waypoints": [
+            {
+               "coords": { "x": 65, "y": 11 },
+               "header": "Nijel's Point Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 67, "y": 10 },
+               "header": "Nijel's Point",
+               "ends": [],
+               "starts": ["Vyletongue Corruption", "Corruption of Earth and Seed"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 62, "y": 40 },
+               "header": "Willow",
+               "ends": [],
+               "starts": ["Twisted Evils"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 50, "y": 87 },
+               "header": "Centaur Pariah",
+               "ends": [],
+               "starts": ["The Pariah's Instructions"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 30, "y": 62 },
+               "header": "Maraudon",
+               "ends": [],
+               "starts": ["With 5+3 quests"],
+               "objectives": ["Camp Out"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "desolace",
+         "waypoints": [
+            {
+               "coords": { "x": 30, "y": 62 },
+               "header": "Maraudon",
+               "ends": [],
+               "starts": ["With 5+3 quests"],
+               "objectives": ["Camp Out"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 50, "y": 87 },
+               "header": "Centaur Pariah",
+               "ends": [],
+               "starts": ["The Pariah's Instructions"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 42, "y": 96 },
+               "header": "Feralas Border",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "feralas",
+         "waypoints": [
+            {
+               "coords": { "x": 45, "y": 3 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 44, "y": 12 },
+               "header": "Ruins of Ravenwind",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Rhapsody's Kalimdor Kocktail", "Hearthstone to Desolace"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "desolace",
+         "waypoints": [
+            {
+               "coords": { "x": 67, "y": 10 },
+               "header": "Nijel's Point",
+               "ends": [],
+               "starts": ["Vyletongue Corruption", "Corruption of Earth and Seed"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 62, "y": 40 },
+               "header": "Willow",
+               "ends": [],
+               "starts": ["Twisted Evils"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 65, "y": 11 },
+               "header": "Nijel's Point Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fly to Theramore"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "dustwallow",
+         "waypoints": [
+            {
+               "coords": { "x": 67, "y": 51 },
+               "header": "Theramore Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 66, "y": 49 },
+               "header": "Theramore Tower",
+               "ends": ["Shadowshard Fragments"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "dustwallow",
+         "waypoints": [
+            {
+               "coords": { "x": 66, "y": 49 },
+               "header": "Theramore Tower",
+               "ends": ["Shadowshard Fragments"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 71, "y": 56 },
+               "header": "Theramore Harbor",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Ride to Menethil"],
+               "type": "location"
+            }
+         ]
+      },
+      {
+         "zone": "wetlands",
+         "waypoints": [
+            {
+               "coords": { "x": 5, "y": 57 },
+               "header": "Wetlands Harbor",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 9, "y": 60 },
+               "header": "Menethil Harbor Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fly to Ironforge"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "ironforge",
+         "waypoints": [
+            {
+               "coords": { "x": 56, "y": 48 },
+               "header": "Ironforge Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 25, "y": 74 },
+               "header": "Ironforge Auction House",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Buy 1x Imperfect Draenethyst Fragment"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 75, "y": 12 },
+               "header": "The Library",
+               "ends": ["Return to Ironforge", "A Future Task"],
+               "starts": ["A Future Task"],
+               "objectives": [],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "ironforge",
+         "waypoints": [
+            {
+               "coords": { "x": 75, "y": 12 },
+               "header": "The Library",
+               "ends": ["Return to Ironforge", "A Future Task"],
+               "starts": ["A Future Task"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 56, "y": 48 },
+               "header": "Ironforge Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fly to Blasted Lands"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "blasted",
+         "waypoints": [
+            {
+               "coords": { "x": 66, "y": 24 },
+               "header": "Blasted Lands Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 67, "y": 19 },
+               "header": "Nethergarde Keep",
+               "ends": ["Nekrum's Medallion", "The Divination"],
+               "starts": ["Petty Squabbles", "The Divination", "Return to the Hinterlands"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 52, "y": 3 },
+               "header": "Fallen Hero of the Horde",
+               "ends": ["Petty Squabbles", "A Tale of Sorrow"],
+               "starts": ["A Tale of Sorrow"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 51, "y": 14 },
+               "header": "Bloof Elf Encampment",
+               "ends": [],
+               "starts": ["Snickerfang Jowls", "A Boar's Vitality", "The Decisive Striker", "The Basilisk's Bite", "Vulture's Vigor"],
+               "objectives": [],
                "type": "quest"
             }
          ]
