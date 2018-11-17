@@ -1,0 +1,88 @@
+{
+   "path": [
+      {
+         "zone": "elwynn",
+         "experience": 25.14,
+         "waypoints": [
+            {
+               "coords": { "x": 72, "y": 85 },
+               "header": "Duskwood Border",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 42, "y": 66 },
+               "header": "Goldshire",
+               "ends": ["The Legend of Stalvan P4"],
+               "starts": ["The Legend of Stalvan P5"],
+               "objectives": ["Loot the Chest Upstairs"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 50, "y": 40 },
+               "header": "Brother Paxton",
+               "ends": ["Rethban Ore"],
+               "starts": ["Return to Kristoff"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 32, "y": 49 },
+               "header": "Gates of Stormwind",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "stormwind",
+         "experience": 25.24,
+         "waypoints": [
+            {
+               "coords": { "x": 70, "y": 87 },
+               "header": "Gates of Stormwind",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 65, "y": 60 },
+               "header": "Felicia Gump",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Buy a 1x Stormwind Seasoning Herbs"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 53, "y": 60 },
+               "header": "Auction House",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Buy a Bronze Tube"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 46, "y": 38 },
+               "header": "Brother Kristoff",
+               "ends": ["Return to Brother Kristoff"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 30, "y": 62 },
+               "header": "Caretaker Folsom",
+               "ends": ["The Legend of Stalvan P5", "The Legend of Stalvan P6"],
+               "starts": ["The Legend of Stalvan P6", "The Legend of Stalvan P7"],
+               "objectives": ["Hearthstone to Darkshire"],
+               "type": "quest"
+            }
+         ]
+      }
+   ]
+}

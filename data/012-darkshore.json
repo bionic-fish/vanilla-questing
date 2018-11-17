@@ -2,7 +2,7 @@
    "path": [
       {
          "zone": "darkshore",
-         "experience": 0.00,
+         "experience": 21.94,
          "waypoints": [
             {
                "coords": { "x": 32, "y": 44 },
@@ -72,7 +72,7 @@
       },
       {
          "zone": "darkshore",
-         "experience": 0.00,
+         "experience": 22.22,
          "waypoints": [
             {
                "coords": { "x": 41, "y": 81 },

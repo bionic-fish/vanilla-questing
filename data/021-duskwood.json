@@ -1,0 +1,176 @@
+{
+   "path": [
+      {
+         "zone": "westfall",
+         "experience": 26.62,
+         "waypoints": [
+            {
+               "coords": { "x": 57, "y": 53 },
+               "header": "Westfall Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 64, "y": 42 },
+               "header": "Duskwood Border",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "duskwood",
+         "experience": 26.62,
+         "waypoints": [
+            {
+               "coords": { "x": 3, "y": 36 },
+               "header": "Westfall Border",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 8, "y": 34 },
+               "header": "Sven Yorgen",
+               "ends": ["Sven's Camp"],
+               "starts": ["The Shadowy Figure"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 28, "y": 31 },
+               "header": "Abercrombie",
+               "ends": ["Deliver the Thread"],
+               "starts": ["Zombie Juice"],
+               "objectives": ["Hearthstone to Darkshire"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "duskwood",
+         "experience": 26.84,
+         "waypoints": [
+            {
+               "coords": { "x": 74, "y": 47 },
+               "header": "Darkshire",
+               "ends": ["The Legend of Stalvan P9-12", "Zombie Juice", "The Shadowy Figure", "The Shadowy Search Continues", "Inquire at the Inn"],
+               "starts": ["The Legend of Stalvan P10-12", "Gather Rot Blossoms", "The Shadowy Search Continues", "Inquire at the Inn", "Finding the Shadowy Figure", "Crime and Punishment"],
+               "objectives": [],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 78, "y": 44 },
+               "header": "Darkshire Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fly to Westfall"],
+               "type": "flightpath"
+            }
+         ]
+      },
+      {
+         "zone": "westfall",
+         "experience": 26.97,
+         "waypoints": [
+            {
+               "coords": { "x": 57, "y": 53 },
+               "header": "Westfall Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 68, "y": 57 },
+               "header": "Duskwood Border",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "duskwood",
+         "experience": 26.97,
+         "waypoints": [
+            {
+               "coords": { "x": 9, "y": 57 },
+               "header": "Westfall Border",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 19, "y": 58 },
+               "header": "Jitters",
+               "ends": ["Return to Jitters", "Finding the Shadowy Figure"],
+               "starts": ["Return to Sven"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 16, "y": 47 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["The Night Watch P2", "Gather Rot Blossoms"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 8, "y": 34 },
+               "header": "Sven Yorgen",
+               "ends": ["Return to Sven"],
+               "starts": ["Proving Your Worth"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 15, "y": 38 },
+               "header": "Dawning Wood Catacombs",
+               "ends": [],
+               "starts": ["An Old History Book"],
+               "objectives": ["Proving Your Worth", "The History Book drops from Mobs"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "duskwood",
+         "experience": 27.15,
+         "waypoints": [
+            {
+               "coords": { "x": 15, "y": 38 },
+               "header": "Dawning Wood Catacombs",
+               "ends": [],
+               "starts": ["An Old History Book"],
+               "objectives": ["Proving Your Worth", "The History Book drops from Mobs"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 8, "y": 34 },
+               "header": "Sven Yorgen",
+               "ends": ["Proving Your Worth"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 3, "y": 36 },
+               "header": "Westfall Border",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "travel"
+            }
+         ]
+      }
+   ]
+}

@@ -2,7 +2,7 @@
    "path": [
       {
          "zone": "elwynn",
-         "experience": 0.00,
+         "experience": 5.46,
          "waypoints": [
             {
                "coords": { "x": 49, "y": 42 },
@@ -56,7 +56,7 @@
       },
       {
          "zone": "elwynn",
-         "experience": 0.00,
+         "experience": 5.70,
          "waypoints": [
             {
                "coords": { "x": 30, "y": 86 },
@@ -94,7 +94,7 @@
       },
       {
          "zone": "elwynn",
-         "experience": 0.00,
+         "experience": 5.90,
          "waypoints": [
             {
                "coords": { "x": 41, "y": 87 },
@@ -132,7 +132,7 @@
       },
       {
          "zone": "elwynn",
-         "experience": 0.00,
+         "experience": 6.85,
          "waypoints": [
             {
                "coords": { "x": 39, "y": 81 },
@@ -154,7 +154,7 @@
                "coords": { "x": 42, "y": 66 },
                "header": "Goldshire",
                "ends": ["Gold Dust Exchange", "The Fargomine Deep", "Kobold Candles", "Note to William"],
-               "starts": ["Further Concerns", "Westbrook Garrison Needs Help!", "The Jasperlode Mine", "Collecting Kelp", "Shipment to Stormwind"],
+               "starts": ["Further Concerns", "The Jasperlode Mine", "Collecting Kelp", "Shipment to Stormwind"],
                "objectives": [],
                "type": "hub"
             },
@@ -226,7 +226,7 @@
       },
       {
          "zone": "elwynn",
-         "experience": 0.00,
+         "experience": 8.93,
          "waypoints": [
             {
                "coords": { "x": 79, "y": 61 },
@@ -272,7 +272,7 @@
       },
       {
          "zone": "redridge",
-         "experience": 0.00,
+         "experience": 9.63,
          "waypoints": [
             {
                "coords": { "x": 8, "y": 72 },
@@ -294,13 +294,13 @@
       },
       {
          "zone": "elwynn",
-         "experience": 0.00,
+         "experience": 9.63,
          "waypoints": [
             {
                "coords": { "x": 42, "y": 66 },
                "header": "Goldshire",
                "ends": ["Collecting Kelp", "Deliver Thomas's Report", "The Jasperlode Mine"],
-               "starts": ["The Escape", "Elmore's Task"],
+               "starts": ["The Escape", "Elmore's Task", "Westbrook Garrison Needs Help!"],
                "objectives": [],
                "type": "hub" 
             },
@@ -332,7 +332,7 @@
       },
       {
          "zone": "elwynn",
-         "experience": 0.00,
+         "experience": 10.48,
          "waypoints": [
             {
                "coords": { "x": 26, "y": 94 },

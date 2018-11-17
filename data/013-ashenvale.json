@@ -2,7 +2,7 @@
    "path": [
       {
          "zone": "ashenvale",
-         "experience": 0.00,
+         "experience": 22.26,
          "waypoints": [
             {
                "coords": { "x": 29, "y": 15 },
@@ -40,7 +40,7 @@
       },
       {
          "zone": "ashenvale",
-         "experience": 0.00,
+         "experience": 22.42,
          "waypoints": [
             {
                "coords": { "x": 32, "y": 22 },
@@ -94,7 +94,7 @@
       },
       {
          "zone": "ashenvale",
-         "experience": 0.00,
+         "experience": 22.71,
          "waypoints": [
             {
                "coords": { "x": 38, "y": 35 },
@@ -172,7 +172,7 @@
       },
       {
          "zone": "ashenvale",
-         "experience": 0.00,
+         "experience": 23.28,
          "waypoints": [
             {
                "coords": { "x": 14, "y": 21 },
@@ -210,7 +210,7 @@
       },
       {
          "zone": "ashenvale",
-         "experience": 0.00,
+         "experience": 23.37,
          "waypoints": [
             {
                "coords": { "x": 7, "y": 14 },
@@ -248,13 +248,13 @@
       },
       {
          "zone": "ashenvale",
-         "experience": 0.00,
+         "experience": 23.49,
          "waypoints": [
             {
                "coords": { "x": 36, "y": 50 },
                "header": "Astranaar",
                "ends": ["The Zoram Strand", "Raene's Cleansing P2", "The Ruins of Stardust"],
-               "starts": ["Raene's Cleansing P3", "An Aggressive Defense", "Fallen Sky Lake"],
+               "starts": ["Raene's Cleansing P3", "An Aggressive Defense"],
                "objectives": [],
                "type": "hub"
             },
@@ -295,7 +295,7 @@
       },
       {
          "zone": "ashenvale",
-         "experience": 0.00,
+         "experience": 23.91,
          "waypoints": [
             {
                "coords": { "x": 48, "y": 70 },
@@ -318,65 +318,19 @@
                "header": "",
                "ends": [],
                "starts": [],
-               "objectives": ["Raene's Cleansing P4", "Wooden Key drops from the trees"],
+               "objectives": ["Raene's Cleansing P4", "Wooden Key drops from the trees", "Hearthstone to Astranaar"],
                "type": "objective"
-            },
-            {
-               "coords": { "x": 67, "y": 57 },
-               "header": "",
-               "ends": [],
-               "starts": [],
-               "objectives": ["The Tower of Althalaxx P5"],
-               "type": "objective"
-            },
-            {
-               "coords": { "x": 82, "y": 49 },
-               "header": "",
-               "ends": [],
-               "starts": [],
-               "objectives": ["The Tower of Althalaxx P5"],
-               "type": "objective"
-            },
-            {
-               "coords": { "x": 94, "y": 47 },
-               "header": "Azshara Border",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
-               "type": "travel"
-            }
-         ]
-      },
-      {
-         "zone": "azshara",
-         "experience": 0.00,
-         "waypoints": [
-            {
-               "coords": { "x": 11, "y": 75 },
-               "header": "Ashenvale Border",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
-               "type": "travel"
-            },
-            {
-               "coords": { "x": 12, "y": 78 },
-               "header": "Azshara Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Learn the Flightpath", "Fly to Astranaar"],
-               "type": "flightpath"
             }
          ]
       },
       {
          "zone": "ashenvale",
-         "experience": 0.00,
+         "experience": 24.01,
          "waypoints": [
             {
                "coords": { "x": 36, "y": 50 },
                "header": "Astranaar",
-               "ends": ["An Aggressive Defense", "Fallen Sky Lake"],
+               "ends": ["An Aggressive Defense"],
                "starts": [],
                "objectives": [],
                "type": "hub"
@@ -388,104 +342,6 @@
                "starts": ["Raene's Cleansing P5"],
                "objectives": [],
                "type": "quest"
-            },
-            {
-               "coords": { "x": 67, "y": 82 },
-               "header": "",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Fallen Sky Lake", "Kill the Oracle"],
-               "type": "objective"
-            },
-            {
-               "coords": { "x": 72, "y": 74 },
-               "header": "",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Raene's Cleansing P4", "Loot Chests"],
-               "type": "objective"
-            }
-         ]
-      },
-      {
-         "zone": "ashenvale",
-         "experience": 0.00,
-         "waypoints": [
-            {
-               "coords": { "x": 72, "y": 74 },
-               "header": "",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Raene's Cleansing P4", "Loot Chests"],
-               "type": "objective"
-            },
-            {
-               "coords": { "x": 54, "y": 46 },
-               "header": "Shael'Dryn",
-               "ends": ["Raene's Cleansing P4"],
-               "starts": ["Raene's Cleansing P5"],
-               "objectives": [],
-               "type": "quest"
-            },
-            {
-               "coords": { "x": 56, "y": 49 },
-               "header": "Hidden Shrine",
-               "ends": ["Raene's Cleansing P5"],
-               "starts": ["Raene's Cleansing P6"],
-               "objectives": [],
-               "type": "quest"
-            }
-         ]
-      },
-      {
-         "zone": "ashenvale",
-         "experience": 0.00,
-         "waypoints": [
-            {
-               "coords": { "x": 56, "y": 49 },
-               "header": "Hidden Shrine",
-               "ends": ["Raene's Cleansing P5"],
-               "starts": ["Raene's Cleansing P6"],
-               "objectives": [],
-               "type": "quest"
-            },
-            {
-               "coords": { "x": 54, "y": 46 },
-               "header": "Shael'Dryn",
-               "ends": ["Raene's Cleansing P6"],
-               "starts": ["Raene's Cleansing P7"],
-               "objectives": [],
-               "type": "quest"
-            },
-            {
-               "coords": { "x": 36, "y": 50 },
-               "header": "Astranaar",
-               "ends": ["Raene's Cleansing P7"],
-               "starts": [],
-               "objectives": [],
-               "type": "hub"
-            },
-            {
-               "coords": { "x": 26, "y": 38 },
-               "header": "Maestra's Post",
-               "ends": ["Supplies to Auberdine", "The Tower of Althalaxx P5"],
-               "starts": ["The Tower of Althalaxx P6"],
-               "objectives": ["Hearthstone to Astranaar"],
-               "type": "quest"
-            }
-         ]
-      },
-      {
-         "zone": "ashenvale",
-         "experience": 0.00,
-         "waypoints": [
-            {
-               "coords": { "x": 36, "y": 50 },
-               "header": "Astranaar",
-               "ends": ["Raene's Cleansing P7"],
-               "starts": [],
-               "objectives": [],
-               "type": "hub"
             },
             {
                "coords": { "x": 34, "y": 48 },
@@ -493,7 +349,7 @@
                "ends": [],
                "starts": [],
                "objectives": ["Fly to Auberdine"],
-               "type": "objective"
+               "type": "flightpath"
             }
          ]
       }

@@ -2,7 +2,7 @@
    "path": [
       {
          "zone": "loch",
-         "experience": 0.00,
+         "experience": 11.89,
          "waypoints": [
             {
                "coords": { "x": 18, "y": 16 },
@@ -40,7 +40,7 @@
       },
       {
          "zone": "ironforge",
-         "experience": 0.00,
+         "experience": 12.04,
          "waypoints": [
             {
                "coords": { "x": 19, "y": 51 },
@@ -70,7 +70,7 @@
       },
       {
          "zone": "loch",
-         "experience": 0.00,
+         "experience": 12.11,
          "waypoints": [
             {
                "coords": { "x": 34, "y": 51 },
@@ -116,7 +116,7 @@
       },
       {
          "zone": "loch",
-         "experience": 0.00,
+         "experience": 12.82,
          "waypoints": [
             {
                "coords": { "x": 23, "y": 18 },
@@ -154,7 +154,7 @@
       },
       {
          "zone": "loch",
-         "experience": 0.00,
+         "experience": 13.21,
          "waypoints": [
             {
                "coords": { "x": 33, "y": 76 },
@@ -176,7 +176,7 @@
       },
       {
          "zone": "loch",
-         "experience": 0.00,
+         "experience": 13.60,
          "waypoints": [
             {
                "coords": { "x": 23, "y": 74 },
@@ -198,7 +198,7 @@
       },
       {
          "zone": "loch",
-         "experience": 0.00,
+         "experience": 13.69,
          "waypoints": [
             {
                "coords": { "x": 36, "y": 82 },

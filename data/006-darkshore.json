@@ -2,7 +2,7 @@
    "path": [
       {
          "zone": "darkshore",
-         "experience": 0.00,
+         "experience": 13.77,
          "waypoints": [
             {
                "coords": { "x": 32, "y": 44 },
@@ -48,7 +48,7 @@
       },
       {
          "zone": "darkshore",
-         "experience": 0.00,
+         "experience": 14.02,
          "waypoints": [
             {
                "coords": { "x": 46, "y": 37 },
@@ -70,7 +70,7 @@
       },
       {
          "zone": "darkshore",
-         "experience": 0.00,
+         "experience": 14.05,
          "waypoints": [
             {
                "coords": { "x": 44, "y": 36 },
@@ -92,7 +92,7 @@
       },
       {
          "zone": "darkshore",
-         "experience": 0.00,
+         "experience": 14.12,
          "waypoints": [
             {
                "coords": { "x": 48, "y": 37 },
@@ -154,7 +154,7 @@
       },
       {
          "zone": "darkshore",
-         "experience": 0.00,
+         "experience": 14.45,
          "waypoints": [
             {
                "coords": { "x": 39, "y": 53 },
@@ -182,7 +182,7 @@
             },
             {
                "coords": { "x": 32, "y": 46 },
-               "header": "Turtle Skull",
+               "header": "Skeletan Sea Turtle",
                "ends": [],
                "starts": [],
                "objectives": ["Washed Ashore P2"],
@@ -192,11 +192,11 @@
       },
       {
          "zone": "darkshore",
-         "experience": 0.00,
+         "experience": 14.59,
          "waypoints": [
             {
                "coords": { "x": 32, "y": 46 },
-               "header": "Turtle Skull",
+               "header": "Skeletan Sea Turtle",
                "ends": [],
                "starts": [],
                "objectives": ["Washed Ashore P2"],
@@ -238,7 +238,7 @@
       },
       {
          "zone": "darkshore",
-         "experience": 0.00,
+         "experience": 14.93,
          "waypoints": [
             {
                "coords": { "x": 43, "y": 61 },
@@ -276,7 +276,7 @@
       },
       {
          "zone": "darkshore",
-         "experience": 0.00,
+         "experience": 15.46,
          "waypoints": [
             {
                "coords": { "x": 39, "y": 43 },
@@ -343,7 +343,7 @@
                "type": "objective"
             },
             {
-               "coords": { "x": 50, "y": 21 },
+               "coords": { "x": 51, "y": 25 },
                "header": "",
                "ends": ["Buzzbox 323"],
                "starts": ["Buzzbox 525"],
@@ -370,7 +370,7 @@
       },
       {
          "zone": "darkshore",
-         "experience": 0.00,
+         "experience": 16.08,
          "waypoints": [
             {
                "coords": { "x": 56, "y": 27 },
@@ -424,7 +424,7 @@
       },
       {
          "zone": "darkshore",
-         "experience": 0.00,
+         "experience": 16.79,
          "waypoints": [
             {
                "coords": { "x": 51, "y": 35 },

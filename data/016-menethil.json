@@ -1,0 +1,96 @@
+{
+   "path": [
+      {
+         "zone": "wetlands",
+         "experience": 24.27,
+         "waypoints": [
+            {
+               "coords": { "x": 5, "y": 57 },
+               "header": "Menethil Harbor",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 8, "y": 59 },
+               "header": "Karl Boran",
+               "ends": [],
+               "starts": ["Claws from the Deep"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 9, "y": 56 },
+               "header": "James Halloran",
+               "ends": [],
+               "starts": ["Young Crocolisk Skins"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 19, "y": 40 },
+               "header": "Bluegill Marsh",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Claws from the Deep"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 18, "y": 48 },
+               "header": "Black Channel Marsh",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Young Crocolisk Skins"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "wetlands",
+         "experience": 24.36,
+         "waypoints": [
+            {
+               "coords": { "x": 18, "y": 48 },
+               "header": "Black Channel Marsh",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Young Crocolisk Skins"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 9, "y": 56 },
+               "header": "James Halloran",
+               "ends": ["Young Crocolisk Skins"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 8, "y": 59 },
+               "header": "Karl Boran",
+               "ends": ["Claws from the Deep"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 11, "y": 60 },
+               "header": "Menethil Inn",
+               "ends": ["The Absent Minded Prospector"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 9, "y": 61 },
+               "header": "Menethil Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fly to Duskwood"],
+               "type": "flightpath"
+            }
+         ]
+      }
+   ]
+}

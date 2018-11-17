@@ -2,14 +2,14 @@
    "path": [
       {
          "zone": "teldrassil",
-         "experience": 0.00,
+         "experience": 24.23,
          "waypoints": [
             {
                "coords": { "x": 55, "y": 97 },
                "header": "Darnassus Harbor",
                "ends": [],
                "starts": [],
-               "objectives": ["Run to Darnassus"],
+               "objectives": [],
                "type": "travel"
             },
             {
@@ -32,7 +32,7 @@
       },
       {
          "zone": "darnassus",
-         "experience": 0.00,
+         "experience": 24.23,
          "waypoints": [
             {
                "coords": { "x": 31, "y": 41 },
@@ -54,7 +54,7 @@
       },
       {
          "zone": "darnassus",
-         "experience": 0.00,
+         "experience": 24.27,
          "waypoints": [
             {
                "coords": { "x": 31, "y": 84 },
@@ -76,7 +76,7 @@
       },
       {
          "zone": "teldrassil",
-         "experience": 0.00,
+         "experience": 24.27,
          "waypoints": [
             {
                "coords": { "x": 56, "y": 90 },
@@ -91,14 +91,14 @@
                "header": "Darnassus Harbor",
                "ends": [],
                "starts": [],
-               "objectives": ["Ride to Auberdine"],
+               "objectives": [],
                "type": "travel"
             }
          ]
       },
       {
          "zone": "darkshore",
-         "experience": 0.00,
+         "experience": 24.27,
          "waypoints": [
             {
                "coords": { "x": 33, "y": 40 },
@@ -113,7 +113,7 @@
                "header": "Auberdine Harbor",
                "ends": [],
                "starts": [],
-               "objectives": ["Ride to Menethil"],
+               "objectives": [],
                "type": "travel"
             }
          ]

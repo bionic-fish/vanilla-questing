@@ -14,7 +14,15 @@ var data = [
    $.getJSON('../data/012-darkshore.json'),
    $.getJSON('../data/013-ashenvale.json'),
    $.getJSON('../data/014-darkshore.json'),
-   $.getJSON('../data/015-transition.json')
+   $.getJSON('../data/015-transition.json'),
+   $.getJSON('../data/016-menethil.json'),
+   $.getJSON('../data/017-duskwood.json'),
+   $.getJSON('../data/018-transition.json'),
+   $.getJSON('../data/019-duskwood.json'),
+   $.getJSON('../data/020-redridge.json'),
+   $.getJSON('../data/021-duskwood.json'),
+   $.getJSON('../data/022-transition.json'),
+   $.getJSON('../data/023-wetlands.json')
 ];
 
 // WAIT FOR EVERYTHING TO RESPOND

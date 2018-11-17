@@ -2,7 +2,7 @@
    "path": [
       {
          "zone": "redridge",
-         "experience": 0.00,
+         "experience": 20.44,
          "waypoints": [
             {
                "coords": { "x": 8, "y": 72 },
@@ -72,7 +72,7 @@
       },
       {
          "zone": "redridge",
-         "experience": 0.00,
+         "experience": 20.88,
          "waypoints": [
             {
                "coords": { "x": 24, "y": 35 },
@@ -174,7 +174,7 @@
       },
       {
          "zone": "redridge",
-         "experience": 0.00,
+         "experience": 21.42,
          "waypoints": [
             {
                "coords": { "x": 27, "y": 45 },
@@ -244,7 +244,7 @@
       },
       {
          "zone": "redridge",
-         "experience": 0.00,
+         "experience": 21.86,
          "waypoints": [
             {
                "coords": { "x": 39, "y": 32 },

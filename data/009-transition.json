@@ -2,7 +2,7 @@
    "path": [
       {
          "zone": "stormwind",
-         "experience": 0.00,
+         "experience": 20.16,
          "waypoints": [
             {
                "coords": { "x": 66, "y": 62 },
@@ -72,7 +72,7 @@
       },
       {
          "zone": "elwynn",
-         "experience": 0.00,
+         "experience": 20.41,
          "waypoints": [
             {
                "coords": { "x": 32, "y": 49 },

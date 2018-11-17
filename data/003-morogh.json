@@ -2,7 +2,7 @@
    "path": [
       {
          "zone": "morogh",
-         "experience": 0.00,
+         "experience": 11.29,
          "waypoints": [
             {
                "coords": { "x": 53, "y": 35 },
@@ -32,7 +32,7 @@
       },
       {
          "zone": "morogh",
-         "experience": 0.00,
+         "experience": 11.46,
          "waypoints": [
             {
                "coords": { "x": 71, "y": 55 },
@@ -70,7 +70,7 @@
       },
       {
          "zone": "morogh",
-         "experience": 0.00,
+         "experience": 11.63,
          "waypoints": [
             {
                "coords": { "x": 62, "y": 47 },
@@ -116,7 +116,7 @@
       },
       {
          "zone": "morogh",
-         "experience": 0.00,
+         "experience": 11.81,
          "waypoints": [
             {
                "coords": { "x": 78, "y": 38 },

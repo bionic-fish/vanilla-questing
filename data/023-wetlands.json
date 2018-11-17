@@ -1,0 +1,58 @@
+{
+   "path": [
+      {
+         "zone": "wetlands",
+         "experience": 27.61,
+         "waypoints": [
+            {
+               "coords": { "x": 9, "y": 61 },
+               "header": "Menethil Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 11, "y": 59 },
+               "header": "Menethil",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 8, "y": 59 },
+               "header": "Karl Boran",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 9, "y": 56 },
+               "header": "James Halloran",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 11, "y": 56 },
+               "header": "Menethil Keep",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 12, "y": 52 },
+               "header": "Tarrel Rockweaver",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            }
+         ]
+      }
+   ]
+}

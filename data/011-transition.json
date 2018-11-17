@@ -2,7 +2,7 @@
    "path": [
       {
          "zone": "stormwind",
-         "experience": 0.00,
+         "experience": 21.92,
          "waypoints": [
             {
                "coords": { "x": 66, "y": 62 },
@@ -11,6 +11,14 @@
                "starts": [],
                "objectives": [],
                "type": "flightpath"
+            },
+            {
+               "coords": { "x": 65, "y": 59 },
+               "header": "Felicia Gump",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Buy a 1x Stormwind Seasoning Herbs"],
+               "type": "objective"
             },
             {
                "coords": { "x": 58, "y": 17 },
@@ -32,7 +40,7 @@
       },
       {
          "zone": "ironforge",
-         "experience": 0.00,
+         "experience": 21.94,
          "waypoints": [
             {
                "coords": { "x": 78, "y": 52 },
@@ -54,7 +62,7 @@
       },
       {
          "zone": "wetlands",
-         "experience": 0.00,
+         "experience": 21.94,
          "waypoints": [
             {
                "coords": { "x": 9, "y": 60 },
@@ -69,7 +77,7 @@
                "header": "Menethil Harbor",
                "ends": [],
                "starts": [],
-               "objectives": ["Ride to Auberdine"],
+               "objectives": [],
                "type": "travel"
             }
          ]

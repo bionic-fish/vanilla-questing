@@ -2,7 +2,7 @@
    "path": [
       {
          "zone": "ironforge",
-         "experience": 0.00,
+         "experience": 16.90,
          "waypoints": [
             {
                "coords": { "x": 19, "y": 51 },
@@ -32,7 +32,7 @@
       },
       {
          "zone": "stormwind",
-         "experience": 0.00,
+         "experience": 16.90,
          "waypoints": [
             {
                "coords": { "x": 63, "y": 8 },

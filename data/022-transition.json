@@ -1,0 +1,156 @@
+{
+   "path": [
+      {
+         "zone": "westfall",
+         "experience": 27.21,
+         "waypoints": [
+            {
+               "coords": { "x": 64, "y": 42 },
+               "header": "Duskwood Border",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 57, "y": 53 },
+               "header": "Westfall Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fly to Stormwind"],
+               "type": "flightpath"
+            }
+         ]
+      },
+      {
+         "zone": "stormwind",
+         "experience": 27.21,
+         "waypoints": [
+            {
+               "coords": { "x": 66, "y": 62 },
+               "header": "Stormwind Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 73, "y": 45 },
+               "header": "Nikova Raskol",
+               "ends": [],
+               "starts": ["The Color of Blood"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 74, "y": 8 },
+               "header": "Milton Sheaf",
+               "ends": ["An Old History Book"],
+               "starts": ["Southshore"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 49, "y": 30 },
+               "header": "Baros Alexston",
+               "ends": [],
+               "starts": ["Bazil Thredd"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 40, "y": 29 },
+               "header": "Cathedral of Light",
+               "ends": ["Seeking Wisdom"],
+               "starts": ["The Doomed Fleet"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 41, "y": 58 },
+               "header": "The Stockade Enterance",
+               "ends": ["Bazil Thredd"],
+               "starts": ["Quell The Uprising", "The Stockade Riots"],
+               "objectives": ["Do the Stockade with 5 quests."],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "stormwind",
+         "experience": 27.36,
+         "waypoints": [
+            {
+               "coords": { "x": 41, "y": 58 },
+               "header": "The Stockade Enterance",
+               "ends": ["Quell The Uprising", "The Stockade Riots"],
+               "starts": ["The Curious Visitor"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 49, "y": 30 },
+               "header": "Baros Alexston",
+               "ends": ["The Curious Visitor"],
+               "starts": ["Shadow of the Past"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 73, "y": 45 },
+               "header": "Nikova Raskol",
+               "ends": [],
+               "starts": ["The Color of Blood"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 76, "y": 60 },
+               "header": "Master Mathias Shaw",
+               "ends": ["Shadow of the Past"],
+               "starts": ["Look to an Old Friend"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 60, "y": 64 },
+               "header": "Elling Trias",
+               "ends": ["Look to an Old Friend"],
+               "starts": ["Infiltrating the Castle"],
+               "objectives": [],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "stormwind",
+         "experience": 27.59,
+         "waypoints": [
+            {
+               "coords": { "x": 60, "y": 64 },
+               "header": "Elling Trias",
+               "ends": ["Look to an Old Friend"],
+               "starts": ["Infiltrating the Castle"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 69, "y": 15 },
+               "header": "Tyrion",
+               "ends": ["Infiltrating the Castle"],
+               "starts": ["Items of some Consequence"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 66, "y": 62 },
+               "header": "Stormwind Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fly to Menethila"],
+               "type": "flightpath"
+            }
+         ]
+      }
+   ]
+}

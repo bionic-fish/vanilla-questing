@@ -1,0 +1,110 @@
+{
+   "path": [
+      {
+         "zone": "duskwood",
+         "experience": 25.36,
+         "waypoints": [
+            {
+               "coords": { "x": 74, "y": 44 },
+               "header": "Darkshire Inn",
+               "ends": [],
+               "starts": ["Seasoned Wolf Kabobs"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 80, "y": 48 },
+               "header": "Viktori Prism'Antras",
+               "ends": ["Look to the Stars P1"],
+               "starts": ["Look to the Stars P1", "Look to the Stars P2"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 82, "y": 59 },
+               "header": "Blind Mary",
+               "ends": ["Ghost Hair Thread", "Look to the Stars P2"],
+               "starts": ["Return the Comb"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 79, "y": 72 },
+               "header": "Tranquil Gardens Cemetary",
+               "ends": [],
+               "starts": [],
+               "objectives": ["The Night Watch P1", "The Totem of Infliction", "Look to the Stars P3"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "duskwood",
+         "experience": 25.48,
+         "waypoints": [
+            {
+               "coords": { "x": 79, "y": 72 },
+               "header": "Tranquil Gardens Cemetary",
+               "ends": [],
+               "starts": [],
+               "objectives": ["The Night Watch P1", "The Totem of Infliction", "Look to the Stars P3"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 80, "y": 48 },
+               "header": "Viktori Prism'Antras",
+               "ends": ["Look to the Stars P2"],
+               "starts": ["Look to the Stars P3"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 74, "y": 47 },
+               "header": "Darkshire",
+               "ends": ["Seasoned Wolf Kabobs", "The Night Watch P1", "Return the Comb", "The Totem of Infliction"],
+               "starts": ["The Night Watch P2", "Deliver the Thread"],
+               "objectives": [],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 82, "y": 17 },
+               "header": "Elwynn Forest Border",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "elwynn",
+         "experience": 25.65,
+         "waypoints": [
+            {
+               "coords": { "x": 84, "y": 88 },
+               "header": "Duskwood Border",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 85, "y": 69 },
+               "header": "Marshal Haggard",
+               "ends": ["The Legend of Stalvan P7", "The Legend of Stalvan P8"],
+               "starts": ["The Legend of Stalvan P8", "The Legend of Stalvan P9"],
+               "objectives": ["Loot the Chest Upstairs"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 92, "y": 72 },
+               "header": "Redridge Mountains Border",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "travel"
+            }
+         ]
+      }
+   ]
+}

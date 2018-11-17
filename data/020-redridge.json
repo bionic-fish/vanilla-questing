@@ -1,0 +1,198 @@
+{
+   "path": [
+      {
+         "zone": "redridge",
+         "experience": 25.72,
+         "waypoints": [
+            {
+               "coords": { "x": 8, "y": 72 },
+               "header": "Elwynn Forest Border",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 32, "y": 58 },
+               "header": "Guard Howe",
+               "ends": [],
+               "starts": ["Blackrock Bounty"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 32, "y": 48 },
+               "header": "",
+               "ends": [],
+               "starts": ["Tharil'Zun", "Shadow Magic", "Howling in the Hills"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 29, "y": 45 },
+               "header": "",
+               "ends": [],
+               "starts": ["Solomon's Law", "Wanted: Gath'llzogg"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 26, "y": 47 },
+               "header": "",
+               "ends": [],
+               "starts": ["Wanted: Lieutenant Fangore", "What Comes Around..."],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 28, "y": 21 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Howling in the Hills"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 79, "y": 41 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Wanted: Lieutenant Fangore", "Solomon's Law"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 84, "y": 47 },
+               "header": "",
+               "ends": ["A Watchful Eye"],
+               "starts": ["Looking Further"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 70, "y": 56 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Wanted: Gath'llzogg", "Shadow Magic"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 69, "y": 60 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Tharil'Zun", "Shadow Magic"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 63, "y": 50 },
+               "header": "An Empty Jar",
+               "ends": ["Looking Further"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "redridge",
+         "experience": 26.04,
+         "waypoints": [
+            {
+               "coords": { "x": 63, "y": 50 },
+               "header": "An Empty Jar",
+               "ends": ["Looking Further"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 32, "y": 7 },
+               "header": "Render's Rock",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Blackrock Bounty"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 28, "y": 13 },
+               "header": "Corporal Keeshan",
+               "ends": [],
+               "starts": ["Missing in Action"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 35, "y": 44 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Missing in Action"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "redridge",
+         "experience": 26.11,
+         "waypoints": [
+            {
+               "coords": { "x": 35, "y": 44 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Missing in Action"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 33, "y": 49 },
+               "header": "Marshal Morris",
+               "ends": ["Tharil'Zun", "Shadow Magic", "Missing in Action"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 31, "y": 47 },
+               "header": "Vernon Osgood",
+               "ends": ["Howling in the Hills"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 30, "y": 44 },
+               "header": "Lakeshire Town Hall",
+               "ends": ["Solomon's Law", "Wanted: Lieutenant Fangore", "Wanted: Gath'llzogg"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 26, "y": 47 },
+               "header": "Guard Berton",
+               "ends": [],
+               "starts": ["What Comes Around..."],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 32, "y": 58 },
+               "header": "Guard Howe",
+               "ends": ["Blackrock Bounty"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 31, "y": 59 },
+               "header": "Redridge Mountains Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fly to Westfall"],
+               "type": "flightpath"
+            }
+         ]
+      }
+   ]
+}

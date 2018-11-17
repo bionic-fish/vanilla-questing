@@ -2,7 +2,7 @@
    "path": [
       {
          "zone": "westfall",
-         "experience": 0.00,
+         "experience": 16.99,
          "waypoints": [
             {
                "coords": { "x": 57, "y": 53 },
@@ -136,7 +136,7 @@
       },
       {
          "zone": "westfall",
-         "experience": 0.00,
+         "experience": 17.61,
          "waypoints": [
             {
                "coords": { "x": 54, "y": 53 },
@@ -214,7 +214,7 @@
       },
       {
          "zone": "westfall",
-         "experience": 0.00,
+         "experience": 18.32,
          "waypoints": [
             {
                "coords": { "x": 31, "y": 46 },
@@ -292,7 +292,7 @@
       },
       {
          "zone": "westfall",
-         "experience": 0.00,
+         "experience": 18.88,
          "waypoints": [
             {
                "coords": { "x": 45, "y": 80 },
@@ -322,7 +322,7 @@
       },
       {
          "zone": "redridge",
-         "experience": 0.00,
+         "experience": 18.96,
          "waypoints": [
             {
                "coords": { "x": 31, "y": 59 },
@@ -376,7 +376,7 @@
       },
       {
          "zone": "duskwood",
-         "experience": 0.00,
+         "experience": 19.06,
          "waypoints": [
             {
                "coords": { "x": 94, "y": 11 },
@@ -414,7 +414,7 @@
       },
       {
          "zone": "westfall",
-         "experience": 0.00,
+         "experience": 19.12,
          "waypoints": [
             {
                "coords": { "x": 57, "y": 53 },
@@ -436,7 +436,7 @@
       },
       {
          "zone": "westfall",
-         "experience": 0.00,
+         "experience": 19.12,
          "waypoints": [
             {
                "coords": { "x": 57, "y": 47 },
@@ -458,7 +458,7 @@
       },
       {
          "zone": "stormwind",
-         "experience": 0.00,
+         "experience": 19.17,
          "waypoints": [
             {
                "coords": { "x": 66, "y": 62 },
@@ -512,7 +512,7 @@
       },
       {
          "zone": "stormwind",
-         "experience": 0.00,
+         "experience": 19.28,
          "waypoints": [
             {
                "coords": { "x": 64, "y": 75 },
@@ -534,7 +534,7 @@
       },
       {
          "zone": "westfall",
-         "experience": 0.00,
+         "experience": 19.28,
          "waypoints": [
             {
                "coords": { "x": 57, "y": 53 },
@@ -564,7 +564,7 @@
       },
       {
          "zone": "westfall",
-         "experience": 0.00,
+         "experience": 19.31,
          "waypoints": [
             {
                "coords": { "x": 46, "y": 69 },
@@ -594,7 +594,7 @@
       },
       {
          "zone": "westfall",
-         "experience": 0.00,
+         "experience": 19.45,
          "waypoints": [
             {
                "coords": { "x": 46, "y": 69 },
@@ -624,7 +624,7 @@
       },
       {
          "zone": "westfall",
-         "experience": 0.00,
+         "experience": 20.16,
          "waypoints": [
             {
                "coords": { "x": 52, "y": 53 },
@@ -645,8 +645,8 @@
             {
                "coords": { "x": 57, "y": 47 },
                "header": "Sentinel Tower",
-               "ends": ["The People's Militia P1", "Patrolling Westfall"],
-               "starts": ["The People's Militia P2"],
+               "ends": ["The Defias Brotherhood P7", "Red Silk Bandanas"],
+               "starts": [],
                "objectives": [],
                "type": "quest"
             },
