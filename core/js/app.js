@@ -1,76 +1,72 @@
-// LOAD WAYPOINT BLOCKS
-$.getJSON('../data/blocks.json').then((response) => {
+// DATA
+var data = [
+   $.getJSON('../data/001-elwynn.json'),
+   $.getJSON('../data/002-transition.json')
+];
 
-   var current = response.blocks.length - 1;
-   var max = response.blocks.length;
+// WAIT FOR EVERYTHING TO RESPOND
+Promise.all(data).then((response) => {
 
-   // RUN WHEN FIRST LOADED IN
-   set_points(current, response);
+   // LOCALSTORAGE KEY NAME
+   var key_name = 'questing-page';
 
+   // SET THE USERS STARTING BLOCK TO ZERO IF IT DOESNT EXIST
+   if (localStorage.getItem(key_name) === null) { localStorage.setItem(key_name, '0'); }
+
+   // BUILD UNITED JSON FILE
+   data = build(response);
+   
+   // SETTINGS
+   var current = parseInt(localStorage.getItem(key_name));
+   var last_page = data.length;
+
+   // RENDER MAP & WAYPOINTS ON INITIAL LOAD
+   render(data, current);
+
+   // LISTEN FOR KEY PRESSES
    $(document).on('keyup', (evt) => {
 
       // WHEN 'A' IS PRESSED
       if (evt.keyCode == 65) {
-         var block = current - 1;
 
-         if (block < max && block > -1) {
-            set_points(block, response);
-            current = block;
+         // BIND THE PREVIOUS NUMBER
+         var previous = current - 1;
+
+         // IF ITS HIGHER OR EQUAL TO ZERO 
+         if (previous >= 0) {
+
+            // UPDATE LOCALSTORAGE & THE CURRENT VAR
+            localStorage.setItem(key_name, String(previous));
+            current = previous;
+
+            // RENDER NEW MAP & WAYPOINTS
+            render(data, current);
          }
       }
 
-      // WHEN 'A' IS PRESSED
+      // WHEN 'D' IS PRESSED
       if (evt.keyCode == 68) {
-         var block = current + 1;
 
-         if (block < max && block > -1) {
-            set_points(block, response); 
-            current = block;
+         // BIND THE PREVIOUS NUMBER
+         var next = current + 1;
+         
+         // IF ITS LOWER THAN THE MAXIMUM
+         if (next < last_page) {
+
+            // UPDATE LOCALSTORAGE & THE CURRENT VAR
+            localStorage.setItem(key_name, String(next));
+            current = next;
+
+            // RENDER NEW MAP & WAYPOINTS
+            render(data, current);
          }
       }
+
    });
 
    // SHOW TOOLTIP ON MOUSEOVER
-   $('body').on('mouseover', 'img', (event) => {
-
-      // PICK UP DETAILS
-      var id = $(event.target).attr('wp');
-      var waypoint = response.blocks[current].waypoints[id];
-
-      // GENERATE WAYPOINT DATA
-      var header = '';
-      var ends = '';
-      var starts = '';
-      var objectives = '';
-
-      // GENERATE DIVS FOR FILLED PROPERTIES
-      waypoint.ends.forEach(quest_name => { ends += '<div class="ends">' + quest_name + '</div>'; });
-      waypoint.starts.forEach(quest_name => { starts += '<div class="starts">' + quest_name + '</div>'; });
-      waypoint.objectives.forEach(quest_name => { objectives += '<div class="objectives">' + quest_name + '</div>'; });
-      if (waypoint.header != '') { header += '<div class="header">' + waypoint.header + '</div>'; }
-
-      // RENDER IN WAYPOINT DATA
-      $('#tooltip').html(header + ends + starts + objectives);
-
-      // TOOLTIP PROPERTIES
-      var tooltip = {
-         width: parseFloat($('#tooltip').css('width')),
-         height: parseFloat($('#tooltip').css('height')),
-         padding: parseInt($('#tooltip').css('padding')[0]),
-         offset: 5
-      }
-
-      // FIGURE OUT THE XY POSITION WITH OFFSETS
-      var x = event.target.x - (tooltip.width / 2);
-      var y = event.target.y - (tooltip.height + (tooltip.offset + (2 * tooltip.padding)));
-
-      // SET CSS
-      $('#tooltip').css('left', x);
-      $('#tooltip').css('top', y);
-      $('#tooltip').css('display', 'inline-block');
-   });
+   $('body').on('mouseover', 'img', (event) => { mouseover(event, data[current]); });
 
    // HIDE TOOLTIP ON MOUESOUT
    $('body').on('mouseout', 'img', () => { $('#tooltip').css('display', 'none'); });
-
 });

@@ -25,7 +25,7 @@
                "ends": ["Report to Goldshire", "Rest and Relaxation"],
                "starts": ["The Fargodeep Mine", "Gold Dust Exchange", "Kobold Candles"],
                "objectives": ["Set Hearthstone"],
-               "type": "location"
+               "type": "hub"
             },
             {
                "coords": { "x": 43, "y": 90 },
@@ -144,7 +144,7 @@
                "ends": ["Goldtooth"],
                "starts": ["Princess Must Die!"],
                "objectives": ["Farm to level 7"],
-               "type": "location"
+               "type": "quest"
             },
             {
                "coords": { "x": 42, "y": 66 },
@@ -152,7 +152,7 @@
                "ends": ["Gold Dust Exchange", "The Fargomine Deep", "Kobold Candles", "Note to William"],
                "starts": ["Further Concerns", "Westbrook Garrison Needs Help!", "The Jasperlode Mine", "Collecting Kelp", "Shipment to Stormwind"],
                "objectives": [],
-               "type": "location"
+               "type": "hub"
             },
             {
                "coords": { "x": 52, "y": 63 },
@@ -208,7 +208,7 @@
                "ends": [],
                "starts": ["A Bundle of Trouble", "Red Linen Goods"],
                "objectives": [],
-               "type": "location"
+               "type": "quest"
             },
             {
                "coords": { "x": 79, "y": 61 },
@@ -253,7 +253,7 @@
                "ends": ["A Bundle of Trouble", "Red Linen Goods"],
                "starts": [],
                "objectives": [],
-               "type": "location"
+               "type": "quest"
             },
             {
                "coords": { "x": 92, "y": 72 },
@@ -261,7 +261,7 @@
                "ends": [],
                "starts": [],
                "objectives": [],
-               "type": "location"
+               "type": "travel"
             }
          ]
       },
@@ -274,7 +274,7 @@
                "ends": [],
                "starts": [],
                "objectives": [],
-               "type": "location"
+               "type": "travel"
             },
             {
                "coords": { "x": 31, "y": 59 },
@@ -282,7 +282,7 @@
                "ends": [],
                "starts": [],
                "objectives": ["Learn Flightpath", "Hearthstone to Goldshire"],
-               "type": "objective"
+               "type": "flightpath"
             }
          ]
       },
@@ -295,15 +295,7 @@
                "ends": ["Collecting Kelp", "Deliver Thomas's Report", "The Jasperlode Mine"],
                "starts": ["The Escape", "Elmore's Task"],
                "objectives": [],
-               "type": "location" 
-            },
-            {
-               "coords": { "x": 42, "y": 66 },
-               "header": "Goldshire",
-               "ends": ["Collecting Kelp", "Deliver Thomas's Report", "The Jasperlode Mine"],
-               "starts": ["The Escape", "Elmore's Task"],
-               "objectives": [],
-               "type": "location" 
+               "type": "hub" 
             },
             {
                "coords": { "x": 35, "y": 84 },
@@ -319,7 +311,7 @@
                "ends": ["Westbrook Garrison Needs Help!"],
                "starts": ["Riverpaw Gnoll Bounty", "Wanted: Hogger"],
                "objectives": [],
-               "type": "location"
+               "type": "quest"
             },
             {
                "coords": { "x": 26, "y": 94 },
@@ -348,7 +340,7 @@
                "ends": ["Wanted: Hogger"],
                "starts": ["A Warrior's Training"],
                "objectives": [],
-               "type": "location" 
+               "type": "hub" 
             },
             {
                "coords": { "x": 24, "y": 75 },
@@ -393,15 +385,15 @@
                "ends": ["Report to Gryan Stoutmantle"],
                "starts": ["A Swift Message"],
                "objectives": [],
-               "type": "location"
+               "type": "quest"
             },
             {
                "coords": { "x": 57, "y": 53 },
-               "header": "Thor",
+               "header": "Westfall Flightpath",
                "ends": ["A Swift Message"],
                "starts": ["Continue to Stormwind"],
                "objectives": ["Fly to Stormwind"],
-               "type": "quest"
+               "type": "flightpath"
             }
          ]
       },
@@ -410,11 +402,11 @@
          "waypoints": [
             {
                "coords": { "x": 66, "y": 62 },
-               "header": "Dungar Longdrink",
+               "header": "Stormwind Flightpath",
                "ends": [],
                "starts": [],
                "objectives": ["Learn Flightpath."],
-               "type": "objective"
+               "type": "flightpath"
             },
             {
                "coords": { "x": 56, "y": 65 },
@@ -462,7 +454,7 @@
                "ends": [],
                "starts": [],
                "objectives": ["Move to Ironforge"],
-               "type": "location"
+               "type": "travel"
             }
          ]
       },
@@ -475,15 +467,15 @@
                "ends": [],
                "starts": ["Deeprun Rat Roundup"],
                "objectives": [],
-               "type": "quest"
+               "type": "travel"
             },
             {
                "coords": { "x": 56, "y": 48 },
-               "header": "Gryth Thurden",
+               "header": "Ironforge Flightpath",
                "ends": [],
                "starts": [],
                "objectives": ["Learn Flightpath"],
-               "type": "objective"
+               "type": "flightpath"
             },
             {
                "coords": { "x": 19, "y": 51 },
@@ -499,7 +491,7 @@
                "ends": [],
                "starts": [],
                "objectives": [],
-               "type": "location"
+               "type": "travel"
             }
          ]
       },
@@ -512,7 +504,7 @@
                "ends": [],
                "starts": [],
                "objectives": [],
-               "type": "location"
+               "type": "travel"
             },
             {
                "coords": { "x": 68, "y": 55 },
@@ -520,7 +512,7 @@
                "ends": [],
                "starts": ["The Public Servant", "These Blasted Troggs"],
                "objectives": [],
-               "type": "location"
+               "type": "quest"
             },
             {
                "coords": { "x": 71, "y": 55 },
@@ -549,7 +541,7 @@
                "ends": ["The Public Servant", "These Blasted Troggs"],
                "starts": [],
                "objectives": [],
-               "type": "location"
+               "type": "quest"
             },
             {
                "coords": { "x": 63, "y": 50 },
@@ -639,7 +631,7 @@
                "ends": [],
                "starts": [],
                "objectives": [],
-               "type": "location"
+               "type": "travel"
             }
          ]
       },
@@ -652,7 +644,7 @@
                "ends": [],
                "starts": [],
                "objectives": [],
-               "type": "quest"
+               "type": "travel"
             },
             {
                "coords": { "x": 23, "y": 18 },
@@ -668,15 +660,15 @@
                "ends": [],
                "starts": ["Rat Catching", "Stormpike's Order", "Thelsamar Blood Sausages", "Honor Students"],
                "objectives": [],
-               "type": "location"
+               "type": "hub"
             },
             {
                "coords": { "x": 34, "y": 51 },
-               "header": "Thorgrum Borrelson",
+               "header": "Loch Modan Flightpath",
                "ends": ["Honor Students"],
                "starts": ["Ride to Ironforge"],
                "objectives": ["Hearthstone to Ironforge"],
-               "type": "quest"
+               "type": "flightpath"
             }
          ]
       },
@@ -689,7 +681,7 @@
                "ends": [],
                "starts": [],
                "objectives": [],
-               "type": "location"
+               "type": "travel"
             },
             {
                "coords": { "x": 51, "y": 26 },
@@ -701,11 +693,11 @@
             },
             {
                "coords": { "x": 56, "y": 48 },
-               "header": "Gryth Thurden",
+               "header": "Ironforge Flightpath",
                "ends": ["Gryth Thurden"],
                "starts": ["Return to Brock"],
                "objectives": ["Fly to Loch Modan"],
-               "type": "quest"
+               "type": "flightpath"
             }
          ]
       },
@@ -718,7 +710,7 @@
                "ends": [],
                "starts": [],
                "objectives": [],
-               "type": "location"
+               "type": "flightpath"
             },
             {
                "coords": { "x": 30, "y": 46 },
@@ -771,7 +763,7 @@
                "ends": ["Rat Catching", "Thelsamar Blood Sausages", "Return to Brock"],
                "starts": [],
                "objectives": [],
-               "type": "location"
+               "type": "hub"
             },
             {
                "coords": { "x": 23, "y": 74 },
@@ -779,7 +771,7 @@
                "ends": [],
                "starts": ["The Trogg Threat", "In Defense of the King's Lands"],
                "objectives": [],
-               "type": "location"
+               "type": "quest"
             },
             {
                "coords": { "x": 33, "y": 76 },
@@ -808,7 +800,7 @@
                "ends": ["The Trogg Threat", "In Defense of the King's Lands Part 1"],
                "starts": ["In Defense of the King's Lands Part 2"],
                "objectives": [],
-               "type": "location"
+               "type": "quest"
             }
          ]
       },
@@ -821,7 +813,7 @@
                "ends": ["The Trogg Threat", "In Defense of the King's Lands Part 1"],
                "starts": ["In Defense of the King's Lands Part 2"],
                "objectives": [],
-               "type": "location"
+               "type": "quest"
             },
             {
                "coords": { "x": 36, "y": 82 },
@@ -858,7 +850,7 @@
                "ends": [],
                "starts": [],
                "objectives": ["Run to Menethil Harbor"],
-               "type": "location"
+               "type": "travel"
             }
          ]
       },
@@ -871,23 +863,47 @@
                "ends": [],
                "starts": [],
                "objectives": [],
-               "type": "location"
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 57, "y": 55 },
+               "header": "Wetlands Road",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 44, "y": 38 },
+               "header": "Wetlands Road",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 20, "y": 43 },
+               "header": "Wetlands Road",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "travel"
             },
             {
                "coords": { "x": 9, "y": 60 },
-               "header": "Menethil Harbor Flightpath",
+               "header": "Menethil Flightpath",
                "ends": [],
                "starts": [],
                "objectives": ["Learn the Flightpath"],
-               "type": "objective"
+               "type": "flightpath"
             },
             {
                "coords": { "x": 5, "y": 57 },
-               "header": "",
+               "header": "Menethil Harbor",
                "ends": [],
                "starts": [],
-               "objectives": ["Take the boat to Darkshore"],
-               "type": "objective"
+               "objectives": ["Ride to Darkshore"],
+               "type": "travel"
             }
          ]
       },
@@ -900,15 +916,23 @@
                "ends": [],
                "starts": [],
                "objectives": [],
-               "type": "location"
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 36, "y": 46 },
+               "header": "Auberdine Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Learn the Flightpath"],
+               "type": "flightpath"
             },
             {
                "coords": { "x": 39, "y": 43 },
                "header": "Auberdine",
                "ends": [],
                "starts": ["For Love Eternal", "Buzzbox 827", "Washed Ashore P1", "Cave Mushrooms", "The Red Crystal", "Deep Ocean, Vast Sea", "Bashal'Aran P1", "Tools of the Highbourne", "Plagued Lands", "How Big a Threat? P1", "The Tower of Althalaxx P1"],
-               "objectives": ["Learn the Flightpath"],
-               "type": "location"
+               "objectives": [],
+               "type": "hub"
             },
             {
                "coords": { "x": 44, "y": 36 },
@@ -1003,7 +1027,7 @@
                "ends": ["Plagued Lands"],
                "starts": ["Cleansing of the Infected"],
                "objectives": [],
-               "type": "location"
+               "type": "hub"
             },
             {
                "coords": { "x": 36, "y": 48 },
@@ -1048,7 +1072,7 @@
                "ends": ["Washed Ashore P1", "Buzzbox 827", "How Big a Threat? P1", "Thundris Windweaver"],
                "starts": ["Washed Ashore P2", "Buzzbox 411", "How Big a Threat? P2", "Thundris Windweaver", "The Cliffspring River"],
                "objectives": [],
-               "type": "location"
+               "type": "hub"
             },
             {
                "coords": { "x": 33, "y": 40 },
@@ -1060,10 +1084,10 @@
             },
             {
                "coords": { "x": 32, "y": 46 },
-               "header": "Washed Ashore P2",
+               "header": "Turtle Skull",
                "ends": [],
                "starts": [],
-               "objectives": ["Buzzbox 411"],
+               "objectives": ["Washed Ashore P2"],
                "type": "objective"
             }
          ]
@@ -1073,10 +1097,10 @@
          "waypoints": [
             {
                "coords": { "x": 32, "y": 46 },
-               "header": "Washed Ashore P2",
+               "header": "Turtle Skull",
                "ends": [],
                "starts": [],
-               "objectives": ["Buzzbox 411"],
+               "objectives": ["Washed Ashore P2"],
                "type": "objective"
             },
             {
@@ -1146,7 +1170,7 @@
                "ends": ["Cleansing The Infected", "How Big a Threat? P2", "The Red Crystal", "Washed Ashore P2", "For Love Eternal", "Tools of the Highbourne"],
                "starts": ["Tharnariun's Hope", "As Water Cascades", "Fruit of the Sea"],
                "objectives": ["Fill the empty vial at the Moonwell."],
-               "type": "location"
+               "type": "hub"
             }
          ]
       },
@@ -1159,7 +1183,7 @@
                "ends": ["Cleansing The Infected", "How Big a Threat? P2", "The Red Crystal", "Washed Ashore P2", "For Love Eternal", "Tools of the Highbourne"],
                "starts": ["Tharnariun's Hope", "As Water Cascades", "Fruit of the Sea"],
                "objectives": ["Fill the empty vial at the Moonwell."],
-               "type": "location"
+               "type": "hub"
             },
             {
                "coords": { "x": 47, "y": 49 },
@@ -1223,7 +1247,7 @@
                "ends": ["Buzzbox 323"],
                "starts": ["Buzzbox 525"],
                "objectives": ["The Cliffspring River"],
-               "type": "location"
+               "type": "quest"
             },
             {
                "coords": { "x": 55, "y": 25 },
@@ -1284,7 +1308,7 @@
                "ends": ["The Cliffspring River", "Deep Ocean, Vast Sea", "Tharnariun's Hope", "The Fragments Within", "Cave Mushrooms", "Fruit of the Sea"],
                "starts": ["The Blackwood Corruption"],
                "objectives": ["Fill your bowl at the Moonwell"],
-               "type": "location"
+               "type": "hub"
             },
             {
                "coords": { "x": 51, "y": 35 },
@@ -1312,8 +1336,8 @@
                "header": "Auberdine",
                "ends": ["The Blackwood Corruption"],
                "starts": [],
-               "objectives": ["Hearthstone to Ironforge", "Take the Train to Stormwind"],
-               "type": "location"
+               "objectives": ["Hearthstone to Ironforge"],
+               "type": "hub"
             }
          ]
       },
@@ -1326,7 +1350,7 @@
                "ends": [],
                "starts": [],
                "objectives": [],
-               "type": "location"
+               "type": "travel"
             },
             {
                "coords": { "x": 69, "y": 51 },
@@ -1342,7 +1366,7 @@
                "ends": [],
                "starts": [],
                "objectives": ["Ride to Stormwind"],
-               "type": "location"
+               "type": "travel"
             }
          ]
       },
@@ -1355,7 +1379,7 @@
                "ends": [],
                "starts": [],
                "objectives": [],
-               "type": "location"
+               "type": "travel"
             },
             {
                "coords": { "x": 55, "y": 12 },
@@ -1383,11 +1407,11 @@
             },
             {
                "coords": { "x": 66, "y": 62 },
-               "header": "Dungar Longdrink",
+               "header": "Stormwind Flightpath",
                "ends": ["Dungar Longdrink"],
                "starts": ["Return to Lewis"],
                "objectives": ["Fly to Westfall"],
-               "type": "quest"
+               "type": "flightpath"
             }
          ]
       },
@@ -1396,19 +1420,19 @@
          "waypoints": [
             {
                "coords": { "x": 57, "y": 53 },
-               "header": "Sentinel Hill Flightpath",
+               "header": "Westfall Flightpath",
                "ends": [],
                "starts": [],
                "objectives": [],
-               "type": "location"
+               "type": "flightpath"
             },
             {
                "coords": { "x": 54, "y": 53 },
-               "header": "Sentinel Hill",
+               "header": "Sentinel Hill Inn",
                "ends": [],
                "starts": ["Red Leather Bandanas"],
                "objectives": ["Set Hearthstone"],
-               "type": "location"
+               "type": "quest"
             },
             {
                "coords": { "x": 57, "y": 47 },
@@ -1416,7 +1440,7 @@
                "ends": ["Return to Lewis"],
                "starts": ["The People's Militia P1", "The Defias Brotherhood", "Patrolling Westfall"],
                "objectives": [],
-               "type": "location"
+               "type": "hub"
             },
             {
                "coords": { "x": 56, "y": 31 },
@@ -1424,7 +1448,7 @@
                "ends": [],
                "starts": ["The Killing Fields", "Goretusk Liver Pie", "Westfall Stew"],
                "objectives": [],
-               "type": "location"
+               "type": "quest"
             },
             {
                "coords": { "x": 60, "y": 19 },
@@ -1432,7 +1456,7 @@
                "ends": [],
                "starts": ["Poor Old Blanchy", "The Forgotten Heirloom"],
                "objectives": [],
-               "type": "location"
+               "type": "quest"
             },
             {
                "coords": { "x": 57, "y": 20 },
@@ -1488,7 +1512,7 @@
                "ends": ["Captain Sander's Hidden Treasure P1"],
                "starts": ["Captain Sander's Hidden Treasure P1", "Captain Sander's Hidden Treasure P2"],
                "objectives": ["Westfall Stew", "Murloc Eyes"],
-               "type": "location"
+               "type": "quest"
             },
             {
                "coords": { "x": 30, "y": 50 },
@@ -1528,16 +1552,8 @@
          "zone": "westfall",
          "waypoints": [
             {
-               "coords": { "x": 52, "y": 53 },
-               "header": "Westfall Inn",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
-               "type": "location"
-            },
-            {
                "coords": { "x": 54, "y": 53 },
-               "header": "Scout Galiaan",
+               "header": "Sentinel Hill Inn",
                "ends": ["Red Leather Bandanas"],
                "starts": [],
                "objectives": [],
@@ -1549,7 +1565,7 @@
                "ends": ["The People's Militia P1", "Patrolling Westfall"],
                "starts": ["The People's Militia P2"],
                "objectives": [],
-               "type": "location"
+               "type": "hub"
             },
             {
                "coords": { "x": 61, "y": 46 },
@@ -1565,7 +1581,7 @@
                "ends": ["The Killing Fields", "Goretusk Liver Pie", "Westfall Stew"],
                "starts": [],
                "objectives": [],
-               "type": "location"
+               "type": "quest"
             },
             {
                "coords": { "x": 60, "y": 19 },
@@ -1573,7 +1589,7 @@
                "ends": ["Poor Old Blanchy", "The Forgotten Heirloom"],
                "starts": [],
                "objectives": [],
-               "type": "location"
+               "type": "quest"
             },
             {
                "coords": { "x": 45, "y": 9 },
@@ -1626,7 +1642,7 @@
                "ends": ["The People's Militia P2"],
                "starts": ["The People's Militia P3"],
                "objectives": [],
-               "type": "location"
+               "type": "hub"
             },
             {
                "coords": { "x": 38, "y": 52 },
@@ -1703,15 +1719,15 @@
                "ends": ["The People's Militia P3"],
                "starts": [],
                "objectives": [],
-               "type": "quest"
+               "type": "hub"
             },
             {
                "coords": { "x": 57, "y": 53 },
-               "header": "Sentinel Hill Flightpath",
+               "header": "Westfall Flightpath",
                "ends": [],
                "starts": [],
                "objectives": ["Fly to Lakeshire"],
-               "type": "location"
+               "type": "flightpath"
             }
          ]
       },
@@ -1720,11 +1736,11 @@
          "waypoints": [
             {
                "coords": { "x": 31, "y": 59 },
-               "header": "Lakeshire Flightpath",
+               "header": "Redridge Flightpath",
                "ends": [],
                "starts": [],
                "objectives": [],
-               "type": "location"
+               "type": "flightpath"
             },
             {
                "coords": { "x": 27, "y": 44 },
@@ -1732,11 +1748,11 @@
                "ends": ["The Defian Brotherhood P1"],
                "starts": ["The Defian Brotherhood P2", "Dry Times", "A Free Lunch"],
                "objectives": [],
-               "type": "location"
+               "type": "quest"
             },
             {
                "coords": { "x": 30, "y": 44 },
-               "header": "Magistrate Solomon",
+               "header": "Lakeshire Town Hall",
                "ends": [],
                "starts": ["Messenger to Westfall P1", "Messenger to Stormwind P1", "Messenger to Darkshire P1"],
                "objectives": [],
@@ -1760,11 +1776,11 @@
             },
             {
                "coords": { "x": 6, "y": 93 },
-               "header": "Duskwood Passageway",
+               "header": "Duskwood Border",
                "ends": [],
                "starts": [],
                "objectives": ["Run to Darkshire"],
-               "type": "location"
+               "type": "travel"
             }
          ]
       },
@@ -1773,11 +1789,19 @@
          "waypoints": [
             {
                "coords": { "x": 94, "y": 11 },
-               "header": "Duskwood Passageway",
+               "header": "Redridge Border",
                "ends": [],
                "starts": [],
                "objectives": [],
-               "type": "location"
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 73, "y": 25 },
+               "header": "Duskwood Road",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "travel"
             },
             {
                "coords": { "x": 74, "y": 47 },
@@ -1785,15 +1809,15 @@
                "ends": ["Messenger to Darkshire P1"],
                "starts": ["Messenger to Darkshire P2"],
                "objectives": ["Buy Moonshine from the Bar"],
-               "type": "location"
+               "type": "hub"
             },
             {
                "coords": { "x": 78, "y": 44 },
-               "header": "Darkshire Flightpath",
+               "header": "Duskwood Flightpath",
                "ends": [],
                "starts": [],
                "objectives": ["Learn the Flightpath", "Fly to Westfall"],
-               "type": "location"
+               "type": "flightpath"
             }
          ]
       },
@@ -1802,11 +1826,11 @@
          "waypoints": [
             {
                "coords": { "x": 57, "y": 53 },
-               "header": "Sentinel Hill Flightpath",
+               "header": "Westfall Flightpath",
                "ends": [],
                "starts": [],
                "objectives": [],
-               "type": "location"
+               "type": "flightpath"
             },
             {
                "coords": { "x": 57, "y": 47 },
@@ -1814,7 +1838,7 @@
                "ends": ["The Defias Brotherhood P2", "Messenger to Westfall P1"],
                "starts": ["The Defias Brotherhood P3", "Messenger to Westfall P2"],
                "objectives": [],
-               "type": "location"
+               "type": "hub"
             }
          ]
       },
@@ -1827,15 +1851,15 @@
                "ends": ["The Defias Brotherhood P2", "Messenger to Westfall P1"],
                "starts": ["The Defias Brotherhood P3", "Messenger to Westfall P2"],
                "objectives": [],
-               "type": "location"
+               "type": "hub"
             },
             {
                "coords": { "x": 57, "y": 53 },
-               "header": "Sentinel Hill Flightpath",
+               "header": "Westfall Flightpath",
                "ends": [],
                "starts": [],
                "objectives": ["Fly to Stormwind"],
-               "type": "objective"
+               "type": "flightpath"
             }
          ]
       },
@@ -1848,7 +1872,7 @@
                "ends": [],
                "starts": [],
                "objectives": [],
-               "type": "location"
+               "type": "flightpath"
             },
             {
                "coords": { "x": 76, "y": 60 },
@@ -1909,7 +1933,7 @@
                "ends": [],
                "starts": [],
                "objectives": ["Fly to Westfall"],
-               "type": "location"
+               "type": "flightpath"
             }
          ]
       },
@@ -1918,11 +1942,11 @@
          "waypoints": [
             {
                "coords": { "x": 57, "y": 53 },
-               "header": "Sentinel Hill Flightpath",
+               "header": "Westfall Flightpath",
                "ends": [],
                "starts": [],
                "objectives": [],
-               "type": "location"
+               "type": "flightpath"
             },
             {
                "coords": { "x": 57, "y": 47 },
@@ -1930,7 +1954,7 @@
                "ends": ["The Defias Brotherhood P4"],
                "starts": ["The Defias Brotherhood P5"],
                "objectives": [],
-               "type": "quest"
+               "type": "hub"
             },
             {
                "coords": { "x": 46, "y": 69 },
@@ -1957,15 +1981,36 @@
                "coords": { "x": 57, "y": 47 },
                "header": "Sentinel Tower",
                "ends": ["The Defias Brotherhood P5"],
-               "starts": [],
+               "starts": ["The Defias Brotherhood P6"],
                "objectives": [],
                "type": "quest"
             },
             {
-               "coords": { "x": 56, "y": 48 },
-               "header": "The Defias Traitor",
+               "coords": { "x": 46, "y": 69 },
+               "header": "Moonbrook",
+               "ends": [],
+               "starts": [],
+               "objectives": ["The Defias Brotherhood P6"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "westfall",
+         "waypoints": [
+            {
+               "coords": { "x": 46, "y": 69 },
+               "header": "Moonbrook",
+               "ends": [],
+               "starts": [],
+               "objectives": ["The Defias Brotherhood P6"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 57, "y": 47 },
+               "header": "Sentinel Tower",
                "ends": ["The Defias Brotherhood P6"],
-               "starts": [],
+               "starts": ["The Defias Brotherhood P7", "Red Silk Bandanas"],
                "objectives": [],
                "type": "quest"
             },
@@ -1974,29 +2019,8 @@
                "header": "Deadmines Enterance",
                "ends": [],
                "starts": [],
-               "objectives": ["The Defias Brotherhood P5"],
-               "type": "objective"
-            }
-         ]
-      },
-      {
-         "zone": "westfall",
-         "waypoints": [
-            {
-               "coords": { "x": 43, "y": 72 },
-               "header": "Deadmines Enterance",
-               "ends": [],
-               "starts": [],
-               "objectives": ["The Defias Brotherhood P5"],
-               "type": "objective"
-            },
-            {
-               "coords": { "x": 57, "y": 47 },
-               "header": "Sentinel Tower",
-               "ends": ["The Defias Brotherhood P5"],
-               "starts": ["The Defias Brotherhood P6", "Red Silk Bandanas"],
                "objectives": ["Do the Deadmines with 5 quests."],
-               "type": "quest"
+               "type": "objective"
             }
          ]
       },
@@ -2009,7 +2033,7 @@
                "ends": [],
                "starts": [],
                "objectives": [],
-               "type": "location"
+               "type": "travel"
             },
             {
                "coords": { "x": 61, "y": 71 },
@@ -2029,11 +2053,11 @@
             },
             {
                "coords": { "x": 57, "y": 53 },
-               "header": "Sentinel Hill Flightpath",
+               "header": "Westfall Flightpath",
                "ends": [],
                "starts": [],
                "objectives": ["Fly to Stormwind"],
-               "type": "location"
+               "type": "flightpath"
             }
          ]
       },
@@ -2046,7 +2070,7 @@
                "ends": [],
                "starts": [],
                "objectives": [],
-               "type": "location"
+               "type": "flightpath"
             },
             {
                "coords": { "x": 46, "y": 38 },
@@ -2098,11 +2122,11 @@
             },
             {
                "coords": { "x": 70, "y": 87 },
-               "header": "Gates of Stormwind",
+               "header": "Stormwind Gates",
                "ends": [],
                "starts": [],
-               "objectives": ["Run to Northshire Abbey"],
-               "type": "location"
+               "objectives": [],
+               "type": "travel"
             }
          ]
       },
@@ -2111,11 +2135,11 @@
          "waypoints": [
             {
                "coords": { "x": 32, "y": 49 },
-               "header": "Gates of Stormwind",
+               "header": "Stormwind Gates",
                "ends": [],
                "starts": [],
                "objectives": [],
-               "type": "location"
+               "type": "travel"
             },
             {
                "coords": { "x": 50, "y": 40 },
@@ -2131,7 +2155,7 @@
                "ends": ["The Price of Shoes"],
                "starts": ["Return to Verner"],
                "objectives": ["Buy Sweet Rum"],
-               "type": "location"
+               "type": "hub"
             },
             {
                "coords": { "x": 65, "y": 70 },
@@ -2143,11 +2167,11 @@
             },
             {
                "coords": { "x": 92, "y": 72 },
-               "header": "Redridge Road",
+               "header": "Redridge Border",
                "ends": [],
                "starts": [],
                "objectives": [],
-               "type": "location"
+               "type": "travel"
             }
          ]
       },
@@ -2156,11 +2180,11 @@
          "waypoints": [
             {
                "coords": { "x": 8, "y": 72 },
-               "header": "Redridge Road",
+               "header": "Elwynn Border",
                "ends": [],
                "starts": [],
                "objectives": [],
-               "type": "location"
+               "type": "travel"
             },
             {
                "coords": { "x": 31, "y": 59 },
@@ -2245,7 +2269,7 @@
                "ends": ["Delivering Daffodils", "The Rethban Gauntlet"],
                "starts": ["The Shieldsmith"],
                "objectives": [],
-               "type": "location"
+               "type": "quest"
             },
             {
                "coords": { "x": 31, "y": 47 },
@@ -2330,7 +2354,7 @@
                "ends": [],
                "starts": [],
                "objectives": [],
-               "type": "location"
+               "type": "travel"
             },
             {
                "coords": { "x": 23, "y": 44 },
@@ -2411,11 +2435,11 @@
             },
             {
                "coords": { "x": 31, "y": 59 },
-               "header": "Lakeshire Flightpath",
+               "header": "Redridge Flightpath",
                "ends": [],
                "starts": [],
                "objectives": ["Fly to Stormwind"],
-               "type": "objective"
+               "type": "flightpath"
             }
          ]
       },
@@ -2428,7 +2452,7 @@
                "ends": [],
                "starts": [],
                "objectives": [],
-               "type": "location"
+               "type": "flightpath"
             },
             {
                "coords": { "x": 58, "y": 17 },
@@ -2444,7 +2468,7 @@
                "ends": [],
                "starts": [],
                "objectives": ["Ride to Ironforge"],
-               "type": "location"
+               "type": "travel"
             }
          ]
       },
@@ -2457,15 +2481,15 @@
                "ends": [],
                "starts": [],
                "objectives": [],
-               "type": "location"
+               "type": "travel"
             },
             {
                "coords": { "x": 56, "y": 48 },
-               "header": "Gryth Thurden",
+               "header": "Ironforge Flightpath",
                "ends": [],
                "starts": [],
-               "objectives": ["Fly to Menethil Harbor"],
-               "type": "objective"
+               "objectives": ["Fly to Menethil"],
+               "type": "flightpath"
             }
          ]
       },
@@ -2474,19 +2498,19 @@
          "waypoints": [
             {
                "coords": { "x": 9, "y": 60 },
-               "header": "Menethil Harbor Flightpath",
+               "header": "Menethil Flightpath",
                "ends": [],
                "starts": [],
                "objectives": [],
-               "type": "location"
+               "type": "flightpath"
             },
             {
                "coords": { "x": 5, "y": 57 },
-               "header": "Auberdine Boat",
+               "header": "Menethil Harbor",
                "ends": [],
                "starts": [],
-               "objectives": ["Take the boat to Auberdine"],
-               "type": "objective"
+               "objectives": ["Ride to Auberdine"],
+               "type": "travel"
             }
          ]
       },
@@ -2499,7 +2523,7 @@
                "ends": [],
                "starts": [],
                "objectives": [],
-               "type": "location"
+               "type": "travel"
             },
             {
                "coords": { "x": 39, "y": 43 },
@@ -2507,7 +2531,7 @@
                "ends": ["The Corruption Abroad"],
                "starts": ["The Absent Minded Prospector P1", "Onu", "Wanted: Murkdeep"],
                "objectives": [],
-               "type": "location"
+               "type": "hub"
             },
             {
                "coords": { "x": 44, "y": 76 },
@@ -2580,11 +2604,11 @@
             },
             {
                "coords": { "x": 43, "y": 94 },
-               "header": "Ashenvale Road",
+               "header": "Ashenvale Border",
                "ends": [],
                "starts": [],
                "objectives": [],
-               "type": "location"
+               "type": "travel"
             }
          ]
       },
@@ -2593,11 +2617,11 @@
          "waypoints": [
             {
                "coords": { "x": 29, "y": 15 },
-               "header": "Ashenvale Road",
+               "header": "Darkshore Border",
                "ends": [],
                "starts": [],
                "objectives": [],
-               "type": "location"
+               "type": "travel"
             },
             {
                "coords": { "x": 26, "y": 38 },
@@ -2645,12 +2669,20 @@
                "type": "quest"
             },
             {
+               "coords": { "x": 34, "y": 48 },
+               "header": "Ashenvale Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Learn the Flightpath"],
+               "type": "flightpath"
+            },
+            {
                "coords": { "x": 36, "y": 50 },
                "header": "Astranaar",
                "ends": ["Orendil's Cure"],
                "starts": ["The Zoram Strand", "Elune's Tear", "Raene's Cleansing", "Culling the Threat"],
-               "objectives": ["Learn the Flightpath", "Set Hearthstone"],
-               "type": "location"
+               "objectives": ["Set Hearthstone"],
+               "type": "hub"
             },
             {
                "coords": { "x": 46, "y": 46 },
@@ -2687,11 +2719,11 @@
                "ends": ["Culling the Threat", "Elune's Tear"],
                "starts": ["The Ruins of Stardust"],
                "objectives": [],
-               "type": "location"
+               "type": "hub"
             },
             {
                "coords": { "x": 33, "y": 67 },
-               "header": "",
+               "header": "Ruins of Stardust",
                "ends": [],
                "starts": [],
                "objectives": ["The Ruins of Stardust"],
@@ -2727,7 +2759,7 @@
                "ends": ["Raene's Cleansing P1"],
                "starts": ["Raene's Cleansing P2"],
                "objectives": ["Farm a Gem from the Murlocs"],
-               "type": "location"
+               "type": "quest"
             },
             {
                "coords": { "x": 15, "y": 31 },
@@ -2830,7 +2862,7 @@
                "ends": ["The Zoram Strand", "Raene's Cleansing P2", "The Ruins of Stardust"],
                "starts": ["Raene's Cleansing P3", "An Aggressive Defense", "Fallen Sky Lake"],
                "objectives": [],
-               "type": "location"
+               "type": "hub"
             },
             {
                "coords": { "x": 54, "y": 46 },
@@ -2912,11 +2944,11 @@
             },
             {
                "coords": { "x": 94, "y": 47 },
-               "header": "Azshara Bridge",
+               "header": "Azshara Border",
                "ends": [],
                "starts": [],
                "objectives": [],
-               "type": "location"
+               "type": "travel"
             }
          ]
       },
@@ -2925,11 +2957,11 @@
          "waypoints": [
             {
                "coords": { "x": 11, "y": 75 },
-               "header": "Azshara Bridge",
+               "header": "Ashenvale Border",
                "ends": [],
                "starts": [],
                "objectives": [],
-               "type": "location"
+               "type": "travel"
             },
             {
                "coords": { "x": 12, "y": 78 },
@@ -2937,7 +2969,7 @@
                "ends": [],
                "starts": [],
                "objectives": ["Learn the Flightpath", "Fly to Astranaar"],
-               "type": "objective"
+               "type": "flightpath"
             }
          ]
       },
@@ -2948,9 +2980,9 @@
                "coords": { "x": 36, "y": 50 },
                "header": "Astranaar",
                "ends": ["An Aggressive Defense", "Fallen Sky Lake"],
-               "starts": [""],
+               "starts": [],
                "objectives": [],
-               "type": "location"
+               "type": "hub"
             },
             {
                "coords": { "x": 54, "y": 46 },
@@ -3032,7 +3064,7 @@
                "ends": ["Raene's Cleansing P7"],
                "starts": [],
                "objectives": [],
-               "type": "location"
+               "type": "hub"
             },
             {
                "coords": { "x": 26, "y": 38 },
@@ -3053,7 +3085,7 @@
                "ends": ["Raene's Cleansing P7"],
                "starts": [],
                "objectives": [],
-               "type": "location"
+               "type": "hub"
             },
             {
                "coords": { "x": 34, "y": 48 },
@@ -3070,11 +3102,11 @@
          "waypoints": [
             {
                "coords": { "x": 36, "y": 46 },
-               "header": "Auberdine Flightpath",
+               "header": "Darkshore Flightpath",
                "ends": [],
                "starts": [],
                "objectives": [],
-               "type": "location"
+               "type": "flightpath"
             },
             {
                "coords": { "x": 39, "y": 43 },
@@ -3118,8 +3150,8 @@
                "header": "Auberdine Harbor",
                "ends": [],
                "starts": [],
-               "objectives": ["Take the boat to Rut'theran Village"],
-               "type": "location"
+               "objectives": ["Ride to Darnassus"],
+               "type": "travel"
             }
          ]
       },
@@ -3128,19 +3160,19 @@
          "waypoints": [
             {
                "coords": { "x": 55, "y": 97 },
-               "header": "Rut'theran Village Harbor",
+               "header": "Darnassus Harbor",
                "ends": [],
                "starts": [],
                "objectives": ["Run to Darnassus"],
-               "type": "location"
+               "type": "travel"
             },
             {
                "coords": { "x": 58, "y": 94 },
-               "header": "Rut'theran Village Flightpath",
+               "header": "Darnassus Flightpath",
                "ends": [],
                "starts": [],
                "objectives": ["Learn the Flightpath"],
-               "type": "location"
+               "type": "flightpath"
             },
             {
                "coords": { "x": 56, "y": 90 },
@@ -3148,7 +3180,7 @@
                "ends": [],
                "starts": [],
                "objectives": [],
-               "type": "objective"
+               "type": "travel"
             }
          ]
       },
@@ -3161,7 +3193,7 @@
                "ends": [],
                "starts": [],
                "objectives": [],
-               "type": "location"
+               "type": "travel"
             },
             {
                "coords": { "x": 31, "y": 84 },
@@ -3190,7 +3222,7 @@
                "ends": [],
                "starts": [],
                "objectives": [],
-               "type": "location"
+               "type": "travel"
             }
          ]
       },
@@ -3203,15 +3235,15 @@
                "ends": [],
                "starts": [],
                "objectives": [],
-               "type": "location"
+               "type": "travel"
             },
             {
                "coords": { "x": 55, "y": 97 },
-               "header": "Rut'theran Village Harbor",
+               "header": "Darnassus Harbor",
                "ends": [],
                "starts": [],
-               "objectives": ["Take the boat to Auberdine"],
-               "type": "location"
+               "objectives": ["Ride to Auberdine"],
+               "type": "travel"
             }
          ]
       },
@@ -3224,15 +3256,15 @@
                "ends": [],
                "starts": [],
                "objectives": [],
-               "type": "location"
+               "type": "travel"
             },
             {
                "coords": { "x": 32, "y": 44 },
                "header": "Auberdine Harbor",
                "ends": [],
                "starts": [],
-               "objectives": ["Take the boat the Menethil Harbor"],
-               "type": "location"
+               "objectives": ["Ride to Menethil"],
+               "type": "travel"
             }
          ]
       },
@@ -3241,11 +3273,11 @@
          "waypoints": [
             {
                "coords": { "x": 5, "y": 57 },
-               "header": "Wetlands Harbor",
+               "header": "Menethil Harbor",
                "ends": [],
                "starts": [],
                "objectives": [],
-               "type": "objective"
+               "type": "travel"
             },
             {
                "coords": { "x": 8, "y": 57 },
@@ -3261,7 +3293,7 @@
                "ends": ["The Absent Minded Prospector P3", "The Third Fleet"],
                "starts": ["The Absent Minded Prospector P4", "The Third Fleet", "The Greenwarden", "The Cursed Crew", "Digging Through the Ooze"],
                "objectives": ["Buy a Flagon of Mead", "Set Hearthstone"],
-               "type": "quest"
+               "type": "hub"
             },
             {
                "coords": { "x": 10, "y": 57 },
@@ -3309,7 +3341,7 @@
                "ends": ["In Search of the Excavation Team P1"],
                "starts": ["Uncovering the Past", "Ormer's Revenge P1", "In Search of the Excavation Team P2"],
                "objectives": ["Loot the fossil in the cave"],
-               "type": "location"
+               "type": "quest"
             },
             {
                "coords": { "x": 44, "y": 44 },
@@ -3342,7 +3374,7 @@
                "starts": [],
                "objectives": ["Tramping Paws"],
                "type": "objective"
-            }
+            }        
          ]
       },
       {
@@ -3411,11 +3443,11 @@
             },
             {
                "coords": { "x": 51, "y": 10 },
-               "header": "Arathi Highlands Bridge",
+               "header": "Arathi Highlands Border",
                "ends": [],
                "starts": [],
                "objectives": [],
-               "type": "location"
+               "type": "travel"
             }
          ]
       },
@@ -3424,19 +3456,19 @@
          "waypoints": [
             {
                "coords": { "x": 45, "y": 89 },
-               "header": "Arathi Highlands Bridge",
+               "header": "Wetlands Border",
                "ends": [],
                "starts": [],
                "objectives": [],
-               "type": "location"
+               "type": "travel"
             },
             {
                "coords": { "x": 46, "y": 46 },
-               "header": "Refuge Point Flightpath",
+               "header": "Arathi Highlands Flightpath",
                "ends": [],
                "starts": [],
-               "objectives": ["Learn the Flightpath", "Fly to Menethil Harbor"],
-               "type": "objective"
+               "objectives": ["Learn the Flightpath", "Fly to Wetlands"],
+               "type": "flightpath"
             }
          ]
       },
@@ -3445,11 +3477,11 @@
          "waypoints": [
             {
                "coords": { "x": 9, "y": 60 },
-               "header": "Menethil Harbor Flightpath",
+               "header": "Menethil Flightpath",
                "ends": [],
                "starts": [],
-               "objectives": ["Learn the Flightpath"],
-               "type": "objective"
+               "objectives": [],
+               "type": "flightpath"
             },
             {
                "coords": { "x": 8, "y": 57 },
@@ -3498,11 +3530,11 @@
             },
             {
                "coords": { "x": 9, "y": 60 },
-               "header": "Menethil Harbor Flightpath",
+               "header": "Menethil Flightpath",
                "ends": [],
                "starts": [],
-               "objectives": ["Fly to Lakeshire"],
-               "type": "objective"
+               "objectives": ["Fly to Redridge Mountains"],
+               "type": "flightpath"
             }
          ]
       },
@@ -3511,11 +3543,11 @@
          "waypoints": [
             {
                "coords": { "x": 31, "y": 59 },
-               "header": "Lakeshire Flightpath",
+               "header": "Redridge Flightpath",
                "ends": [],
                "starts": [],
                "objectives": [],
-               "type": "location"
+               "type": "flightpath"
             },
             {
                "coords": { "x": 32, "y": 58 },
@@ -3531,7 +3563,7 @@
                "ends": [],
                "starts": ["Wanted: Lieutenant Fangore", "Wanted: Gath'llzogg", "Solomon's Law", "Howling in the Hills", "Tharil'Zun", "Shadow Magic"],
                "objectives": [],
-               "type": "location"
+               "type": "hub"
             },
             {
                "coords": { "x": 28, "y": 21 },
@@ -3660,11 +3692,11 @@
             },
             {
                "coords": { "x": 31, "y": 59 },
-               "header": "Lakeshire Flightpath",
+               "header": "Redridge Mountains Flightpath",
                "ends": [],
                "starts": [],
                "objectives": ["Fly to Darkshire"],
-               "type": "objective"
+               "type": "flightpath"
             }
          ]
       },
