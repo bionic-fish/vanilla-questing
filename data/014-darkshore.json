@@ -1,0 +1,64 @@
+{
+   "path": [
+      {
+         "zone": "darkshore",
+         "experience": 0.00,
+         "waypoints": [
+            {
+               "coords": { "x": 36, "y": 46 },
+               "header": "Darkshore Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 39, "y": 43 },
+               "header": "Auberdine",
+               "ends": ["Wanted: Murkdeep", "The Absent Minded Prospector P1"],
+               "starts": ["The Absent Minded Prospector P2"],
+               "objectives": [],
+               "type": "location"
+            },
+            {
+               "coords": { "x": 55, "y": 25 },
+               "header": "Balthule Shadowstrike",
+               "ends": ["The Tower of Althalaxx P6"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 57, "y": 14 },
+               "header": "Gelkak Gyromast",
+               "ends": [],
+               "starts": ["Gyromast's Retrieval"],
+               "objectives": ["Complete the whole Questline there."],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "darkshore",
+         "experience": 0.00,
+         "waypoints": [
+            {
+               "coords": { "x": 57, "y": 14 },
+               "header": "Gelkak Gyromast",
+               "ends": [],
+               "starts": ["Gyromast's Retrieval"],
+               "objectives": ["Complete the whole Questline there."],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 33, "y": 40 },
+               "header": "Auberdine Harbor",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Ride to Darnassus"],
+               "type": "travel"
+            }
+         ]
+      }
+   ]
+}

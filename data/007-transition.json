@@ -1,0 +1,80 @@
+{
+   "path": [
+      {
+         "zone": "ironforge",
+         "experience": 0.00,
+         "waypoints": [
+            {
+               "coords": { "x": 19, "y": 51 },
+               "header": "Ironforge Inn",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 69, "y": 51 },
+               "header": "Gnoarn",
+               "ends": [],
+               "starts": ["Speak with Shoni"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 77, "y": 51 },
+               "header": "Deeprun Tram",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Ride to Stormwind"],
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "stormwind",
+         "experience": 0.00,
+         "waypoints": [
+            {
+               "coords": { "x": 63, "y": 8 },
+               "header": "Deeprun Tram",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 55, "y": 12 },
+               "header": "Shoni the Silent",
+               "ends": ["Speak with Shoni"],
+               "starts": ["Underground Assault"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 58, "y": 17 },
+               "header": "Furen Longbeard",
+               "ends": ["Stormpike's Order"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 65, "y": 21 },
+               "header": "Wilder Thistlenettle",
+               "ends": [],
+               "starts": ["Oh Brother...", "Collecting Memories"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 66, "y": 62 },
+               "header": "Stormwind Flightpath",
+               "ends": ["Dungar Longdrink"],
+               "starts": ["Return to Lewis"],
+               "objectives": ["Fly to Westfall"],
+               "type": "flightpath"
+            }
+         ]
+      }
+   ]
+}

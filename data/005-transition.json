@@ -1,0 +1,58 @@
+{
+   "path": [
+      {
+         "zone": "wetlands",
+         "experience": 0.00,
+         "waypoints": [
+            {
+               "coords": { "x": 52, "y": 72 },
+               "header": "Wetlands Passageway",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 57, "y": 55 },
+               "header": "Wetlands Road",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 44, "y": 38 },
+               "header": "Wetlands Road",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 20, "y": 43 },
+               "header": "Wetlands Road",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 9, "y": 60 },
+               "header": "Menethil Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Learn the Flightpath"],
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 5, "y": 57 },
+               "header": "Menethil Harbor",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Ride to Darkshore"],
+               "type": "travel"
+            }
+         ]
+      }
+   ]
+}

@@ -1,0 +1,78 @@
+{
+   "path": [
+      {
+         "zone": "stormwind",
+         "experience": 0.00,
+         "waypoints": [
+            {
+               "coords": { "x": 66, "y": 62 },
+               "header": "Stormwind Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 58, "y": 17 },
+               "header": "Furen Longbeard",
+               "ends": ["The Shieldsmith"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 65, "y": 6 },
+               "header": "Deeprun Tram",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Ride to Ironforge"],
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "ironforge",
+         "experience": 0.00,
+         "waypoints": [
+            {
+               "coords": { "x": 78, "y": 52 },
+               "header": "Deeprun Tram",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 56, "y": 48 },
+               "header": "Ironforge Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fly to Menethil"],
+               "type": "flightpath"
+            }
+         ]
+      },
+      {
+         "zone": "wetlands",
+         "experience": 0.00,
+         "waypoints": [
+            {
+               "coords": { "x": 9, "y": 60 },
+               "header": "Menethil Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 5, "y": 57 },
+               "header": "Menethil Harbor",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Ride to Auberdine"],
+               "type": "travel"
+            }
+         ]
+      }
+   ]
+}

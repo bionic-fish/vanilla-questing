@@ -1,0 +1,104 @@
+{
+   "path": [
+      {
+         "zone": "darkshore",
+         "experience": 0.00,
+         "waypoints": [
+            {
+               "coords": { "x": 32, "y": 44 },
+               "header": "Auberdine Harbor",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 39, "y": 43 },
+               "header": "Auberdine",
+               "ends": ["The Corruption Abroad"],
+               "starts": ["The Absent Minded Prospector P1", "Onu", "Wanted: Murkdeep"],
+               "objectives": [],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 44, "y": 76 },
+               "header": "Onu",
+               "ends": ["Onu"],
+               "starts": ["A Master's Glaive"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 37, "y": 77 },
+               "header": "Twilight Shore",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Wanted: Murkdeep"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 38, "y": 82 },
+               "header": "Twilight Vale",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Buzzbox 525"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 36, "y": 84 },
+               "header": "Prospector Remtravel",
+               "ends": ["The Absent Minded Prospector P1"],
+               "starts": [],
+               "objectives": ["Buzzbox 525"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 39, "y": 86 },
+               "header": "",
+               "ends": ["The Master's Glaive"],
+               "starts": ["Return to Onu", "Therylune's Escape"],
+               "objectives": ["Use your Scrying Bowl", "Click on the Book"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 41, "y": 81 },
+               "header": "",
+               "ends": ["Buzzbox 525"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "darkshore",
+         "experience": 0.00,
+         "waypoints": [
+            {
+               "coords": { "x": 41, "y": 81 },
+               "header": "",
+               "ends": ["Buzzbox 525"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 44, "y": 76 },
+               "header": "Grove of the Ancients",
+               "ends": ["Return to Onu"],
+               "starts": ["The Sleeper has Awakened"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 43, "y": 94 },
+               "header": "Ashenvale Border",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "travel"
+            }
+         ]
+      }
+   ]
+}

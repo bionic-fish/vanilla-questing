@@ -1,7 +1,20 @@
 // DATA
 var data = [
    $.getJSON('../data/001-elwynn.json'),
-   $.getJSON('../data/002-transition.json')
+   $.getJSON('../data/002-transition.json'),
+   $.getJSON('../data/003-morogh.json'),
+   $.getJSON('../data/004-loch.json'),
+   $.getJSON('../data/005-transition.json'),
+   $.getJSON('../data/006-darkshore.json'),
+   $.getJSON('../data/007-transition.json'),
+   $.getJSON('../data/008-westfall.json'),
+   $.getJSON('../data/009-transition.json'),
+   $.getJSON('../data/010-redridge.json'),
+   $.getJSON('../data/011-transition.json'),
+   $.getJSON('../data/012-darkshore.json'),
+   $.getJSON('../data/013-ashenvale.json'),
+   $.getJSON('../data/014-darkshore.json'),
+   $.getJSON('../data/015-transition.json')
 ];
 
 // WAIT FOR EVERYTHING TO RESPOND

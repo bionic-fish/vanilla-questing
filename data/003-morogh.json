@@ -1,0 +1,148 @@
+{
+   "path": [
+      {
+         "zone": "morogh",
+         "experience": 0.00,
+         "waypoints": [
+            {
+               "coords": { "x": 53, "y": 35 },
+               "header": "Gates of Ironforge",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 68, "y": 55 },
+               "header": "Gol'Bolar Quarry",
+               "ends": [],
+               "starts": ["The Public Servant", "These Blasted Troggs"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 71, "y": 55 },
+               "header": "Gol'Bolar Quarry Mine",
+               "ends": [],
+               "starts": [],
+               "objectives": ["The Public Servant", "These Blasted Troggs"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "morogh",
+         "experience": 0.00,
+         "waypoints": [
+            {
+               "coords": { "x": 71, "y": 55 },
+               "header": "Gol'Bolar Quarry Mine",
+               "ends": [],
+               "starts": [],
+               "objectives": ["The Public Servant", "These Blasted Troggs"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 68, "y": 55 },
+               "header": "Gol'Bolar Quarry",
+               "ends": ["The Public Servant", "These Blasted Troggs"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 63, "y": 50 },
+               "header": "Rudna Amberstill",
+               "ends": [],
+               "starts": ["Protecting the Herd"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 62, "y": 47 },
+               "header": "Amberstill Ranch Hill",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Protecting the Herd"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "morogh",
+         "experience": 0.00,
+         "waypoints": [
+            {
+               "coords": { "x": 62, "y": 47 },
+               "header": "Amberstill Ranch Hill",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Protecting the Herd"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 63, "y": 50 },
+               "header": "Rudna Amberstill",
+               "ends": ["Protecting the Herd"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 84, "y": 39 },
+               "header": "Pilor Hammerfoot",
+               "ends": [],
+               "starts": ["The Lost Pilot"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 80, "y": 36 },
+               "header": "A Dwarven Corpse",
+               "ends": ["The Lost Pilot"],
+               "starts": ["A Pilot's Revenge"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 78, "y": 38 },
+               "header": "Mangleclaw",
+               "ends": [],
+               "starts": [],
+               "objectives": ["A Pilot's Revenge"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "morogh",
+         "experience": 0.00,
+         "waypoints": [
+            {
+               "coords": { "x": 78, "y": 38 },
+               "header": "Mangleclaw",
+               "ends": [],
+               "starts": [],
+               "objectives": ["A Pilot's Revenge"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 84, "y": 39 },
+               "header": "Pilor Hammerfoot",
+               "ends": ["A Pilot's Revenge"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 85, "y": 29 },
+               "header": "Loch Modan Passageway",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "travel"
+            }
+         ]
+      }
+   ]
+}

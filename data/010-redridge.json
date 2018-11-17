@@ -1,0 +1,276 @@
+{
+   "path": [
+      {
+         "zone": "redridge",
+         "experience": 0.00,
+         "waypoints": [
+            {
+               "coords": { "x": 8, "y": 72 },
+               "header": "Elwynn Border",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 31, "y": 59 },
+               "header": "",
+               "ends": ["Encroaching Gnolls"],
+               "starts": ["Assessing the Threat"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 32, "y": 48 },
+               "header": "",
+               "ends": ["Return to Verner", "Ink Supplies"],
+               "starts": ["Rethban Ore", "The Lost Tools", "Underbelly Scales", "A Baying of Gnolls", "Blackrock Menace"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 27, "y": 44 },
+               "header": "",
+               "ends": ["Messenger to Westfall", "Messenger to Darkshire", "Messenger to Stormwind", "Yorus Barleybrew", "Dry Times"],
+               "starts": ["Selling Sunfish", "Murloc Poachers", "The Rethban Gauntlet"],
+               "objectives": ["Set Hearthstone"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 22, "y": 45 },
+               "header": "",
+               "ends": ["Visit the Herbalist"],
+               "starts": ["Delivering Daffodils", "An Unwelcome Guest", "Redridge Goulash"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 16, "y": 49 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["An Unwanted Guest", "Redridge Goulash", "Great Goretusk Snout"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 20, "y": 26 },
+               "header": "Rethban Caverns",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Rethban Ore", "The Rethban Gauntlet"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 24, "y": 35 },
+               "header": "Redridge Canyons",
+               "ends": [],
+               "starts": [],
+               "objectives": ["A Baying of Gnolls"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "redridge",
+         "experience": 0.00,
+         "waypoints": [
+            {
+               "coords": { "x": 24, "y": 35 },
+               "header": "Redridge Canyons",
+               "ends": [],
+               "starts": [],
+               "objectives": ["A Baying of Gnolls"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 22, "y": 46 },
+               "header": "Martie Jainrose",
+               "ends": ["An Unwelcome Guest"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 27, "y": 45 },
+               "header": "Lakeshire Inn",
+               "ends": ["Delivering Daffodils", "The Rethban Gauntlet"],
+               "starts": ["The Shieldsmith"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 31, "y": 47 },
+               "header": "Vernon Osgood",
+               "ends": ["A Baying of Gnolls"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 29, "y": 54 },
+               "header": "Shawn",
+               "ends": [],
+               "starts": ["Hilary's Necklace"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 39, "y": 55 },
+               "header": "Shawn",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Hilary's Necklace", "The Lost Tools"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 20, "y": 69 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Redridge Goulash", "Spiders & Goretusks"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 34, "y": 69 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Underbelly Whelp Scale"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 30, "y": 83 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Assessing the Threat"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 49, "y": 70 },
+               "header": "Lake Everstill",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Murloc Poachers", "Selling Fish"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 59, "y": 77 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Redridge Goulash", "6x Condor Spawn"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 72, "y": 78 },
+               "header": "Render's Valley",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Blackrock Menace", "Hearthstone to Lakeshire"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "redridge",
+         "experience": 0.00,
+         "waypoints": [
+            {
+               "coords": { "x": 27, "y": 45 },
+               "header": "Lakeshire Inn",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 23, "y": 44 },
+               "header": "Chef Brennan",
+               "ends": ["Redridge Goulash"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 28, "y": 47 },
+               "header": "Dockmaster Baren",
+               "ends": ["Selling Fish", "Murloc Poachers"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 31, "y": 47 },
+               "header": "Vernon Osgood",
+               "ends": ["Underbelly Scales"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 29, "y": 54 },
+               "header": "Hilary",
+               "ends": ["Hilary's Necklace"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 31, "y": 60 },
+               "header": "Deputy Feldon",
+               "ends": ["Assessing the Threat"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 33, "y": 49 },
+               "header": "",
+               "ends": ["Blackrock Menace", "The Lost Tools"],
+               "starts": ["The Everstill Bridge"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 39, "y": 32 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["The Everstill Bridge"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "redridge",
+         "experience": 0.00,
+         "waypoints": [
+            {
+               "coords": { "x": 39, "y": 32 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["The Everstill Bridge"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 32, "y": 49 },
+               "header": "Foreman Oslow",
+               "ends": ["The Everstill Bridge"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 31, "y": 59 },
+               "header": "Redridge Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fly to Stormwind"],
+               "type": "flightpath"
+            }
+         ]
+      }
+   ]
+}
