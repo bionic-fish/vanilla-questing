@@ -1,0 +1,158 @@
+{
+   "path": [
+      {
+         "zone": "arathi",
+         "experience": 34.61,
+         "waypoints": [
+            {
+               "coords": { "x": 45, "y": 45 },
+               "header": "Refuge Point Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 46, "y": 48 },
+               "header": "Refuge Point",
+               "ends": ["Malin's Request"],
+               "starts": ["Worth Its Weight in Gold", "Northfold Manor"],
+               "objectives": [],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 60, "y": 54 },
+               "header": "Quae",
+               "ends": ["Hints of a New Plague? P1"],
+               "starts": ["Hints of a New Plague? P2"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 60, "y": 61 },
+               "header": "Go'Shek Farm",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Hints of a New Plague? P2", "Patrol Spawn"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "arathi",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 60, "y": 61 },
+               "header": "Go'Shek Farm",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Hints of a New Plague? P2", "Patrol Spawn"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 60, "y": 54 },
+               "header": "Quae",
+               "ends": ["Hints of a New Plague? P2", "Hints of a New Plague? P3", "Hints of a New Plague? P4"],
+               "starts": ["Hints of a New Plague? P3", "Hints of a New Plague? P4", "Hints of a New Plague? P5"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 68, "y": 76 },
+               "header": "Witherbark Village",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Worth Its Weight in Gold"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 62, "y": 34 },
+               "header": "Shard of Myzrael",
+               "ends": [],
+               "starts": ["The Princess Trapped"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 83, "y": 36 },
+               "header": "Drywhisper Gorge",
+               "ends": ["The Princess Trapped"],
+               "starts": ["Stones of Binding"],
+               "objectives": ["The Princess Trapped", "Favor for Krazek"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "arathi",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 83, "y": 36 },
+               "header": "Drywhisper Gorge",
+               "ends": ["The Princess Trapped"],
+               "starts": ["Stones of Binding"],
+               "objectives": ["The Princess Trapped", "Favor for Krazek"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 67, "y": 30 },
+               "header": "Stone of East Binding",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Stones of Binding"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 52, "y": 51 },
+               "header": "Stone of Outer Binding",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Stones of Binding"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 32, "y": 29 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Northfold Manor"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 26, "y": 30 },
+               "header": "Stone of West Binding",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Stones of Binding"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 36, "y": 57 },
+               "header": "Stone of Inner Binding",
+               "ends": ["Stones of Binding"],
+               "starts": ["Breaking the Keystone"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 46, "y": 48 },
+               "header": "Refuge Point",
+               "ends": ["Northfold Manor", "Worth Its Weight In Gold"],
+               "starts": ["Wand over Fist"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 54, "y": 81 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Wand over Fist"],
+               "type": "objective"
+            }
+         ]
+      }
+   ]
+}

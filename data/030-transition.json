@@ -73,6 +73,22 @@
                "type": "quest"
             },
             {
+               "coords": { "x": 64, "y": 22 },
+               "header": "Elynna",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Buy 1x Fine Thread"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 56, "y": 54 },
+               "header": "Darnassus Auction House",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Buy x8 Liferoot", "Buy 8x Burning Charm", "Buy 8x Thundering Charm", "Buy 8x Cresting Charm", "Buy 1x Hillman's Cloak", "Buy 1x Bolt of Woolen Cloth"],
+               "type": "objective"
+            },
+            {
                "coords": { "x": 31, "y": 41 },
                "header": "Darnassus Teleporter",
                "ends": [],

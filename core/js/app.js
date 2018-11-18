@@ -30,7 +30,9 @@ var data = [
    $.getJSON('../data/028-transition.json'),
    $.getJSON('../data/029-ashenvale.json'),
    $.getJSON('../data/030-transition.json'),
-   $.getJSON('../data/031-stv.json')
+   $.getJSON('../data/031-stv.json'),
+   $.getJSON('../data/032-southshore.json'),
+   $.getJSON('../data/033-arathi.json')
 ];
 
 // WAIT FOR EVERYTHING TO RESPOND

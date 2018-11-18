@@ -1,0 +1,202 @@
+{
+   "path": [
+      {
+         "zone": "hillsbrad",
+         "experience": 33.57,
+         "waypoints": [
+            {
+               "coords": { "x": 49, "y": 52 },
+               "header": "Southshore Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 50, "y": 54 },
+               "header": "Southshore",
+               "ends": ["Bartolo's Yeti Fur Cloak", "Soothing Turtle Bisque", "Down the Coast", "Syndicate Assassins", "Costly Menace", "Crushridge Bounty"],
+               "starts": [],
+               "objectives": ["Set Hearthstone", "Buy 1x Southshore Stout"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 66, "y": 36 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Soothing Turtle Bisque"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 78, "y": 8 },
+               "header": "Bath'rah the Windwatcher",
+               "ends": ["Cyclonian", "The Summoning", "Whirlwind Weapon"],
+               "starts": ["The Summoning", "Whirlwind Weapon"],
+               "objectives": ["Interact with the Cauldron"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 59, "y": 9 },
+               "header": "Henchman Valik",
+               "ends": ["Valik"],
+               "starts": ["Valik"],
+               "objectives": ["Syndicate Assassins"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 53, "y": 4 },
+               "header": "Gallows' Corner",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Crushridge Bounty"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 51, "y": 20 },
+               "header": "Corrahn's Dagger",
+               "ends": [],
+               "starts": ["Foreboding Plans", "Encrypted Letter"],
+               "objectives": ["Syndicate Assassins"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 47, "y": 17 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Costly Menace"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 43, "y": 25 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Costly Menace"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 45, "y": 31 },
+               "header": "Darrow Hill Cave",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Bartolo's Yeti Fur Cloak", "Hearthstone to Southshore"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 44, "y": 66 },
+               "header": "Western Strand",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Down the Coast"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "hillsbrad",
+         "experience": 34.42,
+         "waypoints": [
+            {
+               "coords": { "x": 44, "y": 66 },
+               "header": "Western Strand",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Down the Coast"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 50, "y": 54 },
+               "header": "Southshore",
+               "ends": ["Bartolo's Yeti Fur Cloak", "Soothing Turtle Bisque", "Down the Coast", "Syndicate Assassins", "Costly Menace", "Crushridge Bounty", "Foreboding Plans", "Encrypted Letter"],
+               "starts": ["Letter to Stormpike", "Farren's Proof P1"],
+               "objectives": [],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "hillsbrad",
+         "experience": 34.42,
+         "waypoints": [
+            {
+               "coords": { "x": 50, "y": 54 },
+               "header": "Southshore",
+               "ends": ["Bartolo's Yeti Fur Cloak", "Soothing Turtle Bisque", "Down the Coast", "Syndicate Assassins", "Costly Menace", "Crushridge Bounty", "Foreboding Plans", "Encrypted Letter"],
+               "starts": ["Letter to Stormpike", "Farren's Proof P1"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 44, "y": 66 },
+               "header": "Western Strand",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Farren's Proof P1"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "hillsbrad",
+         "experience": 34.49,
+         "waypoints": [
+            {
+               "coords": { "x": 44, "y": 66 },
+               "header": "Western Strand",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Farren's Proof P1"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 50, "y": 54 },
+               "header": "Southshore",
+               "ends": ["Farren's Proof P1-2"],
+               "starts": ["Farren's Proof P2-3", "Stormwind Ho!"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 58, "y": 68 },
+               "header": "Eastern Strand",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Stormwind Ho!"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "hillsbrad",
+         "experience": 34.53,
+         "waypoints": [
+            {
+               "coords": { "x": 58, "y": 68 },
+               "header": "Eastern Strand",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Stormwind Ho!"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 50, "y": 54 },
+               "header": "Southshore",
+               "ends": ["Stormwind Ho!"],
+               "starts": ["Reassignment", "Hints of a New Plague? P1"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 49, "y": 52 },
+               "header": "Southshore Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fly to Arathi Highlands"],
+               "type": "flightpath"
+            }
+         ]
+      }
+   ]
+}

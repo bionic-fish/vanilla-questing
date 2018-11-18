@@ -48,7 +48,7 @@
       },
       {
          "zone": "stv",
-         "experience": 0,
+         "experience": 32.46,
          "waypoints": [
             {
                "coords": { "x": 44, "y": 10 },
@@ -86,7 +86,7 @@
       },
       {
          "zone": "stv",
-         "experience": 0,
+         "experience": 32.55,
          "waypoints": [
             {
                "coords": { "x": 21, "y": 22 },
@@ -116,7 +116,7 @@
       },
       {
          "zone": "stv",
-         "experience": 0,
+         "experience": 32.73,
          "waypoints": [
             {
                "coords": { "x": 29, "y": 10 },
@@ -162,12 +162,42 @@
                "coords": { "x": 38, "y": 3 },
                "header": "Rebel Camp",
                "ends": ["The Second Rebellion", "Bad Medicine"],
-               "starts": [],
+               "starts": ["Special Forces"],
                "objectives": [],
                "type": "quest"
             },
             {
-               "coords": { "x": 40, "y": 4 },
+               "coords": { "x": 50, "y": 8 },
+               "header": "Bookie Herod's Strongbox",
+               "ends": ["The Hidden Key"],
+               "starts": ["The Spy Revealed"],
+               "objectives": ["Special Forces"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "stv",
+         "experience": 33.26,
+         "waypoints": [
+            {
+               "coords": { "x": 50, "y": 8 },
+               "header": "Bookie Herod's Strongbox",
+               "ends": ["The Hidden Key"],
+               "starts": ["The Spy Revealed"],
+               "objectives": ["Special Forces"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 38, "y": 3 },
+               "header": "Rebel Camp",
+               "ends": ["Special Forces", "The Spy Revealed", "Patrol Schedules", "Report to Doren"],
+               "starts": ["Patrol Schedules", "Report to Doren"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 42, "y": 3 },
                "header": "Duskwood Border",
                "ends": [],
                "starts": [],
@@ -178,7 +208,7 @@
       },
       {
          "zone": "duskwood",
-         "experience": 0,
+         "experience": 33.39,
          "waypoints": [
             {
                "coords": { "x": 44, "y": 87 },
@@ -200,7 +230,7 @@
                "coords": { "x": 74, "y": 47 },
                "header": "Darkshire",
                "ends": ["The Scrythe of Elune"],
-               "starts": [],
+               "starts": ["Answered Questions"],
                "objectives": [],
                "type": "hub"
             },
@@ -210,6 +240,50 @@
                "ends": [],
                "starts": [],
                "objectives": ["Fly to Booty bay"],
+               "type": "flightpath"
+            }
+         ]
+      },
+      {
+         "zone": "stv",
+         "experience": 33.44,
+         "waypoints": [
+            {
+               "coords": { "x": 28, "y": 78 },
+               "header": "Booy Bay Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 27, "y": 77 },
+               "header": "Booty Bay",
+               "ends": ["Investigate the Camp", "Krazek's Cookery", "Bloodscalp Ears", "The Stone of the Tides", "Supply and Demand"],
+               "starts": ["Favor for Krazek"],
+               "objectives": ["Set Hearthstone"],
+               "type": "hub"
+            }
+         ]
+      },
+      {
+         "zone": "stv",
+         "experience": 33.44,
+         "waypoints": [
+            {
+               "coords": { "x": 27, "y": 77 },
+               "header": "Booty Bay",
+               "ends": ["Investigate the Camp", "Krazek's Cookery", "Bloodscalp Ears", "The Stone of the Tides", "Supply and Demand"],
+               "starts": ["Favor for Krazek"],
+               "objectives": ["Set Hearthstone"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 28, "y": 78 },
+               "header": "Booy Bay Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fly to Southshore"],
                "type": "flightpath"
             }
          ]
