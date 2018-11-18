@@ -234,7 +234,7 @@
             },
             {
                "coords": { "x": 56, "y": 10 },
-               "header": "Dreadmurk Shore",
+               "header": "Barrens Border",
                "ends": [],
                "starts": [],
                "objectives": ["Swim to the Barrens"],
@@ -248,7 +248,7 @@
          "waypoints": [
             {
                "coords": { "x": 64, "y": 59 },
-               "header": "",
+               "header": "Dustwallow Marsh Bordera",
                "ends": [],
                "starts": [],
                "objectives": [],

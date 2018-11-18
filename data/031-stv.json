@@ -1,0 +1,218 @@
+{
+   "path": [
+      {
+         "zone": "stv",
+         "experience": 32.20,
+         "waypoints": [
+            {
+               "coords": { "x": 33, "y": 8 },
+               "header": "Stranglethorn Vale River",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Supply and Demand"],
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 36, "y": 11 },
+               "header": "Nesingwary's Expedition",
+               "ends": ["Welcome to the Jungle"],
+               "starts": ["Welcome to the Jungle", "Raptor Mastery P1", "Tiger Mastery P1", "Panther Mastery P1"],
+               "objectives": ["Investigate the Camp"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 38, "y": 3 },
+               "header": "Rebel Camp",
+               "ends": ["Supplies to Private Thorsen", "Jungle Secrets"],
+               "starts": ["Jungle Secrets", "Bookie Herod", "The Second Rebellion", "Bad Medicine", "Krazel's Cookery"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 42, "y": 12 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Panther Mastery P1"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 44, "y": 10 },
+               "header": "Kurzens Compound",
+               "ends": ["Bookie Herod"],
+               "starts": ["The Hidden Key"],
+               "objectives": ["The Second Rebellion", "Bad Medicine", "Krazel's Cookery"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "stv",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 44, "y": 10 },
+               "header": "Kurzens Compound",
+               "ends": ["Bookie Herod"],
+               "starts": ["The Hidden Key"],
+               "objectives": ["The Second Rebellion", "Bad Medicine", "Krazel's Cookery"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 33, "y": 12 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Tiger Mastery P1"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 26, "y": 16 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Raptor Mastery P1"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 21, "y": 22 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["The Stone of the Tides"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "stv",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 21, "y": 22 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["The Stone of the Tides"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 36, "y": 11 },
+               "header": "Nesingwary's Expedition",
+               "ends": ["Raptor Mastery P1", "Tiger Mastery P1", "Panther Mastery P1"],
+               "starts": ["Raptor Mastery P2", "Tiger Mastery P2", "Panther Mastery P2"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 29, "y": 10 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Tiger Mastery P2", "Panther Mastery P2"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "stv",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 29, "y": 10 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Tiger Mastery P2", "Panther Mastery P2"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 28, "y": 15 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Tiger Mastery P2", "Panther Mastery P2"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 33, "y": 14 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Cyclonian", "Bloodscalp Ears"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 32, "y": 23 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Raptor Mastery P2"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 36, "y": 11 },
+               "header": "Nesingwary's Expedition",
+               "ends": ["Raptor Mastery P2", "Tiger Mastery P2", "Panther Mastery P2"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 38, "y": 3 },
+               "header": "Rebel Camp",
+               "ends": ["The Second Rebellion", "Bad Medicine"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 40, "y": 4 },
+               "header": "Duskwood Border",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "duskwood",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 44, "y": 87 },
+               "header": "Stranglethorn Vale Border",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 73, "y": 75 },
+               "header": "Roland's Doom",
+               "ends": [],
+               "starts": [],
+               "objectives": ["The Scrythe of Elune"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 74, "y": 47 },
+               "header": "Darkshire",
+               "ends": ["The Scrythe of Elune"],
+               "starts": [],
+               "objectives": [],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 78, "y": 44 },
+               "header": "Duskwood Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fly to Booty bay"],
+               "type": "flightpath"
+            }
+         ]
+      }
+   ]
+}

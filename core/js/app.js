@@ -27,7 +27,10 @@ var data = [
    $.getJSON('../data/025-wetlands.json'),
    $.getJSON('../data/026-transition.json'),
    $.getJSON('../data/027-duskwood.json'),
-   $.getJSON('../data/028-transition.json')
+   $.getJSON('../data/028-transition.json'),
+   $.getJSON('../data/029-ashenvale.json'),
+   $.getJSON('../data/030-transition.json'),
+   $.getJSON('../data/031-stv.json')
 ];
 
 // WAIT FOR EVERYTHING TO RESPOND
