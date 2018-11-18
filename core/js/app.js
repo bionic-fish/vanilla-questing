@@ -22,7 +22,12 @@ var data = [
    $.getJSON('../data/020-redridge.json'),
    $.getJSON('../data/021-duskwood.json'),
    $.getJSON('../data/022-transition.json'),
-   $.getJSON('../data/023-wetlands.json')
+   $.getJSON('../data/023-wetlands.json'),
+   $.getJSON('../data/024-transition.json'),
+   $.getJSON('../data/025-wetlands.json'),
+   $.getJSON('../data/026-transition.json'),
+   $.getJSON('../data/027-duskwood.json'),
+   $.getJSON('../data/028-transition.json')
 ];
 
 // WAIT FOR EVERYTHING TO RESPOND

@@ -1,0 +1,72 @@
+{
+   "path": [
+      {
+         "zone": "wetlands",
+         "experience": 29.37,
+         "waypoints": [
+            {
+               "coords": { "x": 11, "y": 59 },
+               "header": "Menethil",
+               "ends": ["The Eye of Paleth"],
+               "starts": ["Cleansing the Eye"],
+               "objectives": [],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 11, "y": 56 },
+               "header": "Menethil Keep",
+               "ends": ["Defeat Nek'Rosh"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 12, "y": 64 },
+               "header": "Waterlogged Chest",
+               "ends": ["Lightforge Iron"],
+               "starts": ["The Lost Ingots"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 12, "y": 67 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["The Lost Ingots"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "wetlands",
+         "experience": 29.51,
+         "waypoints": [
+            {
+               "coords": { "x": 12, "y": 67 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["The Lost Ingots"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 11, "y": 61 },
+               "header": "Glorin Steelbrow",
+               "ends": ["The Lost Ingots"],
+               "starts": ["Blessed Arm"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 9, "y": 61 },
+               "header": "Wetlands Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fly to Stormwind"],
+               "type": "flightpath"
+            }
+         ]
+      }
+   ]
+}

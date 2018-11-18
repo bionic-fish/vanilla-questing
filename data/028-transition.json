@@ -1,0 +1,276 @@
+{
+   "path": [
+      {
+         "zone": "duskwood",
+         "experience": 31.11,
+         "waypoints": [
+            {
+               "coords": { "x": 18, "y": 29 },
+               "header": "A Weathered Grave",
+               "ends": ["A Daughters Love"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 5, "y": 37 },
+               "header": "Westfall Border",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "westfall",
+         "experience": 31.11,
+         "waypoints": [
+            {
+               "coords": { "x": 57, "y": 53 },
+               "header": "Westfall Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 65, "y": 45 },
+               "header": "Duskwood Border",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fly to Stormwind"],
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "stormwind",
+         "experience": 31.11,
+         "waypoints": [
+            {
+               "coords": { "x": 66, "y": 62 },
+               "header": "Stormwind Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 60, "y": 64 },
+               "header": "Elling Trias",
+               "ends": ["The Missing Diplomat P6"],
+               "starts": ["The Missing Diplomat P7"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 58, "y": 61 },
+               "header": "Edna Mullby",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Buy 5x Soothing Spices"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 70, "y": 45 },
+               "header": "Dashel Stonefist",
+               "ends": ["The Missing Diplomat P7-8"],
+               "starts": ["The Missing Diplomat P8-9"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 79, "y": 46 },
+               "header": "Wu Shen",
+               "ends": [],
+               "starts": ["The Islander"],
+               "objectives": [],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "stormwind",
+         "experience": 31.14,
+         "waypoints": [
+            {
+               "coords": { "x": 79, "y": 46 },
+               "header": "Wu Shen",
+               "ends": [],
+               "starts": ["The Islander"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 60, "y": 64 },
+               "header": "Elling Trias",
+               "ends": ["The Missing Diplomat P9"],
+               "starts": ["The Missing Diplomat P10"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 40, "y": 82 },
+               "header": "Archmage Malin",
+               "ends": [],
+               "starts": ["Malin's Request P1"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 41, "y": 89 },
+               "header": "Angus Stern",
+               "ends": [],
+               "starts": ["Morgan Stern"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 66, "y": 62 },
+               "header": "Stormwind Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fly to Wetlands"],
+               "type": "flightpath"
+            }
+         ]
+      },
+      {
+         "zone": "wetlands",
+         "experience": 31.19,
+         "waypoints": [
+            {
+               "coords": { "x": 9, "y": 61 },
+               "header": "Wetlands Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 11, "y": 59 },
+               "header": "Menethil",
+               "ends": ["The Missing Diplomat P10-12"],
+               "starts": ["The Missing Diplomat P11-13"],
+               "objectives": [],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 5, "y": 63 },
+               "header": "Menethil Harbor",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Sail to Theramore"],
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "dustwallow",
+         "experience": 31.19,
+         "waypoints": [
+            {
+               "coords": { "x": 71, "y": 56 },
+               "header": "Theramore Harbor",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 67, "y": 51 },
+               "header": "Dustwallow Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Learn the Flightpath"],
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 66, "y": 45 },
+               "header": "Theramore Inn",
+               "ends": ["Morgan Stern"],
+               "starts": ["They Call Him Smiling Jim", "Highperch Venom"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 68, "y": 49 },
+               "header": "Commander Samaul",
+               "ends": ["The Missing Diplomat P11", "They Call Him Smiling Jim"],
+               "starts": ["The Missing Diplomat P12"],
+               "objectives": [],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "dustwallow",
+         "experience": 31.24,
+         "waypoints": [
+            {
+               "coords": { "x": 68, "y": 49 },
+               "header": "Commander Samaul",
+               "ends": ["The Missing Diplomat P11", "They Call Him Smiling Jim"],
+               "starts": ["The Missing Diplomat P12"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 60, "y": 41 },
+               "header": "Sentry Point",
+               "ends": [],
+               "starts": [],
+               "objectives": ["The Missing Diplomat P12"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 55, "y": 26 },
+               "header": "Swamp Eye Jael",
+               "ends": ["Soothing Spices"],
+               "starts": ["Soothing Spices"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 56, "y": 10 },
+               "header": "Dreadmurk Shore",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Swim to the Barrens"],
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "barrens",
+         "experience": 31.31,
+         "waypoints": [
+            {
+               "coords": { "x": 64, "y": 59 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 69, "y": 49 },
+               "header": "Fray Island",
+               "ends": ["The Islander", "The Affray"],
+               "starts": ["The Affray", "The Windwatcher"],
+               "objectives": ["Stand in the Pit"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 63, "y": 37 },
+               "header": "Barrens Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Learn the Flightpath", "Fly to Ashenvale"],
+               "type": "flightpath"
+            }
+         ]
+      }
+   ]
+}

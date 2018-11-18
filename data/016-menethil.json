@@ -77,7 +77,7 @@
             {
                "coords": { "x": 11, "y": 60 },
                "header": "Menethil Inn",
-               "ends": ["The Absent Minded Prospector"],
+               "ends": ["The Absent Minded Prospector P2"],
                "starts": [],
                "objectives": [],
                "type": "quest"
