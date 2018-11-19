@@ -31,9 +31,15 @@ function render(data, current) {
    // WAIT 200 MS
    sleep(200).then(() => {
 
-      // RENDER IN PAGE-NUMBER & EXPERIENCE
-      $('#current').html('#' + current);
-      $('#experience').html('Level ' + target.experience);
+      // RENDER IN EXPERIENCE BAR
+      $('#experience #inner').html('Level ' + target.experience);
+
+      // FIND PERCENTAGE & RENDER IT IN
+      var percent = String(target.experience).split(".")[1];
+      $('#experience #inner').css('background-size', percent + '% auto');
+
+      // SET THE RANGE SCROLLER TO ITS NEW POSITION
+      $('#range').val(current);
 
       // PURGE THE MAP & TOOLTIP THEIR CONTENT
       $('#map').html('');
@@ -70,6 +76,9 @@ function render(data, current) {
 
       // APPEND AN SVG ONTOP OF THE BACKGROUND & THE WAYPOINT LINES
       $('#map').append('<svg>' + lines + '</svg>');
+
+      // APPEND IN THE BLOCK NUMBER
+      $('#map').append('<span id="block-num">#' + current + '</span>');
 
       // GRADUALLY TURN OPACITY ON
       $('#map').css('opacity', 1);

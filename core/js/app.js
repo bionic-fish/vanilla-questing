@@ -68,6 +68,10 @@ Promise.all(data).then((response) => {
    var current = parseInt(localStorage.getItem(key_name));
    var last_page = data.length;
 
+   // SET RANGE INPUTS MAX ATTRIBUTE & THE SCROLL TO THE CORRECT POSITION
+   $('#range').attr('max', last_page - 1);
+   $('#range').val(current);
+
    // RENDER MAP & WAYPOINTS ON INITIAL LOAD
    render(data, current);
 

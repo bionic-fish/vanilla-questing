@@ -1,5 +1,5 @@
 @font-face { font-family: 'Open Sans'; src: url('fonts/main.woff'); }
-input, span { all: unset; }
+input, span, input[type=range]::-webkit-slider-thumb { all: unset; }
 
 body {
    background: url('img/bg.png');
@@ -19,22 +19,25 @@ a:hover {
    text-decoration: underline;
 }
 
-#header {
+#header, #footer {
    background: url('img/dark.png');
-   display: table;
    width: 772px;
    margin: auto;
    padding: 6px;
    color: #CECECE;
 }
 
-#header #current, #header #experience {
-   display: table-cell;
-   width: 50%;
+#header #experience {
+   background: url('img/lighter.png');
 }
 
-#header #experience {
-   text-align: right;
+#header #experience #inner {
+   background-image: url('img/experience.png');
+   background-repeat: repeat-y;
+   background-size: 50% auto;
+   text-align: center;
+   padding: 4px;
+   transition: 0.2s;
 }
 
 #innerbody {
@@ -52,7 +55,7 @@ a:hover {
 
 #map-outer {
    background: url('img/dark.png');
-   padding: 0px 6px 6px 6px;
+   padding: 0px 6px;
    width: 772px;
    margin: auto;
 }
@@ -61,6 +64,15 @@ a:hover {
    height: 515px;
    position: relative;
    transition: .2s;
+}
+
+#map #block-num {
+   background: url('img/darker.png');
+   position: absolute;
+   left: 5px;
+   top: 5px;
+   color: white;
+   padding: 3px 5px;
 }
 
 .waypoint {
@@ -114,4 +126,19 @@ svg {
 line {
    stroke-width: 2;
    stroke: red;
+}
+
+input {
+   background: url('img/lighter.png');
+   margin: 0px;
+   width: 100%;
+   height: 26px;
+   cursor: pointer;
+}
+
+input[type=range]::-webkit-slider-thumb {
+   -webkit-appearance: none;
+   background: url('img/success.png');
+   height: 26px;
+   width: 10px;
 }
