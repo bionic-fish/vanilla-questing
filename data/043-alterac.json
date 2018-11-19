@@ -1,0 +1,104 @@
+{
+   "path": [
+      {
+         "zone": "hillsbrad",
+         "experience": 41.11,
+         "waypoints": [
+            {
+               "coords": { "x": 50, "y": 54 },
+               "header": "Southshore",
+               "ends": ["Down the Scarlet Path P2", "Further Mysteries"],
+               "starts": ["In the Name of the Light", "Preserving Knowledge", "Crushridge Warmongers", "Dark Council", "Noble Deaths"],
+               "objectives": [],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 54, "y": 10 },
+               "header": "Alterac Mountains Border",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "alterac",
+         "experience": 41.13,
+         "waypoints": [
+            {
+               "coords": { "x": 52, "y": 69 },
+               "header": "Hillsbrad Foothills Border",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 38, "y": 56 },
+               "header": "Ruins of Alterac",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Preserving Knowledge", "Crushridge Warmongers"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 38, "y": 52 },
+               "header": "Grel'Borg the Miser",
+               "ends": [],
+               "starts": [],
+               "objectives": ["The Perenolde Tiara"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 38, "y": 46 },
+               "header": "Weathered Bookcase",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Preserving Knowledge"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 56, "y": 27 },
+               "header": "The Uplands",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Noble Deaths", "Dark Council", "Mages"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 53, "y": 21 },
+               "header": "The Uplands",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Noble Deaths", "Dark Council", "Mages"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 48, "y": 17 },
+               "header": "The Uplands",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Noble Deaths", "Dark Council", "Mages"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 39, "y": 15 },
+               "header": "Dandred's Fold",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Dark Council", "Nagaz"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 19, "y": 12 },
+               "header": "Lordamere Lake",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Move to Scarlet Monastery"],
+               "type": "travel"
+            }
+         ]
+      }
+   ]
+}

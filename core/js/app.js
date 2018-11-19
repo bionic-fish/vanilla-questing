@@ -32,7 +32,24 @@ var data = [
    $.getJSON('../data/030-transition.json'),
    $.getJSON('../data/031-stv.json'),
    $.getJSON('../data/032-southshore.json'),
-   $.getJSON('../data/033-arathi.json')
+   $.getJSON('../data/033-arathi.json'),
+   $.getJSON('../data/034-transition.json'),
+   $.getJSON('../data/035-needles.json'),
+   $.getJSON('../data/036-dustwallow.json'),
+   $.getJSON('../data/037-transition.json'),
+   $.getJSON('../data/038-desolace.json'),
+   $.getJSON('../data/039-transition.json'),
+   $.getJSON('../data/040-swamp.json'),
+   $.getJSON('../data/041-transition.json'),
+   $.getJSON('../data/042-arathi.json'),
+   $.getJSON('../data/043-alterac.json'),
+   $.getJSON('../data/044-transition.json'),
+   $.getJSON('../data/045-stv.json'),
+   $.getJSON('../data/046-transition.json'),
+   $.getJSON('../data/047-badlands.json'),
+   $.getJSON('../data/048-transition.json'),
+   $.getJSON('../data/049-stv.json'),
+   $.getJSON('../data/050-tanaris.json')
 ];
 
 // WAIT FOR EVERYTHING TO RESPOND

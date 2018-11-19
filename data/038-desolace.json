@@ -1,0 +1,388 @@
+{
+   "path": [
+      {
+         "zone": "desolace",
+         "experience": 36.48,
+         "waypoints": [
+            {
+               "coords": { "x": 54, "y": 4 },
+               "header": "Stonetalon Mountains Border",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 68, "y": 17 },
+               "header": "Nijel's Point Slope",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 65, "y": 11 },
+               "header": "Desolace Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Learn the Flightpath"],
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 67, "y": 10 },
+               "header": "Nijel's Point",
+               "ends": ["Brother Anton", "Reclaimers' Business in Desolace"],
+               "starts": ["Centaur Bounty", "Strange Alliances", "The Karnitol Shipwreck P1", "Reagents for Reclaimers Inc. P1", "Vahlarriel's Search P1", "Down the Scarlet Path P1"],
+               "objectives": ["Set Hearthstone"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 73, "y": 19 },
+               "header": "Sargeron",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Reagents for Reclaimers Inc. P1"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 62, "y": 39 },
+               "header": "Bibbly F'utzbuckle",
+               "ends": [],
+               "starts": ["Bone Collector"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 57, "y": 18 },
+               "header": "Malem Chest",
+               "ends": ["Vahlarriel's Search P1"],
+               "starts": ["Vahlarriel's Search P2"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 39, "y": 27 },
+               "header": "Azore Aldamort",
+               "ends": [],
+               "starts": ["Sceptre of Light"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 36, "y": 30 },
+               "header": "Karnitols Chest",
+               "ends": ["The Karnitol Shipwreck P1"],
+               "starts": ["The Karnitol Shipwreck P2"],
+               "objectives": ["Hearthstone to Nijel's Point"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "desolace",
+         "experience": 36.71,
+         "waypoints": [
+            {
+               "coords": { "x": 67, "y": 10 },
+               "header": "Nijel's Point",
+               "ends": ["Vahlarriel's Search P2", "Reagents for Reclaimers Inc. P1", "The Karnitol Shipwreck P2"],
+               "starts": ["The Karnitol Shipwreck P3", "Reagents for Reclaimers Inc. P2", "Vahlarriel's Search P3"],
+               "objectives": ["Set Hearthstone"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 65, "y": 21 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Reagents for Reclaimers Inc. P2"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 55, "y": 30 },
+               "header": "Fortress Tower",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Sceptre of Light"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 55, "y": 26 },
+               "header": "Dalinda Malem",
+               "ends": ["Vahlarriel's Search P3"],
+               "starts": ["Search For Tyranis"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 53, "y": 29 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Search For Tyranis"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "desolace",
+         "experience": 36.91,
+         "waypoints": [
+            {
+               "coords": { "x": 53, "y": 29 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Search For Tyranis"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 55, "y": 26 },
+               "header": "Dalinda Malem",
+               "ends": ["Search For Tyranis"],
+               "starts": ["Return to Vahlarriel"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 39, "y": 27 },
+               "header": "Azore Aldamort",
+               "ends": ["Sceptre of Light"],
+               "starts": ["Book of the Ancients"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 29, "y": 8 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Book of the Ancients", "The Karnitol Shipwreck P3"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "desolace",
+         "experience": 37.02,
+         "waypoints": [
+            {
+               "coords": { "x": 29, "y": 8 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Book of the Ancients", "The Karnitol Shipwreck P3"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 39, "y": 27 },
+               "header": "Azore Aldamort",
+               "ends": ["Book of the Ancients"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 48, "y": 62 },
+               "header": "Hornizz Brimbuzzle",
+               "ends": [],
+               "starts": ["Ghost-o-plasm Round Up"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 61, "y": 62 },
+               "header": "Smeed Scrabblescrew",
+               "ends": [],
+               "starts": ["Kodo Roundup"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 53, "y": 58 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Kodo Roundup", "Bone Collector", "Reagents for Reclaimers Inc. P2"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "desolace",
+         "experience": 37.12,
+         "waypoints": [
+            {
+               "coords": { "x": 53, "y": 58 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Kodo Roundup", "Bone Collector", "Reagents for Reclaimers Inc. P2"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 61, "y": 62 },
+               "header": "Smeed Scrabblescrew",
+               "ends": ["Kodo Roundup"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 70, "y": 75 },
+               "header": "Magram",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Centary Bounty", "Strange Alliance", "Farm until Friendly - Don't worry about Earcount"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 64, "y": 92 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Ghost-o-plasm Round Up", "Down the Scarlet Path P1"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 36, "y": 79 },
+               "header": "Uthek the Wise",
+               "ends": ["Strange Alliance"],
+               "starts": ["Raid on the Kolkar"],
+               "objectives": ["Hearthstone to Nijel's Point"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "desolace",
+         "experience": 37.41,
+         "waypoints": [
+            {
+               "coords": { "x": 67, "y": 10 },
+               "header": "Nijel's Point",
+               "ends": ["Reagents for Reclaimers Inc. P2", "The Karnitol Shipwreck P2", "Down the Scarlet Path P1", "Return to Vahlarriel"],
+               "starts": ["Reagents for Reclaimers Inc. P3", "The Karnitol Shipwreck P3", "Down the Scarlet Path P2"],
+               "objectives": [],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 62, "y": 39 },
+               "header": "Bibbly F'utzbuckle",
+               "ends": ["Bone Collector"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 71, "y": 45 },
+               "header": "Kolkar Village",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Raid on the Kolkar", "Centary Bounty", "Don't worry about Earcount"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 52, "y": 78 },
+               "header": "Mannoroc Coven",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Reagents for Reclaimers Inc. P3", "Kill about a third"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 36, "y": 79 },
+               "header": "Uthek the Wise",
+               "ends": ["Raid on the Kolkar"],
+               "starts": ["Sealing Supplies"],
+               "objectives": [],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "desolace",
+         "experience": 37.78,
+         "waypoints": [
+            {
+               "coords": { "x": 36, "y": 79 },
+               "header": "Uthek the Wise",
+               "ends": ["Raid on the Kolkar"],
+               "starts": ["Stealing Supplies"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 52, "y": 78 },
+               "header": "Mannoroc Coven",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Reagents for Reclaimers Inc. P3", "Kill about a third"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 70, "y": 75 },
+               "header": "Magram Village",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Stealing Supplies", "Centary Bounty", "Farm the remaining ears"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "desolace",
+         "experience": 37.84,
+         "waypoints": [
+            {
+               "coords": { "x": 70, "y": 75 },
+               "header": "Magram Village",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Stealing Supplies", "Centary Bounty", "Farm the remaining ears"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 52, "y": 78 },
+               "header": "Mannoroc Coven",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Reagents for Reclaimers Inc. P3", "Kill the remaining demons"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 36, "y": 79 },
+               "header": "Uthek the Wise",
+               "ends": ["Stealing Supplies"],
+               "starts": ["Ongeku"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 48, "y": 62 },
+               "header": "Hornizz Brimbuzzle",
+               "ends": ["Ghost-o-plasm Round Up"],
+               "starts": [],
+               "objectives": ["Hearthstone to Nijel's Point"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 67, "y": 10 },
+               "header": "Nijel's Point",
+               "ends": ["Reagents for Reclaimers Inc. P3", "Centaur Bounty"],
+               "starts": ["Reagents for Reclaimers Inc. P4"],
+               "objectives": [],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 65, "y": 11 },
+               "header": "Desolace Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fly to Desolace"],
+               "type": "flightpath"
+            }
+         ]
+      }
+   ]
+}

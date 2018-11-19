@@ -6,7 +6,7 @@
          "waypoints": [
             {
                "coords": { "x": 45, "y": 45 },
-               "header": "Refuge Point Flightpath",
+               "header": "Arathi Highlands Flightpath",
                "ends": [],
                "starts": [],
                "objectives": [],
@@ -40,7 +40,7 @@
       },
       {
          "zone": "arathi",
-         "experience": 0,
+         "experience": 34.72,
          "waypoints": [
             {
                "coords": { "x": 60, "y": 61 },
@@ -53,8 +53,8 @@
             {
                "coords": { "x": 60, "y": 54 },
                "header": "Quae",
-               "ends": ["Hints of a New Plague? P2", "Hints of a New Plague? P3", "Hints of a New Plague? P4"],
-               "starts": ["Hints of a New Plague? P3", "Hints of a New Plague? P4", "Hints of a New Plague? P5"],
+               "ends": ["Hints of a New Plague? P2-4"],
+               "starts": ["Hints of a New Plague? P3-5"],
                "objectives": [],
                "type": "quest"
             },
@@ -80,13 +80,13 @@
                "ends": ["The Princess Trapped"],
                "starts": ["Stones of Binding"],
                "objectives": ["The Princess Trapped", "Favor for Krazek"],
-               "type": "objective"
+               "type": "quest"
             }
          ]
       },
       {
          "zone": "arathi",
-         "experience": 0,
+         "experience": 35.09,
          "waypoints": [
             {
                "coords": { "x": 83, "y": 36 },
@@ -113,6 +113,14 @@
                "type": "objective"
             },
             {
+               "coords": { "x": 46, "y": 48 },
+               "header": "Refuge Point",
+               "ends": ["Worth Its Weight In Gold"],
+               "starts": ["Wand over Fist"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
                "coords": { "x": 32, "y": 29 },
                "header": "",
                "ends": [],
@@ -137,13 +145,19 @@
                "type": "quest"
             },
             {
-               "coords": { "x": 46, "y": 48 },
-               "header": "Refuge Point",
-               "ends": ["Northfold Manor", "Worth Its Weight In Gold"],
-               "starts": ["Wand over Fist"],
-               "objectives": [],
-               "type": "quest"
-            },
+               "coords": { "x": 54, "y": 81 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Wand over Fist"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "arathi",
+         "experience": 35.31,
+         "waypoints": [
             {
                "coords": { "x": 54, "y": 81 },
                "header": "",
@@ -151,6 +165,22 @@
                "starts": [],
                "objectives": ["Wand over Fist"],
                "type": "objective"
+            },
+            {
+               "coords": { "x": 46, "y": 48 },
+               "header": "Refuge Point",
+               "ends": ["Northfold Manor", "Wand over Fist"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 45, "y": 45 },
+               "header": "Arathi Highlands Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fly to Hillsbrad Foothills"],
+               "type": "flightpath"
             }
          ]
       }

@@ -230,7 +230,7 @@
                "coords": { "x": 74, "y": 47 },
                "header": "Darkshire",
                "ends": ["The Scrythe of Elune"],
-               "starts": ["Answered Questions"],
+               "starts": [],
                "objectives": [],
                "type": "hub"
             },

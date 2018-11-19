@@ -1,0 +1,120 @@
+{
+   "path": [
+      {
+         "zone": "dustwallow",
+         "experience": 35.97,
+         "waypoints": [
+            {
+               "coords": { "x": 67, "y": 51 },
+               "header": "Theramore Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 66, "y": 49 },
+               "header": "Theramore Tower",
+               "ends": ["The Missing Diplomat P12"],
+               "starts": ["The Missing Diplomat P13"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 66, "y": 45 },
+               "header": "Theramore Inn",
+               "ends": ["Highperch Venom"],
+               "starts": ["Mudrock Soup and Bugs"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 62, "y": 32 },
+               "header": "Dreadmurk Shore",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Mudrock Soup and Bugs"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 55, "y": 26 },
+               "header": "Swamp Eye Jarl",
+               "ends": [],
+               "starts": ["Eyes for Jarl"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 47, "y": 17 },
+               "header": "Stinky Ignaz",
+               "ends": [],
+               "starts": ["Stinky's Escape"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 45, "y": 25 },
+               "header": "Private Hendel",
+               "ends": ["The Missing Diplomat P13"],
+               "starts": ["The Missing Diplomat P14"],
+               "objectives": ["The Missing Diplomat P14"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 35, "y": 22 },
+               "header": "Darkmist Cavern",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Eyes for Jarl"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "dustwallow",
+         "experience": 36.19,
+         "waypoints": [
+            {
+               "coords": { "x": 35, "y": 22 },
+               "header": "Darkmist Cavern",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Eyes for Jarl"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 55, "y": 26 },
+               "header": "Swamp Eye Jarl",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Eyes for Jarl"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 66, "y": 45 },
+               "header": "Theramore Inn",
+               "ends": ["Mudrock Soup and Bugs", "Stinky's Escape"],
+               "starts": ["And Bugs"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 66, "y": 49 },
+               "header": "Theramore Tower",
+               "ends": ["The Missing Diplomat P14-15"],
+               "starts": ["The Missing Diplomat P15"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 67, "y": 51 },
+               "header": "Theramore Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fly to Ratchet"],
+               "type": "flightpath"
+            }
+         ]
+      }
+   ]
+}

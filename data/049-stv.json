@@ -1,0 +1,302 @@
+{
+   "path": [
+      {
+         "zone": "stv",
+         "experience": 44.31,
+         "waypoints": [
+            {
+               "coords": { "x": 28, "y": 78 },
+               "header": "Booty Bay Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 27, "y": 77 },
+               "header": "Booty Bay",
+               "ends": ["The Rumormonger", "Ansirem's Key"],
+               "starts": ["Pretty Boy Duncan", "Venture Company Mining", "Zanzil's Secret", "Akiris by the Bundle", "Scaring Shaky", "Stranglethorn Fever", "The Bloodsail Buccaneers P1", "Excelsior"],
+               "objectives": ["Set Hearthstone"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 26, "y": 73 },
+               "header": "Booty Bay Harbor",
+               "ends": [],
+               "starts": [],
+               "objectives": ["The Captain's Chest"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 27, "y": 69 },
+               "header": "Southern Savage Coast",
+               "ends": ["The Bloodsail Buccaneers P1"],
+               "starts": ["The Bloodsail Buccaneers P2"],
+               "objectives": ["Pretty Boy Duncan"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 33, "y": 66 },
+               "header": "Southern Savage Coast",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Scaring Shaky"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 35, "y": 61 },
+               "header": "Spirit Den",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Stranglethorn Fever", "Remember to loot the Heart"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "stv",
+         "experience": 44.39,
+         "waypoints": [
+            {
+               "coords": { "x": 35, "y": 61 },
+               "header": "Spirit Den",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Stranglethorn Fever", "Remember to loot the Heart"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 26, "y": 73 },
+               "header": "Booty Bay Harbor",
+               "ends": ["Scaring Shaky"],
+               "starts": ["Return of MacKinley"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 27, "y": 77 },
+               "header": "Booty Bay",
+               "ends": ["Return of MacKinley", "Pretty Boy Duncan", "Stranglethorn Fever", "The Bloodsail Buccaneers P2-3", "The Curse of the Tides"],
+               "starts": ["The Bloodsail Buccaneers P3-4", "Up to Snuff", "Voodoo Dues", "Keep an Eye Out"],
+               "objectives": [],
+               "type": "hub"
+            }
+         ]
+      },
+      {
+         "zone": "stv",
+         "experience": 44.50,
+         "waypoints": [
+            {
+               "coords": { "x": 27, "y": 77 },
+               "header": "Booty Bay",
+               "ends": ["Return of MacKinley", "Pretty Boy Duncan", "Stranglethorn Fever", "The Bloodsail Buccaneers P2-3", "The Curse of the Tides"],
+               "starts": ["The Bloodsail Buccaneers P3-4", "Up to Snuff", "Voodoo Dues", "Keep an Eye Out"],
+               "objectives": [],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 27, "y": 83 },
+               "header": "Wild Shore",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Up To Snuff", "Keep An Eye Out", "The Bloodsail Buccaneers P3"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 37, "y": 69 },
+               "header": "The Crystal Shore",
+               "ends": [],
+               "starts": [],
+               "objectives": ["The Captain's Chest"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 40, "y": 58 },
+               "header": "Ruins of Aboraz",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Zanzil's Secret", "Voodoo Dues", "Chucky's Location"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 35, "y": 52 },
+               "header": "Ruins of Aboraz",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Zanzil's Secret", "Voodoo Dues", "Maury's Location", "Chucky's Location"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "stv",
+         "experience": 44.50,
+         "waypoints": [
+            {
+               "coords": { "x": 35, "y": 52 },
+               "header": "Ruins of Aboraz",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Zanzil's Secret", "Voodoo Dues", "Maury's Location", "Chucky's Location"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 26, "y": 73 },
+               "header": "Booty Bay Harbor",
+               "ends": ["The Captain's Chest"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 27, "y": 77 },
+               "header": "Booty Bay",
+               "ends": ["The Bloodsail Buccaneers P4", "Up to Snuff", "Voodoo Dues", "Keep an Eye Out", "Zanzil's Secret"],
+               "starts": ["Cracking Maury's Foot", "The Bloodsail Buccaneers P5"],
+               "objectives": [],
+               "type": "hub"
+            }
+         ]
+      },
+      {
+         "zone": "stv",
+         "experience": 44.81,
+         "waypoints": [
+            {
+               "coords": { "x": 27, "y": 77 },
+               "header": "Booty Bay",
+               "ends": ["The Bloodsail Buccaneers P4", "Up to Snuff", "Voodoo Dues", "Keep an Eye Out", "Zanzil's Secret"],
+               "starts": ["Cracking Maury's Foot", "The Bloodsail Buccaneers P5"],
+               "objectives": [],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 30, "y": 89 },
+               "header": "Pirate Ships",
+               "ends": [],
+               "starts": [],
+               "objectives": ["The Bloodsail Buccaneers P5"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 34, "y": 87 },
+               "header": "Pirate Ship",
+               "ends": [],
+               "starts": [],
+               "objectives": ["The Bloodsail Buccaneers P5"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 26, "y": 61 },
+               "header": "The Cape of Stranglethorn",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Akirus By the Bundle P1"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 41, "y": 44 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Venture Company Mining"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 38, "y": 36 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Big Game Hunter"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 51, "y": 28 },
+               "header": "Mosh'Ogg Ogre Mound",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Mai'Zoth", "Cracking Maury's Foot"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 29, "y": 23 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Excelsior"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 25, "y": 24 },
+               "header": "The Vile Reef",
+               "ends": [],
+               "starts": [],
+               "objectives": ["The Curse of the Tides"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 36, "y": 11 },
+               "header": "Nesingwary's Expedition",
+               "ends": ["Big Game Hunter"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 38, "y": 3 },
+               "header": "Rebel Camp",
+               "ends": ["Mai'Zoth"],
+               "starts": [],
+               "objectives": ["Hearthstone to Booty Bay"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "stv",
+         "experience": 45.05,
+         "waypoints": [
+            {
+               "coords": { "x": 27, "y": 77 },
+               "header": "Booty Bay",
+               "ends": ["Cracking Maury's Foot", "The Bloodsail Buccaneers P5", "Akiris by the Bundle P1", "Venture Company Mining", "The Curse of the Tides", "Excelsior"],
+               "starts": ["Akiris by the Bundle P2", "Whiskey Slim's Lost Grog", "Stoley's Debt"],
+               "objectives": [],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 26, "y": 73 },
+               "header": "Booty Bay Harbor",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Sail to Ratchet"],
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "barrens",
+         "experience": 45.22,
+         "waypoints": [
+            {
+               "coords": { "x": 64, "y": 39 },
+               "header": "Ratchet Harbor",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 63, "y": 37 },
+               "header": "Barrens Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fly to Tanaris"],
+               "type": "flightpath"
+            }
+         ]
+      }
+   ]
+}

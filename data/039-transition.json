@@ -1,0 +1,189 @@
+{
+   "path": [
+      {
+         "zone": "barrens",
+         "experience": 38.05,
+         "waypoints": [
+            {
+               "coords": { "x": 63, "y": 37 },
+               "header": "Ratchet Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 64, "y": 39 },
+               "header": "Ratchet Harbor",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "stv",
+         "experience": 38.05,
+         "waypoints": [
+            {
+               "coords": { "x": 26, "y": 73 },
+               "header": "Booty Bay Harbor",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 27, "y": 74 },
+               "header": "Wharfmaster Lozgil",
+               "ends": ["Goblin Sponsorship P2"],
+               "starts": ["Goblin Sponsorship P3"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 27, "y": 77 },
+               "header": "Booty Bay",
+               "ends": ["Goblin Sponsorship P3", "Favor for Krazek"],
+               "starts": [],
+               "objectives": [],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 28, "y": 78 },
+               "header": "Booy Bay Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fly to Stormwind"],
+               "type": "flightpath"
+            }
+         ]
+      },
+      {
+         "zone": "farmfarmfarm",
+         "experience": "38-40",
+         "waypoints": []
+      },
+      {
+         "zone": "stormwind",
+         "experience": 40.00,
+         "waypoints": [
+            {
+               "coords": { "x": 66, "y": 62 },
+               "header": "Stormwind Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 74, "y": 30 },
+               "header": "Count Remington Ridgewell",
+               "ends": [],
+               "starts": ["The Perenolde Tiara"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 64, "y": 21 },
+               "header": "Brohann Caskbelly",
+               "ends": [],
+               "starts": ["In Search of the Temple"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 41, "y": 64 },
+               "header": "",
+               "ends": ["Mazens Behest P1"],
+               "starts": ["Mazens Behest P1-2"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 38, "y": 82 },
+               "header": "Mage Tower",
+               "ends": [],
+               "starts": ["Vital Supplies"],
+               "objectives": [],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "stormwind",
+         "experience": 40.03,
+         "waypoints": [
+            {
+               "coords": { "x": 38, "y": 82 },
+               "header": "Mage Tower",
+               "ends": [],
+               "starts": ["Vital Supplies"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 66, "y": 62 },
+               "header": "Stormwind Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fly to Duskwood"],
+               "type": "flightpath"
+            }
+         ]
+      },
+      {
+         "zone": "duskwood",
+         "experience": 40.03,
+         "waypoints": [
+            {
+               "coords": { "x": 78, "y": 43 },
+               "header": "Duskwood Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 76, "y": 46 },
+               "header": "Watchmaster Sorigal",
+               "ends": ["Vital Supplies"],
+               "starts": ["Supplies to Nethergarde"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 87, "y": 41 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Deadwind Pass Border"],
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "deadwind",
+         "experience": 40.04,
+         "waypoints": [
+            {
+               "coords": { "x": 32, "y": 36 },
+               "header": "Duskwood Border",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 58, "y": 42 },
+               "header": "Swamp of Sorrows Border",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "travel"
+            }
+         ]
+      }
+   ]
+}

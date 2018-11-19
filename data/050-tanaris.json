@@ -1,0 +1,26 @@
+{
+   "path": [
+      {
+         "zone": "tanaris",
+         "experience": 45.22,
+         "waypoints": [
+            {
+               "coords": { "x": 50, "y": 30 },
+               "header": "Tanaris Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 51, "y": 28 },
+               "header": "Gadgetzan",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "hub"
+            }
+         ]
+      }
+   ]
+}

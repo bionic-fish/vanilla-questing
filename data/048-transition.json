@@ -1,0 +1,342 @@
+{
+   "path": [
+      {
+         "zone": "loch",
+         "experience": 43.47,
+         "waypoints": [
+            {
+               "coords": { "x": 47, "y": 81 },
+               "header": "Badlands Border",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 66, "y": 66 },
+               "header": "Prospector Ironband",
+               "ends": ["Murdaloc"],
+               "starts": ["Agmond's Fate"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 37, "y": 49 },
+               "header": "Ghak Healtouch",
+               "ends": ["Badlands Reagent Run"],
+               "starts": ["Uldaman Reagent Run"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 34, "y": 51 },
+               "header": "Loch Modan Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fly to Arathi Highlands"],
+               "type": "flightpath"
+            }
+         ]
+      },
+      {
+         "zone": "arathi",
+         "experience": 43.53,
+         "waypoints": [
+            {
+               "coords": { "x": 46, "y": 46 },
+               "header": "Arathi Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 63, "y": 34 },
+               "header": "Shard of Myzrael",
+               "ends": ["Summoning the Princess"],
+               "starts": [],
+               "objectives": ["Summoning the Princess"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "arathi",
+         "experience": 43.61,
+         "waypoints": [
+            {
+               "coords": { "x": 63, "y": 34 },
+               "header": "Shard of Myzrael",
+               "ends": ["Summoning the Princess"],
+               "starts": [],
+               "objectives": ["Summoning the Princess"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 46, "y": 46 },
+               "header": "Refuge Point Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fly to Hillsbrad"],
+               "type": "flightpath"
+            }
+         ]
+      },
+      {
+         "zone": "hillsbrad",
+         "experience": 43.61,
+         "waypoints": [
+            {
+               "coords": { "x": 49, "y": 52 },
+               "header": "Hillsbrad Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 25, "y": 17 },
+               "header": "Archmage Ansirem Runeweaver",
+               "ends": ["Magical Analysis"],
+               "starts": ["Ansirem's Key"],
+               "objectives": ["Hearthstone to Ironforge"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "ironforge",
+         "experience": 43.64,
+         "waypoints": [
+            {
+               "coords": { "x": 19, "y": 51 },
+               "header": "Ironforge Inn",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 25, "y": 74 },
+               "header": "Ironforge Auction House",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Buy 5x Silver Bar"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 36, "y": 4 },
+               "header": "Talvash del Kissel",
+               "ends": ["The Shattered Necklace", "Lore for a Price"],
+               "starts": ["Lore for a Price", "Back to Uldaman"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 56, "y": 48 },
+               "header": "Ironforge Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fly to Loch Modan"],
+               "type": "flightpath"
+            }
+         ]
+      },
+      {
+         "zone": "loch",
+         "experience": 43.68,
+         "waypoints": [
+            {
+               "coords": { "x": 34, "y": 51 },
+               "header": "Loch Modan Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 47, "y": 81 },
+               "header": "Badlands Border",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "badlands",
+         "experience": 43.68,
+         "waypoints": [
+            {
+               "coords": { "x": 49, "y": 8 },
+               "header": "Loch Modan Border",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 41, "y": 12 },
+               "header": "Uldaman",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Do Uldaman with 8 quests", "After the run, die & take ress sickness"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "badlands",
+         "experience": 43.92,
+         "waypoints": [
+            {
+               "coords": { "x": 64, "y": 30 },
+               "header": "Badlands Spirit Healer",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Take ress sickness"],
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 51, "y": 77 },
+               "header": "Thelduin the Lost",
+               "ends": ["Solution to Doom"],
+               "starts": ["To Ironforge for Yagyin's Digest"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 43, "y": 54 },
+               "header": "Valley of Fangs",
+               "ends": ["Power Stones"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 54, "y": 44 },
+               "header": "Hillside Camp",
+               "ends": ["Prospect of Faith P1"],
+               "starts": ["Prospect of Faith P2"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 49, "y": 8 },
+               "header": "Loch Modan Border",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "loch",
+         "experience": 43.99,
+         "waypoints": [
+            {
+               "coords": { "x": 47, "y": 81 },
+               "header": "Badlands Border",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 66, "y": 66 },
+               "header": "Prospector Ironband",
+               "ends": ["Agmond's Fate"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 37, "y": 49 },
+               "header": "Ghak Healtouch",
+               "ends": ["Uldaman Reagent Run"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 34, "y": 51 },
+               "header": "Loch Modan Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fly to Ironforge"],
+               "type": "flightpath"
+            }
+         ]
+      },
+      {
+         "zone": "ironforge",
+         "experience": 44.05,
+         "waypoints": [
+            {
+               "coords": { "x": 56, "y": 48 },
+               "header": "Ironforge Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 75, "y": 12 },
+               "header": "The Library",
+               "ends": ["The Platinum Disks P2", "The Hidden Chamber", "Reclaimed Treasure", "Prospect of Faith P2", "Passing Word of Threat P1", "Passing Word of Threat P2"],
+               "starts": ["The Platinum Disks P3", "Passing Word of Threat P1", "Passing Word of Threat P2"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 51, "y": 5 },
+               "header": "Gerrig Bonegrip",
+               "ends": ["To Ironforge for Yagyin's Digest"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 36, "y": 4 },
+               "header": "Talvash del Kissel",
+               "ends": ["Restoring the Necklace P1", "Restoring the Necklace P2"],
+               "starts": ["Restoring the Necklace P2"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 34, "y": 60 },
+               "header": "Dina Stonemantle",
+               "ends": ["The Platinum Disks P3"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "ironforge",
+         "experience": 44.31,
+         "waypoints": [
+            {
+               "coords": { "x": 34, "y": 60 },
+               "header": "Dina Stonemantle",
+               "ends": ["The Platinum Disks P3"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 56, "y": 48 },
+               "header": "Ironforge Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fly to Booty Bay"],
+               "type": "flightpath"
+            }
+         ]
+      }
+   ]
+}

@@ -33,7 +33,7 @@ function render(data, current) {
 
       // RENDER IN PAGE-NUMBER & EXPERIENCE
       $('#current').html('#' + current);
-      $('#experience').html('Level ' + target.experience + '%');
+      $('#experience').html('Level ' + target.experience);
 
       // PURGE THE MAP & TOOLTIP THEIR CONTENT
       $('#map').html('');

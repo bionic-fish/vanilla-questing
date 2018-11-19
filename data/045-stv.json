@@ -1,0 +1,318 @@
+{
+   "path": [
+      {
+         "zone": "stv",
+         "experience": 41.68,
+         "waypoints": [
+            {
+               "coords": { "x": 28, "y": 78 },
+               "header": "Booty Bay Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 27, "y": 77 },
+               "header": "Booty Bay",
+               "ends": ["Sunken Treasure P4"],
+               "starts": ["Singing Blue Shards", "Return to Corporal Kaleb", "Skullsplitter Tusks", "Hostile Takeover", "Water Elementals", "Some Assembly Required", "Goblin Sponsorship P4"],
+               "objectives": ["Set Hearthstone"],
+               "type": "hub"
+            }
+         ]
+      },
+      {
+         "zone": "stv",
+         "experience": 41.71,
+         "waypoints": [
+            {
+               "coords": { "x": 27, "y": 77 },
+               "header": "Booty Bay",
+               "ends": ["Sunken Treasure P4"],
+               "starts": ["Singing Blue Shards", "Return to Corporal Kaleb", "Skullsplitter Tusks", "Hostile Takeover", "Water Elementals", "Some Assembly Required", "Goblin Sponsorship P4"],
+               "objectives": ["Set Hearthstone"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 28, "y": 78 },
+               "header": "Booty Bay Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fly to Westfall"],
+               "type": "flightpath"
+            }
+         ]
+      },
+      {
+         "zone": "westfall",
+         "experience": 41.71,
+         "waypoints": [
+            {
+               "coords": { "x": 57, "y": 53 },
+               "header": "Sentinel Hill Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 87, "y": 95 },
+               "header": "Stranglethorn Vale River",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "stv",
+         "experience": 41.71,
+         "waypoints": [
+            {
+               "coords": { "x": 33, "y": 8 },
+               "header": "Stranglethorn Vale River",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 36, "y": 11 },
+               "header": "Nesingwary's Expedition",
+               "ends": ["Chapter 1-4", "The Green Hills of Stranglethorn"],
+               "starts": ["Chapter 1-4", "The Green Hills of Stranglethorn", "Panther Mastery P3", "Tiger Mastery P3", "Raptor Mastery P3"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 38, "y": 3 },
+               "header": "Rebel Camp",
+               "ends": ["Return to Corporal Kaleb"],
+               "starts": ["Kurzen's Mystery", "Colonel Kurzen"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 50, "y": 4 },
+               "header": "The Stockpile",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Colonel Kurzen"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 42, "y": 18 },
+               "header": "Venture Co. Base",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Hostile Takeover", "Goblin Sponsorship P4", "Kill the Foreman", "Loot the chest"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 41, "y": 22 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Some Assembly Required"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 49, "y": 22 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Panther Mastery P3", "6x Panther spawns"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 38, "y": 37 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Panther Mastery P3", "6x Panther spawns"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 37, "y": 42 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Singing Blue Shards"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 31, "y": 43 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Raptor Mastery P3"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 21, "y": 23 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Water Elementals"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 25, "y": 23 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Kurzen's Mystery"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 29, "y": 19 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Kurzen's Mystery"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 32, "y": 17 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Tiger Mastery P3"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 23, "y": 12 },
+               "header": "Ruins of Zul'Kunda",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Kurzen's Mystery"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 25, "y": 9 },
+               "header": "Ruins of Zul'Kunda",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Kurzen's Mystery"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "stv",
+         "experience": 41.98,
+         "waypoints": [
+            {
+               "coords": { "x": 25, "y": 9 },
+               "header": "Ruins of Zul'Kunda",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Kurzen's Mystery"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 36, "y": 11 },
+               "header": "Nesingwary's Expedition",
+               "ends": ["Panther Mastery P3", "Tiger Mastery P3", "Raptor Mastery P3"],
+               "starts": ["Panther Mastery P4", "Tiger Mastery P4", "Raptor Mastery P4"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 38, "y": 3 },
+               "header": "Rebel Camp",
+               "ends": ["Kurzen's Mystery", "Colonel Kurzen"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 50, "y": 24 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Panther Mastery P4"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 44, "y": 34 },
+               "header": "Balia'mah Ruins",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Skullsplitter Tusks", "Troll Witchery"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 29, "y": 45 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Raptor Mastery P4"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 32, "y": 17 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Tiger Mastery P4"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "stv",
+         "experience": 42.31,
+         "waypoints": [
+            {
+               "coords": { "x": 32, "y": 17 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Tiger Mastery P4"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 36, "y": 11 },
+               "header": "Nesingwary's Expedition",
+               "ends": ["Panther Mastery P4", "Tiger Mastery P4", "Raptor Mastery P4"],
+               "starts": ["Big Game Hunter"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 38, "y": 3 },
+               "header": "Rebel Camp",
+               "ends": ["Troll Witchery"],
+               "starts": ["Mai'Zoth"],
+               "objectives": ["Hearthstone to Booty Bay"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "stv",
+         "experience": 42.41,
+         "waypoints": [
+            {
+               "coords": { "x": 27, "y": 77 },
+               "header": "Booty Bay",
+               "ends": ["Singing Blue Shards", "Skullsplitter Tusks", "Hostile Takeover", "Water Elementals", "Some Assembly Required", "Goblin Sponsorship P4"],
+               "starts": ["Magical Analysis", "Goblin Sponsorship P5", "Tran'Rek"],
+               "objectives": ["Set Hearthstone"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 26, "y": 73 },
+               "header": "Booty Bay Harbor",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Sail to Ratchet"],
+               "type": "travel"
+            }
+         ]
+      }
+   ]
+}

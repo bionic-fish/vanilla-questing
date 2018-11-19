@@ -1,0 +1,178 @@
+{
+   "path": [
+      {
+         "zone": "tirisfal",
+         "experience": 41.19,
+         "waypoints": [
+            {
+               "coords": { "x": 60, "y": 84 },
+               "header": "Lordamere Lake",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Move to Scarlet Monastery"],
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 55, "y": 75 },
+               "header": "Lordaeron Road",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Move to Scarlet Monastery"],
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 84, "y": 32 },
+               "header": "Scarlet Monastery",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Do Scarlet Monastery with 2 quests", "Remember to Loot the Key", "Hearthstone to Southshore"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "hillsbrad",
+         "experience": 41.25,
+         "waypoints": [
+            {
+               "coords": { "x": 50, "y": 54 },
+               "header": "Southshore",
+               "ends": ["Noble Deaths", "Dark Council", "Preserving Knowledge", "Crushridge Warmongers", "In the Name of the Light"],
+               "starts": ["Return to Milton"],
+               "objectives": [],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 49, "y": 52 },
+               "header": "Hillsbrad Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fly to Arathi Highlands"],
+               "type": "flightpath"
+            }
+         ]
+      },
+      {
+         "zone": "arathi",
+         "experience": 41.42,
+         "waypoints": [
+            {
+               "coords": { "x": 46, "y": 48 },
+               "header": "Refuge Point",
+               "ends": ["Attack of the Tower"],
+               "starts": ["Malin's Request P2"],
+               "objectives": [],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 46, "y": 46 },
+               "header": "Refuge Point Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fly to Ironforge"],
+               "type": "flightpath"
+            }
+         ]
+      },
+      {
+         "zone": "ironforge",
+         "experience": 41.46,
+         "waypoints": [
+            {
+               "coords": { "x": 56, "y": 48 },
+               "header": "Ironforge Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 51, "y": 5 },
+               "header": "Gerrig Bonegrip",
+               "ends": ["Myzrael's Allies"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 75, "y": 12 },
+               "header": "The Library",
+               "ends": ["Mythology of the Titans"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 78, "y": 52 },
+               "header": "Deeprun Tram",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "stormwind",
+         "experience": 41.51,
+         "waypoints": [
+            {
+               "coords": { "x": 65, "y": 6 },
+               "header": "Deeprun Tram",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 64, "y": 21 },
+               "header": "Brohann Caskbelly",
+               "ends": ["In Search of the Temple"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 74, "y": 8 },
+               "header": "Milton Sheaf",
+               "ends": ["Return to Milton"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 74, "y": 30 },
+               "header": "Count Remington Ridgewell",
+               "ends": ["The Perenolde Tiara"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 53, "y": 60 },
+               "header": "Stormwind Auction House",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Buy the remaining STV pages"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 40, "y": 82 },
+               "header": "Archmage Malin",
+               "ends": ["Malin's Request"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 66, "y": 62 },
+               "header": "Stormwind Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fly to Booty Bay"],
+               "type": "flightpath"
+            }
+         ]
+      }
+   ]
+}

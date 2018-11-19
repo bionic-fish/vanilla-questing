@@ -1,0 +1,262 @@
+{
+   "path": [
+      {
+         "zone": "swamp",
+         "experience": 40.04,
+         "waypoints": [
+            {
+               "coords": { "x": 5, "y": 61 },
+               "header": "Deadwind Pass Border",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 11, "y": 32 },
+               "header": "Misty Valley",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Mazen's Behest"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 26, "y": 31 },
+               "header": "Magtoor",
+               "ends": [],
+               "starts": ["Draenethyst Crystals"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 27, "y": 60 },
+               "header": "Watcher Biggs",
+               "ends": [],
+               "starts": ["Encroaching Wildlife"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 30, "y": 52 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Encroaching Wildlife"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 34, "y": 66 },
+               "header": "Blasted Lands Border",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "blasted",
+         "experience": 40.13,
+         "waypoints": [
+            {
+               "coords": { "x": 52, "y": 7 },
+               "header": "Swamp of Sorrows Border",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 67, "y": 19 },
+               "header": "Nethergarde Keep",
+               "ends": ["Mazen's Behest", "Supplies to Nethergarde"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 66, "y": 24 },
+               "header": "Blasted Lands Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Learn the Flightpath"],
+               "type": "flightpath"
+            }
+         ]
+      },
+      {
+         "zone": "blasted",
+         "experience": 40.21,
+         "waypoints": [
+            {
+               "coords": { "x": 66, "y": 24 },
+               "header": "Blasted Lands Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Learn the Flightpath"],
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 52, "y": 7 },
+               "header": "Swamp of Sorrows Border",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "swamp",
+         "experience": 40.21,
+         "waypoints": [
+            {
+               "coords": { "x": 34, "y": 66 },
+               "header": "Blasted Lands Border",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 27, "y": 60 },
+               "header": "Watcher Biggs",
+               "ends": ["Encroaching Wildlife"],
+               "starts": ["The Lost Caravan"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 65, "y": 18 },
+               "header": "Caravan Chest",
+               "ends": [],
+               "starts": [],
+               "objectives": ["The Lost Caravan", "Ongeku"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 84, "y": 14 },
+               "header": "Misty Reed Strand",
+               "ends": [],
+               "starts": [],
+               "objectives": ["And Bugs"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "swamp",
+         "experience": 40.27,
+         "waypoints": [
+            {
+               "coords": { "x": 84, "y": 14 },
+               "header": "Misty Reed Strand",
+               "ends": [],
+               "starts": [],
+               "objectives": ["And Bugs"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 66, "y": 18 },
+               "header": "Galen Goodward",
+               "ends": [],
+               "starts": ["Galen's Escape"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 62, "y": 23 },
+               "header": "Fallow Sanctuary",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Draenethyst Crystals"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 48, "y": 40 },
+               "header": "Galen's Strongbox",
+               "ends": ["Galen's Escape"],
+               "starts": ["Noboru the Cudgel"],
+               "objectives": ["Kill Noboru and loot his quest item"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 26, "y": 31 },
+               "header": "Magtoor",
+               "ends": ["Draenethyst Crystals", "Noboru the Cudgel"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "swamp",
+         "experience": 40.39,
+         "waypoints": [
+            {
+               "coords": { "x": 26, "y": 31 },
+               "header": "Magtoor",
+               "ends": ["Draenethyst Crystals", "Noboru the Cudgel"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 27, "y": 60 },
+               "header": "Watcher Biggs",
+               "ends": ["The Lost Caravan"],
+               "starts": ["Driftwood"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 66, "y": 56 },
+               "header": "Pool of Tears",
+               "ends": [],
+               "starts": [],
+               "objectives": ["In Search of the Sunken Temple"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 90, "y": 74 },
+               "header": "Misty Reed Strand",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Driftwood"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "swamp",
+         "experience": 40.44,
+         "waypoints": [
+            {
+               "coords": { "x": 90, "y": 74 },
+               "header": "Misty Reed Strand",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Driftwood"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 27, "y": 60 },
+               "header": "Watcher Biggs",
+               "ends": ["Driftwood"],
+               "starts": ["Deliver the Shipment"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 34, "y": 66 },
+               "header": "Blasted Lands Border",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "travel"
+            }
+         ]
+      }
+   ]
+}
