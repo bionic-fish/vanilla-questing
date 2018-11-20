@@ -1,0 +1,26 @@
+{
+   "path": [
+      {
+         "zone": "wpl",
+         "experience": 54.79,
+         "waypoints": [
+            {
+               "coords": { "x": 43, "y": 86 },
+               "header": "Western Plaguelands Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Learn the Flightpath"],
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 43, "y": 84 },
+               "header": "Chillwind Camp",
+               "ends": ["A Call to Arms: The Plaguelands!", "The Everlook Report", "Argent Dawn Commission"],
+               "starts": ["Clear the Way", "Argent Dawn Commission", "A Plague Upon Three"],
+               "objectives": ["Equip the Trinket"],
+               "type": "quest"
+            }
+         ]
+      }
+   ]
+}

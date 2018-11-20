@@ -1,0 +1,152 @@
+{
+   "path": [
+      {
+         "zone": "feralas",
+         "experience": 54.03,
+         "waypoints": [
+            {
+               "coords": { "x": 30, "y": 43 },
+               "header": "Feathermoon Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 32, "y": 45 },
+               "header": "Troyas Moonbreeze",
+               "ends": ["Return to Troyas"],
+               "starts": ["The Stave of Equinex"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 45, "y": 26 },
+               "header": "Gregan Brewspewer",
+               "ends": ["A Visit to Gregan"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 42, "y": 22 },
+               "header": "Rockbiter",
+               "ends": [],
+               "starts": ["The Giant Guardian"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 45, "y": 10 },
+               "header": "Ruins of Ravenwind",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Loot an Evoroot"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 40, "y": 10 },
+               "header": "Flame of Imbel",
+               "ends": [],
+               "starts": [],
+               "objectives": ["The Stave of Equinex"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 38, "y": 12 },
+               "header": "Flame of Lahassa",
+               "ends": [],
+               "starts": [],
+               "objectives": ["The Stave of Equinex"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 41, "y": 13 },
+               "header": "Flame of Samha",
+               "ends": [],
+               "starts": [],
+               "objectives": ["The Stave of Equinex"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 39, "y": 16 },
+               "header": "Flame of Byltan",
+               "ends": [],
+               "starts": [],
+               "objectives": ["The Stave of Equinex"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 39, "y": 13.5 },
+               "header": "Equinex Monolith",
+               "ends": ["The Stave of Equinex"],
+               "starts": ["The Morrow Stone"],
+               "objectives": ["Combine the mats first"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "feralas",
+         "experience": 54.09,
+         "waypoints": [
+            {
+               "coords": { "x": 39, "y": 13.5 },
+               "header": "Equinex Monolith",
+               "ends": ["The Stave of Equinex"],
+               "starts": ["The Morrow Stone"],
+               "objectives": ["Combine the mats first"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 38, "y": 10 },
+               "header": "Equinex Monolith",
+               "ends": ["The Giant Guardian"],
+               "starts": ["Wandering Shay"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 43, "y": 14 },
+               "header": "Move away from the Harpies",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 42, "y": 22 },
+               "header": "Rockbiter",
+               "ends": ["Wandering Shay"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 45, "y": 26 },
+               "header": "Gregan Brewspewer",
+               "ends": ["The Videre Elixir"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 32, "y": 45 },
+               "header": "Troyas Moonbreeze",
+               "ends": ["The Morrow Stone"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 30, "y": 43 },
+               "header": "Feathermoon Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fly to Ashenvale"],
+               "type": "flightpath"
+            }
+         ]
+      }
+   ]
+}

@@ -62,6 +62,12 @@ var data = [
    $.getJSON('../data/060-steppes.json'),
    $.getJSON('../data/061-transition.json'),
    $.getJSON('../data/062-ungoro.json'),
+   $.getJSON('../data/063-felwood.json'),
+   $.getJSON('../data/064-transition.json'),
+   $.getJSON('../data/065-feralas.json'),
+   $.getJSON('../data/066-felwood.json'),
+   $.getJSON('../data/067-transition.json'),
+   $.getJSON('../data/068-wpl.json')
 ];
 
 // WAIT FOR EVERYTHING TO RESPOND

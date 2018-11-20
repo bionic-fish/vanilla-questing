@@ -1,0 +1,140 @@
+{
+   "path": [
+      {
+         "zone": "ashenvale",
+         "experience": 54.22,
+         "waypoints": [
+            {
+               "coords": { "x": 34, "y": 48 },
+               "header": "Ashenvale Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 60, "y": 62 },
+               "header": "Ashenvale Crossroad",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 56, "y": 28 },
+               "header": "Felwood Border",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "felwood",
+         "experience": 54.22,
+         "waypoints": [
+            {
+               "coords": { "x": 55, "y": 93 },
+               "header": "Ashenvale Border",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 54, "y": 87 },
+               "header": "Arathandris Silversky",
+               "ends": ["Cleansing Felwood"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 51, "y": 82 },
+               "header": "Emerald Sanctuary",
+               "ends": ["Forces of Jaedenar", "Verifying the Corruption", "The Corruption of the Jadefire"],
+               "starts": ["Collection of the Corrupt Water", "Further Corruption"],
+               "objectives": [],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 36, "y": 61 },
+               "header": "Jaedenar",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Collection of the Corrupt Water", "Fill your Canteen at the moonwell"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "felwood",
+         "experience": 54.43,
+         "waypoints": [
+            {
+               "coords": { "x": 36, "y": 61 },
+               "header": "Jaedenar",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Collection of the Corrupt Water", "Fill your Canteen at the moonwell"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 51, "y": 82 },
+               "header": "Emerald Sanctuary",
+               "ends": ["Collection of the Corrupt Water"],
+               "starts": ["Seeking Spiritual Aid"],
+               "objectives": [],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 39, "y": 22 },
+               "header": "Jadefire Run",
+               "ends": [],
+               "starts": ["Flute of Xavaric"],
+               "objectives": ["Further Corruption"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 42, "y": 18 },
+               "header": "Jadefire Run",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Further Corruption", "Flute of Xavaric"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 65, "y": 8 },
+               "header": "Timbermaw Hold Enterance",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Run to Winterspring"],
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "winterspring",
+         "experience": 54.52,
+         "waypoints": [
+            {
+               "coords": { "x": 28, "y": 35 },
+               "header": "Timbermaw Hold Enterance",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 31, "y": 45 },
+               "header": "Donova Snowden",
+               "ends": ["Strange Sources", "The Videre Elixir", "Trouble in Winterspring"],
+               "starts": ["Meet at the Grave", "Hearthstone to Tanaris"],
+               "objectives": [],
+               "type": "quest"
+            }
+         ]
+      }
+   ]
+}
