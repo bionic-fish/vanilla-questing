@@ -131,7 +131,7 @@
                "header": "Caravan Chest",
                "ends": [],
                "starts": [],
-               "objectives": ["The Lost Caravan", "Ongeku"],
+               "objectives": ["The Lost Caravan"],
                "type": "objective"
             },
             {

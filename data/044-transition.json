@@ -128,7 +128,7 @@
                "coords": { "x": 64, "y": 21 },
                "header": "Brohann Caskbelly",
                "ends": ["In Search of the Temple"],
-               "starts": [],
+               "starts": ["To The Hinterlands"],
                "objectives": [],
                "type": "quest"
             },

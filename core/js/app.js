@@ -49,7 +49,19 @@ var data = [
    $.getJSON('../data/047-badlands.json'),
    $.getJSON('../data/048-transition.json'),
    $.getJSON('../data/049-stv.json'),
-   $.getJSON('../data/050-tanaris.json')
+   $.getJSON('../data/050-tanaris.json'),
+   $.getJSON('../data/051-feralas.json'),
+   $.getJSON('../data/052-transition.json'),
+   $.getJSON('../data/053-hinterlands.json'),
+   $.getJSON('../data/054-transition.json'),
+   $.getJSON('../data/055-blasted.json'),
+   $.getJSON('../data/056-hinterlands.json'),
+   $.getJSON('../data/057-transition.json'),
+   $.getJSON('../data/058-searing.json'),
+   $.getJSON('../data/059-transition.json'),
+   $.getJSON('../data/060-steppes.json'),
+   $.getJSON('../data/061-transition.json'),
+   $.getJSON('../data/062-ungoro.json'),
 ];
 
 // WAIT FOR EVERYTHING TO RESPOND
@@ -114,6 +126,20 @@ Promise.all(data).then((response) => {
          }
       }
 
+   });
+
+   // WHEN THE RANGE SCROLL IS USED
+   $('#range').on('change', () => {
+
+      // BIND THE REQUESTED VALUE & OVERWRITE CURRENT
+      var swap = parseInt($('#range').val());
+      current = swap;
+
+      // UPDATE LOCALSTORAGE VARIABLE
+      localStorage.setItem(key_name, String(swap));
+
+      // RENDER IN NEW QUERY
+      render(data, current);
    });
 
    // SHOW TOOLTIP ON MOUSEOVER

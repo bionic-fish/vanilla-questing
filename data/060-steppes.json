@@ -1,0 +1,196 @@
+{
+   "path": [
+      {
+         "zone": "steppes",
+         "experience": 51.29,
+         "waypoints": [
+            {
+               "coords": { "x": 84, "y": 68 },
+               "header": "Burning Steppes Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 85, "y": 70 },
+               "header": "Morgan's Vigil",
+               "ends": [],
+               "starts": ["Dragonkin Menace", "Extinguishing the Firegut", "Fifty! Yep!"],
+               "objectives": [],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 91, "y": 53 },
+               "header": "Terror Wing Path",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Dragonkin Menace", "Broodling Essence", "Fifty! Yep!"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 89, "y": 40 },
+               "header": "Terror Wing Path",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Dragonkin Menace", "Broodling Essence", "Fifty! Yep!"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 86, "y": 31 },
+               "header": "Terror Wing Path",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Dragonkin Menace", "Broodling Essence", "Fifty! Yep!"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 79, "y": 36 },
+               "header": "Dreadmaul Rock",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Extinguishing the Firegut"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 66, "y": 39 },
+               "header": "Ruins of Thaurissan",
+               "ends": [],
+               "starts": [],
+               "objectives": ["The Smoldering Ruins of Thaurissan P2"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 59, "y": 42 },
+               "header": "Ruins of Thaurissan",
+               "ends": [],
+               "starts": [],
+               "objectives": ["The Smoldering Ruins of Thaurissan P2"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 54, "y": 41 },
+               "header": "Tablet of the Seven",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Tablet of the Seven"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 66, "y": 22 },
+               "header": "Flame Crest",
+               "ends": ["Tablet of the Seven", "Broodling Essence"],
+               "starts": ["Felnok Steelspring"],
+               "objectives": [],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "steppes",
+         "experience": 51.53,
+         "waypoints": [
+            {
+               "coords": { "x": 66, "y": 22 },
+               "header": "Flame Crest",
+               "ends": ["Tablet of the Seven", "Broodling Essence"],
+               "starts": ["Felnok Steelspring"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 85, "y": 70 },
+               "header": "Morgan's Vigil",
+               "ends": ["Dragonkin Menace", "Extinguishing the Firegut"],
+               "starts": ["The True Masters", "Gor'tesh the Brute Lord"],
+               "objectives": [],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 75, "y": 59 },
+               "header": "Terror Wing Path",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fifty! Yep!"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 39, "y": 55 },
+               "header": "Orc Encampment",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Gor'tesh the Brute Lord"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "steppes",
+         "experience": 51.61,
+         "waypoints": [
+            {
+               "coords": { "x": 39, "y": 55 },
+               "header": "Orc Encampment",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Gor'tesh the Brute Lord"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 85, "y": 70 },
+               "header": "Morgan's Vigil",
+               "ends": ["Gor'tesh the Brute Lord"],
+               "starts": ["Ogre Head on a Stick = Party"],
+               "objectives": [],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 86, "y": 56 },
+               "header": "Terror Wing Path",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fifty! Yep!", "Farm the remaining medallions"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 81, "y": 47 },
+               "header": "Soft Dirt Mound",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Ogre Head on a Stick = Party"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "steppes",
+         "experience": 51.67,
+         "waypoints": [
+            {
+               "coords": { "x": 81, "y": 47 },
+               "header": "Soft Dirt Mound",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Ogre Head on a Stick = Party"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 85, "y": 70 },
+               "header": "Morgan's Vigil",
+               "ends": ["Ogre Head on a Stick = Party", "Fifty! Yep!"],
+               "starts": [],
+               "objectives": [],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 83, "y": 68 },
+               "header": "Burning Steppes Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fly to Redridge"],
+               "type": "flightpath"
+            }
+         ]
+      }
+   ]
+}

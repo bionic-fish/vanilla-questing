@@ -1,0 +1,58 @@
+{
+   "path": [
+      {
+         "zone": "ungoro",
+         "experience": 51.98,
+         "waypoints": [
+            {
+               "coords": { "x": 77, "y": 67 },
+               "header": "Tanaris Border",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 72, "y": 76 },
+               "header": "Torwa Pathfinder",
+               "ends": [],
+               "starts": ["The apes of Un'Goro", "The Fare of Lar'Korwi"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 63, "y": 69 },
+               "header": "A Wrecked Raft",
+               "ends": ["It's a Secret to Everybody P1"],
+               "starts": ["It's a Secret to Everybody P1-2"],
+               "objectives": ["It's a Secret to Everybody P1"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 69, "y": 57 },
+               "header": "Fresh Threshadon Carcass",
+               "ends": [],
+               "starts": [],
+               "objectives": ["The Fare of Lar'Korwi"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 45, "y": 6 },
+               "header": "Un'Goro Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Learn the Flightpath"],
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 44, "y": 9 },
+               "header": "Marshal's Refuge",
+               "ends": ["It's a Secret to Everybody P2"],
+               "starts": ["It's a Secret to Everybody P3", "Shizzle's Flyer", "Muigin and Larion", "Lost!", "Roll the Bones", "Beware of Pherrordax", "Alien Ecology", "Expedition Salvation"],
+               "objectives": ["Make sure you are atleast level 52"],
+               "type": "hub"
+            }
+         ]
+      }
+   ]
+}

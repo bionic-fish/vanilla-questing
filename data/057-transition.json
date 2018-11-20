@@ -1,0 +1,234 @@
+{
+   "path": [
+      {
+         "zone": "desolace",
+         "experience": 50.05,
+         "waypoints": [
+            {
+               "coords": { "x": 67, "y": 10 },
+               "header": "Nijel's Point",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 65, "y": 11 },
+               "header": "Nijel's Point Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fly to Tanaris"],
+               "type": "flightpath"
+            }
+         ]
+      },
+      {
+         "zone": "tanaris",
+         "experience": 50.05,
+         "waypoints": [
+            {
+               "coords": { "x": 51, "y": 30 },
+               "header": "Tanaris Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 67, "y": 23 },
+               "header": "Steamwheedle Port",
+               "ends": ["The Ancient Egg"],
+               "starts": ["The God Hakkar"],
+               "objectives": [],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "tanaris",
+         "experience": 50.08,
+         "waypoints": [
+            {
+               "coords": { "x": 67, "y": 23 },
+               "header": "Steamwheedle Port",
+               "ends": ["The Ancient Egg"],
+               "starts": ["The God Hakkar"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 51, "y": 30 },
+               "header": "Tanaris Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fly to Ratchet"],
+               "type": "flightpath"
+            }
+         ]
+      },
+      {
+         "zone": "barrens",
+         "experience": 50.08,
+         "waypoints": [
+            {
+               "coords": { "x": 63, "y": 37 },
+               "header": "Ratchet Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 64, "y": 39 },
+               "header": "Ratchet Harbor",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "stv",
+         "experience": 50.08,
+         "waypoints": [
+            {
+               "coords": { "x": 26, "y": 73 },
+               "header": "Booty Bay Harbor",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 28, "y": 78 },
+               "header": "Booy Bay Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fly to Stormwind"],
+               "type": "flightpath"
+            }
+         ]
+      },
+      {
+         "zone": "stormwind",
+         "experience": 50.08,
+         "waypoints": [
+            {
+               "coords": { "x": 66, "y": 62 },
+               "header": "Stormwind Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 64, "y": 21 },
+               "header": "Brohann Caskbelly",
+               "ends": ["Rhapsody's Tale"],
+               "starts": ["Into the Temple of Atal'Hakkar"],
+               "objectives": [],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "stormwind",
+         "experience": 50.11,
+         "waypoints": [
+            {
+               "coords": { "x": 64, "y": 21 },
+               "header": "Brohann Caskbelly",
+               "ends": ["Rhapsody's Tale"],
+               "starts": ["Into the Temple of Atal'Hakkar"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 53, "y": 60 },
+               "header": "Stormwind Auction House",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Buy x15 Silk Cloth"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 66, "y": 62 },
+               "header": "Stormwind Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fly to Redridge"],
+               "type": "flightpath"
+            }
+         ]
+      },
+      {
+         "zone": "redridge",
+         "experience": 50.11,
+         "waypoints": [
+            {
+               "coords": { "x": 31, "y": 59 },
+               "header": "Redridge Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 48, "y": 11 },
+               "header": "Burning Steppes Border",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "steppes",
+         "experience": 50.11,
+         "waypoints": [
+            {
+               "coords": { "x": 79, "y": 80 },
+               "header": "Redridge Mountains Border",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 84, "y": 68 },
+               "header": "Burning Steppes Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Learn the Flightpath"],
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 66, "y": 22 },
+               "header": "Flame Crest",
+               "ends": ["Yuka Screwpigot"],
+               "starts": ["Tablet of the Seven", "Broodling Essence"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 29, "y": 37 },
+               "header": "Blackrock Mountain",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 28, "y": 27 },
+               "header": "Blackrock Mountain",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "travel"
+            }
+         ]
+      }
+   ]
+}

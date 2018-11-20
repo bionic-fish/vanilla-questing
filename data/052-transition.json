@@ -1,0 +1,472 @@
+{
+   "path": [
+      {
+         "zone": "tanaris",
+         "experience": 47.48,
+         "waypoints": [
+            {
+               "coords": { "x": 51, "y": 29 },
+               "header": "Tanaris Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 53, "y": 46 },
+               "header": "Marvon",
+               "ends": ["The Sunken Temple"],
+               "starts": ["The Stone Circle"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 67, "y": 23 },
+               "header": "Steamwheedle Port",
+               "ends": ["Screecher Spirits"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "tanaris",
+         "experience": 47.56,
+         "waypoints": [
+            {
+               "coords": { "x": 67, "y": 23 },
+               "header": "Steamwheedle Port",
+               "ends": ["Screecher Spirits"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 51, "y": 29 },
+               "header": "Tanaris Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fly to Theramore"],
+               "type": "flightpath"
+            }
+         ]
+      },
+      {
+         "zone": "dustwallow",
+         "experience": 47.56,
+         "waypoints": [
+            {
+               "coords": { "x": 67, "y": 51 },
+               "header": "Theramore Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 46, "y": 57 },
+               "header": "Tabetha",
+               "ends": [],
+               "starts": ["Tiara of the Deep"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 69, "y": 53 },
+               "header": "Privateer Groy",
+               "ends": ["Akiris by the Bundle"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "dustwallow",
+         "experience": 47.58,
+         "waypoints": [
+            {
+               "coords": { "x": 69, "y": 53 },
+               "header": "Privateer Groy",
+               "ends": ["Akiris by the Bundle"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 67, "y": 51 },
+               "header": "Theramore Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fly to Ratchet"],
+               "type": "flightpath"
+            }
+         ]
+      },
+      {
+         "zone": "barrens",
+         "experience": 47.58,
+         "waypoints": [
+            {
+               "coords": { "x": 63, "y": 37 },
+               "header": "Ratchet Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 63, "y": 39 },
+               "header": "Marvon's Chest",
+               "ends": [],
+               "starts": [],
+               "objectives": ["The Stone Circle"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "barrens",
+         "experience": 47.58,
+         "waypoints": [
+            {
+               "coords": { "x": 63, "y": 39 },
+               "header": "Marvon's Chest",
+               "ends": [],
+               "starts": [],
+               "objectives": ["The Stone Circle"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 63, "y": 37 },
+               "header": "Ratchet Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fly to Darnassus"],
+               "type": "flightpath"
+            }
+         ]
+      },
+      {
+         "zone": "teldrassil",
+         "experience": 47.58,
+         "waypoints": [
+            {
+               "coords": { "x": 58, "y": 94 },
+               "header": "Rut'theran Village Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 55, "y": 92 },
+               "header": "Rut'theran Village",
+               "ends": ["Handle With Care", "In Search of Knowledge", "Feralas: A History"],
+               "starts": ["Favored of Elune?", "Feralas: A History", "The Borrower"],
+               "objectives": ["Click the book at the back"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 56, "y": 90 },
+               "header": "Darnassus Teleporter",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "darnassus",
+         "experience": 47.62,
+         "waypoints": [
+            {
+               "coords": { "x": 31, "y": 41 },
+               "header": "Darnassus Teleporter",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 40, "y": 85 },
+               "header": "Temple of the Moon",
+               "ends": ["Rise of the Silithid", "Rise of the Silithid", "Doling Justice"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 56, "y": 54 },
+               "header": "Darnassus Auction House",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Buy 15x Morrograin", "Buy 2x Elixir of Fortitude", "Hearthstone to Feathermoon"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "feralas",
+         "experience": 47.76,
+         "waypoints": [
+            {
+               "coords": { "x": 31, "y": 45 },
+               "header": "Feathermoon Stronghold",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 32, "y": 44 },
+               "header": "Feathermoon Tower",
+               "ends": ["The Mystery of Morrowgrain", "Morrowgrain to Feathermoon Stronghold"],
+               "starts": ["The Mystery of Morrowgrain", "Morrowgrain to Feathermoon Stronghold"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 30, "y": 43 },
+               "header": "Feathermoon Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 89, "y": 46 },
+               "header": "Thalanaar Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 66, "y": 47 },
+               "header": "Kindal Moonweaver",
+               "ends": [],
+               "starts": ["An Orphan Looking For a Home"],
+               "objectives": [],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "feralas",
+         "experience": 47.79,
+         "waypoints": [
+            {
+               "coords": { "x": 66, "y": 47 },
+               "header": "Kindal Moonweaver",
+               "ends": [],
+               "starts": ["An Orphan Looking For a Home"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 89, "y": 46 },
+               "header": "Thalanaar Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fly to Tanaris"],
+               "type": "flightpath"
+            }
+         ]
+      },
+      {
+         "zone": "tanaris",
+         "experience": 47.79,
+         "waypoints": [
+            {
+               "coords": { "x": 51, "y": 29 },
+               "header": "Tanaris Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 53, "y": 46 },
+               "header": "Marvon",
+               "ends": ["The Stone Circle"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "tanaris",
+         "experience": 47.84,
+         "waypoints": [
+            {
+               "coords": { "x": 53, "y": 46 },
+               "header": "Marvon",
+               "ends": ["The Stone Circle"],
+               "starts": ["Into the Depths", "Secret of the Circle"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 51, "y": 22 },
+               "header": "Thousand Needles Border",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "needles",
+         "experience": 47.84,
+         "waypoints": [
+            {
+               "coords": { "x": 75, "y": 96 },
+               "header": "Tanaris Border",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 79, "y": 77 },
+               "header": "The Shimmering Flats",
+               "ends": ["An Orphan Looking For a Home", "Short Incubation"],
+               "starts": ["Short Incubation", "The Newest Member of the Family", "Gahz'Rilla"],
+               "objectives": [],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "needles",
+         "experience": 47.87,
+         "waypoints": [
+            {
+               "coords": { "x": 79, "y": 77 },
+               "header": "The Shimmering Flats",
+               "ends": ["An Orphan Looking For a Home", "Short Incubation"],
+               "starts": ["Short Incubation", "The Newest Member of the Family", "Gahz'Rilla"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 75, "y": 96 },
+               "header": "Tanaris Border",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "tanaris",
+         "experience": 47.87,
+         "waypoints": [
+            {
+               "coords": { "x": 51, "y": 22 },
+               "header": "Thousand Needles Border",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 52, "y": 28 },
+               "header": "Gadgetzan",
+               "ends": ["The Borrower"],
+               "starts": ["The Super Snapper FX"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 51, "y": 29 },
+               "header": "Tanaris Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fly to Theramore"],
+               "type": "flightpath"
+            }
+         ]
+      },
+      {
+         "zone": "dustwallow",
+         "experience": 47.87,
+         "waypoints": [
+            {
+               "coords": { "x": 67, "y": 51 },
+               "header": "Theramore Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 71, "y": 56 },
+               "header": "Theramore Harbor",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "wetlands",
+         "experience": 47.87,
+         "waypoints": [
+            {
+               "coords": { "x": 5, "y": 57 },
+               "header": "Wetlands Harbor",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 9, "y": 60 },
+               "header": "Menethil Harbor Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fly to Hillsbrad"],
+               "type": "flightpath"
+            }
+         ]
+      },
+      {
+         "zone": "hillsbrad",
+         "experience": 47.87,
+         "waypoints": [
+            {
+               "coords": { "x": 49, "y": 52 },
+               "header": "Hillsbrad Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 50, "y": 54 },
+               "header": "Southshore Inn",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Set Hearthstone"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 89, "y": 26 },
+               "header": "Hinterlands Border",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "travel"
+            }
+         ]
+      }
+   ]
+}

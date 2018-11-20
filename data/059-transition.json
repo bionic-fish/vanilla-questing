@@ -1,0 +1,226 @@
+{
+   "path": [
+      {
+         "zone": "loch",
+         "experience": 50.88,
+         "waypoints": [
+            {
+               "coords": { "x": 34, "y": 51 },
+               "header": "Loch Modan Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 18, "y": 84 },
+               "header": "Mountaineer Bebblebitty",
+               "ends": ["The Horn of the Beast"],
+               "starts": ["Proof of Deed"],
+               "objectives": [],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "loch",
+         "experience": 50.92,
+         "waypoints": [
+            {
+               "coords": { "x": 18, "y": 84 },
+               "header": "Mountaineer Bebblebitty",
+               "ends": ["The Horn of the Beast"],
+               "starts": ["Proof of Deed"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 34, "y": 51 },
+               "header": "Loch Modan Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fly to Ironforge"],
+               "type": "flightpath"
+            }
+         ]
+      },
+      {
+         "zone": "ironforge",
+         "experience": 50.92,
+         "waypoints": [
+            {
+               "coords": { "x": 56, "y": 48 },
+               "header": "Ironforge Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fly to Loch Modan"],
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 19, "y": 51 },
+               "header": "Ironforge Inn",
+               "ends": [],
+               "starts": ["Assisting Arch Druid Staghelm"],
+               "objectives": ["Set Hearthstone"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 75, "y": 12 },
+               "header": "The Library",
+               "ends": ["Suntara Stones", "Proof of Deed", "Return to Ironforge", "A Future Task"],
+               "starts": ["At Last!", "A Little Slime Goes a Long Way", "A Future Task"],
+               "objectives": [],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "ironforge",
+         "experience": 51.02,
+         "waypoints": [
+            {
+               "coords": { "x": 75, "y": 12 },
+               "header": "The Library",
+               "ends": ["Suntara Stones", "Proof of Deed"],
+               "starts": ["At Last!", "A Little Slime Goes a Long Way"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 56, "y": 48 },
+               "header": "Ironforge Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fly to Loch Modan"],
+               "type": "flightpath"
+            }
+         ]
+      },
+      {
+         "zone": "loch",
+         "experience": 51.02,
+         "waypoints": [
+            {
+               "coords": { "x": 34, "y": 51 },
+               "header": "Loch Modan Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 18, "y": 84 },
+               "header": "Mountaineer Bebblebitty",
+               "ends": ["At Last!"],
+               "starts": [],
+               "objectives": ["Hearthstone to Ironforge"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "ironforge",
+         "experience": 51.04,
+         "waypoints": [
+            {
+               "coords": { "x": 19, "y": 51 },
+               "header": "Ironforge Inn",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 56, "y": 48 },
+               "header": "Ironforge Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fly to Blasted Lands"],
+               "type": "flightpath"
+            }
+         ]
+      },
+      {
+         "zone": "blasted",
+         "experience": 51.04,
+         "waypoints": [
+            {
+               "coords": { "x": 66, "y": 24 },
+               "header": "Nethergarde Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 67, "y": 19 },
+               "header": "Nethergarde Keep",
+               "ends": [],
+               "starts": ["Petty Squabbles"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 52, "y": 3 },
+               "header": "Fallen Hero of the Horde",
+               "ends": ["Petty Squabbles", "A Tale of Sorrow"],
+               "starts": ["A Tale of Sorrow"],
+               "objectives": [],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "swamp",
+         "experience": 51.07,
+         "waypoints": [
+            {
+               "coords": { "x": 34, "y": 66 },
+               "header": "Fallen Hero of the Horde",
+               "ends": ["Petty Squabbles", "A Tale of Sorrow"],
+               "starts": ["A Tale of Sorrow"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 70, "y": 54 },
+               "header": "Sunken Temple",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Into the Temple of Atal'Hakkar", "Into the Depths", "Secret of the Circle", "Jammal'an the Prophet", "The God Hakkar", "Hearthstone to Ironforge"],
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "ironforge",
+         "experience": 51.29,
+         "waypoints": [
+            {
+               "coords": { "x": 19, "y": 51 },
+               "header": "Ironforge Inn",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 39, "y": 55 },
+               "header": "Royal Historian Archesonus",
+               "ends": ["The Smoldering Ruins of Thaurissan P1"],
+               "starts": ["The Smoldering Ruins of Thaurissan P1-2"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 56, "y": 48 },
+               "header": "Ironforge Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fly to Burning Steppes"],
+               "type": "flightpath"
+            }
+         ]
+      }
+   ]
+}

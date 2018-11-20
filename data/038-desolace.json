@@ -354,7 +354,7 @@
                "coords": { "x": 36, "y": 79 },
                "header": "Uthek the Wise",
                "ends": ["Stealing Supplies"],
-               "starts": ["Ongeku"],
+               "starts": [],
                "objectives": [],
                "type": "quest"
             },

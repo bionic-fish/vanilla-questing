@@ -1,0 +1,336 @@
+{
+   "path": [
+      {
+         "zone": "searing",
+         "experience": 50.14,
+         "waypoints": [
+            {
+               "coords": { "x": 35, "y": 84 },
+               "header": "Blackrock Mountain",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 39, "y": 39 },
+               "header": "Kalaran Windblade",
+               "ends": ["Divine Retribution"],
+               "starts": ["Divine Retribution", "The Flawless Flame"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 38, "y": 31 },
+               "header": "Searing Gorge Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Learn the Flightpath"],
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 37, "y": 27 },
+               "header": "Thorium Point",
+               "ends": [],
+               "starts": ["Wanted: Overseer Maltorius", "Stolen: Smithing Tuyere and Lookout's Spyglass", "Job Opportunity: Culling the Competition", "Curse These Fat Fingers", "Fiery Menace!", "Incendosaurs? Whateverosaur is More Like It", "What the Flux?"],
+               "objectives": [],
+               "type": "hub"
+            }
+         ]
+      },
+      {
+         "zone": "searing",
+         "experience": 50.14,
+         "waypoints": [
+            {
+               "coords": { "x": 37, "y": 27 },
+               "header": "Thorium Point",
+               "ends": [],
+               "starts": ["Wanted: Overseer Maltorius", "Stolen: Smithing Tuyere and Lookout's Spyglass", "Job Opportunity: Culling the Competition", "Curse These Fat Fingers", "Fiery Menace!", "Incendosaurs? Whateverosaur is More Like It", "What the Flux?"],
+               "objectives": [],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 38, "y": 49 },
+               "header": "The Cauldron",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Curse These Fat Fingers", "The Flawless Flame", "Stolen: Smithing Tuyere and Lookout's Spyglass", "Farm a Spyglass from the Steamsmiths"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 66, "y": 63 },
+               "header": "Grimesilk Dig Site",
+               "ends": ["Caught!"],
+               "starts": ["Caught!"],
+               "objectives": ["Caught!"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 64, "y": 60 },
+               "header": "Dorius Stonetender",
+               "ends": [],
+               "starts": ["Suntara Stones P1"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 75, "y": 19 },
+               "header": "Signed Letter",
+               "ends": ["Suntara Stones P1"],
+               "starts": ["Suntara Stones P2"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 56, "y": 45 },
+               "header": "The Cauldron",
+               "ends": [],
+               "starts": [],
+               "objectives": ["The Flawless Flame"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 39, "y": 39 },
+               "header": "Kalaran Windblade",
+               "ends": ["The Flawless Flame"],
+               "starts": ["Forging the Shaft"],
+               "objectives": ["Take the Lift Up"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "searing",
+         "experience": 50.29,
+         "waypoints": [
+            {
+               "coords": { "x": 39, "y": 39 },
+               "header": "Kalaran Windblade",
+               "ends": ["The Flawless Flame"],
+               "starts": ["Forging the Shaft"],
+               "objectives": ["Take the Lift Up"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 35, "y": 42 },
+               "header": "The Slag Pit Opening",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Jump Down"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 39, "y": 36 },
+               "header": "The Slag Pit - Underground",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Job Opportunity: Culling the Competition", "Forging the Shaft"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 42, "y": 24 },
+               "header": "The Slag Pit - Underground",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Job Opportunity: Culling the Competition", "Forging the Shaft"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 41, "y": 36 },
+               "header": "The Slag Pit - Underground",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Wanted: Overseer Maltorius", "What the Flux?"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 49, "y": 25 },
+               "header": "The Slag Pit - Underground",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Incendosaurs? Whateverosaur is More Like It"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 50, "y": 47 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Run Back Outside"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 28, "y": 73 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fiery Menace!"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 28, "y": 56 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fiery Menace!"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 30, "y": 44 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fiery Menace!"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 34, "y": 49 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Curse These Fat Fingers", "Stolen: Smithing Tuyere and Lookout's Spyglass"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "searing",
+         "experience": 50.44,
+         "waypoints": [
+            {
+               "coords": { "x": 34, "y": 49 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Curse These Fat Fingers", "Stolen: Smithing Tuyere and Lookout's Spyglass"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 37, "y": 27 },
+               "header": "Thorium Point",
+               "ends": ["Wanted: Overseer Maltorius", "Stolen: Smithing Tuyere and Lookout's Spyglass", "Job Opportunity: Culling the Competition", "Curse These Fat Fingers", "Fiery Menace!", "Incendosaurs? Whateverosaur is More Like It", "What the Flux?"],
+               "starts": [],
+               "objectives": [],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 39, "y": 39 },
+               "header": "Kalaran Windblade",
+               "ends": ["Forging the Shaft"],
+               "starts": ["The Flame's Casing"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 30, "y": 26 },
+               "header": "Zamael Lunthistle",
+               "ends": ["Prayer to Elune P1"],
+               "starts": ["Prayer to Elune P1", "Prayer to Elune P2"],
+               "objectives": ["The Flame's Casing", "Prayer to Elune P2"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "searing",
+         "experience": 50.71,
+         "waypoints": [
+            {
+               "coords": { "x": 30, "y": 26 },
+               "header": "Zamael Lunthistle",
+               "ends": ["Prayer to Elune P1"],
+               "starts": ["Prayer to Elune P1", "Prayer to Elune P2"],
+               "objectives": ["The Flame's Casing", "Prayer to Elune P2"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 39, "y": 39 },
+               "header": "Kalaran Windblade",
+               "ends": ["The Flame's Casing", "The Torch of Retribution", "Squire Maltrake"],
+               "starts": ["The Torch of Retribution", "Squire Maltrake", "Set Them Ablaze!"],
+               "objectives": ["Check your bags for Grimesilt Outhouse Key - Start the Quest"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 33, "y": 54 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Set Them Ablaze!"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 36, "y": 61 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Set Them Ablaze!"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 44, "y": 61 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Set Them Ablaze!"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 50, "y": 55 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Set Them Ablaze!"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 66, "y": 63 },
+               "header": "Grimesilk Dig Site",
+               "ends": ["The Key to Freedom"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 73, "y": 79 },
+               "header": "Margol the Rager",
+               "ends": [],
+               "starts": ["The Horn of the Beast"],
+               "objectives": ["Drops from the Dinosaur", "Die Somehow and take Ress Sickness"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "searing",
+         "experience": 50.82,
+         "waypoints": [
+            {
+               "coords": { "x": 35, "y": 23 },
+               "header": "Thorium Point Spirit Healer",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 39, "y": 39 },
+               "header": "Kalaran Windblade",
+               "ends": ["Set Them Ablaze!"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 38, "y": 31 },
+               "header": "Searing Gorge Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fly to Loch Modan"],
+               "type": "flightpath"
+            }
+         ]
+      }
+   ]
+}

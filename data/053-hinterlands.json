@@ -1,0 +1,212 @@
+{
+   "path": [
+      {
+         "zone": "hinterlands",
+         "experience": 47.87,
+         "waypoints": [
+            {
+               "coords": { "x": 6, "y": 62 },
+               "header": "Hillsbrad Foothills Border",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 11, "y": 46 },
+               "header": "Hinterlands Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Learn the Flightpath"],
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 13, "y": 46 },
+               "header": "Wildhammer Keep",
+               "ends": ["To The Hinterlands", "Gryphon Master Talonaxe", "The Newest Member of the Family"],
+               "starts": ["Gryphon Master Talonaxe", "Rhapsody Shindigger", "Witherbark Cages", "Troll Necklace Bounty", "Skult Rock Clean-up", "Food for Baby"],
+               "objectives": [],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 20, "y": 52 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Favored of Elune?", "Loot feathers from the ground"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 23, "y": 59 },
+               "header": "Zun'Watha",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Witherbark Cages", "Troll Necklace Bounty"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 27, "y": 48 },
+               "header": "Rhapsody Shindigger",
+               "ends": ["Rhapsody Shindigger"],
+               "starts": ["Rhapsody's Kalimdor Kocktail"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 30, "y": 53 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Favored of Elune?", "Loot feathers from the ground"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 32, "y": 58 },
+               "header": "Hiri'Watha",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Witherbark Cages", "Troll Necklace Bounty"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 40, "y": 60 },
+               "header": "Vaorwind Lake",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Sprinkle's Secret Ingredient"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 49, "y": 52 },
+               "header": "Vaorwind Lake",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Skulk Rock Clean-up"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 46, "y": 40 },
+               "header": "Vaorwind Lake",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Skulk Rock Clean-up"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 59, "y": 52 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Food For Baby", "Kill Stealthed Wolves"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 69, "y": 59 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Food For Baby", "Kill Stealthed Wolves"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 79, "y": 70 },
+               "header": "The Overlook Cliffs",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Whiskey Slim's Lost Grog", "Loot Bottles on the Beach"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 78, "y": 64 },
+               "header": "Gammerita",
+               "ends": [],
+               "starts": [],
+               "objectives": ["The Super Snapper FX", "Hearthstone to Southshore"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "hillsbrad",
+         "experience": 48.11,
+         "waypoints": [
+            {
+               "coords": { "x": 50, "y": 54 },
+               "header": "Southshore Inn",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 49, "y": 52 },
+               "header": "Southshore Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fly to the Hinterlands"],
+               "type": "flightpath"
+            }
+         ]
+      },
+      {
+         "zone": "hinterlands",
+         "experience": 48.11,
+         "waypoints": [
+            {
+               "coords": { "x": 11, "y": 46 },
+               "header": "Hinterlands Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 13, "y": 46 },
+               "header": "Wildhammer Keep",
+               "ends": ["Witherbark Cages", "Skulk Rock Clean-up", "Troll Necklace Bounty", "Food For Baby", "Becoming A Parent"],
+               "starts": ["The Altar of Zul", "Becoming A Parent"],
+               "objectives": [],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 49, "y": 68 },
+               "header": "The Altar of Zul",
+               "ends": [],
+               "starts": [],
+               "objectives": ["The Altar of Zul", "Kill Qiaga and loot the Mallet"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "hinterlands",
+         "experience": 48.26,
+         "waypoints": [
+            {
+               "coords": { "x": 49, "y": 68 },
+               "header": "The Altar of Zul",
+               "ends": [],
+               "starts": [],
+               "objectives": ["The Altar of Zul", "Kill Qiaga and loot the Mallet"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 13, "y": 46 },
+               "header": "Wildhammer Keep",
+               "ends": ["The Altar of Zul"],
+               "starts": ["Thadius Grimshade"],
+               "objectives": [],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 11, "y": 46 },
+               "header": "Hinterlands Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fly to Ironforge"],
+               "type": "flightpath"
+            }
+         ]
+      }
+   ]
+}
