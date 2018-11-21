@@ -281,6 +281,14 @@
                "type": "flightpath"
             },
             {
+               "coords": { "x": 51, "y": 54 },
+               "header": "Southshore Inn",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Set Hearthstone"],
+               "type": "quest"
+            },
+            {
                "coords": { "x": 54, "y": 10 },
                "header": "Alterac Mountains Border",
                "ends": [],

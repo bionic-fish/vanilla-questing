@@ -90,8 +90,12 @@ Promise.all(data).then((response) => {
    $('#range').attr('max', last_page - 1);
    $('#range').val(current);
 
+   // SET RIGHT BACKGROUND WIDTH
+   var percent = (current / last_page) * 100;
+   $('#footer #inner').css('background-size', percent + '% auto');
+
    // RENDER MAP & WAYPOINTS ON INITIAL LOAD
-   render(data, current);
+   render(data, current, last_page);
 
    // LISTEN FOR KEY PRESSES
    $(document).on('keyup', (evt) => {
@@ -110,7 +114,7 @@ Promise.all(data).then((response) => {
             current = previous;
 
             // RENDER NEW MAP & WAYPOINTS
-            render(data, current);
+            render(data, current, last_page);
          }
       }
 
@@ -128,7 +132,7 @@ Promise.all(data).then((response) => {
             current = next;
 
             // RENDER NEW MAP & WAYPOINTS
-            render(data, current);
+            render(data, current, last_page);
          }
       }
 
@@ -145,7 +149,7 @@ Promise.all(data).then((response) => {
       localStorage.setItem(key_name, String(swap));
 
       // RENDER IN NEW QUERY
-      render(data, current);
+      render(data, current, last_page);
    });
 
    // SHOW TOOLTIP ON MOUSEOVER

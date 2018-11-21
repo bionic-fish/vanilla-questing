@@ -34,9 +34,14 @@ a:hover {
 #header #experience #inner {
    background-image: url('img/experience.png');
    background-repeat: repeat-y;
-   background-size: 50% auto;
    text-align: center;
    padding: 4px;
+   transition: 0.2s;
+}
+
+#footer #inner {
+   background-image: url('img/experience.png');
+   background-repeat: repeat-y;
    transition: 0.2s;
 }
 

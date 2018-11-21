@@ -20,7 +20,7 @@ function build(data) {
 }
 
 // RENDER IN MAP CONTENT FROM QUERY
-function render(data, current) {
+function render(data, current, max) {
 
    // BIND TARGET BLOCK
    var target = data[current];
@@ -31,15 +31,20 @@ function render(data, current) {
    // WAIT 200 MS
    sleep(200).then(() => {
 
-      // RENDER IN EXPERIENCE BAR
-      $('#experience #inner').html('Level ' + target.experience);
+      // SPLIT JSON PROPERTY FOR CLARITY
+      var level = parseInt(String(target.experience).split(".")[0]);
+      var xp = parseInt(String(target.experience).split(".")[1]);
 
-      // FIND PERCENTAGE & RENDER IT IN
-      var percent = String(target.experience).split(".")[1];
-      $('#experience #inner').css('background-size', percent + '% auto');
+      // RENDER IN LEVEL/XP TEXT & SET BACKGROUND WIDTH
+      $('#experience #inner').html('Level ' + level + ' + ' + xp + '%');
+      $('#experience #inner').css('background-size', xp + '% auto');
 
       // SET THE RANGE SCROLLER TO ITS NEW POSITION
       $('#range').val(current);
+
+      // SET RANGE SCROLLER BACKGROUND WIDTH BASED ON TOTAL PROGRESS
+      var percent = (current / max) * 100;
+      $('#footer #inner').css('background-size', percent + '% auto');
 
       // PURGE THE MAP & TOOLTIP THEIR CONTENT
       $('#map').html('');
