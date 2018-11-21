@@ -1,0 +1,308 @@
+{
+   "path": [
+      {
+         "zone": "wpl",
+         "experience": 58.84,
+         "waypoints": [
+            {
+               "coords": { "x": 43, "y": 86 },
+               "header": "Western Plaguelands Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 43, "y": 84 },
+               "header": "Chillwind Camp",
+               "ends": ["Fire Plume Forged", "Flint Shadowmore"],
+               "starts": ["Araj's Scarab", "The Eastern Plagues", "Alas, Andorhal"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 46, "y": 70 },
+               "header": "Ruins of Andorhal",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Araj's Scarab", "Alas, Andorhal"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 38, "y": 54 },
+               "header": "Janice Felstone",
+               "ends": ["Good Luck Charm"],
+               "starts": ["Two Halves Become One"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 37, "y": 58 },
+               "header": "Jabbering Ghoul",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Two Halves Become One", "Combine the two parts"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "wpl",
+         "experience": 58.93,
+         "waypoints": [
+            {
+               "coords": { "x": 37, "y": 58 },
+               "header": "Jabbering Ghoul",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Two Halves Become One", "Combine the two parts"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 38, "y": 54 },
+               "header": "Janice Felstone",
+               "ends": ["Two Halves Become One"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 70, "y": 50 },
+               "header": "Eastern Plaguelands Border",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "epl",
+         "experience": 58.96,
+         "waypoints": [
+            {
+               "coords": { "x": 12, "y": 73 },
+               "header": "Western Plaguelands Border",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 8, "y": 44 },
+               "header": "Tirion Fordring",
+               "ends": ["Of Lost Honor"],
+               "starts": ["Of Love and Family"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 27, "y": 75 },
+               "header": "The Marris Stead",
+               "ends": [],
+               "starts": [],
+               "objectives": ["The Eastern Plagues", "Click the corpses"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 29, "y": 80 },
+               "header": "The Marris Stead",
+               "ends": [],
+               "starts": [],
+               "objectives": ["The Eastern Plagues", "The last corpse"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 80, "y": 64 },
+               "header": "Caretaker Alen",
+               "ends": [],
+               "starts": ["The Restless Souls"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 81, "y": 59 },
+               "header": "Light's Hope Chapel",
+               "ends": [],
+               "starts": ["Marauders of Darrowshire", "Defenders of Darrowshire"],
+               "objectives": [],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 67, "y": 41 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Defenders of Darrowshire"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 78, "y": 47 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Marauders of Darrowshire"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 83, "y": 40 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Marauders of Darrowshire"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "epl",
+         "experience": 59.24,
+         "waypoints": [
+            {
+               "coords": { "x": 83, "y": 40 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Marauders of Darrowshire"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 81, "y": 59 },
+               "header": "Light's Hope Chapel",
+               "ends": [],
+               "starts": ["Marauders of Darrowshire", "Defenders of Darrowshire"],
+               "objectives": ["Return to Chromie"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 53, "y": 23 },
+               "header": "Aurora Skycaller",
+               "ends": ["Troubled Spirits of Kel'Theril"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 14, "y": 34 },
+               "header": "Terrordale",
+               "ends": ["The Restless Souls"],
+               "starts": ["Augustus' Receipt Book"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 17, "y": 31 },
+               "header": "Augustus' Receipt Book",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Augustus' Receipt Book"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "epl",
+         "experience": 59.26,
+         "waypoints": [
+            {
+               "coords": { "x": 17, "y": 31 },
+               "header": "Augustus' Receipt Book",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Augustus' Receipt Book"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 14, "y": 34 },
+               "header": "Terrordale",
+               "ends": ["Augustus' Receipt Book"],
+               "starts": [],
+               "objectives": ["Hearthstone to Hillsbrad"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "hillsbrad",
+         "experience": 59.26,
+         "waypoints": [
+            {
+               "coords": { "x": 51, "y": 54 },
+               "header": "Southshore Inn",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 49, "y": 52 },
+               "header": "Southshore Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fly to Western Plaguelands"],
+               "type": "flightpath"
+            }
+         ]
+      },
+      {
+         "zone": "wpl",
+         "experience": 59.26,
+         "waypoints": [
+            {
+               "coords": { "x": 43, "y": 86 },
+               "header": "Western Plaguelands Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 43, "y": 84 },
+               "header": "Chillwind Camp",
+               "ends": ["Araj's Scarab", "The Eastern Plagues", "Alas, Andorhal", "The Key to Scholomance"],
+               "starts": ["The Key to Scholomance", "The Blightcaller Cometh"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 39, "y": 67 },
+               "header": "Chromie",
+               "ends": ["Return to Chromie"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 66, "y": 75 },
+               "header": "Artist Renfray",
+               "ends": ["Of Love and Family P1"],
+               "starts": ["Of Love and Family P2"],
+               "objectives": [],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "wpl",
+         "experience": 59.49,
+         "waypoints": [
+            {
+               "coords": { "x": 66, "y": 75 },
+               "header": "Artist Renfray",
+               "ends": ["Of Love and Family P1"],
+               "starts": ["Of Love and Family P2"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 43, "y": 86 },
+               "header": "Western Plaguelands Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "flightpath"
+            }
+         ]
+      }
+   ]
+}

@@ -67,7 +67,14 @@ var data = [
    $.getJSON('../data/065-feralas.json'),
    $.getJSON('../data/066-felwood.json'),
    $.getJSON('../data/067-transition.json'),
-   $.getJSON('../data/068-wpl.json')
+   $.getJSON('../data/068-wpl.json'),
+   $.getJSON('../data/069-epl.json'),
+   $.getJSON('../data/070-transition.json'),
+   $.getJSON('../data/071-felwood.json'),
+   $.getJSON('../data/072-ungoro.json'),
+   $.getJSON('../data/073-winterspring.json'),
+   $.getJSON('../data/074-transition.json'),
+   $.getJSON('../data/075-plaguelands.json')
 ];
 
 // WAIT FOR EVERYTHING TO RESPOND

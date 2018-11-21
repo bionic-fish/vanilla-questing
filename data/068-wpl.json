@@ -19,6 +19,568 @@
                "starts": ["Clear the Way", "Argent Dawn Commission", "A Plague Upon Three"],
                "objectives": ["Equip the Trinket"],
                "type": "quest"
+            },
+            {
+               "coords": { "x": 54, "y": 65 },
+               "header": "Mulgris Deepriver",
+               "ends": [],
+               "starts": ["The Wildlife Suffers Too P1"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 70, "y": 50 },
+               "header": "Eastern Plaguelands Border",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "epl",
+         "experience": 54.85,
+         "waypoints": [
+            {
+               "coords": { "x": 12, "y": 73 },
+               "header": "Western Plaguelands Border",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 27, "y": 85 },
+               "header": "The Undercroft",
+               "ends": [],
+               "starts": ["Hameya's Plea"],
+               "objectives": ["Click the scroll downstairs"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 36, "y": 91 },
+               "header": "Pamela Redpath",
+               "ends": ["Pamela Redpath"],
+               "starts": ["Pamela's Doll"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 39, "y": 91 },
+               "header": "Darrowshire",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Pamela's Doll"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "epl",
+         "experience": 54.88,
+         "waypoints": [
+            {
+               "coords": { "x": 39, "y": 91 },
+               "header": "Darrowshire",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Pamela's Doll"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 36, "y": 91 },
+               "header": "Pamela Redpath",
+               "ends": ["Pamela's Doll"],
+               "starts": ["Auntie Marlene", "Uncle Carlin"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 80, "y": 64 },
+               "header": "Caretaker Alen",
+               "ends": [],
+               "starts": ["Zaeldarr the Outcast"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 83, "y": 59 },
+               "header": "Eastern Plaguelands Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Learn the Flightpath"],
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 81, "y": 59 },
+               "header": "Light's Hope Chapel",
+               "ends": ["Duke Nicholas Zverenhoff", "Uncle Carlin"],
+               "starts": [],
+               "objectives": [],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 70, "y": 17 },
+               "header": "Zul'Mashar",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Hameya's Plea"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 43, "y": 34 },
+               "header": "Large Termite Mound",
+               "ends": [],
+               "starts": [],
+               "objectives": ["A Plague Upon Thee"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 42, "y": 38 },
+               "header": "Large Termite Mound",
+               "ends": [],
+               "starts": [],
+               "objectives": ["A Plague Upon Thee"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 39, "y": 35 },
+               "header": "Large Termite Mound",
+               "ends": [],
+               "starts": [],
+               "objectives": ["A Plague Upon Thee", "Hearthstone to Hillsbrad"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "hillsbrad",
+         "experience": 54.95,
+         "waypoints": [
+            {
+               "coords": { "x": 51, "y": 54 },
+               "header": "Southshore Inn",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 49, "y": 52 },
+               "header": "Southshore Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fly to Western Plaguelands"],
+               "type": "flightpath"
+            }
+         ]
+      },
+      {
+         "zone": "wpl",
+         "experience": 54.95,
+         "waypoints": [
+            {
+               "coords": { "x": 43, "y": 86 },
+               "header": "Western Plaguelands Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Learn the Flightpath"],
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 43, "y": 84 },
+               "header": "Chillwind Camp",
+               "ends": ["A Plague Upon Three P1"],
+               "starts": ["A Plague Upon Three P2"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 49, "y": 79 },
+               "header": "Marlene Redpath",
+               "ends": ["Auntie Marlene"],
+               "starts": ["A Strangle Historian"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 50, "y": 77 },
+               "header": "Joseph Redpath's Monument",
+               "ends": [],
+               "starts": [],
+               "objectives": ["A Strangle Historian", "Clear the Way"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "wpl",
+         "experience": 55.02,
+         "waypoints": [
+            {
+               "coords": { "x": 50, "y": 77 },
+               "header": "Joseph Redpath's Monument",
+               "ends": [],
+               "starts": [],
+               "objectives": ["A Strangle Historian", "Clear the Way"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 43, "y": 84 },
+               "header": "Chillwind Camp",
+               "ends": ["Clear the Way", "The Scourge Cauldrons"],
+               "starts": ["All Along the Watchtowers", "The Scourge Cauldrons", "Target: Felstone Field"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 40, "y": 72 },
+               "header": "Ruins of Andorhal",
+               "ends": [],
+               "starts": [],
+               "objectives": ["All Along the Watchtowers", "Tower One"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 39, "y": 67 },
+               "header": "Chromie",
+               "ends": ["A Strangle Historian"],
+               "starts": ["The Annals of Darrowshire", "A Matter of Time"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 42, "y": 66 },
+               "header": "Ruins of Andorhal",
+               "ends": [],
+               "starts": [],
+               "objectives": ["All Along the Watchtowers", "Tower Two"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 43, "y": 69 },
+               "header": "Ruins of Andorhal",
+               "ends": [],
+               "starts": [],
+               "objectives": ["The Annals of Darrowshire", "Look for a smooth page transition"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 44, "y": 63 },
+               "header": "Ruins of Andorhal",
+               "ends": [],
+               "starts": [],
+               "objectives": ["All Along the Watchtowers", "Tower Three"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 45, "y": 62 },
+               "header": "Ruins of Andorhal",
+               "ends": [],
+               "starts": [],
+               "objectives": ["A Matter of Time"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 37, "y": 57 },
+               "header": "Scourge Cauldron",
+               "ends": ["Target: Felstone Field"],
+               "starts": ["Return to Chillwind Camp"],
+               "objectives": ["Kill the Cauldron Lord first"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 38, "y": 54 },
+               "header": "Janice Felstone",
+               "ends": [],
+               "starts": ["Better Late Than Never P1"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 39, "y": 55 },
+               "header": "Janice's Parcel",
+               "ends": ["Better Late Than Never P1"],
+               "starts": ["Better Late Than Never P2"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 43, "y": 54 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["The Wildlife Suffer Too"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 46, "y": 48 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["The Wildlife Suffer Too"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 48, "y": 32 },
+               "header": "Termite Barrel",
+               "ends": ["A Plague Upon Thee P2"],
+               "starts": ["A Plague Upon Thee P3"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 52, "y": 28 },
+               "header": "Kirsta Deepshadow",
+               "ends": [],
+               "starts": ["Unfinished Business P1"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 51, "y": 41 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Unfinished Business P1"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 52, "y": 45 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Unfinished Business P1"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "wpl",
+         "experience": 55.25,
+         "waypoints": [
+            {
+               "coords": { "x": 52, "y": 45 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Unfinished Business P1"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 52, "y": 28 },
+               "header": "Kirsta Deepshadow",
+               "ends": ["Unfinished Business P1"],
+               "starts": ["Unfinished Business P2"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 58, "y": 36 },
+               "header": "Huntsman Radley",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Unfinished Business P2"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 55, "y": 23 },
+               "header": "Cavalier Durden",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Unfinished Business P2"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "wpl",
+         "experience": 55.31,
+         "waypoints": [
+            {
+               "coords": { "x": 55, "y": 23 },
+               "header": "Cavalier Durden",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Unfinished Business P2"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 52, "y": 28 },
+               "header": "Kirsta Deepshadow",
+               "ends": ["Unfinished Business P2"],
+               "starts": ["Unfinished Business P3"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 54, "y": 65 },
+               "header": "Mulgris Deepriver",
+               "ends": ["The Wildlife Suffers Too P1"],
+               "starts": ["The Wildlife Suffers Too P2"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 58, "y": 60 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["The Wildlife Suffers Too P2"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "wpl",
+         "experience": 55.39,
+         "waypoints": [
+            {
+               "coords": { "x": 58, "y": 60 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["The Wildlife Suffers Too P2"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 54, "y": 65 },
+               "header": "Mulgris Deepriver",
+               "ends": ["The Wildlife Suffers Too P2"],
+               "starts": ["Glyphed Oaken Branch"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 47, "y": 71 },
+               "header": "Ruins of Andorhal",
+               "ends": [],
+               "starts": [],
+               "objectives": ["All Along the Watchtowers", "Tower Four"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 39, "y": 67 },
+               "header": "Chromie",
+               "ends": ["The Annals of Darrowshire", "A Matter of Time"],
+               "starts": ["Brother Carlin", "Counting Out Time"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 43, "y": 84 },
+               "header": "Chillwind Camp",
+               "ends": ["A Plague Upon Three P3", "All Along the Watchtowers", "Return to Chillwind Camp", "Scholomance"],
+               "starts": ["Scholomance", "Skeletal Fragments", "Target: Dalson's Tears"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 41, "y": 70 },
+               "header": "Ruins of Andorhal",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Skeletal Fragments", "Counting Out Time", "Loot small lockboxes in houses"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "wpl",
+         "experience": 55.54,
+         "waypoints": [
+            {
+               "coords": { "x": 41, "y": 70 },
+               "header": "Ruins of Andorhal",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Skeletal Fragments", "Counting Out Time", "Loot small lockboxes in houses"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 39, "y": 67 },
+               "header": "Chromie",
+               "ends": ["The Annals of Darrowshire", "A Matter of Time"],
+               "starts": ["Brother Carlin", "Counting Out Time"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 46, "y": 52 },
+               "header": "Scourge Cauldron",
+               "ends": ["Target: Dalson's Tears"],
+               "starts": ["Return to Chillwind Camp"],
+               "objectives": ["Kill the Cauldron Lord first"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "wpl",
+         "experience": 55.66,
+         "waypoints": [
+            {
+               "coords": { "x": 46, "y": 52 },
+               "header": "Scourge Cauldron",
+               "ends": ["Target: Dalson's Tears"],
+               "starts": ["Return to Chillwind Camp"],
+               "objectives": ["Kill the Cauldron Lord first"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 43, "y": 84 },
+               "header": "Chillwind Camp",
+               "ends": ["Return to Chillwind Camp", "Skeletal Fragments"],
+               "starts": ["Mold Rhymes With", "Target: Writhing Haunt"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 53, "y": 66 },
+               "header": "Scourge Cauldron",
+               "ends": ["Target: Writhing Haunt"],
+               "starts": ["Return to Chillwind Camp"],
+               "objectives": ["Kill the Cauldron Lord first"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "wpl",
+         "experience": 55.74,
+         "waypoints": [
+            {
+               "coords": { "x": 53, "y": 66 },
+               "header": "Scourge Cauldron",
+               "ends": ["Target: Writhing Haunt"],
+               "starts": ["Return to Chillwind Camp"],
+               "objectives": ["Kill the Cauldron Lord first"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 43, "y": 84 },
+               "header": "Chillwind Camp",
+               "ends": ["Return to Chillwind Camp"],
+               "starts": ["Target: Gahrron's Withering"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 63, "y": 59 },
+               "header": "Scourge Cauldron",
+               "ends": ["Target: Gahrron's Withering"],
+               "starts": ["Return to Chillwind Camp"],
+               "objectives": ["Kill the Cauldron Lord first"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 70, "y": 50 },
+               "header": "Eastern Plaguelands Border",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "travel"
             }
          ]
       }

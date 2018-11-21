@@ -101,6 +101,68 @@
                "type": "travel"
             },
             {
+               "coords": { "x": 34, "y": 76 },
+               "header": "Half-Buried Bottle",
+               "ends": [],
+               "starts": ["Message in a Bottle"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 39, "y": 81 },
+               "header": "Princess Poobah",
+               "ends": ["Message in a Bottle P1"],
+               "starts": ["Message in a Bottle P2"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 41, "y": 84 },
+               "header": "Januero Isle",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Message in a Bottle P2"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 25, "y": 85 },
+               "header": "Swim Around",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 23, "y": 72 },
+               "header": "Mok'Rash",
+               "ends": [],
+               "starts": ["The Monogrammed Sash"],
+               "objectives": ["Drop"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "stv",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 23, "y": 72 },
+               "header": "Mok'Rash",
+               "ends": [],
+               "starts": ["The Monogrammed Sash"],
+               "objectives": ["Drop"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 26, "y": 73 },
+               "header": "Captain Hecklebury Smotts",
+               "ends": ["The Monogrammed Sash", "Sprogger"],
+               "starts": ["Sprogger"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
                "coords": { "x": 28, "y": 78 },
                "header": "Booy Bay Flightpath",
                "ends": [],
@@ -112,7 +174,7 @@
       },
       {
          "zone": "stormwind",
-         "experience": 50.08,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 66, "y": 62 },

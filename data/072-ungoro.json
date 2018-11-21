@@ -1,0 +1,162 @@
+{
+   "path": [
+      {
+         "zone": "tanaris",
+         "experience": 57.51,
+         "waypoints": [
+            {
+               "coords": { "x": 52, "y": 28 },
+               "header": "Gadgetzan",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 70, "y": 50 },
+               "header": "Circle of Aquamentas",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Aquamentas", "Behind the Pirate Encampment"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 51, "y": 30 },
+               "header": "Tanaris Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fly to Un'Goro"],
+               "type": "flightpath"
+            }
+         ]
+      },
+      {
+         "zone": "ungoro",
+         "experience": 57.51,
+         "waypoints": [
+            {
+               "coords": { "x": 45, "y": 6 },
+               "header": "Un'Goro Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 42, "y": 3 },
+               "header": "JD Collie",
+               "ends": ["Aquamentes"],
+               "starts": ["Linken's Adventure"],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 44, "y": 9 },
+               "header": "Marshal's Refuge",
+               "ends": ["Linken's Adventure"],
+               "starts": ["It's Dangerous to Go Alone"],
+               "objectives": [],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 38, "y": 33 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["A Little Slime Goes a Long Way P2", "5x Slime Spawns"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 39, "y": 45 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["A Little Slime Goes a Long Way P2", "4x Slime Spawns"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 49, "y": 48 },
+               "header": "Fire Plume Ridge Top",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fire Plume Forged", "Volcanic Activity", "It's Dangerous to Go Alone", "Loot the chest behind Blazerunner"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "ungoro",
+         "experience": 57.61,
+         "waypoints": [
+            {
+               "coords": { "x": 49, "y": 48 },
+               "header": "Fire Plume Ridge Top",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fire Plume Forged", "Volcanic Activity", "It's Dangerous to Go Alone", "Loot the chest behind Blazerunner"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 44, "y": 9 },
+               "header": "Marshal's Refuge",
+               "ends": ["It's Dangerous to Go Alone"],
+               "starts": [],
+               "objectives": [],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 45, "y": 6 },
+               "header": "Un'Goro Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fly to Ratchet"],
+               "type": "flightpath"
+            }
+         ]
+      },
+      {
+         "zone": "barrens",
+         "experience": 57.67,
+         "waypoints": [
+            {
+               "coords": { "x": 63, "y": 37 },
+               "header": "Ratchet Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 62, "y": 39 },
+               "header": "Liv Rizzlefix",
+               "ends": ["Volcanic Activity"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "barrens",
+         "experience": 57.71,
+         "waypoints": [
+            {
+               "coords": { "x": 62, "y": 39 },
+               "header": "Liv Rizzlefix",
+               "ends": ["Volcanic Activity"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 63, "y": 37 },
+               "header": "Ratchet Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Fly to Winterspring"],
+               "type": "flightpath"
+            }
+         ]
+      }
+   ]
+}

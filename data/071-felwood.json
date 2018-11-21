@@ -1,0 +1,64 @@
+{
+   "path": [
+      {
+         "zone": "felwood",
+         "experience": 57.31,
+         "waypoints": [
+            {
+               "coords": { "x": 55, "y": 93 },
+               "header": "Ashenvale Border",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 51, "y": 82 },
+               "header": "Emerald Sanctuary",
+               "ends": ["Flute of Xavaric", "Linken's Memory", "Further Corruption", "Cleansed Water of Felwood"],
+               "starts": ["Silver Heart", "Skipping the Jaedenar Quests"],
+               "objectives": [],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 44, "y": 65 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Silver Heart", "Bears"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 46, "y": 24 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Silver Heart", "Trees"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "felwood",
+         "experience": 57.46,
+         "waypoints": [
+            {
+               "coords": { "x": 46, "y": 24 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Silver Heart", "Trees"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 51, "y": 82 },
+               "header": "Emerald Sanctuary",
+               "ends": ["Silver Heart"],
+               "starts": [],
+               "objectives": ["Heathstone to Tanaris"],
+               "type": "hub"
+            }
+         ]
+      }
+   ]
+}
