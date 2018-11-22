@@ -27,8 +27,8 @@ function render(data, current, max) {
    // GRADUALLY TURN OPACITY OFF
    $('#map').css('opacity', 0);
 
-   var quest_log = quests(data, current);
-   log(quest_log);
+   // RENDER QUEST LOG
+   quests(data, current);
 
    // WAIT 200 MS
    sleep(200).then(() => {
@@ -148,17 +148,19 @@ function quests(data, current) {
          var starts = waypoints[y].starts;
          var ends = waypoints[y].ends;
 
-         starts.forEach(quest => {
-            quests[quest] = 0;
-         });
-
-         ends.forEach(quest => {
-            delete quests[quest];
-         });
-         
+         // ADD NEW QUESTS & REMOVE OLD ONES
+         starts.forEach(quest => { quests[quest] = 0; });
+         ends.forEach(quest => { delete quests[quest]; });
       }
    }
 
-   log(Object.keys(quests).length)
-   return quests;
+   var final = Object.keys(quests);
+   //var str = '<div id="item"><div id="title">Quests Currently:</div><div id="prop">' + final.length + '/20</div></div>';
+   var str = '';
+
+   for (var z = 0; z < final.length; z++) {
+      str += '<div id="quest">' + final[z] + '</div>';
+   }
+
+   $('#quests #inner').html(str);
 }
