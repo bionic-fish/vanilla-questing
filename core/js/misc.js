@@ -21,42 +21,39 @@ function build(data) {
 // RENDER IN MAP CONTENT FROM QUERY
 function render(data, current, max) {
 
-   // BIND TARGET BLOCK
-   var target = data[current];
-
    // GRADUALLY TURN OPACITY OFF
    $('#map').css('opacity', 0);
-
-   // RENDER QUEST LOG
-   quests(data, current);
 
    // WAIT 200 MS
    sleep(200).then(() => {
 
+      // BIND TARGET BLOCK
+      var target = data[current];
+
+      // PURGE THE MAP & TOOLTIP OF OLD CONTENT
+      $('#map, #tooltip').html('');
+
       // SPLIT JSON PROPERTY FOR CLARITY
       var level = parseInt(String(target.experience).split(".")[0]);
       var xp = parseInt(String(target.experience).split(".")[1]);
+      var percent = (current / max) * 100;
 
       // RENDER IN LEVEL/XP TEXT & SET BACKGROUND WIDTH
-      $('#experience #inner').html('Level ' + level + ' + ' + xp + '%');
-      $('#experience #inner').css('background-size', xp + '% auto');
+      $('#experience #inner')
+         .html('Level ' + level + ' + ' + xp + '%')
+         .css('background-size', xp + '% auto');
 
-      // SET THE RANGE SCROLLER TO ITS NEW POSITION
+      // MOVE THE RANGE SCROLLER
       $('#range').val(current);
 
-      // SET RANGE SCROLLER BACKGROUND WIDTH BASED ON TOTAL PROGRESS
-      var percent = (current / max) * 100;
+      // FILL THE LEFT SIDE OF THE RANGE BAR
       $('#footer #inner').css('background-size', percent + '% auto');
-
-      // PURGE THE MAP & TOOLTIP THEIR CONTENT
-      $('#map').html('');
-      $('#tooltip').html('');
 
       // TURN OFF THE TOOLTIP WITH CSS TO AVOID FLICKERING
       $('#tooltip').css('display', 'none');
 
-      // ATTACH CORRECT ZONE BACKGROUND
-      $('#map').css('background', 'url("interface/img/maps/' + target.zone + '.jpg")');
+      // ATTACH CORRECT ZONE MAP AS BACKGROUND
+      $('#map').css('background', 'url("interface/img/maps/' + target.zone + '.png")');
 
       // LOOP THROUGH WAYPOINTS
       $.each(target.waypoints, (id, waypoint) => {
@@ -77,8 +74,7 @@ function render(data, current, max) {
 
       // GENERATE LINES BETWEEN FIRST & SECOND TO LAST WAYPOINTS
       for(var x = 0; x < target.waypoints.length - 1; x++) {
-         var line = '<line x1="' + target.waypoints[x].coords.x + '%" y1="' + target.waypoints[x].coords.y + '%" x2="' + target.waypoints[x + 1].coords.x + '%" y2="' + target.waypoints[x + 1].coords.y + '%"/>';
-         lines += line;
+         lines += '<line x1="' + target.waypoints[x].coords.x + '%" y1="' + target.waypoints[x].coords.y + '%" x2="' + target.waypoints[x + 1].coords.x + '%" y2="' + target.waypoints[x + 1].coords.y + '%"/>';
       }
 
       // APPEND AN SVG ONTOP OF THE BACKGROUND & THE WAYPOINT LINES
@@ -87,7 +83,7 @@ function render(data, current, max) {
       // APPEND IN THE BLOCK NUMBER
       $('#map').append('<span id="block-num">#' + current + '</span>');
 
-      // GRADUALLY TURN OPACITY ON
+      // GRADUALLY TURN OPACITY ON AFTER EVERYTHING ELSE IS DONE
       $('#map').css('opacity', 1);
    });
 }
@@ -99,7 +95,7 @@ function mouseover(event, target) {
    var id = $(event.target).attr('wp');
    var waypoint = target.waypoints[id];
 
-   // GENERATE WAYPOINT DATA
+   // DECLARE EMPTY TOOLTIP CONTAINERS
    var header = '';
    var ends = '';
    var starts = '';
@@ -122,11 +118,11 @@ function mouseover(event, target) {
       offset: 5
    }
 
-   // FIGURE OUT THE XY POSITION WITH OFFSETS
+   // POSITION THE TOOLTIP CORRECTLY
    var x = event.target.x - (tooltip.width / 2);
    var y = event.target.y - (tooltip.height + (tooltip.offset + (2 * tooltip.padding)));
 
-   // SET CSS COORDINATES & SHOW THE DATA
+   // EXECUTE CSS CHANGES & SHOW THE DATA
    $('#tooltip').css('left', x);
    $('#tooltip').css('top', y);
    $('#tooltip').css('display', 'inline-block');
@@ -155,8 +151,7 @@ function quests(data, current) {
    }
 
    var final = Object.keys(quests);
-   //var str = '<div id="item"><div id="title">Quests Currently:</div><div id="prop">' + final.length + '/20</div></div>';
-   var str = '';
+   var str = '<div id="item"><div id="title">Quests Currently:</div><div id="prop">' + final.length + '/20</div></div>';
 
    for (var z = 0; z < final.length; z++) {
       str += '<div id="quest">' + final[z] + '</div>';

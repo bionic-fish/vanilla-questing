@@ -134,12 +134,12 @@ Promise.all(data).then((response) => {
          // IF ITS LOWER THAN THE MAXIMUM
          if (next < last_page) {
 
-            // UPDATE LOCALSTORAGE & THE CURRENT VAR
-            localStorage.setItem(key_name, String(next));
-            current = next;
+               // UPDATE LOCALSTORAGE & THE CURRENT VAR
+               localStorage.setItem(key_name, String(next));
+               current = next;
 
-            // RENDER NEW MAP & WAYPOINTS
-            render(data, current, last_page);
+               // RENDER NEW MAP & WAYPOINTS
+               render(data, current, last_page);
          }
       }
 
@@ -159,9 +159,12 @@ Promise.all(data).then((response) => {
       render(data, current, last_page);
    });
 
-   // SHOW TOOLTIP ON MOUSEOVER
-   $('body').on('mouseover', 'img', (event) => { mouseover(event, data[current]); });
+   // BLOCK ARROWKEYS TRIGGERS BECAUSE OF CLUNKY LOADING
+   $(document).on('keyup keydown', (evt) => {
+      if (evt.keyCode == 37 || evt.keyCode == 39) { evt.preventDefault(); }  
+   });
 
-   // HIDE TOOLTIP ON MOUESOUT
+   // SHOW/HIDE TOOLTIP ON MOUSEOVER/MOUSEOUT
+   $('body').on('mouseover', 'img', (event) => { mouseover(event, data[current]); });
    $('body').on('mouseout', 'img', () => { $('#tooltip').css('display', 'none'); });
 });

@@ -34,13 +34,13 @@ a:hover {
 
 #innerbody {
    background: url('img/dark.png');
-   width: 1000px;
+   width: fit-content;
    margin: auto;
    padding: 5px;
 }
 
 #header, #footer {
-   background: url('img/dark.png');
+   background: url('img/lighter.png');
    color: #CECECE;
 }
 
@@ -62,58 +62,12 @@ a:hover {
    transition: 0.2s;
 }
 
-#split {
-   display: table;
-   width: 100%;
-   margin: 5px 0px;
-}
-
-#left, #right {
-   display: table-cell;
-   width: 772px;
-}
-
-#right {
-   width: 228px;
-   vertical-align: top;
-}
-
-#right #quests {
-   background: url('img/quest-bg.png');
-   height: 515px;
-   margin-left: 5px;
-}
-
-#quests #inner {
-   color: #CECECE;
-   padding: 10px;
-}
-
-#item {
-   width: 100%;
-   display: table;
-   margin-bottom: 10px;
-}
-
-#item #title, #item #prop {
-   display: table-cell;
-   width: 70%;
-}
-
-#item #prop {
-   width: 30%;
-   text-align: right;
-}
-
-#quests #quest {
-   margin-bottom: 2px;
-}
-
 #map {
    height: 515px;
    width: 772px;
    position: relative;
    transition: .2s;
+   margin: 5px 0px;
 }
 
 #map #block-num {
@@ -174,7 +128,7 @@ svg {
 }
 
 line {
-   stroke-width: 2;
+   stroke-width: 3;
    stroke: red;
 }
 
