@@ -12,8 +12,7 @@ function build(data) {
 
    // LOOP THROUGH & PUSH EVERY BLOCK TO THE CONTAINER
    data.forEach(block => {
-      var path_array = block.path;
-      path_array.forEach(waypoint => { container.push(waypoint); });
+      block.path.forEach(waypoint => { container.push(waypoint); });
    });
 
    return container;
@@ -27,6 +26,9 @@ function render(data, current, max) {
 
    // GRADUALLY TURN OPACITY OFF
    $('#map').css('opacity', 0);
+
+   var quest_log = quests(data, current);
+   log(quest_log);
 
    // WAIT 200 MS
    sleep(200).then(() => {
@@ -128,4 +130,35 @@ function mouseover(event, target) {
    $('#tooltip').css('left', x);
    $('#tooltip').css('top', y);
    $('#tooltip').css('display', 'inline-block');
+}
+
+// FIGURE OUT QUEST LOG
+function quests(data, current) {
+
+   var quests = {};
+
+   // FIND EACH WAYPOINT
+   for (var x = 0; x < current; x++) {
+      var waypoints = data[x].waypoints;
+      
+      // LOOP THROUGH EACH WAYPOINT ARRAY
+      for (var y = 0; y < waypoints.length; y++) {
+
+         // BIND STARTS/ENDS ARRAYS
+         var starts = waypoints[y].starts;
+         var ends = waypoints[y].ends;
+
+         starts.forEach(quest => {
+            quests[quest] = 0;
+         });
+
+         ends.forEach(quest => {
+            delete quests[quest];
+         });
+         
+      }
+   }
+
+   log(Object.keys(quests).length)
+   return quests;
 }
