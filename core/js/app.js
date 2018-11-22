@@ -1,5 +1,5 @@
-// DATA
-var data = [
+// data
+var pathing = [
    $.getJSON('../data/01-elwynn.json'),
    $.getJSON('../data/02-transition.json'),
    $.getJSON('../data/03-morogh.json'),
@@ -77,32 +77,31 @@ var data = [
    $.getJSON('../data/75-plaguelands.json')
 ];
 
-// WAIT FOR EVERYTHING TO RESPOND
-Promise.all(data).then((response) => {
+var settings = {
+   'localstorage': 'questing-page',
+   'cooldown': {
+      'status': false,
+      'timer': 500
+   }
+}
 
-   // LOCALSTORAGE KEY NAME
-   var key_name = 'questing-page';
+var data = {}
+
+// WAIT FOR EVERYTHING TO RESPOND
+Promise.all(pathing).then((response) => {
 
    // SET THE USERS STARTING BLOCK TO ZERO IF IT DOESNT EXIST
-   if (localStorage.getItem(key_name) === null) { localStorage.setItem(key_name, '0'); }
+   if (localStorage.getItem(settings.localstorage) === null) { localStorage.setItem(settings.localstorage, '0'); }
 
-   // BUILD UNITED JSON FILE
-   data = build(response);
-   
-   // SETTINGS
-   var current = parseInt(localStorage.getItem(key_name));
-   var last_page = data.length;
+   // SET DATA OBJECT PROPERTIES
+   data.raw = build(response);
+   data.max = data.raw.length;
 
    // SET RANGE INPUTS MAX ATTRIBUTE & THE SCROLL TO THE CORRECT POSITION
-   $('#range').attr('max', last_page - 1);
-   $('#range').val(current);
-
-   // SET RIGHT BACKGROUND WIDTH
-   var percent = (current / last_page) * 100;
-   $('#footer #inner').css('background-size', percent + '% auto');
+   $('#range').attr('max', data.max - 1);
 
    // RENDER MAP & WAYPOINTS ON INITIAL LOAD
-   render(data, current, last_page);
+   data = render(data, settings, parseInt(localStorage.getItem(settings.localstorage)));
 
    // LISTEN FOR KEY PRESSES
    $(document).on('keyup', (evt) => {
@@ -110,36 +109,61 @@ Promise.all(data).then((response) => {
       // WHEN 'A' IS PRESSED
       if (evt.keyCode == 65) {
 
-         // BIND THE PREVIOUS NUMBER
-         var previous = current - 1;
+         // CHECK IF A NEW REQUEST IS ALLOWED
+         if (settings.cooldown.status == false) {
+            settings.cooldown.status = true;
 
-         // IF ITS HIGHER OR EQUAL TO ZERO 
-         if (previous >= 0) {
+            // BIND THE PREVIOUS NUMBER
+            var previous = data.current - 1;
 
-            // UPDATE LOCALSTORAGE & THE CURRENT VAR
-            localStorage.setItem(key_name, String(previous));
-            current = previous;
+            // IF ITS HIGHER OR EQUAL TO ZERO 
+            if (previous >= 0) {
 
-            // RENDER NEW MAP & WAYPOINTS
-            render(data, current, last_page);
+               // RENDER NEW CONTENT & UPDATE DATA OBJECT
+               data = render(data, settings, previous);
+               
+               // ALLOW NEW REQUEST AFTER 600MS
+               sleep(settings.cooldown.timer).then(() => { settings.cooldown.status = false; })
+            }
          }
       }
 
       // WHEN 'D' IS PRESSED
       if (evt.keyCode == 68) {
 
-         // BIND THE PREVIOUS NUMBER
-         var next = current + 1;
-         
-         // IF ITS LOWER THAN THE MAXIMUM
-         if (next < last_page) {
+         // CHECK IF A NEW REQUEST IS ALLOWED
+         if (settings.cooldown.status == false) {
+            settings.cooldown.status = true;
 
-               // UPDATE LOCALSTORAGE & THE CURRENT VAR
-               localStorage.setItem(key_name, String(next));
-               current = next;
+            // BIND THE PREVIOUS NUMBER
+            var next = data.current + 1;
+            
+            // IF ITS LOWER THAN THE MAXIMUM
+            if (next < data.max) {
 
-               // RENDER NEW MAP & WAYPOINTS
-               render(data, current, last_page);
+               // RENDER NEW CONTENT & UPDATE DATA OBJECT
+               data = render(data, settings, next);
+
+               // ALLOW NEW REQUEST AFTER 600MS
+               sleep(settings.cooldown.timer).then(() => { settings.cooldown.status = false; })
+            }
+         }
+      }
+
+      // WHEN 'ESC' IS PRESSED
+      if (evt.keyCode == 27) {
+
+         // BIND data.current CSS DISPLAY VALUE
+         var display = $('#prompt').css('display');
+
+         // MAKE SURE IT ISNT NONE
+         if (display != 'none') {
+
+            // GRADUALLY TURN OPACITY OFF
+            $('#prompt').css('opacity', '0');
+
+            // WAIT 200 MS, THEN PROPERLY HIDE THE SELECTOR
+            sleep(200).then(() => { $('#prompt').css('display', 'none'); });
          }
       }
 
@@ -148,23 +172,25 @@ Promise.all(data).then((response) => {
    // WHEN THE RANGE SCROLL IS USED
    $('#range').on('change', () => {
 
-      // BIND THE REQUESTED VALUE & OVERWRITE CURRENT
-      var swap = parseInt($('#range').val());
-      current = swap;
-
-      // UPDATE LOCALSTORAGE VARIABLE
-      localStorage.setItem(key_name, String(swap));
-
-      // RENDER IN NEW QUERY
-      render(data, current, last_page);
+      // RENDER NEW CONTENT & UPDATE DATA OBJECT
+      var target = parseInt($('#range').val());
+      data = render(data, settings, target);
    });
 
    // BLOCK ARROWKEYS TRIGGERS BECAUSE OF CLUNKY LOADING
-   $(document).on('keyup keydown', (evt) => {
-      if (evt.keyCode == 37 || evt.keyCode == 39) { evt.preventDefault(); }  
-   });
+   $(document).on('keyup keydown', (evt) => { if (evt.keyCode == 37 || evt.keyCode == 39) { evt.preventDefault(); } });
 
    // SHOW/HIDE TOOLTIP ON MOUSEOVER/MOUSEOUT
-   $('body').on('mouseover', 'img', (event) => { mouseover(event, data[current]); });
+   $('body').on('mouseover', 'img', (event) => { mouseover(event, data); });
    $('body').on('mouseout', 'img', () => { $('#tooltip').css('display', 'none'); });
+});
+
+// WHEN THE SETTINGS LINK IS CLICKED
+$('#settings').on('click', () => {
+
+   // TURN THE DISPLAY PROPERTY ON
+   $('#prompt').css('display', 'table');
+
+   // WAIT 50MS BEFORE GRADUALLY TURNING OPACITY ON -- TO SMOOTHEN TRANSITION
+   sleep(50).then(() => { $('#prompt').css('opacity', '1'); });
 });

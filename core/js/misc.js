@@ -19,37 +19,43 @@ function build(data) {
 }
 
 // RENDER IN MAP CONTENT FROM QUERY
-function render(data, current, max) {
+function render(data, settings, ref) {
+
+   // UPDATE DATA CURRENT
+   data.current = ref;
+
+   // UPDATE LOCALSTORAGE
+   localStorage.setItem(settings.localstorage, String(data.current));
 
    // GRADUALLY TURN OPACITY OFF
    $('#map').css('opacity', 0);
 
-   // WAIT 200 MS
-   sleep(200).then(() => {
+   // RECALIBRATE NEW DATA PROGRESS
+   data.progress = (data.current / data.max) * 100;
 
-      // BIND TARGET BLOCK
-      var target = data[current];
+   // MOVE THE RANGE SCROLLER & RECALIBRATE THE BACKGROUND WIDTH
+   $('#range').val(data.current);
+   $('#footer #inner').css('background-size', data.progress + '% auto');
 
-      // PURGE THE MAP & TOOLTIP OF OLD CONTENT
+   // DECLARE INSTANCE TARGET
+   var target = data.raw[data.current];
+
+   // LEVEL PROPERTIES
+   var level = {
+      'current': parseInt(String(target.experience).split(".")[0]),
+      'xp': parseInt(String(target.experience).split(".")[1])
+   }
+
+   // RENDER IN LEVEL/XP TEXT & SET BACKGROUND WIDTH
+   $('#experience #inner')
+      .html('Level ' + level.current + ' + ' + level.xp + '%')
+      .css('background-size', level.xp + '% auto');
+
+   // WAIT 300 MS -- THEN UPDATE MAP
+   sleep(300).then(() => {
+
+      // PURGE THE MAP & TOOLTIP OF OLD CONTENT -- ALSO TURN OFF THE TOOLTIP TO AVOID FLICKERING
       $('#map, #tooltip').html('');
-
-      // SPLIT JSON PROPERTY FOR CLARITY
-      var level = parseInt(String(target.experience).split(".")[0]);
-      var xp = parseInt(String(target.experience).split(".")[1]);
-      var percent = (current / max) * 100;
-
-      // RENDER IN LEVEL/XP TEXT & SET BACKGROUND WIDTH
-      $('#experience #inner')
-         .html('Level ' + level + ' + ' + xp + '%')
-         .css('background-size', xp + '% auto');
-
-      // MOVE THE RANGE SCROLLER
-      $('#range').val(current);
-
-      // FILL THE LEFT SIDE OF THE RANGE BAR
-      $('#footer #inner').css('background-size', percent + '% auto');
-
-      // TURN OFF THE TOOLTIP WITH CSS TO AVOID FLICKERING
       $('#tooltip').css('display', 'none');
 
       // ATTACH CORRECT ZONE MAP AS BACKGROUND
@@ -81,15 +87,20 @@ function render(data, current, max) {
       $('#map').append('<svg>' + lines + '</svg>');
 
       // APPEND IN THE BLOCK NUMBER
-      $('#map').append('<span id="block-num">#' + current + '</span>');
+      $('#map').append('<span id="block-num">#' + data.current + '</span>');
 
       // GRADUALLY TURN OPACITY ON AFTER EVERYTHING ELSE IS DONE
       $('#map').css('opacity', 1);
    });
+
+   return data;
 }
 
 // RENDER MOUSEOVER
-function mouseover(event, target) {
+function mouseover(event, data) {
+
+   // DECLARE TARGET
+   var target = data.raw[data.current];
 
    // PICK UP & BIND RELEVANT DATA
    var id = $(event.target).attr('wp');
