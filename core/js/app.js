@@ -1,4 +1,4 @@
-// data
+// PROMISE ARRAY OF ALL THE BLOCKS
 var pathing = [
    $.getJSON('../data/01-elwynn.json'),
    $.getJSON('../data/02-transition.json'),
@@ -77,6 +77,7 @@ var pathing = [
    $.getJSON('../data/75-plaguelands.json')
 ];
 
+// SETTINGS OBJECT
 var settings = {
    'localstorage': 'questing-page',
    'cooldown': {
@@ -85,6 +86,7 @@ var settings = {
    }
 }
 
+// DECLARE DATA OBJECT
 var data = {}
 
 // WAIT FOR EVERYTHING TO RESPOND
@@ -93,14 +95,18 @@ Promise.all(pathing).then((response) => {
    // SET THE USERS STARTING BLOCK TO ZERO IF IT DOESNT EXIST
    if (localStorage.getItem(settings.localstorage) === null) { localStorage.setItem(settings.localstorage, '0'); }
 
-   // SET DATA OBJECT PROPERTIES
-   data.raw = build(response);
-   data.max = data.raw.length;
+   // BUILD INITIAL DATA OBJECT
+   data = build(response);
+
+   // RENDER IN BUILD STATISTICS
+   $('#blocks').html(data.build.blocks);
+   $('#wps').html(data.build.waypoints);
+   $('#qs').html(data.build.quests);
 
    // SET RANGE INPUTS MAX ATTRIBUTE & THE SCROLL TO THE CORRECT POSITION
    $('#range').attr('max', data.max - 1);
 
-   // RENDER MAP & WAYPOINTS ON INITIAL LOAD
+   // RENDER MAP & WAYPOINTS ON INITIAL LOAD & UPDATE DATA OBJECT
    data = render(data, settings, parseInt(localStorage.getItem(settings.localstorage)));
 
    // LISTEN FOR KEY PRESSES
@@ -109,44 +115,40 @@ Promise.all(pathing).then((response) => {
       // WHEN 'A' IS PRESSED
       if (evt.keyCode == 65) {
 
-         // CHECK IF A NEW REQUEST IS ALLOWED
-         if (settings.cooldown.status == false) {
+         // BIND THE PREVIOUS NUMBER
+         var previous = data.current - 1;
+
+         // IF THE REF NUMBER & COOLDOWN STATUS CHECKS OUT
+         if (previous >= 0 && settings.cooldown.status == false) {
+
+            // BLOCK FURTHER REQUESTS
             settings.cooldown.status = true;
 
-            // BIND THE PREVIOUS NUMBER
-            var previous = data.current - 1;
-
-            // IF ITS HIGHER OR EQUAL TO ZERO 
-            if (previous >= 0) {
-
-               // RENDER NEW CONTENT & UPDATE DATA OBJECT
-               data = render(data, settings, previous);
-               
-               // ALLOW NEW REQUEST AFTER 600MS
-               sleep(settings.cooldown.timer).then(() => { settings.cooldown.status = false; })
-            }
+            // RENDER NEW CONTENT & UPDATE DATA OBJECT
+            data = render(data, settings, previous);
+            
+            // ALLOW NEW REQUEST AFTER 600MS
+            sleep(settings.cooldown.timer).then(() => { settings.cooldown.status = false; })
          }
       }
 
       // WHEN 'D' IS PRESSED
       if (evt.keyCode == 68) {
 
-         // CHECK IF A NEW REQUEST IS ALLOWED
-         if (settings.cooldown.status == false) {
+         // BIND THE PREVIOUS NUMBER
+         var next = data.current + 1;
+         
+         // IF THE REF NUMBER & COOLDOWN STATUS CHECKS OUT
+         if (next < data.max && settings.cooldown.status == false) {
+
+            // BLOCK FURTHER REQUESTS
             settings.cooldown.status = true;
 
-            // BIND THE PREVIOUS NUMBER
-            var next = data.current + 1;
-            
-            // IF ITS LOWER THAN THE MAXIMUM
-            if (next < data.max) {
+            // RENDER NEW CONTENT & UPDATE DATA OBJECT
+            data = render(data, settings, next);
 
-               // RENDER NEW CONTENT & UPDATE DATA OBJECT
-               data = render(data, settings, next);
-
-               // ALLOW NEW REQUEST AFTER 600MS
-               sleep(settings.cooldown.timer).then(() => { settings.cooldown.status = false; })
-            }
+            // ALLOW NEW REQUEST AFTER 600MS
+            sleep(settings.cooldown.timer).then(() => { settings.cooldown.status = false; })
          }
       }
 
@@ -163,7 +165,7 @@ Promise.all(pathing).then((response) => {
             $('#prompt').css('opacity', '0');
 
             // WAIT 200 MS, THEN PROPERLY HIDE THE SELECTOR
-            sleep(200).then(() => { $('#prompt').css('display', 'none'); });
+            sleep(300).then(() => { $('#prompt').css('display', 'none'); });
          }
       }
 
@@ -178,7 +180,9 @@ Promise.all(pathing).then((response) => {
    });
 
    // BLOCK ARROWKEYS TRIGGERS BECAUSE OF CLUNKY LOADING
-   $(document).on('keyup keydown', (evt) => { if (evt.keyCode == 37 || evt.keyCode == 39) { evt.preventDefault(); } });
+   $(document).on('keyup keydown', (evt) => {
+      if (evt.keyCode == 37 || evt.keyCode == 39) { evt.preventDefault(); }
+   });
 
    // SHOW/HIDE TOOLTIP ON MOUSEOVER/MOUSEOUT
    $('body').on('mouseover', 'img', (event) => { mouseover(event, data); });

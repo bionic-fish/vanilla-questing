@@ -7,15 +7,40 @@ function sleep (time) { return new Promise((resolve) => setTimeout(resolve, time
 // BUILD UNITED JSON FILE FROM ALL THE SMALL PIECES
 function build(data) {
 
-   // CONTAINED FOR PARSED DATA
-   var container = [];
+   // DECLARE RAW DATA CONTAINER
+   data.raw = [];
+
+   // DECLARE BUILD PROP
+   data.build = {
+      'blocks': 0,
+      'waypoints': 0,
+      'quests': 0
+   };
 
    // LOOP THROUGH & PUSH EVERY BLOCK TO THE CONTAINER
    data.forEach(block => {
-      block.path.forEach(waypoint => { container.push(waypoint); });
+      block.path.forEach(waypoint => {
+
+         // PUSH WAYPOINT OBJECT INTO THE CONTAINER
+         data.raw.push(waypoint);
+
+         // INCREMENT BLOCK COUNTER
+         data.build.blocks++;
+         
+         // INCREMENT WAYPOINT COUNTER
+         waypoint.waypoints.forEach(foo => {
+            data.build.waypoints++;
+
+            // INCREMENT QUEST COUNTER
+            foo.starts.forEach(bar => { data.build.quests++; });
+         });
+      });
    });
 
-   return container;
+   // SET MAX PROPERTY
+   data.max = data.raw.length;
+
+   return data;
 }
 
 // RENDER IN MAP CONTENT FROM QUERY
@@ -27,14 +52,14 @@ function render(data, settings, ref) {
    // UPDATE LOCALSTORAGE
    localStorage.setItem(settings.localstorage, String(data.current));
 
+   // UPDATE RANGE SCROLLER
+   $('#range').val(data.current);
+
    // GRADUALLY TURN OPACITY OFF
    $('#map').css('opacity', 0);
 
-   // RECALIBRATE NEW DATA PROGRESS
+   // RECALIBRATE NEW DATA PROGRESS & SET FOOTER BACKGROUND ACCORDINGLY
    data.progress = (data.current / data.max) * 100;
-
-   // MOVE THE RANGE SCROLLER & RECALIBRATE THE BACKGROUND WIDTH
-   $('#range').val(data.current);
    $('#footer #inner').css('background-size', data.progress + '% auto');
 
    // DECLARE INSTANCE TARGET
