@@ -77,6 +77,9 @@ var pathing = [
    $.getJSON('../data/75-plaguelands.json')
 ];
 
+// PRELOAD ZONE BACKGROUNDS
+preload_zones();
+
 // SETTINGS OBJECT
 var settings = {
    'localstorage': 'questing-page',

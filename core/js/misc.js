@@ -65,10 +65,10 @@ function render(data, settings, ref) {
    // DECLARE INSTANCE TARGET
    var target = data.raw[data.current];
 
-   // LEVEL PROPERTIES
+   // LEVEL/XP PROPERTIES -- FORCE TWO DECIMALS
    var level = {
-      'current': parseInt(String(target.experience).split(".")[0]),
-      'xp': parseInt(String(target.experience).split(".")[1])
+      'current': parseInt(String(target.experience.toFixed(2)).split(".")[0]),
+      'xp': parseInt(String(target.experience.toFixed(2)).split(".")[1])
    }
 
    // RENDER IN LEVEL/XP TEXT & SET BACKGROUND WIDTH
@@ -194,4 +194,85 @@ function quests(data, current) {
    }
 
    $('#quests #inner').html(str);
+}
+
+function preload_zones() {
+
+   // ALL THE ZONES & DECLARE PROMISE ARRAY
+   var zones = [
+      'alterac',
+      'arathi',
+      'ashenvale',
+      'azshara',
+      'badlands',
+      'barrens',
+      'blasted',
+      'darkshore',
+      'darnassus',
+      'deadwind',
+      'desolace',
+      'duskwood',
+      'dustwallow',
+      'elwynn',
+      'epl',
+      'farmfarmfarm',
+      'felwood',
+      'feralas',
+      'hillsbrad',
+      'hinterlands',
+      'ironforge',
+      'loch',
+      'moonglade',
+      'morogh',
+      'needles',
+      'redridge',
+      'searing',
+      'steppes',
+      'stonetalon',
+      'stormwind',
+      'stv',
+      'swamp',
+      'tanaris',
+      'teldrassil',
+      'tirisfal',
+      'ungoro',
+      'westfall',
+      'wetlands',
+      'winterspring',
+      'wpl'
+   ];
+   var promises = [];
+
+   // MAKE A PROMISE FOR EACH ZONE
+   zones.forEach(zone => {
+      var promise = promisify(zone);
+      promises.push(promise);
+   });
+
+   // WAIT FOR ALL PROMISES TO BE RESOLVED
+   Promise.all(promises).then(() => {
+
+      // LOG OUT MSG & REMOVE SELECTOR
+      log('loading done!');
+      $('#bg-load').remove();
+   });
+}
+
+// GENERATE A PROMISE
+function promisify(zone) {
+
+   return new Promise((resolve, reject) => {
+
+      // CREATE NEW IMAGE OBJECT OF A ZONE
+      var img = new Image();
+      img.id = zone;
+      img.src = 'http://www.vanilla-questing.me/interface/img/maps/' + zone + '.png';
+
+      // APPEND IT TO THE CONTAINER
+      $('#bg-load').append(img);
+
+      // RESOLVE AFTER ITS DONE LOADING
+      $('#bg-load #' + zone).on('load', () => { resolve(); })
+   });
+
 }
