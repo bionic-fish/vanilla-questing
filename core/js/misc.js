@@ -60,7 +60,7 @@ function render(data, settings, ref) {
 
    // RECALIBRATE NEW DATA PROGRESS & SET FOOTER BACKGROUND ACCORDINGLY
    data.progress = (data.current / data.max) * 100;
-   $('#footer #inner').css('background-size', data.progress + '% auto');
+   $('#footer-inner').css('background-size', data.progress + '% auto');
 
    // DECLARE INSTANCE TARGET
    var target = data.raw[data.current];
@@ -72,7 +72,7 @@ function render(data, settings, ref) {
    }
 
    // RENDER IN LEVEL/XP TEXT & SET BACKGROUND WIDTH
-   $('#experience #inner')
+   $('#xp-inner')
       .html('Level ' + level.current + ' + ' + level.xp + '%')
       .css('background-size', level.xp + '% auto');
 
@@ -202,14 +202,14 @@ function quests(data, current) {
 function preload() {
 
    // PUSH IN SPINNING SELECTOR
-   $('#loading #inner #box').html('<div id="remove-me"><div class="lds-css ng-scope"><div style="width:100%;height:100%" class="lds-rolling"><div></div></div></div></div>');
+   $('#prompt-inner').html('<div id="loading"><div class="lds-css ng-scope"><div style="width:100%;height:100%" class="lds-rolling"><div></div></div></div></div>');
 
    // TURN THE DISPLAY PROPERTY ON
-   $('#loading').css('display', 'table');
+   $('#prompt').css('display', 'table');
 
    // WAIT 50MS BEFORE GRADUALLY TURNING OPACITY ON -- TO SMOOTHEN TRANSITION
    sleep(50).then(() => {
-      $('#loading').css('opacity', '1');
+      $('#prompt').css('opacity', '1');
 
       // ALL THE ZONES & DECLARE PROMISE ARRAY
       var zones = [
@@ -259,10 +259,7 @@ function preload() {
       var promises = [];
 
       // MAKE A PROMISE FOR EACH ZONE & PUSH IT TO THE CONTAINER
-      zones.forEach(zone => {
-         var promise = promisify(zone);
-         promises.push(promise);
-      });
+      zones.forEach(zone => { promises.push(promisify(zone)); });
 
       // WAIT FOR ALL PROMISES TO BE RESOLVED
       Promise.all(promises).then(() => {
@@ -275,12 +272,12 @@ function preload() {
          log('Preload complete!');
 
          // GRADUALLY TURN OFF OPACITY
-         $('#loading').css('opacity', '0');
+         $('#prompt').css('opacity', '0');
          
          // WAIT 200MS - THEN OFF LOADING SELECTOR & REMOVE THE ANIMATION ENTIRELY
          sleep(200).then(() => {
-            $('#loading').css('display', 'none');
-            $('#remove-me').remove();
+            $('#prompt').css('display', 'none');
+            $('#loading').remove();
          });
       });
    });
@@ -300,5 +297,25 @@ function promisify(zone) {
 
       // RESOLVE AFTER ITS DONE LOADING
       $('#preload-container #' + zone).on('load', () => { resolve(); })
+   });
+}
+
+// OPEN FAQ WINDOW
+function faq() {
+
+   // GENERATE SELECTOR
+   var faq = '<div id="faq"><div id="faq-inner">Soon my dudes.. Esc to exit!<br><br><br></div></div>';
+
+   // RENDER IT IN
+   $('#prompt-inner').html(faq);
+
+   // TURN THE DISPLAY PROPERTY ON FOR THE PARENT SELECTOR
+   $('#prompt').css('display', 'table');
+
+   // WAIT 50MS BEFORE GRADUALLY TURNING OPACITY ON -- TO SMOOTHEN TRANSITION
+   sleep(50).then(() => {
+      $('#prompt').css('opacity', '1');
+
+      // foo
    });
 }

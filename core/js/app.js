@@ -84,7 +84,8 @@ var settings = {
       'status': false,
       'timer': 500
    },
-   'preloaded': 0
+   'preloaded': 0,
+   'faq': 0
 }
 
 // DECLARE DATA OBJECT
@@ -156,17 +157,14 @@ Promise.all(pathing).then((response) => {
       // WHEN 'ESC' IS PRESSED
       if (evt.keyCode == 27) {
 
-         // BIND data.current CSS DISPLAY VALUE
-         var display = $('#prompt').css('display');
-
-         // MAKE SURE IT ISNT NONE
-         if (display != 'none') {
+         // CHECK IF THE RIGHT POPUP WINDOW IS OPEN
+         if (settings.faq == 1) {
 
             // GRADUALLY TURN OPACITY OFF
             $('#prompt').css('opacity', '0');
 
             // WAIT 200 MS, THEN PROPERLY HIDE THE SELECTOR
-            sleep(300).then(() => { $('#prompt').css('display', 'none'); });
+            sleep(300).then(() => { $('#prompt').css('display', 'none'); settings.faq = 0; });
          }
       }
 
@@ -190,7 +188,7 @@ Promise.all(pathing).then((response) => {
    $('body').on('mouseout', '.flightpath, .objective, .travel, .hub, .quest', () => { $('#tooltip').css('display', 'none'); });
 });
 
-// PRELOAD BACKGROUNDS FOR ALL ZONES
+// WHEN PRELOAD BUTTON IS PRESSED
 $('#preload').on('click', () => {
 
    // MAKE SURE PRELOAD HASNT BEEN PERFORMED ALREADY
@@ -201,4 +199,17 @@ $('#preload').on('click', () => {
       preload();
 
    } else { log('Preload has already been performed'); }
+});
+
+// WHEN FAQ BUTTON IS PRESSED
+$('#faq').on('click', () => {
+
+   // CHECK FAQ STATUS
+   if (settings.faq == 0) {
+
+      // CHANGE FAQ STATUS & RENDER THE SELECTOR IN
+      settings.faq = 1;
+      faq();
+
+   } else { log('FAQ has already been performed'); }
 });
