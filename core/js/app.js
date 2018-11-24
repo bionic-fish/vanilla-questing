@@ -77,9 +77,6 @@ var pathing = [
    $.getJSON('../data/75-plaguelands.json')
 ];
 
-// PRELOAD ZONE BACKGROUNDS
-//preload_zones();
-
 // SETTINGS OBJECT
 var settings = {
    'localstorage': 'questing-page',
@@ -193,7 +190,7 @@ Promise.all(pathing).then((response) => {
    $('body').on('mouseout', '.flightpath, .objective, .travel, .hub, .quest', () => { $('#tooltip').css('display', 'none'); });
 });
 
-// WHEN THE SETTINGS LINK IS CLICKED
+// PRELOAD BACKGROUNDS FOR ALL ZONES
 $('#preload').on('click', () => {
 
    // MAKE SURE PRELOAD HASNT BEEN PERFORMED ALREADY

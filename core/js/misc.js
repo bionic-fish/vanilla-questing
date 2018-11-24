@@ -201,6 +201,9 @@ function quests(data, current) {
 // PRELOAD EVERY ZONES BACKGROUND
 function preload() {
 
+   $('#preload').attr('id', 'disabled');
+   $('#disabled').text('Backgrounds Loaded');
+
    // PUSH IN SPINNING SELECTOR
    $('#loading #inner #box').html('<div id="remove-me"><div class="lds-css ng-scope"><div style="width:100%;height:100%" class="lds-rolling"><div></div></div></div></div>');
 
@@ -268,10 +271,12 @@ function preload() {
       Promise.all(promises).then(() => {
 
          // LOG THAT THE TASK IS DONE
-         log('loading done!');
+         log('Preload complete!');
 
+         // GRADUALLY TURN OFF OPACITY
          $('#loading').css('opacity', '0');
          
+         // WAIT 200MS - THEN OFF LOADING SELECTOR & REMOVE THE ANIMATION ENTIRELY
          sleep(200).then(() => {
             $('#loading').css('display', 'none');
             $('#remove-me').remove();
