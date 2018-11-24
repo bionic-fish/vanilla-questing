@@ -154,9 +154,11 @@ function mouseover(event, data) {
       offset: 5
    }
 
+   // TOOLTIP PADDING DOESNT WORK IN FIREFOX??
+
    // POSITION THE TOOLTIP CORRECTLY
-   var x = event.target.x - (tooltip.width / 2);
-   var y = event.target.y - (tooltip.height + (tooltip.offset + (2 * tooltip.padding)));
+   var x = event.clientX - (tooltip.width / 2);
+   var y = event.clientY - (tooltip.height + (tooltip.offset + (2 * 5)));
 
    // EXECUTE CSS CHANGES & SHOW THE DATA
    $('#tooltip').css('left', x);
