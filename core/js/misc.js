@@ -266,7 +266,7 @@ function promisify(zone) {
       // CREATE NEW IMAGE OBJECT OF A ZONE
       var img = new Image();
       img.id = zone;
-      img.src = 'http://www.vanilla-questing.me/interface/img/maps/' + zone + '.png';
+      img.src = 'interface/img/maps/' + zone + '.png';
 
       // APPEND IT TO THE CONTAINER
       $('#bg-load').append(img);

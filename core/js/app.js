@@ -78,7 +78,7 @@ var pathing = [
 ];
 
 // PRELOAD ZONE BACKGROUNDS
-preload_zones();
+//preload_zones();
 
 // SETTINGS OBJECT
 var settings = {
@@ -188,8 +188,8 @@ Promise.all(pathing).then((response) => {
    });
 
    // SHOW/HIDE TOOLTIP ON MOUSEOVER/MOUSEOUT
-   $('body').on('mouseover', 'img', (event) => { mouseover(event, data); });
-   $('body').on('mouseout', 'img', () => { $('#tooltip').css('display', 'none'); });
+   $('body').on('mouseover', '.flightpath, .objective, .travel, .hub, .quest', (event) => { mouseover(event, data); });
+   $('body').on('mouseout', '.flightpath, .objective, .travel, .hub, .quest', () => { $('#tooltip').css('display', 'none'); });
 });
 
 // WHEN THE SETTINGS LINK IS CLICKED

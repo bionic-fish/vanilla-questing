@@ -2,7 +2,7 @@
    "path": [
       {
          "zone": "elwynn",
-         "experience": 5.1,
+         "experience": 5.46,
          "waypoints": [
             {
                "coords": { "x": 49, "y": 42 },
@@ -153,7 +153,7 @@
             {
                "coords": { "x": 42, "y": 66 },
                "header": "Goldshire",
-               "ends": ["Gold Dust Exchange", "The Fargomine Deep", "Kobold Candles", "Note to William"],
+               "ends": ["Gold Dust Exchange", "The Fargodeep Mine", "Kobold Candles", "Note to William"],
                "starts": ["Further Concerns", "The Jasperlode Mine", "Collecting Kelp", "Shipment to Stormwind"],
                "objectives": [],
                "type": "hub"
@@ -168,10 +168,10 @@
             },
             {
                "coords": { "x": 61, "y": 52 },
-               "header": "Fargomine Deep",
+               "header": "Jasperlode Mine",
                "ends": [],
                "starts": [],
-               "objectives": ["The Fargomine Deep"],
+               "objectives": ["The Jasperlode Mine"],
                "type": "objective"
             },
             {
