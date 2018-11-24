@@ -198,66 +198,85 @@ function quests(data, current) {
    $('#quests #inner').html(str);
 }
 
-function preload_zones() {
+// PRELOAD EVERY ZONES BACKGROUND
+function preload() {
 
-   // ALL THE ZONES & DECLARE PROMISE ARRAY
-   var zones = [
-      'alterac',
-      'arathi',
-      'ashenvale',
-      'azshara',
-      'badlands',
-      'barrens',
-      'blasted',
-      'darkshore',
-      'darnassus',
-      'deadwind',
-      'desolace',
-      'duskwood',
-      'dustwallow',
-      'elwynn',
-      'epl',
-      'farmfarmfarm',
-      'felwood',
-      'feralas',
-      'hillsbrad',
-      'hinterlands',
-      'ironforge',
-      'loch',
-      'moonglade',
-      'morogh',
-      'needles',
-      'redridge',
-      'searing',
-      'steppes',
-      'stonetalon',
-      'stormwind',
-      'stv',
-      'swamp',
-      'tanaris',
-      'teldrassil',
-      'tirisfal',
-      'ungoro',
-      'westfall',
-      'wetlands',
-      'winterspring',
-      'wpl'
-   ];
+   // PUSH IN SPINNING SELECTOR
+   $('#loading #inner #box').html('<div id="remove-me"><div class="lds-css ng-scope"><div style="width:100%;height:100%" class="lds-rolling"><div></div></div></div></div>');
 
-   // PROMISE CONTAINER
-   var promises = [];
+   // TURN THE DISPLAY PROPERTY ON
+   $('#loading').css('display', 'table');
 
-   // MAKE A PROMISE FOR EACH ZONE & PUSH IT TO THE CONTAINER
-   zones.forEach(zone => {
-      var promise = promisify(zone);
-      promises.push(promise);
-   });
+   // WAIT 50MS BEFORE GRADUALLY TURNING OPACITY ON -- TO SMOOTHEN TRANSITION
+   sleep(50).then(() => {
+      $('#loading').css('opacity', '1');
 
-   // WAIT FOR ALL PROMISES TO BE RESOLVED
-   Promise.all(promises).then(() => {
+      // ALL THE ZONES & DECLARE PROMISE ARRAY
+      var zones = [
+         'alterac',
+         'arathi',
+         'ashenvale',
+         'azshara',
+         'badlands',
+         'barrens',
+         'blasted',
+         'darkshore',
+         'darnassus',
+         'deadwind',
+         'desolace',
+         'duskwood',
+         'dustwallow',
+         'elwynn',
+         'epl',
+         'farmfarmfarm',
+         'felwood',
+         'feralas',
+         'hillsbrad',
+         'hinterlands',
+         'ironforge',
+         'loch',
+         'moonglade',
+         'morogh',
+         'needles',
+         'redridge',
+         'searing',
+         'steppes',
+         'stonetalon',
+         'stormwind',
+         'stv',
+         'swamp',
+         'tanaris',
+         'teldrassil',
+         'tirisfal',
+         'ungoro',
+         'westfall',
+         'wetlands',
+         'winterspring',
+         'wpl'
+      ];
 
-      // LOG THAT THE TASK IS DONE
-      log('loading done!');
+      // PROMISE CONTAINER
+      var promises = [];
+
+      // MAKE A PROMISE FOR EACH ZONE & PUSH IT TO THE CONTAINER
+      zones.forEach(zone => {
+         var promise = promisify(zone);
+         promises.push(promise);
+      });
+
+      // WAIT FOR ALL PROMISES TO BE RESOLVED
+      Promise.all(promises).then(() => {
+
+         // LOG THAT THE TASK IS DONE
+         log('loading done!');
+
+         $('#loading').css('opacity', '0');
+         
+         sleep(200).then(() => {
+            $('#loading').css('display', 'none');
+            $('#remove-me').remove();
+         });
+      });
    });
 }
 
@@ -271,9 +290,9 @@ function promisify(zone) {
       img.src = 'interface/img/maps/' + zone + '.png';
 
       // APPEND IT TO THE CONTAINER
-      $('#bg-load').append(img);
+      $('#preload-container').append(img);
 
       // RESOLVE AFTER ITS DONE LOADING
-      $('#bg-load #' + zone).on('load', () => { resolve(); })
+      $('#preload-container #' + zone).on('load', () => { resolve(); })
    });
 }

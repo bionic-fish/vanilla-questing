@@ -2,13 +2,13 @@
    <meta charset="utf-8">
    <title>Vanilla Questing</title>
    <link rel="stylesheet" href="interface/styles.css" type="text/css">
+   <link rel="stylesheet" href="interface/loading.css" type="text/css">
    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
    <script defer src="core/js/misc.js"></script>
    <script defer src="core/js/app.js"></script>
 </head>
 <body>
-   <img id="bg-loader">
-   <div id="prompt"><div id="inner"><div id="box"><div id="inner">foo</div></div></div></div>
+   <div id="loading"><div id="inner"><div id="box"></div></div></div>
    <div id="wrapper"><div id="inner">
       <div id="menu"><span id="blocks">0</span> Blocks, <span id="wps">0</span> Waypoints, <span id="qs">0</span> Quests</div>
       <div id="innerbody">
@@ -16,8 +16,8 @@
          <div id="map"></div>
          <div id="footer"><div id="inner"><input type="range" id="range" min="0" step="1"></div></div>
       </div>
-      <div id="menu">Use <span>A</span> and <span>D</span> to move | Use the <span>scroller</span> to jump | Progress is <span>stored</span> locally</div>
+      <div id="menu">Use <span>A</span> and <span>D</span> to move | Use the <span>scroller</span> to jump | Progress is <span>stored</span> locally | <span id="preload">Preload Backgrounds</span></div>
    </div></div>
    <div id="tooltip"></div>
-   <div id="bg-load"></div>
+   <div id="preload-container"></div>
 </body>

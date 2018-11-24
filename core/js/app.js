@@ -86,7 +86,8 @@ var settings = {
    'cooldown': {
       'status': false,
       'timer': 500
-   }
+   },
+   'preloaded': 0
 }
 
 // DECLARE DATA OBJECT
@@ -193,11 +194,14 @@ Promise.all(pathing).then((response) => {
 });
 
 // WHEN THE SETTINGS LINK IS CLICKED
-$('#settings').on('click', () => {
+$('#preload').on('click', () => {
 
-   // TURN THE DISPLAY PROPERTY ON
-   $('#prompt').css('display', 'table');
+   // MAKE SURE PRELOAD HASNT BEEN PERFORMED ALREADY
+   if (settings.preloaded == 0) {
+      
+      // CHANGE PRELOAD STATUS & PERFORM THE ACTION
+      settings.preloaded = 1;
+      preload();
 
-   // WAIT 50MS BEFORE GRADUALLY TURNING OPACITY ON -- TO SMOOTHEN TRANSITION
-   sleep(50).then(() => { $('#prompt').css('opacity', '1'); });
+   } else { log('Preload has already been performed'); }
 });

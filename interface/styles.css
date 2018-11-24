@@ -171,28 +171,41 @@ input[type=range]::-moz-range-track {
    background: transparent;
 }
 
-#prompt {
+#loading {
    background: url('img/dark.png');
    position: absolute;
+   height: 100%;
+   width: 100%;
    z-index: 2;
    display: none;
    opacity: 0;
    transition: 0.3s;
 }
 
-#prompt #inner #box {
-   background: url('img/dark.png');
-   padding: 5px;
+#loading #inner {
    margin: auto;
-   width: fit-content;
+   display: table-cell;
+   vertical-align: middle;
+   height: 100%;
+   width: 100%;
 }
 
-#prompt #inner #box #inner {
-   background: url('img/inner-bg.png');
-   padding: 10px;
-   width: 400px;
+#loading #inner #box {
+   width: 60px;
+   height: 60px;
+   margin: auto;
 }
 
-#bg-load {
+#preload:hover {
+   color: white;
+   cursor: pointer;
+}
+
+#preload-container {
    display: none;
+}
+
+#preload-container img {
+   width: 1px;
+   height: 1px;
 }
