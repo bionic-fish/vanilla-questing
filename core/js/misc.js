@@ -201,9 +201,6 @@ function quests(data, current) {
 // PRELOAD EVERY ZONES BACKGROUND
 function preload() {
 
-   $('#preload').attr('id', 'disabled');
-   $('#disabled').text('Backgrounds Loaded');
-
    // PUSH IN SPINNING SELECTOR
    $('#loading #inner #box').html('<div id="remove-me"><div class="lds-css ng-scope"><div style="width:100%;height:100%" class="lds-rolling"><div></div></div></div></div>');
 
@@ -269,6 +266,10 @@ function preload() {
 
       // WAIT FOR ALL PROMISES TO BE RESOLVED
       Promise.all(promises).then(() => {
+
+         // CHANGE PRELOAD BUTTONS TEXT & COLOR
+         $('#preload').attr('id', 'disabled');
+         $('#disabled').text('Backgrounds Loaded');
 
          // LOG THAT THE TASK IS DONE
          log('Preload complete!');
