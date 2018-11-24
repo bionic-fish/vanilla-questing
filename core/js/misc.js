@@ -241,9 +241,11 @@ function preload_zones() {
       'winterspring',
       'wpl'
    ];
+
+   // PROMISE CONTAINER
    var promises = [];
 
-   // MAKE A PROMISE FOR EACH ZONE
+   // MAKE A PROMISE FOR EACH ZONE & PUSH IT TO THE CONTAINER
    zones.forEach(zone => {
       var promise = promisify(zone);
       promises.push(promise);
@@ -252,15 +254,13 @@ function preload_zones() {
    // WAIT FOR ALL PROMISES TO BE RESOLVED
    Promise.all(promises).then(() => {
 
-      // LOG OUT MSG & REMOVE SELECTOR
+      // LOG THAT THE TASK IS DONE
       log('loading done!');
-      $('#bg-load').remove();
    });
 }
 
 // GENERATE A PROMISE
 function promisify(zone) {
-
    return new Promise((resolve, reject) => {
 
       // CREATE NEW IMAGE OBJECT OF A ZONE
@@ -274,5 +274,4 @@ function promisify(zone) {
       // RESOLVE AFTER ITS DONE LOADING
       $('#bg-load #' + zone).on('load', () => { resolve(); })
    });
-
 }
