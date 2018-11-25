@@ -91,6 +91,9 @@ var settings = {
 // DECLARE DATA OBJECT
 var data = {}
 
+// PREPEND IN PROMPT SELECTOR
+$('body').prepend('<div id="prompt"><div id="prompt-inner"></div></div>');
+
 // WAIT FOR EVERYTHING TO RESPOND
 Promise.all(pathing).then((response) => {
 

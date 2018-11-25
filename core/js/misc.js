@@ -111,11 +111,13 @@ function render(data, settings, ref) {
       // APPEND AN SVG ONTOP OF THE BACKGROUND & THE WAYPOINT LINES
       $('#map').append('<svg>' + lines + '</svg>');
 
-      // APPEND IN THE BLOCK NUMBER
-      $('#map').append('<span id="block-num">#' + data.current + '</span>');
+      // MAP ASSIST SELECTORS
+      var block_num = '<span id="block-num">#' + data.current + '</span>';
+      var legend = '<span id="show-legend">Map Legend</span><div id="tooltip"></div>';
+      var tooltip = '<div id="tooltip"></div>';
 
-      // APPEND IN MAP LEGEND
-      $('#map').append('<span id="show-legend">Map Legend</span>');
+      // APPEND THEM IN
+      $('#map').append(block_num + legend + tooltip);
 
       // GRADUALLY TURN OPACITY ON AFTER EVERYTHING ELSE IS DONE
       $('#map').css('opacity', 1);
@@ -149,20 +151,14 @@ function mouseover(event, data) {
    // RENDER IN WAYPOINT DATA
    $('#tooltip').html(header + ends + starts + objectives);
 
-   // TOOLTIP PROPERTIES
-   var tooltip = {
-      width: parseFloat($('#tooltip').css('width')),
-      height: parseFloat($('#tooltip').css('height')),
-      padding: parseInt($('#tooltip').css('padding')[0]),
-      offset: 5
-   }
+   var height = parseFloat($('#tooltip').css('height'));
+   var width = parseFloat($('#tooltip').css('width'));
+   var offset = 15;
 
-   // TOOLTIP PADDING DOESNT WORK IN FIREFOX??
-
-   // POSITION THE TOOLTIP CORRECTLY
-   var x = event.clientX - (tooltip.width / 2);
-   var y = event.clientY - (tooltip.height + (tooltip.offset + (2 * 5)));
-
+   // CALCULATE COORDS  
+   var x = event.target.offsetParent.offsetLeft - (width / 2);
+   var y = event.target.offsetParent.offsetTop - (height + offset);
+   
    // EXECUTE CSS CHANGES & SHOW THE DATA
    $('#tooltip').css('left', x);
    $('#tooltip').css('top', y);
@@ -261,6 +257,9 @@ function preload() {
       // PROMISE CONTAINER
       var promises = [];
 
+      // APPEND IN PRELOAD CONTAINER
+      $('body').append('<div id="preload-container"></div>');
+
       // MAKE A PROMISE FOR EACH ZONE & PUSH IT TO THE CONTAINER
       zones.forEach(zone => { promises.push(promisify(zone)); });
 
@@ -309,61 +308,41 @@ function faq() {
    // TURN THE DISPLAY PROPERTY ON FOR THE PARENT SELECTOR
    $('#prompt').css('display', 'table');
 
-   // GENERATE SELECTOR
+   // QUESTIONS & ANSWERS
+   var questions = [
+      ['Is the route based on someone elses work?', 'No'],
+      ['Is it final/perfect?', 'No, but very easy to modify'],
+      ['Would I like to collaborate?', 'Absolutely'],
+      ['Will you route for non-humans?', 'Yes'],
+      ['Will there be a horde version?', 'Yes, probably during xmas'],
+      ['How about dungeon "quest run" guides?', 'Yes, likely in short video format'],
+      ['Do I want feedback/suggestions?', 'Yes, it\'s essential'],
+      ['Both mechanical and game related?', 'Yes'],
+      ['Can I view the suggestion queue?', 'Yes, check the todo list'],
+      ['Will this require a login?', 'No, everything runs locally'],
+      ['My question wasn\'t answered!', 'Try the <a href="https://www.reddit.com/r/classicwow/comments/9zxi0v/inbrowser_160_questing_guide_for_classic/?" target="_blank">Reddit Thread</a>'],
+      ['How do I get in touch?', 'Strafir#9133 on <a href="https://discord.gg/classicwow" target="_blank">Discord</a>']
+   ]
+
+   // GENERATE FAQ SELECTOR
    var faq = `
       <div id="faq">
       <div id="title">Frequently Asked Questions</div>
       <div id="content">
-         <div id="question">
-            <div id="left">Is the route based on someone elses work?</div>
-            <div id="right">No</div>
-         </div>
-         <div id="question">
-            <div id="left">Is it final/perfect?</div>
-            <div id="right">No, but very easy to modify</div>
-         </div>
-         <div id="question">
-            <div id="left">Would I like to collaborate?</div>
-            <div id="right">Absolutely</div>
-         </div>
-         <div id="question">
-            <div id="left">Will you route for non-humans?</div>
-            <div id="right">Yes</div>
-         </div>
-         <div id="question">
-            <div id="left">Will there be a horde version?</div>
-            <div id="right">Yes, probably during xmas</div>
-         </div>
-         <div id="question">
-            <div id="left">How about dungeon "quest run" guides?</div>
-            <div id="right">Yes, likely in short video format</div>
-         </div>
-         <div id="question">
-            <div id="left">Do I want feedback/suggestions?</div>
-            <div id="right">Yes, it's essential</div>
-         </div>
-         <div id="question">
-            <div id="left">Both mechanical and game related?</div>
-            <div id="right">Yes</div>
-         </div>
-         <div id="question">
-            <div id="left">Can I view the suggestion queue?</div>
-            <div id="right">Yes, check the todo list</div>
-         </div>
-         <div id="question">
-            <div id="left">Will this require a login?</div>
-            <div id="right">No, everything runs locally</div>
-         </div>
-         <div id="question">
-            <div id="left">My question wasn't answered!</div>
-            <div id="right">Try the <a href="https://www.reddit.com/r/classicwow/comments/9zxi0v/inbrowser_160_questing_guide_for_classic/?" target="_blank">Reddit Thread</a></div>
-         </div>
-         <div id="question">
-            <div id="left">How do I get in touch?</div>
-            <div id="right">Strafir#9133 on <a href="https://discord.gg/classicwow" target="_blank">Discord</a></div>
-         </div>
-      </div></div>
    `;
+
+   // LOOP THROUGH QUESTIONS
+   questions.forEach(row => {
+      faq += `
+         <div id="question">
+            <div id="left">` + row[0] + `</div>
+            <div id="right">` + row[1] + `</div>
+         </div>
+      `;
+   });
+
+   // STITCH ON ENDING
+   faq += '</div></div>';
 
    // RENDER IT IN
    $('#prompt-inner').html(faq);
@@ -375,32 +354,33 @@ function faq() {
 // SHOW LEGEND
 function legend(event) {
 
-   var sel = `
-      <div id="legend"><div id="legend-inner">
-         <div id="wp">
-            <div id="left"><img src="interface/img/waypoints/blue.png"></div>
-            <div id="right">Central Hub</div>
-         </div>
-         <div id="wp">
-            <div id="left"><img src="interface/img/waypoints/yellow.png"></div>
-            <div id="right">Quest</div>
-         </div>
-         <div id="wp">
-            <div id="left"><img src="interface/img/waypoints/red.png"></div>
-            <div id="right">Objective</div>
-         </div>
-         <div id="wp">
-            <div id="left"><img src="interface/img/waypoints/green.png"></div>
-            <div id="right">Flightpath</div>
-         </div>
-         <div id="wp">
-            <div id="left"><img src="interface/img/waypoints/purple.png"></div>
-            <div id="right">Travel</div>
-         </div>
-      </div></div>
-   `;
+   // COLOR SCHEMES
+   var scheme = [
+      ['blue', 'Central Hub'],
+      ['yellow', 'Quest'],
+      ['red', 'Objective'],
+      ['green', 'Flightpath'],
+      ['purple', 'Travel'],
+   ];
 
-   $('#map').append(sel);
+   // GENERATE LEGEND SELECTOR
+   var legend = '<div id="legend"><div id="legend-inner">';
+
+   // LOOP THROUGH SCHEMES
+   scheme.forEach(row => {
+      legend += `
+         <div id="wp">
+            <div id="left"><img src="interface/img/waypoints/` + row[0] + `.png"></div>
+            <div id="right">` + row[1] + `</div>
+         </div>
+      `;
+   });
+
+   // STICH ON ENDING
+   legend += '</div></div>';
+
+   // APPEND THE SELECTOR IN
+   $('#map').append(legend);
 
    // INFO BOX HEIGHT & TRIGGER BOX WIDTH
    var height = parseFloat($('#legend').css('height'));
