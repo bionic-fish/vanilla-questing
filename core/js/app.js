@@ -207,7 +207,7 @@ $('#faq').on('click', () => {
    // CHECK FAQ STATUS
    if (settings.faq == 0) {
 
-      // CHANGE FAQ STATUS & RENDER THE SELECTOR IN
+      // CHANGE FAQ STATUS & RENDER FAQ WINDOW IN
       settings.faq = 1;
       faq();
 

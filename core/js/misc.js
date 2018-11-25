@@ -304,7 +304,60 @@ function promisify(zone) {
 function faq() {
 
    // GENERATE SELECTOR
-   var faq = '<div id="faq"><div id="faq-inner">Soon my dudes.. Esc to exit!<br><br><br></div></div>';
+   var faq = `
+      <div id="faq">
+      <div id="title">Frequently Asked Questions</div>
+      <div id="content">
+         <div id="question">
+            <div id="left">Is this based on someone elses work?</div>
+            <div id="right">No</div>
+         </div>
+         <div id="question">
+            <div id="left">Is it final/perfect?</div>
+            <div id="right">No, but very easy to modify</div>
+         </div>
+         <div id="question">
+            <div id="left">Would I like to collaborate?</div>
+            <div id="right">Absolutely</div>
+         </div>
+         <div id="question">
+            <div id="left">Will you route for non-humans?</div>
+            <div id="right">Yes</div>
+         </div>
+         <div id="question">
+            <div id="left">Will there be a horde version?</div>
+            <div id="right">Yes, probably during xmas</div>
+         </div>
+         <div id="question">
+            <div id="left">How about dungeon "quest run" guides?</div>
+            <div id="right">Yes, likely in short video format</div>
+         </div>
+         <div id="question">
+            <div id="left">Do I want feedback/suggestions?</div>
+            <div id="right">Yes, it's essential</div>
+         </div>
+         <div id="question">
+            <div id="left">Both mechanical and game related?</div>
+            <div id="right">Yes</div>
+         </div>
+         <div id="question">
+            <div id="left">Can I view the suggestion queue?</div>
+            <div id="right">Yes, check the todo list</div>
+         </div>
+         <div id="question">
+            <div id="left">Will this require a login?</div>
+            <div id="right">No, everything runs locally</div>
+         </div>
+         <div id="question">
+            <div id="left">My question wasn't answered!</div>
+            <div id="right">Try the <a href="https://www.reddit.com/r/classicwow/comments/9zxi0v/inbrowser_160_questing_guide_for_classic/?" target="_blank">Reddit Thread</a></div>
+         </div>
+         <div id="question">
+            <div id="left">How do I get in touch?</div>
+            <div id="right">Strafir#9133 on <a href="https://discord.gg/classicwow" target="_blank">Discord</a></div>
+         </div>
+      </div></div>
+   `;
 
    // RENDER IT IN
    $('#prompt-inner').html(faq);
@@ -313,9 +366,5 @@ function faq() {
    $('#prompt').css('display', 'table');
 
    // WAIT 50MS BEFORE GRADUALLY TURNING OPACITY ON -- TO SMOOTHEN TRANSITION
-   sleep(50).then(() => {
-      $('#prompt').css('opacity', '1');
-
-      // foo
-   });
+   sleep(50).then(() => { $('#prompt').css('opacity', '1'); });
 }
