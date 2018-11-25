@@ -213,3 +213,6 @@ $('#faq').on('click', () => {
 
    } else { log('FAQ has already been performed'); }
 });
+
+$('body').on('mouseover', '#show-legend', (event) => { legend(event); });
+$('body').on('mouseout', '#show-legend', () => { $('#legend').css('display', 'none'); });

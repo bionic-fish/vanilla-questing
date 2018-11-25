@@ -114,6 +114,9 @@ function render(data, settings, ref) {
       // APPEND IN THE BLOCK NUMBER
       $('#map').append('<span id="block-num">#' + data.current + '</span>');
 
+      // APPEND IN MAP LEGEND
+      $('#map').append('<span id="show-legend">Map Legend</span>');
+
       // GRADUALLY TURN OPACITY ON AFTER EVERYTHING ELSE IS DONE
       $('#map').css('opacity', 1);
    });
@@ -303,13 +306,16 @@ function promisify(zone) {
 // OPEN FAQ WINDOW
 function faq() {
 
+   // TURN THE DISPLAY PROPERTY ON FOR THE PARENT SELECTOR
+   $('#prompt').css('display', 'table');
+
    // GENERATE SELECTOR
    var faq = `
       <div id="faq">
       <div id="title">Frequently Asked Questions</div>
       <div id="content">
          <div id="question">
-            <div id="left">Is this based on someone elses work?</div>
+            <div id="left">Is the route based on someone elses work?</div>
             <div id="right">No</div>
          </div>
          <div id="question">
@@ -362,9 +368,50 @@ function faq() {
    // RENDER IT IN
    $('#prompt-inner').html(faq);
 
-   // TURN THE DISPLAY PROPERTY ON FOR THE PARENT SELECTOR
-   $('#prompt').css('display', 'table');
-
    // WAIT 50MS BEFORE GRADUALLY TURNING OPACITY ON -- TO SMOOTHEN TRANSITION
    sleep(50).then(() => { $('#prompt').css('opacity', '1'); });
+}
+
+// SHOW LEGEND
+function legend(event) {
+
+   var sel = `
+      <div id="legend"><div id="legend-inner">
+         <div id="wp">
+            <div id="left"><img src="interface/img/waypoints/blue.png"></div>
+            <div id="right">Central Hub</div>
+         </div>
+         <div id="wp">
+            <div id="left"><img src="interface/img/waypoints/yellow.png"></div>
+            <div id="right">Quest</div>
+         </div>
+         <div id="wp">
+            <div id="left"><img src="interface/img/waypoints/red.png"></div>
+            <div id="right">Objective</div>
+         </div>
+         <div id="wp">
+            <div id="left"><img src="interface/img/waypoints/green.png"></div>
+            <div id="right">Flightpath</div>
+         </div>
+         <div id="wp">
+            <div id="left"><img src="interface/img/waypoints/purple.png"></div>
+            <div id="right">Travel</div>
+         </div>
+      </div></div>
+   `;
+
+   $('#map').append(sel);
+
+   // INFO BOX HEIGHT & TRIGGER BOX WIDTH
+   var height = parseFloat($('#legend').css('height'));
+   var width = parseFloat($('#show-legend').css('width'));
+   var offset = 15;
+
+   var x = event.target.offsetLeft - (width / 2);
+   var y = event.target.offsetTop - (height + offset);
+
+   // EXECUTE CSS CHANGES & SHOW THE DATA
+   $('#legend').css('left', x);
+   $('#legend').css('top', y);
+   $('#legend').css('display', 'inline-block');
 }

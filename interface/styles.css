@@ -5,7 +5,6 @@ body {
    background: url('img/bg.png');
 	font: 13px 'Open Sans', verdana;
    color: #383838;
-   text-shadow: 1px 1px #242424;
    padding: 0px;
    margin: 0px;
 }
@@ -112,6 +111,17 @@ input[type=range]::-moz-range-track {
    padding: 4px 5px;
 }
 
+#show-legend {
+   background: url('img/darker.png');
+   color: white;
+   padding: 2px 4px;
+   position: absolute;
+   right: 5px;
+   bottom: 5px;
+   font-size: 12px;
+   cursor: help;
+}
+
 svg {
    width: 772px;
    height: 515px;
@@ -131,6 +141,7 @@ line {
    text-align: center;
    color: rgb(173, 173, 173);
    display: table;
+   text-shadow: 1px 1px #242424;
 }
 
 .menu #left, .menu #right {
@@ -196,6 +207,7 @@ line {
    padding-bottom: 2px;
    display: none;
    position: absolute;
+   text-shadow: 1px 1px #242424;
 }
 
 #tooltip .header, #tooltip .ends, #tooltip .starts, #tooltip .objectives {
@@ -207,6 +219,38 @@ line {
 #tooltip .ends { background: url('img/success.png'); }
 #tooltip .starts { background: url('img/caution.png'); }
 #tooltip .objectives { background: url('img/error.png'); }
+
+#legend {
+   background: url('img/dark.png');
+   width: 140px;
+   padding: 5px;
+   position: absolute;
+   display: none;
+}
+
+#legend-inner {
+   background: url('img/inner-bg.png');
+   text-shadow: 0px 0px #f1f1f1;
+   padding: 5px;
+}
+
+#wp {
+   background: url('img/success.png');
+   display: table;
+   width: 100%;
+}
+
+#wp #left, #wp #right {
+   display: table-cell;
+   width: auto;
+   padding: 5px;
+}
+
+#wp:nth-child(even) {
+   background: transparent;
+}
+
+#wp #right { text-align: right; }
 
 /* -- PROMPT STUFF -- */
 
@@ -252,7 +296,6 @@ line {
 
 #prompt-inner #content {
    background: url('img/inner-bg.png');
-   text-shadow: 0px 0px #f1f1f1;
    padding: 5px;
 }
 
