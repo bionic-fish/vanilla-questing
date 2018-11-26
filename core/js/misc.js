@@ -1,5 +1,3 @@
-var load_percent = 0;
-
 // SHORTHAND FOR CONSOLE LOGGING
 function log(stuff) { console.log(stuff); }
 
@@ -222,9 +220,6 @@ function preload() {
    // PUSH IN SPINNING SELECTOR
    $('#prompt-inner').html('<div id="loading"><div class="lds-css ng-scope"><div style="width:100%;height:100%" class="lds-rolling"><div></div></div></div></div>');
    
-   // APPEND IN LOADING BAR
-   $('#prompt-inner').append('<div id="loading-bar"><div id="loading-bar-inner"><div id="loading-bg">0 / 25</div></div></div>');
-
    // TURN THE DISPLAY PROPERTY ON
    $('#prompt').css('display', 'table');
 
@@ -323,20 +318,8 @@ function promisify(zone, bump) {
       $('#preload-container').append(img);
 
       // RESOLVE AFTER ITS DONE LOADING
-      $('#preload-container #' + zone).on('load', () => {
-         resolve( loading(bump) );
-      })
+      $('#preload-container #' + zone).on('load', () => { resolve(); })
    });
-}
-
-// LOADING BAR FUNCTIONALITY
-function loading(bump) {
-
-   // INCREMENT
-   load_percent += bump;
-
-   // RENDER NEW BG
-   $('#loading-bg').css('background-size', load_percent + '% auto');
 }
 
 // OPEN FAQ WINDOW

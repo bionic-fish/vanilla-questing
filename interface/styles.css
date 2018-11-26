@@ -317,26 +317,6 @@ line {
    height: 60px;
 }
 
-#prompt-inner #loading-bar {
-   background: url('img/dark.png');
-   width: 200px;
-   margin: 20px auto;
-   padding: 2px;
-}
-
-#prompt-inner #loading-bar-inner {
-   background: url('img/inner-bg.png');
-   padding: 2px;
-   text-align: center;
-}
-
-#loading-bg {
-   background: url('img/loading-bg.png');
-   transition: 0.2s;
-   background-size: 0%;
-   padding: 4px;
-}
-
 #prompt-inner #faq {
    background: url('img/dark.png');
    width: 610px;
