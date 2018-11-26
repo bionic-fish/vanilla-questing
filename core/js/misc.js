@@ -59,11 +59,10 @@ function render(data, settings, ref) {
    $('#map').css('opacity', 0);
 
    // RECALIBRATE NEW DATA PROGRESS & SET FOOTER BACKGROUND ACCORDINGLY
-   data.progress = (data.current / data.max) * 100;
+   data.progress = ((data.current / data.max) * 100).toFixed(5);
 
    // CORRECT WEIRD % WIDTH ISSUE
    var width_correction = ((data.progress / 100) * 763.5);
-
    $('#footer-inner').css('background-size', width_correction + 'px auto');
 
    // DECLARE INSTANCE TARGET
@@ -147,7 +146,7 @@ function mouseover(event, data) {
    var objectives = '';
 
    // GENERATE DIVS FOR FILLED PROPERTIES
-   if (waypoint.header != '') { header += '<div class="header">' + waypoint.header + '</div>'; }
+   if (waypoint.header != '') { header += '<div class="header"><div id="left">' + waypoint.header + '</div><div id="right">' + waypoint.coords.x + '.' + waypoint.coords.y + '</div></div>'; }
    waypoint.ends.forEach(quest_name => { ends += '<div class="ends">' + quest_name + '</div>'; });
    waypoint.starts.forEach(quest_name => { starts += '<div class="starts">' + quest_name + '</div>'; });
    waypoint.objectives.forEach(quest_name => { objectives += '<div class="objectives">' + quest_name + '</div>'; });
