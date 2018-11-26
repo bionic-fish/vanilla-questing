@@ -41,11 +41,13 @@ a:hover { color: rgb(175, 30, 30); }
 /* -- MAP HEADER & FOOTER -- */
 
 #header, #footer {
-   background: url('img/lighter.png');
+   background: url('img/header-bg.png');
    color: #CECECE;
    transition: .3s;
    text-shadow: 1px 1px #242424;
 }
+
+#footer { background: url('img/footer-bg.png'); }
 
 #footer-inner {
    background-image: url('img/progress-bg.png');
@@ -76,6 +78,7 @@ input {
 input[type=range]::-webkit-slider-thumb {
    -webkit-appearance: none;
    background: url('img/scroller-bg.png');
+   border: 0px solid black;
    height: 26px;
    width: 10px;
 }
@@ -300,8 +303,8 @@ line {
 #faq #title {
    background: url('img/dark.png');
    color: #F1F1F1;
-   padding: 8px;
-   margin-bottom: 5px;
+   padding: 6px;
+   margin-bottom: 2px;
    text-align: center;
 }
 
@@ -321,7 +324,7 @@ line {
 #question #left, #question #right {
    display: table-cell;
    width: auto;
-   padding: 8px;
+   padding: 6px;
    font-size: 13px;
 }
 
