@@ -6,6 +6,7 @@
          "waypoints": [
             {
                "coords": { "x": 66, "y": 62 },
+               "align": "right",
                "header": "Stormwind Flightpath",
                "ends": [],
                "starts": [],
@@ -30,6 +31,7 @@
             },
             {
                "coords": { "x": 55, "y": 12 },
+               "align": "top",
                "header": "Shoni the Silent",
                "ends": ["Speak with Shoni"],
                "starts": ["Underground Assault"],
@@ -38,6 +40,7 @@
             },
             {
                "coords": { "x": 65, "y": 21 },
+               "align": "bottom",
                "header": "Wilder Thistlenettle",
                "ends": [],
                "starts": ["Oh Brother...", "Collecting Memories"],
@@ -46,6 +49,7 @@
             },
             {
                "coords": { "x": 74, "y": 8 },
+               "align": "right",
                "header": "Brother Kristoff",
                "ends": ["Speaking of Fortitude"],
                "starts": ["Brother Paxton"],
@@ -54,6 +58,7 @@
             },
             {
                "coords": { "x": 79, "y": 46 },
+               "align": "right",
                "header": "Wu Shen",
                "ends": [],
                "starts": ["Yorus Barleybrew,"],
@@ -62,6 +67,7 @@
             },
             {
                "coords": { "x": 70, "y": 87 },
+               "align": "right",
                "header": "Stormwind Gates",
                "ends": [],
                "starts": [],
@@ -76,6 +82,7 @@
          "waypoints": [
             {
                "coords": { "x": 32, "y": 49 },
+               "align": "top",
                "header": "Stormwind Gates",
                "ends": [],
                "starts": [],
@@ -84,6 +91,7 @@
             },
             {
                "coords": { "x": 50, "y": 40 },
+               "align": "top",
                "header": "Brother Paxton",
                "ends": ["Brother Paxton"],
                "starts": ["Ink Supplies"],
@@ -100,6 +108,7 @@
             },
             {
                "coords": { "x": 65, "y": 70 },
+               "align": "top",
                "header": "Theocritus",
                "ends": [],
                "starts": ["A Watchful Eye"],
@@ -108,6 +117,7 @@
             },
             {
                "coords": { "x": 92, "y": 72 },
+               "align": "top",
                "header": "Redridge Border",
                "ends": [],
                "starts": [],

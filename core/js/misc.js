@@ -89,13 +89,27 @@ function render(data, settings, ref) {
       // ATTACH CORRECT ZONE MAP AS BACKGROUND
       $('#map').css('background', 'url("interface/img/maps/' + target.zone + '.png")');
 
+      // ARRAY OF WAYPOINT ALIGN COORDS
+      var align = {
+         left: { x: -20, y: -6 },
+         right: { x: 10, y: -6 },
+         top: { x: -5, y: -21 },
+         bottom: { x: -5, y: 10 }
+      }
+
       // LOOP THROUGH WAYPOINTS
       $.each(target.waypoints, (id, waypoint) => {
+
+         // SET DEFAULT POSITION FOR WAYPOINT NUMBER
+         var align_coords = align.left;
          
+         // IF A CUSTOM WAYPOINT IS REQUESTED
+         if (waypoint.align != undefined) { align_coords = align[waypoint.align]; }
+
          // CONSTRUCT WAYPOINT
          var wp = `
             <div class="waypoint" style="left: ` + waypoint.coords.x + `%; top: ` + waypoint.coords.y + `%;">
-               <img src="interface/img/waypoints/space.png" class="` + waypoint.type + `" wp="` + id + `">
+               <img src="interface/img/waypoints/space.png" class="` + waypoint.type + `" wp="` + id + `"><span id="waypoint-num" style="left: ` + align_coords.x + `;top: ` + align_coords.y + `"><img src="interface/img/numbers/` + (id + 1) + `.png"></span>
             </div>
          `;
 

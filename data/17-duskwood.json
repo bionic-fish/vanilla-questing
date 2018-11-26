@@ -6,6 +6,7 @@
          "waypoints": [
             {
                "coords": { "x": 78, "y": 44 },
+               "align": "bottom",
                "header": "Duskwood Flightpath",
                "ends": [],
                "starts": [],
@@ -14,6 +15,7 @@
             },
             {
                "coords": { "x": 74, "y": 47 },
+               "align": "bottom",
                "header": "Darkshire",
                "ends": ["The Legend of Stalvan P1"],
                "starts": ["The Night Watch P1", "Seasoned Wolf Kabobs", "Raven Hill", "Deliveries to Sven", "The Hermit", "The Totem of Infliction", "The Legend of Stalvan P1", "The Legend of Stalvan P2"],
@@ -22,6 +24,7 @@
             },
             {
                "coords": { "x": 45, "y": 67 },
+               "align": "bottom",
                "header": "Watcher Dodds",
                "ends": [],
                "starts": ["Eight-Legged Menaces"],
@@ -30,6 +33,7 @@
             },
             {
                "coords": { "x": 19, "y": 58 },
+               "align": "bottom",
                "header": "Jitters",
                "ends": ["Raven Hill"],
                "starts": ["Jitters' Growling Gut"],
@@ -46,6 +50,7 @@
             },
             {
                "coords": { "x": 16, "y": 48 },
+               "align": "right",
                "header": "",
                "ends": [],
                "starts": [],
@@ -62,6 +67,22 @@
             },            
             {
                "coords": { "x": 12, "y": 31 },
+               "align": "top",
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Seasoned Wolf Kabobs", "Wolves at Out Heels"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "duskwood",
+         "experience": 0,
+         "waypoints": [           
+            {
+               "coords": { "x": 12, "y": 31 },
+               "align": "top",
                "header": "",
                "ends": [],
                "starts": [],
@@ -70,6 +91,7 @@
             },
             {
                "coords": { "x": 22, "y": 27 },
+               "align": "top",
                "header": "",
                "ends": [],
                "starts": [],
@@ -78,6 +100,7 @@
             },
             {
                "coords": { "x": 28, "y": 31 },
+               "align": "right",
                "header": "Abercrombie",
                "ends": ["The Hermit"],
                "starts": ["Supplies from Darkshirem"],
@@ -86,20 +109,7 @@
             },
             {
                "coords": { "x": 26, "y": 35 },
-               "header": "",
-               "ends": [],
-               "starts": [],
-               "objectives": ["The Totem of Infliction"],
-               "type": "objective"
-            }
-         ]
-      },
-      {
-         "zone": "duskwood",
-         "experience": 24.87,
-         "waypoints": [
-            {
-               "coords": { "x": 26, "y": 35 },
+               "align": "bottom",
                "header": "",
                "ends": [],
                "starts": [],
@@ -108,6 +118,7 @@
             },
             {
                "coords": { "x": 8, "y": 34 },
+               "align": "bottom",
                "header": "The Hushed Bank",
                "ends": ["Wolves at Out Heels"],
                "starts": [],
@@ -116,6 +127,7 @@
             },
             {
                "coords": { "x": 3, "y": 36 },
+               "align": "bottom",
                "header": "Westfall Border",
                "ends": [],
                "starts": [],
@@ -130,6 +142,7 @@
          "waypoints": [
             {
                "coords": { "x": 64, "y": 42 },
+               "align": "top",
                "header": "Duskwood Border",
                "ends": [],
                "starts": [],
@@ -146,6 +159,7 @@
             },
             {
                "coords": { "x": 67, "y": 63 },
+               "align": "bottom",
                "header": "Duskwood Border",
                "ends": [],
                "starts": [],
@@ -160,6 +174,7 @@
          "waypoints": [
             {
                "coords": { "x": 9, "y": 64 },
+               "align": "top",
                "header": "Westfall Border",
                "ends": [],
                "starts": [],
@@ -167,7 +182,17 @@
                "type": "travel"
             },
             {
+               "coords": { "x": 26, "y": 57 },
+               "align": "top",
+               "header": "Duskwood Road",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "travel"
+            },
+            {
                "coords": { "x": 45, "y": 67 },
+               "align": "top",
                "header": "Watcher Dodds",
                "ends": ["Eight-Legged Menaces"],
                "starts": [],
@@ -175,7 +200,17 @@
                "type": "quest"
             },
             {
+               "coords": { "x": 45, "y": 78 },
+               "align": "bottom",
+               "header": "Stranglethorn Road",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "travel"
+            },
+            {
                "coords": { "x": 50, "y": 78 },
+               "align": "bottom",
                "header": "Mound of Loose Dirt",
                "ends": ["Sven's Revenge"],
                "starts": ["Sven's Camp"],
@@ -184,6 +219,7 @@
             },
             {
                "coords": { "x": 74, "y": 47 },
+               "align": "right",
                "header": "Darkshire",
                "ends": ["Supplies from Darkshire", "Jitters' Growling Gut", "The Legend of Stalvan P3", "Dusky Crab Cakes"],
                "starts": ["Ghost Hair Thread", "Dusky Crab Cakes", "Return to Jitters", "The Legend of Stalvan P4"],
@@ -192,6 +228,7 @@
             },
             {
                "coords": { "x": 67, "y": 16 },
+               "align": "right",
                "header": "Duskwood Riverside",
                "ends": [],
                "starts": [],

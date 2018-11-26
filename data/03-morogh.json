@@ -14,6 +14,7 @@
             },
             {
                "coords": { "x": 68, "y": 55 },
+               "align": "bottom",
                "header": "Gol'Bolar Quarry",
                "ends": [],
                "starts": ["The Public Servant", "These Blasted Troggs"],
@@ -22,6 +23,7 @@
             },
             {
                "coords": { "x": 71, "y": 55 },
+               "align": "bottom",
                "header": "Gol'Bolar Quarry Mine",
                "ends": [],
                "starts": [],
@@ -36,6 +38,7 @@
          "waypoints": [
             {
                "coords": { "x": 71, "y": 55 },
+               "align": "bottom",
                "header": "Gol'Bolar Quarry Mine",
                "ends": [],
                "starts": [],
@@ -44,6 +47,7 @@
             },
             {
                "coords": { "x": 68, "y": 55 },
+               "align": "bottom",
                "header": "Gol'Bolar Quarry",
                "ends": ["The Public Servant", "These Blasted Troggs"],
                "starts": [],
@@ -90,6 +94,7 @@
             },
             {
                "coords": { "x": 84, "y": 39 },
+               "align": "right",
                "header": "Pilor Hammerfoot",
                "ends": [],
                "starts": ["The Lost Pilot"],
@@ -98,6 +103,7 @@
             },
             {
                "coords": { "x": 80, "y": 36 },
+               "align": "top",
                "header": "A Dwarven Corpse",
                "ends": ["The Lost Pilot"],
                "starts": ["A Pilot's Revenge"],
@@ -128,6 +134,7 @@
             },
             {
                "coords": { "x": 84, "y": 39 },
+               "align": "right",
                "header": "Pilor Hammerfoot",
                "ends": ["A Pilot's Revenge"],
                "starts": [],
@@ -136,6 +143,7 @@
             },
             {
                "coords": { "x": 85, "y": 29 },
+               "align": "right",
                "header": "Loch Modan Passageway",
                "ends": [],
                "starts": [],

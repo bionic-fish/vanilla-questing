@@ -113,6 +113,7 @@ input[type=range]::-moz-range-track {
    top: 5px;
    color: white;
    padding: 2px 4px;
+   pointer-events: none;
 }
 
 #show-legend {
@@ -183,6 +184,7 @@ line {
    cursor: help;
    width: 1px;
    height: 1px;
+   color: white;
 }
 
 .waypoint .quest,
@@ -200,6 +202,13 @@ line {
 .waypoint .objective { background: url('img/waypoints/red.png'); }
 .waypoint .flightpath { background: url('img/waypoints/green.png'); }
 .waypoint .hub { background: url('img/waypoints/blue.png'); }
+
+#waypoint-num {
+   background: url('img/dark.png');
+   position: absolute;
+   pointer-events: none;
+   padding: 1px;
+}
 
 /* -- TOOLTIP -- */
 
@@ -242,7 +251,6 @@ line {
 
 .header #right {
    text-align: right;
-   padding-left: 15px;
    padding-right: 5px;
 }
 

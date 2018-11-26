@@ -6,6 +6,7 @@
          "waypoints": [
             {
                "coords": { "x": 72, "y": 85 },
+               "align": "top",
                "header": "Duskwood Border",
                "ends": [],
                "starts": [],
@@ -22,6 +23,7 @@
             },
             {
                "coords": { "x": 50, "y": 40 },
+               "align": "top",
                "header": "Brother Paxton",
                "ends": ["Rethban Ore"],
                "starts": ["Return to Kristoff"],
@@ -44,6 +46,7 @@
          "waypoints": [
             {
                "coords": { "x": 70, "y": 87 },
+               "align": "right",
                "header": "Gates of Stormwind",
                "ends": [],
                "starts": [],
@@ -52,6 +55,7 @@
             },
             {
                "coords": { "x": 65, "y": 60 },
+               "align": "top",
                "header": "Felicia Gump",
                "ends": [],
                "starts": [],
@@ -60,6 +64,7 @@
             },
             {
                "coords": { "x": 53, "y": 60 },
+               "align": "bottom",
                "header": "Auction House",
                "ends": [],
                "starts": [],
@@ -68,6 +73,7 @@
             },
             {
                "coords": { "x": 46, "y": 38 },
+               "align": "top",
                "header": "Brother Kristoff",
                "ends": ["Return to Brother Kristoff"],
                "starts": [],
@@ -76,6 +82,7 @@
             },
             {
                "coords": { "x": 30, "y": 62 },
+               "align": "bottom",
                "header": "Caretaker Folsom",
                "ends": ["The Legend of Stalvan P5", "The Legend of Stalvan P6"],
                "starts": ["The Legend of Stalvan P6", "The Legend of Stalvan P7"],

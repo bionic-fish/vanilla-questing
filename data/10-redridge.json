@@ -6,6 +6,7 @@
          "waypoints": [
             {
                "coords": { "x": 8, "y": 72 },
+               "align": "bottom",
                "header": "Elwynn Border",
                "ends": [],
                "starts": [],
@@ -14,6 +15,7 @@
             },
             {
                "coords": { "x": 31, "y": 59 },
+               "align": "right",
                "header": "",
                "ends": ["Encroaching Gnolls"],
                "starts": ["Assessing the Threat"],
@@ -22,6 +24,7 @@
             },
             {
                "coords": { "x": 32, "y": 48 },
+               "align": "right",
                "header": "",
                "ends": ["Return to Verner", "Ink Supplies"],
                "starts": ["Rethban Ore", "The Lost Tools", "Underbelly Scales", "A Baying of Gnolls", "Blackrock Menace"],
@@ -30,6 +33,7 @@
             },
             {
                "coords": { "x": 27, "y": 44 },
+               "align": "top",
                "header": "",
                "ends": ["Messenger to Westfall", "Messenger to Darkshire", "Messenger to Stormwind", "Yorus Barleybrew", "Dry Times"],
                "starts": ["Selling Sunfish", "Murloc Poachers", "The Rethban Gauntlet"],
@@ -38,6 +42,7 @@
             },
             {
                "coords": { "x": 22, "y": 45 },
+               "align": "top",
                "header": "",
                "ends": ["Visit the Herbalist"],
                "starts": ["Delivering Daffodils", "An Unwelcome Guest", "Redridge Goulash"],
@@ -54,6 +59,7 @@
             },
             {
                "coords": { "x": 20, "y": 26 },
+               "align": "top",
                "header": "Rethban Caverns",
                "ends": [],
                "starts": [],
@@ -62,6 +68,7 @@
             },
             {
                "coords": { "x": 24, "y": 35 },
+               "align": "right",
                "header": "Redridge Canyons",
                "ends": [],
                "starts": [],
@@ -92,6 +99,7 @@
             },
             {
                "coords": { "x": 27, "y": 45 },
+               "align": "top",
                "header": "Lakeshire Inn",
                "ends": ["Delivering Daffodils", "The Rethban Gauntlet"],
                "starts": ["The Shieldsmith"],
@@ -100,6 +108,7 @@
             },
             {
                "coords": { "x": 31, "y": 47 },
+               "align": "top",
                "header": "Vernon Osgood",
                "ends": ["A Baying of Gnolls"],
                "starts": [],
@@ -116,6 +125,7 @@
             },
             {
                "coords": { "x": 39, "y": 55 },
+               "align": "right",
                "header": "Shawn",
                "ends": [],
                "starts": [],
@@ -132,6 +142,7 @@
             },
             {
                "coords": { "x": 34, "y": 69 },
+               "align": "top",
                "header": "",
                "ends": [],
                "starts": [],
@@ -145,9 +156,24 @@
                "starts": [],
                "objectives": ["Assessing the Threat"],
                "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "redridge",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 30, "y": 83 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Assessing the Threat"],
+               "type": "objective"
             },
             {
                "coords": { "x": 49, "y": 70 },
+               "align": "top",
                "header": "Lake Everstill",
                "ends": [],
                "starts": [],
@@ -156,6 +182,7 @@
             },
             {
                "coords": { "x": 59, "y": 77 },
+               "align": "bottom",
                "header": "",
                "ends": [],
                "starts": [],
@@ -164,6 +191,7 @@
             },
             {
                "coords": { "x": 72, "y": 78 },
+               "align": "bottom",
                "header": "Render's Valley",
                "ends": [],
                "starts": [],
@@ -177,7 +205,8 @@
          "experience": 21.42,
          "waypoints": [
             {
-               "coords": { "x": 27, "y": 45 },
+               "coords": { "x": 27, "y": 44 },
+               "align": "top",
                "header": "Lakeshire Inn",
                "ends": [],
                "starts": [],
@@ -193,17 +222,10 @@
                "type": "quest"
             },
             {
-               "coords": { "x": 28, "y": 47 },
-               "header": "Dockmaster Baren",
-               "ends": ["Selling Fish", "Murloc Poachers"],
-               "starts": [],
-               "objectives": [],
-               "type": "quest"
-            },
-            {
-               "coords": { "x": 31, "y": 47 },
-               "header": "Vernon Osgood",
-               "ends": ["Underbelly Scales"],
+               "coords": { "x": 30, "y": 47 },
+               "align": "top",
+               "header": "",
+               "ends": ["Selling Fish", "Murloc Poachers", "Underbelly Scales"],
                "starts": [],
                "objectives": [],
                "type": "quest"
@@ -218,6 +240,7 @@
             },
             {
                "coords": { "x": 31, "y": 60 },
+               "align": "bottom",
                "header": "Deputy Feldon",
                "ends": ["Assessing the Threat"],
                "starts": [],
@@ -226,6 +249,7 @@
             },
             {
                "coords": { "x": 33, "y": 49 },
+               "align": "right",
                "header": "",
                "ends": ["Blackrock Menace", "The Lost Tools"],
                "starts": ["The Everstill Bridge"],
@@ -234,6 +258,7 @@
             },
             {
                "coords": { "x": 39, "y": 32 },
+               "align": "right",
                "header": "",
                "ends": [],
                "starts": [],

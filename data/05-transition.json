@@ -6,6 +6,7 @@
          "waypoints": [
             {
                "coords": { "x": 52, "y": 72 },
+               "align": "right",
                "header": "Wetlands Passageway",
                "ends": [],
                "starts": [],
@@ -14,6 +15,7 @@
             },
             {
                "coords": { "x": 57, "y": 55 },
+               "align": "right",
                "header": "Wetlands Road",
                "ends": [],
                "starts": [],
@@ -22,6 +24,7 @@
             },
             {
                "coords": { "x": 44, "y": 38 },
+               "align": "top",
                "header": "Wetlands Road",
                "ends": [],
                "starts": [],
@@ -30,6 +33,7 @@
             },
             {
                "coords": { "x": 20, "y": 43 },
+               "align": "top",
                "header": "Wetlands Road",
                "ends": [],
                "starts": [],
@@ -38,6 +42,7 @@
             },
             {
                "coords": { "x": 9, "y": 60 },
+               "align": "bottom",
                "header": "Menethil Flightpath",
                "ends": [],
                "starts": [],
@@ -46,6 +51,7 @@
             },
             {
                "coords": { "x": 5, "y": 57 },
+               "align": "top",
                "header": "Menethil Harbor",
                "ends": [],
                "starts": [],

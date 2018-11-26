@@ -14,6 +14,7 @@
             },
             {
                "coords": { "x": 23, "y": 18 },
+               "align": "top",
                "header": "Mountaineer Stormpike",
                "ends": ["Stormpike's Delivery"],
                "starts": ["Filthy Paws", "Stormpike's Order"],
@@ -22,6 +23,7 @@
             },
             {
                "coords": { "x": 35, "y": 47 },
+               "align": "right",
                "header": "Thelsamar",
                "ends": [],
                "starts": ["Rat Catching", "Stormpike's Order", "Thelsamar Blood Sausages", "Honor Students"],
@@ -30,6 +32,7 @@
             },
             {
                "coords": { "x": 34, "y": 51 },
+               "align": "right",
                "header": "Loch Modan Flightpath",
                "ends": ["Honor Students"],
                "starts": ["Ride to Ironforge"],
@@ -52,6 +55,7 @@
             },
             {
                "coords": { "x": 51, "y": 26 },
+               "align": "top",
                "header": "Golnir Bouldertoe",
                "ends": ["Ride to Ironforge"],
                "starts": ["Gryth Thurden"],
@@ -60,6 +64,7 @@
             },
             {
                "coords": { "x": 56, "y": 48 },
+               "align": "right",
                "header": "Ironforge Flightpath",
                "ends": ["Gryth Thurden"],
                "starts": ["Return to Brock"],
@@ -74,6 +79,7 @@
          "waypoints": [
             {
                "coords": { "x": 34, "y": 51 },
+               "align": "right",
                "header": "Loch Modan Flightpath",
                "ends": [],
                "starts": [],
@@ -90,6 +96,7 @@
             },
             {
                "coords": { "x": 34, "y": 29 },
+               "align": "right",
                "header": "",
                "ends": [],
                "starts": [],
@@ -98,6 +105,7 @@
             },
             {
                "coords": { "x": 35, "y": 19 },
+               "align": "top",
                "header": "Silver Stream Mine",
                "ends": [],
                "starts": [],
@@ -106,6 +114,7 @@
             },
             {
                "coords": { "x": 23, "y": 18 },
+               "align": "top",
                "header": "Mountaineer Stormpike",
                "ends": ["Filthy Paws"],
                "starts": [],
@@ -128,6 +137,7 @@
             },
             {
                "coords": { "x": 35, "y": 47 },
+               "align": "right",
                "header": "Thelsamar",
                "ends": ["Rat Catching", "Thelsamar Blood Sausages", "Return to Brock"],
                "starts": [],
@@ -144,6 +154,7 @@
             },
             {
                "coords": { "x": 33, "y": 76 },
+               "align": "right",
                "header": "Stonesplinter Valley",
                "ends": [],
                "starts": [],
@@ -158,6 +169,7 @@
          "waypoints": [
             {
                "coords": { "x": 33, "y": 76 },
+               "align": "right",
                "header": "Stonesplinter Valley",
                "ends": [],
                "starts": [],
@@ -188,6 +200,7 @@
             },
             {
                "coords": { "x": 36, "y": 82 },
+               "align": "right",
                "header": "Valley of Kings",
                "ends": [],
                "starts": [],
@@ -202,6 +215,7 @@
          "waypoints": [
             {
                "coords": { "x": 36, "y": 82 },
+               "align": "right",
                "header": "Valley of Kings",
                "ends": [],
                "starts": [],

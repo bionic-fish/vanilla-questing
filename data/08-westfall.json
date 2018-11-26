@@ -6,6 +6,7 @@
          "waypoints": [
             {
                "coords": { "x": 57, "y": 53 },
+               "align": "bottom",
                "header": "Westfall Flightpath",
                "ends": [],
                "starts": [],
@@ -22,6 +23,7 @@
             },
             {
                "coords": { "x": 57, "y": 47 },
+               "align": "right",
                "header": "Sentinel Tower",
                "ends": ["Return to Lewis"],
                "starts": ["The People's Militia P1", "The Defias Brotherhood", "Patrolling Westfall"],
@@ -30,6 +32,7 @@
             },
             {
                "coords": { "x": 56, "y": 31 },
+               "align": "right",
                "header": "Saldean's Farm",
                "ends": [],
                "starts": ["The Killing Fields", "Goretusk Liver Pie", "Westfall Stew"],
@@ -38,6 +41,7 @@
             },
             {
                "coords": { "x": 60, "y": 19 },
+               "align": "top",
                "header": "The Jansen Stead",
                "ends": [],
                "starts": ["Poor Old Blanchy", "The Forgotten Heirloom"],
@@ -46,6 +50,7 @@
             },
             {
                "coords": { "x": 57, "y": 20 },
+               "align": "top",
                "header": "",
                "ends": [],
                "starts": [],
@@ -54,6 +59,7 @@
             },
             {
                "coords": { "x": 49, "y": 19 },
+               "align": "top",
                "header": "Furlbrow's Pumpin Farm",
                "ends": [],
                "starts": [],
@@ -75,9 +81,25 @@
                "starts": [],
                "objectives": ["The Killing Fields"],
                "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "westfall",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 45, "y": 36 },
+               "align": "top",
+               "header": "The Molsen Farm",
+               "ends": [],
+               "starts": [],
+               "objectives": ["The Killing Fields"],
+               "type": "objective"
             },
             {
                "coords": { "x": 42, "y": 45 },
+               "align": "right",
                "header": "",
                "ends": [],
                "starts": [],
@@ -102,6 +124,7 @@
             },
             {
                "coords": { "x": 30, "y": 50 },
+               "align": "bottom",
                "header": "",
                "ends": [],
                "starts": [],
@@ -111,6 +134,7 @@
             {
                "coords": { "x": 36, "y": 55 },
                "header": "",
+               "align": "bottom",
                "ends": [],
                "starts": [],
                "objectives": ["Humble Beginnings", "The Killing Fields"],
@@ -118,6 +142,7 @@
             },
             {
                "coords": { "x": 41, "y": 48 },
+               "align": "right",
                "header": "",
                "ends": ["Captain Sander's Hidden Treasure P2"],
                "starts": ["Captain Sander's Hidden Treasure P3"],
@@ -126,6 +151,7 @@
             },
             {
                "coords": { "x": 30, "y": 86 },
+               "align": "right",
                "header": "Captain Grayson",
                "ends": [],
                "starts": ["Keeper of the Flame", "The Coastal Menace", "The Coast Isn't Clear"],
@@ -148,6 +174,7 @@
             },
             {
                "coords": { "x": 57, "y": 47 },
+               "align": "top",
                "header": "Sentinel Tower",
                "ends": ["The People's Militia P1", "Patrolling Westfall"],
                "starts": ["The People's Militia P2"],
@@ -156,6 +183,7 @@
             },
             {
                "coords": { "x": 61, "y": 46 },
+               "align": "right",
                "header": "",
                "ends": [],
                "starts": [],
@@ -172,6 +200,7 @@
             },
             {
                "coords": { "x": 60, "y": 19 },
+               "align": "right",
                "header": "The Jansen Stead",
                "ends": ["Poor Old Blanchy", "The Forgotten Heirloom"],
                "starts": [],
@@ -180,6 +209,7 @@
             },
             {
                "coords": { "x": 45, "y": 9 },
+               "align": "top",
                "header": "",
                "ends": [],
                "starts": [],
@@ -188,6 +218,7 @@
             },
             {
                "coords": { "x": 41, "y": 17 },
+               "align": "right",
                "header": "",
                "ends": ["Captain Sander's Hidden Treasure P3"],
                "starts": ["Captain Sander's Hidden Treasure P4"],
@@ -196,6 +227,7 @@
             },
             {
                "coords": { "x": 26, "y": 17 },
+               "align": "top",
                "header": "",
                "ends": ["Captain Sander's Hidden Treasure P4"],
                "starts": [],
@@ -204,6 +236,7 @@
             },
             {
                "coords": { "x": 31, "y": 46 },
+               "align": "right",
                "header": "Gold Coast Quarry",
                "ends": [],
                "starts": [],
@@ -218,6 +251,7 @@
          "waypoints": [
             {
                "coords": { "x": 31, "y": 46 },
+               "align": "top",
                "header": "Gold Coast Quarry",
                "ends": [],
                "starts": [],
@@ -226,6 +260,7 @@
             },
             {
                "coords": { "x": 57, "y": 47 },
+               "align": "top",
                "header": "Sentinel Tower",
                "ends": ["The People's Militia P2"],
                "starts": ["The People's Militia P3"],
@@ -234,6 +269,7 @@
             },
             {
                "coords": { "x": 38, "y": 52 },
+               "align": "bottom",
                "header": "",
                "ends": [],
                "starts": [],
@@ -263,6 +299,21 @@
                "starts": [],
                "objectives": ["The Coastal Menace", "The Coast Isn't Clear", "Murloc Oracles"],
                "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "westfall",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 35, "y": 85 },
+               "align": "right",
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["The Coastal Menace", "The Coast Isn't Clear", "Murloc Oracles"],
+               "type": "objective"
             },
             {
                "coords": { "x": 30, "y": 86 },
@@ -274,6 +325,7 @@
             },
             {
                "coords": { "x": 37, "y": 80 },
+               "align": "top",
                "header": "The Dagger Hills",
                "ends": [],
                "starts": [],
@@ -282,6 +334,7 @@
             },
             {
                "coords": { "x": 45, "y": 80 },
+               "align": "right",
                "header": "Grimbooze Thunderbrew",
                "ends": ["Thunderbrew Lager"],
                "starts": ["Thunderbrew Lager"],
@@ -304,6 +357,7 @@
             },
             {
                "coords": { "x": 57, "y": 47 },
+               "align": "top",
                "header": "Sentinel Tower",
                "ends": ["The People's Militia P3"],
                "starts": [],
@@ -312,6 +366,7 @@
             },
             {
                "coords": { "x": 57, "y": 53 },
+               "align": "right",
                "header": "Westfall Flightpath",
                "ends": [],
                "starts": [],
@@ -326,6 +381,7 @@
          "waypoints": [
             {
                "coords": { "x": 31, "y": 59 },
+               "align": "right",
                "header": "Redridge Flightpath",
                "ends": [],
                "starts": [],
@@ -334,6 +390,7 @@
             },
             {
                "coords": { "x": 27, "y": 44 },
+               "align": "top",
                "header": "Lakeshire Inn",
                "ends": ["The Defian Brotherhood P1"],
                "starts": ["The Defian Brotherhood P2", "Dry Times", "A Free Lunch"],
@@ -342,6 +399,7 @@
             },
             {
                "coords": { "x": 30, "y": 44 },
+               "align": "top",
                "header": "Lakeshire Town Hall",
                "ends": [],
                "starts": ["Messenger to Westfall P1", "Messenger to Stormwind P1", "Messenger to Darkshire P1"],
@@ -350,6 +408,7 @@
             },
             {
                "coords": { "x": 31, "y": 47 },
+               "align": "right",
                "header": "Verner Osgood",
                "ends": [],
                "starts": ["The Price of Shoes"],
@@ -358,6 +417,7 @@
             },
             {
                "coords": { "x": 15, "y": 71 },
+               "align": "right",
                "header": "Guard Parker",
                "ends": ["A Free Lunch"],
                "starts": ["Visit the Herbalist", "Encroaching Gnolls"],
@@ -366,6 +426,7 @@
             },
             {
                "coords": { "x": 6, "y": 93 },
+               "align": "right",
                "header": "Duskwood Border",
                "ends": [],
                "starts": [],
@@ -380,6 +441,7 @@
          "waypoints": [
             {
                "coords": { "x": 94, "y": 11 },
+               "align": "bottom",
                "header": "Redridge Border",
                "ends": [],
                "starts": [],
@@ -396,6 +458,7 @@
             },
             {
                "coords": { "x": 74, "y": 47 },
+               "align": "bottom",
                "header": "Darkshire",
                "ends": ["Messenger to Darkshire P1"],
                "starts": ["Messenger to Darkshire P2"],
@@ -404,6 +467,7 @@
             },
             {
                "coords": { "x": 78, "y": 44 },
+               "align": "right",
                "header": "Duskwood Flightpath",
                "ends": [],
                "starts": [],
@@ -462,6 +526,7 @@
          "waypoints": [
             {
                "coords": { "x": 66, "y": 62 },
+               "align": "bottom",
                "header": "Stormwind Flightpath",
                "ends": [],
                "starts": [],
@@ -470,6 +535,7 @@
             },
             {
                "coords": { "x": 76, "y": 60 },
+               "align": "right",
                "header": "Master Mathias Shaw",
                "ends": ["The Defias Brotherhood P3"],
                "starts": ["The Defias Brotherhood P4"],
@@ -478,6 +544,7 @@
             },
             {
                "coords": { "x": 49, "y": 30 },
+               "align": "top",
                "header": "Baros Alexston",
                "ends": ["Humble Beginnings"],
                "starts": [],
@@ -494,6 +561,7 @@
             },
             {
                "coords": { "x": 52, "y": 68 },
+               "align": "bottom",
                "header": "Roberto Pupellyverbos",
                "ends": [],
                "starts": [],
@@ -502,6 +570,7 @@
             },
             {
                "coords": { "x": 64, "y": 75 },
+               "align": "bottom",
                "header": "General Marcus Jonathan",
                "ends": ["Messenger to Stormwind P1"],
                "starts": ["Messenger to Stormwind P2"],
@@ -538,6 +607,7 @@
          "waypoints": [
             {
                "coords": { "x": 57, "y": 53 },
+               "align": "right",
                "header": "Westfall Flightpath",
                "ends": [],
                "starts": [],
@@ -546,6 +616,7 @@
             },
             {
                "coords": { "x": 57, "y": 47 },
+               "align": "top",
                "header": "Sentinel Tower",
                "ends": ["The Defias Brotherhood P4"],
                "starts": ["The Defias Brotherhood P5"],
@@ -576,6 +647,7 @@
             },
             {
                "coords": { "x": 57, "y": 47 },
+               "align": "top",
                "header": "Sentinel Tower",
                "ends": ["The Defias Brotherhood P5"],
                "starts": ["The Defias Brotherhood P6"],
@@ -583,11 +655,11 @@
                "type": "quest"
             },
             {
-               "coords": { "x": 46, "y": 69 },
+               "coords": { "x": 45, "y": 64 },
                "header": "Moonbrook",
                "ends": [],
                "starts": [],
-               "objectives": ["The Defias Brotherhood P6"],
+               "objectives": ["The Defias Brotherhood P6", "Find the Defias Messenger"],
                "type": "objective"
             }
          ]
@@ -597,15 +669,16 @@
          "experience": 19.45,
          "waypoints": [
             {
-               "coords": { "x": 46, "y": 69 },
+               "coords": { "x": 45, "y": 64 },
                "header": "Moonbrook",
                "ends": [],
                "starts": [],
-               "objectives": ["The Defias Brotherhood P6"],
+               "objectives": ["The Defias Brotherhood P6", "Find the Defias Messenger"],
                "type": "objective"
             },
             {
                "coords": { "x": 57, "y": 47 },
+               "align": "top",
                "header": "Sentinel Tower",
                "ends": ["The Defias Brotherhood P6"],
                "starts": ["The Defias Brotherhood P7", "Red Silk Bandanas"],
@@ -636,6 +709,7 @@
             },
             {
                "coords": { "x": 61, "y": 71 },
+               "align": "right",
                "header": "The Dust Plains",
                "ends": [],
                "starts": [],
@@ -644,6 +718,7 @@
             },
             {
                "coords": { "x": 57, "y": 47 },
+               "align": "top",
                "header": "Sentinel Tower",
                "ends": ["The Defias Brotherhood P7", "Red Silk Bandanas"],
                "starts": [],

@@ -6,6 +6,7 @@
          "waypoints": [
             {
                "coords": { "x": 74, "y": 44 },
+               "align": "top",
                "header": "Darkshire Inn",
                "ends": [],
                "starts": ["Seasoned Wolf Kabobs"],
@@ -14,6 +15,7 @@
             },
             {
                "coords": { "x": 80, "y": 48 },
+               "align": "right",
                "header": "Viktori Prism'Antras",
                "ends": ["Look to the Stars P1"],
                "starts": ["Look to the Stars P1", "Look to the Stars P2"],
@@ -22,6 +24,7 @@
             },
             {
                "coords": { "x": 82, "y": 59 },
+               "align": "right",
                "header": "Blind Mary",
                "ends": ["Ghost Hair Thread", "Look to the Stars P2"],
                "starts": ["Return the Comb"],
@@ -30,6 +33,7 @@
             },
             {
                "coords": { "x": 79, "y": 72 },
+               "align": "right",
                "header": "Tranquil Gardens Cemetary",
                "ends": [],
                "starts": [],
@@ -44,6 +48,7 @@
          "waypoints": [
             {
                "coords": { "x": 79, "y": 72 },
+               "align": "right",
                "header": "Tranquil Gardens Cemetary",
                "ends": [],
                "starts": [],
@@ -52,6 +57,7 @@
             },
             {
                "coords": { "x": 80, "y": 48 },
+               "align": "top",
                "header": "Viktori Prism'Antras",
                "ends": ["Look to the Stars P2"],
                "starts": ["Look to the Stars P3"],
@@ -68,6 +74,7 @@
             },
             {
                "coords": { "x": 82, "y": 17 },
+               "align": "top",
                "header": "Elwynn Forest Border",
                "ends": [],
                "starts": [],
@@ -90,6 +97,7 @@
             },
             {
                "coords": { "x": 85, "y": 69 },
+               "align": "top",
                "header": "Marshal Haggard",
                "ends": ["The Legend of Stalvan P7", "The Legend of Stalvan P8"],
                "starts": ["The Legend of Stalvan P8", "The Legend of Stalvan P9"],
@@ -98,6 +106,7 @@
             },
             {
                "coords": { "x": 92, "y": 72 },
+               "align": "top",
                "header": "Redridge Mountains Border",
                "ends": [],
                "starts": [],

@@ -6,6 +6,7 @@
          "waypoints": [
             {
                "coords": { "x": 32, "y": 44 },
+               "align": "top",
                "header": "Auberdine Harbor",
                "ends": [],
                "starts": [],
@@ -14,6 +15,7 @@
             },
             {
                "coords": { "x": 39, "y": 43 },
+               "align": "top",
                "header": "Auberdine",
                "ends": ["The Corruption Abroad"],
                "starts": ["The Absent Minded Prospector P1", "Onu", "Wanted: Murkdeep"],
@@ -22,6 +24,7 @@
             },
             {
                "coords": { "x": 44, "y": 76 },
+               "align": "right",
                "header": "Onu",
                "ends": ["Onu"],
                "starts": ["A Master's Glaive"],
@@ -43,6 +46,21 @@
                "starts": [],
                "objectives": ["Buzzbox 525"],
                "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "darkshore",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 38, "y": 82 },
+               "align": "top",
+               "header": "Twilight Vale",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Buzzbox 525"],
+               "type": "objective"
             },
             {
                "coords": { "x": 36, "y": 84 },
@@ -54,6 +72,7 @@
             },
             {
                "coords": { "x": 39, "y": 86 },
+               "align": "bottom",
                "header": "",
                "ends": ["The Master's Glaive"],
                "starts": ["Return to Onu", "Therylune's Escape"],
@@ -62,6 +81,7 @@
             },
             {
                "coords": { "x": 41, "y": 81 },
+               "align": "right",
                "header": "",
                "ends": ["Buzzbox 525"],
                "starts": [],
@@ -84,6 +104,7 @@
             },
             {
                "coords": { "x": 44, "y": 76 },
+               "align": "top",
                "header": "Grove of the Ancients",
                "ends": ["Return to Onu"],
                "starts": ["The Sleeper has Awakened"],

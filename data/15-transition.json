@@ -14,6 +14,7 @@
             },
             {
                "coords": { "x": 58, "y": 94 },
+               "align": "right",
                "header": "Darnassus Flightpath",
                "ends": [],
                "starts": [],

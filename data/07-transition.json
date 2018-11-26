@@ -14,6 +14,7 @@
             },
             {
                "coords": { "x": 69, "y": 51 },
+               "align": "top",
                "header": "Gnoarn",
                "ends": [],
                "starts": ["Speak with Shoni"],
@@ -22,6 +23,7 @@
             },
             {
                "coords": { "x": 77, "y": 51 },
+               "align": "right",
                "header": "Deeprun Tram",
                "ends": [],
                "starts": [],
@@ -36,6 +38,7 @@
          "waypoints": [
             {
                "coords": { "x": 63, "y": 8 },
+               "align": "right",
                "header": "Deeprun Tram",
                "ends": [],
                "starts": [],
@@ -52,6 +55,7 @@
             },
             {
                "coords": { "x": 58, "y": 17 },
+               "align": "bottom",
                "header": "Furen Longbeard",
                "ends": ["Stormpike's Order"],
                "starts": [],
@@ -60,6 +64,7 @@
             },
             {
                "coords": { "x": 65, "y": 21 },
+               "align": "right",
                "header": "Wilder Thistlenettle",
                "ends": [],
                "starts": ["Oh Brother...", "Collecting Memories"],
@@ -68,6 +73,7 @@
             },
             {
                "coords": { "x": 66, "y": 62 },
+               "align": "right",
                "header": "Stormwind Flightpath",
                "ends": ["Dungar Longdrink"],
                "starts": ["Return to Lewis"],

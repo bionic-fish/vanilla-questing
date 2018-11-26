@@ -6,6 +6,7 @@
          "waypoints": [
             {
                "coords": { "x": 49, "y": 42 },
+               "align": "top",
                "header": "Marshal McBride",
                "ends": [],
                "starts": ["Report to Goldshire"],
@@ -30,6 +31,7 @@
             },
             {
                "coords": { "x": 43, "y": 90 },
+               "align": "right",
                "header": "Maybell Maclure",
                "ends": [],
                "starts": ["Young Lovers"],
@@ -38,6 +40,7 @@
             },
             {
                "coords": { "x": 34, "y": 84 },
+               "align": "top",
                "header": "Bernice Stonefield",
                "ends": [],
                "starts": ["Lost Necklace"],
@@ -68,6 +71,7 @@
             },
             {
                "coords": { "x": 35, "y": 84 },
+               "align": "top",
                "header": "Gamma Stonefield",
                "ends": ["Speak with Gamma"],
                "starts": ["Note to William"],
@@ -76,6 +80,7 @@
             },
             {
                "coords": { "x": 43, "y": 86 },
+               "align": "top",
                "header": "Billy Maclure",
                "ends": ["Lost Necklace"],
                "starts": ["Pie for Billy"],
@@ -84,6 +89,7 @@
             },
             {
                "coords": { "x": 41, "y": 87 },
+               "align": "bottom",
                "header": "Billy Maclure",
                "ends": [],
                "starts": [],
@@ -98,6 +104,7 @@
          "waypoints": [
             {
                "coords": { "x": 41, "y": 87 },
+               "align": "bottom",
                "header": "Billy Maclure",
                "ends": [],
                "starts": [],
@@ -114,6 +121,7 @@
             },
             {
                "coords": { "x": 43, "y": 86 },
+               "align": "right",
                "header": "Billy Maclure",
                "ends": ["Back to Billy"],
                "starts": ["Goldtooth"],
@@ -136,6 +144,7 @@
          "waypoints": [
             {
                "coords": { "x": 39, "y": 81 },
+               "align": "right",
                "header": "Fargodeep Mine",
                "ends": [],
                "starts": [],
@@ -152,6 +161,7 @@
             },
             {
                "coords": { "x": 42, "y": 66 },
+               "align": "top",
                "header": "Goldshire",
                "ends": ["Gold Dust Exchange", "The Fargodeep Mine", "Kobold Candles", "Note to William"],
                "starts": ["Further Concerns", "The Jasperlode Mine", "Collecting Kelp", "Shipment to Stormwind"],
@@ -160,6 +170,7 @@
             },
             {
                "coords": { "x": 52, "y": 63 },
+               "align": "bottom",
                "header": "Crystal Lake",
                "ends": [],
                "starts": [],
@@ -168,6 +179,7 @@
             },
             {
                "coords": { "x": 61, "y": 52 },
+               "align": "top",
                "header": "Jasperlode Mine",
                "ends": [],
                "starts": [],
@@ -176,6 +188,7 @@
             },
             {
                "coords": { "x": 74, "y": 72 },
+               "align": "right",
                "header": "Guard Thomas",
                "ends": ["Further Concerns"],
                "starts": ["Find the Lost Guards", "Bounty on Murlocs", "Protect the Frontier"],
@@ -184,6 +197,7 @@
             },
             {
                "coords": { "x": 72, "y": 66 },
+               "align": "right",
                "header": "",
                "ends": [],
                "starts": [],
@@ -197,9 +211,24 @@
                "starts": ["Discover Rolf's Fate"],
                "objectives": [],
                "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "elwynn",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 73, "y": 60 },
+               "header": "Half-Eaten Corpse",
+               "ends": ["Find the Lost Guards"],
+               "starts": ["Discover Rolf's Fate"],
+               "objectives": [],
+               "type": "quest"
             },
             {
                "coords": { "x": 80, "y": 56 },
+               "align": "top",
                "header": "Rolf's Corpse",
                "ends": ["Discover Rolf's Fate"],
                "starts": ["Report to Thomas"],
@@ -208,6 +237,7 @@
             },
             {
                "coords": { "x": 80, "y": 67 },
+               "align": "bottom",
                "header": "Logging Camp",
                "ends": [],
                "starts": ["A Bundle of Trouble", "Red Linen Goods"],
@@ -215,7 +245,7 @@
                "type": "quest"
             },
             {
-               "coords": { "x": 79, "y": 61 },
+               "coords": { "x": 78, "y": 61 },
                "header": "",
                "ends": [],
                "starts": [],
@@ -230,6 +260,7 @@
          "waypoints": [
             {
                "coords": { "x": 79, "y": 61 },
+               "align": "top",
                "header": "",
                "ends": [],
                "starts": [],
@@ -246,6 +277,7 @@
             },
             {
                "coords": { "x": 74, "y": 72 },
+               "align": "bottom",
                "header": "Guard Thomas",
                "ends": ["Bounty on Murlocs", "Protect the Frontier", "Report to Thomas"],
                "starts": ["Deliver Thomas's Report", "Report to Gryan Stoutmantle"],
@@ -254,6 +286,7 @@
             },
             {
                "coords": { "x": 80, "y": 67 },
+               "align": "bottom",
                "header": "Logging Camp",
                "ends": ["A Bundle of Trouble", "Red Linen Goods"],
                "starts": [],
@@ -262,6 +295,7 @@
             },
             {
                "coords": { "x": 92, "y": 72 },
+               "align": "right",
                "header": "Redridge Mountains Border",
                "ends": [],
                "starts": [],
@@ -276,6 +310,7 @@
          "waypoints": [
             {
                "coords": { "x": 8, "y": 72 },
+               "align": "bottom",
                "header": "Elwynn Forest Border",
                "ends": [],
                "starts": [],
@@ -284,6 +319,7 @@
             },
             {
                "coords": { "x": 31, "y": 59 },
+               "align": "bottom",
                "header": "Lakeshire Flightpath",
                "ends": [],
                "starts": [],
@@ -298,6 +334,7 @@
          "waypoints": [
             {
                "coords": { "x": 42, "y": 66 },
+               "align": "top",
                "header": "Goldshire",
                "ends": ["Collecting Kelp", "Deliver Thomas's Report", "The Jasperlode Mine"],
                "starts": ["The Escape", "Elmore's Task", "Westbrook Garrison Needs Help!"],
@@ -306,6 +343,7 @@
             },
             {
                "coords": { "x": 35, "y": 84 },
+               "align": "bottom",
                "header": "Ma Stonefield",
                "ends": ["Princess Must Die!"],
                "starts": [],
@@ -314,6 +352,7 @@
             },
             {
                "coords": { "x": 24, "y": 75 },
+               "align": "top",
                "header": "Westbrook Garrison",
                "ends": ["Westbrook Garrison Needs Help!"],
                "starts": ["Riverpaw Gnoll Bounty", "Wanted: Hogger"],
@@ -322,6 +361,7 @@
             },
             {
                "coords": { "x": 26, "y": 94 },
+               "align": "right",
                "header": "Forest's Edge",
                "ends": [],
                "starts": [],
@@ -344,6 +384,7 @@
             },
             {
                "coords": { "x": 42, "y": 66 },
+               "align": "top",
                "header": "Goldshire",
                "ends": ["Wanted: Hogger"],
                "starts": ["A Warrior's Training"],
@@ -352,6 +393,7 @@
             },
             {
                "coords": { "x": 24, "y": 75 },
+               "align": "top",
                "header": "Westbrook Garrison",
                "ends": ["Riverpaw Gnoll Bounty"],
                "starts": [],

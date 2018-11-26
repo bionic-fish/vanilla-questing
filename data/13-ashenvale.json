@@ -6,6 +6,7 @@
          "waypoints": [
             {
                "coords": { "x": 29, "y": 15 },
+               "align": "top",
                "header": "Darkshore Border",
                "ends": [],
                "starts": [],
@@ -22,6 +23,7 @@
             },
             {
                "coords": { "x": 31, "y": 31 },
+               "align": "right",
                "header": "The Ruins of Ordil'Aran",
                "ends": [],
                "starts": [],
@@ -30,6 +32,7 @@
             },
             {
                "coords": { "x": 32, "y": 22 },
+               "align": "right",
                "header": "The Ruins of Ordil'Aran",
                "ends": [],
                "starts": [],
@@ -44,6 +47,7 @@
          "waypoints": [
             {
                "coords": { "x": 32, "y": 22 },
+               "align": "top",
                "header": "The Ruins of Ordil'Aran",
                "ends": [],
                "starts": [],
@@ -60,6 +64,7 @@
             },
             {
                "coords": { "x": 34, "y": 48 },
+               "align": "bottom",
                "header": "Ashenvale Flightpath",
                "ends": [],
                "starts": [],
@@ -68,6 +73,7 @@
             },
             {
                "coords": { "x": 36, "y": 50 },
+               "align": "bottom",
                "header": "Astranaar",
                "ends": ["Orendil's Cure"],
                "starts": ["The Zoram Strand", "Elune's Tear", "Raene's Cleansing", "Culling the Threat"],
@@ -76,6 +82,7 @@
             },
             {
                "coords": { "x": 46, "y": 46 },
+               "align": "right",
                "header": "Iris Lake",
                "ends": [],
                "starts": [],
@@ -84,6 +91,7 @@
             },
             {
                "coords": { "x": 38, "y": 35 },
+               "align": "top",
                "header": "Thistlefur Village",
                "ends": [],
                "starts": [],
@@ -98,6 +106,7 @@
          "waypoints": [
             {
                "coords": { "x": 38, "y": 35 },
+               "align": "top",
                "header": "Thistlefur Village",
                "ends": [],
                "starts": [],
@@ -106,6 +115,7 @@
             },
             {
                "coords": { "x": 36, "y": 50 },
+               "align": "right",
                "header": "Astranaar",
                "ends": ["Culling the Threat", "Elune's Tear"],
                "starts": ["The Ruins of Stardust"],
@@ -114,6 +124,7 @@
             },
             {
                "coords": { "x": 33, "y": 67 },
+               "align": "bottom",
                "header": "Ruins of Stardust",
                "ends": [],
                "starts": [],
@@ -138,6 +149,7 @@
             },
             {
                "coords": { "x": 26, "y": 39 },
+               "align": "top",
                "header": "Delgren the Purifier",
                "ends": ["The Tower of Althalaxx P4"],
                "starts": ["The Tower of Althalaxx P5"],
@@ -176,6 +188,7 @@
          "waypoints": [
             {
                "coords": { "x": 14, "y": 21 },
+               "align": "right",
                "header": "",
                "ends": [],
                "starts": [],
@@ -184,6 +197,7 @@
             },
             {
                "coords": { "x": 15, "y": 31 },
+               "align": "right",
                "header": "Talen",
                "ends": ["The Ancient Statuette"],
                "starts": ["Ruuzel"],
@@ -222,6 +236,7 @@
             },
             {
                "coords": { "x": 15, "y": 31 },
+               "align": "bottom",
                "header": "Talen",
                "ends": ["Ruuzel"],
                "starts": [],
@@ -230,6 +245,7 @@
             },
             {
                "coords": { "x": 26, "y": 39 },
+               "align": "right",
                "header": "Feero Ironhand",
                "ends": [],
                "starts": ["Supplies to Auberdine"],
@@ -238,6 +254,7 @@
             },
             {
                "coords": { "x": 29, "y": 15 },
+               "align": "right",
                "header": "Ashenvale Road",
                "ends": [],
                "starts": [],
@@ -252,6 +269,7 @@
          "waypoints": [
             {
                "coords": { "x": 36, "y": 50 },
+               "align": "top",
                "header": "Astranaar",
                "ends": ["The Zoram Strand", "Raene's Cleansing P2", "The Ruins of Stardust"],
                "starts": ["Raene's Cleansing P3", "An Aggressive Defense"],
@@ -260,6 +278,7 @@
             },
             {
                "coords": { "x": 54, "y": 46 },
+               "align": "right",
                "header": "Shael'Dryn",
                "ends": ["Raene's Cleansing P3"],
                "starts": ["Raene's Cleansing P4"],
@@ -268,6 +287,7 @@
             },
             {
                "coords": { "x": 50, "y": 61 },
+               "align": "right",
                "header": "",
                "ends": [],
                "starts": [],
@@ -276,6 +296,7 @@
             },
             {
                "coords": { "x": 50, "y": 67 },
+               "align": "right",
                "header": "Sentinel Velene Starstrike",
                "ends": [],
                "starts": ["Elemental Bracers"],
@@ -284,6 +305,7 @@
             },
             {
                "coords": { "x": 48, "y": 70 },
+               "align": "bottom",
                "header": "",
                "ends": [],
                "starts": [],
@@ -299,6 +321,7 @@
          "waypoints": [
             {
                "coords": { "x": 48, "y": 70 },
+               "align": "bottom",
                "header": "Sentinel Velene Starstrike",
                "ends": [],
                "starts": [],
@@ -307,6 +330,7 @@
             },
             {
                "coords": { "x": 50, "y": 67 },
+               "align": "bottom",
                "header": "",
                "ends": ["Elemental Bracers"],
                "starts": [],
@@ -314,7 +338,17 @@
                "type": "quest"
             },
             {
+               "coords": { "x": 63, "y": 52 },
+               "align": "right",
+               "header": "Ashenvale Road",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "travel"
+            },
+            {
                "coords": { "x": 54, "y": 35 },
+               "align": "top",
                "header": "",
                "ends": [],
                "starts": [],
@@ -329,6 +363,7 @@
          "waypoints": [
             {
                "coords": { "x": 36, "y": 50 },
+               "align": "bottom",
                "header": "Astranaar",
                "ends": ["An Aggressive Defense"],
                "starts": [],
@@ -337,6 +372,7 @@
             },
             {
                "coords": { "x": 54, "y": 46 },
+               "align": "right",
                "header": "Shael'Dryn",
                "ends": ["Raene's Cleansing P4"],
                "starts": ["Raene's Cleansing P5"],
@@ -345,11 +381,43 @@
             },
             {
                "coords": { "x": 34, "y": 48 },
+               "align": "top",
                "header": "Astranaar Flightpath",
                "ends": [],
                "starts": [],
                "objectives": ["Fly to Auberdine"],
                "type": "flightpath"
+            }
+         ]
+      },
+      {
+         "zone": "darkshore",
+         "experience": 24.13,
+         "waypoints": [
+            {
+               "coords": { "x": 36, "y": 46 },
+               "header": "Darkshore Flightpath",
+               "ends": [],
+               "starts": [],
+               "objectives": [],
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 39, "y": 43 },
+               "align": "right",
+               "header": "Auberdine",
+               "ends": ["Wanted: Murkdeep", "The Absent Minded Prospector P1"],
+               "starts": ["The Absent Minded Prospector P2"],
+               "objectives": [],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 33, "y": 40 },
+               "header": "Auberdine Harbor",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Ride to Darnassus"],
+               "type": "travel"
             }
          ]
       }

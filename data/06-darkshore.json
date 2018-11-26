@@ -6,6 +6,7 @@
          "waypoints": [
             {
                "coords": { "x": 32, "y": 44 },
+               "align": "bottom",
                "header": "Auberdine Harbor",
                "ends": [],
                "starts": [],
@@ -14,6 +15,7 @@
             },
             {
                "coords": { "x": 36, "y": 46 },
+               "align": "bottom",
                "header": "Auberdine Flightpath",
                "ends": [],
                "starts": [],
@@ -22,6 +24,7 @@
             },
             {
                "coords": { "x": 39, "y": 43 },
+               "align": "bottom",
                "header": "Auberdine",
                "ends": [],
                "starts": ["For Love Eternal", "Buzzbox 827", "Washed Ashore P1", "Cave Mushrooms", "The Red Crystal", "Deep Ocean, Vast Sea", "Bashal'Aran P1", "Tools of the Highbourne", "Plagued Lands", "How Big a Threat? P1", "The Tower of Althalaxx P1"],
@@ -30,6 +33,7 @@
             },
             {
                "coords": { "x": 44, "y": 36 },
+               "align": "top",
                "header": "Asterion",
                "ends": ["Bashal'Aran P1"],
                "starts": ["Bashal'Aran P2"],
@@ -38,6 +42,7 @@
             },
             {
                "coords": { "x": 46, "y": 37 },
+               "align": "bottom",
                "header": "Bashal'Aran",
                "ends": [],
                "starts": [],
@@ -52,6 +57,7 @@
          "waypoints": [
             {
                "coords": { "x": 46, "y": 37 },
+               "align": "right",
                "header": "Bashal'Aran",
                "ends": [],
                "starts": [],
@@ -82,6 +88,7 @@
             },
             {
                "coords": { "x": 48, "y": 37 },
+               "align": "right",
                "header": "Bashal'Aran",
                "ends": [],
                "starts": [],
@@ -96,6 +103,7 @@
          "waypoints": [
             {
                "coords": { "x": 48, "y": 37 },
+               "align": "bottom",
                "header": "Bashal'Aran",
                "ends": [],
                "starts": [],
@@ -104,6 +112,7 @@
             },
             {
                "coords": { "x": 44, "y": 36 },
+               "align": "bottom",
                "header": "Asterion",
                "ends": ["Bashal'Aran P3"],
                "starts": ["Bashal'Aran P4"],
@@ -112,6 +121,7 @@
             },
             {
                "coords": { "x": 47, "y": 29 },
+               "align": "top",
                "header": "",
                "ends": [],
                "starts": [],
@@ -144,6 +154,7 @@
             },
             {
                "coords": { "x": 39, "y": 53 },
+               "align": "bottom",
                "header": "",
                "ends": [],
                "starts": [],
@@ -158,6 +169,7 @@
          "waypoints": [
             {
                "coords": { "x": 39, "y": 53 },
+               "align": "right",
                "header": "",
                "ends": [],
                "starts": [],
@@ -166,6 +178,7 @@
             },
             {
                "coords": { "x": 39, "y": 43 },
+               "align": "right",
                "header": "Auberdine",
                "ends": ["Washed Ashore P1", "Buzzbox 827", "How Big a Threat? P1", "Thundris Windweaver"],
                "starts": ["Washed Ashore P2", "Buzzbox 411", "How Big a Threat? P2", "Thundris Windweaver", "The Cliffspring River"],
@@ -204,12 +217,27 @@
             },
             {
                "coords": { "x": 40, "y": 54 },
+               "align": "top",
                "header": "",
                "ends": [],
                "starts": [],
                "objectives": ["How Big a Threat? P2"],
                "type": "objective"
             },
+            {
+               "coords": { "x": 39, "y": 64 },
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Rabid Thistle Bear"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "darkshore",
+         "experience": 0,
+         "waypoints": [
             {
                "coords": { "x": 39, "y": 64 },
                "header": "",
@@ -228,6 +256,7 @@
             },
             {
                "coords": { "x": 43, "y": 61 },
+               "align": "right",
                "header": "Ameth'Aran",
                "ends": [],
                "starts": [],
@@ -242,6 +271,7 @@
          "waypoints": [
             {
                "coords": { "x": 43, "y": 61 },
+               "align": "bottom",
                "header": "Ameth'Aran",
                "ends": [],
                "starts": [],
@@ -258,6 +288,7 @@
             },
             {
                "coords": { "x": 47, "y": 49 },
+               "align": "right",
                "header": "",
                "ends": [],
                "starts": [],
@@ -288,6 +319,7 @@
             },
             {
                "coords": { "x": 47, "y": 49 },
+               "align": "bottom",
                "header": "The Red Crystal",
                "ends": ["As Water Cascades"],
                "starts": ["The Fragments Within"],
@@ -296,6 +328,7 @@
             },
             {
                "coords": { "x": 44, "y": 36 },
+               "align": "right",
                "header": "Asterion",
                "ends": ["Bashal'Aran P3"],
                "starts": [],
@@ -304,6 +337,7 @@
             },
             {
                "coords": { "x": 42, "y": 29 },
+               "align": "right",
                "header": "Buzzbox",
                "ends": ["Buzzbox 411"],
                "starts": ["Buzzbox 323"],
@@ -320,6 +354,7 @@
             },
             {
                "coords": { "x": 40, "y": 27 },
+               "align": "top",
                "header": "Shipwreck",
                "ends": [],
                "starts": [],
@@ -328,6 +363,22 @@
             },
             {
                "coords": { "x": 46, "y": 26 },
+               "align": "top",
+               "header": "",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Buzzbox 323"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "darkshore",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 46, "y": 26 },
+               "align": "left",
                "header": "",
                "ends": [],
                "starts": [],
@@ -336,6 +387,7 @@
             },
             {
                "coords": { "x": 50, "y": 21 },
+               "align": "top",
                "header": "",
                "ends": [],
                "starts": [],
@@ -344,6 +396,7 @@
             },
             {
                "coords": { "x": 51, "y": 25 },
+               "align": "bottom",
                "header": "",
                "ends": ["Buzzbox 323"],
                "starts": ["Buzzbox 525"],
@@ -352,6 +405,7 @@
             },
             {
                "coords": { "x": 55, "y": 25 },
+               "align": "top",
                "header": "Balthule Shadowstrike",
                "ends": ["The Tower of Althalaxx P1"],
                "starts": ["The Tower of Althalaxx P2"],
@@ -360,6 +414,7 @@
             },
             {
                "coords": { "x": 56, "y": 27 },
+               "align": "right",
                "header": "",
                "ends": [],
                "starts": [],
@@ -374,6 +429,7 @@
          "waypoints": [
             {
                "coords": { "x": 56, "y": 27 },
+               "align": "right",
                "header": "",
                "ends": [],
                "starts": [],
@@ -382,6 +438,7 @@
             },
             {
                "coords": { "x": 55, "y": 25 },
+               "align": "top",
                "header": "Bathule Shadowstrike",
                "ends": ["The Tower of Althalaxx P2"],
                "starts": ["The Tower of Althalaxx P3"],
@@ -390,6 +447,7 @@
             },
             {
                "coords": { "x": 55, "y": 34 },
+               "align": "right",
                "header": "Cliffspring Falls Cave",
                "ends": [],
                "starts": [],
@@ -398,6 +456,7 @@
             },
             {
                "coords": { "x": 52, "y": 38 },
+               "align": "bottom",
                "header": "The Den Mothers Cave",
                "ends": [],
                "starts": [],
@@ -414,6 +473,7 @@
             },
             {
                "coords": { "x": 51, "y": 35 },
+               "align": "top",
                "header": "Furbolg Encampment",
                "ends": [],
                "starts": [],
@@ -428,6 +488,7 @@
          "waypoints": [
             {
                "coords": { "x": 51, "y": 35 },
+               "align": "right",
                "header": "Furbolg Encampment",
                "ends": [],
                "starts": [],

@@ -6,6 +6,7 @@
          "waypoints": [
             {
                "coords": { "x": 60, "y": 19 },
+               "align": "top",
                "header": "Verna Furlbrow",
                "ends": [],
                "starts": ["Westfall Stew"],
@@ -44,6 +45,7 @@
          "waypoints": [
             {
                "coords": { "x": 66, "y": 62 },
+               "align": "bottom",
                "header": "Stormwind Flightpath",
                "ends": [],
                "starts": [],
@@ -60,6 +62,7 @@
             },
             {
                "coords": { "x": 74, "y": 48 },
+               "align": "right",
                "header": "Osric Strange",
                "ends": ["Shipment to Stormwind"],
                "starts": ["Dungar Longdrink"],
@@ -68,6 +71,7 @@
             },
             {
                "coords": { "x": 74, "y": 37 },
+               "align": "right",
                "header": "Harry Burlguard",
                "ends": ["A Warrior's Training"],
                "starts": ["Bartley the Drunk"],
@@ -92,6 +96,7 @@
             },
             {
                "coords": { "x": 65, "y": 6 },
+               "align": "right",
                "header": "Deeprun Tram",
                "ends": [],
                "starts": [],
@@ -106,6 +111,7 @@
          "waypoints": [
             {
                "coords": { "x": 78, "y": 52 },
+               "align": "right",
                "header": "Deeprun Tram",
                "ends": [],
                "starts": ["Deeprun Rat Roundup"],
@@ -114,6 +120,7 @@
             },
             {
                "coords": { "x": 56, "y": 48 },
+               "align": "top",
                "header": "Ironforge Flightpath",
                "ends": [],
                "starts": [],
@@ -122,6 +129,7 @@
             },
             {
                "coords": { "x": 19, "y": 51 },
+               "align": "top",
                "header": "Innkeeper Firebrew",
                "ends": [],
                "starts": [],

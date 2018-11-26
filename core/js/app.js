@@ -13,7 +13,6 @@ var pathing = [
    $.getJSON('../data/11-transition.json'),
    $.getJSON('../data/12-darkshore.json'),
    $.getJSON('../data/13-ashenvale.json'),
-   $.getJSON('../data/14-darkshore.json'),
    $.getJSON('../data/15-transition.json'),
    $.getJSON('../data/16-menethil.json'),
    $.getJSON('../data/17-duskwood.json'),

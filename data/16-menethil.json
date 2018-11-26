@@ -14,6 +14,7 @@
             },
             {
                "coords": { "x": 8, "y": 59 },
+               "align": "bottom",
                "header": "Karl Boran",
                "ends": [],
                "starts": ["Claws from the Deep"],
@@ -22,6 +23,7 @@
             },
             {
                "coords": { "x": 9, "y": 56 },
+               "align": "right",
                "header": "James Halloran",
                "ends": [],
                "starts": ["Young Crocolisk Skins"],
@@ -30,6 +32,7 @@
             },
             {
                "coords": { "x": 19, "y": 40 },
+               "align": "right",
                "header": "Bluegill Marsh",
                "ends": [],
                "starts": [],
@@ -38,6 +41,7 @@
             },
             {
                "coords": { "x": 18, "y": 48 },
+               "align": "right",
                "header": "Black Channel Marsh",
                "ends": [],
                "starts": [],
@@ -52,6 +56,7 @@
          "waypoints": [
             {
                "coords": { "x": 18, "y": 48 },
+               "align": "top",
                "header": "Black Channel Marsh",
                "ends": [],
                "starts": [],
@@ -76,6 +81,7 @@
             },
             {
                "coords": { "x": 11, "y": 60 },
+               "align": "right",
                "header": "Menethil Inn",
                "ends": ["The Absent Minded Prospector P2"],
                "starts": [],
@@ -84,6 +90,7 @@
             },
             {
                "coords": { "x": 9, "y": 61 },
+               "align": "bottom",
                "header": "Menethil Flightpath",
                "ends": [],
                "starts": [],

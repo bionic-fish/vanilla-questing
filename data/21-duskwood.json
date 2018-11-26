@@ -14,6 +14,7 @@
             },
             {
                "coords": { "x": 64, "y": 42 },
+               "align": "right",
                "header": "Duskwood Border",
                "ends": [],
                "starts": [],
@@ -28,6 +29,7 @@
          "waypoints": [
             {
                "coords": { "x": 3, "y": 36 },
+               "align": "top",
                "header": "Westfall Border",
                "ends": [],
                "starts": [],
@@ -36,6 +38,7 @@
             },
             {
                "coords": { "x": 8, "y": 34 },
+               "align": "top",
                "header": "Sven Yorgen",
                "ends": ["Sven's Camp"],
                "starts": ["The Shadowy Figure"],
@@ -44,6 +47,7 @@
             },
             {
                "coords": { "x": 28, "y": 31 },
+               "align": "top",
                "header": "Abercrombie",
                "ends": ["Deliver the Thread"],
                "starts": ["Zombie Juice"],
@@ -58,6 +62,7 @@
          "waypoints": [
             {
                "coords": { "x": 74, "y": 47 },
+               "align": "top",
                "header": "Darkshire",
                "ends": ["The Legend of Stalvan P9-12", "Zombie Juice", "The Shadowy Figure", "The Shadowy Search Continues", "Inquire at the Inn"],
                "starts": ["The Legend of Stalvan P10-12", "Gather Rot Blossoms", "The Shadowy Search Continues", "Inquire at the Inn", "Finding the Shadowy Figure", "Crime and Punishment"],
@@ -66,6 +71,7 @@
             },
             {
                "coords": { "x": 78, "y": 44 },
+               "align": "top",
                "header": "Darkshire Flightpath",
                "ends": [],
                "starts": [],
@@ -80,6 +86,7 @@
          "waypoints": [
             {
                "coords": { "x": 57, "y": 53 },
+               "align": "top",
                "header": "Westfall Flightpath",
                "ends": [],
                "starts": [],
@@ -88,6 +95,7 @@
             },
             {
                "coords": { "x": 68, "y": 57 },
+               "align": "top",
                "header": "Duskwood Border",
                "ends": [],
                "starts": [],
@@ -110,6 +118,7 @@
             },
             {
                "coords": { "x": 19, "y": 58 },
+               "align": "right",
                "header": "Jitters",
                "ends": ["Return to Jitters", "Finding the Shadowy Figure"],
                "starts": ["Return to Sven"],
@@ -118,6 +127,7 @@
             },
             {
                "coords": { "x": 16, "y": 47 },
+               "align": "right",
                "header": "",
                "ends": [],
                "starts": [],
@@ -134,6 +144,7 @@
             },
             {
                "coords": { "x": 15, "y": 38 },
+               "align": "top",
                "header": "Dawning Wood Catacombs",
                "ends": [],
                "starts": ["An Old History Book"],
@@ -148,6 +159,7 @@
          "waypoints": [
             {
                "coords": { "x": 15, "y": 38 },
+               "align": "top",
                "header": "Dawning Wood Catacombs",
                "ends": [],
                "starts": ["An Old History Book"],
@@ -156,6 +168,7 @@
             },
             {
                "coords": { "x": 8, "y": 34 },
+               "align": "top",
                "header": "Sven Yorgen",
                "ends": ["Proving Your Worth"],
                "starts": [],
@@ -164,6 +177,7 @@
             },
             {
                "coords": { "x": 3, "y": 36 },
+               "align": "top",
                "header": "Westfall Border",
                "ends": [],
                "starts": [],
