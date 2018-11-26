@@ -60,7 +60,11 @@ function render(data, settings, ref) {
 
    // RECALIBRATE NEW DATA PROGRESS & SET FOOTER BACKGROUND ACCORDINGLY
    data.progress = (data.current / data.max) * 100;
-   $('#footer-inner').css('background-size', data.progress + '% auto');
+
+   // CORRECT WEIRD % WIDTH ISSUE
+   var width_correction = ((data.progress / 100) * 763.5);
+
+   $('#footer-inner').css('background-size', width_correction + 'px auto');
 
    // DECLARE INSTANCE TARGET
    var target = data.raw[data.current];
@@ -112,7 +116,7 @@ function render(data, settings, ref) {
       $('#map').append('<svg>' + lines + '</svg>');
 
       // MAP ASSIST SELECTORS
-      var block_num = '<span id="block-num">#' + data.current + '</span>';
+      var block_num = '<span id="block-num">#' + (parseInt(data.current) + 1) + '</span>';
       var legend = '<span id="show-legend">Map Legend</span><div id="tooltip"></div>';
       var tooltip = '<div id="tooltip"></div>';
 
@@ -149,7 +153,7 @@ function mouseover(event, data) {
    waypoint.objectives.forEach(quest_name => { objectives += '<div class="objectives">' + quest_name + '</div>'; });
 
    // RENDER IN WAYPOINT DATA
-   $('#tooltip').html(header + ends + starts + objectives);
+   $('#tooltip').html('<div id="tooltip-inner">' + header + ends + starts + objectives + '</div>');
 
    var height = parseFloat($('#tooltip').css('height'));
    var width = parseFloat($('#tooltip').css('width'));
@@ -318,7 +322,6 @@ function faq() {
       ['How about dungeon "quest run" guides?', 'Yes, likely in short video format'],
       ['Do I want feedback/suggestions?', 'Yes, it\'s essential'],
       ['Both mechanical and game related?', 'Yes'],
-      ['Can I view the suggestion queue?', 'Yes, check the todo list'],
       ['Will this require a login?', 'No, everything runs locally'],
       ['My question wasn\'t answered!', 'Try the <a href="https://www.reddit.com/r/classicwow/comments/9zxi0v/inbrowser_160_questing_guide_for_classic/?" target="_blank">Reddit Thread</a>'],
       ['How do I get in touch?', 'Strafir#9133 on <a href="https://discord.gg/classicwow" target="_blank">Discord</a>']

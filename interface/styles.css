@@ -35,7 +35,7 @@ a:hover { color: rgb(175, 30, 30); }
    background: url('img/dark.png');
    width: 772px;
    margin: auto;
-   padding: 5px;
+   padding: 2px;
 }
 
 /* -- MAP HEADER & FOOTER -- */
@@ -44,10 +44,11 @@ a:hover { color: rgb(175, 30, 30); }
    background: url('img/lighter.png');
    color: #CECECE;
    transition: .3s;
+   text-shadow: 1px 1px #242424;
 }
 
 #footer-inner {
-   background-image: url('img/xp-bg.png');
+   background-image: url('img/progress-bg.png');
    background-repeat: repeat-y;
    transition: .3s;
 }
@@ -74,14 +75,14 @@ input {
 
 input[type=range]::-webkit-slider-thumb {
    -webkit-appearance: none;
-   background: url('img/success.png');
+   background: url('img/scroller-bg.png');
    height: 26px;
    width: 10px;
 }
 
 input[type=range]::-moz-range-thumb {
    -moz-appearance: none;
-   background: url('img/success.png');
+   background: url('img/scroller-bg.png');
    border: 0px;
    border-radius: 0px;
    height: 26px;
@@ -99,7 +100,7 @@ input[type=range]::-moz-range-track {
    width: 772px;
    position: relative;
    transition: .3s;
-   margin: 5px 0px;
+   margin: 2px 0px;
 }
 
 #map #block-num {
@@ -108,12 +109,12 @@ input[type=range]::-moz-range-track {
    left: 5px;
    top: 5px;
    color: white;
-   padding: 4px 5px;
+   padding: 2px 4px;
 }
 
 #show-legend {
-   background: url('img/darker.png');
-   color: white;
+   background: url('img/dark.png');
+   color: #CECECE;
    padding: 2px 4px;
    position: absolute;
    right: 5px;
@@ -135,7 +136,7 @@ line {
 /* -- MENU -- */
 
 .menu {
-   width: 772px;
+   width: 764px;
    margin: auto;
    padding: 5px;
    text-align: center;
@@ -176,7 +177,7 @@ line {
 
 .waypoint {
    position: absolute;
-   cursor: pointer;
+   cursor: help;
    width: 1px;
    height: 1px;
 }
@@ -200,20 +201,30 @@ line {
 /* -- TOOLTIP -- */
 
 #tooltip {
-   background: url('img/dark.png');
+   background: url('img/darker.png');
    min-width: 200px;
-   color: white;
-   padding: 4px;
-   padding-bottom: 2px;
+   padding: 2px;
    display: none;
    position: absolute;
    text-shadow: 1px 1px #242424;
 }
 
+#tooltip .item {
+   color: white;
+   padding: 2px;
+}
+
 #tooltip .header, #tooltip .ends, #tooltip .starts, #tooltip .objectives {
    background: url('img/dark.png');
-   margin-bottom: 2px;
-   padding: 4px;
+   padding: 3px;
+   padding-left: 5px;
+   color: white;
+   margin-top: 2px;
+}
+
+#tooltip .header {
+   margin: 0px;
+   color: white;
 }
 
 #tooltip .ends { background: url('img/success.png'); }
@@ -223,7 +234,7 @@ line {
 #legend {
    background: url('img/dark.png');
    width: 140px;
-   padding: 5px;
+   padding: 2px;
    position: absolute;
    display: none;
 }
@@ -231,7 +242,7 @@ line {
 #legend-inner {
    background: url('img/inner-bg.png');
    text-shadow: 0px 0px #f1f1f1;
-   padding: 5px;
+   padding: 2px;
 }
 
 #wp {
@@ -282,21 +293,21 @@ line {
 #prompt-inner #faq {
    background: url('img/dark.png');
    width: 610px;
-   padding: 5px;
+   padding: 2px;
    margin: auto;
 }
 
 #faq #title {
    background: url('img/dark.png');
    color: #F1F1F1;
-   padding: 10px;
+   padding: 8px;
    margin-bottom: 5px;
    text-align: center;
 }
 
 #prompt-inner #content {
    background: url('img/inner-bg.png');
-   padding: 5px;
+   padding: 2px;
 }
 
 #content #question {
@@ -311,7 +322,7 @@ line {
    display: table-cell;
    width: auto;
    padding: 8px;
-   font-size: 14px;
+   font-size: 13px;
 }
 
 #question #right { text-align: right; }
