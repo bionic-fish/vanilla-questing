@@ -1,3 +1,5 @@
+var load_percent = 0;
+
 // SHORTHAND FOR CONSOLE LOGGING
 function log(stuff) { console.log(stuff); }
 
@@ -219,6 +221,9 @@ function preload() {
 
    // PUSH IN SPINNING SELECTOR
    $('#prompt-inner').html('<div id="loading"><div class="lds-css ng-scope"><div style="width:100%;height:100%" class="lds-rolling"><div></div></div></div></div>');
+   
+   // APPEND IN LOADING BAR
+   $('#prompt-inner').append('<div id="loading-bar"><div id="loading-bar-inner"><div id="loading-bg">0 / 25</div></div></div>');
 
    // TURN THE DISPLAY PROPERTY ON
    $('#prompt').css('display', 'table');
@@ -276,9 +281,12 @@ function preload() {
 
       // APPEND IN PRELOAD CONTAINER
       $('body').append('<div id="preload-container"></div>');
+      
+      // SPECIFY HOW MUCH THE LOADING BAR SHOULD GROW WITH EACH COMPLETION
+      var bump = 100 / zones.length;
 
       // MAKE A PROMISE FOR EACH ZONE & PUSH IT TO THE CONTAINER
-      zones.forEach(zone => { promises.push(promisify(zone)); });
+      zones.forEach(zone => { promises.push(promisify(zone, bump)); });
 
       // WAIT FOR ALL PROMISES TO BE RESOLVED
       Promise.all(promises).then(() => {
@@ -303,7 +311,7 @@ function preload() {
 }
 
 // GENERATE A PROMISE
-function promisify(zone) {
+function promisify(zone, bump) {
    return new Promise((resolve, reject) => {
 
       // CREATE NEW IMAGE OBJECT OF A ZONE
@@ -315,8 +323,20 @@ function promisify(zone) {
       $('#preload-container').append(img);
 
       // RESOLVE AFTER ITS DONE LOADING
-      $('#preload-container #' + zone).on('load', () => { resolve(); })
+      $('#preload-container #' + zone).on('load', () => {
+         resolve( loading(bump) );
+      })
    });
+}
+
+// LOADING BAR FUNCTIONALITY
+function loading(bump) {
+
+   // INCREMENT
+   load_percent += bump;
+
+   // RENDER NEW BG
+   $('#loading-bg').css('background-size', load_percent + '% auto');
 }
 
 // OPEN FAQ WINDOW
