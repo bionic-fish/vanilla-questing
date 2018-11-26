@@ -148,7 +148,7 @@
                "coords": { "x": 23, "y": 74 },
                "header": "Valley of Kings",
                "ends": [],
-               "starts": ["The Trogg Threat", "In Defense of the King's Lands"],
+               "starts": ["The Trogg Threat", ["In Defense of the King's Lands", "P1"]],
                "objectives": [],
                "type": "quest"
             },
@@ -158,7 +158,7 @@
                "header": "Stonesplinter Valley",
                "ends": [],
                "starts": [],
-               "objectives": ["The Trogg Threat", "In Defense of the King's Lands"],
+               "objectives": ["The Trogg Threat", ["In Defense of the King's Lands", "P1"]],
                "type": "objective"
             }
          ]
@@ -173,14 +173,14 @@
                "header": "Stonesplinter Valley",
                "ends": [],
                "starts": [],
-               "objectives": ["The Trogg Threat", "In Defense of the King's Lands Part 1"],
+               "objectives": ["The Trogg Threat", ["In Defense of the King's Lands", "P1"]],
                "type": "objective"
             },
             {
                "coords": { "x": 23, "y": 74 },
                "header": "Valley of Kings",
-               "ends": ["The Trogg Threat", "In Defense of the King's Lands Part 1"],
-               "starts": ["In Defense of the King's Lands Part 2"],
+               "ends": ["The Trogg Threat", ["In Defense of the King's Lands", "P1"]],
+               "starts": [["In Defense of the King's Lands", "P2"]],
                "objectives": [],
                "type": "quest"
             }
@@ -193,8 +193,8 @@
             {
                "coords": { "x": 23, "y": 74 },
                "header": "Valley of Kings",
-               "ends": ["The Trogg Threat", "In Defense of the King's Lands Part 1"],
-               "starts": ["In Defense of the King's Lands Part 2"],
+               "ends": ["The Trogg Threat", ["In Defense of the King's Lands", "P1"]],
+               "starts": [["In Defense of the King's Lands", "P2"]],
                "objectives": [],
                "type": "quest"
             },
@@ -204,7 +204,7 @@
                "header": "Valley of Kings",
                "ends": [],
                "starts": [],
-               "objectives": ["In Defense of the King's Lands Part 2"],
+               "objectives": [["In Defense of the King's Lands", "P2"]],
                "type": "objective"
             }
          ]
@@ -219,13 +219,13 @@
                "header": "Valley of Kings",
                "ends": [],
                "starts": [],
-               "objectives": ["In Defense of the King's Lands Part 2"],
+               "objectives": [["In Defense of the King's Lands", "P2"]],
                "type": "objective"
             },
             {
                "coords": { "x": 23, "y": 74 },
                "header": "Valley of Kings",
-               "ends": ["In Defense of the King's Lands Part 2"],
+               "ends": [["In Defense of the King's Lands", "P2"]],
                "starts": [],
                "objectives": [],
                "type": "quest"

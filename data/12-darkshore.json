@@ -18,7 +18,7 @@
                "align": "top",
                "header": "Auberdine",
                "ends": ["The Corruption Abroad"],
-               "starts": ["The Absent Minded Prospector P1", "Onu", "Wanted: Murkdeep"],
+               "starts": [["The Absent Minded Prospector", "P1"], "Onu", ["Wanted: Murkdeep", "E"]],
                "objectives": [],
                "type": "hub"
             },
@@ -36,7 +36,7 @@
                "header": "Twilight Shore",
                "ends": [],
                "starts": [],
-               "objectives": ["Wanted: Murkdeep"],
+               "objectives": [["Wanted: Murkdeep", "E"]],
                "type": "objective"
             },
             {
@@ -65,7 +65,7 @@
             {
                "coords": { "x": 36, "y": 84 },
                "header": "Prospector Remtravel",
-               "ends": ["The Absent Minded Prospector P1"],
+               "ends": [["The Absent Minded Prospector", "P1"]],
                "starts": [],
                "objectives": ["Buzzbox 525"],
                "type": "quest"
@@ -75,7 +75,7 @@
                "align": "bottom",
                "header": "",
                "ends": ["The Master's Glaive"],
-               "starts": ["Return to Onu", "Therylune's Escape"],
+               "starts": ["Return to Onu", ["Therylune's Escape", "F"]],
                "objectives": ["Use your Scrying Bowl", "Click on the Book"],
                "type": "quest"
             },
@@ -107,7 +107,7 @@
                "align": "top",
                "header": "Grove of the Ancients",
                "ends": ["Return to Onu"],
-               "starts": ["The Sleeper has Awakened"],
+               "starts": [["The Sleeper has Awakened", "F"]],
                "objectives": [],
                "type": "quest"
             },

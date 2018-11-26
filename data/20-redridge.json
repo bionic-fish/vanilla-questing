@@ -18,7 +18,7 @@
                "align": "right",
                "header": "Guard Howe",
                "ends": [],
-               "starts": ["Blackrock Bounty"],
+               "starts": [["Blackrock Bounty", "E"]],
                "objectives": [],
                "type": "quest"
             },
@@ -27,7 +27,7 @@
                "align": "right",
                "header": "",
                "ends": [],
-               "starts": ["Tharil'Zun", "Shadow Magic", "Howling in the Hills"],
+               "starts": [["Tharil'Zun", "E"], ["Shadow Magic", "E"], ["Howling in the Hills", "E"]],
                "objectives": [],
                "type": "quest"
             },
@@ -36,7 +36,7 @@
                "align": "top",
                "header": "",
                "ends": [],
-               "starts": ["Solomon's Law", "Wanted: Gath'llzogg"],
+               "starts": [["Solomon's Law", "E"], ["Wanted: Gath'llzogg", "E"]],
                "objectives": [],
                "type": "quest"
             },
@@ -44,7 +44,7 @@
                "coords": { "x": 26, "y": 47 },
                "header": "",
                "ends": [],
-               "starts": ["Wanted: Lieutenant Fangore", "What Comes Around..."],
+               "starts": [["Wanted: Lieutenant Fangore", "E"]],
                "objectives": [],
                "type": "quest"
             },
@@ -63,7 +63,7 @@
                "header": "",
                "ends": [],
                "starts": [],
-               "objectives": ["Howling in the Hills"],
+               "objectives": [["Howling in the Hills", "D"]],
                "type": "objective"
             },
             {
@@ -96,15 +96,15 @@
                "header": "",
                "ends": [],
                "starts": [],
-               "objectives": ["Wanted: Lieutenant Fangore", "Solomon's Law"],
+               "objectives": [["Wanted: Lieutenant Fangore", "E"], ["Solomon's Law", "E"]],
                "type": "objective"
             },
             {
                "coords": { "x": 84, "y": 47 },
                "align": "right",
                "header": "",
-               "ends": ["A Watchful Eye"],
-               "starts": ["Looking Further"],
+               "ends": [["A Watchful Eye", "E"]],
+               "starts": [["Looking Further", "E"]],
                "objectives": [],
                "type": "quest"
             },
@@ -114,7 +114,7 @@
                "header": "",
                "ends": [],
                "starts": [],
-               "objectives": ["Wanted: Gath'llzogg", "Shadow Magic"],
+               "objectives": [["Wanted: Gath'llzogg", "E"], ["Shadow Magic", "E"]],
                "type": "objective"
             },
             {
@@ -123,13 +123,13 @@
                "header": "",
                "ends": [],
                "starts": [],
-               "objectives": ["Tharil'Zun", "Shadow Magic"],
+               "objectives": [["Tharil'Zun", "E"], ["Shadow Magic", "E"]],
                "type": "objective"
             },
             {
                "coords": { "x": 63, "y": 50 },
                "header": "An Empty Jar",
-               "ends": ["Looking Further"],
+               "ends": [["Looking Further", "E"]],
                "starts": [],
                "objectives": [],
                "type": "quest"
@@ -144,7 +144,7 @@
                "coords": { "x": 63, "y": 50 },
                "align": "right",
                "header": "An Empty Jar",
-               "ends": ["Looking Further"],
+               "ends": [["Looking Further", "E"]],
                "starts": [],
                "objectives": [],
                "type": "quest"
@@ -155,14 +155,14 @@
                "header": "Render's Rock",
                "ends": [],
                "starts": [],
-               "objectives": ["Blackrock Bounty"],
+               "objectives": [["Blackrock Bounty", "E"]],
                "type": "objective"
             },
             {
                "coords": { "x": 28, "y": 13 },
                "header": "Corporal Keeshan",
                "ends": [],
-               "starts": ["Missing in Action"],
+               "starts": [["Missing in Action", "F"]],
                "objectives": [],
                "type": "quest"
             },
@@ -172,7 +172,7 @@
                "header": "",
                "ends": [],
                "starts": [],
-               "objectives": ["Missing in Action"],
+               "objectives": [["Missing in Action", "F"]],
                "type": "objective"
             }
          ]
@@ -187,14 +187,14 @@
                "header": "",
                "ends": [],
                "starts": [],
-               "objectives": ["Missing in Action"],
+               "objectives": [["Missing in Action", "F"]],
                "type": "objective"
             },
             {
                "coords": { "x": 33, "y": 49 },
                "align": "right",
                "header": "Marshal Morris",
-               "ends": ["Tharil'Zun", "Shadow Magic", "Missing in Action"],
+               "ends": [["Tharil'Zun", "E"], ["Shadow Magic", "E"], ["Missing in Action", "F"]],
                "starts": [],
                "objectives": [],
                "type": "quest"
@@ -202,7 +202,7 @@
             {
                "coords": { "x": 31, "y": 47 },
                "header": "Vernon Osgood",
-               "ends": ["Howling in the Hills"],
+               "ends": [["Howling in the Hills", "E"]],
                "starts": [],
                "objectives": [],
                "type": "quest"
@@ -211,7 +211,7 @@
                "coords": { "x": 30, "y": 44 },
                "align": "top",
                "header": "Lakeshire Town Hall",
-               "ends": ["Solomon's Law", "Wanted: Lieutenant Fangore", "Wanted: Gath'llzogg"],
+               "ends": [["Solomon's Law", "E"], ["Wanted: Lieutenant Fangore", "E"], ["Wanted: Gath'llzogg", "E"]],
                "starts": [],
                "objectives": [],
                "type": "quest"
@@ -220,7 +220,7 @@
                "coords": { "x": 26, "y": 47 },
                "header": "Guard Berton",
                "ends": [],
-               "starts": ["What Comes Around..."],
+               "starts": [["What Comes Around...", "D"]],
                "objectives": [],
                "type": "quest"
             },
@@ -228,7 +228,7 @@
                "coords": { "x": 32, "y": 58 },
                "align": "right",
                "header": "Guard Howe",
-               "ends": ["Blackrock Bounty"],
+               "ends": [["Blackrock Bounty", "E"]],
                "starts": [],
                "objectives": [],
                "type": "quest"

@@ -33,8 +33,8 @@
                "coords": { "x": 55, "y": 12 },
                "align": "top",
                "header": "Shoni the Silent",
-               "ends": ["Speak with Shoni"],
-               "starts": ["Underground Assault"],
+               "ends": [["Underground Assault", "D"]],
+               "starts": [],
                "objectives": [],
                "type": "quest"
             },
@@ -42,8 +42,8 @@
                "coords": { "x": 65, "y": 21 },
                "align": "bottom",
                "header": "Wilder Thistlenettle",
-               "ends": [],
-               "starts": ["Oh Brother...", "Collecting Memories"],
+               "ends": [["Oh Brother...", "D"], ["Collecting Memories", "D"]],
+               "starts": [],
                "objectives": [],
                "type": "quest"
             },
@@ -61,7 +61,7 @@
                "align": "right",
                "header": "Wu Shen",
                "ends": [],
-               "starts": ["Yorus Barleybrew,"],
+               "starts": [["Yorus Barleybrew", "C"]],
                "objectives": [],
                "type": "quest"
             },
@@ -111,7 +111,7 @@
                "align": "top",
                "header": "Theocritus",
                "ends": [],
-               "starts": ["A Watchful Eye"],
+               "starts": [["A Watchful Eye", "E"]],
                "objectives": [],
                "type": "quest"
             },

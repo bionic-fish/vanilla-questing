@@ -16,8 +16,8 @@
             {
                "coords": { "x": 26, "y": 38 },
                "header": "Maestra's Post",
-               "ends": ["The Tower of Althalaxx P2", "The Sleeper has Awakened"],
-               "starts": ["Bathran's Hair", "The Tower of Althalaxx P3"],
+               "ends": [["The Tower of Althalaxx", "P2"], ["The Sleeper has Awakened", "F"]],
+               "starts": ["Bathran's Hair", ["The Tower of Althalaxx", "P3"]],
                "objectives": [],
                "type": "quest"
             },
@@ -27,7 +27,7 @@
                "header": "The Ruins of Ordil'Aran",
                "ends": [],
                "starts": [],
-               "objectives": ["The Tower of Althalaxx P3"],
+               "objectives": [["The Tower of Althalaxx", "P3"]],
                "type": "objective"
             },
             {
@@ -57,8 +57,8 @@
             {
                "coords": { "x": 26, "y": 38 },
                "header": "Maestra's Post",
-               "ends": ["Bathran's Hair", "The Tower of Althalaxx P3"],
-               "starts": ["Orendil's Cure", "The Tower of Althalaxx P4"],
+               "ends": ["Bathran's Hair", ["The Tower of Althalaxx", "P3"]],
+               "starts": ["Orendil's Cure", ["The Tower of Althalaxx", "P4"]],
                "objectives": [],
                "type": "quest"
             },
@@ -76,7 +76,7 @@
                "align": "bottom",
                "header": "Astranaar",
                "ends": ["Orendil's Cure"],
-               "starts": ["The Zoram Strand", "Elune's Tear", "Raene's Cleansing", "Culling the Threat"],
+               "starts": ["The Zoram Strand", "Elune's Tear", ["Raene's Cleansing", "P1"], "Culling the Threat"],
                "objectives": ["Set Hearthstone"],
                "type": "hub"
             },
@@ -136,13 +136,13 @@
                "header": "",
                "ends": [],
                "starts": [],
-               "objectives": ["The Tower of Althalaxx P4"],
+               "objectives": [["The Tower of Althalaxx", "P4"]],
                "type": "objective"
             },
             {
                "coords": { "x": 23, "y": 52 },
                "header": "Therysil",
-               "ends": ["Therylune's Escape"],
+               "ends": [["Therylune's Escape", "F"]],
                "starts": [],
                "objectives": [],
                "type": "quest"
@@ -151,16 +151,16 @@
                "coords": { "x": 26, "y": 39 },
                "align": "top",
                "header": "Delgren the Purifier",
-               "ends": ["The Tower of Althalaxx P4"],
-               "starts": ["The Tower of Althalaxx P5"],
+               "ends": [["The Tower of Althalaxx", "P4"]],
+               "starts": [["The Tower of Althalaxx", "P5"]],
                "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 20, "y": 42 },
                "header": "Teronis' Corpse",
-               "ends": ["Raene's Cleansing P1"],
-               "starts": ["Raene's Cleansing P2"],
+               "ends": [["Raene's Cleansing", "P1"]],
+               "starts": [["Raene's Cleansing", "P2"]],
                "objectives": ["Farm a Gem from the Murlocs"],
                "type": "quest"
             },
@@ -248,7 +248,7 @@
                "align": "right",
                "header": "Feero Ironhand",
                "ends": [],
-               "starts": ["Supplies to Auberdine"],
+               "starts": [["Supplies to Auberdine", "F"]],
                "objectives": [],
                "type": "quest"
             },
@@ -258,7 +258,7 @@
                "header": "Ashenvale Road",
                "ends": [],
                "starts": [],
-               "objectives": ["Supplies to Auberdine", "Hearthstone to Ashenvale"],
+               "objectives": [["Supplies to Auberdine", "F"], "Hearthstone to Ashenvale"],
                "type": "objective"
             }
          ]
@@ -271,8 +271,8 @@
                "coords": { "x": 36, "y": 50 },
                "align": "top",
                "header": "Astranaar",
-               "ends": ["The Zoram Strand", "Raene's Cleansing P2", "The Ruins of Stardust"],
-               "starts": ["Raene's Cleansing P3", "An Aggressive Defense"],
+               "ends": ["The Zoram Strand", ["Raene's Cleansing", "P2"], "The Ruins of Stardust"],
+               "starts": [["Raene's Cleansing", "P3"], "An Aggressive Defense"],
                "objectives": [],
                "type": "hub"
             },
@@ -280,8 +280,8 @@
                "coords": { "x": 54, "y": 46 },
                "align": "right",
                "header": "Shael'Dryn",
-               "ends": ["Raene's Cleansing P3"],
-               "starts": ["Raene's Cleansing P4"],
+               "ends": [["Raene's Cleansing", "P3"]],
+               "starts": [["Raene's Cleansing", "P4"]],
                "objectives": [],
                "type": "quest"
             },
@@ -305,7 +305,6 @@
             },
             {
                "coords": { "x": 48, "y": 70 },
-               "align": "bottom",
                "header": "",
                "ends": [],
                "starts": [],
@@ -321,7 +320,6 @@
          "waypoints": [
             {
                "coords": { "x": 48, "y": 70 },
-               "align": "bottom",
                "header": "Sentinel Velene Starstrike",
                "ends": [],
                "starts": [],
@@ -330,7 +328,7 @@
             },
             {
                "coords": { "x": 50, "y": 67 },
-               "align": "bottom",
+               "align": "top",
                "header": "",
                "ends": ["Elemental Bracers"],
                "starts": [],
@@ -352,7 +350,7 @@
                "header": "",
                "ends": [],
                "starts": [],
-               "objectives": ["Raene's Cleansing P4", "Wooden Key drops from the trees", "Hearthstone to Astranaar"],
+               "objectives": [["Raene's Cleansing", "P4"], "Wooden Key drops from the trees", "Hearthstone to Astranaar"],
                "type": "objective"
             }
          ]
@@ -374,8 +372,8 @@
                "coords": { "x": 54, "y": 46 },
                "align": "right",
                "header": "Shael'Dryn",
-               "ends": ["Raene's Cleansing P4"],
-               "starts": ["Raene's Cleansing P5"],
+               "ends": [["Raene's Cleansing", "P4"]],
+               "starts": [["Raene's Cleansing", "P5"]],
                "objectives": [],
                "type": "quest"
             },
@@ -406,8 +404,8 @@
                "coords": { "x": 39, "y": 43 },
                "align": "right",
                "header": "Auberdine",
-               "ends": ["Wanted: Murkdeep", "The Absent Minded Prospector P1"],
-               "starts": ["The Absent Minded Prospector P2"],
+               "ends": ["Wanted: Murkdeep", ["The Absent Minded Prospector", "P1"]],
+               "starts": [["The Absent Minded Prospector", "P2"]],
                "objectives": [],
                "type": "hub"
             },

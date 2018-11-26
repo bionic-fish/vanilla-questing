@@ -26,7 +26,7 @@
                "align": "right",
                "header": "Sentinel Tower",
                "ends": ["Return to Lewis"],
-               "starts": ["The People's Militia P1", "The Defias Brotherhood", "Patrolling Westfall"],
+               "starts": [["The People's Militia", "P1"], ["The Defias Brotherhood", "P1"], "Patrolling Westfall"],
                "objectives": [],
                "type": "hub"
             },
@@ -71,7 +71,7 @@
                "header": "Jangolode Mine",
                "ends": [],
                "starts": [],
-               "objectives": ["Red Leather Bandanas", "The People's Militia P1"],
+               "objectives": ["Red Leather Bandanas", ["The People's Militia", "P1"]],
                "type": "objective"
             },
             {
@@ -108,7 +108,7 @@
             },
             {
                "coords": { "x": 27, "y": 43 },
-               "header": "",
+               "header": "Threshadon Carcass",
                "ends": [],
                "starts": [],
                "objectives": ["Westfall Stew", "3x Fleshripper spawn"],
@@ -117,8 +117,8 @@
             {
                "coords": { "x": 26, "y": 48 },
                "header": "Shipwreck",
-               "ends": ["Captain Sander's Hidden Treasure P1"],
-               "starts": ["Captain Sander's Hidden Treasure P1", "Captain Sander's Hidden Treasure P2"],
+               "ends": [["Captain Sander's Hidden Treasure", "P1"]],
+               "starts": [["Captain Sander's Hidden Treasure", "P1-2"]],
                "objectives": ["Westfall Stew", "Murloc Eyes"],
                "type": "quest"
             },
@@ -144,8 +144,8 @@
                "coords": { "x": 41, "y": 48 },
                "align": "right",
                "header": "",
-               "ends": ["Captain Sander's Hidden Treasure P2"],
-               "starts": ["Captain Sander's Hidden Treasure P3"],
+               "ends": [["Captain Sander's Hidden Treasure", "P2"]],
+               "starts": [["Captain Sander's Hidden Treasure", "P3"]],
                "objectives": [],
                "type": "quest"
             },
@@ -176,8 +176,8 @@
                "coords": { "x": 57, "y": 47 },
                "align": "top",
                "header": "Sentinel Tower",
-               "ends": ["The People's Militia P1", "Patrolling Westfall"],
-               "starts": ["The People's Militia P2"],
+               "ends": [["The People's Militia", "P1"], "Patrolling Westfall"],
+               "starts": [["The People's Militia", "P2"]],
                "objectives": [],
                "type": "hub"
             },
@@ -220,8 +220,8 @@
                "coords": { "x": 41, "y": 17 },
                "align": "right",
                "header": "",
-               "ends": ["Captain Sander's Hidden Treasure P3"],
-               "starts": ["Captain Sander's Hidden Treasure P4"],
+               "ends": [["Captain Sander's Hidden Treasure", "P3"]],
+               "starts": [["Captain Sander's Hidden Treasure", "P4"]],
                "objectives": [],
                "type": "quest"
             },
@@ -229,7 +229,7 @@
                "coords": { "x": 26, "y": 17 },
                "align": "top",
                "header": "",
-               "ends": ["Captain Sander's Hidden Treasure P4"],
+               "ends": [["Captain Sander's Hidden Treasure", "P4"]],
                "starts": [],
                "objectives": [],
                "type": "quest"
@@ -240,7 +240,7 @@
                "header": "Gold Coast Quarry",
                "ends": [],
                "starts": [],
-               "objectives": ["The People's Militia P2"],
+               "objectives": [["The People's Militia", "P2"]],
                "type": "objective"
             }
          ]
@@ -255,15 +255,15 @@
                "header": "Gold Coast Quarry",
                "ends": [],
                "starts": [],
-               "objectives": ["The People's Militia P2"],
+               "objectives": [["The People's Militia", "P2"]],
                "type": "objective"
             },
             {
                "coords": { "x": 57, "y": 47 },
                "align": "top",
                "header": "Sentinel Tower",
-               "ends": ["The People's Militia P2"],
-               "starts": ["The People's Militia P3"],
+               "ends": [["The People's Militia", "P2"]],
+               "starts": [["The People's Militia", "P3"]],
                "objectives": [],
                "type": "hub"
             },
@@ -329,7 +329,7 @@
                "header": "The Dagger Hills",
                "ends": [],
                "starts": [],
-               "objectives": ["The People's Militia P3"],
+               "objectives": [["The People's Militia", "P3"]],
                "type": "objective"
             },
             {
@@ -359,7 +359,7 @@
                "coords": { "x": 57, "y": 47 },
                "align": "top",
                "header": "Sentinel Tower",
-               "ends": ["The People's Militia P3"],
+               "ends": [["The People's Militia", "P3"]],
                "starts": [],
                "objectives": [],
                "type": "hub"
@@ -392,8 +392,8 @@
                "coords": { "x": 27, "y": 44 },
                "align": "top",
                "header": "Lakeshire Inn",
-               "ends": ["The Defian Brotherhood P1"],
-               "starts": ["The Defian Brotherhood P2", "Dry Times", "A Free Lunch"],
+               "ends": [["The Defian Brotherhood", "P1"]],
+               "starts": [["The Defian Brotherhood", "P2"], "Dry Times", "A Free Lunch"],
                "objectives": [],
                "type": "quest"
             },
@@ -402,7 +402,7 @@
                "align": "top",
                "header": "Lakeshire Town Hall",
                "ends": [],
-               "starts": ["Messenger to Westfall P1", "Messenger to Stormwind P1", "Messenger to Darkshire P1"],
+               "starts": [["Messenger to Westfall", "P1"], ["Messenger to Stormwind", "P1"], ["Messenger to Darkshire", "P1"]],
                "objectives": [],
                "type": "quest"
             },
@@ -460,8 +460,8 @@
                "coords": { "x": 74, "y": 47 },
                "align": "bottom",
                "header": "Darkshire",
-               "ends": ["Messenger to Darkshire P1"],
-               "starts": ["Messenger to Darkshire P2"],
+               "ends": [["Messenger to Darkshire", "P1"]],
+               "starts": [["Messenger to Darkshire", "P2"]],
                "objectives": ["Buy Moonshine from the Bar"],
                "type": "hub"
             },
@@ -491,8 +491,8 @@
             {
                "coords": { "x": 57, "y": 47 },
                "header": "Sentinel Tower",
-               "ends": ["The Defias Brotherhood P2", "Messenger to Westfall P1"],
-               "starts": ["The Defias Brotherhood P3", "Messenger to Westfall P2"],
+               "ends": [["The Defias Brotherhood", "P2"], ["Messenger to Westfall", "P1"]],
+               "starts": [["The Defias Brotherhood", "P3"], ["Messenger to Westfall", "P2"]],
                "objectives": [],
                "type": "hub"
             }
@@ -505,8 +505,8 @@
             {
                "coords": { "x": 57, "y": 47 },
                "header": "Sentinel Tower",
-               "ends": ["The Defias Brotherhood P2", "Messenger to Westfall P1"],
-               "starts": ["The Defias Brotherhood P3", "Messenger to Westfall P2"],
+               "ends": [["The Defias Brotherhood", "P2"], ["Messenger to Westfall", "P1"]],
+               "starts": [["The Defias Brotherhood", "P3"], ["Messenger to Westfall", "P2"]],
                "objectives": [],
                "type": "hub"
             },
@@ -537,8 +537,8 @@
                "coords": { "x": 76, "y": 60 },
                "align": "right",
                "header": "Master Mathias Shaw",
-               "ends": ["The Defias Brotherhood P3"],
-               "starts": ["The Defias Brotherhood P4"],
+               "ends": [["The Defias Brotherhood", "P3"]],
+               "starts": [["The Defias Brotherhood", "P4"]],
                "objectives": [],
                "type": "quest"
             },
@@ -572,8 +572,8 @@
                "coords": { "x": 64, "y": 75 },
                "align": "bottom",
                "header": "General Marcus Jonathan",
-               "ends": ["Messenger to Stormwind P1"],
-               "starts": ["Messenger to Stormwind P2"],
+               "ends": [["Messenger to Stormwind", "P1"]],
+               "starts": [["Messenger to Stormwind", "P2"]],
                "objectives": [],
                "type": "quest"
             }
@@ -586,8 +586,8 @@
             {
                "coords": { "x": 64, "y": 75 },
                "header": "General Marcus Jonathan",
-               "ends": ["Messenger to Stormwind P1"],
-               "starts": ["Messenger to Stormwind P2"],
+               "ends": [["Messenger to Stormwind", "P1"]],
+               "starts": [["Messenger to Stormwind", "P2"]],
                "objectives": [],
                "type": "quest"
             },
@@ -618,8 +618,8 @@
                "coords": { "x": 57, "y": 47 },
                "align": "top",
                "header": "Sentinel Tower",
-               "ends": ["The Defias Brotherhood P4"],
-               "starts": ["The Defias Brotherhood P5"],
+               "ends": [["The Defias Brotherhood", "P4"]],
+               "starts": [["The Defias Brotherhood", "P5"]],
                "objectives": [],
                "type": "hub"
             },
@@ -628,7 +628,7 @@
                "header": "Moonbrook",
                "ends": [],
                "starts": [],
-               "objectives": ["The Defias Brotherhood P5"],
+               "objectives": [["The Defias Brotherhood", "P5"]],
                "type": "objective"
             }
          ]
@@ -642,15 +642,15 @@
                "header": "Moonbrook",
                "ends": [],
                "starts": [],
-               "objectives": ["The Defias Brotherhood P5"],
+               "objectives": [["The Defias Brotherhood", "P5"]],
                "type": "objective"
             },
             {
                "coords": { "x": 57, "y": 47 },
                "align": "top",
                "header": "Sentinel Tower",
-               "ends": ["The Defias Brotherhood P5"],
-               "starts": ["The Defias Brotherhood P6"],
+               "ends": [["The Defias Brotherhood", "P5"]],
+               "starts": [["The Defias Brotherhood", "P6"]],
                "objectives": [],
                "type": "quest"
             },
@@ -659,7 +659,7 @@
                "header": "Moonbrook",
                "ends": [],
                "starts": [],
-               "objectives": ["The Defias Brotherhood P6", "Find the Defias Messenger"],
+               "objectives": [["The Defias Brotherhood", "P6"], "Find the Defias Messenger"],
                "type": "objective"
             }
          ]
@@ -673,24 +673,24 @@
                "header": "Moonbrook",
                "ends": [],
                "starts": [],
-               "objectives": ["The Defias Brotherhood P6", "Find the Defias Messenger"],
+               "objectives": [["The Defias Brotherhood", "P6"], "Find the Defias Messenger"],
                "type": "objective"
             },
             {
                "coords": { "x": 57, "y": 47 },
                "align": "top",
                "header": "Sentinel Tower",
-               "ends": ["The Defias Brotherhood P6"],
-               "starts": ["The Defias Brotherhood P7", "Red Silk Bandanas"],
+               "ends": [["The Defias Brotherhood", "P6"]],
+               "starts": [["The Defias Brotherhood", "D"], ["Red Silk Bandanas", "D"]],
                "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 43, "y": 72 },
-               "header": "Deadmines Enterance",
+               "header": "Deadmines",
                "ends": [],
                "starts": [],
-               "objectives": ["Do the Deadmines with 5 quests."],
+               "objectives": [["The Defias Brotherhood", "D"], ["Red Silk Bandanas", "D"], ["Underground Assault", "D"], ["Oh Brother...", "D"], ["Collecting Memories", "D"]],
                "type": "objective"
             }
          ]
@@ -720,7 +720,7 @@
                "coords": { "x": 57, "y": 47 },
                "align": "top",
                "header": "Sentinel Tower",
-               "ends": ["The Defias Brotherhood P7", "Red Silk Bandanas"],
+               "ends": [["The Defias Brotherhood", "D"], ["Red Silk Bandanas", "D"]],
                "starts": [],
                "objectives": [],
                "type": "quest"

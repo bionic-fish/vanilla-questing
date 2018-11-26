@@ -49,7 +49,7 @@
                "coords": { "x": 55, "y": 12 },
                "header": "Shoni the Silent",
                "ends": ["Speak with Shoni"],
-               "starts": ["Underground Assault"],
+               "starts": [["Underground Assault", "D"]],
                "objectives": [],
                "type": "quest"
             },
@@ -67,7 +67,7 @@
                "align": "right",
                "header": "Wilder Thistlenettle",
                "ends": [],
-               "starts": ["Oh Brother...", "Collecting Memories"],
+               "starts": [["Oh Brother...", "D"], ["Collecting Memories", "D"]],
                "objectives": [],
                "type": "quest"
             },

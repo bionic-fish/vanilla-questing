@@ -254,13 +254,14 @@ function mouseover(event, data) {
 
    // GENERATE DIVS FOR FILLED PROPERTIES
    if (waypoint.header != '') { header += '<div class="header"><div id="left">' + waypoint.header + '</div><div id="right">' + waypoint.coords.x + '.' + waypoint.coords.y + '</div></div>'; }
-   waypoint.ends.forEach(quest_name => { ends += '<div class="ends">' + quest_name + '</div>'; });
-   waypoint.starts.forEach(quest_name => { starts += '<div class="starts">' + quest_name + '</div>'; });
-   waypoint.objectives.forEach(quest_name => { objectives += '<div class="objectives">' + quest_name + '</div>'; });
+   waypoint.ends.forEach(data => { ends += tooltip_row('ends', data); });
+   waypoint.starts.forEach(data => { starts += tooltip_row('starts', data); });
+   waypoint.objectives.forEach(data => { objectives += tooltip_row('objectives', data); });
 
    // RENDER IN WAYPOINT DATA
    $('#tooltip').html('<div id="tooltip-inner">' + header + ends + starts + objectives + '</div>');
 
+   // TOOLTIP ALIGNMENT VARS
    var height = parseFloat($('#tooltip').css('height'));
    var width = parseFloat($('#tooltip').css('width'));
    var offset = 15;
@@ -273,6 +274,27 @@ function mouseover(event, data) {
    $('#tooltip').css('left', x);
    $('#tooltip').css('top', y);
    $('#tooltip').css('display', 'inline-block');
+}
+
+// GENERATE A TOOLTIP ROW FOR QUESTS/OBJECTIVES
+function tooltip_row(category, data) {
+
+   // DEFINE ANSWER
+   var answer = '';
+
+   // BIND DATA TYPE
+   var type = typeof(data);
+
+   // IF ITS A STRING
+   if (type === 'string') {
+      answer += '<div class="' + category + '"><div id="left">' + data + '</div></div>';
+
+   // IF ITS AN ARRAY
+   } else {
+      answer += '<div class="' + category + '"><div id="left">' + data[0] + '</div><div id="right">' + data[1] + '</div></div>';  
+   }
+
+   return answer;
 }
 
 // PRELOAD EVERY ZONES BACKGROUND

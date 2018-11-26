@@ -35,8 +35,8 @@
                "coords": { "x": 27, "y": 44 },
                "align": "top",
                "header": "",
-               "ends": ["Messenger to Westfall", "Messenger to Darkshire", "Messenger to Stormwind", "Yorus Barleybrew", "Dry Times"],
-               "starts": ["Selling Sunfish", "Murloc Poachers", "The Rethban Gauntlet"],
+               "ends": ["Messenger to Westfall", "Messenger to Darkshire", "Messenger to Stormwind", ["Yorus Barleybrew", "C"], "Dry Times"],
+               "starts": ["Selling Sunfish", "Murloc Poachers", ["The Rethban Gauntlet", "C"]],
                "objectives": ["Set Hearthstone"],
                "type": "quest"
             },
@@ -63,7 +63,7 @@
                "header": "Rethban Caverns",
                "ends": [],
                "starts": [],
-               "objectives": ["Rethban Ore", "The Rethban Gauntlet"],
+               "objectives": ["Rethban Ore", ["The Rethban Gauntlet", "C"]],
                "type": "objective"
             },
             {
@@ -101,8 +101,8 @@
                "coords": { "x": 27, "y": 45 },
                "align": "top",
                "header": "Lakeshire Inn",
-               "ends": ["Delivering Daffodils", "The Rethban Gauntlet"],
-               "starts": ["The Shieldsmith"],
+               "ends": ["Delivering Daffodils", ["The Rethban Gauntlet", "C"]],
+               "starts": [["The Shieldsmith", "C"]],
                "objectives": [],
                "type": "quest"
             },

@@ -11,14 +11,14 @@
                "ends": [],
                "starts": ["Seasoned Wolf Kabobs"],
                "objectives": [],
-               "type": "quest"
+               "type": "hub"
             },
             {
                "coords": { "x": 80, "y": 48 },
                "align": "right",
                "header": "Viktori Prism'Antras",
-               "ends": ["Look to the Stars P1"],
-               "starts": ["Look to the Stars P1", "Look to the Stars P2"],
+               "ends": [["Look to the Stars", "P1"]],
+               "starts": [["Look to the Stars", "P1-2"]],
                "objectives": [],
                "type": "quest"
             },
@@ -26,8 +26,8 @@
                "coords": { "x": 82, "y": 59 },
                "align": "right",
                "header": "Blind Mary",
-               "ends": ["Ghost Hair Thread", "Look to the Stars P2"],
-               "starts": ["Return the Comb"],
+               "ends": ["Ghost Hair Thread", ["Look to the Stars", "P2"]],
+               "starts": ["Return the Comb", ["Look to the Stars", "P3"]],
                "objectives": [],
                "type": "quest"
             },
@@ -37,7 +37,7 @@
                "header": "Tranquil Gardens Cemetary",
                "ends": [],
                "starts": [],
-               "objectives": ["The Night Watch P1", "The Totem of Infliction", "Look to the Stars P3"],
+               "objectives": [["The Night Watch", "P1"], "The Totem of Infliction", ["Look to the Stars", "P3"]],
                "type": "objective"
             }
          ]
@@ -52,23 +52,23 @@
                "header": "Tranquil Gardens Cemetary",
                "ends": [],
                "starts": [],
-               "objectives": ["The Night Watch P1", "The Totem of Infliction", "Look to the Stars P3"],
+               "objectives": [["The Night Watch", "P1"], "The Totem of Infliction", ["Look to the Stars", "P3"]],
                "type": "objective"
             },
             {
                "coords": { "x": 80, "y": 48 },
                "align": "top",
                "header": "Viktori Prism'Antras",
-               "ends": ["Look to the Stars P2"],
-               "starts": ["Look to the Stars P3"],
+               "ends": [["Look to the Stars", "P3"]],
+               "starts": [["Look to the Stars", "P4"]],
                "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 74, "y": 47 },
                "header": "Darkshire",
-               "ends": ["Seasoned Wolf Kabobs", "The Night Watch P1", "Return the Comb", "The Totem of Infliction"],
-               "starts": ["The Night Watch P2", "Deliver the Thread"],
+               "ends": ["Seasoned Wolf Kabobs", ["The Night Watch", "P1"], "Return the Comb", "The Totem of Infliction"],
+               "starts": [["The Night Watch", "P2"], "Deliver the Thread"],
                "objectives": [],
                "type": "hub"
             },
@@ -99,8 +99,8 @@
                "coords": { "x": 85, "y": 69 },
                "align": "top",
                "header": "Marshal Haggard",
-               "ends": ["The Legend of Stalvan P7", "The Legend of Stalvan P8"],
-               "starts": ["The Legend of Stalvan P8", "The Legend of Stalvan P9"],
+               "ends": [["The Legend of Stalvan", "P7-8"]],
+               "starts": [["The Legend of Stalvan", "P8-9"]],
                "objectives": ["Loot the Chest Upstairs"],
                "type": "quest"
             },

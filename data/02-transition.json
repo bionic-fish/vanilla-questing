@@ -73,9 +73,9 @@
                "coords": { "x": 74, "y": 37 },
                "align": "right",
                "header": "Harry Burlguard",
-               "ends": ["A Warrior's Training"],
-               "starts": ["Bartley the Drunk"],
-               "objectives": ["Bartley the Drunk"],
+               "ends": [["A Warrior's Training", "C"]],
+               "starts": [["Bartley the Drunk", "C"]],
+               "objectives": [["Bartley the Drunk", "C"]],
                "type": "quest"
             },
             {

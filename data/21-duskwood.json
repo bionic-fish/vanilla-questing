@@ -64,8 +64,8 @@
                "coords": { "x": 74, "y": 47 },
                "align": "top",
                "header": "Darkshire",
-               "ends": ["The Legend of Stalvan P9-12", "Zombie Juice", "The Shadowy Figure", "The Shadowy Search Continues", "Inquire at the Inn"],
-               "starts": ["The Legend of Stalvan P10-12", "Gather Rot Blossoms", "The Shadowy Search Continues", "Inquire at the Inn", "Finding the Shadowy Figure", "Crime and Punishment"],
+               "ends": [["The Legend of Stalvan", "P9-12"], "Zombie Juice", "The Shadowy Figure", "The Shadowy Search Continues", "Inquire at the Inn"],
+               "starts": [["The Legend of Stalvan", "P9-12"], "Gather Rot Blossoms", "The Shadowy Search Continues", "Inquire at the Inn", "Finding the Shadowy Figure", ["Crime and Punishment", "D"]],
                "objectives": [],
                "type": "hub"
             },
@@ -131,7 +131,7 @@
                "header": "",
                "ends": [],
                "starts": [],
-               "objectives": ["The Night Watch P2", "Gather Rot Blossoms"],
+               "objectives": [["The Night Watch", "P2"], "Gather Rot Blossoms"],
                "type": "objective"
             },
             {
@@ -147,8 +147,8 @@
                "align": "top",
                "header": "Dawning Wood Catacombs",
                "ends": [],
-               "starts": ["An Old History Book"],
-               "objectives": ["Proving Your Worth", "The History Book drops from Mobs"],
+               "starts": [["An Old History Book", "R"]],
+               "objectives": ["Proving Your Worth"],
                "type": "objective"
             }
          ]
@@ -162,8 +162,8 @@
                "align": "top",
                "header": "Dawning Wood Catacombs",
                "ends": [],
-               "starts": ["An Old History Book"],
-               "objectives": ["Proving Your Worth", "The History Book drops from Mobs"],
+               "starts": [["An Old History Book", "R"]],
+               "objectives": ["Proving Your Worth"],
                "type": "objective"
             },
             {

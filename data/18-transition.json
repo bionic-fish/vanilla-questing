@@ -16,8 +16,8 @@
             {
                "coords": { "x": 42, "y": 66 },
                "header": "Goldshire",
-               "ends": ["The Legend of Stalvan P4"],
-               "starts": ["The Legend of Stalvan P5"],
+               "ends": [["The Legend of Stalvan", "P4"]],
+               "starts": [["The Legend of Stalvan", "P5"]],
                "objectives": ["Loot the Chest Upstairs"],
                "type": "quest"
             },
@@ -59,7 +59,7 @@
                "header": "Felicia Gump",
                "ends": [],
                "starts": [],
-               "objectives": ["Buy a 1x Stormwind Seasoning Herbs"],
+               "objectives": ["Buy 1x Stormwind Seasoning Herbs"],
                "type": "objective"
             },
             {
@@ -68,7 +68,7 @@
                "header": "Auction House",
                "ends": [],
                "starts": [],
-               "objectives": ["Buy a Bronze Tube"],
+               "objectives": ["Buy 1x Bronze Tube"],
                "type": "objective"
             },
             {
@@ -84,8 +84,8 @@
                "coords": { "x": 30, "y": 62 },
                "align": "bottom",
                "header": "Caretaker Folsom",
-               "ends": ["The Legend of Stalvan P5", "The Legend of Stalvan P6"],
-               "starts": ["The Legend of Stalvan P6", "The Legend of Stalvan P7"],
+               "ends": [["The Legend of Stalvan", "P5-6"]],
+               "starts": [["The Legend of Stalvan", "P6-7"]],
                "objectives": ["Hearthstone to Darkshire"],
                "type": "quest"
             }

@@ -1,6 +1,6 @@
 #tooltip {
    background: url('../img/darker.png');
-   min-width: 200px;
+   min-width: 220px;
    padding: 2px;
    display: none;
    position: absolute;
@@ -14,28 +14,22 @@
 
 #tooltip .header, #tooltip .ends, #tooltip .starts, #tooltip .objectives {
    background: url('../img/dark.png');
-   padding: 3px;
-   padding-left: 5px;
+   display: table;
+   width: 100%;
    color: white;
    margin-top: 2px;
 }
 
-#tooltip .header {
-   margin: 0px;
-   color: white;
-   display: table;
-   width: 100%;
-   padding: 0px;
-}
+#tooltip .header { margin: 0px; }
 
-.header #left, .header #right {
+#tooltip #left, #tooltip #right {
    width: auto;
    display: table-cell;
    padding: 3px;
    padding-left: 5px;
 }
 
-.header #right {
+#tooltip #right {
    text-align: right;
    padding-right: 5px;
 }

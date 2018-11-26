@@ -27,7 +27,7 @@
                "align": "bottom",
                "header": "Auberdine",
                "ends": [],
-               "starts": ["For Love Eternal", "Buzzbox 827", "Washed Ashore P1", "Cave Mushrooms", "The Red Crystal", "Deep Ocean, Vast Sea", "Bashal'Aran P1", "Tools of the Highbourne", "Plagued Lands", "How Big a Threat? P1", "The Tower of Althalaxx P1"],
+               "starts": ["For Love Eternal", "Buzzbox 827", ["Washed Ashore", "P1"], "Cave Mushrooms", "The Red Crystal", "Deep Ocean, Vast Sea", ["Bashal'Aran", "P1"], "Tools of the Highbourne", "Plagued Lands", ["How Big a Threat?", "P1"], ["The Tower of Althalaxx", "P1"]],
                "objectives": [],
                "type": "hub"
             },
@@ -35,8 +35,8 @@
                "coords": { "x": 44, "y": 36 },
                "align": "top",
                "header": "Asterion",
-               "ends": ["Bashal'Aran P1"],
-               "starts": ["Bashal'Aran P2"],
+               "ends": [["Bashal'Aran", "P1"]],
+               "starts": [["Bashal'Aran", "P2"]],
                "objectives": [],
                "type": "quest"
             },
@@ -46,7 +46,7 @@
                "header": "Bashal'Aran",
                "ends": [],
                "starts": [],
-               "objectives": ["Bashal'Aran P2"],
+               "objectives": [["Bashal'Aran", "P2"]],
                "type": "objective"
             }
          ]
@@ -61,14 +61,14 @@
                "header": "Bashal'Aran",
                "ends": [],
                "starts": [],
-               "objectives": ["Bashal'Aran P2"],
+               "objectives": [["Bashal'Aran", "P2"]],
                "type": "objective"
             },
             {
                "coords": { "x": 44, "y": 36 },
                "header": "Asterion",
-               "ends": ["Bashal'Aran P2"],
-               "starts": ["Bashal'Aran P3"],
+               "ends": [["Bashal'Aran", "P2"]],
+               "starts": [["Bashal'Aran", "P3"]],
                "objectives": [],
                "type": "quest"
             }
@@ -81,8 +81,8 @@
             {
                "coords": { "x": 44, "y": 36 },
                "header": "Asterion",
-               "ends": ["Bashal'Aran P2"],
-               "starts": ["Bashal'Aran P3"],
+               "ends": [["Bashal'Aran", "P2"]],
+               "starts": [["Bashal'Aran", "P3"]],
                "objectives": [],
                "type": "quest"
             },
@@ -92,7 +92,7 @@
                "header": "Bashal'Aran",
                "ends": [],
                "starts": [],
-               "objectives": ["Bashal'Aran P3"],
+               "objectives": [["Bashal'Aran", "P3"]],
                "type": "objective"
             }
          ]
@@ -107,20 +107,20 @@
                "header": "Bashal'Aran",
                "ends": [],
                "starts": [],
-               "objectives": ["Bashal'Aran P3"],
+               "objectives": [["Bashal'Aran", "P3"]],
                "type": "objective"
             },
             {
                "coords": { "x": 44, "y": 36 },
                "align": "bottom",
                "header": "Asterion",
-               "ends": ["Bashal'Aran P3"],
-               "starts": ["Bashal'Aran P4"],
+               "ends": [["Bashal'Aran", "P3"]],
+               "starts": [["Bashal'Aran", "P4"]],
                "objectives": [],
                "type": "quest"
             },
             {
-               "coords": { "x": 47, "y": 29 },
+               "coords": { "x": 45, "y": 29 },
                "align": "top",
                "header": "",
                "ends": [],
@@ -149,7 +149,7 @@
                "header": "",
                "ends": [],
                "starts": [],
-               "objectives": ["Washed Ashore P1"],
+               "objectives": [["Washed Ashore", "P1"]],
                "type": "objective"
             },
             {
@@ -158,7 +158,7 @@
                "header": "",
                "ends": [],
                "starts": [],
-               "objectives": ["How Big a Threat? P1"],
+               "objectives": [["How Big a Threat?", "P1"]],
                "type": "objective"
             }
          ]
@@ -173,15 +173,15 @@
                "header": "",
                "ends": [],
                "starts": [],
-               "objectives": ["How Big a Threat? P1"],
+               "objectives": [["How Big a Threat?", "P1"]],
                "type": "objective"
             },
             {
                "coords": { "x": 39, "y": 43 },
                "align": "right",
                "header": "Auberdine",
-               "ends": ["Washed Ashore P1", "Buzzbox 827", "How Big a Threat? P1", "Thundris Windweaver"],
-               "starts": ["Washed Ashore P2", "Buzzbox 411", "How Big a Threat? P2", "Thundris Windweaver", "The Cliffspring River"],
+               "ends": [["Washed Ashore", "P1"], "Buzzbox 827", ["How Big a Threat?", "P1"], "Thundris Windweaver"],
+               "starts": [["Washed Ashore", "P2"], "Buzzbox 411", ["How Big a Threat?", "P2"], "Thundris Windweaver", "The Cliffspring River"],
                "objectives": [],
                "type": "hub"
             },
@@ -198,7 +198,7 @@
                "header": "Skeletan Sea Turtle",
                "ends": [],
                "starts": [],
-               "objectives": ["Washed Ashore P2"],
+               "objectives": [["Washed Ashore", "P2"]],
                "type": "objective"
             }
          ]
@@ -212,7 +212,7 @@
                "header": "Skeletan Sea Turtle",
                "ends": [],
                "starts": [],
-               "objectives": ["Washed Ashore P2"],
+               "objectives": [["Washed Ashore", "P2"]],
                "type": "objective"
             },
             {
@@ -221,7 +221,7 @@
                "header": "",
                "ends": [],
                "starts": [],
-               "objectives": ["How Big a Threat? P2"],
+               "objectives": [["How Big a Threat?", "P2"]],
                "type": "objective"
             },
             {
@@ -260,7 +260,7 @@
                "header": "Ameth'Aran",
                "ends": [],
                "starts": [],
-               "objectives": ["Bashal'Aran P3", "The Fall of Ameth'Aran", "Highborne Relic", "For Love Eternal"],
+               "objectives": [["Bashal'Aran", "P3"], "The Fall of Ameth'Aran", "Highborne Relic", "For Love Eternal"],
                "type": "objective"
             }
          ]
@@ -275,7 +275,7 @@
                "header": "Ameth'Aran",
                "ends": [],
                "starts": [],
-               "objectives": ["Bashal'Aran P3", "The Fall of Ameth'Aran", "Highborne Relic", "For Love Eternal"],
+               "objectives": [["Bashal'Aran", "P3"], "The Fall of Ameth'Aran", "Highborne Relic", "For Love Eternal"],
                "type": "objective"
             },
             {
@@ -298,7 +298,7 @@
             {
                "coords": { "x": 39, "y": 43 },
                "header": "Auberdine",
-               "ends": ["Cleansing The Infected", "How Big a Threat? P2", "The Red Crystal", "Washed Ashore P2", "For Love Eternal", "Tools of the Highbourne"],
+               "ends": ["Cleansing The Infected", ["How Big a Threat?", "P2"], "The Red Crystal", ["Washed Ashore", "P2"], "For Love Eternal", "Tools of the Highbourne"],
                "starts": ["Tharnariun's Hope", "As Water Cascades", "Fruit of the Sea"],
                "objectives": ["Fill the empty vial at the Moonwell."],
                "type": "hub"
@@ -312,7 +312,7 @@
             {
                "coords": { "x": 39, "y": 43 },
                "header": "Auberdine",
-               "ends": ["Cleansing The Infected", "How Big a Threat? P2", "The Red Crystal", "Washed Ashore P2", "For Love Eternal", "Tools of the Highbourne"],
+               "ends": ["Cleansing The Infected", ["How Big a Threat?", "P2"], "The Red Crystal", ["Washed Ashore", "P2"], "For Love Eternal", "Tools of the Highbourne"],
                "starts": ["Tharnariun's Hope", "As Water Cascades", "Fruit of the Sea"],
                "objectives": ["Fill the empty vial at the Moonwell."],
                "type": "hub"
@@ -330,7 +330,7 @@
                "coords": { "x": 44, "y": 36 },
                "align": "right",
                "header": "Asterion",
-               "ends": ["Bashal'Aran P3"],
+               "ends": [["Bashal'Aran", "P3"]],
                "starts": [],
                "objectives": [],
                "type": "quest"
@@ -407,8 +407,8 @@
                "coords": { "x": 55, "y": 25 },
                "align": "top",
                "header": "Balthule Shadowstrike",
-               "ends": ["The Tower of Althalaxx P1"],
-               "starts": ["The Tower of Althalaxx P2"],
+               "ends": [["The Tower of Althalaxx", "P1"]],
+               "starts": [["The Tower of Althalaxx", "P2"]],
                "objectives": [],
                "type": "quest"
             },
@@ -418,7 +418,7 @@
                "header": "",
                "ends": [],
                "starts": [],
-               "objectives": ["The Tower of Althalaxx P2"],
+               "objectives": [["The Tower of Althalaxx", "P2"]],
                "type": "objective"
             }
          ]
@@ -433,15 +433,15 @@
                "header": "",
                "ends": [],
                "starts": [],
-               "objectives": ["The Tower of Althalaxx P2"],
+               "objectives": [["The Tower of Althalaxx", "P2"]],
                "type": "objective"
             },
             {
                "coords": { "x": 55, "y": 25 },
                "align": "top",
                "header": "Bathule Shadowstrike",
-               "ends": ["The Tower of Althalaxx P2"],
-               "starts": ["The Tower of Althalaxx P3"],
+               "ends": [["The Tower of Althalaxx", "P2"]],
+               "starts": [["The Tower of Althalaxx", "P3"]],
                "objectives": [],
                "type": "quest"
             },

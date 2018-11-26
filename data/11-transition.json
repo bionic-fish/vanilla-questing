@@ -14,17 +14,9 @@
                "type": "flightpath"
             },
             {
-               "coords": { "x": 65, "y": 59 },
-               "header": "Felicia Gump",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Buy a 1x Stormwind Seasoning Herbs"],
-               "type": "objective"
-            },
-            {
                "coords": { "x": 58, "y": 17 },
                "header": "Furen Longbeard",
-               "ends": ["The Shieldsmith"],
+               "ends": [["The Shieldsmith", "C"]],
                "starts": [],
                "objectives": [],
                "type": "quest"

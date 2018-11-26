@@ -58,7 +58,7 @@
                "coords": { "x": 63, "y": 50 },
                "header": "Rudna Amberstill",
                "ends": [],
-               "starts": ["Protecting the Herd"],
+               "starts": [["Protecting the Herd", "E"]],
                "objectives": [],
                "type": "quest"
             },
@@ -67,7 +67,7 @@
                "header": "Amberstill Ranch Hill",
                "ends": [],
                "starts": [],
-               "objectives": ["Protecting the Herd"],
+               "objectives": [["Protecting the Herd", "E"]],
                "type": "objective"
             }
          ]
@@ -81,13 +81,13 @@
                "header": "Amberstill Ranch Hill",
                "ends": [],
                "starts": [],
-               "objectives": ["Protecting the Herd"],
+               "objectives": [["Protecting the Herd", "E"]],
                "type": "objective"
             },
             {
                "coords": { "x": 63, "y": 50 },
                "header": "Rudna Amberstill",
-               "ends": ["Protecting the Herd"],
+               "ends": [["Protecting the Herd", "E"]],
                "starts": [],
                "objectives": [],
                "type": "quest"

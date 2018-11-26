@@ -17,8 +17,8 @@
                "coords": { "x": 74, "y": 47 },
                "align": "bottom",
                "header": "Darkshire",
-               "ends": ["The Legend of Stalvan P1"],
-               "starts": ["The Night Watch P1", "Seasoned Wolf Kabobs", "Raven Hill", "Deliveries to Sven", "The Hermit", "The Totem of Infliction", "The Legend of Stalvan P1", "The Legend of Stalvan P2"],
+               "ends": [["The Legend of Stalvan", "P1"]],
+               "starts": [["The Night Watch", "P1"], "Seasoned Wolf Kabobs", "Raven Hill", "Deliveries to Sven", "The Hermit", "The Totem of Infliction", ["The Legend of Stalvan", "P1-2"]],
                "objectives": ["Set Hearthstone"],
                "type": "hub"
             },
@@ -28,7 +28,7 @@
                "header": "Watcher Dodds",
                "ends": [],
                "starts": ["Eight-Legged Menaces"],
-               "objectives": ["Farm until you have 6x Gooey Spider Legs"],
+               "objectives": [],
                "type": "quest"
             },
             {
@@ -45,7 +45,7 @@
                "header": "",
                "ends": [],
                "starts": [],
-               "objectives": ["Eight-Legged Menaces", "The Totem of Infliction"],
+               "objectives": ["Eight-Legged Menaces", "The Totem of Infliction", "Farm until you have 6x Gooey Spider Legs"],
                "type": "objective"
             },
             {
@@ -152,8 +152,8 @@
             {
                "coords": { "x": 41, "y": 67 },
                "header": "Old Footlocker",
-               "ends": ["The Legend of Stalvan P2"],
-               "starts": ["The Legend of Stalvan P3"],
+               "ends": [["The Legend of Stalvan", "P2"]],
+               "starts": [["The Legend of Stalvan", "P3"]],
                "objectives": [],
                "type": "quest"
             },
@@ -221,8 +221,8 @@
                "coords": { "x": 74, "y": 47 },
                "align": "right",
                "header": "Darkshire",
-               "ends": ["Supplies from Darkshire", "Jitters' Growling Gut", "The Legend of Stalvan P3", "Dusky Crab Cakes"],
-               "starts": ["Ghost Hair Thread", "Dusky Crab Cakes", "Return to Jitters", "The Legend of Stalvan P4"],
+               "ends": ["Supplies from Darkshire", "Jitters' Growling Gut", ["The Legend of Stalvan", "P3"], "Dusky Crab Cakes"],
+               "starts": ["Ghost Hair Thread", "Dusky Crab Cakes", "Return to Jitters", ["The Legend of Stalvan", "P4"]],
                "objectives": [],
                "type": "hub"
             },

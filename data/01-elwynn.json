@@ -355,7 +355,7 @@
                "align": "top",
                "header": "Westbrook Garrison",
                "ends": ["Westbrook Garrison Needs Help!"],
-               "starts": ["Riverpaw Gnoll Bounty", "Wanted: Hogger"],
+               "starts": ["Riverpaw Gnoll Bounty", ["Wanted: Hogger", "E"]],
                "objectives": [],
                "type": "quest"
             },
@@ -365,7 +365,7 @@
                "header": "Forest's Edge",
                "ends": [],
                "starts": [],
-               "objectives": ["Riverpaw Gnoll Bounty", "Wanted: Hogger"],
+               "objectives": ["Riverpaw Gnoll Bounty", ["Wanted: Hogger", "E"]],
                "type": "objective"
             }
          ]
@@ -379,15 +379,15 @@
                "header": "Forest's Edge",
                "ends": [],
                "starts": [],
-               "objectives": ["Riverpaw Gnoll Bounty", "Wanted: Hogger"],
+               "objectives": ["Riverpaw Gnoll Bounty", ["Wanted: Hogger", "E"]],
                "type": "objective"
             },
             {
                "coords": { "x": 42, "y": 66 },
                "align": "top",
                "header": "Goldshire",
-               "ends": ["Wanted: Hogger"],
-               "starts": ["A Warrior's Training"],
+               "ends": [["Wanted: Hogger", "E"]],
+               "starts": [["A Warrior's Training", "C"]],
                "objectives": [],
                "type": "hub" 
             },

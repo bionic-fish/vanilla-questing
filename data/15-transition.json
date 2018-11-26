@@ -46,8 +46,8 @@
             {
                "coords": { "x": 31, "y": 84 },
                "header": "Chief Archaeologist Greywhisker",
-               "ends": ["The Absent Minded Prospector P2"],
-               "starts": ["The Absent Minded Prospector P3"],
+               "ends": [["The Absent Minded Prospector", "P2"]],
+               "starts": [["The Absent Minded Prospector", "P3"]],
                "objectives": [],
                "type": "quest"
             }
@@ -60,8 +60,8 @@
             {
                "coords": { "x": 31, "y": 84 },
                "header": "Chief Archaeologist Greywhisker",
-               "ends": ["The Absent Minded Prospector P2"],
-               "starts": ["The Absent Minded Prospector P3"],
+               "ends": [["The Absent Minded Prospector", "P2"]],
+               "starts": [["The Absent Minded Prospector", "P3"]],
                "objectives": [],
                "type": "quest"
             },
