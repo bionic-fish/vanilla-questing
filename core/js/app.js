@@ -218,3 +218,30 @@ $('#faq').on('click', () => {
 
 $('body').on('mouseover', '#show-legend', (event) => { legend(event); });
 $('body').on('mouseout', '#show-legend', () => { $('#legend').css('display', 'none'); });
+
+// MAP ONCLICK COORD CALCULATOR
+$('#map').on('click', (event) => {
+
+   // CHECK THAT A WAYPOINT WASNT CLICKED
+   if (event.target.tagName != 'IMG') {
+
+      // MAP HEIGHT & WIDTH PROPS
+      var map = {
+         width: event.currentTarget.clientWidth,
+         height: event.currentTarget.clientHeight
+      }
+
+      // CLICKED COORDS
+      var clicked = {
+         x: event.offsetX,
+         y: event.offsetY,
+      }
+
+      // FIGURE OUT % COORS
+      var x = ((clicked.x / map.width) * 100).toFixed(0);
+      var y = ((clicked.y / map.height) * 100).toFixed(0);
+
+      // LOG THEM OUT
+      log(x + '.' + y)
+   }
+});
