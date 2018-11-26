@@ -1,0 +1,77 @@
+#tooltip {
+   background: url('../img/darker.png');
+   min-width: 200px;
+   padding: 2px;
+   display: none;
+   position: absolute;
+   text-shadow: 1px 1px #242424;
+}
+
+#tooltip .item {
+   color: white;
+   padding: 2px;
+}
+
+#tooltip .header, #tooltip .ends, #tooltip .starts, #tooltip .objectives {
+   background: url('../img/dark.png');
+   padding: 3px;
+   padding-left: 5px;
+   color: white;
+   margin-top: 2px;
+}
+
+#tooltip .header {
+   margin: 0px;
+   color: white;
+   display: table;
+   width: 100%;
+   padding: 0px;
+}
+
+.header #left, .header #right {
+   width: auto;
+   display: table-cell;
+   padding: 3px;
+   padding-left: 5px;
+}
+
+.header #right {
+   text-align: right;
+   padding-right: 5px;
+}
+
+#tooltip .ends { background: url('../img/success.png'); }
+#tooltip .starts { background: url('../img/caution.png'); }
+#tooltip .objectives { background: url('../img/error.png'); }
+
+#legend {
+   background: url('../img/dark.png');
+   width: 140px;
+   padding: 2px;
+   position: absolute;
+   display: none;
+}
+
+#legend-inner {
+   background: url('../img/inner-bg.png');
+   text-shadow: 0px 0px #f1f1f1;
+   padding: 2px;
+}
+
+#wp {
+   background: url('../img/success.png');
+   display: table;
+   width: 100%;
+}
+
+#wp #left, #wp #right {
+   display: table-cell;
+   width: auto;
+   padding: 5px;
+}
+
+#wp:nth-child(even) {
+   background: transparent;
+}
+
+#wp #right { text-align: right; }

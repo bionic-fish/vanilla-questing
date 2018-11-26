@@ -1,0 +1,39 @@
+@font-face { font-family: 'Open Sans'; src: url('../fonts/main.woff'); }
+input, span, input[type=range]::-webkit-slider-thumb { all: unset; }
+
+body {
+   background: url('../img/bg.png');
+	font: 13px 'Open Sans', verdana;
+   color: #383838;
+   padding: 0px;
+   margin: 0px;
+}
+
+a:link, a:visited, a:hover {
+	color: #0073A9;
+   transition: .3s;
+   cursor: pointer;
+   text-decoration: none;
+}
+
+a:hover { color: rgb(175, 30, 30); }
+
+#wrapper, #prompt {
+   display: table;
+   width: 100%;
+   height: 100%;
+}
+
+#wrapper-inner, #prompt-#inner {
+   display: table-cell;
+   width: 100%;
+   height: 100%;
+   vertical-align: middle;
+}
+
+#innerbody {
+   background: url('../img/dark.png');
+   width: 772px;
+   margin: auto;
+   padding: 2px;
+}

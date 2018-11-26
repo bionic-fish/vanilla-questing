@@ -1,0 +1,37 @@
+.menu {
+   width: 764px;
+   margin: auto;
+   padding: 5px;
+   text-align: center;
+   color: rgb(173, 173, 173);
+   display: table;
+   text-shadow: 1px 1px #242424;
+}
+
+.menu #left, .menu #right {
+   display: table-cell;
+   width: auto;
+   text-align: left;
+}
+
+.menu #right, .menu #right { text-align: right; }
+
+.menu .highlight, .menu #blocks, .menu #wps, .menu #qs {
+   color: rgb(226, 224, 224);
+}
+
+.menu #faq, .menu #preload {
+   color: rgb(194, 194, 194);
+   transition: 0.4s;
+}
+
+.menu #faq:hover, .menu #preload:hover {
+   color: rgb(231, 231, 231);
+   text-decoration: underline;
+   cursor: pointer;
+}
+
+#disabled {
+   color: rgb(174, 248, 166);
+   transition: 0.4s;
+}

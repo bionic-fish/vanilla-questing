@@ -143,185 +143,6 @@ function render(data, settings, ref) {
    return data;
 }
 
-// RENDER MOUSEOVER
-function mouseover(event, data) {
-
-   // DECLARE TARGET
-   var target = data.raw[data.current];
-
-   // PICK UP & BIND RELEVANT DATA
-   var id = $(event.target).attr('wp');
-   var waypoint = target.waypoints[id];
-
-   // DECLARE EMPTY TOOLTIP CONTAINERS
-   var header = '';
-   var ends = '';
-   var starts = '';
-   var objectives = '';
-
-   // GENERATE DIVS FOR FILLED PROPERTIES
-   if (waypoint.header != '') { header += '<div class="header"><div id="left">' + waypoint.header + '</div><div id="right">' + waypoint.coords.x + '.' + waypoint.coords.y + '</div></div>'; }
-   waypoint.ends.forEach(quest_name => { ends += '<div class="ends">' + quest_name + '</div>'; });
-   waypoint.starts.forEach(quest_name => { starts += '<div class="starts">' + quest_name + '</div>'; });
-   waypoint.objectives.forEach(quest_name => { objectives += '<div class="objectives">' + quest_name + '</div>'; });
-
-   // RENDER IN WAYPOINT DATA
-   $('#tooltip').html('<div id="tooltip-inner">' + header + ends + starts + objectives + '</div>');
-
-   var height = parseFloat($('#tooltip').css('height'));
-   var width = parseFloat($('#tooltip').css('width'));
-   var offset = 15;
-
-   // CALCULATE COORDS  
-   var x = event.target.offsetParent.offsetLeft - (width / 2);
-   var y = event.target.offsetParent.offsetTop - (height + offset);
-   
-   // EXECUTE CSS CHANGES & SHOW THE DATA
-   $('#tooltip').css('left', x);
-   $('#tooltip').css('top', y);
-   $('#tooltip').css('display', 'inline-block');
-}
-
-// FIGURE OUT QUEST LOG
-function quests(data, current) {
-
-   var quests = {};
-
-   // FIND EACH WAYPOINT
-   for (var x = 0; x < current; x++) {
-      var waypoints = data[x].waypoints;
-      
-      // LOOP THROUGH EACH WAYPOINT ARRAY
-      for (var y = 0; y < waypoints.length; y++) {
-
-         // BIND STARTS/ENDS ARRAYS
-         var starts = waypoints[y].starts;
-         var ends = waypoints[y].ends;
-
-         // ADD NEW QUESTS & REMOVE OLD ONES
-         starts.forEach(quest => { quests[quest] = 0; });
-         ends.forEach(quest => { delete quests[quest]; });
-      }
-   }
-
-   var final = Object.keys(quests);
-   var str = '<div id="item"><div id="title">Quests Currently:</div><div id="prop">' + final.length + '/20</div></div>';
-
-   for (var z = 0; z < final.length; z++) {
-      str += '<div id="quest">' + final[z] + '</div>';
-   }
-
-   $('#quests #inner').html(str);
-}
-
-// PRELOAD EVERY ZONES BACKGROUND
-function preload() {
-
-   // PUSH IN SPINNING SELECTOR
-   $('#prompt-inner').html('<div id="loading"><div class="lds-css ng-scope"><div style="width:100%;height:100%" class="lds-rolling"><div></div></div></div></div>');
-   
-   // TURN THE DISPLAY PROPERTY ON
-   $('#prompt').css('display', 'table');
-
-   // WAIT 50MS BEFORE GRADUALLY TURNING OPACITY ON -- TO SMOOTHEN TRANSITION
-   sleep(50).then(() => {
-      $('#prompt').css('opacity', '1');
-
-      // ALL THE ZONES & DECLARE PROMISE ARRAY
-      var zones = [
-         'alterac',
-         'arathi',
-         'ashenvale',
-         'azshara',
-         'badlands',
-         'barrens',
-         'blasted',
-         'darkshore',
-         'darnassus',
-         'deadwind',
-         'desolace',
-         'duskwood',
-         'dustwallow',
-         'elwynn',
-         'epl',
-         'farmfarmfarm',
-         'felwood',
-         'feralas',
-         'hillsbrad',
-         'hinterlands',
-         'ironforge',
-         'loch',
-         'moonglade',
-         'morogh',
-         'needles',
-         'redridge',
-         'searing',
-         'steppes',
-         'stonetalon',
-         'stormwind',
-         'stv',
-         'swamp',
-         'tanaris',
-         'teldrassil',
-         'tirisfal',
-         'ungoro',
-         'westfall',
-         'wetlands',
-         'winterspring',
-         'wpl'
-      ];
-
-      // PROMISE CONTAINER
-      var promises = [];
-
-      // APPEND IN PRELOAD CONTAINER
-      $('body').append('<div id="preload-container"></div>');
-      
-      // SPECIFY HOW MUCH THE LOADING BAR SHOULD GROW WITH EACH COMPLETION
-      var bump = 100 / zones.length;
-
-      // MAKE A PROMISE FOR EACH ZONE & PUSH IT TO THE CONTAINER
-      zones.forEach(zone => { promises.push(promisify(zone, bump)); });
-
-      // WAIT FOR ALL PROMISES TO BE RESOLVED
-      Promise.all(promises).then(() => {
-
-         // CHANGE PRELOAD BUTTONS TEXT & COLOR
-         $('#preload').attr('id', 'disabled');
-         $('#disabled').text('Backgrounds Loaded');
-
-         // LOG THAT THE TASK IS DONE
-         log('Preload complete!');
-
-         // GRADUALLY TURN OFF OPACITY
-         $('#prompt').css('opacity', '0');
-         
-         // WAIT 200MS - THEN OFF LOADING SELECTOR & REMOVE THE ANIMATION ENTIRELY
-         sleep(200).then(() => {
-            $('#prompt').css('display', 'none');
-            $('#loading').remove();
-         });
-      });
-   });
-}
-
-// GENERATE A PROMISE
-function promisify(zone, bump) {
-   return new Promise((resolve, reject) => {
-
-      // CREATE NEW IMAGE OBJECT OF A ZONE
-      var img = new Image();
-      img.id = zone;
-      img.src = 'interface/img/maps/' + zone + '.png';
-
-      // APPEND IT TO THE CONTAINER
-      $('#preload-container').append(img);
-
-      // RESOLVE AFTER ITS DONE LOADING
-      $('#preload-container #' + zone).on('load', () => { resolve(); })
-   });
-}
-
 // OPEN FAQ WINDOW
 function faq() {
 
@@ -413,4 +234,148 @@ function legend(event) {
    $('#legend').css('left', x);
    $('#legend').css('top', y);
    $('#legend').css('display', 'inline-block');
+}
+
+// RENDER MOUSEOVER
+function mouseover(event, data) {
+
+   // DECLARE TARGET
+   var target = data.raw[data.current];
+
+   // PICK UP & BIND RELEVANT DATA
+   var id = $(event.target).attr('wp');
+   var waypoint = target.waypoints[id];
+
+   // DECLARE EMPTY TOOLTIP CONTAINERS
+   var header = '';
+   var ends = '';
+   var starts = '';
+   var objectives = '';
+
+   // GENERATE DIVS FOR FILLED PROPERTIES
+   if (waypoint.header != '') { header += '<div class="header"><div id="left">' + waypoint.header + '</div><div id="right">' + waypoint.coords.x + '.' + waypoint.coords.y + '</div></div>'; }
+   waypoint.ends.forEach(quest_name => { ends += '<div class="ends">' + quest_name + '</div>'; });
+   waypoint.starts.forEach(quest_name => { starts += '<div class="starts">' + quest_name + '</div>'; });
+   waypoint.objectives.forEach(quest_name => { objectives += '<div class="objectives">' + quest_name + '</div>'; });
+
+   // RENDER IN WAYPOINT DATA
+   $('#tooltip').html('<div id="tooltip-inner">' + header + ends + starts + objectives + '</div>');
+
+   var height = parseFloat($('#tooltip').css('height'));
+   var width = parseFloat($('#tooltip').css('width'));
+   var offset = 15;
+
+   // CALCULATE COORDS  
+   var x = event.target.offsetParent.offsetLeft - (width / 2);
+   var y = event.target.offsetParent.offsetTop - (height + offset);
+   
+   // EXECUTE CSS CHANGES & SHOW THE DATA
+   $('#tooltip').css('left', x);
+   $('#tooltip').css('top', y);
+   $('#tooltip').css('display', 'inline-block');
+}
+
+// PRELOAD EVERY ZONES BACKGROUND
+function preload() {
+
+   // PUSH IN SPINNING SELECTOR
+   $('#prompt-inner').html('<div id="loading"><div class="lds-css ng-scope"><div style="width:100%;height:100%" class="lds-rolling"><div></div></div></div></div>');
+
+   // TURN THE DISPLAY PROPERTY ON
+   $('#prompt').css('display', 'table');
+
+   // WAIT 50MS BEFORE GRADUALLY TURNING OPACITY ON -- TO SMOOTHEN TRANSITION
+   sleep(50).then(() => {
+      $('#prompt').css('opacity', '1');
+
+      // ALL THE ZONES & DECLARE PROMISE ARRAY
+      var zones = [
+         'alterac',
+         'arathi',
+         'ashenvale',
+         'azshara',
+         'badlands',
+         'barrens',
+         'blasted',
+         'darkshore',
+         'darnassus',
+         'deadwind',
+         'desolace',
+         'duskwood',
+         'dustwallow',
+         'elwynn',
+         'epl',
+         'farmfarmfarm',
+         'felwood',
+         'feralas',
+         'hillsbrad',
+         'hinterlands',
+         'ironforge',
+         'loch',
+         'moonglade',
+         'morogh',
+         'needles',
+         'redridge',
+         'searing',
+         'steppes',
+         'stonetalon',
+         'stormwind',
+         'stv',
+         'swamp',
+         'tanaris',
+         'teldrassil',
+         'tirisfal',
+         'ungoro',
+         'westfall',
+         'wetlands',
+         'winterspring',
+         'wpl'
+      ];
+
+      // PROMISE CONTAINER
+      var promises = [];
+
+      // APPEND IN PRELOAD CONTAINER
+      $('body').append('<div id="preload-container"></div>');
+
+      // MAKE A PROMISE FOR EACH ZONE & PUSH IT TO THE CONTAINER
+      zones.forEach(zone => { promises.push(promisify(zone)); });
+
+      // WAIT FOR ALL PROMISES TO BE RESOLVED
+      Promise.all(promises).then(() => {
+
+         // CHANGE PRELOAD BUTTONS TEXT & COLOR
+         $('#preload').attr('id', 'disabled');
+         $('#disabled').text('Backgrounds Loaded');
+
+         // LOG THAT THE TASK IS DONE
+         log('Preload complete!');
+
+         // GRADUALLY TURN OFF OPACITY
+         $('#prompt').css('opacity', '0');
+         
+         // WAIT 200MS - THEN OFF LOADING SELECTOR & REMOVE THE ANIMATION ENTIRELY
+         sleep(200).then(() => {
+            $('#prompt').css('display', 'none');
+            $('#loading').remove();
+         });
+      });
+   });
+}
+
+// GENERATE A PROMISE
+function promisify(zone) {
+   return new Promise((resolve, reject) => {
+
+      // CREATE NEW IMAGE OBJECT OF A ZONE
+      var img = new Image();
+      img.id = zone;
+      img.src = 'interface/img/maps/' + zone + '.png';
+
+      // APPEND IT TO THE CONTAINER
+      $('#preload-container').append(img);
+
+      // RESOLVE AFTER ITS DONE LOADING
+      $('#preload-container #' + zone).on('load', () => { resolve(); })
+   });
 }

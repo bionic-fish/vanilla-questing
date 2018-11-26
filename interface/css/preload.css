@@ -1,0 +1,8 @@
+#preload-container {
+   display: none;
+}
+
+#preload-container img {
+   width: 1px;
+   height: 1px;
+}
