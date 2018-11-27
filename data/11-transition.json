@@ -27,7 +27,7 @@
                "header": "Deeprun Tram",
                "ends": [],
                "starts": [],
-               "objectives": ["Ride to Ironforge"],
+               "objectives": [],
                "type": "travel"
             }
          ]

@@ -27,7 +27,7 @@
                "header": "The Ruins of Ordil'Aran",
                "ends": [],
                "starts": [],
-               "objectives": [["The Tower of Althalaxx", "P3"]],
+               "objectives": [["The Tower of Althalaxx", "P3"], "Kill Cultists"],
                "type": "objective"
             },
             {
@@ -36,7 +36,7 @@
                "header": "The Ruins of Ordil'Aran",
                "ends": [],
                "starts": [],
-               "objectives": ["Bathran's Hair"],
+               "objectives": ["Bathran's Hair", "Loot Bags"],
                "type": "objective"
             }
          ]
@@ -51,7 +51,7 @@
                "header": "The Ruins of Ordil'Aran",
                "ends": [],
                "starts": [],
-               "objectives": ["Bathran's Hair"],
+               "objectives": ["Bathran's Hair", "Loot Bags"],
                "type": "objective"
             },
             {
@@ -133,10 +133,10 @@
             },
             {
                "coords": { "x": 25, "y": 61 },
-               "header": "",
+               "header": "Fire Scar Shrine",
                "ends": [],
                "starts": [],
-               "objectives": [["The Tower of Althalaxx", "P4"]],
+               "objectives": [["The Tower of Althalaxx", "P4"], "Kill the Warlock"],
                "type": "objective"
             },
             {
@@ -174,7 +174,7 @@
             },
             {
                "coords": { "x": 14, "y": 21 },
-               "header": "",
+               "header": "Ancient Statuette",
                "ends": [],
                "starts": [],
                "objectives": ["The Ancient Statuette"],
@@ -189,7 +189,7 @@
             {
                "coords": { "x": 14, "y": 21 },
                "align": "right",
-               "header": "",
+               "header": "Ancient Statuette",
                "ends": [],
                "starts": [],
                "objectives": ["The Ancient Statuette"],
@@ -206,7 +206,7 @@
             },
             {
                "coords": { "x": 12, "y": 27 },
-               "header": "",
+               "header": "The Zoram Strand",
                "ends": [],
                "starts": [],
                "objectives": ["The Zoram Strand"],
@@ -214,10 +214,10 @@
             },
             {
                "coords": { "x": 7, "y": 14 },
-               "header": "",
+               "header": "Coastal Island",
                "ends": [],
                "starts": [],
-               "objectives": ["Ruuzel"],
+               "objectives": ["Ruuzel", "The Zoram Strand"],
                "type": "objective"
             }
          ]
@@ -228,10 +228,10 @@
          "waypoints": [
             {
                "coords": { "x": 7, "y": 14 },
-               "header": "",
+               "header": "Coastal Island",
                "ends": [],
                "starts": [],
-               "objectives": ["Ruuzel"],
+               "objectives": ["Ruuzel", "The Zoram Strand"],
                "type": "objective"
             },
             {
@@ -288,7 +288,7 @@
             {
                "coords": { "x": 50, "y": 61 },
                "align": "right",
-               "header": "",
+               "header": "Forbolg Encampment",
                "ends": [],
                "starts": [],
                "objectives": ["An Aggressive Defense"],
@@ -305,13 +305,12 @@
             },
             {
                "coords": { "x": 48, "y": 70 },
-               "header": "",
+               "header": "Mystral Lake",
                "ends": [],
                "starts": [],
                "objectives": ["Elemental Bracers"],
                "type": "objective"
             }
-            
          ]
       },
       {
@@ -320,7 +319,7 @@
          "waypoints": [
             {
                "coords": { "x": 48, "y": 70 },
-               "header": "Sentinel Velene Starstrike",
+               "header": "Mystral Lake",
                "ends": [],
                "starts": [],
                "objectives": ["Elemental Bracers"],
@@ -328,8 +327,8 @@
             },
             {
                "coords": { "x": 50, "y": 67 },
-               "align": "top",
-               "header": "",
+               "align": "right",
+               "header": "Sentinel Velene Starstrike",
                "ends": ["Elemental Bracers"],
                "starts": [],
                "objectives": [],
@@ -347,7 +346,7 @@
             {
                "coords": { "x": 54, "y": 35 },
                "align": "top",
-               "header": "",
+               "header": "The Nightsong Woods",
                "ends": [],
                "starts": [],
                "objectives": [["Raene's Cleansing", "P4"], "Wooden Key drops from the trees", "Hearthstone to Astranaar"],
@@ -414,7 +413,7 @@
                "header": "Auberdine Harbor",
                "ends": [],
                "starts": [],
-               "objectives": ["Ride to Darnassus"],
+               "objectives": [],
                "type": "travel"
             }
          ]

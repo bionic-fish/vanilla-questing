@@ -25,7 +25,7 @@
 
 #prompt-inner #faq {
    background: url('../img/dark.png');
-   width: 610px;
+   width: 550px;
    padding: 2px;
    margin: auto;
 }
@@ -43,19 +43,9 @@
    padding: 2px;
 }
 
-#content #question {
+#prompt-inner #content #question {
    background: url('../img/success.png');
-   display: table;
-   width: 100%;
-}
-
-#content #question:nth-child(even) { background: transparent; }
-
-#question #left, #question #right {
-   display: table-cell;
-   width: auto;
    padding: 6px;
-   font-size: 13px;
 }
 
-#question #right { text-align: right; }
+#prompt-inner #content #question:nth-child(even) { background: transparent; }

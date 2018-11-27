@@ -128,7 +128,7 @@
             {
                "coords": { "x": 16, "y": 47 },
                "align": "right",
-               "header": "",
+               "header": "Raven Hill Cemetary",
                "ends": [],
                "starts": [],
                "objectives": [["The Night Watch", "P2"], "Gather Rot Blossoms"],

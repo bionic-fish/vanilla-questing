@@ -16,7 +16,7 @@
             {
                "coords": { "x": 31, "y": 59 },
                "align": "right",
-               "header": "",
+               "header": "The Southern Bridge",
                "ends": ["Encroaching Gnolls"],
                "starts": ["Assessing the Threat"],
                "objectives": [],
@@ -25,7 +25,7 @@
             {
                "coords": { "x": 32, "y": 48 },
                "align": "right",
-               "header": "",
+               "header": "The Northern Bridge",
                "ends": ["Return to Verner", "Ink Supplies"],
                "starts": ["Rethban Ore", "The Lost Tools", "Underbelly Scales", "A Baying of Gnolls", "Blackrock Menace"],
                "objectives": [],
@@ -34,7 +34,7 @@
             {
                "coords": { "x": 27, "y": 44 },
                "align": "top",
-               "header": "",
+               "header": "Lakeshire Town Hall",
                "ends": ["Messenger to Westfall", "Messenger to Darkshire", "Messenger to Stormwind", ["Yorus Barleybrew", "C"], "Dry Times"],
                "starts": ["Selling Sunfish", "Murloc Poachers", ["The Rethban Gauntlet", "C"]],
                "objectives": ["Set Hearthstone"],
@@ -43,7 +43,7 @@
             {
                "coords": { "x": 22, "y": 45 },
                "align": "top",
-               "header": "",
+               "header": "Lakeshire Inn",
                "ends": ["Visit the Herbalist"],
                "starts": ["Delivering Daffodils", "An Unwelcome Guest", "Redridge Goulash"],
                "objectives": [],
@@ -51,7 +51,7 @@
             },
             {
                "coords": { "x": 16, "y": 49 },
-               "header": "",
+               "header": "Redridge Peninsula",
                "ends": [],
                "starts": [],
                "objectives": ["An Unwanted Guest", "Redridge Goulash", "Great Goretusk Snout"],
@@ -124,17 +124,26 @@
                "type": "quest"
             },
             {
-               "coords": { "x": 39, "y": 55 },
-               "align": "right",
-               "header": "Shawn",
+               "coords": { "x": 33, "y": 55 },
+               "align": "top",
+               "header": "Glinting Mud",
                "ends": [],
                "starts": [],
-               "objectives": ["Hilary's Necklace", "The Lost Tools"],
+               "objectives": ["Hilary's Necklace"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 39, "y": 55 },
+               "align": "right",
+               "header": "Sunken Chest",
+               "ends": [],
+               "starts": [],
+               "objectives": ["The Lost Tools"],
                "type": "objective"
             },
             {
                "coords": { "x": 20, "y": 69 },
-               "header": "",
+               "header": "Three Corners",
                "ends": [],
                "starts": [],
                "objectives": ["Redridge Goulash", "Spiders & Goretusks"],
@@ -143,18 +152,10 @@
             {
                "coords": { "x": 34, "y": 69 },
                "align": "top",
-               "header": "",
+               "header": "Lakeridge Highway",
                "ends": [],
                "starts": [],
                "objectives": ["Underbelly Whelp Scale"],
-               "type": "objective"
-            },
-            {
-               "coords": { "x": 30, "y": 83 },
-               "header": "",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Assessing the Threat"],
                "type": "objective"
             }
          ]
@@ -164,8 +165,17 @@
          "experience": 0,
          "waypoints": [
             {
+               "coords": { "x": 34, "y": 69 },
+               "align": "top",
+               "header": "Lakeridge Highway",
+               "ends": [],
+               "starts": [],
+               "objectives": ["Underbelly Whelp Scale"],
+               "type": "objective"
+            },
+            {
                "coords": { "x": 30, "y": 83 },
-               "header": "",
+               "header": "Gnoll Encampment",
                "ends": [],
                "starts": [],
                "objectives": ["Assessing the Threat"],
@@ -174,7 +184,7 @@
             {
                "coords": { "x": 49, "y": 70 },
                "align": "top",
-               "header": "Lake Everstill",
+               "header": "Lake Everstill Coast",
                "ends": [],
                "starts": [],
                "objectives": ["Murloc Poachers", "Selling Fish"],
@@ -183,7 +193,7 @@
             {
                "coords": { "x": 59, "y": 77 },
                "align": "bottom",
-               "header": "",
+               "header": "Lakeridge Highway",
                "ends": [],
                "starts": [],
                "objectives": ["Redridge Goulash", "6x Condor Spawn"],
@@ -222,13 +232,13 @@
                "type": "quest"
             },
             {
-               "coords": { "x": 30, "y": 47 },
-               "align": "top",
-               "header": "",
+               "coords": { "x": 28, "y": 47 },
+               "align": "right",
+               "header": "Lakeshire Docks",
                "ends": ["Selling Fish", "Murloc Poachers", "Underbelly Scales"],
                "starts": [],
                "objectives": [],
-               "type": "quest"
+               "type": "hub"
             },
             {
                "coords": { "x": 29, "y": 54 },
@@ -250,7 +260,7 @@
             {
                "coords": { "x": 33, "y": 49 },
                "align": "right",
-               "header": "",
+               "header": "The Northern Bridge",
                "ends": ["Blackrock Menace", "The Lost Tools"],
                "starts": ["The Everstill Bridge"],
                "objectives": [],
@@ -259,7 +269,7 @@
             {
                "coords": { "x": 39, "y": 32 },
                "align": "right",
-               "header": "",
+               "header": "Gnoll Encampment",
                "ends": [],
                "starts": [],
                "objectives": ["The Everstill Bridge"],
@@ -273,7 +283,7 @@
          "waypoints": [
             {
                "coords": { "x": 39, "y": 32 },
-               "header": "",
+               "header": "Gnoll Encampment",
                "ends": [],
                "starts": [],
                "objectives": ["The Everstill Bridge"],

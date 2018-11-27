@@ -57,13 +57,14 @@ function render(data, settings, ref) {
 
    // GRADUALLY TURN OPACITY OFF
    $('#map').css('opacity', 0);
+   $('#quest-log').css('opacity', 0);
 
-   // RECALIBRATE NEW DATA PROGRESS & SET FOOTER BACKGROUND ACCORDINGLY
-   data.progress = ((data.current / data.max) * 100).toFixed(5);
+   // RECALIBRATE NEW DATA PROGRESS
+   data.progress = ((data.current / (data.max - 1)) * 100);
 
-   // CORRECT WEIRD % WIDTH ISSUE
-   var width_correction = ((data.progress / 100) * 763.5);
-   $('#footer-inner').css('background-size', width_correction + 'px auto');
+   // CHANGE PROGRESS BAR TEXT & SIZE
+   $('#progress-inner').html((data.progress).toFixed(2) + '%');
+   $('#progress-focus').css('width', data.progress + '%');
 
    // DECLARE INSTANCE TARGET
    var target = data.raw[data.current];
@@ -75,9 +76,8 @@ function render(data, settings, ref) {
    }
 
    // RENDER IN LEVEL/XP TEXT & SET BACKGROUND WIDTH
-   $('#xp-inner')
-      .html('Level ' + level.current + ' + ' + level.xp + '%')
-      .css('background-size', level.xp + '% auto');
+   $('#level-inner').html('Level ' + level.current + ' + ' + level.xp + '%')
+   $('#level-focus').css('width', level.xp + '%');
 
    // WAIT 300 MS -- THEN UPDATE MAP
    sleep(300).then(() => {
@@ -109,7 +109,7 @@ function render(data, settings, ref) {
          // CONSTRUCT WAYPOINT
          var wp = `
             <div class="waypoint" style="left: ` + waypoint.coords.x + `%; top: ` + waypoint.coords.y + `%;">
-               <img src="interface/img/waypoints/space.png" class="` + waypoint.type + `" wp="` + id + `"><span id="waypoint-num" style="left: ` + align_coords.x + `;top: ` + align_coords.y + `"><img src="interface/img/numbers/` + (id + 1) + `.png"></span>
+               <img src="interface/img/waypoints/space.png" class="` + waypoint.type + `" wp="` + id + `"><span class="waypoint-num" style="left: ` + align_coords.x + `;top: ` + align_coords.y + `"><img src="interface/img/numbers/` + (id + 1) + `.png"></span>
             </div>
          `;
 
@@ -129,7 +129,7 @@ function render(data, settings, ref) {
       $('#map').append('<svg>' + lines + '</svg>');
 
       // MAP ASSIST SELECTORS
-      var block_num = '<span id="block-num">#' + (parseInt(data.current) + 1) + '</span>';
+      var block_num = '<span id="current-block">#' + (parseInt(data.current) + 1) + '</span>';
       var legend = '<span id="show-legend">Map Legend</span><div id="tooltip"></div>';
       var tooltip = '<div id="tooltip"></div>';
 
@@ -138,6 +138,7 @@ function render(data, settings, ref) {
 
       // GRADUALLY TURN OPACITY ON AFTER EVERYTHING ELSE IS DONE
       $('#map').css('opacity', 1);
+      $('#quest-log').css('opacity', 1);
    });
 
    return data;
@@ -175,8 +176,10 @@ function faq() {
    questions.forEach(row => {
       faq += `
          <div id="question">
-            <div id="left">` + row[0] + `</div>
-            <div id="right">` + row[1] + `</div>
+            <div class="split">
+               <div id="left">` + row[0] + `</div>
+               <div id="right">` + row[1] + `</div>
+            </div>
          </div>
       `;
    });
@@ -209,9 +212,11 @@ function legend(event) {
    // LOOP THROUGH SCHEMES
    scheme.forEach(row => {
       legend += `
-         <div id="wp">
-            <div id="left"><img src="interface/img/waypoints/` + row[0] + `.png"></div>
-            <div id="right">` + row[1] + `</div>
+         <div class="category">
+            <div class="split">
+               <div id="left"><img src="interface/img/waypoints/` + row[0] + `.png"></div>
+               <div id="right">` + row[1] + `</div>
+            </div>
          </div>
       `;
    });
@@ -225,7 +230,7 @@ function legend(event) {
    // INFO BOX HEIGHT & TRIGGER BOX WIDTH
    var height = parseFloat($('#legend').css('height'));
    var width = parseFloat($('#show-legend').css('width'));
-   var offset = 15;
+   var offset = 10;
 
    var x = event.target.offsetLeft - (width / 2);
    var y = event.target.offsetTop - (height + offset);
@@ -253,7 +258,17 @@ function mouseover(event, data) {
    var objectives = '';
 
    // GENERATE DIVS FOR FILLED PROPERTIES
-   if (waypoint.header != '') { header += '<div class="header"><div id="left">' + waypoint.header + '</div><div id="right">' + waypoint.coords.x + '.' + waypoint.coords.y + '</div></div>'; }
+   if (waypoint.header != '') {
+      header += `
+         <div class="title">
+            <div class="split">
+               <div id="left">` + waypoint.header + `</div>
+               <div id="right">` + waypoint.coords.x + `.` + waypoint.coords.y + `</div>
+            </div>
+         </div>
+      `;
+   }
+
    waypoint.ends.forEach(data => { ends += tooltip_row('ends', data); });
    waypoint.starts.forEach(data => { starts += tooltip_row('starts', data); });
    waypoint.objectives.forEach(data => { objectives += tooltip_row('objectives', data); });
@@ -287,11 +302,18 @@ function tooltip_row(category, data) {
 
    // IF ITS A STRING
    if (type === 'string') {
-      answer += '<div class="' + category + '"><div id="left">' + data + '</div></div>';
+      answer += '<div class="' + category + '">' + data + '</div>';
 
    // IF ITS AN ARRAY
    } else {
-      answer += '<div class="' + category + '"><div id="left">' + data[0] + '</div><div id="right">' + data[1] + '</div></div>';  
+      answer += `
+         <div class="` + category + `">
+            <div class="split">
+               <div id="left">` + data[0] + `</div>
+               <div id="right">` + data[1] + `</div>
+            </div>
+         </div>
+      `;
    }
 
    return answer;
@@ -366,8 +388,9 @@ function preload() {
       // WAIT FOR ALL PROMISES TO BE RESOLVED
       Promise.all(promises).then(() => {
 
-         // CHANGE PRELOAD BUTTONS TEXT & COLOR
-         $('#preload').attr('id', 'disabled');
+         // MODIFY PRELOAD BUTTON
+         $('#show-preload').removeAttr('class');
+         $('#show-preload').attr('id', 'disabled');
          $('#disabled').text('Backgrounds Loaded');
 
          // LOG THAT THE TASK IS DONE
@@ -376,7 +399,7 @@ function preload() {
          // GRADUALLY TURN OFF OPACITY
          $('#prompt').css('opacity', '0');
          
-         // WAIT 200MS - THEN OFF LOADING SELECTOR & REMOVE THE ANIMATION ENTIRELY
+         // WAIT 200MS - THEN TURN OFF LOADING SELECTOR & REMOVE IT
          sleep(200).then(() => {
             $('#prompt').css('display', 'none');
             $('#loading').remove();

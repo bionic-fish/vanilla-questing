@@ -103,9 +103,9 @@ Promise.all(pathing).then((response) => {
    data = build(response);
 
    // RENDER IN BUILD STATISTICS
-   $('#blocks').html(data.build.blocks);
-   $('#wps').html(data.build.waypoints);
-   $('#qs').html(data.build.quests);
+   $('#block-count').html(data.build.blocks);
+   $('#waypoint-count').html(data.build.waypoints);
+   $('#quest-count').html(data.build.quests);
 
    // SET RANGE INPUTS MAX ATTRIBUTE & THE SCROLL TO THE CORRECT POSITION
    $('#range').attr('max', data.max - 1);
@@ -191,7 +191,7 @@ Promise.all(pathing).then((response) => {
 });
 
 // WHEN PRELOAD BUTTON IS PRESSED
-$('#preload').on('click', () => {
+$('#show-preload').on('click', () => {
 
    // MAKE SURE PRELOAD HASNT BEEN PERFORMED ALREADY
    if (settings.preloaded == 0) {
@@ -204,7 +204,7 @@ $('#preload').on('click', () => {
 });
 
 // WHEN FAQ BUTTON IS PRESSED
-$('#faq').on('click', () => {
+$('#show-faq').on('click', () => {
 
    // CHECK FAQ STATUS
    if (settings.faq == 0) {

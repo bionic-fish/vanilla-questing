@@ -18,22 +18,87 @@ a:link, a:visited, a:hover {
 
 a:hover { color: rgb(175, 30, 30); }
 
-#wrapper, #prompt {
+/* --- WRAPPER & MAINBODY --- */
+
+#wrapper-tbl, #prompt {
    display: table;
    width: 100%;
    height: 100%;
 }
 
-#wrapper-inner, #prompt-#inner {
+#wrapper-cell, #prompt-#inner {
    display: table-cell;
    width: 100%;
    height: 100%;
    vertical-align: middle;
 }
 
-#innerbody {
+#wrapper {
+   margin: auto;
+   width: -moz-fit-content;
+   width: fit-content;
+   transition: .3s;
+}
+
+#mainbody {
    background: url('../img/dark.png');
    width: 772px;
-   margin: auto;
    padding: 2px;
+   transition: 0.3s;
 }
+
+/* --- SPLIT TABLE --- */
+
+.split {
+   display: table;
+   width: 100%
+}
+
+.split #left, .split #right {
+   display: table-cell;
+   width: auto;
+   text-align: left;
+}
+
+.split #right { text-align: right; }
+
+/* --- COLORED BOXES --- */
+
+.title, .ends, .starts, .objectives {
+   background: url('../img/dark.png');
+   margin-top: 2px;
+}
+
+.title { margin-top: 0px; }
+.ends { background: url('../img/success.png'); }
+.starts { background: url('../img/caution.png'); }
+.objectives { background: url('../img/error.png'); }
+
+/* --- HEADER & FOOTER --- */
+
+#header, #footer {
+   text-align: center;
+   color: rgb(173, 173, 173);
+   text-shadow: 1px 1px #242424;
+   padding: 3px 5px;
+}
+
+#header .highlight, #footer .highlight { color: #F1F1F1; }
+
+#header .link {
+   color: rgb(194, 194, 194);
+   transition: 0.4s;
+}
+
+#header .link:hover {
+   color: rgb(231, 231, 231);
+   text-decoration: underline;
+   cursor: pointer;
+}
+
+#header #disabled { color: rgb(174, 248, 166); pointer-events: none; }
+
+/* --- PRELOAD STUFF --- */
+
+#preload-container { display: none; }
+#preload-container img { width: 1px; height: 1px; }

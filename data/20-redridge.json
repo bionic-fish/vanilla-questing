@@ -25,7 +25,7 @@
             {
                "coords": { "x": 32, "y": 48 },
                "align": "right",
-               "header": "",
+               "header": "The Northern Bridge",
                "ends": [],
                "starts": [["Tharil'Zun", "E"], ["Shadow Magic", "E"], ["Howling in the Hills", "E"]],
                "objectives": [],
@@ -34,7 +34,7 @@
             {
                "coords": { "x": 29, "y": 45 },
                "align": "top",
-               "header": "",
+               "header": "Lakeshire Town Hall",
                "ends": [],
                "starts": [["Solomon's Law", "E"], ["Wanted: Gath'llzogg", "E"]],
                "objectives": [],
@@ -42,7 +42,7 @@
             },
             {
                "coords": { "x": 26, "y": 47 },
-               "header": "",
+               "header": "Lakeshire Inn",
                "ends": [],
                "starts": [["Wanted: Lieutenant Fangore", "E"]],
                "objectives": [],
@@ -51,7 +51,7 @@
             {
                "coords": { "x": 23, "y": 36 },
                "align": "left",
-               "header": "Lakeshire Side",
+               "header": "Lakeshire Canyons",
                "ends": [],
                "starts": [],
                "objectives": [],
@@ -60,10 +60,10 @@
             {
                "coords": { "x": 28, "y": 21 },
                "align": "top",
-               "header": "",
+               "header": "Gnoll Encampment",
                "ends": [],
                "starts": [],
-               "objectives": [["Howling in the Hills", "D"]],
+               "objectives": [["Howling in the Hills", "E"]],
                "type": "objective"
             },
             {
@@ -93,7 +93,7 @@
             {
                "coords": { "x": 79, "y": 41 },
                "align": "top",
-               "header": "",
+               "header": "Galardell Valley",
                "ends": [],
                "starts": [],
                "objectives": [["Wanted: Lieutenant Fangore", "E"], ["Solomon's Law", "E"]],
@@ -102,7 +102,7 @@
             {
                "coords": { "x": 84, "y": 47 },
                "align": "right",
-               "header": "",
+               "header": "Old Lion Statue",
                "ends": [["A Watchful Eye", "E"]],
                "starts": [["Looking Further", "E"]],
                "objectives": [],
@@ -111,7 +111,7 @@
             {
                "coords": { "x": 70, "y": 56 },
                "align": "top",
-               "header": "",
+               "header": "Stonewatch Fortress",
                "ends": [],
                "starts": [],
                "objectives": [["Wanted: Gath'llzogg", "E"], ["Shadow Magic", "E"]],
@@ -120,7 +120,7 @@
             {
                "coords": { "x": 69, "y": 60 },
                "align": "bottom",
-               "header": "",
+               "header": "Stonewatch Fortress",
                "ends": [],
                "starts": [],
                "objectives": [["Tharil'Zun", "E"], ["Shadow Magic", "E"]],
@@ -169,7 +169,7 @@
             {
                "coords": { "x": 35, "y": 44 },
                "align": "right",
-               "header": "",
+               "header": "Redridge Road",
                "ends": [],
                "starts": [],
                "objectives": [["Missing in Action", "F"]],
@@ -184,7 +184,7 @@
             {
                "coords": { "x": 35, "y": 44 },
                "align": "right",
-               "header": "",
+               "header": "Redridge Road",
                "ends": [],
                "starts": [],
                "objectives": [["Missing in Action", "F"]],

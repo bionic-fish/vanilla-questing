@@ -90,7 +90,7 @@
             {
                "coords": { "x": 41, "y": 87 },
                "align": "bottom",
-               "header": "Billy Maclure",
+               "header": "The Maclure Vineyards",
                "ends": [],
                "starts": [],
                "objectives": ["Pie for Billy"],
@@ -105,7 +105,7 @@
             {
                "coords": { "x": 41, "y": 87 },
                "align": "bottom",
-               "header": "Billy Maclure",
+               "header": "The Maclure Vineyards",
                "ends": [],
                "starts": [],
                "objectives": ["Pie for Billy"],
@@ -198,7 +198,7 @@
             {
                "coords": { "x": 72, "y": 66 },
                "align": "right",
-               "header": "",
+               "header": "Riverside Forest",
                "ends": [],
                "starts": [],
                "objectives": ["Protect the Frontier"],
@@ -246,7 +246,7 @@
             },
             {
                "coords": { "x": 78, "y": 61 },
-               "header": "",
+               "header": "Riverside Forest",
                "ends": [],
                "starts": [],
                "objectives": ["Protect the Frontier", "A Bundle of Trouble"],
@@ -261,7 +261,7 @@
             {
                "coords": { "x": 79, "y": 61 },
                "align": "top",
-               "header": "",
+               "header": "Riverside Forest",
                "ends": [],
                "starts": [],
                "objectives": ["Protect the Frontier", "A Bundle of Trouble"],
@@ -269,7 +269,7 @@
             },
             {
                "coords": { "x": 69, "y": 79 },
-               "header": "",
+               "header": "Brackwell Pumpkin Patch",
                "ends": [],
                "starts": [],
                "objectives": ["Princess Must Die!", "Red Linen Goods", "Farm to level 9"],
@@ -296,7 +296,7 @@
             {
                "coords": { "x": 92, "y": 72 },
                "align": "right",
-               "header": "Redridge Mountains Border",
+               "header": "Redridge Border",
                "ends": [],
                "starts": [],
                "objectives": [],
@@ -311,7 +311,7 @@
             {
                "coords": { "x": 8, "y": 72 },
                "align": "bottom",
-               "header": "Elwynn Forest Border",
+               "header": "Elwynn Border",
                "ends": [],
                "starts": [],
                "objectives": [],
@@ -340,6 +340,15 @@
                "starts": ["The Escape", "Elmore's Task", "Westbrook Garrison Needs Help!"],
                "objectives": [],
                "type": "hub" 
+            },
+            {
+               "coords": { "x": 43, "y": 90 },
+               "align": "right",
+               "header": "Maybell Maclure",
+               "ends": ["The Escape"],
+               "starts": [],
+               "objectives": [],
+               "type": "quest"
             },
             {
                "coords": { "x": 35, "y": 84 },

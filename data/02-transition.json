@@ -27,7 +27,7 @@
                "ends": ["Report to Gryan Stoutmantle"],
                "starts": ["A Swift Message"],
                "objectives": [],
-               "type": "quest"
+               "type": "hub"
             },
             {
                "coords": { "x": 57, "y": 53 },

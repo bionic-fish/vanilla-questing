@@ -51,7 +51,7 @@
             {
                "coords": { "x": 57, "y": 20 },
                "align": "top",
-               "header": "",
+               "header": "The Jansen House",
                "ends": [],
                "starts": [],
                "objectives": ["Poor Old Blanchy", "Loot Oats"],
@@ -100,7 +100,7 @@
             {
                "coords": { "x": 42, "y": 45 },
                "align": "right",
-               "header": "",
+               "header": "Westfall Peninsula",
                "ends": [],
                "starts": [],
                "objectives": ["Westfall Stew", "8x Fleshripper spawn"],
@@ -116,7 +116,7 @@
             },
             {
                "coords": { "x": 26, "y": 48 },
-               "header": "Shipwreck",
+               "header": "Captain's Footlocker",
                "ends": [["Captain Sander's Hidden Treasure", "P1"]],
                "starts": [["Captain Sander's Hidden Treasure", "P1-2"]],
                "objectives": ["Westfall Stew", "Murloc Eyes"],
@@ -125,7 +125,7 @@
             {
                "coords": { "x": 30, "y": 50 },
                "align": "bottom",
-               "header": "",
+               "header": "Gnoll Encampment",
                "ends": [],
                "starts": [],
                "objectives": ["Patrolling Westfall"],
@@ -133,7 +133,7 @@
             },
             {
                "coords": { "x": 36, "y": 55 },
-               "header": "",
+               "header": "Alexston's Chest",
                "align": "bottom",
                "ends": [],
                "starts": [],
@@ -143,7 +143,7 @@
             {
                "coords": { "x": 41, "y": 48 },
                "align": "right",
-               "header": "",
+               "header": "Broken Barrel",
                "ends": [["Captain Sander's Hidden Treasure", "P2"]],
                "starts": [["Captain Sander's Hidden Treasure", "P3"]],
                "objectives": [],
@@ -184,7 +184,7 @@
             {
                "coords": { "x": 61, "y": 46 },
                "align": "right",
-               "header": "",
+               "header": "Westfall Peninsula",
                "ends": [],
                "starts": [],
                "objectives": ["Westfall Stew", "Goretusk Liver Pie"],
@@ -210,7 +210,7 @@
             {
                "coords": { "x": 45, "y": 9 },
                "align": "top",
-               "header": "",
+               "header": "The Northern Coast",
                "ends": [],
                "starts": [],
                "objectives": ["The Coast Isn't Clear", "Murloc Coastalrunners"],
@@ -219,7 +219,7 @@
             {
                "coords": { "x": 41, "y": 17 },
                "align": "right",
-               "header": "",
+               "header": "Old Jug",
                "ends": [["Captain Sander's Hidden Treasure", "P3"]],
                "starts": [["Captain Sander's Hidden Treasure", "P4"]],
                "objectives": [],
@@ -228,7 +228,7 @@
             {
                "coords": { "x": 26, "y": 17 },
                "align": "top",
-               "header": "",
+               "header": "Locked Chest",
                "ends": [["Captain Sander's Hidden Treasure", "P4"]],
                "starts": [],
                "objectives": [],
@@ -270,7 +270,7 @@
             {
                "coords": { "x": 38, "y": 52 },
                "align": "bottom",
-               "header": "",
+               "header": "Alexstron's Farmstead",
                "ends": [],
                "starts": [],
                "objectives": ["Check that you have 5x Hops"],
@@ -278,7 +278,7 @@
             },
             {
                "coords": { "x": 27, "y": 48 },
-               "header": "",
+               "header": "The Western Coast",
                "ends": [],
                "starts": [],
                "objectives": ["The Coast Isn't Clear", "Murloc Warriors"],
@@ -286,7 +286,7 @@
             },
             {
                "coords": { "x": 29, "y": 55 },
-               "header": "",
+               "header": "The Western Coast",
                "ends": [],
                "starts": [],
                "objectives": ["The Coast Isn't Clear", "Murloc Oracles"],
@@ -294,7 +294,7 @@
             },
             {
                "coords": { "x": 35, "y": 85 },
-               "header": "",
+               "header": "The Southern Coast",
                "ends": [],
                "starts": [],
                "objectives": ["The Coastal Menace", "The Coast Isn't Clear", "Murloc Oracles"],
@@ -309,7 +309,7 @@
             {
                "coords": { "x": 35, "y": 85 },
                "align": "right",
-               "header": "",
+               "header": "The Southern Coast",
                "ends": [],
                "starts": [],
                "objectives": ["The Coastal Menace", "The Coast Isn't Clear", "Murloc Oracles"],
@@ -335,20 +335,6 @@
             {
                "coords": { "x": 45, "y": 80 },
                "align": "right",
-               "header": "Grimbooze Thunderbrew",
-               "ends": ["Thunderbrew Lager"],
-               "starts": ["Thunderbrew Lager"],
-               "objectives": ["Save the Keg for Lakeshire"],
-               "type": "quest"
-            }
-         ]
-      },
-      {
-         "zone": "westfall",
-         "experience": 18.88,
-         "waypoints": [
-            {
-               "coords": { "x": 45, "y": 80 },
                "header": "Grimbooze Thunderbrew",
                "ends": ["Thunderbrew Lager"],
                "starts": ["Thunderbrew Lager"],
@@ -430,7 +416,7 @@
                "header": "Duskwood Border",
                "ends": [],
                "starts": [],
-               "objectives": ["Run to Darkshire"],
+               "objectives": [],
                "type": "travel"
             }
          ]
@@ -656,7 +642,7 @@
             },
             {
                "coords": { "x": 45, "y": 64 },
-               "header": "Moonbrook",
+               "header": "Moonbrook Road",
                "ends": [],
                "starts": [],
                "objectives": [["The Defias Brotherhood", "P6"], "Find the Defias Messenger"],
@@ -670,7 +656,7 @@
          "waypoints": [
             {
                "coords": { "x": 45, "y": 64 },
-               "header": "Moonbrook",
+               "header": "Moonbrook Road",
                "ends": [],
                "starts": [],
                "objectives": [["The Defias Brotherhood", "P6"], "Find the Defias Messenger"],

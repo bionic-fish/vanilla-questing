@@ -42,7 +42,7 @@
             },
             {
                "coords": { "x": 11, "y": 55 },
-               "header": "",
+               "header": "Duskwood Riverside",
                "ends": [],
                "starts": [],
                "objectives": ["Eight-Legged Menaces", "The Totem of Infliction", "Farm until you have 6x Gooey Spider Legs"],
@@ -51,7 +51,7 @@
             {
                "coords": { "x": 16, "y": 48 },
                "align": "right",
-               "header": "",
+               "header": "Ravel Hill Cemetary",
                "ends": [],
                "starts": [],
                "objectives": ["The Totem of Infliction"],
@@ -68,7 +68,7 @@
             {
                "coords": { "x": 12, "y": 31 },
                "align": "top",
-               "header": "",
+               "header": "Duskwood Riverside",
                "ends": [],
                "starts": [],
                "objectives": ["Seasoned Wolf Kabobs", "Wolves at Out Heels"],
@@ -83,7 +83,7 @@
             {
                "coords": { "x": 12, "y": 31 },
                "align": "top",
-               "header": "",
+               "header": "Duskwood Riverside",
                "ends": [],
                "starts": [],
                "objectives": ["Seasoned Wolf Kabobs", "Wolves at Out Heels"],
@@ -92,7 +92,7 @@
             {
                "coords": { "x": 22, "y": 27 },
                "align": "top",
-               "header": "",
+               "header": "Duskwood Riverside",
                "ends": [],
                "starts": [],
                "objectives": ["Seasoned Wolf Kabobs", "Wolves at Out Heels"],
@@ -110,10 +110,10 @@
             {
                "coords": { "x": 26, "y": 35 },
                "align": "bottom",
-               "header": "",
+               "header": "Ravel Hill Cemetary",
                "ends": [],
                "starts": [],
-               "objectives": ["The Totem of Infliction"],
+               "objectives": ["The Totem of Infliction", "Kill Ghouls"],
                "type": "objective"
             },
             {

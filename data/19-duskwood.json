@@ -8,8 +8,8 @@
                "coords": { "x": 74, "y": 44 },
                "align": "top",
                "header": "Darkshire Inn",
-               "ends": [],
-               "starts": ["Seasoned Wolf Kabobs"],
+               "ends": ["Seasoned Wolf Kabobs"],
+               "starts": [],
                "objectives": [],
                "type": "hub"
             },

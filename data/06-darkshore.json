@@ -122,7 +122,7 @@
             {
                "coords": { "x": 45, "y": 29 },
                "align": "top",
-               "header": "",
+               "header": "Darkshore Forest",
                "ends": [],
                "starts": [],
                "objectives": ["Plagued Lands"],
@@ -138,7 +138,7 @@
             },
             {
                "coords": { "x": 36, "y": 48 },
-               "header": "",
+               "header": "Darkshore Coast",
                "ends": [],
                "starts": [],
                "objectives": ["Buzzbox 827"],
@@ -146,7 +146,7 @@
             },
             {
                "coords": { "x": 36, "y": 51 },
-               "header": "",
+               "header": "Beached Sea Creature",
                "ends": [],
                "starts": [],
                "objectives": [["Washed Ashore", "P1"]],
@@ -155,7 +155,7 @@
             {
                "coords": { "x": 39, "y": 53 },
                "align": "bottom",
-               "header": "",
+               "header": "Furbolg Encampment",
                "ends": [],
                "starts": [],
                "objectives": [["How Big a Threat?", "P1"]],
@@ -170,7 +170,7 @@
             {
                "coords": { "x": 39, "y": 53 },
                "align": "right",
-               "header": "",
+               "header": "Furbolg Encampment",
                "ends": [],
                "starts": [],
                "objectives": [["How Big a Threat?", "P1"]],
@@ -187,10 +187,10 @@
             },
             {
                "coords": { "x": 33, "y": 40 },
-               "header": "",
+               "header": "Mist's Edge",
                "ends": [],
                "starts": [],
-               "objectives": ["Buzzbox 411"],
+               "objectives": ["Buzzbox 411", "Kill Treshers"],
                "type": "objective"
             },
             {
@@ -218,7 +218,7 @@
             {
                "coords": { "x": 40, "y": 54 },
                "align": "top",
-               "header": "",
+               "header": "Furbolg Encampment",
                "ends": [],
                "starts": [],
                "objectives": [["How Big a Threat?", "P2"]],
@@ -226,7 +226,7 @@
             },
             {
                "coords": { "x": 39, "y": 64 },
-               "header": "",
+               "header": "Darkshore Forest",
                "ends": [],
                "starts": [],
                "objectives": ["Rabid Thistle Bear"],
@@ -240,7 +240,7 @@
          "waypoints": [
             {
                "coords": { "x": 39, "y": 64 },
-               "header": "",
+               "header": "Darkshore Forest",
                "ends": [],
                "starts": [],
                "objectives": ["Rabid Thistle Bear"],
@@ -289,7 +289,7 @@
             {
                "coords": { "x": 47, "y": 49 },
                "align": "right",
-               "header": "",
+               "header": "Mysterious Red Crystal",
                "ends": [],
                "starts": [],
                "objectives": ["The Red Crystal"],
@@ -320,7 +320,7 @@
             {
                "coords": { "x": 47, "y": 49 },
                "align": "bottom",
-               "header": "The Red Crystal",
+               "header": "Mysterious Red Crystal",
                "ends": ["As Water Cascades"],
                "starts": ["The Fragments Within"],
                "objectives": [],
@@ -346,7 +346,7 @@
             },
             {
                "coords": { "x": 38, "y": 29 },
-               "header": "Shipwreck",
+               "header": "First Shipwreck",
                "ends": [],
                "starts": [],
                "objectives": ["Deep Ocean, Vast Sea"],
@@ -355,7 +355,7 @@
             {
                "coords": { "x": 40, "y": 27 },
                "align": "top",
-               "header": "Shipwreck",
+               "header": "Second Shipwreck",
                "ends": [],
                "starts": [],
                "objectives": ["Deep Ocean, Vast Sea"],
@@ -364,10 +364,10 @@
             {
                "coords": { "x": 46, "y": 26 },
                "align": "top",
-               "header": "",
+               "header": "Darkshore Forest",
                "ends": [],
                "starts": [],
-               "objectives": ["Buzzbox 323"],
+               "objectives": ["Buzzbox 323", "Kill Panthers"],
                "type": "objective"
             }
          ]
@@ -379,16 +379,16 @@
             {
                "coords": { "x": 46, "y": 26 },
                "align": "left",
-               "header": "",
+               "header": "Darkshore Forest",
                "ends": [],
                "starts": [],
-               "objectives": ["Buzzbox 323"],
+               "objectives": ["Buzzbox 323", "Kill Panthers"],
                "type": "objective"
             },
             {
                "coords": { "x": 50, "y": 21 },
                "align": "top",
-               "header": "",
+               "header": "Northern Beach",
                "ends": [],
                "starts": [],
                "objectives": ["Fruit of the Sea"],
@@ -397,7 +397,7 @@
             {
                "coords": { "x": 51, "y": 25 },
                "align": "bottom",
-               "header": "",
+               "header": "Buzzbox",
                "ends": ["Buzzbox 323"],
                "starts": ["Buzzbox 525"],
                "objectives": ["The Cliffspring River"],
@@ -415,7 +415,7 @@
             {
                "coords": { "x": 56, "y": 27 },
                "align": "right",
-               "header": "",
+               "header": "Althalaxx Tower",
                "ends": [],
                "starts": [],
                "objectives": [["The Tower of Althalaxx", "P2"]],
@@ -430,7 +430,7 @@
             {
                "coords": { "x": 56, "y": 27 },
                "align": "right",
-               "header": "",
+               "header": "Althalaxx",
                "ends": [],
                "starts": [],
                "objectives": [["The Tower of Althalaxx", "P2"]],

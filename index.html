@@ -7,19 +7,23 @@
    <script defer src="core/js/app.js"></script>
 </head>
 <body>
-   <div id="wrapper"><div id="wrapper-inner">
-      <div class="menu">
-         <div id="left"><span id="blocks">0</span> Blocks, <span id="wps">0</span> Waypoints, <span id="qs">0</span> Quests</div>
-         <div id="right"><span id="faq">Frequently Asked Questions</span> | <span id="preload">Preload Backgrounds?</span></div>
+   <div id="wrapper-tbl"><div id="wrapper-cell"><div id="wrapper">
+      <div id="header">
+         <div class="split">
+            <div id="left"><span id="block-count" class="highlight">0</span> Blocks, <span id="waypoint-count" class="highlight">0</span> Waypoints, <span id="quest-count" class="highlight">0</span> Quests</div>
+            <div id="right"><span id="show-faq" class="link">Frequently Asked Questions</span> | <span id="show-preload" class="link">Preload Backgrounds?</span></div>
+         </div>
       </div>
-      <div id="innerbody">
-         <div id="header"><div id="xp"><div id="xp-inner">Level</div></div></div>
+      <div id="mainbody">
+         <div id="level"><div id="level-inner">Level 1 0%</div><div id="level-focus"></div></div>
          <div id="map"></div>
-         <div id="footer"><div id="footer-inner"><input type="range" id="range" min="0" step="1"></div></div>
+         <div id="progress"><div id="progress-inner">0%</div><input type="range" id="range" min="0" step="1"><div id="progress-focus"></div></div>
       </div>
-      <div class="menu">
-         <div id="left">Use <span class="highlight">A</span> and <span class="highlight">D</span> to move | Use the <span class="highlight">scroller</span> to jump | Progress is stored <span class="highlight">locally</span></div>
-         <div id="right">Strafir#9133 @ Discord</div>
+      <div id="footer">
+         <div class="split">
+            <div id="left">Use <span class="highlight">A</span> and <span class="highlight">D</span> to move | Use the <span class="highlight">scroller</span> to jump | Progress is stored <span class="highlight">locally</span></div>
+            <div id="right">Strafir#9133 @ Discord</div>
+         </div>
       </div>
-   </div></div>
+   </div></div></div>
 </body>

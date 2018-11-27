@@ -73,7 +73,7 @@
             {
                "coords": { "x": 39, "y": 86 },
                "align": "bottom",
-               "header": "",
+               "header": "The Master's Glaive",
                "ends": ["The Master's Glaive"],
                "starts": ["Return to Onu", ["Therylune's Escape", "F"]],
                "objectives": ["Use your Scrying Bowl", "Click on the Book"],
@@ -82,7 +82,7 @@
             {
                "coords": { "x": 41, "y": 81 },
                "align": "right",
-               "header": "",
+               "header": "Buzzbox",
                "ends": ["Buzzbox 525"],
                "starts": [],
                "objectives": [],
@@ -96,7 +96,7 @@
          "waypoints": [
             {
                "coords": { "x": 41, "y": 81 },
-               "header": "",
+               "header": "Buzzbox",
                "ends": ["Buzzbox 525"],
                "starts": [],
                "objectives": [],
