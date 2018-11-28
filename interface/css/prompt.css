@@ -39,13 +39,12 @@
 }
 
 #prompt-inner #content {
-   background: url('../img/inner-bg.png');
+   background: url('../img/inner-bg2.png');
    padding: 2px;
 }
 
 #prompt-inner #content #question {
-   background: url('../img/success.png');
    padding: 6px;
 }
 
-#prompt-inner #content #question:nth-child(even) { background: transparent; }
+#prompt-inner #content #question:nth-child(even) { background: url('../img/row-bg.png'); }

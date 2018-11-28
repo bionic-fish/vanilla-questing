@@ -41,7 +41,7 @@ build.then((data) => {
    var events = require('./modules/events.js');
    var tooltips = require('./modules/tooltips.js');
 
-   // RENDER THE MAP, ADD EVENTS & TOOLTIPS
+   // RENDER THE MAP + ADD EVENTS & TOOLTIPS
    data = render.map(data, settings, reference);
    data = events.map(data, settings, render);
    settings = events.general(settings);

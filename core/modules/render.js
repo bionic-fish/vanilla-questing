@@ -11,8 +11,9 @@ function map(data, settings, reference) {
    // UPDATE THE RANGE SCROLLERS POSITION
    $('#range').val(current);
 
-   // GRADUALLY TURN OPACITY OFF FROM MAP
+   // GRADUALLY TURN OPACITY OFF FROM MAP & SIDEPANEL
    $('#map').css('opacity', 0);
+   $('#sidepanel-inner').css('opacity', 0);
 
    // CALIBRATE PROGRESS & SET THE PROPERTY
    data.stats.progress = ((current / (data.stats.blocks - 1)) * 100);
@@ -83,11 +84,80 @@ function map(data, settings, reference) {
       // RENDER THEM IN
       $('#map').append(legend + tooltip);
 
+      // RENDER SIDEPANEL CONTENT
+      sidepanel(data);
+
       // GRADUALLY TURN OPACITY ON AGAIN
       $('#map').css('opacity', 1);
+      $('#sidepanel-inner').css('opacity', 1);
    });
 
    return data;
+}
+
+// GENERATE OVERLOOK FOR THE CURRENT BLOCK
+function sidepanel(data) {
+
+   // TARGET BLOCK WAYPOINTS
+   var target = data.build[data.current].waypoints;
+
+   // MAIN SELECTOR
+   var sidepanel = $('#sidepanel-inner');
+   var container = '';
+
+   // LOOP THROUGH EACH WAYPOINT
+   $.each(target, (index, waypoint) => {
+   
+      // MAKE INDEX MORE READER FRIENDLY
+      var count = index + 1;
+
+      // GENERATE A SELECTOR & PUSH IT TO THE CONTAINER
+      container += `
+         <div class="section">
+            <div class="title">
+               <div class="split">
+                  <div id="left">` + count + `. ` + waypoint.header + `</div>
+                  <div id="right"></div>
+               </div>
+            </div>
+      `;
+
+      // LOOP THROUGH ENDS, STARTS & OBJECTIVES CONTENT
+      waypoint.ends.forEach(data => { container += row('ends', data); });
+      waypoint.starts.forEach(data => { container += row('starts', data); });
+      waypoint.objectives.forEach(data => { container += row('objectives', data); });
+      container += '</div>';
+   });
+
+   sidepanel.html(container);
+}
+
+function row(category, data) {
+
+   // ROW CONTAINER
+   var container = '';
+
+   // CHECK THE GIVEN DATA TYPE
+   var type = typeof(data);
+
+   // IF ITS A STRING -- GENERATE & APPEND A SELECTOR
+   if (type === 'string') {
+      container += '<div class="' + category + '">' + data + '</div>';
+
+   // IF ITS AN ARRAY -- GENERATE & APPEND A SELECTOR
+   } else {
+      container += `
+         <div class="` + category + `">
+            <div class="split">
+               <div id="left">` + data[0] + `</div>
+               <div id="right">` + data[1] + `</div>
+            </div>
+         </div>
+      `;
+   }
+
+   // RETURN THE CONTAINER
+   return container;
 }
 
 // EXPORT MODULES

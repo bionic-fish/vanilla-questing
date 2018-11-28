@@ -4,7 +4,7 @@ input, span, input[type=range]::-webkit-slider-thumb { all: unset; }
 body {
    background: url('../img/bg.png');
 	font: 13px 'Open Sans', verdana;
-   color: #383838;
+   color: #505050;
    padding: 0px;
    margin: 0px;
 }
@@ -58,6 +58,7 @@ a:hover { color: rgb(175, 30, 30); }
    display: table-cell;
    width: auto;
    text-align: left;
+   vertical-align: top;
 }
 
 .split #right { text-align: right; }
@@ -67,6 +68,7 @@ a:hover { color: rgb(175, 30, 30); }
 .title, .ends, .starts, .objectives {
    background: url('../img/dark.png');
    margin-top: 2px;
+   padding: 3px 5px;
 }
 
 .title { margin-top: 0px; }
@@ -97,6 +99,17 @@ a:hover { color: rgb(175, 30, 30); }
 }
 
 #header #disabled { color: rgb(174, 248, 166); pointer-events: none; }
+
+/* --- INNERBODY --- */
+
+#innerbody {
+   transition: 0.3s;
+}
+
+#innerbody > #right {
+   background: url('../img/dark.png');
+   text-align: left;
+}
 
 /* --- PRELOAD STUFF --- */
 

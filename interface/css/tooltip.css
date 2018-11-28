@@ -8,7 +8,6 @@
 }
 
 #tooltip .title, #tooltip .ends, #tooltip .starts, #tooltip .objectives {
-   padding: 3px 5px;
    color: #F1F1F1;
 }
 
@@ -21,9 +20,9 @@
 }
 
 #legend-inner {
-   background: url('../img/inner-bg.png');
+   background: url('../img/inner-bg2.png');
    padding: 2px;
 }
 
-#legend-inner .category { background: url('../img/success.png'); padding: 4px; }
-#legend-inner .category:nth-child(even) { background: transparent; }
+#legend-inner .category { padding: 4px; }
+#legend-inner .category:nth-child(even) { background: url('../img/row-bg.png'); }

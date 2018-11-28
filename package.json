@@ -1,6 +1,7 @@
 {
    "scripts": {
-      "watch": "watchify core/app.js -o core/bundle.js -v | uglifyjs core/bundle.js -mc > core/bundle.min.js"
+      "watch": "watchify core/app.js -o core/bundle.js -v",
+      "ugly": "uglifyjs core/bundle.js -mc > core/bundle.min.js"
    },
    "dependencies": {
       "uglify-es": "^3.3.9",

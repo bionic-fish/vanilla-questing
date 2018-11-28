@@ -1,0 +1,24 @@
+#sidepanel {
+   width: 248px;
+   padding: 2px;
+   padding-left: 0px;
+}
+
+#sidepanel-inner {
+   background: url('../img/lighter.png');
+   padding: 2px;
+   height: 567px;
+   overflow: auto;
+   transition: 0.3s;
+}
+
+#sidepanel-inner .title, #sidepanel-inner .starts, #sidepanel-inner .ends, #sidepanel-inner .objectives {
+   color: rgb(218, 216, 216);
+   margin: 0px;
+   margin-bottom: 2px;
+}
+
+#sidepanel-inner .title { background: url('../img/title-bg.png'); }
+
+.section { padding: 6px; padding-bottom: 0px; }
+.section:last-child { padding-bottom: 4px; }
