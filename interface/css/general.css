@@ -102,3 +102,19 @@ a:hover { color: rgb(175, 30, 30); }
 
 #preload-container { display: none; }
 #preload-container img { width: 1px; height: 1px; }
+
+/* --- ALERT --- */
+
+#alert {
+   background: url('../img/error.png');
+   border-bottom: 1px solid #8F6F6F;
+   width: 100%;
+   position: absolute;
+   left: 0px;
+   top: 0px;
+   padding: 6px;
+   padding-top: 7px;
+   color: #F1F1F1;
+   text-align: center;
+   text-shadow: 1px 1px #242424;
+}
