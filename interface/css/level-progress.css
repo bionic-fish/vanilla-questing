@@ -45,6 +45,7 @@
    width: 100%;
    height: 26px;
    cursor: pointer;
+   transition: 0.3s;
 }
 
 #progress input[type=range]::-webkit-slider-thumb {

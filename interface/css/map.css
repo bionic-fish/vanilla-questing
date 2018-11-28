@@ -8,16 +8,6 @@
 
 /* --- BUTTONS TRIGGERS --- */
 
-#map #current-block {
-   background: url('../img/dark.png');
-   position: absolute;
-   left: 5px;
-   top: 5px;
-   color: white;
-   padding: 2px 5px;
-   pointer-events: none;
-}
-
 #show-legend {
    background: url('../img/dark.png');
    color: #CECECE;
@@ -25,7 +15,6 @@
    position: absolute;
    right: 5px;
    bottom: 5px;
-   font-size: 12px;
    cursor: help;
 }
 

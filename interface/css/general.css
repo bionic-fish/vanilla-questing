@@ -80,7 +80,7 @@ a:hover { color: rgb(175, 30, 30); }
    text-align: center;
    color: rgb(173, 173, 173);
    text-shadow: 1px 1px #242424;
-   padding: 3px 5px;
+   padding: 5px 7px;
 }
 
 #header .highlight, #footer .highlight { color: #F1F1F1; }
