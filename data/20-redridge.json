@@ -2,118 +2,91 @@
    "path": [
       {
          "zone": "redridge",
-         "experience": 25.72,
+         "experience": 25.74,
          "waypoints": [
             {
                "coords": { "x": 8, "y": 72 },
                "align": "top",
                "header": "Elwynn Forest Border",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             },
             {
                "coords": { "x": 32, "y": 58 },
                "align": "right",
                "header": "Guard Howe",
-               "ends": [],
-               "starts": [["Blackrock Bounty", "E"]],
-               "objectives": [],
+               "starts": ["Blackrock Bounty"],
                "type": "quest"
             },
             {
                "coords": { "x": 32, "y": 48 },
                "align": "right",
                "header": "The Northern Bridge",
-               "ends": [],
-               "starts": [["Tharil'Zun", "E"], ["Shadow Magic", "E"], ["Howling in the Hills", "E"]],
-               "objectives": [],
+               "starts": [["Tharil'Zun", "E"], ["Shadow Magic", "E"], "Howling in the Hills"],
                "type": "quest"
             },
             {
                "coords": { "x": 29, "y": 45 },
                "align": "top",
                "header": "Lakeshire Town Hall",
-               "ends": [],
-               "starts": [["Solomon's Law", "E"], ["Wanted: Gath'llzogg", "E"]],
-               "objectives": [],
+               "starts": ["Solomon's Law", ["Wanted: Gath'llzogg", "E"]],
                "type": "quest"
             },
             {
                "coords": { "x": 26, "y": 47 },
                "header": "Lakeshire Inn",
-               "ends": [],
-               "starts": [["Wanted: Lieutenant Fangore", "E"]],
-               "objectives": [],
+               "starts": ["Wanted: Lieutenant Fangore"],
                "type": "quest"
             },
             {
                "coords": { "x": 23, "y": 36 },
                "align": "left",
                "header": "Lakeshire Canyons",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             },
             {
                "coords": { "x": 28, "y": 21 },
                "align": "top",
                "header": "Gnoll Encampment",
-               "ends": [],
-               "starts": [],
-               "objectives": [["Howling in the Hills", "E"]],
+               "objectives": ["Howling in the Hills"],
                "type": "objective"
             },
             {
                "coords": { "x": 43, "y": 36 },
                "align": "top",
-               "header": "Redridge road",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
+               "header": "Redridge Road",
                "type": "travel"
             }
          ]
       },
       {
          "zone": "redridge",
-         "experience": 0,
+         "experience": 25.76,
          "waypoints": [
             {
                "coords": { "x": 43, "y": 36 },
                "align": "top",
-               "header": "Redridge road",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
+               "header": "Redridge Road",
                "type": "travel"
             },
             {
                "coords": { "x": 79, "y": 41 },
                "align": "top",
                "header": "Galardell Valley",
-               "ends": [],
-               "starts": [],
-               "objectives": [["Wanted: Lieutenant Fangore", "E"], ["Solomon's Law", "E"]],
+               "objectives": ["Wanted: Lieutenant Fangore", "Solomon's Law"],
                "type": "objective"
             },
             {
                "coords": { "x": 84, "y": 47 },
                "align": "right",
                "header": "Old Lion Statue",
-               "ends": [["A Watchful Eye", "E"]],
+               "ends": ["A Watchful Eye"],
                "starts": [["Looking Further", "E"]],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 70, "y": 56 },
                "align": "top",
                "header": "Stonewatch Fortress",
-               "ends": [],
-               "starts": [],
                "objectives": [["Wanted: Gath'llzogg", "E"], ["Shadow Magic", "E"]],
                "type": "objective"
             },
@@ -121,8 +94,6 @@
                "coords": { "x": 69, "y": 60 },
                "align": "bottom",
                "header": "Stonewatch Fortress",
-               "ends": [],
-               "starts": [],
                "objectives": [["Tharil'Zun", "E"], ["Shadow Magic", "E"]],
                "type": "objective"
             },
@@ -130,48 +101,38 @@
                "coords": { "x": 63, "y": 50 },
                "header": "An Empty Jar",
                "ends": [["Looking Further", "E"]],
-               "starts": [],
-               "objectives": [],
                "type": "quest"
             }
          ]
       },
       {
          "zone": "redridge",
-         "experience": 26.04,
+         "experience": 26.02,
          "waypoints": [
             {
                "coords": { "x": 63, "y": 50 },
                "align": "right",
                "header": "An Empty Jar",
                "ends": [["Looking Further", "E"]],
-               "starts": [],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 32, "y": 7 },
                "align": "top",
                "header": "Render's Rock",
-               "ends": [],
-               "starts": [],
-               "objectives": [["Blackrock Bounty", "E"]],
+               "objectives": ["Blackrock Bounty"],
                "type": "objective"
             },
             {
                "coords": { "x": 28, "y": 13 },
                "header": "Corporal Keeshan",
-               "ends": [],
                "starts": [["Missing in Action", "F"]],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 35, "y": 44 },
                "align": "right",
                "header": "Redridge Road",
-               "ends": [],
-               "starts": [],
                "objectives": [["Missing in Action", "F"]],
                "type": "objective"
             }
@@ -185,8 +146,6 @@
                "coords": { "x": 35, "y": 44 },
                "align": "right",
                "header": "Redridge Road",
-               "ends": [],
-               "starts": [],
                "objectives": [["Missing in Action", "F"]],
                "type": "objective"
             },
@@ -195,50 +154,38 @@
                "align": "right",
                "header": "Marshal Morris",
                "ends": [["Tharil'Zun", "E"], ["Shadow Magic", "E"], ["Missing in Action", "F"]],
-               "starts": [],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 31, "y": 47 },
                "header": "Vernon Osgood",
-               "ends": [["Howling in the Hills", "E"]],
-               "starts": [],
-               "objectives": [],
+               "ends": ["Howling in the Hills"],
                "type": "quest"
             },
             {
                "coords": { "x": 30, "y": 44 },
                "align": "top",
                "header": "Lakeshire Town Hall",
-               "ends": [["Solomon's Law", "E"], ["Wanted: Lieutenant Fangore", "E"], ["Wanted: Gath'llzogg", "E"]],
-               "starts": [],
-               "objectives": [],
+               "ends": ["Solomon's Law", "Wanted: Lieutenant Fangore", ["Wanted: Gath'llzogg", "E"]],
                "type": "quest"
             },
             {
                "coords": { "x": 26, "y": 47 },
                "header": "Guard Berton",
-               "ends": [],
                "starts": [["What Comes Around...", "D"]],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 32, "y": 58 },
                "align": "right",
                "header": "Guard Howe",
-               "ends": [["Blackrock Bounty", "E"]],
-               "starts": [],
-               "objectives": [],
+               "ends": ["Blackrock Bounty"],
                "type": "quest"
             },
             {
                "coords": { "x": 30, "y": 60 },
-               "header": "Redridge Mountains Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Fly to Westfall"],
+               "header": "Redridge Flightpath",
+               "special": ["Fly to Westfall"],
                "type": "flightpath"
             }
          ]

@@ -98,6 +98,8 @@ function map(data, settings, reference) {
 // GENERATE OVERLOOK FOR THE CURRENT BLOCK
 function sidepanel(data) {
 
+   var ids = data.ids;
+
    // TARGET BLOCK WAYPOINTS
    var target = data.build[data.current].waypoints;
 
@@ -122,17 +124,20 @@ function sidepanel(data) {
             </div>
       `;
 
-      // LOOP THROUGH ENDS, STARTS & OBJECTIVES CONTENT
-      waypoint.ends.forEach(data => { container += row('ends', data); });
-      waypoint.starts.forEach(data => { container += row('starts', data); });
-      waypoint.objectives.forEach(data => { container += row('objectives', data); });
+      // LOOP THROUGH ENDS, STARTS & OBJECTIVES CONTENT THAT ARE DEFINED
+      if (waypoint.ends != undefined) { waypoint.ends.forEach(details => { container += row('ends', details, ids); }); }
+      if (waypoint.starts != undefined) { waypoint.starts.forEach(details => { container += row('starts', details, ids); }); }
+      if (waypoint.objectives != undefined) { waypoint.objectives.forEach(details => { container += row('objectives', details, ids); }); }
+      if (waypoint.special != undefined) { waypoint.special.forEach(details => { container += '<div class="special">' + details + '</div>'; }); }
+
+      // ADD ON SUFFIX
       container += '</div>';
    });
 
    sidepanel.html(container);
 }
 
-function row(category, data) {
+function row(category, data, ids) {
 
    // ROW CONTAINER
    var container = '';
@@ -142,15 +147,15 @@ function row(category, data) {
 
    // IF ITS A STRING -- GENERATE & APPEND A SELECTOR
    if (type === 'string') {
-      container += '<div class="' + category + '">' + data + '</div>';
+      container += '<div class="' + category + '"><a href="https://classicdb.ch/?quest=' + ids[data] + '" target="_blank">' + shorten(data) + '</a></div>';
 
    // IF ITS AN ARRAY -- GENERATE & APPEND A SELECTOR
    } else {
       container += `
          <div class="` + category + `">
             <div class="split">
-               <div id="left">` + data[0] + `</div>
-               <div id="right">` + data[1] + `</div>
+               <div id="left"><a href="https://classicdb.ch/?quest=` + ids[data[0]] + `" target="_blank">` + shorten(data[0]) + `</a></div>
+               <div id="right">` + shorten(data[1]) + `</div>
             </div>
          </div>
       `;
@@ -158,6 +163,20 @@ function row(category, data) {
 
    // RETURN THE CONTAINER
    return container;
+}
+
+// SHORTEN A LONG STRING
+function shorten(string) {
+   
+   // CHECK IF THE STRING IS LONGER THAN 22 CHARACTERS
+   if (string.length > 28) {
+
+      // ALLOW THE FIRST 20 CHARACTERS AND TAG ON THE TRIPLEDOT
+      string = string.substring(0, 25);
+      string += '...';
+   }
+
+   return string;
 }
 
 // EXPORT MODULES

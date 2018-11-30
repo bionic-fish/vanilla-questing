@@ -28,7 +28,7 @@ function map(data, settings, render) {
    $('#range').on('change', () => { data = render.map(data, settings, $('#range').val()); });
 
    // DISABLE ARROW KEYS WHEN THE INPUT RANGE IS SELECTED
-   $(document).on('keyup keydown', (event) => { if (event.keyCode == 37 || event.keyCode == 39) { event.preventDefault(); } });
+   $(document).on('keyup keydown', (event) => { if (event.keyCode == 37 || event.keyCode == 38 ||event.keyCode == 39 || event.keyCode == 40) { event.preventDefault(); } });
 
    // RETURN UPDATED DATA OBJECT
    return data;
@@ -239,6 +239,24 @@ function general(settings) {
          }
       }
 
+      // WHEN 'F' IS PRESSED
+      if (evt.keyCode == 70) {
+
+         // CURRENT DISPLAY VALUE
+         var display = $('#sidepanel').css('display');
+
+         // TOGGLE SIDEPANEL & WAYPOINT NUMBERS ON
+         if (display == 'none') {
+            $('#sidepanel').css('display', 'block');
+            $('.waypoint-num').css('display', 'block');
+
+         // TOGGLE SIDEPANEL & WAYPOINT NUMBERS OFF
+         } else {
+            $('#sidepanel').css('display', 'none');
+            $('.waypoint-num').css('display', 'none');
+         }
+      }
+
    });
 
    // SHOW LEGEND EVENT
@@ -253,8 +271,16 @@ function general(settings) {
             ['yellow', 'Quest'],
             ['red', 'Objective'],
             ['green', 'Flightpath'],
-            ['purple', 'Travel'],
+            ['purple', 'Travel']
          ];
+
+         var other = [
+            ['D', 'Dungeon'],
+            ['E', 'Elite'],
+            ['F', 'Escort'],
+            ['R', 'Random Drop'],
+            ['C', 'Class']
+         ]
 
          // GENERATE A LEGEND SELECTOR
          var selector = '<div id="legend"><div id="legend-inner">';
@@ -265,6 +291,18 @@ function general(settings) {
                <div class="category">
                   <div class="split">
                      <div id="left"><img src="interface/img/waypoints/` + row[0] + `.png"></div>
+                     <div id="right">` + row[1] + `</div>
+                  </div>
+               </div>
+            `;
+         });
+
+         // LOOP THROUGH OTHERS & ADD A ROW FOR EACH
+         other.forEach(row => {
+            selector += `
+               <div class="category">
+                  <div class="split">
+                     <div id="left">[` + row[0] + `]</div>
                      <div id="right">` + row[1] + `</div>
                   </div>
                </div>

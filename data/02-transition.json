@@ -2,23 +2,19 @@
    "path": [
       {
          "zone": "westfall",
-         "experience": 10.71,
+         "experience": 10.41,
          "waypoints": [
             {
                "coords": { "x": 60, "y": 19 },
                "align": "top",
                "header": "Verna Furlbrow",
-               "ends": [],
                "starts": ["Westfall Stew"],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 56, "y": 31 },
                "header": "Salma Saldean",
                "ends": ["Westfall Stew"],
-               "starts": [],
-               "objectives": [],
                "type": "quest"
             },
             {
@@ -26,7 +22,6 @@
                "header": "Sentinel Tower",
                "ends": ["Report to Gryan Stoutmantle"],
                "starts": ["A Swift Message"],
-               "objectives": [],
                "type": "hub"
             },
             {
@@ -34,30 +29,26 @@
                "header": "Westfall Flightpath",
                "ends": ["A Swift Message"],
                "starts": ["Continue to Stormwind"],
-               "objectives": ["Fly to Stormwind"],
+               "special": ["Fly to Stormwind"],
                "type": "flightpath"
             }
          ]
       },
       {
          "zone": "stormwind",
-         "experience": 10.91,
+         "experience": 10.61,
          "waypoints": [
             {
                "coords": { "x": 66, "y": 62 },
                "align": "bottom",
                "header": "Stormwind Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Learn Flightpath."],
+               "special": ["Learn Flightpath."],
                "type": "flightpath"
             },
             {
                "coords": { "x": 56, "y": 65 },
                "header": "Morgan Pestle",
                "ends": ["Shipment to Stormwind"],
-               "starts": [],
-               "objectives": [],
                "type": "quest"
             },
             {
@@ -66,7 +57,6 @@
                "header": "Osric Strange",
                "ends": ["Shipment to Stormwind"],
                "starts": ["Dungar Longdrink"],
-               "objectives": [],
                "type": "quest"
             },
             {
@@ -74,16 +64,14 @@
                "align": "right",
                "header": "Harry Burlguard",
                "ends": [["A Warrior's Training", "C"]],
-               "starts": [["Bartley the Drunk", "C"]],
-               "objectives": [["Bartley the Drunk", "C"]],
+               "starts": [["Bartleby the Drunk", "C"]],
+               "objectives": [["Bartleby the Drunk", "C"]],
                "type": "quest"
             },
             {
                "coords": { "x": 49, "y": 30 },
                "header": "Baros Alexston",
-               "ends": [],
                "starts": ["Humble Beginnings"],
-               "objectives": [],
                "type": "quest"
             },
             {
@@ -91,57 +79,46 @@
                "header": "Grimand Elmore",
                "ends": ["Elmore's Task"],
                "starts": ["Stormpike's Delivery"],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 65, "y": 6 },
                "align": "right",
                "header": "Deeprun Tram",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Move to Ironforge"],
                "type": "travel"
             }
          ]
       },
       {
          "zone": "ironforge",
-         "experience": 11.29,
+         "experience": 10.89,
          "waypoints": [
             {
                "coords": { "x": 78, "y": 52 },
-               "align": "right",
+               "align": "top",
                "header": "Deeprun Tram",
-               "ends": [],
                "starts": ["Deeprun Rat Roundup"],
-               "objectives": [],
+               "ends": ["Deeprun Rat Roundup"],
+               "objectives": ["Deeprun Rat Roundup"],
                "type": "quest"
             },
             {
                "coords": { "x": 56, "y": 48 },
                "align": "top",
                "header": "Ironforge Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Learn Flightpath"],
+               "special": ["Learn Flightpath"],
                "type": "flightpath"
             },
             {
                "coords": { "x": 19, "y": 51 },
                "align": "top",
                "header": "Innkeeper Firebrew",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Set Hearthstone"],
+               "special": ["Set Hearthstone"],
                "type": "objective"
             },
             {
                "coords": { "x": 12, "y": 89 },
                "header": "Gates of Ironforge",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             }
          ]

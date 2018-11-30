@@ -2,60 +2,44 @@
    "path": [
       {
          "zone": "wetlands",
-         "experience": 13.71,
+         "experience": 13.57,
          "waypoints": [
             {
                "coords": { "x": 52, "y": 72 },
                "align": "right",
                "header": "Wetlands Passageway",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             },
             {
                "coords": { "x": 57, "y": 55 },
                "align": "right",
                "header": "Wetlands Road",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             },
             {
                "coords": { "x": 44, "y": 38 },
                "align": "top",
                "header": "Wetlands Road",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             },
             {
                "coords": { "x": 20, "y": 43 },
                "align": "top",
                "header": "Wetlands Road",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             },
             {
                "coords": { "x": 9, "y": 60 },
                "align": "bottom",
                "header": "Menethil Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Learn the Flightpath"],
+               "special": ["Learn the Flightpath"],
                "type": "flightpath"
             },
             {
                "coords": { "x": 5, "y": 57 },
                "align": "top",
                "header": "Menethil Harbor",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Ride to Darkshore"],
+               "special": ["Sail to Darkshore"],
                "type": "travel"
             }
          ]

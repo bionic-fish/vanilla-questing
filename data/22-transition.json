@@ -38,14 +38,14 @@
                "coords": { "x": 73, "y": 45 },
                "header": "Nikova Raskol",
                "ends": [],
-               "starts": ["The Color of Blood"],
+               "starts": [["The Color of Blood", "D"]],
                "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 74, "y": 8 },
                "header": "Milton Sheaf",
-               "ends": ["An Old History Book"],
+               "ends": [["An Old History Book", "R"]],
                "starts": ["Southshore"],
                "objectives": [],
                "type": "quest"
@@ -67,12 +67,21 @@
                "type": "quest"
             },
             {
-               "coords": { "x": 41, "y": 58 },
+               "coords": { "x": 43, "y": 59 },
+               "align": "bottom",
                "header": "The Stockade Enterance",
                "ends": ["Bazil Thredd"],
-               "starts": ["Quell The Uprising", "The Stockade Riots"],
-               "objectives": ["Do the Stockade with 5 quests."],
+               "starts": [["Quell The Uprising", "D"], ["The Stockade Riots", "D"]],
+               "objectives": [],
                "type": "quest"
+            },
+            {
+               "coords": { "x": 41, "y": 56 },
+               "header": "The Stockade",
+               "ends": [],
+               "starts": [],
+               "objectives": [["Quell The Uprising", "D"], ["The Stockade Riots", "D"], ["Crime and Punishment", "D"], ["The Color of Blood", "D"], ["What Comes Around", "D"]],
+               "type": "objective"
             }
          ]
       },

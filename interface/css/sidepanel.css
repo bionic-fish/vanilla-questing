@@ -10,9 +10,10 @@
    height: 567px;
    overflow: auto;
    transition: 0.3s;
+   text-shadow: 1px 1px #242424;
 }
 
-#sidepanel-inner .title, #sidepanel-inner .starts, #sidepanel-inner .ends, #sidepanel-inner .objectives {
+#sidepanel-inner .title, #sidepanel-inner .starts, #sidepanel-inner .ends, #sidepanel-inner .objectives, #sidepanel-inner .special {
    color: rgb(218, 216, 216);
    margin: 0px;
    margin-bottom: 2px;
@@ -22,3 +23,11 @@
 
 .section { padding: 6px; padding-bottom: 0px; }
 .section:last-child { padding-bottom: 4px; }
+
+.section a:link, .section a:visited {
+   color: rgb(218, 216, 216);
+}
+
+.section a:hover {
+   color: white;
+}

@@ -77,47 +77,54 @@ function build() {
       $.getJSON('../data/75-plaguelands.json')
    ];
 
+   var quests = $.getJSON('../data/quest-ids.json');
+
    // WAIT FOR ALL PROMISES TO BE RESOLVED
    return Promise.all(route).then((response) => {
 
-      // DECLARE DATA OBJECT
-      var data = {
-         build: [],
-         storage: 'questing-page',
-         current: '0',
-         stats: {
-            blocks: 0,
-            waypoints: 0,
-            quests: 0,
-            progress: 0
-         }
-      };
+      // WAIT FOR QUEST-ID PROMISE TO RESOLVE
+      return quests.then((ids) => {
 
-      // LOOK THROUGH EACH 
-      response.forEach(block => {
-         block.path.forEach(waypoint => {
-   
-            // PUSH WAYPOINT OBJECT INTO THE CONTAINER
-            data.build.push(waypoint);
-   
-            // INCREMENT BLOCK COUNTER
-            data.stats.blocks++;
-            
-            waypoint.waypoints.forEach(foo => {
+         // DECLARE DATA OBJECT
+         var data = {
+            build: [],
+            storage: 'questing-page',
+            current: '0',
+            stats: {
+               blocks: 0,
+               waypoints: 0,
+               quests: 0,
+               progress: 0
+            },
+            ids: ids
+         };
 
-               // INCREMENT WAYPOINT COUNTER
-               data.stats.waypoints++;
-   
-               // INCREMENT QUEST COUNTER
-               foo.starts.forEach(bar => { data.stats.quests++; });
+         // LOOK THROUGH EACH 
+         response.forEach(block => {
+            block.path.forEach(waypoint => {
+      
+               // PUSH WAYPOINT OBJECT INTO THE CONTAINER
+               data.build.push(waypoint);
+      
+               // INCREMENT BLOCK COUNTER
+               data.stats.blocks++;
+               
+               waypoint.waypoints.forEach(foo => {
+
+                  // INCREMENT WAYPOINT COUNTER
+                  data.stats.waypoints++;
+
+                  // INCREMENT QUEST COUNTER -- IF ITS DEFINED
+                  if (foo.starts != undefined) { foo.starts.forEach(bar => { data.stats.quests++; }); }
+               });
             });
          });
+
+         // IF LOCALSTORAGE IS EMPTY, SET IT TO ZERO
+         if (localStorage.getItem(data.storage) === null) { localStorage.setItem(data.storage, '0'); }
+
+         return data;
       });
-
-      // IF LOCALSTORAGE IS EMPTY, SET IT TO ZERO
-      if (localStorage.getItem(data.storage) === null) { localStorage.setItem(data.storage, '0'); }
-
-      return data;
    });
 }
 

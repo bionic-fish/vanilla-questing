@@ -2,15 +2,12 @@
    "path": [
       {
          "zone": "duskwood",
-         "experience": 24.52,
+         "experience": 24.50,
          "waypoints": [
             {
                "coords": { "x": 78, "y": 44 },
                "align": "bottom",
                "header": "Duskwood Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "flightpath"
             },
             {
@@ -19,16 +16,14 @@
                "header": "Darkshire",
                "ends": [["The Legend of Stalvan", "P1"]],
                "starts": [["The Night Watch", "P1"], "Seasoned Wolf Kabobs", "Raven Hill", "Deliveries to Sven", "The Hermit", "The Totem of Infliction", ["The Legend of Stalvan", "P1-2"]],
-               "objectives": ["Set Hearthstone"],
+               "special": ["Set Hearthstone"],
                "type": "hub"
             },
             {
                "coords": { "x": 45, "y": 67 },
                "align": "bottom",
                "header": "Watcher Dodds",
-               "ends": [],
                "starts": ["Eight-Legged Menaces"],
-               "objectives": [],
                "type": "quest"
             },
             {
@@ -37,24 +32,34 @@
                "header": "Jitters",
                "ends": ["Raven Hill"],
                "starts": ["Jitters' Growling Gut"],
-               "objectives": [],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "duskwood",
+         "experience": 24.53,
+         "waypoints": [
+            {
+               "coords": { "x": 19, "y": 58 },
+               "align": "bottom",
+               "header": "Jitters",
+               "ends": ["Raven Hill"],
+               "starts": ["Jitters' Growling Gut"],
                "type": "quest"
             },
             {
                "coords": { "x": 11, "y": 55 },
                "header": "Duskwood Riverside",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Eight-Legged Menaces", "The Totem of Infliction", "Farm until you have 6x Gooey Spider Legs"],
+               "objectives": ["Eight-Legged Menaces", "The Totem of Infliction"],
+               "special": ["Vial of Spider Venom", "Farm 6x Gooey Spider Leg"],
                "type": "objective"
             },
             {
-               "coords": { "x": 16, "y": 48 },
-               "align": "right",
-               "header": "Ravel Hill Cemetary",
-               "ends": [],
-               "starts": [],
-               "objectives": ["The Totem of Infliction"],
+               "coords": { "x": 11, "y": 44 },
+               "header": "Duskwood Riverside",
+               "objectives": ["Eight-Legged Menaces", "The Totem of Infliction"],
+               "special": ["Vial of Spider Venom", "Farm 6x Gooey Spider Leg"],
                "type": "objective"
             },
             {
@@ -62,15 +67,12 @@
                "header": "The Hushed Bank",
                "ends": ["Delivery to Sven"],
                "starts": ["Sven's Revenge", "Wolves at Out Heels"],
-               "objectives": [],
                "type": "quest"
             },            
             {
                "coords": { "x": 12, "y": 31 },
                "align": "top",
                "header": "Duskwood Riverside",
-               "ends": [],
-               "starts": [],
                "objectives": ["Seasoned Wolf Kabobs", "Wolves at Out Heels"],
                "type": "objective"
             }
@@ -78,14 +80,12 @@
       },
       {
          "zone": "duskwood",
-         "experience": 0,
+         "experience": 24.67,
          "waypoints": [           
             {
                "coords": { "x": 12, "y": 31 },
                "align": "top",
                "header": "Duskwood Riverside",
-               "ends": [],
-               "starts": [],
                "objectives": ["Seasoned Wolf Kabobs", "Wolves at Out Heels"],
                "type": "objective"
             },
@@ -93,8 +93,6 @@
                "coords": { "x": 22, "y": 27 },
                "align": "top",
                "header": "Duskwood Riverside",
-               "ends": [],
-               "starts": [],
                "objectives": ["Seasoned Wolf Kabobs", "Wolves at Out Heels"],
                "type": "objective"
             },
@@ -103,17 +101,15 @@
                "align": "right",
                "header": "Abercrombie",
                "ends": ["The Hermit"],
-               "starts": ["Supplies from Darkshirem"],
-               "objectives": [],
+               "starts": ["Supplies from Darkshire"],
                "type": "quest"
             },
             {
                "coords": { "x": 26, "y": 35 },
                "align": "bottom",
                "header": "Ravel Hill Cemetary",
-               "ends": [],
-               "starts": [],
-               "objectives": ["The Totem of Infliction", "Kill Ghouls"],
+               "objectives": ["The Totem of Infliction"],
+               "special": ["Ghoul Fangs"],
                "type": "objective"
             },
             {
@@ -121,32 +117,24 @@
                "align": "bottom",
                "header": "The Hushed Bank",
                "ends": ["Wolves at Out Heels"],
-               "starts": [],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 3, "y": 36 },
                "align": "bottom",
                "header": "Westfall Border",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             }
          ]
       },
       {
          "zone": "westfall",
-         "experience": 24.91,
+         "experience": 24.81,
          "waypoints": [
             {
                "coords": { "x": 64, "y": 42 },
                "align": "top",
                "header": "Duskwood Border",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             },
             {
@@ -154,40 +142,30 @@
                "header": "Old Footlocker",
                "ends": [["The Legend of Stalvan", "P2"]],
                "starts": [["The Legend of Stalvan", "P3"]],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 67, "y": 63 },
                "align": "bottom",
                "header": "Duskwood Border",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             }
          ]
       },
       {
          "zone": "duskwood",
-         "experience": 24.95,
+         "experience": 24.87,
          "waypoints": [
             {
                "coords": { "x": 9, "y": 64 },
                "align": "top",
                "header": "Westfall Border",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             },
             {
                "coords": { "x": 26, "y": 57 },
                "align": "top",
                "header": "Duskwood Road",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             },
             {
@@ -195,17 +173,12 @@
                "align": "top",
                "header": "Watcher Dodds",
                "ends": ["Eight-Legged Menaces"],
-               "starts": [],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 45, "y": 78 },
                "align": "bottom",
                "header": "Stranglethorn Road",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             },
             {
@@ -214,7 +187,6 @@
                "header": "Mound of Loose Dirt",
                "ends": ["Sven's Revenge"],
                "starts": ["Sven's Camp"],
-               "objectives": [],
                "type": "quest"
             },
             {
@@ -223,16 +195,12 @@
                "header": "Darkshire",
                "ends": ["Supplies from Darkshire", "Jitters' Growling Gut", ["The Legend of Stalvan", "P3"], "Dusky Crab Cakes"],
                "starts": ["Ghost Hair Thread", "Dusky Crab Cakes", "Return to Jitters", ["The Legend of Stalvan", "P4"]],
-               "objectives": [],
                "type": "hub"
             },
             {
                "coords": { "x": 67, "y": 16 },
                "align": "right",
                "header": "Duskwood Riverside",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             }
          ]

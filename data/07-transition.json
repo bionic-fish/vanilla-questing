@@ -2,55 +2,46 @@
    "path": [
       {
          "zone": "ironforge",
-         "experience": 16.90,
+         "experience": 16.68,
          "waypoints": [
             {
                "coords": { "x": 19, "y": 51 },
+               "align": "top",
                "header": "Ironforge Inn",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             },
             {
                "coords": { "x": 69, "y": 51 },
                "align": "top",
                "header": "Gnoarn",
-               "ends": [],
                "starts": ["Speak with Shoni"],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 77, "y": 51 },
-               "align": "right",
+               "align": "top",
                "header": "Deeprun Tram",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Ride to Stormwind"],
-               "type": "travel"
+               "starts": ["Me Brother, Nipsy"],
+               "type": "quest"
             }
          ]
       },
       {
          "zone": "stormwind",
-         "experience": 16.90,
+         "experience": 16.69,
          "waypoints": [
             {
                "coords": { "x": 63, "y": 8 },
                "align": "right",
                "header": "Deeprun Tram",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
-               "type": "travel"
+               "ends": ["Me Brother, Nipsy"],
+               "type": "quest"
             },
             {
                "coords": { "x": 55, "y": 12 },
                "header": "Shoni the Silent",
                "ends": ["Speak with Shoni"],
                "starts": [["Underground Assault", "D"]],
-               "objectives": [],
                "type": "quest"
             },
             {
@@ -58,17 +49,13 @@
                "align": "bottom",
                "header": "Furen Longbeard",
                "ends": ["Stormpike's Order"],
-               "starts": [],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 65, "y": 21 },
                "align": "right",
                "header": "Wilder Thistlenettle",
-               "ends": [],
                "starts": [["Oh Brother...", "D"], ["Collecting Memories", "D"]],
-               "objectives": [],
                "type": "quest"
             },
             {
@@ -77,7 +64,7 @@
                "header": "Stormwind Flightpath",
                "ends": ["Dungar Longdrink"],
                "starts": ["Return to Lewis"],
-               "objectives": ["Fly to Westfall"],
+               "special": ["Fly to Westfall"],
                "type": "flightpath"
             }
          ]

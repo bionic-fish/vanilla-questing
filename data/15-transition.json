@@ -2,45 +2,34 @@
    "path": [
       {
          "zone": "teldrassil",
-         "experience": 24.23,
+         "experience": 24.22,
          "waypoints": [
             {
                "coords": { "x": 55, "y": 97 },
                "header": "Darnassus Harbor",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             },
             {
                "coords": { "x": 58, "y": 94 },
                "align": "right",
                "header": "Darnassus Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Learn the Flightpath"],
+               "special": ["Learn the Flightpath"],
                "type": "flightpath"
             },
             {
                "coords": { "x": 56, "y": 90 },
                "header": "Darnassus Teleporter",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             }
          ]
       },
       {
          "zone": "darnassus",
-         "experience": 24.23,
+         "experience": 24.22,
          "waypoints": [
             {
                "coords": { "x": 31, "y": 41 },
                "header": "Darnassus Teleporter",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             },
             {
@@ -48,73 +37,56 @@
                "header": "Chief Archaeologist Greywhisker",
                "ends": [["The Absent Minded Prospector", "P2"]],
                "starts": [["The Absent Minded Prospector", "P3"]],
-               "objectives": [],
                "type": "quest"
             }
          ]
       },
       {
          "zone": "darnassus",
-         "experience": 24.27,
+         "experience": 24.26,
          "waypoints": [
             {
                "coords": { "x": 31, "y": 84 },
                "header": "Chief Archaeologist Greywhisker",
-               "ends": [["The Absent Minded Prospector", "P2"]],
-               "starts": [["The Absent Minded Prospector", "P3"]],
-               "objectives": [],
+               "ends": [["The Absent Minded Prospector", "P3"]],
+               "starts": [["The Absent Minded Prospector", "P4"]],
                "type": "quest"
             },
             {
                "coords": { "x": 31, "y": 41 },
                "header": "Darnassus Teleporter",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             }
          ]
       },
       {
          "zone": "teldrassil",
-         "experience": 24.27,
+         "experience": 24.26,
          "waypoints": [
             {
                "coords": { "x": 56, "y": 90 },
                "header": "Darnassus Teleporter",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             },
             {
                "coords": { "x": 55, "y": 97 },
                "header": "Darnassus Harbor",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             }
          ]
       },
       {
          "zone": "darkshore",
-         "experience": 24.27,
+         "experience": 24.26,
          "waypoints": [
             {
                "coords": { "x": 33, "y": 40 },
                "header": "Auberdine Harbor",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             },
             {
                "coords": { "x": 32, "y": 44 },
                "header": "Auberdine Harbor",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             }
          ]

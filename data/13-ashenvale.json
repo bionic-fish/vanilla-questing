@@ -2,15 +2,12 @@
    "path": [
       {
          "zone": "ashenvale",
-         "experience": 22.26,
+         "experience": 22.29,
          "waypoints": [
             {
                "coords": { "x": 29, "y": 15 },
                "align": "top",
                "header": "Darkshore Border",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             },
             {
@@ -18,40 +15,36 @@
                "header": "Maestra's Post",
                "ends": [["The Tower of Althalaxx", "P2"], ["The Sleeper has Awakened", "F"]],
                "starts": ["Bathran's Hair", ["The Tower of Althalaxx", "P3"]],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 31, "y": 31 },
                "align": "right",
                "header": "The Ruins of Ordil'Aran",
-               "ends": [],
-               "starts": [],
-               "objectives": [["The Tower of Althalaxx", "P3"], "Kill Cultists"],
+               "objectives": [["The Tower of Althalaxx", "P3"]],
+               "special": ["Kill Cultists for the Gem"],
                "type": "objective"
             },
             {
                "coords": { "x": 32, "y": 22 },
                "align": "right",
                "header": "The Ruins of Ordil'Aran",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Bathran's Hair", "Loot Bags"],
+               "objectives": ["Bathran's Hair"],
+               "special": ["Loot Bags of Hair"],
                "type": "objective"
             }
          ]
       },
       {
          "zone": "ashenvale",
-         "experience": 22.42,
+         "experience": 22.47,
          "waypoints": [
             {
                "coords": { "x": 32, "y": 22 },
-               "align": "top",
+               "align": "right",
                "header": "The Ruins of Ordil'Aran",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Bathran's Hair", "Loot Bags"],
+               "objectives": ["Bathran's Hair"],
+               "special": ["Loot Bags of Hair"],
                "type": "objective"
             },
             {
@@ -59,16 +52,13 @@
                "header": "Maestra's Post",
                "ends": ["Bathran's Hair", ["The Tower of Althalaxx", "P3"]],
                "starts": ["Orendil's Cure", ["The Tower of Althalaxx", "P4"]],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 34, "y": 48 },
                "align": "bottom",
                "header": "Ashenvale Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Learn the Flightpath"],
+               "special": ["Learn the Flightpath"],
                "type": "flightpath"
             },
             {
@@ -77,15 +67,34 @@
                "header": "Astranaar",
                "ends": ["Orendil's Cure"],
                "starts": ["The Zoram Strand", "Elune's Tear", ["Raene's Cleansing", "P1"], "Culling the Threat"],
-               "objectives": ["Set Hearthstone"],
+               "special": ["Set Hearthstone"],
                "type": "hub"
+            }
+         ]
+      },
+      {
+         "zone": "ashenvale",
+         "experience": 22.64,
+         "waypoints": [
+            {
+               "coords": { "x": 36, "y": 50 },
+               "align": "bottom",
+               "header": "Astranaar",
+               "ends": ["Orendil's Cure"],
+               "starts": ["The Zoram Strand", "Elune's Tear", ["Raene's Cleansing", "P1"], "Culling the Threat"],
+               "special": ["Set Hearthstone"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 43, "y": 57 },
+               "align": "right",
+               "header": "Astranaar Road",
+               "type": "travel"
             },
             {
                "coords": { "x": 46, "y": 46 },
                "align": "right",
                "header": "Iris Lake",
-               "ends": [],
-               "starts": [],
                "objectives": ["Elune's Tear"],
                "type": "objective"
             },
@@ -93,8 +102,6 @@
                "coords": { "x": 38, "y": 35 },
                "align": "top",
                "header": "Thistlefur Village",
-               "ends": [],
-               "starts": [],
                "objectives": ["Culling the Threat"],
                "type": "objective"
             }
@@ -102,16 +109,20 @@
       },
       {
          "zone": "ashenvale",
-         "experience": 22.71,
+         "experience": 22.74,
          "waypoints": [
             {
                "coords": { "x": 38, "y": 35 },
                "align": "top",
                "header": "Thistlefur Village",
-               "ends": [],
-               "starts": [],
                "objectives": ["Culling the Threat"],
                "type": "objective"
+            },
+            {
+               "coords": { "x": 31, "y": 46 },
+               "align": "left",
+               "header": "Astranaar Road",
+               "type": "travel"
             },
             {
                "coords": { "x": 36, "y": 50 },
@@ -119,32 +130,38 @@
                "header": "Astranaar",
                "ends": ["Culling the Threat", "Elune's Tear"],
                "starts": ["The Ruins of Stardust"],
-               "objectives": [],
                "type": "hub"
             },
             {
                "coords": { "x": 33, "y": 67 },
                "align": "bottom",
                "header": "Ruins of Stardust",
-               "ends": [],
-               "starts": [],
                "objectives": ["The Ruins of Stardust"],
                "type": "objective"
             },
             {
                "coords": { "x": 25, "y": 61 },
                "header": "Fire Scar Shrine",
-               "ends": [],
-               "starts": [],
-               "objectives": [["The Tower of Althalaxx", "P4"], "Kill the Warlock"],
+               "objectives": [["The Tower of Althalaxx", "P4"]],
+               "special": ["Kill the Grand Warlock"],
                "type": "objective"
             },
             {
                "coords": { "x": 23, "y": 52 },
                "header": "Therysil",
                "ends": [["Therylune's Escape", "F"]],
-               "starts": [],
-               "objectives": [],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "ashenvale",
+         "experience": 23.04,
+         "waypoints": [
+            {
+               "coords": { "x": 23, "y": 52 },
+               "header": "Therysil",
+               "ends": [["Therylune's Escape", "F"]],
                "type": "quest"
             },
             {
@@ -153,7 +170,6 @@
                "header": "Delgren the Purifier",
                "ends": [["The Tower of Althalaxx", "P4"]],
                "starts": [["The Tower of Althalaxx", "P5"]],
-               "objectives": [],
                "type": "quest"
             },
             {
@@ -161,22 +177,19 @@
                "header": "Teronis' Corpse",
                "ends": [["Raene's Cleansing", "P1"]],
                "starts": [["Raene's Cleansing", "P2"]],
-               "objectives": ["Farm a Gem from the Murlocs"],
+               "objectives": [["Raene's Cleansing", "P2"]],
+               "special": ["Kill Murlocs for the Gem"],
                "type": "quest"
             },
             {
                "coords": { "x": 15, "y": 31 },
                "header": "Talen",
-               "ends": [],
                "starts": ["The Ancient Statuette"],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 14, "y": 21 },
                "header": "Ancient Statuette",
-               "ends": [],
-               "starts": [],
                "objectives": ["The Ancient Statuette"],
                "type": "objective"
             }
@@ -184,14 +197,12 @@
       },
       {
          "zone": "ashenvale",
-         "experience": 23.28,
+         "experience": 23.27,
          "waypoints": [
             {
                "coords": { "x": 14, "y": 21 },
                "align": "right",
                "header": "Ancient Statuette",
-               "ends": [],
-               "starts": [],
                "objectives": ["The Ancient Statuette"],
                "type": "objective"
             },
@@ -201,22 +212,17 @@
                "header": "Talen",
                "ends": ["The Ancient Statuette"],
                "starts": ["Ruuzel"],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 12, "y": 27 },
                "header": "The Zoram Strand",
-               "ends": [],
-               "starts": [],
                "objectives": ["The Zoram Strand"],
                "type": "objective"
             },
             {
                "coords": { "x": 7, "y": 14 },
                "header": "Coastal Island",
-               "ends": [],
-               "starts": [],
                "objectives": ["Ruuzel", "The Zoram Strand"],
                "type": "objective"
             }
@@ -224,13 +230,11 @@
       },
       {
          "zone": "ashenvale",
-         "experience": 23.37,
+         "experience": 23.35,
          "waypoints": [
             {
                "coords": { "x": 7, "y": 14 },
                "header": "Coastal Island",
-               "ends": [],
-               "starts": [],
                "objectives": ["Ruuzel", "The Zoram Strand"],
                "type": "objective"
             },
@@ -239,33 +243,28 @@
                "align": "bottom",
                "header": "Talen",
                "ends": ["Ruuzel"],
-               "starts": [],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 26, "y": 39 },
                "align": "right",
                "header": "Feero Ironhand",
-               "ends": [],
                "starts": [["Supplies to Auberdine", "F"]],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 29, "y": 15 },
                "align": "right",
                "header": "Ashenvale Road",
-               "ends": [],
-               "starts": [],
-               "objectives": [["Supplies to Auberdine", "F"], "Hearthstone to Ashenvale"],
+               "objectives": [["Supplies to Auberdine", "F"]],
+               "special": ["Hearthstone to Astranaar"],
                "type": "objective"
             }
          ]
       },
       {
          "zone": "ashenvale",
-         "experience": 23.49,
+         "experience": 23.46,
          "waypoints": [
             {
                "coords": { "x": 36, "y": 50 },
@@ -273,7 +272,6 @@
                "header": "Astranaar",
                "ends": ["The Zoram Strand", ["Raene's Cleansing", "P2"], "The Ruins of Stardust"],
                "starts": [["Raene's Cleansing", "P3"], "An Aggressive Defense"],
-               "objectives": [],
                "type": "hub"
             },
             {
@@ -282,15 +280,12 @@
                "header": "Shael'Dryn",
                "ends": [["Raene's Cleansing", "P3"]],
                "starts": [["Raene's Cleansing", "P4"]],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 50, "y": 61 },
                "align": "right",
                "header": "Forbolg Encampment",
-               "ends": [],
-               "starts": [],
                "objectives": ["An Aggressive Defense"],
                "type": "objective"
             },
@@ -298,31 +293,27 @@
                "coords": { "x": 50, "y": 67 },
                "align": "right",
                "header": "Sentinel Velene Starstrike",
-               "ends": [],
                "starts": ["Elemental Bracers"],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 48, "y": 70 },
                "header": "Mystral Lake",
-               "ends": [],
-               "starts": [],
                "objectives": ["Elemental Bracers"],
+               "special": ["Use the Scroll when you have 5"],
                "type": "objective"
             }
          ]
       },
       {
          "zone": "ashenvale",
-         "experience": 23.91,
+         "experience": 23.86,
          "waypoints": [
             {
                "coords": { "x": 48, "y": 70 },
                "header": "Mystral Lake",
-               "ends": [],
-               "starts": [],
                "objectives": ["Elemental Bracers"],
+               "special": ["Use the Scroll when you have 5"],
                "type": "objective"
             },
             {
@@ -330,41 +321,33 @@
                "align": "right",
                "header": "Sentinel Velene Starstrike",
                "ends": ["Elemental Bracers"],
-               "starts": [],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 63, "y": 52 },
                "align": "right",
                "header": "Ashenvale Road",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             },
             {
                "coords": { "x": 54, "y": 35 },
                "align": "top",
                "header": "The Nightsong Woods",
-               "ends": [],
-               "starts": [],
-               "objectives": [["Raene's Cleansing", "P4"], "Wooden Key drops from the trees", "Hearthstone to Astranaar"],
+               "objectives": [["Raene's Cleansing", "P4"]],
+               "special": ["Kill Trees for the Key", "Hearthstone to Astranaar"],
                "type": "objective"
             }
          ]
       },
       {
          "zone": "ashenvale",
-         "experience": 24.01,
+         "experience": 23.98,
          "waypoints": [
             {
                "coords": { "x": 36, "y": 50 },
                "align": "bottom",
                "header": "Astranaar",
                "ends": ["An Aggressive Defense"],
-               "starts": [],
-               "objectives": [],
                "type": "hub"
             },
             {
@@ -373,47 +356,37 @@
                "header": "Shael'Dryn",
                "ends": [["Raene's Cleansing", "P4"]],
                "starts": [["Raene's Cleansing", "P5"]],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 34, "y": 48 },
                "align": "top",
                "header": "Astranaar Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Fly to Auberdine"],
+               "special": ["Fly to Auberdine"],
                "type": "flightpath"
             }
          ]
       },
       {
          "zone": "darkshore",
-         "experience": 24.13,
+         "experience": 24.12,
          "waypoints": [
             {
                "coords": { "x": 36, "y": 46 },
                "header": "Darkshore Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "flightpath"
             },
             {
                "coords": { "x": 39, "y": 43 },
                "align": "right",
                "header": "Auberdine",
-               "ends": ["Wanted: Murkdeep", ["The Absent Minded Prospector", "P1"]],
-               "starts": [["The Absent Minded Prospector", "P2"]],
-               "objectives": [],
+               "ends": ["Wanted: Murkdeep", ["The Absent Minded Prospector", "P2"]],
+               "starts": [["The Absent Minded Prospector", "P3"]],
                "type": "hub"
             },
             {
                "coords": { "x": 33, "y": 40 },
                "header": "Auberdine Harbor",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             }
          ]

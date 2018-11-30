@@ -2,14 +2,11 @@
    "path": [
       {
          "zone": "loch",
-         "experience": 11.89,
+         "experience": 11.62,
          "waypoints": [
             {
                "coords": { "x": 18, "y": 16 },
                "header": "Loch Modan Passageway",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             },
             {
@@ -18,16 +15,13 @@
                "header": "Mountaineer Stormpike",
                "ends": ["Stormpike's Delivery"],
                "starts": ["Filthy Paws", "Stormpike's Order"],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 35, "y": 47 },
                "align": "right",
                "header": "Thelsamar",
-               "ends": [],
                "starts": ["Rat Catching", "Stormpike's Order", "Thelsamar Blood Sausages", "Honor Students"],
-               "objectives": [],
                "type": "hub"
             },
             {
@@ -36,21 +30,18 @@
                "header": "Loch Modan Flightpath",
                "ends": ["Honor Students"],
                "starts": ["Ride to Ironforge"],
-               "objectives": ["Hearthstone to Ironforge"],
+               "special": ["Hearthstone to Ironforge"],
                "type": "flightpath"
             }
          ]
       },
       {
          "zone": "ironforge",
-         "experience": 12.04,
+         "experience": 11.78,
          "waypoints": [
             {
                "coords": { "x": 19, "y": 51 },
                "header": "Ironforge Inn",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             },
             {
@@ -59,7 +50,6 @@
                "header": "Golnir Bouldertoe",
                "ends": ["Ride to Ironforge"],
                "starts": ["Gryth Thurden"],
-               "objectives": [],
                "type": "quest"
             },
             {
@@ -68,29 +58,24 @@
                "header": "Ironforge Flightpath",
                "ends": ["Gryth Thurden"],
                "starts": ["Return to Brock"],
-               "objectives": ["Fly to Loch Modan"],
+               "special": ["Fly to Loch Modan"],
                "type": "flightpath"
             }
          ]
       },
       {
          "zone": "loch",
-         "experience": 12.11,
+         "experience": 11.86,
          "waypoints": [
             {
                "coords": { "x": 34, "y": 51 },
                "align": "right",
                "header": "Loch Modan Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "flightpath"
             },
             {
                "coords": { "x": 30, "y": 46 },
                "header": "Loch Modan Peninsula",
-               "ends": [],
-               "starts": [],
                "objectives": ["Thelsamar Blood Sausages"],
                "type": "objective"
             },
@@ -98,8 +83,6 @@
                "coords": { "x": 34, "y": 29 },
                "align": "right",
                "header": "Loch Modan Peninsula",
-               "ends": [],
-               "starts": [],
                "objectives": ["Thelsamar Blood Sausages"],
                "type": "objective"
             },
@@ -107,8 +90,6 @@
                "coords": { "x": 35, "y": 19 },
                "align": "top",
                "header": "Silver Stream Mine",
-               "ends": [],
-               "starts": [],
                "objectives": ["Filthy Paws", "Rat Catching"],
                "type": "objective"
             },
@@ -117,22 +98,18 @@
                "align": "top",
                "header": "Mountaineer Stormpike",
                "ends": ["Filthy Paws"],
-               "starts": [],
-               "objectives": [],
                "type": "quest"
             }
          ]
       },
       {
          "zone": "loch",
-         "experience": 12.82,
+         "experience": 12.59,
          "waypoints": [
             {
                "coords": { "x": 23, "y": 18 },
                "header": "Mountaineer Stormpike",
                "ends": ["Filthy Paws"],
-               "starts": [],
-               "objectives": [],
                "type": "quest"
             },
             {
@@ -140,24 +117,18 @@
                "align": "right",
                "header": "Thelsamar",
                "ends": ["Rat Catching", "Thelsamar Blood Sausages", "Return to Brock"],
-               "starts": [],
-               "objectives": [],
                "type": "hub"
             },
             {
                "coords": { "x": 23, "y": 74 },
                "header": "Valley of Kings",
-               "ends": [],
                "starts": ["The Trogg Threat", ["In Defense of the King's Lands", "P1"]],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 33, "y": 76 },
                "align": "right",
                "header": "Stonesplinter Valley",
-               "ends": [],
-               "starts": [],
                "objectives": ["The Trogg Threat", ["In Defense of the King's Lands", "P1"]],
                "type": "objective"
             }
@@ -165,14 +136,12 @@
       },
       {
          "zone": "loch",
-         "experience": 13.21,
+         "experience": 13.07,
          "waypoints": [
             {
                "coords": { "x": 33, "y": 76 },
                "align": "right",
                "header": "Stonesplinter Valley",
-               "ends": [],
-               "starts": [],
                "objectives": ["The Trogg Threat", ["In Defense of the King's Lands", "P1"]],
                "type": "objective"
             },
@@ -181,29 +150,25 @@
                "header": "Valley of Kings",
                "ends": ["The Trogg Threat", ["In Defense of the King's Lands", "P1"]],
                "starts": [["In Defense of the King's Lands", "P2"]],
-               "objectives": [],
                "type": "quest"
             }
          ]
       },
       {
          "zone": "loch",
-         "experience": 13.60,
+         "experience": 13.23,
          "waypoints": [
             {
                "coords": { "x": 23, "y": 74 },
                "header": "Valley of Kings",
                "ends": ["The Trogg Threat", ["In Defense of the King's Lands", "P1"]],
                "starts": [["In Defense of the King's Lands", "P2"]],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 36, "y": 82 },
                "align": "right",
                "header": "Valley of Kings",
-               "ends": [],
-               "starts": [],
                "objectives": [["In Defense of the King's Lands", "P2"]],
                "type": "objective"
             }
@@ -211,14 +176,12 @@
       },
       {
          "zone": "loch",
-         "experience": 13.69,
+         "experience": 13.44,
          "waypoints": [
             {
                "coords": { "x": 36, "y": 82 },
                "align": "right",
                "header": "Valley of Kings",
-               "ends": [],
-               "starts": [],
                "objectives": [["In Defense of the King's Lands", "P2"]],
                "type": "objective"
             },
@@ -226,16 +189,12 @@
                "coords": { "x": 23, "y": 74 },
                "header": "Valley of Kings",
                "ends": [["In Defense of the King's Lands", "P2"]],
-               "starts": [],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 25, "y": 10 },
                "header": "Wetlands Passageway",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Run to Menethil Harbor"],
+               "special": ["Run to Menethil Harbor"],
                "type": "travel"
             }
          ]

@@ -7,7 +7,7 @@
    text-shadow: 1px 1px #242424;
 }
 
-#tooltip .title, #tooltip .ends, #tooltip .starts, #tooltip .objectives {
+#tooltip .title, #tooltip .ends, #tooltip .starts, #tooltip .objectives, #tooltip .special {
    color: #F1F1F1;
 }
 
@@ -22,6 +22,10 @@
 #legend-inner {
    background: url('../img/inner-bg2.png');
    padding: 2px;
+}
+
+#legend #left {
+   vertical-align: middle;
 }
 
 #legend-inner .category { padding: 4px; }

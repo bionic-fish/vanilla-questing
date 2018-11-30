@@ -65,7 +65,7 @@ a:hover { color: rgb(175, 30, 30); }
 
 /* --- COLORED BOXES --- */
 
-.title, .ends, .starts, .objectives {
+.title, .ends, .starts, .objectives, .special {
    background: url('../img/dark.png');
    margin-top: 2px;
    padding: 3px 5px;
@@ -75,6 +75,7 @@ a:hover { color: rgb(175, 30, 30); }
 .ends { background: url('../img/success.png'); }
 .starts { background: url('../img/caution.png'); }
 .objectives { background: url('../img/error.png'); }
+.special { background: url('../img/special-bg.png'); }
 
 /* --- HEADER & FOOTER --- */
 
@@ -109,6 +110,7 @@ a:hover { color: rgb(175, 30, 30); }
 #innerbody > #right {
    background: url('../img/dark.png');
    text-align: left;
+   transition: 0.3s;
 }
 
 /* --- PRELOAD STUFF --- */

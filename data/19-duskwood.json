@@ -2,15 +2,13 @@
    "path": [
       {
          "zone": "duskwood",
-         "experience": 25.36,
+         "experience": 25.26,
          "waypoints": [
             {
                "coords": { "x": 74, "y": 44 },
                "align": "top",
                "header": "Darkshire Inn",
                "ends": ["Seasoned Wolf Kabobs"],
-               "starts": [],
-               "objectives": [],
                "type": "hub"
             },
             {
@@ -19,7 +17,6 @@
                "header": "Viktori Prism'Antras",
                "ends": [["Look to the Stars", "P1"]],
                "starts": [["Look to the Stars", "P1-2"]],
-               "objectives": [],
                "type": "quest"
             },
             {
@@ -28,31 +25,28 @@
                "header": "Blind Mary",
                "ends": ["Ghost Hair Thread", ["Look to the Stars", "P2"]],
                "starts": ["Return the Comb", ["Look to the Stars", "P3"]],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 79, "y": 72 },
                "align": "right",
                "header": "Tranquil Gardens Cemetary",
-               "ends": [],
-               "starts": [],
-               "objectives": [["The Night Watch", "P1"], "The Totem of Infliction", ["Look to the Stars", "P3"]],
+               "objectives": [["The Night Watch", "P1"], ["Look to the Stars", "P3"], "The Totem of Infliction"],
+               "special": ["Skeleton Finger"],
                "type": "objective"
             }
          ]
       },
       {
          "zone": "duskwood",
-         "experience": 25.48,
+         "experience": 25.51,
          "waypoints": [
             {
                "coords": { "x": 79, "y": 72 },
                "align": "right",
                "header": "Tranquil Gardens Cemetary",
-               "ends": [],
-               "starts": [],
-               "objectives": [["The Night Watch", "P1"], "The Totem of Infliction", ["Look to the Stars", "P3"]],
+               "objectives": [["The Night Watch", "P1"], ["Look to the Stars", "P3"], "The Totem of Infliction"],
+               "special": ["Skeleton Finger"],
                "type": "objective"
             },
             {
@@ -61,38 +55,30 @@
                "header": "Viktori Prism'Antras",
                "ends": [["Look to the Stars", "P3"]],
                "starts": [["Look to the Stars", "P4"]],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 74, "y": 47 },
                "header": "Darkshire",
-               "ends": ["Seasoned Wolf Kabobs", ["The Night Watch", "P1"], "Return the Comb", "The Totem of Infliction"],
+               "ends": [["The Night Watch", "P1"], "Return the Comb", "The Totem of Infliction"],
                "starts": [["The Night Watch", "P2"], "Deliver the Thread"],
-               "objectives": [],
                "type": "hub"
             },
             {
                "coords": { "x": 82, "y": 17 },
                "align": "top",
                "header": "Elwynn Forest Border",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             }
          ]
       },
       {
          "zone": "elwynn",
-         "experience": 25.65,
+         "experience": 25.67,
          "waypoints": [
             {
                "coords": { "x": 84, "y": 88 },
                "header": "Duskwood Border",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             },
             {
@@ -101,16 +87,13 @@
                "header": "Marshal Haggard",
                "ends": [["The Legend of Stalvan", "P7-8"]],
                "starts": [["The Legend of Stalvan", "P8-9"]],
-               "objectives": ["Loot the Chest Upstairs"],
+               "special": ["Loot the Chest Upstairs"],
                "type": "quest"
             },
             {
                "coords": { "x": 92, "y": 72 },
                "align": "top",
                "header": "Redridge Mountains Border",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             }
          ]

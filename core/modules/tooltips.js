@@ -11,15 +11,12 @@ function map(data) {
       var id = $(event.target).attr('wp');
       var waypoint = target.waypoints[id];
 
-      // SELECTOR CONTAINERS
-      var title = '';
-      var ends = '';
-      var starts = '';
-      var objectives = '';
+      // TOOLTIP CONTAINER
+      var container = '<div id="tooltip-inner">';
 
       // GENERATE A HEADER ROW
       if (waypoint.header != '') {
-         title += `
+         container += `
             <div class="title">
                <div class="split">
                   <div id="left">` + waypoint.header + `</div>
@@ -29,13 +26,16 @@ function map(data) {
          `;
       }
 
-      // LOOP THROUGH & GENERATE A SELECTOR FOR EACH QUEST/OBJCTIVE
-      waypoint.ends.forEach(data => { ends += row('ends', data); });
-      waypoint.starts.forEach(data => { starts += row('starts', data); });
-      waypoint.objectives.forEach(data => { objectives += row('objectives', data); });
+      // LOOP THROUGH & GENERATE A SELECTOR FOR EACH QUEST/OBJCTIVE THAT ARE DEFINED
+      if (waypoint.ends != undefined) { waypoint.ends.forEach(data => { container += row('ends', data); }); }
+      if (waypoint.starts != undefined) { waypoint.starts.forEach(data => { container += row('starts', data); }); }
+      if (waypoint.objectives != undefined) { waypoint.objectives.forEach(data => { container += row('objectives', data); }); }
+      if (waypoint.special != undefined) { waypoint.special.forEach(details => { container += '<div class="special">' + details + '</div>'; }); }
+
+      container += '</div>';
 
       // RENDER IN THE ENTIRE TOOLTIP
-      $('#tooltip').html('<div id="tooltip-inner">' + title + ends + starts + objectives + '</div>');
+      $('#tooltip').html(container);
 
       // ASSIST VARS FOR POSITION CALIBRATION
       var height = parseFloat($('#tooltip').css('height'));
@@ -67,14 +67,14 @@ function row(category, data) {
 
    // IF ITS A STRING -- GENERATE & APPEND A SELECTOR
    if (type === 'string') {
-      container += '<div class="' + category + '">' + data + '</div>';
+      container += '<div class="' + category + '">' + shorten(data) + '</div>';
 
    // IF ITS AN ARRAY -- GENERATE & APPEND A SELECTOR
    } else {
       container += `
          <div class="` + category + `">
             <div class="split">
-               <div id="left">` + data[0] + `</div>
+               <div id="left">` + shorten(data[0]) + `</div>
                <div id="right">` + data[1] + `</div>
             </div>
          </div>
@@ -83,6 +83,20 @@ function row(category, data) {
 
    // RETURN THE CONTAINER
    return container;
+}
+
+// SHORTEN A LONG STRING
+function shorten(string) {
+   
+   // CHECK IF THE STRING IS LONGER THAN 22 CHARACTERS
+   if (string.length > 28) {
+
+      // ALLOW THE FIRST 20 CHARACTERS AND TAG ON THE TRIPLEDOT
+      string = string.substring(0, 25);
+      string += '...';
+   }
+
+   return string;
 }
 
 // EXPORT MODULES

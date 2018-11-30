@@ -8,25 +8,18 @@
                "coords": { "x": 66, "y": 62 },
                "align": "right",
                "header": "Stormwind Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "flightpath"
             },
             {
                "coords": { "x": 46, "y": 38 },
                "header": "Brother Kristoff",
-               "ends": [],
                "starts": ["Speaking of Fortitude"],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 49, "y": 30 },
                "header": "Baros Alexston",
                "ends": ["The Unsent Letter"],
-               "starts": [],
-               "objectives": [],
                "type": "quest"
             },
             {
@@ -34,8 +27,6 @@
                "align": "top",
                "header": "Shoni the Silent",
                "ends": [["Underground Assault", "D"]],
-               "starts": [],
-               "objectives": [],
                "type": "quest"
             },
             {
@@ -43,8 +34,6 @@
                "align": "bottom",
                "header": "Wilder Thistlenettle",
                "ends": [["Oh Brother...", "D"], ["Collecting Memories", "D"]],
-               "starts": [],
-               "objectives": [],
                "type": "quest"
             },
             {
@@ -53,40 +42,31 @@
                "header": "Brother Kristoff",
                "ends": ["Speaking of Fortitude"],
                "starts": ["Brother Paxton"],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 79, "y": 46 },
                "align": "right",
                "header": "Wu Shen",
-               "ends": [],
                "starts": [["Yorus Barleybrew", "C"]],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 70, "y": 87 },
                "align": "right",
                "header": "Stormwind Gates",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             }
          ]
       },
       {
          "zone": "elwynn",
-         "experience": 20.41,
+         "experience": 20.40,
          "waypoints": [
             {
                "coords": { "x": 32, "y": 49 },
                "align": "top",
                "header": "Stormwind Gates",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             },
             {
@@ -95,7 +75,6 @@
                "header": "Brother Paxton",
                "ends": ["Brother Paxton"],
                "starts": ["Ink Supplies"],
-               "objectives": [],
                "type": "quest"
             },
             {
@@ -103,25 +82,20 @@
                "header": "Goldshire",
                "ends": ["The Price of Shoes"],
                "starts": ["Return to Verner"],
-               "objectives": ["Buy Sweet Rum"],
+               "special": ["Buy Sweet Rum"],
                "type": "hub"
             },
             {
                "coords": { "x": 65, "y": 70 },
                "align": "top",
                "header": "Theocritus",
-               "ends": [],
                "starts": [["A Watchful Eye", "E"]],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 92, "y": 72 },
                "align": "top",
                "header": "Redridge Border",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             }
          ]
