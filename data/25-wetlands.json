@@ -2,37 +2,34 @@
    "path": [
       {
          "zone": "wetlands",
-         "experience": 29.37,
+         "experience": 0,
          "waypoints": [
             {
-               "coords": { "x": 11, "y": 59 },
+               "coords": { "x": 10, "y": 59 },
                "header": "Menethil",
                "ends": ["The Eye of Paleth"],
                "starts": ["Cleansing the Eye"],
-               "objectives": [],
                "type": "hub"
             },
             {
                "coords": { "x": 11, "y": 56 },
+               "align": "right",
                "header": "Menethil Keep",
-               "ends": ["Defeat Nek'Rosh"],
-               "starts": [],
-               "objectives": [],
+               "ends": [["Defeat Nek'Rosh", "E"]],
                "type": "quest"
             },
             {
                "coords": { "x": 12, "y": 64 },
+               "align": "right",
                "header": "Waterlogged Chest",
                "ends": ["Lightforge Iron"],
                "starts": ["The Lost Ingots"],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 12, "y": 67 },
-               "header": "",
-               "ends": [],
-               "starts": [],
+               "align": "right",
+               "header": "Wetlands Shore",
                "objectives": ["The Lost Ingots"],
                "type": "objective"
             }
@@ -40,30 +37,28 @@
       },
       {
          "zone": "wetlands",
-         "experience": 29.51,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 12, "y": 67 },
-               "header": "",
-               "ends": [],
-               "starts": [],
+               "align": "right",
+               "header": "Wetlands Shore",
                "objectives": ["The Lost Ingots"],
                "type": "objective"
             },
             {
                "coords": { "x": 11, "y": 61 },
+               "align": "top",
                "header": "Glorin Steelbrow",
                "ends": ["The Lost Ingots"],
                "starts": ["Blessed Arm"],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 9, "y": 61 },
+               "align": "top",
                "header": "Wetlands Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Fly to Stormwind"],
+               "special": ["Fly to Stormwind"],
                "type": "flightpath"
             }
          ]

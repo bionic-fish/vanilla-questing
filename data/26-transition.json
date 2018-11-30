@@ -2,196 +2,168 @@
    "path": [
       {
          "zone": "stormwind",
-         "experience": 29.54,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 66, "y": 62 },
                "header": "Stormwind Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "flightpath"
             },
             {
                "coords": { "x": 70, "y": 87 },
                "header": "Stormwind Gates",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             }
          ]
       },
       {
          "zone": "elwynn",
-         "experience": 29.54,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 32, "y": 49 },
                "header": "Stormwind Gates",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             },
             {
                "coords": { "x": 34, "y": 57 },
-               "header": "Cleara's Fresh Apples",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
+               "header": "Cleara's House",
+               "special": ["Loota Apples"],
                "type": "objective"
             }
          ]
       },
       {
          "zone": "elwynn",
-         "experience": 29.54,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 34, "y": 57 },
-               "header": "Cleara's Fresh Apples",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
+               "header": "Cleara's House",
+               "special": ["Loot Apples"],
                "type": "objective"
             },
             {
                "coords": { "x": 32, "y": 49 },
                "header": "Stormwind Gates",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             }
          ]
       },
       {
          "zone": "stormwind",
-         "experience": 29.54,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 70, "y": 87 },
                "header": "Stormwind Gates",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             },
             {
                "coords": { "x": 40, "y": 29 },
                "header": "Cathedral of Light",
                "ends": ["Cleansing the Eye"],
-               "starts": ["The Missing Diplomat P1"],
-               "objectives": [],
+               "starts": [["The Missing Diplomat", "P1"]],
                "type": "quest"
             },
             {
                "coords": { "x": 52, "y": 12 },
+               "align": "top",
                "header": "Grimand Elmore",
                "ends": ["Blessed Arm"],
                "starts": ["Armed and Ready"],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 69, "y": 15 },
+               "align": "top",
                "header": "Tyrion",
                "ends": ["Items of some Consequence"],
-               "starts": [],
-               "objectives": [],
+               "starts": ["The Attack!"],
+               "objectives": ["The Attack!"],
                "type": "quest"
             },
             {
                "coords": { "x": 78, "y": 25 },
+               "align": "right",
                "header": "Bishop DeLavey",
-               "ends": ["The Missing Diplomat P1"],
-               "starts": ["The Missing Diplomat P2"],
-               "objectives": [],
+               "ends": [["The Missing Diplomat", "P1"]],
+               "starts": [["The Missing Diplomat", "P2"]],
                "type": "quest"
             },
             {
                "coords": { "x": 73, "y": 78 },
+               "align": "right",
                "header": "Jorgen",
-               "ends": ["The Missing Diplomat P2"],
-               "starts": ["The Missing Diplomat P3"],
-               "objectives": [],
+               "ends": [["The Missing Diplomat", "P2"]],
+               "starts": [["The Missing Diplomat", "P3"]],
                "type": "quest"
             }
          ]
       },
       {
          "zone": "stormwind",
-         "experience": 29.69,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 73, "y": 78 },
+               "align": "right",
                "header": "Jorgen",
-               "ends": ["The Missing Diplomat P2"],
-               "starts": ["The Missing Diplomat P3"],
-               "objectives": [],
+               "ends": [["The Missing Diplomat", "P2"]],
+               "starts": [["The Missing Diplomat", "P3"]],
                "type": "quest"
             },
             {
                "coords": { "x": 60, "y": 64 },
                "header": "Elling Trias",
-               "ends": ["The Missing Diplomat P3", "The Attack!s"],
-               "starts": ["The Missing Diplomat P4", "The Head of the Beast"],
-               "objectives": [],
+               "ends": [["The Missing Diplomat", "P3"], "The Attack!"],
+               "starts": [["The Missing Diplomat", "P4"], "The Head of the Beast"],
                "type": "quest"
             },
             {
                "coords": { "x": 76, "y": 60 },
+               "align": "right",
                "header": "Master Mathias Shaw",
                "ends": ["The Head of the Beast"],
                "starts": ["Brotherhood's End"],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 49, "y": 30 },
+               "align": "top",
                "header": "Baros Alexston",
                "ends": ["Brotherhood'd End"],
                "starts": ["An Audience with the King"],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 78, "y": 18 },
+               "align": "top",
                "header": "Lady Katrana Prestor",
                "ends": ["An Audience with the King"],
-               "starts": [],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 66, "y": 60 },
                "header": "Stormwind Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Fly to Redridge"],
+               "special": ["Fly to Redridge"],
                "type": "flightpath"
             }
          ]
       },
       {
          "zone": "redridge",
-         "experience": 29.79,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 31, "y": 59 },
                "header": "Redridge Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "flightpath"
             },
             {
                "coords": { "x": 26, "y": 47 },
                "header": "Guard Berton",
                "ends": ["What Comes Around..."],
-               "starts": [],
-               "objectives": [],
                "type": "quest"
             }
          ]
@@ -204,16 +176,12 @@
                "coords": { "x": 26, "y": 47 },
                "header": "Guard Berton",
                "ends": ["What Comes Around..."],
-               "starts": [],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 31, "y": 59 },
                "header": "Redridge Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Fly to Duskwood"],
+               "special": ["Fly to Duskwood"],
                "type": "flightpath"
             }
          ]

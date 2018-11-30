@@ -2,54 +2,61 @@
    "path": [
       {
          "zone": "wetlands",
-         "experience": 27.61,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 9, "y": 61 },
+               "align": "bottom",
                "header": "Wetlands Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "flightpath"
             },
             {
                "coords": { "x": 11, "y": 59 },
+               "align": "right",
                "header": "Menethil",
                "ends": ["The Doomed Fleet", "The Third Fleet"],
-               "starts": ["The Third Fleet", "The Greenwarden", "Lightforge Iron", "The Absent Minded Prospector P4", "The Cursed Crew", "Digging Through the Ooze"],
-               "objectives": ["Buy a Flagon of Mead", "Set Hearthstone"],
+               "starts": ["The Third Fleet", "The Greenwarden", "Lightforge Iron", ["The Absent Minded Prospector", "P4"], "The Cursed Crew", "Digging Through the Ooze"],
+               "special": ["Buy a Flagon of Mead", "Set Hearthstone"],
                "type": "hub"
             },
             {
                "coords": { "x": 8, "y": 59 },
                "header": "Karl Boran",
-               "ends": [],
                "starts": ["Reclaiming Goods"],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 9, "y": 56 },
+               "align": "top",
                "header": "James Halloran",
-               "ends": [],
                "starts": ["Apprentice's Duties"],
-               "objectives": [],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "wetlands",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 9, "y": 56 },
+               "header": "James Halloran",
+               "starts": ["Apprentice's Duties"],
                "type": "quest"
             },
             {
                "coords": { "x": 11, "y": 56 },
+               "align": "right",
                "header": "Menethil Keep",
                "ends": ["Report to Captain Stoutfist"],
                "starts": ["Fall of Dun Modr", "Report to Captain Stoutfist", "War Banners"],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 12, "y": 52 },
+               "align": "right",
                "header": "Tarrel Rockweaver",
-               "ends": [],
-               "starts": ["In Search of the Excavation Team P1"],
-               "objectives": [],
+               "starts": [["In Search of the Excavation Team", "P1"]],
                "type": "quest"
             },
             {
@@ -57,7 +64,6 @@
                "header": "Damaged Crate",
                "ends": ["Reclaiming Goods"],
                "starts": ["The Search Continues"],
-               "objectives": [],
                "type": "quest"
             },
             {
@@ -65,7 +71,6 @@
                "header": "Sealed Barrel",
                "ends": ["The Search Continues"],
                "starts": ["Search More Howels"],
-               "objectives": [],
                "type": "quest"
             },
             {
@@ -73,231 +78,230 @@
                "header": "Half-Buried Barrel",
                "ends": ["Search More Howels"],
                "starts": ["Return the Statuette"],
-               "objectives": [],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "wetlands",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 14, "y": 35 },
+               "header": "Half-Buried Barrel",
+               "ends": ["Search More Howels"],
+               "starts": ["Return the Statuette"],
                "type": "quest"
             },
             {
                "coords": { "x": 14, "y": 29 },
                "header": "Shipwreck",
-               "ends": [],
-               "starts": [],
                "objectives": ["The Cursed Crew"],
                "type": "objective"
             },
             {
                "coords": { "x": 19, "y": 25 },
-               "header": "",
-               "ends": [],
-               "starts": [],
+               "align": "top",
+               "header": "Wetlands Marsh",
                "objectives": ["Apprentice's Duties"],
                "type": "objective"
             },
             {
                "coords": { "x": 39, "y": 52 },
+               "align": "right",
                "header": "Whelgar's Excavation Site",
-               "ends": ["The Search of the Excavation Team P1"],
-               "starts": ["Ormer's Revenge P1", "Uncovering the Past", "The Search of the Excavation Team P2"],
-               "objectives": ["Loot the Flagongut Fossil"],
+               "ends": [["In Search of the Excavation Team", "P1"]],
+               "starts": [["Ormer's Revenge", "P1"], "Uncovering the Past", ["In Search of the Excavation Team", "P2"]],
+               "special": ["Loot the Flagongut Fossil"],
                "type": "quest"
             },
             {
                "coords": { "x": 24, "y": 50 },
-               "header": "",
-               "ends": [],
-               "starts": [],
-               "objectives": ["The Absent Minded Prospector P4", "Ormer's Revenge P1"],
+               "header": "Wetlands Mountainside",
+               "objectives": [["The Absent Minded Prospector", "P4"], ["Ormer's Revenge", "P1"]],
                "type": "objective"
             },
             {
-               "coords": { "x": 29, "y": 44 },
-               "header": "",
-               "ends": [],
-               "starts": [],
-               "objectives": ["The Absent Minded Prospector P4", "Ormer's Revenge P1"],
+               "coords": { "x": 28, "y": 45 },
+               "align": "right",
+               "header": "Wetlands Mountainside",
+               "objectives": [["The Absent Minded Prospector", "P4"], ["Ormer's Revenge", "P1"]],
                "type": "objective"
             }
          ]
       },
       {
          "zone": "wetlands",
-         "experience": 27.94,
+         "experience": 0,
          "waypoints": [
             {
-               "coords": { "x": 29, "y": 44 },
-               "header": "",
-               "ends": [],
-               "starts": [],
-               "objectives": ["The Absent Minded Prospector P4", "Ormer's Revenge P1"],
+               "coords": { "x": 28, "y": 45 },
+               "header": "Wetlands Mountainside",
+               "objectives": [["The Absent Minded Prospector", "P4"], ["Ormer's Revenge", "P1"]],
                "type": "objective"
             },
             {
                "coords": { "x": 39, "y": 52 },
+               "align": "right",
                "header": "Whelgar's Excavation Site",
-               "ends": ["Ormer's Revenge P1"],
-               "starts": ["Ormer's Revenge P2"],
-               "objectives": [],
+               "ends": [["Ormer's Revenge", "P1"]],
+               "starts": [["Ormer's Revenge", "P2"]],
                "type": "quest"
             },
             {
                "coords": { "x": 35, "y": 47 },
-               "header": "Ancient Relic",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Uncovering the Past", "Ormer's Revenge P2"],
+               "align": "right",
+               "header": "First Ancient Relic",
+               "objectives": ["Uncovering the Past", ["Ormer's Revenge", "P2"]],
                "type": "objective"
             },
             {
                "coords": { "x": 34, "y": 45 },
-               "header": "Ancient Relic",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Uncovering the Past", "Ormer's Revenge P2"],
+               "header": "Second Ancient Relic",
+               "objectives": ["Uncovering the Past", ["Ormer's Revenge", "P2"]],
                "type": "objective"
             },
             {
                "coords": { "x": 35, "y": 44 },
-               "header": "Ancient Relic",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Uncovering the Past", "Ormer's Revenge P2"],
+               "align": "top",
+               "header": "Third Ancient Relic",
+               "objectives": ["Uncovering the Past", ["Ormer's Revenge", "P2"]],
                "type": "objective"
             },
             {
                "coords": { "x": 37, "y": 42 },
-               "header": "Ancient Relic",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Uncovering the Past", "Ormer's Revenge P2"],
+               "align": "top",
+               "header": "Fourth Ancient Relic",
+               "objectives": ["Uncovering the Past", ["Ormer's Revenge", "P2"]],
                "type": "objective"
             }
          ]
       },
       {
          "zone": "wetlands",
-         "experience": 28.08,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 37, "y": 42 },
+               "align": "right",
                "header": "Ancient Relic",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Uncovering the Past", "Ormer's Revenge P2"],
+               "objectives": ["Uncovering the Past", ["Ormer's Revenge", "P2"]],
                "type": "objective"
             },
             {
                "coords": { "x": 39, "y": 52 },
+               "align": "right",
                "header": "Whelgar's Excavation Site",
-               "ends": ["Ormer's Revenge P2", "Uncovering the Past"],
-               "starts": ["Ormer's Revenge P3"],
-               "objectives": [],
+               "ends": [["Ormer's Revenge", "P2"], "Uncovering the Past"],
+               "starts": [["Ormer's Revenge", "P3"]],
                "type": "quest"
             },
             {
                "coords": { "x": 33, "y": 52 },
+               "align": "bottom",
                "header": "Sarltooth ",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Ormer's Revenge P3"],
+               "objectives": [["Ormer's Revenge", "P3"]],
                "type": "objective"
             }
          ]
       },
       {
          "zone": "wetlands",
-         "experience": 28.19,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 33, "y": 52 },
+               "align": "bottom",
                "header": "Sarltooth",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Ormer's Revenge P3"],
+               "objectives": [["Ormer's Revenge", "P3"]],
                "type": "objective"
             },
             {
                "coords": { "x": 39, "y": 52 },
+               "align": "bottom",
                "header": "Whelgar's Excavation Site",
-               "ends": ["Ormer's Revenge P3"],
-               "starts": [],
-               "objectives": [],
+               "ends": [["Ormer's Revenge", "P3"]],
                "type": "quest"
             },
             {
                "coords": { "x": 44, "y": 43 },
+               "align": "bottom",
                "header": "Angerfang Encampment",
-               "ends": [],
-               "starts": [],
                "objectives": ["War Banners"],
                "type": "objective"
             },
             {
                "coords": { "x": 50, "y": 39 },
+               "align": "bottom",
                "header": "Einar Stonegrip",
-               "ends": [],
                "starts": ["Daily Delivery"],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 56, "y": 40 },
+               "align": "bottom",
                "header": "Rethiel the Greenwarden",
                "ends": ["The Greenwarden"],
-               "starts": [],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 44, "y": 26 },
                "header": "Ironbeard's Tomb",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Digging Through the Ooze", "Hearthstone to Menethil"],
+               "objectives": ["Digging Through the Ooze"],
+               "special": ["Hearthstone to Menethil"],
                "type": "objective"
             }
          ]
       },
       {
          "zone": "wetlands",
-         "experience": 28.37,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 11, "y": 59 },
+               "align": "bottom",
                "header": "Menethil",
-               "ends": ["The Absent Minded Prospector P4", "The Cursed Crew", "Digging Through the Ooze"],
+               "ends": [["The Absent Minded Prospector", "P4"], "The Cursed Crew", "Digging Through the Ooze"],
                "starts": ["Lifting the Curse"],
-               "objectives": [],
                "type": "hub"
             },
             {
                "coords": { "x": 8, "y": 59 },
                "header": "Karl Boran",
                "ends": ["Return the Statuette"],
-               "starts": [],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 9, "y": 56 },
                "header": "James Halloran",
                "ends": ["Apprentice's Duties", "Daily Deliveries"],
-               "starts": [],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 11, "y": 56 },
+               "align": "right",
                "header": "Menethil Keep",
                "ends": ["War Banners"],
                "starts": ["Nek'Rosh's Gambit"],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 12, "y": 52 },
+               "align": "top",
                "header": "Tarrel Rockweaver",
-               "ends": ["In Search of the Excavation Team P2"],
-               "starts": [],
-               "objectives": [],
+               "ends": [["In Search of the Excavation Team", "P2"]],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "wetlands",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 12, "y": 52 },
+               "header": "Tarrel Rockweaver",
+               "ends": [["In Search of the Excavation Team", "P2"]],
                "type": "quest"
             },
             {
@@ -305,85 +309,91 @@
                "header": "Shipwreck",
                "ends": ["Lifting the Curse"],
                "starts": ["The Eye of Paleth"],
-               "objectives": ["Lifting the Curse", "Lockbox downstairs"],
+               "objectives": ["Lifting the Curse"],
+               "special": ["The Lockbox is below the Ship"],
                "type": "quest"
             },
             {
                "coords": { "x": 47, "y": 47 },
+               "align": "bottom",
                "header": "Dragonmaw Catapult",
                "ends": ["Nek'Rosh's Gambit"],
-               "starts": ["Defeat Nek'Roshm"],
-               "objectives": [],
+               "starts": [["Defeat Nek'Rosh", "E"]],
                "type": "quest"
             },
             {
                "coords": { "x": 53, "y": 55 },
+               "align": "right",
                "header": "Angerfang Encampment",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Defeat Nek'Roshm"],
+               "objectives": [["Defeat Nek'Rosh", "E"]],
                "type": "objective"
             },
             {
                "coords": { "x": 50, "y": 18 },
+               "align": "right",
                "header": "Dun Modr",
                "ends": ["Fall of Dun Modr"],
-               "starts": ["The Thandol Span P1", "A Grim Task", "The Dark Iron War"],
-               "objectives": [],
+               "starts": [["The Thandol Span", "P1"], ["A Grim Task", "E"], ["The Dark Iron War", "E"]],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "wetlands",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 50, "y": 18 },
+               "align": "bottom",
+               "header": "Dun Modr",
+               "ends": ["Fall of Dun Modr"],
+               "starts": [["The Thandol Span", "P1"], ["A Grim Task", "E"], ["The Dark Iron War", "E"]],
                "type": "quest"
             },
             {
                "coords": { "x": 47, "y": 16 },
-               "header": "",
-               "ends": [],
-               "starts": [],
-               "objectives": ["The Dark Iron War"],
+               "header": "Dun Modr Fortress",
+               "objectives": [["The Dark Iron War", "E"]],
                "type": "objective"
             },
             {
                "coords": { "x": 51, "y": 8 },
-               "header": "Ebenezer Rustlocke's Corpse",
-               "ends": ["The Thandol Span P1"],
-               "starts": ["The Thandol Span P2"],
-               "objectives": ["The Dark Iron War"],
+               "header": "Rustlocke's Corpse",
+               "ends": [["The Thandol Span", "P1"]],
+               "starts": [["The Thandol Span", "P2"]],
+               "objectives": [["The Dark Iron War", "E"]],
                "type": "objective"
             },
             {
                "coords": { "x": 62, "y": 27 },
+               "align": "right",
                "header": "Direforge Hill",
-               "ends": [],
-               "starts": [],
-               "objectives": ["The Dark Iron War", "A Grim Task"],
+               "objectives": [["The Dark Iron War", "E"], ["A Grim Task", "E"]],
                "type": "objective"
             }
          ]
       },
       {
          "zone": "wetlands",
-         "experience": 29.04,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 62, "y": 27 },
+               "align": "bottom",
                "header": "Direforge Hill",
-               "ends": [],
-               "starts": [],
-               "objectives": ["The Dark Iron War", "A Grim Task"],
+               "objectives": [["The Dark Iron War", "E"], ["A Grim Task", "E"]],
                "type": "objective"
             },
             {
                "coords": { "x": 50, "y": 18 },
                "header": "Dun Modr",
-               "ends": ["The Thandol Span P2", "A Grim Task", "The Dark Iron War"],
-               "starts": ["The Thandol Span P3"],
-               "objectives": [],
+               "ends": [["The Thandol Span", "P2"], ["A Grim Task", "E"], ["The Dark Iron War", "E"]],
+               "starts": [["The Thandol Span", "P3"]],
                "type": "quest"
             },
             {
                "coords": { "x": 51, "y": 9 },
                "header": "Arathi Highlands Border",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             }
          ]

@@ -1,5 +1,5 @@
 #level, #progress {
-   background: url('../img/xp-focus.png');
+   background: url('../img/xp-bg.png');
    color: #CECECE;
    text-shadow: 1px 1px #242424;
    position: relative;
@@ -13,7 +13,7 @@
 }
 
 #level-focus, #progress-focus {
-   background: url('../img/xp-focus.png');
+   background: url('../img/lighter.png');
    position: absolute;
    left: 0px;
    top: 0px;
@@ -21,10 +21,6 @@
    height: 100%;
    transition: .3s;
    pointer-events: none;
-}
-
-#progress-focus {
-   background: url('../img/progress-focus.png');
 }
 
 #progress-inner {
@@ -50,7 +46,7 @@
 
 #progress input[type=range]::-webkit-slider-thumb {
    -webkit-appearance: none;
-   background: url('../img/scroller-bg.png');
+   background: #4A384A;
    border: 0px solid black;
    height: 26px;
    width: 1px;
@@ -58,7 +54,7 @@
 
 #progress input[type=range]::-moz-range-thumb {
    -moz-appearance: none;
-   background: url('../img/scroller-bg.png');
+   background: #4A384A;
    border: 0px solid black;
    border-radius: 0px;
    height: 26px;

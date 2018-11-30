@@ -2,51 +2,42 @@
    "path": [
       {
          "zone": "teldrassil",
-         "experience": 32.07,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 58, "y": 94 },
                "header": "Darnassus Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "flightpath"
             },
             {
                "coords": { "x": 56, "y": 90 },
                "header": "Darnassus Teleporter",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             }
          ]
       },
       {
          "zone": "darnassus",
-         "experience": 32.07,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 31, "y": 41 },
+               "align": "top",
                "header": "Darnassus Teleporter",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             },
             {
                "coords": { "x": 62, "y": 39 },
+               "align": "right",
                "header": "Thyn'tel Bladeweaver",
                "ends": ["Velinde Starsong"],
                "starts": ["Velinde's Effects"],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 62, "y": 83 },
+               "align": "right",
                "header": "Velinde's Locker",
-               "ends": [],
-               "starts": [],
                "objectives": ["Velinde's Effects"],
                "type": "objective"
             }
@@ -54,104 +45,90 @@
       },
       {
          "zone": "darnassus",
-         "experience": 32.09,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 62, "y": 83 },
+               "align": "right",
                "header": "Velinde's Locker",
-               "ends": [],
-               "starts": [],
                "objectives": ["Velinde's Effects"],
                "type": "objective"
             },
             {
                "coords": { "x": 62, "y": 39 },
+               "align": "right",
                "header": "Thyn'tel Bladeweaver",
                "ends": ["Velinde's Effects"],
-               "starts": [],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 64, "y": 22 },
+               "align": "right",
                "header": "Elynna",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Buy 1x Fine Thread"],
+               "special": ["Buy 1x Fine Thread"],
                "type": "objective"
             },
             {
                "coords": { "x": 56, "y": 54 },
+               "align": "bottom",
                "header": "Darnassus Auction House",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Buy x8 Liferoot", "Buy 8x Burning Charm", "Buy 8x Thundering Charm", "Buy 8x Cresting Charm", "Buy 1x Hillman's Cloak", "Buy 1x Bolt of Woolen Cloth"],
+               "special": ["Buy x8 Liferoot", "Buy 8x Burning Charm", "Buy 8x Thundering Charm", "Buy 8x Cresting Charm", "Buy 1x Hillman's Cloak", "Buy 1x Bolt of Woolen Cloth"],
                "type": "objective"
             },
             {
                "coords": { "x": 31, "y": 41 },
+               "align": "bottom",
                "header": "Darnassus Teleporter",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             }
          ]
       },
       {
          "zone": "teldrassil",
-         "experience": 32.11,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 56, "y": 90 },
                "header": "Darnassus Teleporter",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             },
             {
                "coords": { "x": 58, "y": 94 },
                "header": "Darnassus Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Fly to Ratchet"],
+               "special": ["Fly to Ratchet"],
                "type": "flightpath"
             }
          ]
       },
       {
          "zone": "barrens",
-         "experience": 32.11,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 63, "y": 37 },
                "header": "Ratchet Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "flightpath"
             },
             {
                "coords": { "x": 64, "y": 39 },
+               "align": "right",
                "header": "Ratchet Harbor",
                "ends": ["The Barrens Port"],
                "starts": ["Passage to Booty Bay"],
-               "objectives": ["Sail to Booty Bay"],
+               "special": ["Sail to Booty Bay"],
                "type": "quest"
             }
          ]
       },
       {
          "zone": "stv",
-         "experience": 32.13,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 26, "y": 73 },
                "header": "Booty Bay Harbor",
                "ends": ["Passage to Booty Bay"],
                "starts": ["The Caravan Road"],
-               "objectives": [],
                "type": "travel"
             },
             {
@@ -159,148 +136,133 @@
                "header": "Booty Bay",
                "ends": ["The Haunted Isle"],
                "starts": ["Supplies to Private Thorsen", "Investigate the Camp", "The Haunted Isle", "Bloodscalp Ears", "The Stone of the Tides", "Supply and Demand"],
-               "objectives": [],
                "type": "hub"
             },
             {
                "coords": { "x": 28, "y": 78 },
+               "align": "bottom",
                "header": "Booy Bay Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Learn the Flightpath", "Fly to Westfall"],
+               "special": ["Learn the Flightpath", "Fly to Westfall"],
                "type": "flightpath"
             }
          ]
       },
       {
          "zone": "westfall",
-         "experience": 32.14,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 57, "y": 53 },
+               "align": "bottom",
                "header": "Westfall Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "flightpath"
             },
             {
                "coords": { "x": 52, "y": 53 },
+               "align": "bottom",
                "header": "Westfall Inn",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Set Hearthstone"],
+               "special": ["Set Hearthstone"],
                "type": "objective"
             }
          ]
       },
       {
          "zone": "westfall",
-         "experience": 32.14,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 52, "y": 53 },
+               "align": "bottom",
                "header": "Westfall Inn",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Set Hearthstone"],
+               "special": ["Set Hearthstone"],
                "type": "objective"
             },
             {
                "coords": { "x": 57, "y": 53 },
+               "align": "bottom",
                "header": "Westfall Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Fly to Duskwood"],
+               "special": ["Fly to Duskwood"],
                "type": "flightpath"
             }
          ]
       },
       {
          "zone": "duskwood",
-         "experience": 32.14,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 78, "y": 44 },
+               "align": "top",
                "header": "Duskwood Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "flightpath"
             },
             {
                "coords": { "x": 74, "y": 47 },
+               "align": "top",
                "header": "Darkshire",
                "ends": ["The Caravan Road", "The Carevin Family"],
                "starts": ["The Carevin Family", "The Scythe of Elune"],
-               "objectives": [],
                "type": "hub"
             }
          ]
       },
       {
          "zone": "duskwood",
-         "experience": 32.18,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 74, "y": 47 },
+               "align": "top",
                "header": "Darkshire",
                "ends": ["The Caravan Road", "The Carevin Family"],
                "starts": ["The Carevin Family", "The Scythe of Elune"],
-               "objectives": [],
                "type": "hub"
             },
             {
                "coords": { "x": 78, "y": 44 },
+               "align": "top",
                "header": "Duskwood Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Fly to Hillsbrad Foothills"],
+               "special": ["Fly to Hillsbrad Foothills"],
                "type": "flightpath"
             }
          ]
       },
       {
          "zone": "hillsbrad",
-         "experience": 32.18,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 49, "y": 52 },
                "header": "Southshore Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "flightpath"
             },
             {
                "coords": { "x": 78, "y": 8 },
+               "align": "right",
                "header": "Bath'rah the Windwatcher",
-               "ends": ["The Windwatcher"],
-               "starts": ["Cyclonian"],
-               "objectives": ["Hearthstone to Westfall"],
+               "ends": [["The Windwatcher", "C"]],
+               "starts": [["Cyclonian", "C"]],
+               "special": ["Hearthstone to Westfall"],
                "type": "quest"
             }
          ]
       },
       {
          "zone": "westfall",
-         "experience": 32.20,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 52, "y": 53 },
+               "align": "top",
                "header": "Westfall Inn",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             },
             {
                "coords": { "x": 87, "y": 95 },
+               "align": "top",
                "header": "Stranglethorn Vale River",
-               "ends": [],
-               "starts": [],
                "objectives": ["Supply and Demand"],
-               "type": "travel"
+               "type": "quest"
             }
          ]
       }

@@ -2,86 +2,85 @@
    "path": [
       {
          "zone": "ashenvale",
-         "experience": 31.38,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 34, "y": 48 },
+               "align": "top",
                "header": "Ashenvale Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "flightpath"
             },
             {
                "coords": { "x": 36, "y": 50 },
+               "align": "right",
                "header": "Astranaar",
-               "ends": [],
                "starts": ["Kayneth Stillwind", "Fallen Sky Lake"],
-               "objectives": [],
                "type": "hub"
             },
             {
                "coords": { "x": 22, "y": 53 },
                "header": "The Shrine of Aessina",
-               "ends": [],
                "starts": ["Vile Satyr! Dryads in Danger!", "The Howling Vale"],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 59, "y": 62 },
+               "align": "bottom",
                "header": "Ashenvale Crossroad",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             },
             {
                "coords": { "x": 62, "y": 46 },
+               "align": "right",
                "header": "Ashenvale Road",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             },
             {
                "coords": { "x": 50, "y": 39 },
+               "align": "top",
                "header": "Tome of Melandris",
-               "ends": [],
-               "starts": [],
                "objectives": ["The Howling Vale"],
                "type": "quest"
             },
             {
-               "coords": { "x": 64, "y": 42 },
+               "coords": { "x": 66, "y": 42 },
+               "align": "right",
                "header": "Passageway",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             },
             {
                "coords": { "x": 67, "y": 57 },
+               "align": "right",
                "header": "Night Run",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Tower of Blabla"],
+               "objectives": [["The Tower of Althalaxx", "P5"]],
+               "special": ["First Spawner"],
                "type": "objective"
             },
             {
                "coords": { "x": 67, "y": 82 },
+               "align": "right",
                "header": "Fallen Sky Lake",
-               "ends": [],
-               "starts": [],
                "objectives": ["Fallen Sky Lake"],
+               "special": ["Kill & Loot the Oracle"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "ashenvale",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 67, "y": 82 },
+               "header": "Fallen Sky Lake",
+               "objectives": ["Fallen Sky Lake"],
+               "special": ["Kill & Loot the Oracle"],
                "type": "objective"
             },
             {
                "coords": { "x": 72, "y": 73 },
                "header": "The Dor'Danil Barrow Den",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Raene's Cleansing blabla"],
+               "objectives": [["Raene's Cleansing", "P5"]],
                "type": "objective"
             },
             {
@@ -89,183 +88,161 @@
                "header": "Anilia",
                "ends": ["Vile Satyr! Dryads in Danger!"],
                "starts": ["The Branch of Cenarius"],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 78, "y": 42 },
+               "align": "top",
                "header": "Geltharis",
-               "ends": [],
-               "starts": [],
                "objectives": ["The Branch of Cenarius"],
                "type": "objective"
             },
             {
                "coords": { "x": 82, "y": 49 },
+               "align": "bottom",
                "header": "Satyrnaar",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Tower of Blabla"],
+               "objectives": [["The Tower of Althalaxx", "P5"]],
+               "special": ["Second Spawner"],
                "type": "objective"
             },
             {
                "coords": { "x": 85, "y": 45 },
+               "align": "top",
                "header": "Forest Song",
                "ends": ["Kayneth Stillwind"],
-               "starts": [],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 94, "y": 47 },
+               "align": "top",
                "header": "Azshara Border",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             }
          ]
       },
       {
          "zone": "azshara",
-         "experience": 31.59,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 11, "y": 75 },
                "header": "Ashenvale Border",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             },
             {
                "coords": { "x": 12, "y": 78 },
                "header": "Azshara Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Learn the Flightpath", "Fly to Ashenvale"],
+               "special": ["Learn the Flightpath", "Fly to Ashenvale"],
                "type": "flightpath"
             }
          ]
       },
       {
          "zone": "ashenvale",
-         "experience": 31.59,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 34, "y": 48 },
                "header": "Ashenvale Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "flightpath"
             },
             {
                "coords": { "x": 36, "y": 50 },
+               "align": "bottom",
                "header": "Astranaar",
                "ends": ["Fallen Sky Lake"],
-               "starts": [],
-               "objectives": [],
                "type": "hub"
             },
             {
                "coords": { "x": 54, "y": 46 },
+               "align": "top",
                "header": "Shael'Dryn",
-               "ends": ["Raene's Cleansing P4"],
-               "starts": ["Raene's Cleansing P5"],
-               "objectives": [],
+               "ends": [["Raene's Cleansing", "P5"]],
+               "starts": [["Raene's Cleansing", "P6"]],
                "type": "quest"
             },
             {
                "coords": { "x": 56, "y": 56 },
+               "align": "right",
                "header": "Shrine Enterance",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             },
             {
                "coords": { "x": 56, "y": 49 },
+               "align": "right",
                "header": "Hidden Shrine",
-               "ends": ["Raene's Cleansing P5"],
-               "starts": ["Raene's Cleansing P6"],
-               "objectives": [],
+               "ends": [["Raene's Cleansing", "P6"]],
+               "starts": [["Raene's Cleansing", "P7"]],
                "type": "quest"
             }
          ]
       },
       {
          "zone": "ashenvale",
-         "experience": 31.73,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 56, "y": 49 },
+               "align": "right",
                "header": "Hidden Shrine",
-               "ends": ["Raene's Cleansing P6"],
-               "starts": ["Raene's Cleansing P7"],
-               "objectives": [],
+               "ends": [["Raene's Cleansing", "P6"]],
+               "starts": [["Raene's Cleansing", "P7"]],
                "type": "quest"
             },
             {
                "coords": { "x": 54, "y": 46 },
+               "align": "top",
                "header": "Shael'Dryn",
-               "ends": ["Raene's Cleansing P7"],
-               "starts": ["Raene's Cleansing P8"],
-               "objectives": [],
+               "ends": [["Raene's Cleansing", "P7"]],
+               "starts": [["Raene's Cleansing", "P8"]],
                "type": "quest"
             },
             {
                "coords": { "x": 36, "y": 50 },
                "header": "Astranaar",
-               "ends": ["Raene's Cleansing P8"],
-               "starts": ["Raene's Cleansing P9"],
-               "objectives": [],
+               "ends": [["Raene's Cleansing", "P8"]],
+               "starts": [["Raene's Cleansing", "P9"]],
                "type": "hub"
             },
             {
                "coords": { "x": 51, "y": 75 },
                "header": "Krolg",
-               "ends": ["Raene's Cleansing P9"],
-               "starts": ["Raene's Cleansing P10"],
-               "objectives": [],
+               "ends": [["Raene's Cleansing", "P9"]],
+               "starts": [["Raene's Cleansing", "P10"]],
                "type": "quest"
             },
             {
                "coords": { "x": 55, "y": 80 },
+               "align": "right",
                "header": "Bloodtooth Camp",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Raene's Cleansing P10"],
+               "objectives": [["Raene's Cleansing", "P10"]],
                "type": "objective"
             }
          ]
       },
       {
          "zone": "ashenvale",
-         "experience": 31.79,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 55, "y": 80 },
+               "align": "right",
                "header": "Bloodtooth Camp",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Raene's Cleansing P10"],
+               "objectives": [["Raene's Cleansing", "P10"]],
                "type": "objective"
             },
             {
                "coords": { "x": 51, "y": 75 },
                "header": "Krolg",
-               "ends": ["Raene's Cleansing P10"],
-               "starts": ["Raene's Cleansing P11"],
-               "objectives": [],
+               "ends": [["Raene's Cleansing", "P10"]],
+               "starts": [["Raene's Cleansing", "P11"]],
                "type": "quest"
             },
             {
                "coords": { "x": 36, "y": 50 },
+               "align": "top",
                "header": "Astranaar",
-               "ends": ["Raene's Cleansing P11"],
-               "starts": [],
-               "objectives": [],
+               "ends": [["Raene's Cleansing", "P11"]],
                "type": "hub"
             },
             {
@@ -273,37 +250,31 @@
                "header": "The Shrine of Aessina",
                "ends": ["Vile Satyr! Dryads in Danger!", "The Howling Wind"],
                "starts": ["Velinde Starsong"],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 26, "y": 38 },
                "header": "Maestra's Post",
-               "ends": ["The Tower of Althalaxx", "Escort quest"],
-               "starts": [],
-               "objectives": ["Hearthstone to Astranaar"],
+               "ends": [["The Tower of Althalaxx", "P5"], "Supplies to Auberdine"],
+               "special": ["Hearthstone to Astranaar"],
                "type": "quest"
             }
          ]
       },
       {
          "zone": "ashenvale",
-         "experience": 32.07,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 36, "y": 50 },
+               "align": "right",
                "header": "Astranaar",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "hub"
             },
             {
                "coords": { "x": 34, "y": 48 },
                "header": "Ashenvale Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Fly to Darnassus"],
+               "special": ["Fly to Darnassus"],
                "type": "flightpath"
             }
          ]

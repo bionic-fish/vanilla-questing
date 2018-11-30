@@ -2,212 +2,190 @@
    "path": [
       {
          "zone": "duskwood",
-         "experience": 29.84,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 78, "y": 44 },
+               "align": "right",
                "header": "Duskwood Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "flightpath"
             },
             {
                "coords": { "x": 72, "y": 35 },
                "header": "Watcher Backus",
-               "ends": ["The Missing Diplomat P4"],
-               "starts": ["The Missing Diplomat P5"],
-               "objectives": [],
+               "ends": [["The Missing Diplomat", "P4"]],
+               "starts": [["The Missing Diplomat", "P5"]],
                "type": "quest"
             },
             {
                "coords": { "x": 74, "y": 47 },
                "header": "Darkshire",
                "ends": ["Gather Rot Blossoms", "Crime and Punishment"],
-               "starts": ["The Night Watch P3", "The Legend of Stalvan P13", "Juice Delivery", "Worgen in the Woods P1"],
-               "objectives": [],
+               "starts": [["The Night Watch", "P3"], ["The Legend of Stalvan", "P13"], "Juice Delivery", ["Worgen in the Woods", "P1"]],
                "type": "hub"
             },
             {
                "coords": { "x": 80, "y": 48 },
+               "align": "right",
                "header": "Viktori Prism'Antras",
-               "ends": [],
-               "starts": ["Look to the Stars P4"],
-               "objectives": [],
+               "starts": [["Look to the Stars", "P4"]],
                "type": "quest"
             }
          ]
       },
       {
          "zone": "duskwood",
-         "experience": 29.92,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 80, "y": 48 },
+               "align": "right",
                "header": "Viktori Prism'Antras",
-               "ends": [],
-               "starts": ["Look to the Stars P4"],
-               "objectives": [],
+               "starts": [["Look to the Stars", "P4"]],
                "type": "quest"
             },
             {
                "coords": { "x": 77, "y": 36 },
+               "align": "right",
                "header": "Manor Mistmantle",
-               "ends": [],
-               "starts": [],
-               "objectives": ["The Legend of Stalvan P13"],
+               "objectives": [["The Legend of Stalvan", "P13"]],
                "type": "objective"
             },
             {
                "coords": { "x": 64, "y": 47 },
+               "align": "bottom",
                "header": "Brightwood Grove",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Worgen in the Woods P1"],
+               "objectives": [["Worgen in the Woods", "P1"]],
                "type": "objective"
             },
             {
                "coords": { "x": 74, "y": 47 },
+               "align": "bottom",
                "header": "Darkshire",
-               "ends": ["Worgen in the Woods P1", "The Legend of Stalvan P13"],
-               "starts": ["Worgen in the Woods P2"],
-               "objectives": ["Set Hearthstone"],
+               "ends": [["Worgen in the Woods", "P1"], ["The Legend of Stalvan", "P13"]],
+               "starts": [["Worgen in the Woods", "P2"]],
+               "special": ["Set Hearthstone"],
                "type": "hub"
             },
             {
-               "coords": { "x": 78, "y": 44 },
+               "coords": { "x": 76, "y": 44 },
+               "align": "top",
                "header": "Duskwood Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Fly to Westfall"],
+               "special": ["Fly to Westfall"],
                "type": "flightpath"
             }
          ]
       },
       {
          "zone": "westfall",
-         "experience": 30.09,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 57, "y": 53 },
+               "align": "top",
                "header": "Westfall Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "flightpath"
             },
             {
                "coords": { "x": 65, "y": 45 },
+               "align": "top",
                "header": "Duskwood Border",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             }
          ]
       },
       {
          "zone": "duskwood",
-         "experience": 30.09,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 5, "y": 37 },
+               "align": "top",
                "header": "Westfall Border",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             },
             {
                "coords": { "x": 8, "y": 34 },
+               "align": "top",
                "header": "Sven Yorgen",
                "ends": ["Armed and Ready"],
                "starts": ["Morbent Fel"],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 18, "y": 29 },
+               "align": "top",
                "header": "A Weathered Grave",
-               "ends": [],
                "starts": ["The Weathered Grave"],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 28, "y": 31 },
+               "align": "top",
                "header": "Abercrombie",
                "ends": ["Juice Delivery"],
                "starts": ["Ghoulish Effigy"],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 24, "y": 35 },
+               "align": "bottom",
                "header": "Dawning Wood Catacombs",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Ghoulish Effigy", "The Night Watch P3"],
+               "objectives": ["Ghoulish Effigy", ["The Night Watch", "P3"]],
                "type": "objective"
             }
          ]
       },
       {
          "zone": "duskwood",
-         "experience": 30.21,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 24, "y": 35 },
+               "align": "top",
                "header": "Dawning Wood Catacombs",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Ghoulish Effigy", "The Night Watch P3"],
+               "objectives": ["Ghoulish Effigy", ["The Night Watch", "P3"]],
                "type": "objective"
             },
             {
                "coords": { "x": 28, "y": 31 },
+               "align": "top",
                "header": "Abercrombie",
                "ends": ["Ghoulish Effigy"],
                "starts": ["Ogre Thieves"],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 24, "y": 72 },
+               "align": "bottom",
                "header": "Defias Strongbox",
-               "ends": [],
-               "starts": [],
-               "objectives": ["The Missing Diplomat P5"],
+               "objectives": [["The Missing Diplomat", "P5"]],
                "type": "objective"
             },
             {
                "coords": { "x": 33, "y": 76 },
+               "align": "bottom",
                "header": "Abercrombies Crate",
-               "ends": [],
-               "starts": [],
                "objectives": ["Ogre Thieves"],
                "type": "objective"
             },
             {
                "coords": { "x": 36, "y": 78 },
+               "align": "bottom",
                "header": "Vol'Gol Ogre Mound",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Look to the Stars P4"],
+               "objectives": [["Look to the Stars", "P4"]],
                "type": "objective"
             }
          ]
       },
       {
          "zone": "duskwood",
-         "experience": 30.28,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 36, "y": 78 },
                "header": "Vol'Gol Ogre Mound",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Look to the Stars P4"],
+               "objectives": [["Look to the Stars", "P4"]],
                "type": "objective"
             },
             {
@@ -215,283 +193,250 @@
                "header": "Abercrombie",
                "ends": ["Ogre Thieves"],
                "starts": ["Note to the Mayor"],
-               "objectives": ["Hearthstone to Darkshire"],
+               "special": ["Hearthstone to Darkshire"],
                "type": "quest"
             }
          ]
       },
       {
          "zone": "duskwood",
-         "experience": 30.31,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 74, "y": 47 },
+               "align": "bottom",
                "header": "Darkshire",
-               "ends": ["The Night Watch P3", "The Weathered Grave", "Note to the Mayor", "Translate Aberscrombie's Note", "Wait for Sirra to Finish", "Translation to Ello", "Morgan Ladimore"],
-               "starts": ["Morgan Ladimore", "Translate Aberscrombie's Note", "Wait for Sirra to Finish", "Translation to Ello", "Bride of the Embalmer", "Mor'Ladim"],
-               "objectives": [],
+               "ends": [["The Night Watch", "P3"], "The Weathered Grave", "Note to the Mayor", "Translate Aberscrombie's Note", "Wait for Sirra to Finish", "Translation to Ello", "Morgan Ladimore"],
+               "starts": ["Morgan Ladimore", "Translate Aberscrombie's Note", "Wait for Sirra to Finish", "Translation to Ello", ["Bride of the Embalmer", "E"], ["Mor'Ladim", "E"]],
                "type": "hub"
             },
             {
                "coords": { "x": 80, "y": 48 },
+               "align": "bottom",
                "header": "Viktori Prism'Antras",
-               "ends": ["Look to the Stars P4"],
-               "starts": [],
-               "objectives": [],
+               "ends": [["Look to the Stars", "P4"]],
                "type": "quest"
             },
             {
                "coords": { "x": 72, "y": 35 },
                "header": "Watcher Backus",
-               "ends": ["The Missing Diplomat P5"],
-               "starts": ["The Missing Diplomat P6"],
-               "objectives": [],
+               "ends": [["The Missing Diplomat", "P5"]],
+               "starts": [["The Missing Diplomat", "P6"]],
                "type": "quest"
-            },
-            {
-               "coords": { "x": 62, "y": 42 },
-               "header": "Brightwood Grove",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Worgen in the Woods P2"],
-               "type": "objective"
             }
          ]
       },
       {
          "zone": "duskwood",
-         "experience": 30.59,
+         "experience": 0,
          "waypoints": [
+            {
+               "coords": { "x": 72, "y": 35 },
+               "align": "top",
+               "header": "Watcher Backus",
+               "ends": [["The Missing Diplomat", "P5"]],
+               "starts": [["The Missing Diplomat", "P6"]],
+               "type": "quest"
+            },
             {
                "coords": { "x": 62, "y": 42 },
                "header": "Brightwood Grove",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Worgen in the Woods P2"],
+               "objectives": [["Worgen in the Woods", "P2"]],
                "type": "objective"
             },
             {
                "coords": { "x": 74, "y": 47 },
+               "align": "bottom",
                "header": "Darkshire",
-               "ends": ["Worgen in the Woods P2"],
-               "starts": ["Worgen in the Woods P3"],
-               "objectives": [],
+               "ends": [["Worgen in the Woods", "P2"]],
+               "starts": [["Worgen in the Woods", "P3"]],
                "type": "hub"
             },
             {
                "coords": { "x": 78, "y": 44 },
+               "align": "bottom",
                "header": "Duskwood Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Fly to Westfall"],
+               "special": ["Fly to Westfall"],
                "type": "flightpath"
             }
          ]
       },
       {
          "zone": "westfall",
-         "experience": 30.64,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 57, "y": 53 },
+               "align": "top",
                "header": "Westfall Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "flightpath"
             },
             {
                "coords": { "x": 65, "y": 45 },
+               "align": "top",
                "header": "Duskwood Border",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             }
          ]
       },
       {
          "zone": "duskwood",
-         "experience": 30.64, 
+         "experience": 0, 
          "waypoints": [
             {
                "coords": { "x": 5, "y": 37 },
+               "align": "top",
                "header": "Westfall Border",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             },
             {
                "coords": { "x": 17, "y": 33 },
+               "align": "top",
                "header": "Forlorn Rowe",
-               "ends": [],
-               "starts": [],
                "objectives": ["Morbent Fel"],
                "type": "objective"
             },
             {
                "coords": { "x": 19, "y": 37 },
+               "align": "bottom",
                "header": "Raven Hill Cemetary",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Mor'Ladim"],
+               "objectives": [["Mor'Ladim", "E"]],
                "type": "objective"
             },
             {
                "coords": { "x": 29, "y": 31 },
+               "align": "bottom",
                "header": "Eliza's Grave Dirt",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Bride of the Embalmer"],
+               "objectives": [["Bride of the Embalmer", "E"]],
                "type": "objective"
             }
          ]
       },
       {
          "zone": "duskwood",
-         "experience": 30.68, 
+         "experience": 0, 
          "waypoints": [
             {
                "coords": { "x": 29, "y": 31 },
+               "align": "top",
                "header": "Eliza's Grave Dirt",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Bride of the Embalmer"],
+               "objectives": [["Bride of the Embalmer", "E"]],
                "type": "objective"
             },
             {
                "coords": { "x": 8, "y": 34 },
+               "align": "top",
                "header": "Sven Yorgen",
                "ends": ["Morbent Fel"],
-               "starts": [],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 5, "y": 37 },
+               "align": "top",
                "header": "Westfall Border",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             }
          ]
       },
       {
          "zone": "westfall",
-         "experience": 30.76,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 65, "y": 45 },
+               "align": "top",
                "header": "Duskwood Border",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             },
             {
                "coords": { "x": 57, "y": 53 },
+               "align": "top",
                "header": "Westfall Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Fly to Darkshire"],
+               "special": ["Fly to Darkshire"],
                "type": "flightpath"
             }
          ]
       },
       {
          "zone": "duskwood",
-         "experience": 30.76,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 78, "y": 44 },
+               "align": "top",
                "header": "Duskwood Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "flightpath"
             },
             {
                "coords": { "x": 73, "y": 72 },
-               "header": "",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Worgen in the Woods P3"],
+               "header": "Worgen Grove",
+               "objectives": [["Worgen in the Woods", "P3"]],
                "type": "objective"
             },
             {
                "coords": { "x": 74, "y": 47 },
+               "align": "top",
                "header": "Darkshire",
-               "ends": ["Worgen in the Woods P3-4", "Mor'Ladim", "Bride of the Embalmer", "The Daughter Who Lived"],
-               "starts": ["Worgen in the Woods P4", "The Daughter Who Lived", "A Daughters Love"],
-               "objectives": [],
+               "ends": [["Worgen in the Woods", "P3-4"], ["Mor'Ladim", "E"], ["Bride of the Embalmer", "E"], "The Daughter Who Lived"],
+               "starts": [["Worgen in the Woods", "P4"], "The Daughter Who Lived", "A Daughters Love"],
                "type": "hub"
             }
          ]
       },
       {
          "zone": "duskwood",
-         "experience": 31.07,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 74, "y": 47 },
+               "align": "top",
                "header": "Darkshire",
-               "ends": ["Worgen in the Woods P3-4", "Mor'Ladim", "Bride of the Embalmer", "The Daughter Who Lived"],
-               "starts": ["Worgen in the Woods P4", "The Daughter Who Lived", "A Daughters Love"],
-               "objectives": [],
+               "ends": ["Worgen in the Woods P3-4", ["Mor'Ladim", "E"], ["Bride of the Embalmer", "E"], "The Daughter Who Lived"],
+               "starts": [["Worgen in the Woods", "P4"], "The Daughter Who Lived", "A Daughters Love"],
                "type": "hub"
             },
             {
                "coords": { "x": 78, "y": 44 },
+               "align": "top",
                "header": "Duskwood Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Fly to Westfall"],
+               "special": ["Fly to Westfall"],
                "type": "flightpath"
             }
          ]
       },
       {
          "zone": "westfall",
-         "experience": 31.07,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 57, "y": 53 },
+               "align": "top",
                "header": "Westfall Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "flightpath"
             },
             {
                "coords": { "x": 65, "y": 45 },
+               "align": "top",
                "header": "Duskwood Border",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             }
          ]
       },
       {
          "zone": "duskwood",
-         "experience": 31.07,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 5, "y": 37 },
+               "align": "top",
                "header": "Westfall Border",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             },
             {
                "coords": { "x": 18, "y": 29 },
+               "align": "top",
                "header": "A Weathered Grave",
                "ends": ["A Daughters Love"],
-               "starts": [],
-               "objectives": [],
                "type": "quest"
             }
          ]

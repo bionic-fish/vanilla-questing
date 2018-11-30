@@ -2,156 +2,131 @@
    "path": [
       {
          "zone": "arathi",
-         "experience": 29.22,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 45, "y": 93 },
+               "align": "top",
                "header": "Wetlands Border",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             },
             {
                "coords": { "x": 49, "y": 88 },
+               "align": "top",
                "header": "Cache of Explosives",
-               "ends": [],
-               "starts": [],
-               "objectives": ["The Thandol Span P3"],
+               "objectives": [["The Thandol Span", "P3"]],
                "type": "objective"
             }
          ]
       },
       {
          "zone": "arathi",
-         "experience": 29.22,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 49, "y": 88 },
+               "align": "top",
                "header": "Cache of Explosives",
-               "ends": [],
-               "starts": [],
-               "objectives": ["The Thandol Span P3"],
+               "objectives": [["The Thandol Span", "P3"]],
                "type": "objective"
             },
             {
                "coords": { "x": 45, "y": 93 },
+               "align": "top",
                "header": "Wetlands Border",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             }
          ]
       },
       {
          "zone": "wetlands",
-         "experience": 29.22,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 51, "y": 9 },
                "header": "Arathi Highlands Border",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             },
             {
                "coords": { "x": 50, "y": 18 },
                "header": "Dun Modr",
-               "ends": ["The Thandol Span P3"],
+               "ends": [["The Thandol Span", "P3"]],
                "starts": ["Plea to the Alliance"],
-               "objectives": [],
                "type": "quest"
             }
          ]
       },
       {
          "zone": "wetlands",
-         "experience": 29.29,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 50, "y": 18 },
                "header": "Dun Modr",
-               "ends": ["The Thandol Span P3"],
+               "ends": [["The Thandol Span", "P3"]],
                "starts": ["Plea to the Alliance"],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 51, "y": 9 },
                "header": "Arathi Highlands Border",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             }
          ]
       },
       {
          "zone": "arathi",
-         "experience": 29.29,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 45, "y": 93 },
+               "align": "right",
                "header": "Wetlands Border",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             },
             {
                "coords": { "x": 46, "y": 48 },
+               "align": "right",
                "header": "Captain Nials",
                "ends": ["Plea to the Alliance"],
-               "starts": [],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 46, "y": 46 },
+               "align": "top",
                "header": "Arathi Highlands Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Learn the Flightpath"],
+               "special": ["Learn the Flightpath"],
                "type": "flightpath"
             },
             {
                "coords": { "x": 20, "y": 30 },
+               "align": "top",
                "header": "Hillsbrad Foothills Border",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             }
          ]
       },
       {
          "zone": "hillsbrad",
-         "experience": 29.34,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 82, "y": 57 },
+               "align": "bottom",
                "header": "Hillsbrad Foothills Border",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             },
             {
-               "coords": { "x": 46, "y": 48 },
-               "header": "Captain Nials",
-               "ends": ["Southshore!"],
-               "starts": [],
-               "objectives": [],
+               "coords": { "x": 50, "y": 57 },
+               "align": "bottom",
+               "header": "Loremaster Dibbs",
+               "ends": ["Southshore"],
                "type": "quest"
             },
             {
                "coords": { "x": 46, "y": 46 },
                "header": "Hillbrad Foothills Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Learn the Flightpath", "Fly to Wetlands"],
+               "special": ["Learn the Flightpath", "Fly to Menethil"],
                "type": "flightpath"
             }
          ]

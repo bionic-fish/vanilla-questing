@@ -2,84 +2,65 @@
    "path": [
       {
          "zone": "westfall",
-         "experience": 27.21,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 64, "y": 42 },
+               "align": "top",
                "header": "Duskwood Border",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             },
             {
                "coords": { "x": 57, "y": 53 },
                "header": "Westfall Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Fly to Stormwind"],
+               "special": ["Fly to Stormwind"],
                "type": "flightpath"
             }
          ]
       },
       {
          "zone": "stormwind",
-         "experience": 27.21,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 66, "y": 62 },
+               "align": "bottom",
                "header": "Stormwind Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "flightpath"
             },
             {
                "coords": { "x": 73, "y": 45 },
+               "align": "right",
                "header": "Nikova Raskol",
-               "ends": [],
                "starts": [["The Color of Blood", "D"]],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 74, "y": 8 },
+               "align": "right",
                "header": "Milton Sheaf",
                "ends": [["An Old History Book", "R"]],
                "starts": ["Southshore"],
-               "objectives": [],
-               "type": "quest"
-            },
-            {
-               "coords": { "x": 49, "y": 30 },
-               "header": "Baros Alexston",
-               "ends": [],
-               "starts": ["Bazil Thredd"],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 40, "y": 29 },
+               "align": "top",
                "header": "Cathedral of Light",
                "ends": ["Seeking Wisdom"],
                "starts": ["The Doomed Fleet"],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 43, "y": 59 },
                "align": "bottom",
                "header": "The Stockade Enterance",
-               "ends": ["Bazil Thredd"],
                "starts": [["Quell The Uprising", "D"], ["The Stockade Riots", "D"]],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 41, "y": 56 },
                "header": "The Stockade",
-               "ends": [],
-               "starts": [],
                "objectives": [["Quell The Uprising", "D"], ["The Stockade Riots", "D"], ["Crime and Punishment", "D"], ["The Color of Blood", "D"], ["What Comes Around", "D"]],
                "type": "objective"
             }
@@ -87,60 +68,57 @@
       },
       {
          "zone": "stormwind",
-         "experience": 27.36,
+         "experience": 0,
          "waypoints": [
             {
-               "coords": { "x": 41, "y": 58 },
+               "coords": { "x": 43, "y": 59 },
                "header": "The Stockade Enterance",
-               "ends": ["Quell The Uprising", "The Stockade Riots"],
+               "ends": [["Quell The Uprising", "D"], ["The Stockade Riots", "D"]],
                "starts": ["The Curious Visitor"],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 49, "y": 30 },
+               "align": "top",
                "header": "Baros Alexston",
                "ends": ["The Curious Visitor"],
                "starts": ["Shadow of the Past"],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 73, "y": 45 },
+               "align": "top",
                "header": "Nikova Raskol",
-               "ends": [],
-               "starts": ["The Color of Blood"],
-               "objectives": [],
+               "starts": [["The Color of Blood", "D"]],
                "type": "quest"
             },
             {
                "coords": { "x": 76, "y": 60 },
+               "align": "right",
                "header": "Master Mathias Shaw",
                "ends": ["Shadow of the Past"],
                "starts": ["Look to an Old Friend"],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 60, "y": 64 },
+               "align": "bottom",
                "header": "Elling Trias",
                "ends": ["Look to an Old Friend"],
                "starts": ["Infiltrating the Castle"],
-               "objectives": [],
                "type": "quest"
             }
          ]
       },
       {
          "zone": "stormwind",
-         "experience": 27.59,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 60, "y": 64 },
                "header": "Elling Trias",
                "ends": ["Look to an Old Friend"],
                "starts": ["Infiltrating the Castle"],
-               "objectives": [],
                "type": "quest"
             },
             {
@@ -148,15 +126,13 @@
                "header": "Tyrion",
                "ends": ["Infiltrating the Castle"],
                "starts": ["Items of some Consequence"],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 66, "y": 62 },
+               "align": "right",
                "header": "Stormwind Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Fly to Menethila"],
+               "special": ["Fly to Menethil"],
                "type": "flightpath"
             }
          ]
