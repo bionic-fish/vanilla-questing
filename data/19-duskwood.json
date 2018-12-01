@@ -54,7 +54,7 @@
                "align": "top",
                "header": "Viktori Prism'Antras",
                "ends": [["Look to the Stars", "P3"]],
-               "starts": [["Look to the Stars", "P4"]],
+               "starts": [],
                "type": "quest"
             },
             {

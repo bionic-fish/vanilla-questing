@@ -2,7 +2,7 @@
    "path": [
       {
          "zone": "wetlands",
-         "experience": 0,
+         "experience": 29.41,
          "waypoints": [
             {
                "coords": { "x": 10, "y": 59 },
@@ -37,7 +37,7 @@
       },
       {
          "zone": "wetlands",
-         "experience": 0,
+         "experience": 29.55,
          "waypoints": [
             {
                "coords": { "x": 12, "y": 67 },

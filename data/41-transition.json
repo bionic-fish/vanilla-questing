@@ -2,134 +2,113 @@
    "path": [
       {
          "zone": "blasted",
-         "experience": 40.49,
+         "experience": 40.50,
          "waypoints": [
             {
                "coords": { "x": 52, "y": 7 },
                "header": "Swamp of Sorrows Border",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             },
             {
                "coords": { "x": 67, "y": 19 },
+               "align": "right",
                "header": "Nethergarde Keep",
                "ends": ["Deliver the Shipment"],
-               "starts": [],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 66, "y": 24 },
+               "align": "right",
                "header": "Nethergarde Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Fly to Ironforge"],
+               "special": ["Fly to Ironforge"],
                "type": "flightpath"
             }
          ]
       },
       {
          "zone": "ironforge",
-         "experience": 40.51,
+         "experience": 40.53,
          "waypoints": [
             {
                "coords": { "x": 56, "y": 48 },
                "header": "Ironforge Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "flightpath"
             },
             {
                "coords": { "x": 69, "y": 20 },
                "header": "Roetten Stonehammer",
-               "ends": ["The Karnitol Shipwreck P3", "Reagents for Reclaimers Inc. P4"],
-               "starts": [],
-               "objectives": [],
+               "ends": [["The Karnitol Shipwreck", "P3"], ["Reagents for Reclaimers Inc.", "P4"]],
                "type": "objective"
             },
             {
                "coords": { "x": 75, "y": 12 },
+               "align": "right",
                "header": "The Library",
-               "ends": [],
-               "starts": ["Mythology of the Titans"],
-               "objectives": [],
+               "starts": [["Mythology of the Titans", "D"]],
                "type": "quest"
             },
             {
                "coords": { "x": 68, "y": 46 },
+               "align": "right",
                "header": "Klockmort Spannerspan",
-               "ends": [],
                "starts": ["The Brassbolts Brothers"],
-               "objectives": [],
                "type": "quest"
             }
          ]
       },
       {
          "zone": "ironforge",
-         "experience": 40.59,
+         "experience": 40.61,
          "waypoints": [
             {
                "coords": { "x": 68, "y": 46 },
+               "align": "top",
                "header": "Klockmort Spannerspan",
-               "ends": [],
                "starts": ["The Brassbolts Brothers"],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 56, "y": 48 },
+               "align": "top",
                "header": "Ironforge Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Fly to Southshore"],
+               "special": ["Fly to Southshore"],
                "type": "flightpath"
             }
          ]
       },
       {
          "zone": "hillsbrad",
-         "experience": 40.59,
+         "experience": 40.61,
          "waypoints": [
             {
-               "coords": { "x": 49, "y": 52 },
+               "coords": { "x": 48, "y": 51 },
                "header": "Southshore Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "flightpath"
             },
             {
                "coords": { "x": 50, "y": 54 },
+               "align": "right",
                "header": "Southshore",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Set Hearthstone"],
+               "special": ["Set Hearthstone"],
                "type": "quest"
             }
          ]
       },
       {
          "zone": "hillsbrad",
-         "experience": 40.59,
+         "experience": 40.61,
          "waypoints": [
             {
                "coords": { "x": 50, "y": 54 },
+               "align": "right",
                "header": "Southshore",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Set Hearthstone"],
+               "special": ["Set Hearthstone"],
                "type": "quest"
             },
             {
-               "coords": { "x": 49, "y": 52 },
+               "coords": { "x": 48, "y": 51 },
                "header": "Southshore Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Fly to Arathi Highlands"],
+               "special": ["Fly to Arathi Highlands"],
                "type": "flightpath"
             }
          ]

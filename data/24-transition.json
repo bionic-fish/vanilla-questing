@@ -2,7 +2,7 @@
    "path": [
       {
          "zone": "arathi",
-         "experience": 0,
+         "experience": 29.26,
          "waypoints": [
             {
                "coords": { "x": 45, "y": 93 },
@@ -21,7 +21,7 @@
       },
       {
          "zone": "arathi",
-         "experience": 0,
+         "experience": 29.28,
          "waypoints": [
             {
                "coords": { "x": 49, "y": 88 },
@@ -40,7 +40,7 @@
       },
       {
          "zone": "wetlands",
-         "experience": 0,
+         "experience": 29.28,
          "waypoints": [
             {
                "coords": { "x": 51, "y": 9 },
@@ -58,7 +58,7 @@
       },
       {
          "zone": "wetlands",
-         "experience": 0,
+         "experience": 29.33,
          "waypoints": [
             {
                "coords": { "x": 50, "y": 18 },
@@ -76,7 +76,7 @@
       },
       {
          "zone": "arathi",
-         "experience": 0,
+         "experience": 29.33,
          "waypoints": [
             {
                "coords": { "x": 45, "y": 93 },
@@ -108,7 +108,7 @@
       },
       {
          "zone": "hillsbrad",
-         "experience": 0,
+         "experience": 29.38,
          "waypoints": [
             {
                "coords": { "x": 82, "y": 57 },

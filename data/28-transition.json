@@ -2,7 +2,7 @@
    "path": [
       {
          "zone": "duskwood",
-         "experience": 0,
+         "experience": 31.16,
          "waypoints": [
             {
                "coords": { "x": 18, "y": 29 },
@@ -21,7 +21,7 @@
       },
       {
          "zone": "westfall",
-         "experience": 0,
+         "experience": 31.16,
          "waypoints": [
             {
                "coords": { "x": 57, "y": 53 },
@@ -40,7 +40,7 @@
       },
       {
          "zone": "stormwind",
-         "experience": 0,
+         "experience": 31.16,
          "waypoints": [
             {
                "coords": { "x": 66, "y": 62 },
@@ -81,7 +81,7 @@
       },
       {
          "zone": "stormwind",
-         "experience": 0,
+         "experience": 31.19,
          "waypoints": [
             {
                "coords": { "x": 79, "y": 46 },
@@ -121,7 +121,7 @@
       },
       {
          "zone": "wetlands",
-         "experience": 0,
+         "experience": 31.19,
          "waypoints": [
             {
                "coords": { "x": 10, "y": 62 },
@@ -148,7 +148,7 @@
       },
       {
          "zone": "dustwallow",
-         "experience": 0,
+         "experience": 31.25,
          "waypoints": [
             {
                "coords": { "x": 71, "y": 56 },
@@ -181,7 +181,7 @@
       },
       {
          "zone": "dustwallow",
-         "experience": 0,
+         "experience": 31.30,
          "waypoints": [
             {
                "coords": { "x": 68, "y": 49 },
@@ -214,7 +214,7 @@
       },
       {
          "zone": "barrens",
-         "experience": 0,
+         "experience": 31.35,
          "waypoints": [
             {
                "coords": { "x": 64, "y": 59 },

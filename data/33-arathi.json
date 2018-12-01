@@ -2,137 +2,143 @@
    "path": [
       {
          "zone": "arathi",
-         "experience": 34.61,
+         "experience": 34.78,
          "waypoints": [
             {
                "coords": { "x": 45, "y": 45 },
                "header": "Arathi Highlands Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "flightpath"
             },
             {
                "coords": { "x": 46, "y": 48 },
+               "align": "bottom",
                "header": "Refuge Point",
                "ends": ["Malin's Request"],
                "starts": ["Worth Its Weight in Gold", "Northfold Manor"],
-               "objectives": [],
                "type": "hub"
             },
             {
                "coords": { "x": 60, "y": 54 },
+               "align": "right",
                "header": "Quae",
-               "ends": ["Hints of a New Plague? P1"],
-               "starts": ["Hints of a New Plague? P2"],
-               "objectives": [],
+               "ends": [["Hints of a New Plague?", "P1"]],
+               "starts": [["Hints of a New Plague?", "P2"]],
                "type": "quest"
             },
             {
                "coords": { "x": 60, "y": 61 },
+               "align": "right",
                "header": "Go'Shek Farm",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Hints of a New Plague? P2", "Patrol Spawn"],
+               "objectives": [["Hints of a New Plague?", "P2"]],
+               "special": ["Patrol Spawnpoint"],
                "type": "objective"
             }
          ]
       },
       {
          "zone": "arathi",
-         "experience": 34.72,
+         "experience": 34.83,
          "waypoints": [
             {
                "coords": { "x": 60, "y": 61 },
                "header": "Go'Shek Farm",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Hints of a New Plague? P2", "Patrol Spawn"],
+               "objectives": [["Hints of a New Plague?", "P2"]],
+               "special": ["Patrol Spawnpoint"],
                "type": "objective"
             },
             {
                "coords": { "x": 60, "y": 54 },
                "header": "Quae",
-               "ends": ["Hints of a New Plague? P2-4"],
-               "starts": ["Hints of a New Plague? P3-5"],
-               "objectives": [],
+               "ends": [["Hints of a New Plague?", "P2-4"]],
+               "starts": [["Hints of a New Plague?", "P3-5"]],
                "type": "quest"
             },
             {
                "coords": { "x": 68, "y": 76 },
+               "align": "right",
                "header": "Witherbark Village",
-               "ends": [],
-               "starts": [],
                "objectives": ["Worth Its Weight in Gold"],
                "type": "objective"
             },
             {
                "coords": { "x": 62, "y": 34 },
+               "align": "top",
                "header": "Shard of Myzrael",
-               "ends": [],
                "starts": ["The Princess Trapped"],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 83, "y": 36 },
-               "header": "Drywhisper Gorge",
+               "align": "top",
+               "header": "Drywhisper Gorge Cave",
                "ends": ["The Princess Trapped"],
                "starts": ["Stones of Binding"],
                "objectives": ["The Princess Trapped", "Favor for Krazek"],
+               "special": ["Mine or Buy 4x Bloodstone Ore"],
                "type": "quest"
             }
          ]
       },
       {
          "zone": "arathi",
-         "experience": 35.09,
+         "experience": 35.20,
          "waypoints": [
             {
                "coords": { "x": 83, "y": 36 },
-               "header": "Drywhisper Gorge",
+               "align": "top",
+               "header": "Drywhisper Gorge Cave",
                "ends": ["The Princess Trapped"],
                "starts": ["Stones of Binding"],
                "objectives": ["The Princess Trapped", "Favor for Krazek"],
-               "type": "objective"
+               "special": ["Mine/Buy 4x Bloodstone Ore"],
+               "type": "quest"
             },
             {
                "coords": { "x": 67, "y": 30 },
+               "align": "top",
                "header": "Stone of East Binding",
-               "ends": [],
-               "starts": [],
                "objectives": ["Stones of Binding"],
                "type": "objective"
             },
             {
                "coords": { "x": 52, "y": 51 },
+               "align": "bottom",
                "header": "Stone of Outer Binding",
-               "ends": [],
-               "starts": [],
                "objectives": ["Stones of Binding"],
                "type": "objective"
             },
             {
                "coords": { "x": 46, "y": 48 },
+               "align": "bottom",
                "header": "Refuge Point",
                "ends": ["Worth Its Weight In Gold"],
                "starts": ["Wand over Fist"],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 32, "y": 29 },
-               "header": "",
-               "ends": [],
-               "starts": [],
+               "align": "top",
+               "header": "Northfold Manor",
                "objectives": ["Northfold Manor"],
                "type": "objective"
             },
             {
                "coords": { "x": 26, "y": 30 },
+               "align": "top",
                "header": "Stone of West Binding",
-               "ends": [],
-               "starts": [],
+               "objectives": ["Stones of Binding"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "arathi",
+         "experience": 35.32,
+         "waypoints": [
+            {
+               "coords": { "x": 26, "y": 30 },
+               "align": "top",
+               "header": "Stone of West Binding",
                "objectives": ["Stones of Binding"],
                "type": "objective"
             },
@@ -141,14 +147,12 @@
                "header": "Stone of Inner Binding",
                "ends": ["Stones of Binding"],
                "starts": ["Breaking the Keystone"],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 54, "y": 81 },
-               "header": "",
-               "ends": [],
-               "starts": [],
+               "align": "right",
+               "header": "Boulderfist Hall",
                "objectives": ["Wand over Fist"],
                "type": "objective"
             }
@@ -156,13 +160,11 @@
       },
       {
          "zone": "arathi",
-         "experience": 35.31,
+         "experience": 35.39,
          "waypoints": [
             {
                "coords": { "x": 54, "y": 81 },
-               "header": "",
-               "ends": [],
-               "starts": [],
+               "header": "Boulderfist Hall",
                "objectives": ["Wand over Fist"],
                "type": "objective"
             },
@@ -170,16 +172,12 @@
                "coords": { "x": 46, "y": 48 },
                "header": "Refuge Point",
                "ends": ["Northfold Manor", "Wand over Fist"],
-               "starts": [],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 45, "y": 45 },
-               "header": "Arathi Highlands Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Fly to Hillsbrad Foothills"],
+               "header": "Arathi Flightpath",
+               "special": ["Fly to Southshore"],
                "type": "flightpath"
             }
          ]

@@ -2,126 +2,106 @@
    "path": [
       {
          "zone": "tirisfal",
-         "experience": 41.19,
+         "experience": 41.27,
          "waypoints": [
             {
                "coords": { "x": 60, "y": 84 },
+               "align": "right",
                "header": "Lordamere Lake",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Move to Scarlet Monastery"],
                "type": "travel"
             },
             {
                "coords": { "x": 55, "y": 75 },
                "header": "Lordaeron Road",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Move to Scarlet Monastery"],
                "type": "travel"
             },
             {
                "coords": { "x": 84, "y": 32 },
+               "align": "right",
                "header": "Scarlet Monastery",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Do Scarlet Monastery with 2 quests", "Remember to Loot the Key", "Hearthstone to Southshore"],
+               "objectives": [["In the Name of the Light", "D"], ["Mythology of the Titans", "D"]],
+               "special": ["Hearthstone to Southshore"],
                "type": "quest"
             }
          ]
       },
       {
          "zone": "hillsbrad",
-         "experience": 41.25,
+         "experience": 41.34,
          "waypoints": [
             {
                "coords": { "x": 50, "y": 54 },
+               "align": "right",
                "header": "Southshore",
-               "ends": ["Noble Deaths", "Dark Council", "Preserving Knowledge", "Crushridge Warmongers", "In the Name of the Light"],
+               "ends": ["Noble Deaths", "Dark Council", ["Preserving Knowledge", "E"], ["Crushridge Warmongers", "E"], ["In the Name of the Light", "D"]],
                "starts": ["Return to Milton"],
-               "objectives": [],
                "type": "hub"
             },
             {
-               "coords": { "x": 49, "y": 52 },
+               "coords": { "x": 48, "y": 51 },
                "header": "Hillsbrad Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Fly to Arathi Highlands"],
+               "special": ["Fly to Refuge Point"],
                "type": "flightpath"
             }
          ]
       },
       {
          "zone": "arathi",
-         "experience": 41.42,
+         "experience": 41.54,
          "waypoints": [
             {
                "coords": { "x": 46, "y": 48 },
+               "align": "right",
                "header": "Refuge Point",
                "ends": ["Attack of the Tower"],
-               "starts": ["Malin's Request P2"],
-               "objectives": [],
+               "starts": [["Malin's Request", "P2"]],
                "type": "hub"
             },
             {
-               "coords": { "x": 46, "y": 46 },
+               "coords": { "x": 45, "y": 45 },
                "header": "Refuge Point Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Fly to Ironforge"],
+               "special": ["Fly to Ironforge"],
                "type": "flightpath"
             }
          ]
       },
       {
          "zone": "ironforge",
-         "experience": 41.46,
+         "experience": 41.57,
          "waypoints": [
             {
                "coords": { "x": 56, "y": 48 },
                "header": "Ironforge Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "flightpath"
             },
             {
                "coords": { "x": 51, "y": 5 },
                "header": "Gerrig Bonegrip",
                "ends": ["Myzrael's Allies"],
-               "starts": [],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 75, "y": 12 },
+               "align": "right",
                "header": "The Library",
-               "ends": ["Mythology of the Titans"],
-               "starts": [],
-               "objectives": [],
+               "ends": [["Mythology of the Titans", "D"]],
                "type": "quest"
             },
             {
                "coords": { "x": 78, "y": 52 },
+               "align": "right",
                "header": "Deeprun Tram",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             }
          ]
       },
       {
          "zone": "stormwind",
-         "experience": 41.51,
+         "experience": 41.63,
          "waypoints": [
             {
                "coords": { "x": 65, "y": 6 },
                "header": "Deeprun Tram",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             },
             {
@@ -129,47 +109,39 @@
                "header": "Brohann Caskbelly",
                "ends": ["In Search of the Temple"],
                "starts": ["To The Hinterlands"],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 74, "y": 8 },
+               "align": "right",
                "header": "Milton Sheaf",
                "ends": ["Return to Milton"],
-               "starts": [],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 74, "y": 30 },
+               "align": "right",
                "header": "Count Remington Ridgewell",
-               "ends": ["The Perenolde Tiara"],
-               "starts": [],
-               "objectives": [],
+               "ends": [["The Perenolde Tiara", "E"]],
                "type": "quest"
             },
             {
                "coords": { "x": 53, "y": 60 },
                "header": "Stormwind Auction House",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Buy the remaining STV pages"],
+               "special": ["Buy the remaining STV pages"],
                "type": "objective"
             },
             {
                "coords": { "x": 40, "y": 82 },
                "header": "Archmage Malin",
-               "ends": ["Malin's Request"],
-               "starts": [],
-               "objectives": [],
+               "ends": [["Malin's Request", "P2"]],
                "type": "quest"
             },
             {
                "coords": { "x": 66, "y": 62 },
+               "align": "right",
                "header": "Stormwind Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Fly to Booty Bay"],
+               "special": ["Fly to Booty Bay"],
                "type": "flightpath"
             }
          ]

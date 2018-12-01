@@ -2,7 +2,7 @@
    "path": [
       {
          "zone": "westfall",
-         "experience": 0,
+         "experience": 27.11,
          "waypoints": [
             {
                "coords": { "x": 64, "y": 42 },
@@ -20,7 +20,7 @@
       },
       {
          "zone": "stormwind",
-         "experience": 0,
+         "experience": 27.11,
          "waypoints": [
             {
                "coords": { "x": 66, "y": 62 },
@@ -68,7 +68,7 @@
       },
       {
          "zone": "stormwind",
-         "experience": 0,
+         "experience": 27.29,
          "waypoints": [
             {
                "coords": { "x": 43, "y": 59 },
@@ -112,7 +112,7 @@
       },
       {
          "zone": "stormwind",
-         "experience": 0,
+         "experience": 27.53,
          "waypoints": [
             {
                "coords": { "x": 60, "y": 64 },

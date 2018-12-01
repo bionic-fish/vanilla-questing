@@ -2,254 +2,208 @@
    "path": [
       {
          "zone": "barrens",
-         "experience": 42.54,
+         "experience": 42.68,
          "waypoints": [
             {
                "coords": { "x": 64, "y": 39 },
+               "align": "right",
                "header": "Ratchet Harbor",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             },
             {
                "coords": { "x": 63, "y": 37 },
                "header": "Barrens Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Fly to Tanaris"],
+               "special": ["Fly to Tanaris"],
                "type": "flightpath"
             }
          ]
       },
       {
          "zone": "tanaris",
-         "experience": 42.54,
+         "experience": 42.68,
          "waypoints": [
             {
-               "coords": { "x": 51, "y": 29 },
+               "coords": { "x": 50, "y": 30 },
                "header": "Tanaris Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "flightpath"
             },
             {
                "coords": { "x": 52, "y": 28 },
+               "align": "right",
                "header": "Gadgetzan",
                "ends": ["Tran'Rek"],
-               "starts": [],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 51, "y": 22 },
                "header": "Thousand Needles Border",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             }
          ]
       },
       {
          "zone": "needles",
-         "experience": 42.56,
+         "experience": 42.69,
          "waypoints": [
             {
                "coords": { "x": 75, "y": 96 },
                "header": "Tanaris Border",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             },
             {
                "coords": { "x": 79, "y": 77 },
                "header": "The Shimmering Flats",
                "ends": ["Encrusted Tail Fins", "Parts for Kravel", "Delivery to the Gnomes"],
-               "starts": ["The Eighteenth Pilot", "Delivery to the Gnomes", "The Rumormonger"],
-               "objectives": [],
+               "starts": ["The Eighteenth Pilot", "Delivery to the Gnomes", "The Rumormonger", "Razzeric's Tweaking"],
                "type": "hub"
             }
          ]
       },
       {
          "zone": "tanaris",
-         "experience": 42.62,
+         "experience": 42.75,
          "waypoints": [
             {
                "coords": { "x": 51, "y": 22 },
                "header": "Thousand Needles Border",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             },
             {
                "coords": { "x": 51, "y": 29 },
                "header": "Tanaris Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Fly to Theramore"],
+               "special": ["Fly to Theramore"],
                "type": "flightpath"
             }
          ]
       },
       {
          "zone": "dustwallow",
-         "experience": 42.62,
+         "experience": 42.75,
          "waypoints": [
             {
                "coords": { "x": 67, "y": 51 },
                "header": "Theramore Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "flightpath"
             },
             {
                "coords": { "x": 66, "y": 45 },
                "header": "Theramore Inn",
                "ends": ["And Bugs"],
-               "starts": [],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 71, "y": 56 },
+               "align": "right",
                "header": "Theramore Harbor",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Sail to Menethil"],
                "type": "travel"
             }
          ]
       },
       {
          "zone": "wetlands",
-         "experience": 42.66,
+         "experience": 42.79,
          "waypoints": [
             {
                "coords": { "x": 5, "y": 57 },
+               "align": "top",
                "header": "Wetlands Harbor",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             },
             {
                "coords": { "x": 9, "y": 60 },
+               "align": "top",
                "header": "Wetlands Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Fly to Ironforge"],
+               "special": ["Fly to Ironforge"],
                "type": "flightpath"
             }
          ]
       },
       {
          "zone": "ironforge",
-         "experience": 42.66,
+         "experience": 42.79,
          "waypoints": [
             {
                "coords": { "x": 56, "y": 48 },
+               "align": "right",
                "header": "Ironforge Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "flightpath"
             },
             {
                "coords": { "x": 25, "y": 74 },
                "header": "Ironforge Auction House",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Buy 1x Frost Oil", "Buy 1x Gyrochronatom", "Buy 1x Healing Potion", "Buy 1x Lesser Invisibility Potion", "Buy 1x Patterned Bronze Bracers"],
+               "special": ["Buy 1x Frost Oil", "Buy 1x Gyrochronatom", "Buy 1x Healing Potion", "Buy 1x Lesser Invisibility Potion", "Buy 1x Patterned Bronze Bracers"],
                "type": "objective"
             },
             {
                "coords": { "x": 19, "y": 51 },
                "header": "Ironforge Inn",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Set Hearthstone"],
+               "special": ["Set Hearthstone"],
                "type": "objective"
             },
             {
                "coords": { "x": 51, "y": 5 },
+               "align": "top",
                "header": "Gerrig Bonegrip",
-               "ends": [],
                "starts": ["Theldurin the Lost"],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 75, "y": 12 },
+               "align": "top",
                "header": "The Library",
-               "ends": [],
                "starts": ["Ironband Wants You", "The Lost Dwarves", "Reclaimed Treasures"],
-               "objectives": [],
                "type": "quest"
             }
          ]
       },
       {
          "zone": "ironforge",
-         "experience": 42.66,
+         "experience": 42.79,
          "waypoints": [
             {
                "coords": { "x": 75, "y": 12 },
+               "align": "top",
                "header": "The Library",
-               "ends": [],
                "starts": ["Ironband Wants You", "The Lost Dwarves", "Reclaimed Treasures"],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 56, "y": 48 },
                "header": "Ironforge Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Fly to Loch Modan"],
+               "special": ["Fly to Loch Modan"],
                "type": "flightpath"
             }
          ]
       },
       {
          "zone": "loch",
-         "experience": 42.66,
+         "experience": 42.79,
          "waypoints": [
             {
                "coords": { "x": 34, "y": 51 },
+               "align": "top",
                "header": "Loch Modan Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "flightpath"
             },
             {
                "coords": { "x": 37, "y": 49 },
+               "align": "top",
                "header": "Ghak Healtouch",
-               "ends": [],
                "starts": ["Badlands Reagent Run"],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 66, "y": 66 },
+               "align": "right",
                "header": "Prospector Ironband",
                "ends": ["Ironband Wants You"],
                "starts": ["Find Agmond"],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 47, "y": 81 },
+               "align": "bottom",
                "header": "Badlands Border",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             }
          ]

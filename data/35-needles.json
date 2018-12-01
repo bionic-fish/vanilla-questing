@@ -2,77 +2,39 @@
    "path": [
       {
          "zone": "needles",
-         "experience": 35.53,
+         "experience": 35.63,
          "waypoints": [
             {
                "coords": { "x": 32, "y": 21 },
+               "align": "top",
                "header": "Thousand Needles Lifts",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             },
             {
                "coords": { "x": 8, "y": 18 },
+               "align": "top",
                "header": "Thalanaar Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Learn the Flightpath"],
+               "special": ["Learn the Flightpath"],
                "type": "flightpath"
             },
             {
                "coords": { "x": 11, "y": 35 },
-               "header": "",
-               "ends": [],
-               "starts": [],
+               "header": "Highperch Canyon",
                "objectives": ["Highperch Venom"],
                "type": "objective"
             },
             {
                "coords": { "x": 79, "y": 77 },
+               "align": "right",
                "header": "The Shimmering Flats",
                "ends": ["The Brassbolts Brothers"],
-               "starts": ["Hardened Shells", "Salt Flat Venom", "Martek the Exiled", "Rocket Car Parts", "Wharfmaster Dizzywig", "Load Lightening", "A Bump In the Road"],
-               "objectives": [],
+               "starts": ["Hardened Shells", "Hemet Nesingwary", "Salt Flat Venom", "Martek the Exiled", "Rocket Car Parts", "Wharfmaster Dizzywig", "Load Lightening", "A Bump In the Road"],
                "type": "hub"
             },
             {
                "coords": { "x": 78, "y": 88 },
+               "align": "right",
                "header": "Tahonda Ruins",
-               "ends": [],
-               "starts": [],
-               "objectives": ["A Bump In the Road", "Rocket Car Parts"],
-               "type": "objective"
-            },
-            {
-               "coords": { "x": 88, "y": 65 },
-               "header": "",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Load Lightening"],
-               "type": "objective"
-            },
-            {
-               "coords": { "x": 84, "y": 60 },
-               "header": "",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Salt Flat Venom", "Rocket Car Parts"],
-               "type": "objective"
-            },
-            {
-               "coords": { "x": 82, "y": 54 },
-               "header": "",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Hardened Shells"],
-               "type": "objective"
-            },
-            {
-               "coords": { "x": 75, "y": 60 },
-               "header": "",
-               "ends": [],
-               "starts": [],
                "objectives": ["A Bump In the Road", "Rocket Car Parts"],
                "type": "objective"
             }
@@ -80,52 +42,84 @@
       },
       {
          "zone": "needles",
-         "experience": 35.79,
+         "experience": 35.73,
          "waypoints": [
             {
-               "coords": { "x": 75, "y": 60 },
-               "header": "",
-               "ends": [],
-               "starts": [],
+               "coords": { "x": 78, "y": 88 },
+               "header": "Tahonda Ruins",
+               "objectives": ["A Bump In the Road", "Rocket Car Parts"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 88, "y": 65 },
+               "align": "right",
+               "header": "Eastern Flats",
+               "objectives": ["Load Lightening"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 84, "y": 60 },
+               "header": "Northern Flats",
+               "objectives": ["Salt Flat Venom", "Rocket Car Parts"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 82, "y": 54 },
+               "align": "top",
+               "header": "Old Shipwreck",
+               "objectives": ["Hardened Shells"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 73, "y": 63 },
+               "align": "top",
+               "header": "Western Flats",
+               "objectives": ["A Bump In the Road", "Rocket Car Parts"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "needles",
+         "experience": 35.85,
+         "waypoints": [
+            {
+               "coords": { "x": 73, "y": 63 },
+               "align": "top",
+               "header": "Western Flats",
                "objectives": ["A Bump In the Road", "Rocket Car Parts"],
                "type": "objective"
             },
             {
                "coords": { "x": 79, "y": 77 },
+               "align": "right",
                "header": "The Shimmering Flats",
                "ends": ["Hardened Shells", "Salt Flat Venom", "Rocket Car Parts", "Load Lightening", "A Bump In the Road"],
-               "starts": ["Goblin Sponsorship P1", "Encrusted Tail Fins"],
-               "objectives": [],
+               "starts": [["Goblin Sponsorship", "P1"], "Encrusted Tail Fins"],
                "type": "hub"
             },
             {
                "coords": { "x": 75, "y": 96 },
+               "align": "right",
                "header": "Tanaris Border",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Run to Tanaris"],
+               "special": ["Run to Tanaris"],
                "type": "travel"
             }
          ]
       },
       {
          "zone": "tanaris",
-         "experience": 35.97,
+         "experience": 36.02,
          "waypoints": [
             {
                "coords": { "x": 51, "y": 22 },
                "header": "Thousand Needles Border",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             },
             {
                "coords": { "x": 51, "y": 29 },
                "header": "Tanaris Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Learn the Flightpath", "Fly to Theramore"],
+               "special": ["Learn the Flightpath", "Fly to Theramore"],
                "type": "flightpath"
             }
          ]

@@ -2,7 +2,7 @@
    "path": [
       {
          "zone": "ashenvale",
-         "experience": 0,
+         "experience": 31.42,
          "waypoints": [
             {
                "coords": { "x": 34, "y": 48 },
@@ -68,7 +68,7 @@
       },
       {
          "zone": "ashenvale",
-         "experience": 0,
+         "experience": 31.49,
          "waypoints": [
             {
                "coords": { "x": 67, "y": 82 },
@@ -122,7 +122,7 @@
       },
       {
          "zone": "azshara",
-         "experience": 0,
+         "experience": 31.62,
          "waypoints": [
             {
                "coords": { "x": 11, "y": 75 },
@@ -139,7 +139,7 @@
       },
       {
          "zone": "ashenvale",
-         "experience": 0,
+         "experience": 31.62,
          "waypoints": [
             {
                "coords": { "x": 34, "y": 48 },
@@ -179,7 +179,7 @@
       },
       {
          "zone": "ashenvale",
-         "experience": 0,
+         "experience": 31.76,
          "waypoints": [
             {
                "coords": { "x": 56, "y": 49 },
@@ -222,7 +222,7 @@
       },
       {
          "zone": "ashenvale",
-         "experience": 0,
+         "experience": 31.83,
          "waypoints": [
             {
                "coords": { "x": 55, "y": 80 },
@@ -263,7 +263,7 @@
       },
       {
          "zone": "ashenvale",
-         "experience": 0,
+         "experience": 32.10,
          "waypoints": [
             {
                "coords": { "x": 36, "y": 50 },

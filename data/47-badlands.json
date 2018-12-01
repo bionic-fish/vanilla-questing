@@ -2,7 +2,7 @@
    "path": [
       {
          "zone": "badlands",
-         "experience": 42.67,
+         "experience": 42.80,
          "waypoints": [
             {
                "coords": { "x": 49, "y": 8 },
@@ -40,7 +40,7 @@
       },
       {
          "zone": "badlands",
-         "experience": 41.69,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 67, "y": 23 },
@@ -118,7 +118,7 @@
       },
       {
          "zone": "badlands",
-         "experience": 42.84,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 54, "y": 83 },
@@ -156,7 +156,7 @@
       },
       {
          "zone": "badlands",
-         "experience": 42.98,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 20, "y": 45 },
@@ -186,7 +186,7 @@
       },
       {
          "zone": "badlands",
-         "experience": 43.02,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 15, "y": 37 },
@@ -232,7 +232,7 @@
       },
       {
          "zone": "badlands",
-         "experience": 43.14,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 2, "y": 80 },

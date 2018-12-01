@@ -2,7 +2,7 @@
    "path": [
       {
          "zone": "stormwind",
-         "experience": 0,
+         "experience": 29.59,
          "waypoints": [
             {
                "coords": { "x": 66, "y": 62 },
@@ -18,7 +18,7 @@
       },
       {
          "zone": "elwynn",
-         "experience": 0,
+         "experience": 29.59,
          "waypoints": [
             {
                "coords": { "x": 32, "y": 49 },
@@ -35,7 +35,7 @@
       },
       {
          "zone": "elwynn",
-         "experience": 0,
+         "experience": 29.59,
          "waypoints": [
             {
                "coords": { "x": 34, "y": 57 },
@@ -52,7 +52,7 @@
       },
       {
          "zone": "stormwind",
-         "experience": 0,
+         "experience": 29.59,
          "waypoints": [
             {
                "coords": { "x": 70, "y": 87 },
@@ -103,7 +103,7 @@
       },
       {
          "zone": "stormwind",
-         "experience": 0,
+         "experience": 29.70,
          "waypoints": [
             {
                "coords": { "x": 73, "y": 78 },
@@ -153,7 +153,7 @@
       },
       {
          "zone": "redridge",
-         "experience": 0,
+         "experience": 29.84,
          "waypoints": [
             {
                "coords": { "x": 31, "y": 59 },
@@ -170,7 +170,7 @@
       },
       {
          "zone": "redridge",
-         "experience": 29.84,
+         "experience": 29.89,
          "waypoints": [
             {
                "coords": { "x": 26, "y": 47 },

@@ -2,7 +2,7 @@
    "path": [
       {
          "zone": "teldrassil",
-         "experience": 0,
+         "experience": 32.10,
          "waypoints": [
             {
                "coords": { "x": 58, "y": 94 },
@@ -18,7 +18,7 @@
       },
       {
          "zone": "darnassus",
-         "experience": 0,
+         "experience": 32.10,
          "waypoints": [
             {
                "coords": { "x": 31, "y": 41 },
@@ -45,7 +45,7 @@
       },
       {
          "zone": "darnassus",
-         "experience": 0,
+         "experience": 32.11,
          "waypoints": [
             {
                "coords": { "x": 62, "y": 83 },
@@ -85,7 +85,7 @@
       },
       {
          "zone": "teldrassil",
-         "experience": 0,
+         "experience": 32.13,
          "waypoints": [
             {
                "coords": { "x": 56, "y": 90 },
@@ -102,7 +102,7 @@
       },
       {
          "zone": "barrens",
-         "experience": 0,
+         "experience": 32.13,
          "waypoints": [
             {
                "coords": { "x": 63, "y": 37 },
@@ -122,7 +122,7 @@
       },
       {
          "zone": "stv",
-         "experience": 0,
+         "experience": 32.15,
          "waypoints": [
             {
                "coords": { "x": 26, "y": 73 },
@@ -149,7 +149,7 @@
       },
       {
          "zone": "westfall",
-         "experience": 0,
+         "experience": 32.17,
          "waypoints": [
             {
                "coords": { "x": 57, "y": 53 },
@@ -168,7 +168,7 @@
       },
       {
          "zone": "westfall",
-         "experience": 0,
+         "experience": 32.17,
          "waypoints": [
             {
                "coords": { "x": 52, "y": 53 },
@@ -188,7 +188,7 @@
       },
       {
          "zone": "duskwood",
-         "experience": 0,
+         "experience": 32.17,
          "waypoints": [
             {
                "coords": { "x": 78, "y": 44 },
@@ -208,7 +208,7 @@
       },
       {
          "zone": "duskwood",
-         "experience": 0,
+         "experience": 32.19,
          "waypoints": [
             {
                "coords": { "x": 74, "y": 47 },
@@ -229,7 +229,7 @@
       },
       {
          "zone": "hillsbrad",
-         "experience": 0,
+         "experience": 32.19,
          "waypoints": [
             {
                "coords": { "x": 49, "y": 52 },
@@ -249,7 +249,7 @@
       },
       {
          "zone": "westfall",
-         "experience": 0,
+         "experience": 32.21,
          "waypoints": [
             {
                "coords": { "x": 52, "y": 53 },
@@ -262,7 +262,7 @@
                "align": "top",
                "header": "Stranglethorn Vale River",
                "objectives": ["Supply and Demand"],
-               "type": "quest"
+               "type": "objective"
             }
          ]
       }

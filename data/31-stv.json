@@ -2,56 +2,55 @@
    "path": [
       {
          "zone": "stv",
-         "experience": 32.20,
+         "experience": 32.24,
          "waypoints": [
             {
                "coords": { "x": 33, "y": 8 },
+               "align": "bottom",
                "header": "Stranglethorn Vale River",
-               "ends": [],
-               "starts": [],
                "objectives": ["Supply and Demand"],
-               "type": "travel"
+               "type": "objective"
             },
             {
                "coords": { "x": 36, "y": 11 },
+               "align": "bottom",
                "header": "Nesingwary's Expedition",
                "ends": ["Welcome to the Jungle"],
-               "starts": ["Welcome to the Jungle", "Raptor Mastery P1", "Tiger Mastery P1", "Panther Mastery P1"],
+               "starts": ["Welcome to the Jungle", ["Raptor Mastery", "P1"], ["Tiger Mastery", "P1"], ["Panther Mastery", "P1"]],
                "objectives": ["Investigate the Camp"],
                "type": "quest"
             },
             {
                "coords": { "x": 38, "y": 3 },
+               "align": "right",
                "header": "Rebel Camp",
                "ends": ["Supplies to Private Thorsen", "Jungle Secrets"],
                "starts": ["Jungle Secrets", "Bookie Herod", "The Second Rebellion", "Bad Medicine", "Krazel's Cookery"],
-               "objectives": [],
                "type": "quest"
             },
             {
-               "coords": { "x": 42, "y": 12 },
-               "header": "",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Panther Mastery P1"],
-               "type": "objective"
-            },
-            {
-               "coords": { "x": 44, "y": 10 },
-               "header": "Kurzens Compound",
-               "ends": ["Bookie Herod"],
-               "starts": ["The Hidden Key"],
-               "objectives": ["The Second Rebellion", "Bad Medicine", "Krazel's Cookery"],
+               "coords": { "x": 42, "y": 13 },
+               "align": "right",
+               "header": "Stranglethorn Valley",
+               "objectives": [["Panther Mastery", "P1"]],
                "type": "objective"
             }
          ]
       },
       {
          "zone": "stv",
-         "experience": 32.46,
+         "experience": 32.33,
          "waypoints": [
             {
+               "coords": { "x": 42, "y": 13 },
+               "align": "bottom",
+               "header": "Stranglethorn Valley",
+               "objectives": [["Panther Mastery", "P1"]],
+               "type": "objective"
+            },
+            {
                "coords": { "x": 44, "y": 10 },
+               "align": "top",
                "header": "Kurzens Compound",
                "ends": ["Bookie Herod"],
                "starts": ["The Hidden Key"],
@@ -59,103 +58,112 @@
                "type": "objective"
             },
             {
-               "coords": { "x": 33, "y": 12 },
-               "header": "",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Tiger Mastery P1"],
+               "coords": { "x": 35, "y": 14 },
+               "align": "bottom",
+               "header": "Northern Mainland",
+               "objectives": [["Tiger Mastery", "P1"]],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 36, "y": 11 },
+               "align": "top",
+               "header": "Nesingwary's Expedition",
+               "ends": [["Tiger Mastery", "P1"], ["Panther Mastery", "P1"]],
+               "starts": [["Tiger Mastery", "P2"], ["Panther Mastery", "P2"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 29, "y": 10 },
+               "align": "top",
+               "header": "Northern Mainland",
+               "objectives": [["Tiger Mastery", "P2"], ["Panther Mastery", "P2"]],
                "type": "objective"
             },
             {
                "coords": { "x": 26, "y": 16 },
-               "header": "",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Raptor Mastery P1"],
-               "type": "objective"
-            },
-            {
-               "coords": { "x": 21, "y": 22 },
-               "header": "",
-               "ends": [],
-               "starts": [],
-               "objectives": ["The Stone of the Tides"],
+               "header": "Northern Mainland",
+               "objectives": [["Raptor Mastery", "P1"]],
                "type": "objective"
             }
          ]
       },
       {
          "zone": "stv",
-         "experience": 32.55,
+         "experience": 32.68,
          "waypoints": [
             {
+               "coords": { "x": 26, "y": 16 },
+               "align": "top",
+               "header": "Northern Mainland",
+               "objectives": [["Raptor Mastery", "P1"]],
+               "type": "objective"
+            },
+            {
                "coords": { "x": 21, "y": 22 },
-               "header": "",
-               "ends": [],
-               "starts": [],
+               "align": "top",
+               "header": "Savage Coast Isle",
                "objectives": ["The Stone of the Tides"],
                "type": "objective"
             },
             {
                "coords": { "x": 36, "y": 11 },
+               "align": "top",
                "header": "Nesingwary's Expedition",
-               "ends": ["Raptor Mastery P1", "Tiger Mastery P1", "Panther Mastery P1"],
-               "starts": ["Raptor Mastery P2", "Tiger Mastery P2", "Panther Mastery P2"],
-               "objectives": [],
+               "ends": [["Panther Mastery", "P2"], ["Tiger Mastery", "P2"], ["Raptor Mastery", "P1"]],
+               "starts": [["Raptor Mastery", "P2"], ["Tiger Mastery", "P3"]],
                "type": "quest"
-            },
-            {
-               "coords": { "x": 29, "y": 10 },
-               "header": "",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Tiger Mastery P2", "Panther Mastery P2"],
-               "type": "objective"
             }
          ]
       },
       {
          "zone": "stv",
-         "experience": 32.73,
+         "experience": 32.78,
          "waypoints": [
             {
-               "coords": { "x": 29, "y": 10 },
-               "header": "",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Tiger Mastery P2", "Panther Mastery P2"],
-               "type": "objective"
-            },
-            {
-               "coords": { "x": 28, "y": 15 },
-               "header": "",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Tiger Mastery P2", "Panther Mastery P2"],
-               "type": "objective"
+               "coords": { "x": 36, "y": 11 },
+               "align": "top",
+               "header": "Nesingwary's Expedition",
+               "ends": [["Panther Mastery", "P2"], ["Tiger Mastery", "P2"], ["Raptor Mastery", "P1"]],
+               "starts": [["Raptor Mastery", "P2"], ["Tiger Mastery", "P3"]],
+               "type": "quest"
             },
             {
                "coords": { "x": 33, "y": 14 },
-               "header": "",
-               "ends": [],
-               "starts": [],
+               "align": "top",
+               "header": "Tkashi Ruins",
                "objectives": ["Cyclonian", "Bloodscalp Ears"],
+               "special": ["This will take a while"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 30, "y": 17 },
+               "header": "Stranglethorn Valley",
+               "objectives": [["Tiger Mastery", "P3"]],
                "type": "objective"
             },
             {
                "coords": { "x": 32, "y": 23 },
-               "header": "",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Raptor Mastery P2"],
+               "align": "right",
+               "header": "Grom'Gol Hillside",
+               "objectives": [["Raptor Mastery", "P2"]],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "stv",
+         "experience": 33.17,
+         "waypoints": [
+            {
+               "coords": { "x": 32, "y": 23 },
+               "header": "Grom'Gol Hillside",
+               "objectives": [["Raptor Mastery", "P2"]],
                "type": "objective"
             },
             {
                "coords": { "x": 36, "y": 11 },
                "header": "Nesingwary's Expedition",
-               "ends": ["Raptor Mastery P2", "Tiger Mastery P2", "Panther Mastery P2"],
-               "starts": [],
-               "objectives": [],
+               "ends": [["Raptor Mastery", "P2"], ["Tiger Mastery", "P3"]],
                "type": "quest"
             },
             {
@@ -163,11 +171,11 @@
                "header": "Rebel Camp",
                "ends": ["The Second Rebellion", "Bad Medicine"],
                "starts": ["Special Forces"],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 50, "y": 8 },
+               "align": "bottom",
                "header": "Bookie Herod's Strongbox",
                "ends": ["The Hidden Key"],
                "starts": ["The Spy Revealed"],
@@ -178,10 +186,11 @@
       },
       {
          "zone": "stv",
-         "experience": 33.26,
+         "experience": 33.42,
          "waypoints": [
             {
                "coords": { "x": 50, "y": 8 },
+               "align": "bottom",
                "header": "Bookie Herod's Strongbox",
                "ends": ["The Hidden Key"],
                "starts": ["The Spy Revealed"],
@@ -189,40 +198,34 @@
                "type": "quest"
             },
             {
-               "coords": { "x": 38, "y": 3 },
+               "coords": { "x": 38, "y": 4 },
                "header": "Rebel Camp",
                "ends": ["Special Forces", "The Spy Revealed", "Patrol Schedules", "Report to Doren"],
                "starts": ["Patrol Schedules", "Report to Doren"],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 42, "y": 3 },
+               "align": "right",
                "header": "Duskwood Border",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             }
          ]
       },
       {
          "zone": "duskwood",
-         "experience": 33.39,
+         "experience": 33.55,
          "waypoints": [
             {
                "coords": { "x": 44, "y": 87 },
-               "header": "Stranglethorn Vale Border",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
+               "align": "top",
+               "header": "Stranglethorn Border",
                "type": "travel"
             },
             {
                "coords": { "x": 73, "y": 75 },
+               "align": "right",
                "header": "Roland's Doom",
-               "ends": [],
-               "starts": [],
                "objectives": ["The Scrythe of Elune"],
                "type": "quest"
             },
@@ -230,30 +233,25 @@
                "coords": { "x": 74, "y": 47 },
                "header": "Darkshire",
                "ends": ["The Scrythe of Elune"],
-               "starts": [],
-               "objectives": [],
                "type": "hub"
             },
             {
                "coords": { "x": 78, "y": 44 },
+               "align": "top",
                "header": "Duskwood Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Fly to Booty bay"],
+               "special": ["Fly to Booty Bay"],
                "type": "flightpath"
             }
          ]
       },
       {
          "zone": "stv",
-         "experience": 33.44,
+         "experience": 33.62,
          "waypoints": [
             {
                "coords": { "x": 28, "y": 78 },
+               "align": "right",
                "header": "Booy Bay Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "flightpath"
             },
             {
@@ -261,29 +259,27 @@
                "header": "Booty Bay",
                "ends": ["Investigate the Camp", "Krazek's Cookery", "Bloodscalp Ears", "The Stone of the Tides", "Supply and Demand"],
                "starts": ["Favor for Krazek"],
-               "objectives": ["Set Hearthstone"],
+               "special": ["Set Hearthstone"],
                "type": "hub"
             }
          ]
       },
       {
          "zone": "stv",
-         "experience": 33.44,
+         "experience": 33.62,
          "waypoints": [
             {
                "coords": { "x": 27, "y": 77 },
                "header": "Booty Bay",
                "ends": ["Investigate the Camp", "Krazek's Cookery", "Bloodscalp Ears", "The Stone of the Tides", "Supply and Demand"],
                "starts": ["Favor for Krazek"],
-               "objectives": ["Set Hearthstone"],
                "type": "hub"
             },
             {
                "coords": { "x": 28, "y": 78 },
+               "align": "right",
                "header": "Booy Bay Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Fly to Southshore"],
+               "special": ["Fly to Southshore"],
                "type": "flightpath"
             }
          ]

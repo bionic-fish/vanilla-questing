@@ -2,7 +2,7 @@
    "path": [
       {
          "zone": "duskwood",
-         "experience": 0,
+         "experience": 29.89,
          "waypoints": [
             {
                "coords": { "x": 78, "y": 44 },
@@ -20,7 +20,7 @@
             {
                "coords": { "x": 74, "y": 47 },
                "header": "Darkshire",
-               "ends": ["Gather Rot Blossoms", "Crime and Punishment"],
+               "ends": ["Gather Rot Blossoms", "Crime and Punishment", ["The Night Watch", "P2"]],
                "starts": [["The Night Watch", "P3"], ["The Legend of Stalvan", "P13"], "Juice Delivery", ["Worgen in the Woods", "P1"]],
                "type": "hub"
             },
@@ -35,7 +35,7 @@
       },
       {
          "zone": "duskwood",
-         "experience": 0,
+         "experience": 30.01,
          "waypoints": [
             {
                "coords": { "x": 80, "y": 48 },
@@ -78,7 +78,7 @@
       },
       {
          "zone": "westfall",
-         "experience": 0,
+         "experience": 30.16,
          "waypoints": [
             {
                "coords": { "x": 57, "y": 53 },
@@ -96,7 +96,7 @@
       },
       {
          "zone": "duskwood",
-         "experience": 0,
+         "experience": 30.16,
          "waypoints": [
             {
                "coords": { "x": 5, "y": 37 },
@@ -138,7 +138,7 @@
       },
       {
          "zone": "duskwood",
-         "experience": 0,
+         "experience": 30.27,
          "waypoints": [
             {
                "coords": { "x": 24, "y": 35 },
@@ -180,7 +180,7 @@
       },
       {
          "zone": "duskwood",
-         "experience": 0,
+         "experience": 30.36,
          "waypoints": [
             {
                "coords": { "x": 36, "y": 78 },
@@ -200,7 +200,7 @@
       },
       {
          "zone": "duskwood",
-         "experience": 0,
+         "experience": 30.38,
          "waypoints": [
             {
                "coords": { "x": 74, "y": 47 },
@@ -228,7 +228,7 @@
       },
       {
          "zone": "duskwood",
-         "experience": 0,
+         "experience": 30.62,
          "waypoints": [
             {
                "coords": { "x": 72, "y": 35 },
@@ -263,7 +263,7 @@
       },
       {
          "zone": "westfall",
-         "experience": 0,
+         "experience": 30.70,
          "waypoints": [
             {
                "coords": { "x": 57, "y": 53 },
@@ -281,7 +281,7 @@
       },
       {
          "zone": "duskwood",
-         "experience": 0, 
+         "experience": 30.70,
          "waypoints": [
             {
                "coords": { "x": 5, "y": 37 },
@@ -314,7 +314,7 @@
       },
       {
          "zone": "duskwood",
-         "experience": 0, 
+         "experience": 30.75, 
          "waypoints": [
             {
                "coords": { "x": 29, "y": 31 },
@@ -340,7 +340,7 @@
       },
       {
          "zone": "westfall",
-         "experience": 0,
+         "experience": 30.83,
          "waypoints": [
             {
                "coords": { "x": 65, "y": 45 },
@@ -359,7 +359,7 @@
       },
       {
          "zone": "duskwood",
-         "experience": 0,
+         "experience": 30.83,
          "waypoints": [
             {
                "coords": { "x": 78, "y": 44 },
@@ -370,7 +370,7 @@
             {
                "coords": { "x": 73, "y": 72 },
                "header": "Worgen Grove",
-               "objectives": [["Worgen in the Woods", "P3"]],
+               "objectives": [["Worgen in the Woods", "P4"]],
                "type": "objective"
             },
             {
@@ -385,7 +385,7 @@
       },
       {
          "zone": "duskwood",
-         "experience": 0,
+         "experience": 31.12,
          "waypoints": [
             {
                "coords": { "x": 74, "y": 47 },
@@ -406,7 +406,7 @@
       },
       {
          "zone": "westfall",
-         "experience": 0,
+         "experience": 31.12,
          "waypoints": [
             {
                "coords": { "x": 57, "y": 53 },
@@ -424,7 +424,7 @@
       },
       {
          "zone": "duskwood",
-         "experience": 0,
+         "experience": 31.12,
          "waypoints": [
             {
                "coords": { "x": 5, "y": 37 },

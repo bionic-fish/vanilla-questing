@@ -2,7 +2,7 @@
    "path": [
       {
          "zone": "wetlands",
-         "experience": 0,
+         "experience": 27.55,
          "waypoints": [
             {
                "coords": { "x": 9, "y": 61 },
@@ -15,7 +15,7 @@
                "align": "right",
                "header": "Menethil",
                "ends": ["The Doomed Fleet", "The Third Fleet"],
-               "starts": ["The Third Fleet", "The Greenwarden", "Lightforge Iron", ["The Absent Minded Prospector", "P4"], "The Cursed Crew", "Digging Through the Ooze"],
+               "starts": ["The Third Fleet", "The Greenwarden", ["The Absent Minded Prospector", "P4"], "The Cursed Crew", "Digging Through the Ooze"],
                "special": ["Buy a Flagon of Mead", "Set Hearthstone"],
                "type": "hub"
             },
@@ -36,7 +36,7 @@
       },
       {
          "zone": "wetlands",
-         "experience": 0,
+         "experience": 27.58,
          "waypoints": [
             {
                "coords": { "x": 9, "y": 56 },
@@ -49,7 +49,7 @@
                "align": "right",
                "header": "Menethil Keep",
                "ends": ["Report to Captain Stoutfist"],
-               "starts": ["Fall of Dun Modr", "Report to Captain Stoutfist", "War Banners"],
+               "starts": ["Report to Captain Stoutfist", "War Banners"],
                "type": "quest"
             },
             {
@@ -84,7 +84,7 @@
       },
       {
          "zone": "wetlands",
-         "experience": 0,
+         "experience": 27.67,
          "waypoints": [
             {
                "coords": { "x": 14, "y": 35 },
@@ -132,7 +132,7 @@
       },
       {
          "zone": "wetlands",
-         "experience": 0,
+         "experience": 27.91,
          "waypoints": [
             {
                "coords": { "x": 28, "y": 45 },
@@ -179,7 +179,7 @@
       },
       {
          "zone": "wetlands",
-         "experience": 0,
+         "experience": 28.04,
          "waypoints": [
             {
                "coords": { "x": 37, "y": 42 },
@@ -207,7 +207,7 @@
       },
       {
          "zone": "wetlands",
-         "experience": 0,
+         "experience": 28.16,
          "waypoints": [
             {
                "coords": { "x": 33, "y": 52 },
@@ -255,14 +255,14 @@
       },
       {
          "zone": "wetlands",
-         "experience": 0,
+         "experience": 28.36,
          "waypoints": [
             {
                "coords": { "x": 11, "y": 59 },
                "align": "bottom",
                "header": "Menethil",
                "ends": [["The Absent Minded Prospector", "P4"], "The Cursed Crew", "Digging Through the Ooze"],
-               "starts": ["Lifting the Curse"],
+               "starts": ["Lifting the Curse", "Lightforge Iron"],
                "type": "hub"
             },
             {
@@ -282,7 +282,7 @@
                "align": "right",
                "header": "Menethil Keep",
                "ends": ["War Banners"],
-               "starts": ["Nek'Rosh's Gambit"],
+               "starts": ["Nek'Rosh's Gambit", "Fall of Dun Modr"],
                "type": "quest"
             },
             {
@@ -296,7 +296,7 @@
       },
       {
          "zone": "wetlands",
-         "experience": 0,
+         "experience": 28.68,
          "waypoints": [
             {
                "coords": { "x": 12, "y": 52 },
@@ -340,7 +340,7 @@
       },
       {
          "zone": "wetlands",
-         "experience": 0,
+         "experience": 28.87,
          "waypoints": [
             {
                "coords": { "x": 50, "y": 18 },
@@ -375,7 +375,7 @@
       },
       {
          "zone": "wetlands",
-         "experience": 0,
+         "experience": 29.06,
          "waypoints": [
             {
                "coords": { "x": 62, "y": 27 },

@@ -2,76 +2,51 @@
    "path": [
       {
          "zone": "barrens",
-         "experience": 36.44,
+         "experience": 36.61,
          "waypoints": [
             {
-               "coords": { "x": 63, "y": 37 },
-               "header": "Ratchet Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
-               "type": "flightpath"
-            },
-            {
                "coords": { "x": 63, "y": 36 },
+               "align": "top",
                "header": "Gazlowe",
-               "ends": ["Goblin Sponsorship P1"],
-               "starts": ["Goblin Sponsorship P2"],
-               "objectives": [],
+               "ends": [["Goblin Sponsorship", "P1"]],
+               "starts": [["Goblin Sponsorship", "P2"]],
                "type": "quest"
             },
             {
                "coords": { "x": 64, "y": 39 },
+               "align": "bottom",
                "header": "Ratchet Harbor",
                "ends": ["Wharfmaster Dizzywig"],
                "starts": ["Parts for Kravel"],
-               "objectives": [],
-               "type": "quest"
-            },
-            {
-               "coords": { "x": 64, "y": 39 },
-               "header": "Ratchet Harbor",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 36, "y": 28 },
-               "header": "Stonetalon Mountains Border",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
+               "align": "bottom",
+               "header": "Stonetalon Border",
                "type": "travel"
             }
          ]
       },
       {
          "zone": "stonetalon",
-         "experience": 36.48,
+         "experience": 36.64,
          "waypoints": [
             {
                "coords": { "x": 83, "y": 97 },
+               "align": "right",
                "header": "Barrens Border",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             },
             {
                "coords": { "x": 45, "y": 41 },
+               "align": "top",
                "header": "The Charred Vale",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             },
             {
                "coords": { "x": 30, "y": 78 },
                "header": "Desolace Border",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             }
          ]
