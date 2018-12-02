@@ -2,274 +2,233 @@
    "path": [
       {
          "zone": "redridge",
-         "experience": 51.74,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 31, "y": 59 },
                "header": "Redridge Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "flightpath"
             },
             {
                "coords": { "x": 30, "y": 44 },
                "header": "Magistrate Solomon",
-               "ends": ["The True Masters P1"],
-               "starts": ["The True Masters P2"],
-               "objectives": [],
+               "ends": [["The True Masters", "P1"]],
+               "starts": [["The True Masters", "P2"]],
                "type": "quest"
             }
          ]
       },
       {
          "zone": "redridge",
-         "experience": 51.77,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 30, "y": 44 },
                "header": "Magistrate Solomon",
-               "ends": ["The True Masters P1"],
-               "starts": ["The True Masters P2"],
-               "objectives": [],
+               "ends": [["The True Masters", "P1"]],
+               "starts": [["The True Masters", "P2"]],
                "type": "quest"
             },
             {
                "coords": { "x": 31, "y": 59 },
                "header": "Redridge Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Fly to Stormwind"],
+               "special": ["Fly to Stormwind"],
                "type": "flightpath"
             }
          ]
       },
       {
          "zone": "stormwind",
-         "experience": 51.77,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 66, "y": 62 },
+               "align": "right",
                "header": "Stormwind Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "flightpath"
             },
             {
                "coords": { "x": 78, "y": 18 },
+               "align": "top",
                "header": "Highlord Bolvar Fordragon",
-               "ends": ["The True Masters P2-3"],
-               "starts": ["The True Masters P3-4"],
-               "objectives": [],
+               "ends": [["The True Masters", "P2-3"]],
+               "starts": [["The True Masters", "P3-4"]],
                "type": "quest"
             },
             {
                "coords": { "x": 64, "y": 21 },
+               "align": "top",
                "header": "Brohann Caskbelly",
-               "ends": ["Into the Temple of Atal'Hakkar"],
-               "starts": [],
-               "objectives": [],
+               "ends": [["Into the Temple of Atal'Hakkar", "D"]],
                "type": "quest"
             }
          ]
       },
       {
          "zone": "stormwind",
-         "experience": 51.84,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 64, "y": 21 },
                "header": "Brohann Caskbelly",
-               "ends": ["Into the Temple of Atal'Hakkar"],
-               "starts": [],
-               "objectives": [],
+               "ends": [["Into the Temple of Atal'Hakkar", "D"]],
                "type": "quest"
             },
             {
                "coords": { "x": 53, "y": 60 },
+               "align": "bottom",
                "header": "Stormwind Auction House",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Buy 1x Mithin Casing"],
+               "special": ["Buy 1x Mithin Casing"],
                "type": "objective"
             },
             {
                "coords": { "x": 66, "y": 62 },
+               "align": "bottom",
                "header": "Stormwind Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Fly to Redridge"],
+               "special": ["Fly to Redridge"],
                "type": "flightpath"
             }
          ]
       },
       {
          "zone": "redridge",
-         "experience": 51.85,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 31, "y": 59 },
                "header": "Redridge Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "flightpath"
             },
             {
                "coords": { "x": 30, "y": 44 },
                "header": "Magistrate Solomon",
-               "ends": ["The True Masters P4"],
-               "starts": ["The True Masters P5"],
-               "objectives": [],
+               "ends": [["The True Masters", "P4"]],
+               "starts": [["The True Masters", "P5"]],
                "type": "quest"
             }
          ]
       },
       {
          "zone": "redridge",
-         "experience": 51.88,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 30, "y": 44 },
                "header": "Magistrate Solomon",
-               "ends": ["The True Masters P4"],
-               "starts": ["The True Masters P5"],
-               "objectives": [],
+               "ends": [["The True Masters", "P4"]],
+               "starts": [["The True Masters", "P5"]],
                "type": "quest"
             },
             {
                "coords": { "x": 31, "y": 59 },
                "header": "Redridge Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
+               "special": ["Fly to Burning Steppes"],
                "type": "flightpath"
             }
          ]
       },
       {
          "zone": "steppes",
-         "experience": 51.88,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 83, "y": 68 },
                "header": "Burning Steppes Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "flightpath"
             },
             {
-               "coords": { "x": 85, "y": 70 },
+               "coords": { "x": 86, "y": 70 },
+               "align": "right",
                "header": "Morgan's Vigil",
-               "ends": ["The True Masters P5"],
-               "starts": ["The True Masters P6"],
-               "objectives": [],
+               "ends": [["The True Masters", "P5"]],
+               "starts": [["The True Masters", "P6"]],
                "type": "hub"
             },
             {
                "coords": { "x": 66, "y": 22 },
+               "align": "right",
                "header": "Flame Crest",
-               "ends": [],
-               "starts": [],
-               "objectives": ["The True Masters P6"],
+               "objectives": [["The True Masters", "P6"]],
                "type": "objective"
             }
          ]
       },
       {
          "zone": "steppes",
-         "experience": 51.88,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 66, "y": 22 },
                "header": "Flame Crest",
-               "ends": [],
-               "starts": [],
-               "objectives": ["The True Masters P6"],
+               "objectives": [["The True Masters", "P6"]],
                "type": "objective"
             },
             {
                "coords": { "x": 85, "y": 70 },
                "header": "Morgan's Vigil",
-               "ends": ["The True Masters P6"],
-               "starts": [],
-               "objectives": ["Hearthstone to Ironforge"],
+               "ends": [["The True Masters", "P6"]],
+               "special": ["Hearthstone to Ironforge"],
                "type": "hub"
             }
          ]
       },
       {
          "zone": "ironforge",
-         "experience": 51.89,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 19, "y": 51 },
+               "align": "bottom",
                "header": "Ironforge Inn",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             },
             {
                "coords": { "x": 39, "y": 55 },
+               "align": "bottom",
                "header": "Royal Historian Archesonus",
-               "ends": ["The Smoldering Ruins of Thaurissan P2"],
-               "starts": [],
-               "objectives": [],
+               "ends": [["The Smoldering Ruins of Thaurissan", "P2"]],
                "type": "quest"
             },
             {
                "coords": { "x": 56, "y": 48 },
+               "align": "bottom",
                "header": "Ironforge Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Fly to Menethil"],
+               "special": ["Fly to Menethil"],
                "type": "flightpath"
             }
          ]
       },
       {
          "zone": "wetlands",
-         "experience": 51.93,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 9, "y": 60 },
+               "align": "right",
                "header": "Menethil Harbor Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "flightpath"
             },
             {
                "coords": { "x": 5, "y": 57 },
                "header": "Wetlands Harbor",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             }
          ]
       },
       {
          "zone": "dustwallow",
-         "experience": 51.93,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 71, "y": 56 },
+               "align": "right",
                "header": "Theramore Harbor",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             },
             {
                "coords": { "x": 67, "y": 51 },
                "header": "Theramore Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Fly to Tanaris"],
+               "special": ["Fly to Tanaris"],
                "type": "flightpath"
             }
          ]
@@ -281,15 +240,11 @@
             {
                "coords": { "x": 51, "y": 29 },
                "header": "Tanaris Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "flightpath"
             },
             {
                "coords": { "x": 52, "y": 28 },
                "header": "Gadgetzan",
-               "ends": [],
                "starts": ["Super Sticky", "Bungle in the Jungle"],
                "objectives": ["Set Hearthstone", "Buy some Noggenfogger"],
                "type": "hub"
@@ -298,15 +253,11 @@
                "coords": { "x": 67, "y": 23 },
                "header": "Steamwheedle Port",
                "ends": ["The God Hakkar"],
-               "starts": [],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 32, "y": 43 },
                "header": "Un'Goro Border",
-               "ends": [],
-               "starts": [],
                "objectives": ["Drink Noggenfogger for the slow fall buff & jump"],
                "type": "travel"
             }

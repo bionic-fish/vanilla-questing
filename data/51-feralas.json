@@ -2,54 +2,60 @@
    "path": [
       {
          "zone": "feralas",
-         "experience": 46.39,
+         "experience": 46.73,
          "waypoints": [
             {
                "coords": { "x": 89, "y": 46 },
+               "align": "top",
                "header": "Thalanaar Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "flightpath"
             },
             {
                "coords": { "x": 66, "y": 46 },
-               "header": "",
-               "ends": ["Freedom for All Creatures", "Doling Justice P1"],
-               "starts": ["Freedom for All Creatures", "Doling Justice P1-2"],
-               "objectives": ["Freedom for All Creatures", "Doling Justice P1"],
+               "align": "top",
+               "header": "The Moonweavers",
+               "ends": ["Freedom for All Creatures", ["Doling Justice", "P1"]],
+               "starts": ["Freedom for All Creatures", ["Doling Justice", "P1-2"]],
+               "objectives": ["Freedom for All Creatures", ["Doling Justice", "P1"]],
                "type": "quest"
             },
             {
                "coords": { "x": 46, "y": 49 },
                "header": "The Forgotten Coast",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "objective"
             },
             {
                "coords": { "x": 45, "y": 43 },
                "header": "Zorbin Fandazzle",
-               "ends": [],
                "starts": ["Zapped Giants", "Fuel for the Zapping"],
-               "objectives": [],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "feralas",
+         "experience": 46.86,
+         "waypoints": [
+            {
+               "coords": { "x": 45, "y": 43 },
+               "align": "top",
+               "header": "Zorbin Fandazzle",
+               "starts": ["Zapped Giants", "Fuel for the Zapping"],
                "type": "quest"
             },
             {
                "coords": { "x": 31, "y": 45 },
+               "align": "bottom",
                "header": "Feathermoon Stronghold",
-               "ends": ["The Missing Courier P1"],
-               "starts": ["In Search of Knowledge", "The High Wilderness", "The Sunken Temple", "The Mark of Quality", "The Ruins of Solarsal", "The Missing Courier P1", "The Missing Courier P2"],
-               "objectives": ["Set Hearthstone"],
+               "ends": [["The Missing Courier", "P1"]],
+               "starts": ["In Search of Knowledge", "The High Wilderness", "The Sunken Temple", "The Mark of Quality", "The Ruins of Solarsal", ["The Missing Courier", "P1-2"]],
+               "special": ["Set Hearthstone"],
                "type": "hub"
             },
             {
                "coords": { "x": 30, "y": 43 },
                "header": "Feathermoon Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Learn the Flightpath"],
+               "special": ["Learn the Flightpath"],
                "type": "flightpath"
             },
             {
@@ -57,98 +63,100 @@
                "header": "Solarsal Gazebo",
                "ends": ["The Ruins of Solarsal"],
                "starts": ["Return to Feathermoon Stronghold"],
-               "objectives": [],
                "type": "quest"
             }
          ]
       },
       {
          "zone": "feralas",
-         "experience": 46.57,
+         "experience": 46.92,
          "waypoints": [
             {
                "coords": { "x": 26, "y": 52 },
                "header": "Solarsal Gazebo",
                "ends": ["The Ruins of Solarsal"],
                "starts": ["Return to Feathermoon Stronghold"],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 30, "y": 46 },
+               "align": "right",
                "header": "Shandris Feathermoon",
-               "ends": ["Return to Feathermoon Stronghold", "Against the Hatecrest P1"],
-               "starts": ["Against the Hatecrest P1", "Against the Hatecrest P2"],
-               "objectives": [],
+               "ends": ["Return to Feathermoon Stronghold", ["Against the Hatecrest", "P1"]],
+               "starts": [["Against the Hatecrest", "P1-2"]],
                "type": "quest"
             },
             {
                "coords": { "x": 29, "y": 55 },
+               "align": "right",
                "header": "The Ruins of Solarsal",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Against the Hatecrest P2"],
+               "objectives": [["Against the Hatecrest", "P2"]],
                "type": "objective"
             }
          ]
       },
       {
          "zone": "feralas",
-         "experience": 46.63,
+         "experience": 46.97,
          "waypoints": [
             {
-               "coords": { "x": 30, "y": 46 },
-               "header": "Shandris Feathermoon",
-               "ends": ["Return to Feathermoon Stronghold", "Against the Hatecrest P1"],
-               "starts": ["Against the Hatecrest P1", "Against the Hatecrest P2"],
-               "objectives": [],
-               "type": "quest"
-            },
-            {
-               "coords": { "x": 30, "y": 46 },
-               "header": "Latronicus Moonspear",
-               "ends": ["Against the Hatecrest P2"],
-               "starts": ["Against Lord Shalzaru"],
-               "objectives": [],
-               "type": "quest"
-            },
-            {
-               "coords": { "x": 29, "y": 70 },
-               "header": "Shalzaru's Lair",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Against Lord Shalzaru"],
+               "coords": { "x": 29, "y": 55 },
+               "align": "right",
+               "header": "The Ruins of Solarsal",
+               "objectives": [["Against the Hatecrest", "P2"]],
                "type": "objective"
             },
             {
+               "coords": { "x": 30, "y": 46 },
+               "align": "right",
+               "header": "Latronicus Moonspear",
+               "ends": [["Against the Hatecrest", "P2"]],
+               "starts": ["Against Lord Shalzaru"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 25, "y": 64 },
+               "align": "left",
+               "header": "Isle of Dread",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 29, "y": 70 },
+               "align": "bottom",
+               "header": "Isle of Dread Cave",
+               "objectives": ["Against Lord Shalzaru"],
+               "type": "quest"
+            },
+            {
                "coords": { "x": 45, "y": 65 },
+               "align": "right",
                "header": "Wrecked Row Boat",
-               "ends": ["The Missing Courier P2"],
+               "ends": [["The Missing Courier", "P2"]],
                "starts": ["Boat Wreckage"],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 46, "y": 59 },
+               "align": "right",
                "header": "The Forgotten Coast",
-               "ends": [],
-               "starts": [],
+               "objectives": ["Zapped Giants", "Fuel for the Zapping"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "feralas",
+         "experience": 47.16,
+         "waypoints": [
+            {
+               "coords": { "x": 46, "y": 59 },
+               "header": "The Forgotten Coast",
                "objectives": ["Zapped Giants", "Fuel for the Zapping"],
                "type": "objective"
             },
             {
-               "coords": { "x": 47, "y": 54 },
+               "coords": { "x": 46, "y": 52 },
                "header": "The Forgotten Coast",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Zapped Giants", "Fuel for the Zapping"],
-               "type": "objective"
-            },
-            {
-               "coords": { "x": 45, "y": 48 },
-               "header": "The Forgotten Coast",
-               "ends": [],
-               "starts": [],
                "objectives": ["Zapped Giants", "Fuel for the Zapping"],
                "type": "objective"
             },
@@ -156,53 +164,48 @@
                "coords": { "x": 45, "y": 43 },
                "header": "Zorbin Fandazzle",
                "ends": ["Zapped Giants", "Fuel for the Zapping"],
-               "starts": [],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 55, "y": 56 },
+               "align": "bottom",
                "header": "Feral Scar Vale",
-               "ends": [],
-               "starts": [],
                "objectives": ["The Mark of Quality"],
                "type": "objective"
             },
             {
                "coords": { "x": 60, "y": 64 },
+               "align": "bottom",
                "header": "Ruins of Isildien",
-               "ends": [],
-               "starts": [],
                "objectives": ["The High Wilderness"],
                "type": "objective"
             },
             {
                "coords": { "x": 61, "y": 57 },
+               "align": "right",
                "header": "Ruins of Isildien",
-               "ends": [],
-               "starts": [],
-               "objectives": ["The High Wilderness", "Hearthstone to Feathermoon Stronghold"],
+               "objectives": ["The High Wilderness"],
+               "special": [ "Hearthstone to Feathermoon"],
                "type": "objective"
             }
          ]
       },
       {
          "zone": "feralas",
-         "experience": 46.96,
+         "experience": 47.33,
          "waypoints": [
             {
                "coords": { "x": 31, "y": 45 },
                "header": "Feathermoon Stronghold",
                "ends": ["The Mark of Quality", "The High Wilderness", "Against Lord Shalzaru", "Delivering the Relics", "Boat Wreckage", "The Knife Revealed", "Psychometric Reading"],
                "starts": ["Improved Quality", "Delivering the Relics", "The Knife Revealed", "Psychometric Reading", "The Woodpaw Gnolls"],
-               "objectives": [],
                "type": "hub"
             },
             {
                "coords": { "x": 53, "y": 32 },
+               "align": "top",
                "header": "Rage Scar Hold",
-               "ends": [],
-               "starts": ["Pristine Yeti Hide"],
+               "starts": [["Pristine Yeti Hide", "R"]],
                "objectives": ["Improved Quality"],
                "type": "quest"
             }
@@ -210,38 +213,34 @@
       },
       {
          "zone": "feralas",
-         "experience": 47.21,
+         "experience": 47.54,
          "waypoints": [
             {
                "coords": { "x": 53, "y": 32 },
+               "align": "top",
                "header": "Rage Scar Hold",
-               "ends": [],
-               "starts": ["Pristine Yeti Hide"],
+               "starts": [["Pristine Yeti Hide", "R"]],
                "objectives": ["Improved Quality"],
                "type": "quest"
             },
             {
                "coords": { "x": 31, "y": 45 },
+               "align": "bottom",
                "header": "Feathermoon Stronghold",
-               "ends": ["Pristine Yeti Hide", "Improved Quality"],
-               "starts": [],
-               "objectives": [],
+               "ends": [["Pristine Yeti Hide", "R"], "Improved Quality"],
                "type": "hub"
             },
             {
                "coords": { "x": 30, "y": 43 },
+               "align": "top",
                "header": "Feathermoon Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Fly to Thalanaar"],
+               "special": ["Fly to Thalanaar"],
                "type": "flightpath"
             },
             {
                "coords": { "x": 89, "y": 46 },
+               "align": "right",
                "header": "Thalanaar Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "flightpath"
             },
             {
@@ -249,7 +248,6 @@
                "header": "Large Leather Backpack",
                "ends": ["The Woodpaw Gnolls"],
                "starts": ["The Writhing Deep", "Thalanaar Delivery"],
-               "objectives": [],
                "type": "quest"
             },
             {
@@ -257,75 +255,69 @@
                "header": "The Writhing Deep",
                "ends": ["The Writhing Deep"],
                "starts": ["Freed From the Hive"],
-               "objectives": ["At the bottom of the Hive"],
+               "special": ["At the bottom of the Hive"],
                "type": "quest"
             }
          ]
       },
       {
          "zone": "feralas",
-         "experience": 47.34,
+         "experience": 47.67,
          "waypoints": [
             {
                "coords": { "x": 74, "y": 64 },
                "header": "The Writhing Deep",
                "ends": ["The Writhing Deep"],
                "starts": ["Freed From the Hive"],
-               "objectives": ["At the bottom of the Hive"],
+               "special": ["At the bottom of the Hive"],
                "type": "quest"
             },
             {
                "coords": { "x": 88, "y": 48 },
+               "align": "bottom",
                "header": "Falfindel Waywarder",
                "ends": ["Thalanaar Delivery"],
-               "starts": [],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 89, "y": 46 },
+               "align": "top",
                "header": "Thalanaar Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Fly to Feathermoon"],
+               "special": ["Fly to Feathermoon"],
                "type": "flightpath"
             },
             {
                "coords": { "x": 30, "y": 43 },
+               "align": "top",
                "header": "Feathermoon Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "flightpath"
             },
             {
                "coords": { "x": 31, "y": 45 },
+               "align": "bottom",
                "header": "Feathermoon Stronghold",
                "ends": ["Freed From the Hive", "A Hero's Welcome"],
-               "starts": ["A Hero's Welcome", "Rise of the Silithis"],
-               "objectives": [],
+               "starts": ["A Hero's Welcome", "Rise of the Silithid"],
                "type": "hub"
             }
          ]
       },
       {
          "zone": "feralas",
-         "experience": 47.48,
+         "experience": 47.82,
          "waypoints": [
             {
                "coords": { "x": 31, "y": 45 },
+               "align": "right",
                "header": "Feathermoon Stronghold",
                "ends": ["Freed From the Hive", "A Hero's Welcome"],
                "starts": ["A Hero's Welcome", "Rise of the Silithis"],
-               "objectives": [],
                "type": "hub"
             },
             {
                "coords": { "x": 30, "y": 43 },
                "header": "Feathermoon Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Fly to Tanaris"],
+               "special": ["Fly to Tanaris"],
                "type": "flightpath"
             }
          ]

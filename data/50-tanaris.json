@@ -2,29 +2,25 @@
    "path": [
       {
          "zone": "tanaris",
-         "experience": 45.22,
+         "experience": 45.44,
          "waypoints": [
             {
                "coords": { "x": 50, "y": 30 },
                "header": "Tanaris Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "flightpath"
             },
             {
                "coords": { "x": 52, "y": 28 },
+               "align": "top",
                "header": "Gadgetzan",
-               "ends": [],
                "starts": ["Thistleshrub Valley", "Handle With Care", "The Dunemaul Compound", "Wanted: Caliph Scorpidsting", "Wanted: Andre Firebeard", "Gadgetzan Water Survey", "The Thirsty Goblin", "Wastewander Justice", "Water Pouch Bounty"],
-               "objectives": ["Set Hearthstone"],
+               "special": ["Set Hearthstone"],
                "type": "hub"
             },
             {
                "coords": { "x": 60, "y": 23 },
+               "align": "top",
                "header": "Noonshade Ruins",
-               "ends": [],
-               "starts": [],
                "objectives": ["Wastewander Justice", "Water Pouch Bounty"],
                "type": "objective"
             }
@@ -32,91 +28,99 @@
       },
       {
          "zone": "tanaris",
-         "experience": 45.27,
+         "experience": 45.48,
          "waypoints": [
             {
                "coords": { "x": 60, "y": 23 },
+               "align": "top",
                "header": "Noonshade Ruins",
-               "ends": [],
-               "starts": [],
                "objectives": ["Wastewander Justice", "Water Pouch Bounty"],
                "type": "objective"
             },
             {
                "coords": { "x": 52, "y": 28 },
+               "align": "top",
                "header": "Gadgetzan",
                "ends": ["Wastewander Justice", "Water Pouch Bounty"],
                "starts": ["More Wastewander Justice"],
-               "objectives": [],
                "type": "hub"
             },
             {
                "coords": { "x": 39, "y": 29 },
+               "align": "top",
                "header": "Sandsorrow Watch",
-               "ends": [],
-               "starts": [],
                "objectives": ["Gadgetzan Water Survey"],
                "type": "objective"
             },
             {
                "coords": { "x": 61, "y": 38 },
+               "align": "top",
                "header": "Waterspring Field",
-               "ends": [],
-               "starts": [],
+               "objectives": ["Wanted: Caliph Scorpidsting", "More Wastewander Justice"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "tanaris",
+         "experience": 45.62,
+         "waypoints": [
+            {
+               "coords": { "x": 61, "y": 38 },
+               "header": "Waterspring Field",
                "objectives": ["Wanted: Caliph Scorpidsting", "More Wastewander Justice"],
                "type": "objective"
             },
             {
                "coords": { "x": 67, "y": 23 },
+               "align": "right",
                "header": "Steamwheedle Port",
                "ends": ["Stoley's Debt"],
                "starts": ["Pirate Hats Ahoy!", "Screecher Spirits", "Stoley's Shipment", "Southsea Shakedown"],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 72, "y": 47 },
+               "align": "right",
                "header": "Lost Rigger Cove",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Wanted: Andre Firebeard", "Pirate Hats Ahoy!", "Southsea Shake Down", "Stoley's Shipment", "Hearthstone to Gadgetzan"],
+               "objectives": ["Wanted: Andre Firebeard", "Pirate Hats Ahoy!", "Southsea Shake Down", "Stoley's Shipment"],
+               "special": ["Hearthstone to Gadgetzan"],
                "type": "objective"
             }
          ]
       },
       {
          "zone": "tanaris",
-         "experience": 45.56,
+         "experience": 45.81,
          "waypoints": [
             {
                "coords": { "x": 52, "y": 28 },
+               "align": "top",
                "header": "Gadgetzan",
                "ends": ["Gadgetzan Water Survey", "More Wastewander Justice", "Wanted: Caliph Scorpidsting"],
                "starts": ["Noxious Lair Investigation"],
-               "objectives": [],
                "type": "hub"
             },
             {
                "coords": { "x": 67, "y": 23 },
+               "align": "top",
                "header": "Steamwheedle Port",
                "ends": ["Pirate Hats Ahoy!", "Stoley's Shipment", "Southsea Shakedown"],
                "starts": ["Deliver To MacKinley"],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 53, "y": 46 },
+               "align": "bottom",
                "header": "Marvon",
-               "ends": [],
                "starts": ["Gahz'Ridian"],
-               "objectives": ["Equip the Helmet"],
+               "special": ["Equip the Helmet"],
                "type": "quest"
             },
             {
                "coords": { "x": 36, "y": 42 },
+               "align": "bottom",
                "header": "The Noxious Lair",
-               "ends": [],
-               "starts": [],
                "objectives": ["Noxious Lair Investigation"],
                "type": "objective"
             }
@@ -124,92 +128,84 @@
       },
       {
          "zone": "tanaris",
-         "experience": 45.93,
+         "experience": 46.19,
          "waypoints": [
             {
                "coords": { "x": 36, "y": 42 },
+               "align": "top",
                "header": "The Noxious Lair",
-               "ends": [],
-               "starts": [],
                "objectives": ["Noxious Lair Investigation"],
                "type": "objective"
             },
             {
                "coords": { "x": 52, "y": 28 },
+               "align": "top",
                "header": "Gadgetzan",
                "ends": ["Noxious Lair Investigation"],
                "starts": ["The Shrimshank Redemption"],
-               "objectives": [],
                "type": "hub"
             },
             {
                "coords": { "x": 41, "y": 56 },
+               "align": "right",
                "header": "Dunemaul Compound",
-               "ends": [],
-               "starts": [],
                "objectives": ["The Dunemaul Compound"],
                "type": "objective"
             },
             {
                "coords": { "x": 29, "y": 65 },
+               "align": "top",
                "header": "Thistleshrub Valley",
-               "ends": [],
-               "starts": [],
                "objectives": ["The Thirsty Goblin", "Thistleshrub Valley"],
                "type": "objective"
             },
             {
                "coords": { "x": 41, "y": 73 },
+               "align": "bottom",
                "header": "Southmoon Ruins",
-               "ends": [],
-               "starts": [],
                "objectives": ["Ghaz'Ridian"],
                "type": "objective"
             },
             {
                "coords": { "x": 47, "y": 66 },
+               "align": "top",
                "header": "Eastmoon Ruins",
-               "ends": [],
-               "starts": [],
                "objectives": ["Ghaz'Ridian"],
                "type": "objective"
             },
             {
                "coords": { "x": 55, "y": 71 },
+               "align": "right",
                "header": "The Gaping Chasm",
-               "ends": [],
-               "starts": [],
-               "objectives": ["The Shrimshank Redemption", "Hearthstone to Gadgetzan"],
+               "objectives": ["The Shrimshank Redemption"],
+               "special": ["Hearthstone to Gadgetzan"],
                "type": "objective"
             }
          ]
       },
       {
          "zone": "tanaris",
-         "experience": 46.12,
+         "experience": 46.45,
          "waypoints": [
             {
                "coords": { "x": 52, "y": 28 },
+               "align": "right",
                "header": "Gadgetzan",
-               "ends": ["The Shrimshank Redemption", "Insect Part Analysis P1", "Insect Part Analysis P2", "The Thirsty Goblin", "Thistleshrub Valley", "In Good Taste", "The Dunemaul Compound"],
-               "starts": ["Insect Part Analysis P1", "Insect Part Analysis P2", "Insect Part Analysis P3", "In Good Taste", "Sprinkle's Secret Ingredient"],
-               "objectives": [],
+               "ends": ["The Shrimshank Redemption", ["Insect Part Analysis", "P1-2"], "The Thirsty Goblin", "Thistleshrub Valley", "In Good Taste", "The Dunemaul Compound"],
+               "starts": [["Insect Part Analysis", "P1-3"], "In Good Taste", "Sprinkle's Secret Ingredient"],
                "type": "hub"
             },
             {
                "coords": { "x": 53, "y": 46 },
                "header": "Marvon",
                "ends": ["Gahz'Ridian"],
-               "starts": [],
-               "objectives": ["Equip your Helmet"],
+               "special": ["Equip your Helmet"],
                "type": "quest"
             },
             {
-               "coords": { "x": 51, "y": 29 },
+               "coords": { "x": 50, "y": 29 },
                "header": "Tanaris Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Fly to Feralas"],
+               "special": ["Fly to Feralas"],
                "type": "flightpath"
             }
          ]

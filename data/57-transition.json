@@ -2,292 +2,266 @@
    "path": [
       {
          "zone": "desolace",
-         "experience": 50.05,
+         "experience": 50.54,
          "waypoints": [
             {
                "coords": { "x": 67, "y": 10 },
+               "align": "right",
                "header": "Nijel's Point",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "hub"
             },
             {
                "coords": { "x": 65, "y": 11 },
                "header": "Nijel's Point Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Fly to Tanaris"],
+               "special": ["Fly to Tanaris"],
                "type": "flightpath"
             }
          ]
       },
       {
          "zone": "tanaris",
-         "experience": 50.05,
+         "experience": 50.54,
          "waypoints": [
             {
                "coords": { "x": 51, "y": 30 },
                "header": "Tanaris Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "flightpath"
             },
             {
                "coords": { "x": 67, "y": 23 },
+               "align": "right",
                "header": "Steamwheedle Port",
                "ends": ["The Ancient Egg"],
-               "starts": ["The God Hakkar"],
-               "objectives": [],
+               "starts": ["The God Hakkar", "Yuka Screwpigot"],
                "type": "quest"
             }
          ]
       },
       {
          "zone": "tanaris",
-         "experience": 50.08,
+         "experience": 50.63,
          "waypoints": [
             {
                "coords": { "x": 67, "y": 23 },
+               "align": "right",
                "header": "Steamwheedle Port",
                "ends": ["The Ancient Egg"],
                "starts": ["The God Hakkar"],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 51, "y": 30 },
                "header": "Tanaris Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Fly to Ratchet"],
+               "special": ["Fly to Ratchet"],
                "type": "flightpath"
             }
          ]
       },
       {
          "zone": "barrens",
-         "experience": 50.08,
+         "experience": 50.63,
          "waypoints": [
             {
                "coords": { "x": 63, "y": 37 },
                "header": "Ratchet Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "flightpath"
             },
             {
-               "coords": { "x": 64, "y": 39 },
+               "coords": { "x": 65, "y": 39 },
+               "align": "right",
                "header": "Ratchet Harbor",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             }
          ]
       },
       {
          "zone": "stv",
-         "experience": 50.08,
+         "experience": 50.63,
          "waypoints": [
             {
                "coords": { "x": 26, "y": 73 },
+               "align": "top",
                "header": "Booty Bay Harbor",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             },
             {
                "coords": { "x": 34, "y": 76 },
+               "align": "top",
                "header": "Half-Buried Bottle",
-               "ends": [],
-               "starts": ["Message in a Bottle"],
-               "objectives": [],
+               "starts": [["Message in a Bottle", "P1"]],
+               "special": ["Plenty of bottles on the Beach"],
                "type": "quest"
             },
             {
                "coords": { "x": 39, "y": 81 },
+               "align": "top",
                "header": "Princess Poobah",
-               "ends": ["Message in a Bottle P1"],
-               "starts": ["Message in a Bottle P2"],
-               "objectives": [],
+               "ends": [["Message in a Bottle", "P1"]],
+               "starts": [["Message in a Bottle", "P2"]],
                "type": "quest"
             },
             {
                "coords": { "x": 41, "y": 84 },
+               "align": "right",
                "header": "Januero Isle",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Message in a Bottle P2"],
+               "objectives": [["Message in a Bottle", "P2"]],
                "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "stv",
+         "experience": 50.67,
+         "waypoints": [
+            {
+               "coords": { "x": 41, "y": 84 },
+               "align": "right",
+               "header": "Januero Isle",
+               "objectives": [["Message in a Bottle", "P2"]],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 39, "y": 81 },
+               "align": "top",
+               "header": "Princess Poobah",
+               "ends": [["Message in a Bottle", "P2"]],
+               "type": "quest"
             },
             {
                "coords": { "x": 25, "y": 85 },
                "header": "Swim Around",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             },
             {
                "coords": { "x": 23, "y": 72 },
                "header": "Mok'Rash",
-               "ends": [],
                "starts": ["The Monogrammed Sash"],
-               "objectives": ["Drop"],
+               "special": ["Kill & Loot the Giant"],
                "type": "quest"
             }
          ]
       },
       {
          "zone": "stv",
-         "experience": 0,
+         "experience": 50.71,
          "waypoints": [
             {
                "coords": { "x": 23, "y": 72 },
                "header": "Mok'Rash",
-               "ends": [],
                "starts": ["The Monogrammed Sash"],
-               "objectives": ["Drop"],
+               "special": ["Kill & Loot the Giant"],
                "type": "quest"
             },
             {
                "coords": { "x": 26, "y": 73 },
+               "align": "top",
                "header": "Captain Hecklebury Smotts",
                "ends": ["The Monogrammed Sash", "Sprogger"],
                "starts": ["Sprogger"],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 28, "y": 78 },
+               "align": "right",
                "header": "Booy Bay Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Fly to Stormwind"],
+               "special": ["Fly to Stormwind"],
                "type": "flightpath"
             }
          ]
       },
       {
          "zone": "stormwind",
-         "experience": 0,
+         "experience": 50.74,
          "waypoints": [
             {
                "coords": { "x": 66, "y": 62 },
                "header": "Stormwind Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "flightpath"
             },
             {
                "coords": { "x": 64, "y": 21 },
                "header": "Brohann Caskbelly",
                "ends": ["Rhapsody's Tale"],
-               "starts": ["Into the Temple of Atal'Hakkar"],
-               "objectives": [],
+               "starts": [["Into the Temple of Atal'Hakkar", "D"]],
                "type": "quest"
             }
          ]
       },
       {
          "zone": "stormwind",
-         "experience": 50.11,
+         "experience": 50.75,
          "waypoints": [
             {
                "coords": { "x": 64, "y": 21 },
+               "align": "right",
                "header": "Brohann Caskbelly",
                "ends": ["Rhapsody's Tale"],
-               "starts": ["Into the Temple of Atal'Hakkar"],
-               "objectives": [],
+               "starts": [["Into the Temple of Atal'Hakkar", "D"]],
                "type": "quest"
             },
             {
                "coords": { "x": 53, "y": 60 },
                "header": "Stormwind Auction House",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Buy x15 Silk Cloth"],
+               "special": ["Buy x15 Silk Cloth"],
                "type": "objective"
             },
             {
                "coords": { "x": 66, "y": 62 },
+               "align": "right",
                "header": "Stormwind Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Fly to Redridge"],
+               "special": ["Fly to Redridge"],
                "type": "flightpath"
             }
          ]
       },
       {
          "zone": "redridge",
-         "experience": 50.11,
+         "experience": 50.75,
          "waypoints": [
             {
                "coords": { "x": 31, "y": 59 },
                "header": "Redridge Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "flightpath"
             },
             {
                "coords": { "x": 48, "y": 11 },
                "header": "Burning Steppes Border",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             }
          ]
       },
       {
          "zone": "steppes",
-         "experience": 50.11,
+         "experience": 50.75,
          "waypoints": [
             {
                "coords": { "x": 79, "y": 80 },
                "header": "Redridge Mountains Border",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             },
             {
                "coords": { "x": 84, "y": 68 },
+               "align": "right",
                "header": "Burning Steppes Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Learn the Flightpath"],
+               "special": ["Learn the Flightpath"],
                "type": "flightpath"
             },
             {
                "coords": { "x": 66, "y": 22 },
+               "align": "right",
                "header": "Flame Crest",
                "ends": ["Yuka Screwpigot"],
                "starts": ["Tablet of the Seven", "Broodling Essence"],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 29, "y": 37 },
                "header": "Blackrock Mountain",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             },
             {
                "coords": { "x": 28, "y": 27 },
                "header": "Blackrock Mountain",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             }
          ]

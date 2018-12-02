@@ -2,178 +2,169 @@
    "path": [
       {
          "zone": "ironforge",
-         "experience": 48.29,
+         "experience": 48.78,
          "waypoints": [
             {
                "coords": { "x": 56, "y": 48 },
                "header": "Ironforge Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "flightpath"
             },
             {
                "coords": { "x": 75, "y": 12 },
+               "align": "top",
                "header": "The Library",
-               "ends": ["Portents of Uldum P1"],
-               "starts": ["Portents of Uldum P1", "A Little Slime Goes a Long Way", "Seeing What Happens"],
-               "objectives": [],
+               "ends": ["Portents of Uldum"],
+               "starts": ["Portents of Uldum", "Seeing What Happens", "Passing the Burden"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 31, "y": 5 },
+               "align": "bottom",
+               "header": "Tymor",
+               "ends": ["Passing the Burden"],
                "type": "quest"
             }
          ]
       },
       {
          "zone": "ironforge",
-         "experience": 48.31,
+         "experience": 48.80,
          "waypoints": [
             {
-               "coords": { "x": 75, "y": 12 },
-               "header": "The Library",
-               "ends": ["Portents of Uldum P1"],
-               "starts": ["Portents of Uldum P1", "A Little Slime Goes a Long Way", "Seeing What Happens"],
-               "objectives": [],
+               "coords": { "x": 31, "y": 5 },
+               "header": "Tymor",
+               "ends": ["Passing the Burden"],
                "type": "quest"
             },
             {
                "coords": { "x": 56, "y": 48 },
+               "align": "right",
                "header": "Ironforge Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Fly to Blasted Lands"],
+               "special": ["Fly to Blasted Lands"],
                "type": "flightpath"
             }
          ]
       },
       {
          "zone": "blasted",
-         "experience": 48.31,
+         "experience": 48.80,
          "waypoints": [
             {
                "coords": { "x": 66, "y": 24 },
                "header": "Blasted Lands Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "flightpath"
             },
             {
                "coords": { "x": 67, "y": 19 },
                "header": "Nethergarde Tower",
                "ends": ["Thadius Grimshade"],
-               "starts": ["Nekrum's Medallion"],
-               "objectives": [],
+               "starts": [["Nekrum's Medallion", "D"]],
                "type": "quest"
             }
          ]
       },
       {
          "zone": "blasted",
-         "experience": 48.33,
+         "experience": 48.81,
          "waypoints": [
             {
                "coords": { "x": 67, "y": 19 },
                "header": "Nethergarde Tower",
                "ends": ["Thadius Grimshade"],
-               "starts": ["Nekrum's Medallion"],
-               "objectives": [],
+               "starts": [["Nekrum's Medallion", "D"]],
                "type": "quest"
             },
             {
                "coords": { "x": 66, "y": 24 },
                "header": "Blasted Lands Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Fly to Booty Bay"],
+               "special": ["Fly to Booty Bay"],
                "type": "flightpath"
             }
          ]
       },
       {
          "zone": "stv",
-         "experience": 48.33,
+         "experience": 48.81,
          "waypoints": [
             {
                "coords": { "x": 28, "y": 78 },
+               "align": "right",
                "header": "Booy Bay Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "flightpath"
             },
             {
                "coords": { "x": 27, "y": 77 },
                "header": "Booty Bay",
                "ends": ["Whiskey Slim's Lost Grog", "Deliver to MacKinley"],
-               "starts": [],
-               "objectives": [],
                "type": "hub"
             },
             {
                "coords": { "x": 26, "y": 73 },
                "header": "Booty Bay Harbor",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             }
          ]
       },
       {
          "zone": "barrens",
-         "experience": 48.39,
+         "experience": 48.89,
          "waypoints": [
             {
                "coords": { "x": 64, "y": 39 },
+               "align": "right",
                "header": "Ratchet Harbor",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             },
             {
                "coords": { "x": 63, "y": 37 },
                "header": "Ratchet Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Fly to Tanaris"],
+               "special": ["Fly to Tanaris"],
                "type": "flightpath"
             }
          ]
       },
       {
          "zone": "tanaris",
-         "experience": 48.39,
+         "experience": 48.89,
          "waypoints": [
             {
-               "coords": { "x": 51, "y": 29 },
+               "coords": { "x": 50, "y": 29 },
                "header": "Tanaris Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "flightpath"
             },
             {
                "coords": { "x": 52, "y": 28 },
+               "align": "top",
                "header": "Gadgetzan",
-               "ends": ["Sprinkle's Secret Ingredient", "Noggenfogger Elixir"],
-               "starts": ["Delivery for Marin", "Noggenfogger Elixir", "Divino-matic Rod", "Troll Temper", "Scarab Shells"],
-               "objectives": ["Set Hearthstone"],
+               "ends": ["Sprinkle's Secret Ingredient", "Noggenfogger Elixir", "Delivery for Marin"],
+               "starts": ["Delivery for Marin", "Noggenfogger Elixir", ["Divino-matic Rod", "D"], ["Troll Temper", "D"], ["Scarab Shells", "D"]],
+               "special": ["Set Hearthstone"],
                "type": "hub"
             },
             {
                "coords": { "x": 49, "y": 36 },
                "header": "Abyssal Sands",
-               "ends": [],
-               "starts": [],
                "objectives": ["Rhapsody's Kalimdor Kocktail"],
+               "special": ["Roc Gizzard"],
                "type": "objective"
             },
             {
                "coords": { "x": 67, "y": 23 },
+               "align": "right",
                "header": "Steamwheedle Port",
-               "ends": [],
-               "starts": ["The Prophecy of Mosh'Aru", "Yuka Screwpigot"],
-               "objectives": [],
+               "starts": [["The Prophecy of Mosh'Aru", "D"]],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "tanaris",
+         "experience": 48.94,
+         "waypoints": [
+            {
+               "coords": { "x": 67, "y": 23 },
+               "align": "right",
+               "header": "Steamwheedle Port",
                "type": "quest"
             },
             {
@@ -181,305 +172,304 @@
                "header": "Uldum Pedestal",
                "ends": ["Seeing What Happens", "The Stone Watcher"],
                "starts": ["The Stone Watcher", "Return to Ironforge"],
-               "objectives": ["Hearthstone to Gadgetzan"],
+               "special": ["Hearthstone to Gadgetzan"],
                "type": "quest"
-            }
-         ]
-      },
-      {
-         "zone": "tanaris",
-         "experience": 48.54,
-         "waypoints": [
+            },
             {
                "coords": { "x": 52, "y": 28 },
+               "align": "right",
                "header": "Gadgetzan",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "hub"
             },
             {
                "coords": { "x": 39, "y": 20 },
+               "align": "bottom",
                "header": "Zul'Farrak",
-               "ends": [],
-               "starts": [],
-               "objectives": ["With 7 quests.", "Hearthstone to Gadgetzan"],
+               "objectives": [["The Prophecy of Mosh'Aru", "D"], ["Divino-matic Rod", "D"], ["Troll Temper", "D"], ["Scarab Shells", "D"], ["Nekrum's Medallion", "D"], ["Gahz'rilla", "D"], ["Tiara of the Deep", "D"]],
+               "special": ["Hearthstone to Gadgetzan", "Youtube Video"],
                "type": "quest"
             }
          ]
       },
       {
          "zone": "tanaris",
-         "experience": 48.61,
+         "experience": 49.16,
          "waypoints": [
             {
                "coords": { "x": 52, "y": 28 },
                "header": "Gadgetzan",
                "ends": ["Troll Temper", "Scarab Shells", "Divino-matic Rod"],
-               "starts": [],
-               "objectives": [],
                "type": "hub"
             },
             {
+               "coords": { "x": 51, "y": 22 },
+               "header": "Thousand Needles Border",
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "needles",
+         "experience": 49.33,
+         "waypoints": [
+            {
+               "coords": { "x": 75, "y": 96 },
+               "header": "Tanaris Border",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 79, "y": 77 },
+               "header": "The Shimmering Flats",
+               "ends": ["Ghaz'rilla"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "needles",
+         "experience": 49.41,
+         "waypoints": [
+            {
+               "coords": { "x": 79, "y": 77 },
+               "header": "The Shimmering Flats",
+               "ends": ["Ghaz'rilla"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 75, "y": 96 },
+               "header": "Tanaris Border",
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "tanaris",
+         "experience": 49.41,
+         "waypoints": [
+            {
+               "coords": { "x": 51, "y": 22 },
+               "header": "Thousand Needles Border",
+               "type": "travel"
+            },
+            {
                "coords": { "x": 67, "y": 23 },
+               "align": "right",
                "header": "Steamwheedle Port",
                "ends": ["The Prophecy of Mosh'Aru"],
                "starts": ["The Ancient Egg"],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 51, "y": 30 },
                "header": "Tanaris Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Fly to Theramore"],
+               "special": ["Fly to Theramore"],
                "type": "flightpath"
             }
          ]
       },
       {
          "zone": "dustwallow",
-         "experience": 48.86,
+         "experience": 49.48,
          "waypoints": [
             {
                "coords": { "x": 67, "y": 51 },
+               "align": "right",
                "header": "Theramore Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "flightpath"
             },
             {
                "coords": { "x": 66, "y": 49 },
                "header": "Theramore Tower",
-               "ends": [],
-               "starts": ["Shadowshard Fragments"],
-               "objectives": [],
+               "starts": [["Shadowshard Fragments", "D"]],
                "type": "quest"
             },
             {
                "coords": { "x": 46, "y": 57 },
                "header": "Tabetha",
                "ends": ["Tiara of the Deep"],
-               "starts": [],
-               "objectives": [],
                "type": "quest"
             }
          ]
       },
       {
          "zone": "dustwallow",
-         "experience": 48.93,
+         "experience": 49.54,
          "waypoints": [
             {
                "coords": { "x": 46, "y": 57 },
                "header": "Tabetha",
                "ends": ["Tiara of the Deep"],
-               "starts": [],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 67, "y": 51 },
+               "align": "right",
                "header": "Theramore Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Fly to Desolace"],
+               "special": ["Fly to Desolace"],
                "type": "flightpath"
             }
          ]
       },
       {
          "zone": "desolace",
-         "experience": 48.93,
+         "experience": 49.54,
          "waypoints": [
             {
                "coords": { "x": 65, "y": 11 },
                "header": "Desolace Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "flightpath"
             },
             {
                "coords": { "x": 67, "y": 10 },
+               "align": "right",
                "header": "Nijel's Point",
-               "ends": [],
-               "starts": ["Vyletongue Corruption", "Corruption of Earth and Seed"],
-               "objectives": ["Set Hearthstone"],
+               "starts": [["Vyletongue Corruption", "D"], ["Corruption of Earth and Seed", "D"]],
+               "special": ["Set Hearthstone"],
                "type": "hub"
             },
             {
                "coords": { "x": 62, "y": 40 },
+               "align": "right",
                "header": "Willow",
-               "ends": [],
-               "starts": ["Twisted Evils"],
-               "objectives": [],
+               "starts": [["Twisted Evils", "D"]],
                "type": "quest"
             },
             {
                "coords": { "x": 50, "y": 87 },
+               "align": "right",
                "header": "Centaur Pariah",
-               "ends": [],
-               "starts": ["The Pariah's Instructions"],
-               "objectives": [],
+               "starts": [["The Pariah's Instructions", "D"]],
                "type": "quest"
             },
             {
                "coords": { "x": 30, "y": 62 },
                "header": "Maraudon",
-               "ends": [],
-               "starts": ["With 5+3 quests"],
-               "objectives": ["Camp Out"],
+               "starts": [["Legends of Maraudon", "D"], ["Seed of Life", "D"]],
+               "objectives": [["Shadowshard Fragments", "D"], ["Vyletongue Corruption", "D"], ["Corruption of Earth and Seed", "D"], ["Twisted Evils", "D"], ["The Pariah's Instructions", "D"]],
+               "special": ["Camp Out", "Youtube Video"],
                "type": "objective"
             }
          ]
       },
       {
          "zone": "desolace",
-         "experience": 49.15,
+         "experience": 49.76,
          "waypoints": [
             {
                "coords": { "x": 30, "y": 62 },
                "header": "Maraudon",
-               "ends": [],
-               "starts": ["With 5+3 quests"],
-               "objectives": ["Camp Out"],
+               "starts": [["Legends of Maraudon", "D"], ["Seed of Life", "D"]],
+               "objectives": [["Shadowshard Fragments", "D"], ["Vyletongue Corruption", "D"], ["Corruption of Earth and Seed", "D"], ["Twisted Evils", "D"], ["The Pariah's Instructions", "D"]],
+               "special": ["Camp Out", "Youtube Video"],
                "type": "objective"
             },
             {
                "coords": { "x": 50, "y": 87 },
+               "align": "right",
                "header": "Centaur Pariah",
-               "ends": [],
-               "starts": ["The Pariah's Instructions"],
-               "objectives": [],
+               "ends": [["The Pariah's Instructions", "D"]],
                "type": "quest"
             },
             {
                "coords": { "x": 42, "y": 96 },
                "header": "Feralas Border",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "objective"
             }
          ]
       },
       {
          "zone": "feralas",
-         "experience": 49.21,
+         "experience": 49.82,
          "waypoints": [
             {
                "coords": { "x": 45, "y": 3 },
                "header": "Desolace Border",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             },
             {
                "coords": { "x": 44, "y": 12 },
                "header": "Ruins of Ravenwind",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Rhapsody's Kalimdor Kocktail", "Hearthstone to Desolace"],
+               "objectives": ["Rhapsody's Kalimdor Kocktail"],
+               "special": ["Groddoc Liver", "Ironfur Liver", "Hearthstone to Desolace"],
                "type": "objective"
             }
          ]
       },
       {
          "zone": "desolace",
-         "experience": 49.23,
+         "experience": 49.84,
          "waypoints": [
             {
                "coords": { "x": 67, "y": 10 },
+               "align": "right",
                "header": "Nijel's Point",
-               "ends": [],
-               "starts": ["Vyletongue Corruption", "Corruption of Earth and Seed"],
-               "objectives": [],
+               "ends": [["Vyletongue Corruption", "D"], ["Corruption of Earth and Seed", "D"]],
                "type": "quest"
             },
             {
                "coords": { "x": 62, "y": 40 },
                "header": "Willow",
-               "ends": [],
-               "starts": ["Twisted Evils"],
-               "objectives": [],
+               "ends": [["Twisted Evils", "D"]],
                "type": "quest"
             },
             {
                "coords": { "x": 65, "y": 11 },
                "header": "Nijel's Point Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Fly to Theramore"],
+               "special": ["Fly to Theramore"],
                "type": "flightpath"
             }
          ]
       },
       {
          "zone": "dustwallow",
-         "experience": 49.43,
+         "experience": 50.03,
          "waypoints": [
             {
                "coords": { "x": 67, "y": 51 },
+               "align": "right",
                "header": "Dustwallow Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "flightpath"
             },
             {
                "coords": { "x": 66, "y": 49 },
                "header": "Theramore Tower",
-               "ends": ["Shadowshard Fragments"],
-               "starts": [],
-               "objectives": [],
+               "ends": [["Shadowshard Fragments", "D"]],
                "type": "quest"
             }
          ]
       },
       {
          "zone": "dustwallow",
-         "experience": 49.47,
+         "experience": 50.06,
          "waypoints": [
             {
                "coords": { "x": 66, "y": 49 },
                "header": "Theramore Tower",
-               "ends": ["Shadowshard Fragments"],
-               "starts": [],
-               "objectives": [],
+               "ends": [["Shadowshard Fragments", "D"]],
                "type": "quest"
             },
             {
                "coords": { "x": 71, "y": 56 },
+               "align": "right",
                "header": "Theramore Harbor",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             }
          ]
       },
       {
          "zone": "wetlands",
-         "experience": 49.47,
+         "experience": 50.06,
          "waypoints": [
             {
                "coords": { "x": 5, "y": 57 },
                "header": "Wetlands Harbor",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             },
             {
                "coords": { "x": 9, "y": 60 },
-               "header": "Menethil Harbor Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Fly to Blasted Lands"],
+               "align": "right",
+               "header": "Menethil Flightpath",
+               "special": ["Fly to Blasted Lands"],
                "type": "flightpath"
             }
          ]

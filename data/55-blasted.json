@@ -2,108 +2,107 @@
    "path": [
       {
          "zone": "blasted",
-         "experience": 49.47,
+         "experience": 50.06,
          "waypoints": [
             {
                "coords": { "x": 66, "y": 24 },
+               "align": "right",
                "header": "Blasted Lands Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "flightpath"
             },
             {
                "coords": { "x": 67, "y": 19 },
+               "align": "right",
                "header": "Nethergarde Keep",
                "ends": ["Nekrum's Medallion", "The Divination"],
-               "starts": ["Petty Squabbles", "The Divination", "Return to the Hinterlands"],
-               "objectives": [],
+               "starts": ["The Divination", "Return to the Hinterlands"],
                "type": "hub"
             },
             {
                "coords": { "x": 51, "y": 14 },
+               "align": "top",
                "header": "Bloof Elf Encampment",
-               "ends": [],
                "starts": ["Snickerfang Jowls", "A Boar's Vitality", "The Decisive Striker", "The Basilisk's Bite", "Vulture's Vigor"],
-               "objectives": ["14x Vulture Gizzard", "5x Snickerfang Jowl", "11x Basilisk Brain", "6x Blasted Boar Lung", "6x Scorpok Pincer"],
+               "special": ["14x Vulture Gizzard", "5x Snickerfang Jowl", "11x Basilisk Brain", "6x Blasted Boar Lung", "6x Scorpok Pincer"],
                "type": "quest"
             },
             {
                "coords": { "x": 48, "y": 19 },
-               "header": "",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Scorpions"],
-               "type": "objective"
-            },
-            {
-               "coords": { "x": 46, "y": 35 },
-               "header": "",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Hyenas"],
-               "type": "objective"
-            },
-            {
-               "coords": { "x": 52, "y": 36 },
-               "header": "Kum'Isha the Collector",
-               "ends": [],
-               "starts": ["Everything Counts In Large Amounts"],
-               "objectives": [],
-               "type": "quest"
-            },
-            {
-               "coords": { "x": 55, "y": 41 },
-               "header": "",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Birds"],
-               "type": "objective"
-            },
-            {
-               "coords": { "x": 61, "y": 42 },
-               "header": "",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Boards and Basilisks"],
-               "type": "objective"
-            },
-            {
-               "coords": { "x": 61, "y": 28 },
-               "header": "",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Boards and Basilisks"],
+               "header": "Placeholder",
+               "special": ["Scorpok Pincer"],
                "type": "objective"
             }
          ]
       },
       {
          "zone": "blasted",
-         "experience": 49.66,
+         "experience": 50.09,
+         "waypoints": [
+            {
+               "coords": { "x": 48, "y": 19 },
+               "header": "Placeholder",
+               "special": ["Scorpok Pincer"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 46, "y": 35 },
+               "header": "Placeholder",
+               "special": ["Snickerfang Jowl"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 52, "y": 36 },
+               "align": "top",
+               "header": "Kum'Isha the Collector",
+               "starts": ["Everything Counts In Large Amounts"],
+               "ends": ["Everything Counts In Large Amounts"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 55, "y": 41 },
+               "align": "bottom",
+               "header": "Placeholder",
+               "special": ["Vulture Gizzard"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 61, "y": 42 },
+               "align": "bottom",
+               "header": "Placeholder",
+               "special": ["Basilisk Brain", "Blasted Boar Lung"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 61, "y": 28 },
+               "align": "right",
+               "header": "Placeholder",
+               "special": ["Basilisk Brain", "Blasted Boar Lung"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "blasted",
+         "experience": 50.25,
          "waypoints": [
             {
                "coords": { "x": 61, "y": 28 },
-               "header": "",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Boards and Basilisks"],
+               "align": "bottom",
+               "header": "Placeholder",
+               "special": ["Basilisk Brain", "Blasted Boar Lung"],
                "type": "objective"
             },
             {
                "coords": { "x": 51, "y": 14 },
                "header": "Bloof Elf Encampment",
                "ends": ["Snickerfang Jowls", "A Boar's Vitality", "The Decisive Striker", "The Basilisk's Bite", "Vulture's Vigor"],
-               "starts": [],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 66, "y": 24 },
+               "align": "right",
                "header": "Blasted Lands Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Fly to Hinterlands"],
+               "special": ["Fly to Hinterlands"],
                "type": "flightpath"
             }
          ]

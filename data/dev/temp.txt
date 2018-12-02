@@ -1,0 +1,10 @@
+"align": "top",
+"align": "bottom",
+"align": "left",
+"align": "right",
+
+special
+
+GET THE FELWOOD SLIME QUEST AFTER SEARING GORGE
+
+-- 415
