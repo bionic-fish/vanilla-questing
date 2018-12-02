@@ -1,0 +1,166 @@
+{
+   "path": [
+      {
+         "zone": "azshara",
+         "experience": 52.66,
+         "waypoints": [
+            {
+               "coords": { "x": 12, "y": 78 },
+               "header": "Azshara Flightpath",
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 53, "y": 22 },
+               "align": "top",
+               "header": "Kim'jael",
+               "starts": ["Kim'jael Indeed!"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 59, "y": 28 },
+               "align": "top",
+               "header": "Thalassian Base Camp",
+               "objectives": ["Kim'jael Indeed!"],
+               "special": ["Loot Boxes"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "azshara",
+         "experience": 52.72,
+         "waypoints": [
+            {
+               "coords": { "x": 59, "y": 28 },
+               "align": "top",
+               "header": "Thalassian Base Camp",
+               "objectives": ["Kim'jael Indeed!"],
+               "special": ["Loot Boxes"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 53, "y": 22 },
+               "align": "top",
+               "header": "Kim'jael",
+               "ends": ["Kim'jael Indeed!"],
+               "starts": ["Kim'jael's Missing Equipment"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 40, "y": 50 },
+               "align": "top",
+               "header": "Rune of Jin'yael",
+               "objectives": ["Arcane Runes"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 37, "y": 53 },
+               "align": "top",
+               "header": "Rune of Beth'Amara",
+               "objectives": ["Arcane Runes"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 39, "y": 55 },
+               "align": "bottom",
+               "header": "Rune of Markri",
+               "objectives": ["Arcane Runes"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 42, "y": 53 },
+               "align": "right",
+               "header": "Temple of Zin-Malor",
+               "objectives": ["Kim'jael's Missing Equipment"],
+               "special": ["Kill Sirens & Marauders"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "azshara",
+         "experience": 52.83,
+         "waypoints": [
+            {
+               "coords": { "x": 42, "y": 53 },
+               "header": "Temple of Zin-Malor",
+               "objectives": ["Kim'jael's Missing Equipment"],
+               "special": ["Kill Sirens & Marauders"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 53, "y": 22 },
+               "header": "Kim'jael",
+               "ends": ["Kim'jael's Missing Equipment"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 42, "y": 64 },
+               "align": "left",
+               "header": "Rune of Sael'hai",
+               "objectives": ["Arcane Runes"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 78, "y": 91 },
+               "align": "top",
+               "header": "The Ruined Reaches",
+               "ends": ["Arcane Runes"],
+               "starts": ["Return to Tymor"],
+               "special": ["Use your Flare Gun", "Hearthstone to Theramore"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "dustwallow",
+         "experience": 52.92,
+         "waypoints": [
+            {
+               "coords": { "x": 66, "y": 45 },
+               "header": "Theramore Inn",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 67, "y": 51 },
+               "header": "Theramore Flightpath",
+               "special": ["Fly to Tanaris"],
+               "type": "flightpath"
+            }
+         ]
+      },
+      {
+         "zone": "tanaris",
+         "experience": 52.92,
+         "waypoints": [
+            {
+               "coords": { "x": 50, "y": 30 },
+               "header": "Tanaris Flightpath",
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 52, "y": 28 },
+               "align": "top",
+               "header": "Gadgetzan",
+               "starts": ["Super Sticky", "Bungle in the Jungle"],
+               "special": ["Set Hearthstone", "Buy some Noggenfogger"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 67, "y": 23 },
+               "align": "bottom",
+               "header": "Steamwheedle Port",
+               "ends": ["The God Hakkar"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 32, "y": 43 },
+               "align": "bottom",
+               "header": "Un'Goro Border",
+               "special": ["Slow fall down"],
+               "type": "travel"
+            }
+         ]
+      }
+   ]
+}

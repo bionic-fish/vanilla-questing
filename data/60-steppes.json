@@ -2,10 +2,10 @@
    "path": [
       {
          "zone": "steppes",
-         "experience": 0,
+         "experience": 52.06,
          "waypoints": [
             {
-               "coords": { "x": 83, "y": 68 },
+               "coords": { "x": 83, "y": 70 },
                "header": "Burning Steppes Flightpath",
                "type": "flightpath"
             },
@@ -17,15 +17,22 @@
                "type": "hub"
             },
             {
-               "coords": { "x": 91, "y": 53 },
-               "align": "right",
-               "header": "Terror Wing Path",
-               "objectives": ["Dragonkin Menace", "Broodling Essence", "Fifty! Yep!"],
+               "coords": { "x": 66, "y": 22 },
+               "align": "top",
+               "header": "Flame Crest",
+               "starts": ["Tablet of the Seven", "Broodling Essence"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 79, "y": 36 },
+               "align": "top",
+               "header": "Dreadmaul Rock",
+               "objectives": ["Extinguishing the Firegut"],
                "type": "objective"
             },
             {
-               "coords": { "x": 89, "y": 40 },
-               "align": "right",
+               "coords": { "x": 86, "y": 31 },
+               "align": "top",
                "header": "Terror Wing Path",
                "objectives": ["Dragonkin Menace", "Broodling Essence", "Fifty! Yep!"],
                "type": "objective"
@@ -41,7 +48,7 @@
       },
       {
          "zone": "steppes",
-         "experience": 0,
+         "experience": 52.13,
          "waypoints": [
             {
                "coords": { "x": 86, "y": 31 },
@@ -51,15 +58,22 @@
                "type": "objective"
             },
             {
-               "coords": { "x": 79, "y": 36 },
-               "align": "top",
+               "coords": { "x": 90, "y": 52 },
+               "align": "bottom",
+               "header": "Terror Wing Path",
+               "objectives": ["Dragonkin Menace", "Broodling Essence", "Fifty! Yep!"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 79, "y": 48 },
+               "align": "bottom",
                "header": "Dreadmaul Rock",
                "objectives": ["Extinguishing the Firegut"],
                "type": "objective"
             },
             {
                "coords": { "x": 66, "y": 39 },
-               "align": "top",
+               "align": "bottom",
                "header": "Ruins of Thaurissan",
                "objectives": [["The Smoldering Ruins of Thaurissan", "P2"]],
                "type": "objective"
@@ -77,24 +91,23 @@
                "header": "Tablet of the Seven",
                "objectives": ["Tablet of the Seven"],
                "type": "objective"
-            },
-            {
-               "coords": { "x": 66, "y": 22 },
-               "align": "right",
-               "header": "Flame Crest",
-               "ends": ["Tablet of the Seven", "Broodling Essence"],
-               "starts": ["Felnok Steelspring"],
-               "type": "quest"
             }
          ]
       },
       {
          "zone": "steppes",
-         "experience": 0,
+         "experience": 52.24,
          "waypoints": [
             {
+               "coords": { "x": 54, "y": 41 },
+               "align": "left",
+               "header": "Tablet of the Seven",
+               "objectives": ["Tablet of the Seven"],
+               "type": "objective"
+            },
+            {
                "coords": { "x": 66, "y": 22 },
-               "align": "right",
+               "align": "top",
                "header": "Flame Crest",
                "ends": ["Tablet of the Seven", "Broodling Essence"],
                "starts": ["Felnok Steelspring"],
@@ -110,14 +123,14 @@
             },
             {
                "coords": { "x": 75, "y": 59 },
-               "align": "top",
+               "align": "bottom",
                "header": "Terror Wing Path",
                "objectives": ["Fifty! Yep!"],
                "type": "objective"
             },
             {
                "coords": { "x": 39, "y": 55 },
-               "align": "top",
+               "align": "bottom",
                "header": "Orc Encampment",
                "objectives": ["Gor'tesh the Brute Lord"],
                "type": "objective"
@@ -126,7 +139,7 @@
       },
       {
          "zone": "steppes",
-         "experience": 0,
+         "experience": 52.38,
          "waypoints": [
             {
                "coords": { "x": 39, "y": 55 },
@@ -162,7 +175,7 @@
       },
       {
          "zone": "steppes",
-         "experience": 0,
+         "experience": 52.42,
          "waypoints": [
             {
                "coords": { "x": 81, "y": 47 },
@@ -178,7 +191,7 @@
                "type": "hub"
             },
             {
-               "coords": { "x": 83, "y": 68 },
+               "coords": { "x": 83, "y": 70 },
                "header": "Burning Steppes Flightpath",
                "special": ["Fly to Redridge"],
                "type": "flightpath"

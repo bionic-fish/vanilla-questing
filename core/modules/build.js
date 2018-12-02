@@ -61,6 +61,7 @@ function build() {
       $.getJSON('../data/59-transition.json'),
       $.getJSON('../data/60-steppes.json'),
       $.getJSON('../data/61-transition.json'),
+      $.getJSON('../data/61.5-azshara.json'),
       $.getJSON('../data/62-ungoro.json'),
       $.getJSON('../data/63-felwood.json'),
       $.getJSON('../data/64-transition.json'),

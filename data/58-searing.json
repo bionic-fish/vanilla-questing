@@ -73,7 +73,7 @@
       },
       {
          "zone": "searing",
-         "experience": 0,
+         "experience": 50.88,
          "waypoints": [
             {
                "coords": { "x": 64, "y": 60 },
@@ -110,7 +110,7 @@
       },
       {
          "zone": "searing",
-         "experience": 0,
+         "experience": 50.96,
          "waypoints": [
             {
                "coords": { "x": 39, "y": 39 },
@@ -138,7 +138,7 @@
       },
       {
          "zone": "searing",
-         "experience": 0,
+         "experience": 50.99,
          "waypoints": [
             {
                "coords": { "x": 38, "y": 36 },
@@ -177,7 +177,7 @@
       },
       {
          "zone": "searing",
-         "experience": 0,
+         "experience": 51.04,
          "waypoints": [
             {
                "coords": { "x": 50, "y": 47 },
@@ -214,7 +214,7 @@
       },
       {
          "zone": "searing",
-         "experience": 0,
+         "experience": 51.09,
          "waypoints": [
             {
                "coords": { "x": 34, "y": 49 },
@@ -249,7 +249,7 @@
       },
       {
          "zone": "searing",
-         "experience": 0,
+         "experience": 51.36,
          "waypoints": [
             {
                "coords": { "x": 30, "y": 26 },
@@ -283,7 +283,7 @@
       },
       {
          "zone": "searing",
-         "experience": 0,
+         "experience": 51.44,
          "waypoints": [
             {
                "coords": { "x": 36, "y": 61 },
@@ -325,7 +325,7 @@
       },
       {
          "zone": "searing",
-         "experience": 0,
+         "experience": 51.48,
          "waypoints": [
             {
                "coords": { "x": 34, "y": 23 },

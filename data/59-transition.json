@@ -2,7 +2,7 @@
    "path": [
       {
          "zone": "loch",
-         "experience": 0,
+         "experience": 51.54,
          "waypoints": [
             {
                "coords": { "x": 34, "y": 51 },
@@ -20,7 +20,7 @@
       },
       {
          "zone": "loch",
-         "experience": 0,
+         "experience": 51.57,
          "waypoints": [
             {
                "coords": { "x": 18, "y": 84 },
@@ -39,7 +39,7 @@
       },
       {
          "zone": "ironforge",
-         "experience": 0,
+         "experience": 51.57,
          "waypoints": [
             {
                "coords": { "x": 56, "y": 48 },
@@ -48,15 +48,15 @@
                "type": "flightpath"
             },
             {
-               "coords": { "x": 19, "y": 51 },
-               "align": "bottom",
-               "header": "Ironforge Inn",
-               "special": ["Set Hearthstone"],
-               "type": "objective"
+               "coords": { "x": 31, "y": 4 },
+               "align": "left",
+               "header": "Tymor",
+               "starts": ["An Easy Pickup", "Arcane Runes"],
+               "type": "quest"
             },
             {
                "coords": { "x": 75, "y": 12 },
-               "align": "bottom",
+               "align": "right",
                "header": "The Library",
                "ends": [["Suntara Stones", "P2"], "Proof of Deed", "Return to Ironforge", "A Future Task"],
                "starts": ["At Last!", "A Little Slime Goes a Long Way", "A Future Task"],
@@ -66,17 +66,35 @@
       },
       {
          "zone": "ironforge",
-         "experience": 0,
+         "experience": 51.66,
          "waypoints": [
             {
                "coords": { "x": 75, "y": 12 },
+               "align": "right",
                "header": "The Library",
                "ends": [["Suntara Stones", "P2"], "Proof of Deed", "Return to Ironforge", "A Future Task"],
                "starts": ["At Last!", "A Little Slime Goes a Long Way", "A Future Task"],
                "type": "quest"
             },
             {
+               "coords": { "x": 71, "y": 94 },
+               "align": "right",
+               "header": "Xiggs Fuselighter",
+               "ends": ["An Easy Pickup", "Signal for Pickup"],
+               "starts": ["Signal for Pickup"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 39, "y": 55 },
+               "align": "top",
+               "header": "Royal Historian Archesonus",
+               "ends": [["The Smoldering Ruins of Thaurissan", "P1"]],
+               "starts": [["The Smoldering Ruins of Thaurissan", "P1-2"]],
+               "type": "quest"
+            },
+            {
                "coords": { "x": 56, "y": 48 },
+               "align": "top",
                "header": "Ironforge Flightpath",
                "special": ["Fly to Loch Modan"],
                "type": "flightpath"
@@ -85,7 +103,7 @@
       },
       {
          "zone": "loch",
-         "experience": 0,
+         "experience": 51.67,
          "waypoints": [
             {
                "coords": { "x": 34, "y": 51 },
@@ -96,33 +114,66 @@
                "coords": { "x": 18, "y": 84 },
                "header": "Mountaineer Bebblebitty",
                "ends": ["At Last!"],
-               "special": ["Hearthstone to Ironforge"],
                "type": "quest"
             }
          ]
       },
       {
-         "zone": "ironforge",
-         "experience": 0,
+         "zone": "loch",
+         "experience": 51.70,
          "waypoints": [
             {
-               "coords": { "x": 19, "y": 51 },
-               "align": "top",
-               "header": "Ironforge Inn",
-               "type": "travel"
+               "coords": { "x": 18, "y": 84 },
+               "header": "Mountaineer Bebblebitty",
+               "ends": ["At Last!"],
+               "type": "quest"
             },
             {
-               "coords": { "x": 56, "y": 48 },
-               "align": "top",
-               "header": "Ironforge Flightpath",
-               "special": ["Fly to Blasted Lands"],
+               "coords": { "x": 34, "y": 51 },
+               "header": "Loch Modan Flightpath",
+               "special": ["Fly to Lakeshire"],
                "type": "flightpath"
             }
          ]
       },
       {
+         "zone": "redridge",
+         "experience": 51.70,
+         "waypoints": [
+            {
+               "coords": { "x": 31, "y": 59 },
+               "header": "Redridge Flightpath",
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 30, "y": 44 },
+               "header": "Lakeshire Inn",
+               "special": ["Set Hearthstone"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "redridge",
+         "experience": 51.70,
+         "waypoints": [
+            {
+               "coords": { "x": 30, "y": 44 },
+               "header": "Lakeshire Inn",
+               "special": ["Set Hearthstone"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 31, "y": 59 },
+               "header": "Redridge Flightpath",
+               "type": "flightpath",
+               "special": ["Fly to Blasted Lands"]
+            }
+         ]
+      },
+      {
          "zone": "blasted",
-         "experience": 0,
+         "experience": 51.70,
          "waypoints": [
             {
                "coords": { "x": 66, "y": 24 },
@@ -149,7 +200,7 @@
       },
       {
          "zone": "swamp",
-         "experience": 0,
+         "experience": 51.72,
          "waypoints": [
             {
                "coords": { "x": 34, "y": 66 },
@@ -165,35 +216,25 @@
                "header": "Sunken Temple",
                "starts": [["The Essence of Eranikus", "D"]],
                "objectives": [["Into the Temple of Atal'Hakkar", "D"], ["Into the Depths", "D"], ["Secret of the Circle", "D"], ["Jammal'an the Prophet", "D"], ["The God Hakkar", "D"]],
-               "special": ["Hearthstone to Ironforge"],
+               "special": ["Hearthstone to Lakeshire"],
                "type": "travel"
             }
          ]
       },
       {
-         "zone": "ironforge",
-         "experience": 0,
+         "zone": "redridge",
+         "experience": 52.06,
          "waypoints": [
             {
-               "coords": { "x": 19, "y": 51 },
-               "align": "top",
-               "header": "Ironforge Inn",
-               "type": "travel"
+               "coords": { "x": 30, "y": 44 },
+               "header": "Lakeshire Inn",
+               "type": "objective"
             },
             {
-               "coords": { "x": 39, "y": 55 },
-               "align": "top",
-               "header": "Royal Historian Archesonus",
-               "ends": [["The Smoldering Ruins of Thaurissan", "P1"]],
-               "starts": [["The Smoldering Ruins of Thaurissan", "P1-2"]],
-               "type": "quest"
-            },
-            {
-               "coords": { "x": 56, "y": 48 },
-               "align": "top",
-               "header": "Ironforge Flightpath",
-               "special": ["Fly to Burning Steppes"],
-               "type": "flightpath"
+               "coords": { "x": 31, "y": 59 },
+               "header": "Redridge Flightpath",
+               "type": "flightpath",
+               "special": ["Fly to Burning Steppes"]
             }
          ]
       }

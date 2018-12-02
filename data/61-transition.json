@@ -2,7 +2,7 @@
    "path": [
       {
          "zone": "redridge",
-         "experience": 0,
+         "experience": 52.48,
          "waypoints": [
             {
                "coords": { "x": 31, "y": 59 },
@@ -20,7 +20,7 @@
       },
       {
          "zone": "redridge",
-         "experience": 0,
+         "experience": 52.51,
          "waypoints": [
             {
                "coords": { "x": 30, "y": 44 },
@@ -39,40 +39,13 @@
       },
       {
          "zone": "stormwind",
-         "experience": 0,
+         "experience": 52.51,
          "waypoints": [
             {
                "coords": { "x": 66, "y": 62 },
-               "align": "right",
+               "align": "bottom",
                "header": "Stormwind Flightpath",
                "type": "flightpath"
-            },
-            {
-               "coords": { "x": 78, "y": 18 },
-               "align": "top",
-               "header": "Highlord Bolvar Fordragon",
-               "ends": [["The True Masters", "P2-3"]],
-               "starts": [["The True Masters", "P3-4"]],
-               "type": "quest"
-            },
-            {
-               "coords": { "x": 64, "y": 21 },
-               "align": "top",
-               "header": "Brohann Caskbelly",
-               "ends": [["Into the Temple of Atal'Hakkar", "D"]],
-               "type": "quest"
-            }
-         ]
-      },
-      {
-         "zone": "stormwind",
-         "experience": 0,
-         "waypoints": [
-            {
-               "coords": { "x": 64, "y": 21 },
-               "header": "Brohann Caskbelly",
-               "ends": [["Into the Temple of Atal'Hakkar", "D"]],
-               "type": "quest"
             },
             {
                "coords": { "x": 53, "y": 60 },
@@ -82,25 +55,36 @@
                "type": "objective"
             },
             {
-               "coords": { "x": 66, "y": 62 },
-               "align": "bottom",
-               "header": "Stormwind Flightpath",
-               "special": ["Fly to Redridge"],
-               "type": "flightpath"
+               "coords": { "x": 64, "y": 21 },
+               "align": "top",
+               "header": "Brohann Caskbelly",
+               "ends": [["Into the Temple of Atal'Hakkar", "D"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 78, "y": 18 },
+               "align": "top",
+               "header": "Highlord Bolvar Fordragon",
+               "ends": [["The True Masters", "P2-3"]],
+               "starts": [["The True Masters", "P3-4"]],
+               "special": ["Hearthstone to Lakeshire"],
+               "type": "quest"
             }
          ]
       },
       {
          "zone": "redridge",
-         "experience": 0,
+         "experience": 52.58,
          "waypoints": [
             {
-               "coords": { "x": 31, "y": 59 },
-               "header": "Redridge Flightpath",
-               "type": "flightpath"
+               "coords": { "x": 28, "y": 44 },
+               "align": "top",
+               "header": "Lakeshire Inn",
+               "type": "travel"
             },
             {
                "coords": { "x": 30, "y": 44 },
+               "align": "top",
                "header": "Magistrate Solomon",
                "ends": [["The True Masters", "P4"]],
                "starts": [["The True Masters", "P5"]],
@@ -110,7 +94,7 @@
       },
       {
          "zone": "redridge",
-         "experience": 0,
+         "experience": 52.62,
          "waypoints": [
             {
                "coords": { "x": 30, "y": 44 },
@@ -129,10 +113,10 @@
       },
       {
          "zone": "steppes",
-         "experience": 0,
+         "experience": 52.62,
          "waypoints": [
             {
-               "coords": { "x": 83, "y": 68 },
+               "coords": { "x": 83, "y": 70 },
                "header": "Burning Steppes Flightpath",
                "type": "flightpath"
             },
@@ -155,7 +139,7 @@
       },
       {
          "zone": "steppes",
-         "experience": 0,
+         "experience": 52.63,
          "waypoints": [
             {
                "coords": { "x": 66, "y": 22 },
@@ -167,21 +151,39 @@
                "coords": { "x": 85, "y": 70 },
                "header": "Morgan's Vigil",
                "ends": [["The True Masters", "P6"]],
-               "special": ["Hearthstone to Ironforge"],
                "type": "hub"
+            },
+            {
+               "coords": { "x": 83, "y": 70 },
+               "header": "Burning Steppes Flightpath",
+               "special": ["Fly to Ironforge"],
+               "type": "flightpath"
             }
          ]
       },
       {
          "zone": "ironforge",
-         "experience": 0,
+         "experience": 52.63,
          "waypoints": [
             {
-               "coords": { "x": 19, "y": 51 },
+               "coords": { "x": 56, "y": 48 },
                "align": "bottom",
-               "header": "Ironforge Inn",
-               "type": "travel"
+               "header": "Ironforge Flightpath",
+               "type": "flightpath"
             },
+            {
+               "coords": { "x": 39, "y": 55 },
+               "align": "bottom",
+               "header": "Royal Historian Archesonus",
+               "ends": [["The Smoldering Ruins of Thaurissan", "P2"]],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "ironforge",
+         "experience": 52.66,
+         "waypoints": [
             {
                "coords": { "x": 39, "y": 55 },
                "align": "bottom",
@@ -200,12 +202,12 @@
       },
       {
          "zone": "wetlands",
-         "experience": 0,
+         "experience": 52.66,
          "waypoints": [
             {
                "coords": { "x": 9, "y": 60 },
                "align": "right",
-               "header": "Menethil Harbor Flightpath",
+               "header": "Menethil Flightpath",
                "type": "flightpath"
             },
             {
@@ -217,7 +219,7 @@
       },
       {
          "zone": "dustwallow",
-         "experience": 0,
+         "experience": 52.66,
          "waypoints": [
             {
                "coords": { "x": 71, "y": 56 },
@@ -226,40 +228,16 @@
                "type": "travel"
             },
             {
+               "coords": { "x": 66, "y": 45 },
+               "header": "Theramore Inn",
+               "special": ["Set Hearthstone"],
+               "type": "travel"
+            },
+            {
                "coords": { "x": 67, "y": 51 },
                "header": "Theramore Flightpath",
-               "special": ["Fly to Tanaris"],
+               "special": ["Fly to Azshara"],
                "type": "flightpath"
-            }
-         ]
-      },
-      {
-         "zone": "tanaris",
-         "experience": 51.93,
-         "waypoints": [
-            {
-               "coords": { "x": 51, "y": 29 },
-               "header": "Tanaris Flightpath",
-               "type": "flightpath"
-            },
-            {
-               "coords": { "x": 52, "y": 28 },
-               "header": "Gadgetzan",
-               "starts": ["Super Sticky", "Bungle in the Jungle"],
-               "objectives": ["Set Hearthstone", "Buy some Noggenfogger"],
-               "type": "hub"
-            },
-            {
-               "coords": { "x": 67, "y": 23 },
-               "header": "Steamwheedle Port",
-               "ends": ["The God Hakkar"],
-               "type": "quest"
-            },
-            {
-               "coords": { "x": 32, "y": 43 },
-               "header": "Un'Goro Border",
-               "objectives": ["Drink Noggenfogger for the slow fall buff & jump"],
-               "type": "travel"
             }
          ]
       }
