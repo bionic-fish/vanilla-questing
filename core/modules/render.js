@@ -137,6 +137,7 @@ function sidepanel(data) {
    sidepanel.html(container);
 }
 
+// GENERATE SIDEPANEL ROW
 function row(category, data, ids) {
 
    // ROW CONTAINER
@@ -147,14 +148,14 @@ function row(category, data, ids) {
 
    // IF ITS A STRING -- GENERATE & APPEND A SELECTOR
    if (type === 'string') {
-      container += '<div class="' + category + '"><a href="https://classicdb.ch/?quest=' + ids[data] + '" target="_blank">' + shorten(data) + '</a></div>';
+      container += '<div class="' + category + '"><a href="https://classicdb.ch/?quest=' + ids[data.toLowerCase()] + '" target="_blank">' + shorten(data) + '</a></div>';
 
    // IF ITS AN ARRAY -- GENERATE & APPEND A SELECTOR
    } else {
       container += `
          <div class="` + category + `">
             <div class="split">
-               <div id="left"><a href="https://classicdb.ch/?quest=` + ids[data[0]] + `" target="_blank">` + shorten(data[0]) + `</a></div>
+               <div id="left"><a href="https://classicdb.ch/?quest=` + ids[data[0].toLowerCase()] + `" target="_blank">` + shorten(data[0]) + `</a></div>
                <div id="right">` + shorten(data[1]) + `</div>
             </div>
          </div>

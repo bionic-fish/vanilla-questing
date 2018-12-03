@@ -78,7 +78,7 @@ function build() {
       $.getJSON('../data/75-plaguelands.json')
    ];
 
-   var quests = $.getJSON('../data/quest-ids.json');
+   var quests = $.getJSON('../data/00-quest-ids.json');
 
    // WAIT FOR ALL PROMISES TO BE RESOLVED
    return Promise.all(route).then((response) => {
