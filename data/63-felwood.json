@@ -2,124 +2,116 @@
    "path": [
       {
          "zone": "ashenvale",
-         "experience": 53.46,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 34, "y": 48 },
+               "align": "bottom",
                "header": "Ashenvale Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "flightpath"
             },
             {
                "coords": { "x": 60, "y": 62 },
+               "align": "right",
                "header": "Ashenvale Crossroad",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             },
             {
                "coords": { "x": 56, "y": 28 },
+               "align": "right",
                "header": "Felwood Border",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             }
          ]
       },
       {
          "zone": "felwood",
-         "experience": 53.46,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 55, "y": 93 },
+               "align": "right",
                "header": "Ashenvale Border",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             },
             {
                "coords": { "x": 54, "y": 87 },
+               "align": "right",
                "header": "Arathandris Silversky",
-               "ends": [],
                "starts": ["Cleansing Felwood"],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 51, "y": 82 },
+               "align": "right",
                "header": "Emerald Sanctuary",
-               "ends": [],
                "starts": ["Forces of Jaedenar", "Verifying the Corruption", "To Winterspring!", "The Corruption of the Jadefire"],
-               "objectives": [],
                "type": "hub"
             },
             {
                "coords": { "x": 41, "y": 67 },
-               "header": "",
-               "ends": [],
-               "starts": [],
+               "align": "right",
+               "header": "Southern Slimepools",
                "objectives": ["A Little Slime Goes a Long Way"],
                "type": "objective"
             },
             {
                "coords": { "x": 33, "y": 67 },
                "header": "Ruins of Constellas",
-               "ends": [],
-               "starts": [],
                "objectives": ["The Corruption of the Jadefire"],
                "type": "objective"
             },
             {
                "coords": { "x": 41, "y": 59 },
-               "header": "",
-               "ends": [],
-               "starts": [],
+               "align": "top",
+               "header": "Northern Slimepools",
                "objectives": ["A Little Slime Goes a Long Way"],
                "type": "objective"
             },
             {
                "coords": { "x": 36, "y": 61 },
+               "align": "top",
                "header": "Jaedenar",
-               "ends": [],
-               "starts": [],
+               "objectives": ["Forces of Jaedenar"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "felwood",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 36, "y": 61 },
+               "header": "Jaedenar",
                "objectives": ["Forces of Jaedenar"],
                "type": "objective"
             },
             {
                "coords": { "x": 41, "y": 41 },
                "header": "Shattered Svar Vale",
-               "ends": [],
-               "starts": [],
                "objectives": ["Verifying the Corruption"],
                "type": "objective"
             },
             {
                "coords": { "x": 56, "y": 17 },
+               "align": "top",
                "header": "Irontree Cavern",
-               "ends": [],
-               "starts": [],
                "objectives": ["Cleansing Felwood"],
                "type": "objective"
             },
             {
                "coords": { "x": 62, "y": 24 },
+               "align": "right",
                "header": "Felwood Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
+               "special": ["Learn the Flightpath"],
                "type": "flightpath"
             },
             {
                "coords": { "x": 65, "y": 8 },
+               "align": "right",
                "header": "Timbermaw Hold Enterance",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Turn Left to enter Moonglade"],
+               "special": ["Turn left and enter Moonglade"],
                "type": "travel"
             }
          ]

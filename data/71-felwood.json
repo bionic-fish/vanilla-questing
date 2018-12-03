@@ -2,60 +2,57 @@
    "path": [
       {
          "zone": "felwood",
-         "experience": 57.31,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 55, "y": 93 },
+               "align": "right",
                "header": "Ashenvale Border",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             },
             {
                "coords": { "x": 51, "y": 82 },
+               "align": "right",
                "header": "Emerald Sanctuary",
                "ends": ["Flute of Xavaric", "Linken's Memory", "Further Corruption", "Cleansed Water of Felwood"],
-               "starts": ["Silver Heart", "Skipping the Jaedenar Quests"],
-               "objectives": [],
+               "starts": ["Silver Heart"],
+               "special": ["Skipping the Jaedenar Quests"],
                "type": "hub"
             },
             {
                "coords": { "x": 44, "y": 65 },
-               "header": "",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Silver Heart", "Bears"],
+               "align": "right",
+               "header": "Placeholder",
+               "objectives": ["Silver Heart"],
+               "special": ["Bears"],
                "type": "objective"
             },
             {
                "coords": { "x": 46, "y": 24 },
-               "header": "",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Silver Heart", "Trees"],
+               "align": "right",
+               "header": "Placeholder",
+               "objectives": ["Silver Heart"],
+               "special": ["Trees"],
                "type": "objective"
             }
          ]
       },
       {
          "zone": "felwood",
-         "experience": 57.46,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 46, "y": 24 },
-               "header": "",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Silver Heart", "Trees"],
+               "header": "Placeholder",
+               "objectives": ["Silver Heart"],
+               "special": ["Trees"],
                "type": "objective"
             },
             {
                "coords": { "x": 51, "y": 82 },
                "header": "Emerald Sanctuary",
                "ends": ["Silver Heart"],
-               "starts": [],
-               "objectives": ["Heathstone to Tanaris"],
+               "special": ["Heathstone to Tanaris"],
                "type": "hub"
             }
          ]

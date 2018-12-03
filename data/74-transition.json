@@ -2,220 +2,159 @@
    "path": [
       {
          "zone": "tanaris",
-         "experience": 58.78,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 52, "y": 28 },
+               "align": "right",
                "header": "Gadgetzan",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "hub"
             },
             {
-               "coords": { "x": 51, "y": 29 },
+               "coords": { "x": 50, "y": 29 },
                "header": "Tanaris Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Fly to Ratchet"],
+               "special": ["Fly to Ratchet"],
                "type": "flightpath"
             }
          ]
       },
       {
          "zone": "barrens",
-         "experience": 58.78,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 63, "y": 37 },
                "header": "Ratchet Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "flightpath"
             },
             {
                "coords": { "x": 65, "y": 39 },
+               "align": "right",
                "header": "Ratchet Harbor",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             }
          ]
       },
       {
          "zone": "stv",
-         "experience": 58.78,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 26, "y": 73 },
                "header": "Booty Bay Harbor",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             },
             {
                "coords": { "x": 28, "y": 78 },
                "header": "Booy Bay Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Fly to Burning Steppes"],
+               "special": ["Fly to Burning Steppes"],
                "type": "flightpath"
             }
          ]
       },
       {
          "zone": "steppes",
-         "experience": 58.78,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 84, "y": 68 },
                "header": "Burning Steppes Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "flightpath"
             },
             {
                "coords": { "x": 66, "y": 22 },
                "header": "Flame Crest",
                "ends": ["Return to Tinkee"],
-               "starts": [],
-               "objectives": [],
                "type": "quest"
             }
          ]
       },
       {
          "zone": "steppes",
-         "experience": 58.81,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 66, "y": 22 },
                "header": "Flame Crest",
                "ends": ["Return to Tinkee"],
-               "starts": [],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 84, "y": 68 },
                "header": "Burning Steppes Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Fly to Ironforge"],
+               "special": ["Fly to Ironforge"],
                "type": "flightpath"
             }
          ]
       },
       {
          "zone": "ironforge",
-         "experience": 58.81,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 56, "y": 48 },
                "header": "Ironforge Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "flightpath"
             },
             {
                "coords": { "x": 75, "y": 12 },
                "header": "The Library",
                "ends": ["A Little Slime Goes a Long Way"],
-               "starts": [],
-               "objectives": [],
                "type": "quest"
             }
          ]
       },
       {
          "zone": "ironforge",
-         "experience": 58.84,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 75, "y": 12 },
                "header": "The Library",
                "ends": ["A Little Slime Goes a Long Way"],
-               "starts": [],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 56, "y": 48 },
                "header": "Ironforge Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Fly to Hillsbrad"],
-               "type": "flightpath"
-            }
-         ]
-      },
-      {
-         "zone": "ironforge",
-         "experience": 58.84,
-         "waypoints": [
-            {
-               "coords": { "x": 75, "y": 12 },
-               "header": "The Library",
-               "ends": ["A Little Slime Goes a Long Way"],
-               "starts": [],
-               "objectives": [],
-               "type": "quest"
-            },
-            {
-               "coords": { "x": 56, "y": 48 },
-               "header": "Ironforge Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Fly to Hillsbrad Foothills"],
+               "special": ["Fly to Southshore"],
                "type": "flightpath"
             }
          ]
       },
       {
          "zone": "hillsbrad",
-         "experience": 58.84,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 49, "y": 52 },
                "header": "Southshore Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "flightpath"
             },
             {
                "coords": { "x": 51, "y": 54 },
+               "align": "right",
                "header": "Southshore Inn",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Set Hearthstone"],
+               "special": ["Set Hearthstone"],
                "type": "hub"
             }
          ]
       },
       {
          "zone": "hillsbrad",
-         "experience": 58.84,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 51, "y": 54 },
+               "align": "right",
                "header": "Southshore Inn",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Set Hearthstone"],
+               "special": ["Set Hearthstone"],
                "type": "hub"
             },
             {
                "coords": { "x": 49, "y": 52 },
                "header": "Southshore Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Fly to Western Plaguelands"],
+               "special": ["Fly to Western Plaguelands"],
                "type": "flightpath"
             }
          ]

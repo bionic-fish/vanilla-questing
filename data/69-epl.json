@@ -2,85 +2,83 @@
    "path": [
       {
          "zone": "epl",
-         "experience": 55.83,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 12, "y": 73 },
                "header": "Western Plaguelands Border",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             },
             {
                "coords": { "x": 8, "y": 44 },
                "header": "Tirion Fordring",
-               "ends": [],
                "starts": ["Blood Tinged Skies", "Demon Dogs", "Carrion Grubbage"],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 19, "y": 67 },
-               "header": "",
-               "ends": [],
-               "starts": [],
+               "header": "Placeholder",
                "objectives": ["Blood Tinged Skies", "Demon Dogs", "Carrion Grubbage"],
                "type": "objective"
             },
             {
                "coords": { "x": 30, "y": 83 },
-               "header": "",
-               "ends": [],
-               "starts": [],
+               "align": "right",
+               "header": "Placeholder",
                "objectives": ["Blood Tinged Skies", "Demon Dogs", "Carrion Grubbage"],
                "type": "objective"
             },
             {
                "coords": { "x": 32, "y": 75 },
-               "header": "",
-               "ends": [],
-               "starts": [],
+               "align": "right",
+               "header": "Placeholder",
+               "objectives": ["Blood Tinged Skies", "Demon Dogs", "Carrion Grubbage"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "epl",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 32, "y": 75 },
+               "align": "bottom",
+               "header": "Placeholder",
                "objectives": ["Blood Tinged Skies", "Demon Dogs", "Carrion Grubbage"],
                "type": "objective"
             },
             {
                "coords": { "x": 43, "y": 76 },
-               "header": "",
-               "ends": [],
-               "starts": [],
+               "align": "bottom",
+               "header": "Placeholder",
                "objectives": ["Blood Tinged Skies", "Carrion Grubbage"],
                "type": "objective"
             },
             {
                "coords": { "x": 81, "y": 59 },
+               "align": "bottom",
                "header": "Light's Hope Chapel",
                "ends": ["Brother Carlin"],
                "starts": ["Villains of Darrowshire", "Heroes of Darrowshire"],
-               "objectives": [],
                "type": "hub"
             },
             {
                "coords": { "x": 54, "y": 54 },
-               "header": "",
-               "ends": [],
-               "starts": [],
+               "align": "bottom",
+               "header": "Placeholder",
                "objectives": ["Demon Dogs", "Carrion Grubbage"],
                "type": "objective"
             },
             {
                "coords": { "x": 51, "y": 50 },
                "header": "Horgus' Skull",
-               "ends": [],
-               "starts": [],
                "objectives": ["Villains of Darrowshire"],
                "type": "objective"
             },
             {
                "coords": { "x": 49, "y": 39 },
-               "header": "",
-               "ends": [],
-               "starts": [],
+               "header": "Placeholder",
                "objectives": ["Demon Dogs", "Carrion Grubbage"],
                "type": "objective"
             }
@@ -88,29 +86,26 @@
       },
       {
          "zone": "epl",
-         "experience": 56.02,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 49, "y": 39 },
-               "header": "",
-               "ends": [],
-               "starts": [],
+               "align": "right",
+               "header": "Placeholder",
                "objectives": ["Demon Dogs", "Carrion Grubbage"],
                "type": "objective"
             },
             {
                "coords": { "x": 54, "y": 66 },
+               "align": "right",
                "header": "Shattered Sword of Marduk",
-               "ends": [],
-               "starts": [],
                "objectives": ["Villains of Darrowshire"],
                "type": "objective"
             },
             {
                "coords": { "x": 33, "y": 75 },
-               "header": "",
-               "ends": [],
-               "starts": [],
+               "align": "bottom",
+               "header": "Placeholder",
                "objectives": ["Blood Tinged Skies", "Demon Dogs", "Carrion Grubbage"],
                "type": "objective"
             },
@@ -119,194 +114,181 @@
                "header": "Tirion Fordring",
                "ends": ["Blood Tinged Skies", "Demon Dogs", "Carrion Grubbage", "Redemption"],
                "starts": ["Redemption", "Of Forgotten Memories"],
-               "objectives": [],
-               "type": "quest"
-            },
-            {
-               "coords": { "x": 27, "y": 85 },
-               "header": "The Undercroft",
-               "ends": ["Hameya's Plea"],
-               "starts": [],
-               "objectives": ["Of Forgotten Memories", "Zaeldarr the Outcast", "Interact with both dirt piles behind the catacombs", "Kill the spawning dwarf"],
                "type": "quest"
             }
          ]
       },
       {
          "zone": "epl",
-         "experience": 56.16,
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 8, "y": 44 },
+               "header": "Tirion Fordring",
+               "ends": ["Blood Tinged Skies", "Demon Dogs", "Carrion Grubbage", "Redemption"],
+               "starts": ["Redemption", "Of Forgotten Memories"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 27, "y": 85 },
+               "align": "right",
+               "header": "The Undercroft",
+               "ends": ["Hameya's Plea"],
+               "objectives": ["Of Forgotten Memories", "Zaeldarr the Outcast"],
+               "special": ["Click the dirtpile in the back", "Kill the spawned Dwarf"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "epl",
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 27, "y": 85 },
+               "align": "right",
                "header": "The Undercroft",
                "ends": ["Hameya's Plea"],
-               "starts": [],
-               "objectives": ["Of Forgotten Memories", "Zaeldarr the Outcast", "Interact with both dirt piles behind the catacombs", "Kill the spawning dwarf"],
+               "objectives": ["Of Forgotten Memories", "Zaeldarr the Outcast"],
+               "special": ["Click the dirtpile in the back", "Kill the spawned Dwarf"],
                "type": "quest"
             },
             {
                "coords": { "x": 8, "y": 44 },
                "header": "Tirion Fordring",
                "ends": ["Of Forgotten Memories"],
-               "starts": [],
-               "objectives": [],
+               "starts": ["Of Lost Honor"],
                "type": "quest"
             },
             {
                "coords": { "x": 12, "y": 73 },
                "header": "Western Plaguelands Border",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             }
          ]
       },
       {
          "zone": "wpl",
-         "experience": 56.19,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 70, "y": 50 },
+               "align": "right",
                "header": "Eastern Plaguelands Border",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             },
             {
                "coords": { "x": 64, "y": 57 },
+               "align": "bottom",
                "header": "Redpath's Shield",
-               "ends": [],
-               "starts": [],
                "objectives": ["Heroes of Darrowshire"],
                "type": "objective"
             },
             {
                "coords": { "x": 46, "y": 19 },
+               "align": "top",
                "header": "Heathglen Tower",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Unfinished Business P3", "Discover the top"],
+               "objectives": [["Unfinished Business", "P3"]],
+               "special": ["Discover the top"],
                "type": "objective"
             },
             {
                "coords": { "x": 43, "y": 19 },
+               "align": "top",
                "header": "Davil's Libram",
-               "ends": [],
-               "starts": [],
                "objectives": ["Heroes of Darrowshire"],
+               "special": ["Have someone distract the Elites"],
                "type": "objective"
             },
             {
                "coords": { "x": 52, "y": 28 },
+               "align": "right",
                "header": "Kirsta Deepshadow",
-               "ends": ["Unfinished Business P3"],
-               "starts": [],
-               "objectives": ["Hearthstone to Hillsbrad"],
+               "ends": [["Unfinished Business", "P3"]],
+               "special": ["Hearthstone to Southshore"],
                "type": "quest"
             }
          ]
       },
       {
          "zone": "hillsbrad",
-         "experience": 56.24,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 51, "y": 54 },
+               "align": "right",
                "header": "Southshore Inn",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "hub"
             },
             {
                "coords": { "x": 49, "y": 52 },
                "header": "Southshore Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Fly to Western Plaguelands"],
+               "special": ["Fly to Western Plaguelands"],
                "type": "flightpath"
             }
          ]
       },
       {
          "zone": "wpl",
-         "experience": 56.24,
+         "experience": 0,
          "waypoints": [
             {
-               "coords": { "x": 43, "y": 86 },
+               "coords": { "x": 43, "y": 87 },
                "header": "Western Plaguelands Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "flightpath"
             },
             {
                "coords": { "x": 43, "y": 84 },
                "header": "Chillwind Camp",
                "ends": ["Return to Chillwind Camp", "Mission Accomplished"],
-               "starts": [],
-               "objectives": [],
                "type": "quest"
             }
          ]
       },
       {
          "zone": "wpl",
-         "experience": 56.31,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 43, "y": 84 },
                "header": "Chillwind Camp",
                "ends": ["Return to Chillwind Camp", "Mission Accomplished"],
-               "starts": [],
-               "objectives": [],
                "type": "quest"
             },
             {
-               "coords": { "x": 43, "y": 86 },
+               "coords": { "x": 43, "y": 87 },
                "header": "Western Plaguelands Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Fly to Eastern Plaguelands"],
+               "special": ["Fly to Eastern Plaguelands"],
                "type": "flightpath"
             }
          ]
       },
       {
          "zone": "epl",
-         "experience": 56.31,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 83, "y": 59 },
+               "align": "top",
                "header": "Eastern Plaguelands Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "flightpath"
             },
             {
                "coords": { "x": 81, "y": 59 },
+               "align": "top",
                "header": "Light's Hope Chapel",
                "ends": ["Heroes of Darrowshire", "Villains of Darrowshire"],
-               "starts": [],
-               "objectives": [],
                "type": "hub"
             },
             {
                "coords": { "x": 80, "y": 64 },
                "header": "Caretaker Alen",
                "ends": ["Zaeldarr the Outcast"],
-               "starts": [],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 71, "y": 34 },
                "header": "Symbol of Lost Hope",
-               "ends": [],
-               "starts": [],
                "objectives": ["Of Lost Honor"],
                "type": "objective"
             }
@@ -314,22 +296,19 @@
       },
       {
          "zone": "epl",
-         "experience": 56.39,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 71, "y": 34 },
                "header": "Symbol of Lost Hope",
-               "ends": [],
-               "starts": [],
                "objectives": ["Of Lost Honor"],
                "type": "objective"
             },
             {
                "coords": { "x": 83, "y": 59 },
+               "align": "right",
                "header": "Eastern Plaguelands Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Fly to Blasted Lands"],
+               "special": ["Fly to Blasted Lands"],
                "type": "flightpath"
             }
          ]

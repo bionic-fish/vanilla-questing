@@ -2,74 +2,66 @@
    "path": [
       {
          "zone": "tanaris",
-         "experience": 54.59,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 52, "y": 28 },
                "header": "Gadgetzan",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "hub"
             },
             {
                "coords": { "x": 54, "y": 29 },
+               "align": "right",
                "header": "Gadgetzan Graveyard",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Drink a Videre Elixir"],
+               "special": ["Drink a Videre Elixir"],
                "type": "objective"
             },
             {
                "coords": { "x": 54, "y": 23 },
+               "align": "right",
                "header": "Gaeriyan",
                "ends": ["Meet at the Grave"],
                "starts": ["A Grave Situation"],
-               "objectives": [],
                "type": "quest"
             }
          ]
       },
       {
          "zone": "tanaris",
-         "experience": 54.62,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 54, "y": 23 },
                "header": "Gaeriyan",
                "ends": ["Meet at the Grave"],
                "starts": ["A Grave Situation"],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 54, "y": 29 },
+               "align": "right",
                "header": "Gadgetzan Graveyard",
                "ends": ["A Grave Situation"],
-               "starts": ["Linken's Sworda"],
-               "objectives": ["Resurrect & loot the Tombstone"],
+               "starts": ["Linken's Sword"],
+               "special": ["Resurrect & Loot the Tombstone"],
                "type": "quest"
             },
             {
                "coords": { "x": 51, "y": 29 },
                "header": "Tanaris Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
+               "special": ["Fly to Un'goro"],
                "type": "flightpath"
             }
          ]
       },
       {
          "zone": "ungoro",
-         "experience": 54.65,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 45, "y": 6 },
+               "align": "right",
                "header": "Un'Goro Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "flightpath"
             },
             {
@@ -77,7 +69,6 @@
                "header": "Marshal's Refuge",
                "ends": ["Linken's Sword"],
                "starts": ["A Gnome's Assistance"],
-               "objectives": [],
                "type": "hub"
             },
             {
@@ -85,28 +76,25 @@
                "header": "JD Collie",
                "ends": ["A Gnome's Assistance"],
                "starts": ["Linken's Memory"],
-               "objectives": [],
                "type": "quest"
             }
          ]
       },
       {
          "zone": "ungoro",
-         "experience": 54.69,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 42, "y": 3 },
                "header": "JD Collie",
                "ends": ["A Gnome's Assistance"],
                "starts": ["Linken's Memory"],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 45, "y": 6 },
+               "align": "right",
                "header": "Un'Goro Flightpath",
-               "ends": [],
-               "starts": [],
                "objectives": ["Fly to Ratchet"],
                "type": "flightpath"
             }
@@ -114,22 +102,18 @@
       },
       {
          "zone": "barrens",
-         "experience": 54.69,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 63, "y": 37 },
+               "align": "top",
                "header": "Ratchet Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "flightpath"
             },
             {
                "coords": { "x": 62, "y": 39 },
                "header": "Liv Rizzlefix",
-               "ends": [],
                "starts": ["Volcanic Activity"],
-               "objectives": [],
                "type": "quest"
             },
             {
@@ -137,36 +121,30 @@
                "header": "Islen Waterseer",
                "ends": ["Seeking Spiritual Aid"],
                "starts": ["Cleansed Water Returns to Felwood"],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 65, "y": 39 },
+               "align": "right",
                "header": "Ratchet Harbor",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             }
          ]
       },
       {
          "zone": "stv",
-         "experience": 54.72,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 26, "y": 73 },
                "header": "Booty Bay Harbor",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             },
             {
                "coords": { "x": 28, "y": 78 },
                "header": "Booy Bay Flightpath",
-               "ends": [],
-               "starts": [],
+
+
                "objectives": ["Fly to Ironforge"],
                "type": "flightpath"
             }
@@ -174,148 +152,130 @@
       },
       {
          "zone": "ironforge",
-         "experience": 54.72,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 56, "y": 48 },
+               "align": "right",
                "header": "Ironforge Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "flightpath"
             },
             {
+               "coords": { "x": 31, "y": 5 },
+               "header": "Tymor",
+               "ends": ["Return to Tymor"],
+               "type": "quest"
+            },
+            {
                "coords": { "x": 60, "y": 79 },
+               "align": "right",
                "header": "Courier Hammerfall",
-               "ends": [],
                "starts": ["A Call to Arms: The Plaguelands!"],
-               "objectives": ["He patrols around Ironforge"],
+               "special": ["Patrols around Ironforge"],
                "type": "quest"
             },
             {
                "coords": { "x": 76, "y": 23 },
+               "align": "right",
                "header": "Laris Geardawdle",
-               "ends": ["A Little Slime Goes a Long Way P1"],
-               "starts": ["A Little Slime Goes a Long Way P2"],
-               "objectives": [],
+               "ends": [["A Little Slime Goes a Long Way", "P1"]],
                "type": "quest"
             }
          ]
       },
       {
          "zone": "ironforge",
-         "experience": 54.76,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 76, "y": 23 },
+               "align": "right",
                "header": "Laris Geardawdle",
-               "ends": ["A Little Slime Goes a Long Way P1"],
-               "starts": ["A Little Slime Goes a Long Way P2"],
-               "objectives": [],
+               "ends": [["A Little Slime Goes a Long Way", "P1"]],
                "type": "quest"
             },
             {
                "coords": { "x": 56, "y": 48 },
                "header": "Ironforge Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Fly to Hinterlands"],
+               "special": ["Fly to Hinterlands"],
                "type": "flightpath"
             }
          ]
       },
       {
          "zone": "hinterlands",
-         "experience": 54.76,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 11, "y": 46 },
                "header": "Hinterlands Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "flightpath"
             },
             {
                "coords": { "x": 34, "y": 75 },
+               "align": "right",
                "header": "Atal'ai Exile",
-               "ends": ["Jammal'an the Prophet"],
-               "starts": [],
-               "objectives": [],
+               "ends": [["Jammal'an the Prophet", "D"]],
                "type": "quest"
             }
          ]
       },
       {
          "zone": "hinterlands",
-         "experience": 54.79,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 34, "y": 75 },
+               "align": "right",
                "header": "Atal'ai Exile",
-               "ends": ["Jammal'an the Prophet"],
-               "starts": [],
-               "objectives": [],
+               "ends": [["Jammal'an the Prophet", "D"]],
                "type": "quest"
             },
             {
                "coords": { "x": 11, "y": 46 },
                "header": "Hinterlands Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Fly to Southshore"],
+               "special": ["Fly to Southshore"],
                "type": "flightpath"
             }
          ]
       },
       {
          "zone": "hillsbrad",
-         "experience": 54.79,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 49, "y": 52 },
                "header": "Southshore Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "flightpath"
             },
             {
                "coords": { "x": 51, "y": 54 },
+               "align": "right",
                "header": "Southshore Inn",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Set Hearthstone"],
+               "special": ["Set Hearthstone"],
                "type": "quest"
             },
             {
                "coords": { "x": 54, "y": 10 },
-               "header": "Alterac Mountains Border",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
+               "align": "right",
+               "header": "Alterac Border",
                "type": "travel"
             }
          ]
       },
       {
          "zone": "alterac",
-         "experience": 54.79,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 52, "y": 69 },
                "header": "Hillsbrad Foothills Border",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             },
             {
                "coords": { "x": 80, "y": 33 },
+               "align": "right",
                "header": "Western Plaguelands Border",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             }
          ]

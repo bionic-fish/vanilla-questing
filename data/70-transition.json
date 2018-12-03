@@ -2,58 +2,47 @@
    "path": [
       {
          "zone": "blasted",
-         "experience": 56.39,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 66, "y": 24 },
                "header": "Blasted Lands Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "flightpath"
             },
             {
                "coords": { "x": 64, "y": 20 },
                "header": "Enohar Thunderbrew",
-               "ends": [],
                "starts": ["Ragnar Thunderbrewda"],
-               "objectives": [],
                "type": "quest"
             }
          ]
       },
       {
          "zone": "blasted",
-         "experience": 56.39,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 64, "y": 20 },
                "header": "Enohar Thunderbrew",
-               "ends": [],
                "starts": ["Ragnar Thunderbrewda"],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 66, "y": 24 },
                "header": "Blasted Lands Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Fly to Stormwind"],
+               "special": ["Fly to Stormwind"],
                "type": "flightpath"
             }
          ]
       },
       {
          "zone": "stormwind",
-         "experience": 56.39,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 66, "y": 62 },
+               "align": "right",
                "header": "Stormwind Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "flightpath"
             },
             {
@@ -61,15 +50,6 @@
                "header": "Royal Factor Bathrilor",
                "ends": ["Better Late Than Never"],
                "starts": ["Good Natured Emma"],
-               "objectives": [],
-               "type": "quest"
-            },
-            {
-               "coords": { "x": 49, "y": 47 },
-               "header": "Ol' Emma",
-               "ends": ["Good Natured Emma"],
-               "starts": ["Good Luck Charm"],
-               "objectives": ["She patrols around"],
                "type": "quest"
             },
             {
@@ -77,177 +57,152 @@
                "header": "Ol' Emma",
                "ends": ["Good Natured Emma"],
                "starts": ["Good Luck Charm"],
-               "objectives": ["She patrols around"],
+               "special": ["She patrols around"],
                "type": "quest"
             }
          ]
       },
       {
          "zone": "stormwind",
-         "experience": 56.43,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 53, "y": 56 },
+               "align": "bottom",
                "header": "Ol' Emma",
                "ends": ["Good Natured Emma"],
                "starts": ["Good Luck Charm"],
-               "objectives": ["She patrols around"],
+               "special": ["She patrols around"],
                "type": "quest"
             },
             {
                "coords": { "x": 66, "y": 62 },
+               "align": "bottom",
                "header": "Stormwind Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Fly to Redridge"],
+               "special": ["Fly to Redridge"],
                "type": "flightpath"
             }
          ]
       },
       {
          "zone": "redridge",
-         "experience": 56.45,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 31, "y": 59 },
                "header": "Redridge Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "flightpath"
             },
             {
                "coords": { "x": 27, "y": 45 },
                "header": "Lakeshier Inn",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Set Hearthstone"],
+               "special": ["Set Hearthstone"],
                "type": "hub"
             }
          ]
       },
       {
          "zone": "redridge",
-         "experience": 56.45,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 27, "y": 45 },
                "header": "Lakeshier Inn",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Set Hearthstone"],
+               "special": ["Set Hearthstone"],
                "type": "hub"
             },
             {
                "coords": { "x": 31, "y": 59 },
                "header": "Redridge Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Fly to Burning Steppes"],
+               "special": ["Fly to Burning Steppes"],
                "type": "flightpath"
             }
          ]
       },
       {
          "zone": "steppes",
-         "experience": 56.45,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 84, "y": 68 },
+               "align": "bottom",
                "header": "Burning Steppes Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "flightpath"
             },
             {
                "coords": { "x": 86, "y": 69 },
+               "align": "bottom",
                "header": "Morgan's Vigil",
-               "ends": [],
-               "starts": ["Marshal Windsor", "The Good Stuff", "Overmaster Pyron"],
-               "objectives": [],
+               "starts": [["Marshal Windsor", "D"], ["The Good Stuff", "D"], ["Overmaster Pyron", "D"]],
                "type": "hub"
             },
             {
                "coords": { "x": 95, "y": 32 },
+               "align": "top",
                "header": "Cyrus Therepentous",
-               "ends": ["A Taste of Flame P1"],
-               "starts": ["A Taste of Flame P1-2"],
-               "objectives": ["A Taste of Flame P1"],
+               "ends": [["A Taste of Flame", "P1"]],
+               "starts": [["A Taste of Flame", "P1-2"]],
+               "objectives": [["A Taste of Flame", "P1"]],
                "type": "quest"
             },
             {
                "coords": { "x": 66, "y": 22 },
+               "align": "top",
                "header": "Flame Crest",
-               "ends": [],
-               "starts": ["The Heart to the Mountain", "Ribbly Screwpigot"],
-               "objectives": ["Hearthstone to Redridge"],
+               "starts": [["The Heart to the Mountain", "D"], ["Ribbly Screwpigot", "D"]],
+               "special": ["Hearthstone to Lakeshire"],
                "type": "quest"
             }
          ]
       },
       {
          "zone": "redridge",
-         "experience": 56.48,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 27, "y": 45 },
                "header": "Lakeshier Inn",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "hub"
             },
             {
                "coords": { "x": 31, "y": 59 },
                "header": "Redridge Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Fly to Ironforge"],
+               "special": ["Fly to Ironforge"],
                "type": "flightpath"
             }
          ]
       },
       {
          "zone": "ironforge",
-         "experience": 56.48,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 56, "y": 48 },
+               "align": "top",
                "header": "Ironforge Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "flightpath"
             },
             {
                "coords": { "x": 39, "y": 56 },
+               "align": "top",
                "header": "King Magni Bronzebeard",
-               "ends": [],
                "starts": ["Kharan Mighthammer"],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 20, "y": 78 },
                "header": "Gates of Ironforge",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             }
          ]
       },
       {
          "zone": "morogh",
-         "experience": 56.48,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 53, "y": 35 },
                "header": "Gates of Ironforge",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             },
             {
@@ -255,301 +210,255 @@
                "header": "Ragnar Thunderbrew",
                "ends": ["Ragnar Thunderbrew"],
                "starts": ["Hurley Blackbreath"],
-               "objectives": [],
                "type": "quest"
             }
          ]
       },
       {
          "zone": "morogh",
-         "experience": 56.48,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 47, "y": 52 },
                "header": "Ragnar Thunderbrew",
                "ends": ["Ragnar Thunderbrew"],
                "starts": ["Hurley Blackbreath"],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 53, "y": 35 },
                "header": "Gates of Ironforge",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             }
          ]
       },
       {
          "zone": "ironforge",
-         "experience": 56.48,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 20, "y": 78 },
+               "align": "top",
                "header": "Gates of Ironforge",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             },
             {
                "coords": { "x": 56, "y": 48 },
+               "align": "top",
                "header": "Ironforge Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Fly to Searing Gorge"],
+               "special": ["Fly to Searing Gorge"],
                "type": "flightpath"
             }
          ]
       },
       {
          "zone": "searing",
-         "experience": 56.48,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 38, "y": 31 },
                "header": "Searing Gorge Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "flightpath"
             },
             {
                "coords": { "x": 45, "y": 85 },
-               "header": "Blackrock Mountain",
-               "ends": ["Dark Iron Legacy P1"],
-               "starts": ["Dark Iron Legacy P1-2", "Attuned to the Core"],
-               "objectives": ["The Dark Iron Legacy questline can only be picked up while dead", "Overmaster Pyron", "Enter BRD with 8 quests"],
+               "header": "Blackrock Depths",
+               "starts": [["Dark Iron Legacy", "D"], ["Attuned to the Core", "D"]],
+               "objectives": [["Marshal Windsor", "D"], ["The Good Stuff", "D"], ["Overmaster Pyron", "D"], ["The Heart to the Mountain", "D"], ["A Taste of Flame", "D"], ["Ribbly Screwpigot", "D"]],
                "type": "objective"
             }
          ]
       },
       {
          "zone": "redridge",
-         "experience": 56.59,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 27, "y": 45 },
                "header": "Lakeshier Inn",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "hub"
             },
             {
                "coords": { "x": 31, "y": 59 },
                "header": "Redridge Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Fly to Burning Steppes"],
+               "special": ["Fly to Burning Steppes"],
                "type": "flightpath"
             }
          ]
       },
       {
          "zone": "steppes",
-         "experience": 56.59,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 84, "y": 68 },
                "header": "Burning Steppes Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "flightpath"
             },
             {
                "coords": { "x": 86, "y": 69 },
+               "align": "right",
                "header": "Morgan's Vigil",
-               "ends": ["Abandoned Hope", "Overmaster Pyron"],
-               "starts": ["Indendius!"],
-               "objectives": [],
+               "ends": [["Abandoned Hope", "D"], ["Overmaster Pyron", "D"]],
+               "starts": [["Indendius!", "D"]],
                "type": "hub"
             }
          ]
       },
       {
          "zone": "steppes",
-         "experience": 56.65,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 86, "y": 69 },
+               "align": "right",
                "header": "Morgan's Vigil",
-               "ends": ["Abandoned Hope", "Overmaster Pyron"],
-               "starts": ["Indendius!"],
-               "objectives": [],
+               "ends": [["Abandoned Hope", "D"], ["Overmaster Pyron", "D"]],
+               "starts": [["Indendius!", "D"]],
                "type": "hub"
             },
             {
                "coords": { "x": 84, "y": 68 },
                "header": "Burning Steppes Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Fly to Ironforge"],
+               "special": ["Fly to Ironforge"],
                "type": "flightpath"
             }
          ]
       },
       {
          "zone": "ironforge",
-         "experience": 56.65,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 56, "y": 48 },
+               "align": "top",
                "header": "Ironforge Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "flightpath"
             },
             {
                "coords": { "x": 39, "y": 56 },
+               "align": "top",
                "header": "King Magni Bronzebeard",
                "ends": ["The Bearer of Bad News"],
                "starts": ["The Fate of the Kingdome"],
-               "objectives": [],
                "type": "quest"
             }
          ]
       },
       {
          "zone": "ironforge",
-         "experience": 56.68,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 39, "y": 56 },
+               "align": "top",
                "header": "King Magni Bronzebeard",
                "ends": ["The Bearer of Bad News"],
                "starts": ["The Fate of the Kingdome"],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 56, "y": 48 },
+               "align": "top",
                "header": "Ironforge Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Fly to Searing Gorge"],
+               "special": ["Fly to Searing Gorge"],
                "type": "flightpath"
             }
          ]
       },
       {
          "zone": "searing",
-         "experience": 56.68,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 38, "y": 31 },
                "header": "Searing Gorge Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "flightpath"
             },
             {
                "coords": { "x": 45, "y": 85 },
-               "header": "Blackrock Mountain",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Enter BRD again", "Farm a Crumpled Up Note and start the quest", "When done, camp out and return MC prequest", "Hearthstone to Redridge"],
+               "header": "Blackrock Depths",
+               "special": ["Farm a Crumpled Up Note", "Camp out & return MC prequest", "Hearthstone to Redridge"],
                "type": "objective"
             }
          ]
       },
       {
          "zone": "redridge",
-         "experience": 57.01,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 27, "y": 45 },
                "header": "Lakeshier Inn",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "hub"
             },
             {
                "coords": { "x": 31, "y": 59 },
                "header": "Redridge Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Fly to Burning Steppes"],
+               "special": ["Fly to Burning Steppes"],
                "type": "flightpath"
             }
          ]
       },
       {
          "zone": "steppes",
-         "experience": 57.01,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 84, "y": 68 },
+               "align": "bottom",
                "header": "Burning Steppes Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "flightpath"
             },
             {
                "coords": { "x": 86, "y": 69 },
+               "align": "bottom",
                "header": "Morgan's Vigil",
-               "ends": ["Jail Break!", "The Good Stuff", "Incendius!"],
+               "ends": [["Jail Break!", "D"], ["The Good Stuff", "D"], ["Incendius!", "D"]],
                "starts": ["Stormwind Rendezvous"],
-               "objectives": [],
                "type": "hub"
             },
             {
                "coords": { "x": 95, "y": 32 },
+               "align": "top",
                "header": "Cyrus Therepentous",
-               "ends": ["A Taste of Flame P2"],
-               "starts": [],
-               "objectives": [],
+               "ends": [["A Taste of Flame", "D"]],
                "type": "quest"
             },
             {
                "coords": { "x": 66, "y": 22 },
+               "align": "top",
                "header": "Flame Crest",
-               "ends": ["Ribbly Screwpigot"],
-               "starts": [],
-               "objectives": [],
+               "ends": [["Ribbly Screwpigot", "D"]],
                "type": "quest"
             }
          ]
       },
       {
          "zone": "steppes",
-         "experience": 57.17,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 66, "y": 22 },
                "header": "Flame Crest",
-               "ends": ["Ribbly Screwpigot"],
-               "starts": [],
-               "objectives": [],
+               "ends": [["Ribbly Screwpigot", "D"]],
                "type": "quest"
             },
             {
                "coords": { "x": 84, "y": 68 },
                "header": "Burning Steppes Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Fly to Stormwind"],
+               "special": ["Fly to Stormwind"],
                "type": "flightpath"
             }
          ]
       },
       {
          "zone": "stormwind",
-         "experience": 57.17,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 66, "y": 62 },
                "header": "Stormwind Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "flightpath"
             },
             {
@@ -557,261 +466,218 @@
                "header": "Reginald Windsor",
                "ends": ["Stormwind Rendezvous"],
                "starts": ["The Great Masquerade"],
-               "objectives": ["Talk to the Squire to spawn Reginald"],
+               "special": ["Talk to the Squire"],
                "type": "quest"
             },
             {
                "coords": { "x": 78, "y": 18 },
+               "align": "right",
                "header": "Highlord Bolvar Fordragon",
                "ends": ["The Great Masquerade"],
                "starts": ["The First and the Last", "The Dragon's Eye"],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 76, "y": 60 },
+               "align": "right",
                "header": "Master Mathias Shaw",
                "ends": ["The First and the Last", "Honor the Dead"],
                "starts": ["Honor the Dead", "Flint Shadowmore"],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 65, "y": 6 },
                "header": "Deeprun Tram",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             }
          ]
       },
       {
          "zone": "ironforge",
-         "experience": 57.21,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 78, "y": 52 },
+               "align": "right",
                "header": "Deeprun Tram",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             },
             {
                "coords": { "x": 75, "y": 12 },
+               "align": "right",
                "header": "The Library",
-               "ends": [],
-               "starts": ["A Little Slime Goes a Long Way P2"],
-               "objectives": [],
+               "starts": [["A Little Slime Goes a Long Way", "P2"]],
                "type": "quest"
             },
             {
                "coords": { "x": 39, "y": 56 },
+               "align": "top",
                "header": "King Magni Bronzebeard",
-               "ends": ["The Princess's Surprise"],
-               "starts": [],
-               "objectives": [],
+               "ends": [["The Princess's Surprise", "D"]],
                "type": "quest"
             },
             {
                "coords": { "x": 20, "y": 78 },
                "header": "Gates of Ironforge",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             }
          ]
       },
       {
          "zone": "morogh",
-         "experience": 57.26,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 53, "y": 35 },
                "header": "Gates of Ironforge",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             },
             {
                "coords": { "x": 47, "y": 52 },
                "header": "Ragnar Thunderbrew",
                "ends": ["Hurley Blackbreath"],
-               "starts": [],
-               "objectives": [],
                "type": "quest"
             }
          ]
       },
       {
          "zone": "morogh",
-         "experience": 57.29,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 47, "y": 52 },
                "header": "Ragnar Thunderbrew",
                "ends": ["Hurley Blackbreath"],
-               "starts": [],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 53, "y": 35 },
                "header": "Gates of Ironforge",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             }
          ]
       },
       {
          "zone": "ironforge",
-         "experience": 57.29,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 20, "y": 78 },
                "header": "Gates of Ironforge",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             },
             {
                "coords": { "x": 25, "y": 74 },
+               "align": "top",
                "header": "Ironforge Auction House",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Buy 2x Thorium Bar"],
+               "special": ["Buy 2x Thorium Bar"],
                "type": "objective"
             },
             {
                "coords": { "x": 56, "y": 48 },
+               "align": "top",
                "header": "Ironforge Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Fly to Menethil"],
+               "special": ["Fly to Menethil"],
                "type": "flightpath"
             }
          ]
       },
       {
          "zone": "wetlands",
-         "experience": 57.29,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 9, "y": 60 },
-               "header": "Menethil Harbor Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
+               "align": "right",
+               "header": "Menethil Flightpath",
                "type": "flightpath"
             },
             {
                "coords": { "x": 5, "y": 57 },
                "header": "Wetlands Harbor",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             }
          ]
       },
       {
          "zone": "dustwallow",
-         "experience": 57.29,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 71, "y": 56 },
+               "align": "right",
                "header": "Theramore Harbor",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             },
             {
                "coords": { "x": 67, "y": 51 },
                "header": "Theramore Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Fly to Tanaris"],
+               "special": ["Fly to Tanaris"],
                "type": "flightpath"
             }
          ]
       },
       {
          "zone": "tanaris",
-         "experience": 57.29,
+         "experience": 0,
          "waypoints": [
             {
-               "coords": { "x": 51, "y": 29 },
+               "coords": { "x": 50, "y": 29 },
                "header": "Tanaris Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "flightpath"
             },
             {
                "coords": { "x": 52, "y": 28 },
+               "align": "right",
                "header": "Gadgetzan",
                "ends": ["Mold Rhymes With"],
                "starts": ["Fire Plume Forged"],
-               "objectives": ["Set Hearthstone"],
+               "special": ["Set Hearthstone"],
                "type": "quest"
             }
          ]
       },
       {
          "zone": "tanaris",
-         "experience": 57.31,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 52, "y": 28 },
+               "align": "right",
                "header": "Gadgetzan",
                "ends": ["Mold Rhymes With"],
                "starts": ["Fire Plume Forged"],
-               "objectives": ["Set Hearthstone"],
+               "special": ["Set Hearthstone"],
                "type": "quest"
             },
             {
-               "coords": { "x": 51, "y": 29 },
+               "coords": { "x": 50, "y": 29 },
                "header": "Tanaris Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Fly to Ashenvale"],
+               "special": ["Fly to Ashenvale"],
                "type": "flightpath"
             }
          ]
       },
       {
          "zone": "ashenvale",
-         "experience": 57.31,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 34, "y": 48 },
+               "align": "bottom",
                "header": "Ashenvale Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "flightpath"
             },
             {
                "coords": { "x": 60, "y": 62 },
+               "align": "right",
                "header": "Ashenvale Crossroad",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             },
             {
                "coords": { "x": 56, "y": 28 },
+               "align": "right",
                "header": "Felwood Border",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             }
          ]

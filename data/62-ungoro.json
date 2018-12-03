@@ -6,127 +6,137 @@
          "waypoints": [
             {
                "coords": { "x": 77, "y": 67 },
+               "align": "right",
                "header": "Tanaris Border",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             },
             {
                "coords": { "x": 72, "y": 76 },
+               "align": "bottom",
                "header": "Torwa Pathfinder",
-               "ends": [],
-               "starts": ["The apes of Un'Goro", "The Fare of Lar'Korwi"],
-               "objectives": [],
+               "starts": ["The Apes of Un'Goro", "The Fare of Lar'Korwi"],
                "type": "quest"
             },
             {
                "coords": { "x": 63, "y": 69 },
                "header": "A Wrecked Raft",
-               "ends": ["It's a Secret to Everybody P1"],
-               "starts": ["It's a Secret to Everybody P1-2"],
-               "objectives": ["It's a Secret to Everybody P1"],
+               "ends": [["It's a Secret to Everybody", "P1"]],
+               "starts": [["It's a Secret to Everybody", "P1-2"]],
+               "objectives": [["It's a Secret to Everybody", "P1"]],
                "type": "quest"
             },
             {
                "coords": { "x": 69, "y": 57 },
+               "align": "right",
                "header": "Fresh Threshadon Carcass",
-               "ends": [],
-               "starts": [],
                "objectives": ["The Fare of Lar'Korwi"],
                "type": "objective"
             },
             {
                "coords": { "x": 45, "y": 6 },
+               "align": "right",
                "header": "Un'Goro Flightpath",
-               "ends": [],
-               "starts": [],
+               "special": ["Learn the Flightpath"],
+               "type": "flightpath"
+            }
+         ]
+      },
+      {
+         "zone": "ungoro",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 45, "y": 6 },
+               "header": "Un'Goro Flightpath",
                "objectives": ["Learn the Flightpath"],
                "type": "flightpath"
             },
             {
                "coords": { "x": 44, "y": 9 },
                "header": "Marshal's Refuge",
-               "ends": ["It's a Secret to Everybody P2"],
-               "starts": ["It's a Secret to Everybody P3", "Shizzle's Flyer", "Muigin and Larion", "Lost!", "Roll the Bones", "Beware of Pherrordax", "Alien Ecology", "Expedition Salvation"],
-               "objectives": ["Pick up 7x Green, Blue, Yellow & Red Crystals"],
-               "type": "hub"
-            }
-         ]
-      },
-      {
-         "zone": "ungoro",
-         "experience": 52.06,
-         "waypoints": [
-            {
-               "coords": { "x": 44, "y": 9 },
-               "header": "Marshal's Refuge",
-               "ends": ["It's a Secret to Everybody P2"],
-               "starts": ["It's a Secret to Everybody P3", "Shizzle's Flyer", "Muigin and Larion", "Lost!", "Roll the Bones", "Beware of Pherrordax", "Alien Ecology", "Expedition Salvation"],
-               "objectives": ["Pick up 7x Green, Blue, Yellow & Red Crystals", "Obtain atleast 25 Un'goro Soil"],
+               "ends": [["It's a Secret to Everybody", "P2"]],
+               "starts": [["It's a Secret to Everybody", "P3"], "Shizzle's Flyer", "Muigin and Larion", "Lost!", "Roll the Bones", "Beware of Pherrordax", "Alien Ecology", "Expedition Salvation"],
+               "special": ["Pick up 7x of RGBY Crystals", "Obtain 25 Un'goro Soil"],
                "type": "hub"
             },
             {
                "coords": { "x": 48, "y": 33 },
                "header": "Lakkari Tar Pits",
-               "ends": [],
-               "starts": [],
+               "objectives": ["Super Sticky"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "ungoro",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 48, "y": 33 },
+               "header": "Lakkari Tar Pits",
                "objectives": ["Super Sticky"],
                "type": "objective"
             },
             {
                "coords": { "x": 57, "y": 10 },
-               "header": "",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Beware of Pterrordax", "Shizzle's Flyer", "Farm half the scales"],
+               "header": "Placeholder",
+               "objectives": ["Beware of Pterrordax", "Shizzle's Flyer"],
+               "special": ["Farm half the scales"],
                "type": "objective"
             },
             {
                "coords": { "x": 60, "y": 23 },
+               "align": "bottom",
                "header": "Lakkari Tar Pits",
-               "ends": [],
-               "starts": [],
                "objectives": ["Super Sticky"],
                "type": "objective"
             },
             {
                "coords": { "x": 63, "y": 17 },
+               "align": "top",
                "header": "Fungal Rock",
-               "ends": [],
-               "starts": [],
                "objectives": ["The Apes of Un'Goro"],
                "type": "objective"
             },
             {
                "coords": { "x": 69, "y": 23 },
-               "header": "",
-               "ends": [],
-               "starts": [],
+               "align": "right",
+               "header": "Placeholder",
                "objectives": ["Muigin and Larion"],
                "type": "objective"
             },
             {
                "coords": { "x": 69, "y": 37 },
+               "align": "right",
                "header": "Crate of Foodstuffs",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Muigin and Larion"],
+               "objectives": ["Expedition Salvation"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "ungoro",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 69, "y": 37 },
+               "align": "right",
+               "header": "Crate of Foodstuffs",
+               "objectives": ["Expedition Salvation"],
                "type": "objective"
             },
             {
                "coords": { "x": 72, "y": 76 },
+               "align": "bottom",
                "header": "Torwa Pathfinder",
-               "ends": ["The apes of Un'Goro", "The Fare of Lar'Korwi"],
+               "ends": ["The Apes of Un'Goro", "The Fare of Lar'Korwi"],
                "starts": ["The Mighty U'cha", "The Scent of Lar'Korwi"],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 67, "y": 73 },
+               "align": "bottom",
                "header": "The Marshlands",
-               "ends": [],
-               "starts": [],
                "objectives": ["The Scent of Lar'Korwi"],
                "type": "objective"
             }
@@ -134,77 +144,78 @@
       },
       {
          "zone": "ungoro",
-         "experience": 52.31,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 67, "y": 73 },
+               "align": "top",
                "header": "The Marshlands",
-               "ends": [],
-               "starts": [],
                "objectives": ["The Scent of Lar'Korwi"],
                "type": "objective"
             },
             {
                "coords": { "x": 72, "y": 76 },
+               "align": "top",
                "header": "Torwa Pathfinder",
                "ends": ["The Scent of Lar'Korwi"],
                "starts": ["The Bait for Lar'Korwi"],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 50, "y": 78 },
+               "align": "top",
                "header": "Hive Enterance",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             },
             {
                "coords": { "x": 49, "y": 85 },
+               "align": "bottom",
                "header": "The Slithering Scar Hive",
-               "ends": [],
-               "starts": [],
                "objectives": ["Alien Ecology", "Bungle in the Jungle"],
                "type": "objective"
             },
             {
                "coords": { "x": 40, "y": 70 },
                "header": "Terror Run",
-               "ends": [],
-               "starts": [],
                "objectives": ["Beware of Pterrordax", "Shizzle's Flyer", "Roll the Bones"],
                "type": "objective"
             },
             {
                "coords": { "x": 38, "y": 66 },
                "header": "Research Equipment",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Muigin and Larion"],
+               "objectives": ["Expedition Salvation"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "ungoro",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 38, "y": 66 },
+               "align": "top",
+               "header": "Research Equipment",
+               "objectives": ["Expedition Salvation"],
                "type": "objective"
             },
             {
                "coords": { "x": 21, "y": 60 },
                "header": "Terror Run",
-               "ends": [],
-               "starts": [],
                "objectives": ["Beware of Pterrordax", "Shizzle's Flyer"],
                "type": "objective"
             },
             {
                "coords": { "x": 31, "y": 50 },
+               "align": "top",
                "header": "Krakle",
-               "ends": [],
                "starts": ["Finding the Source"],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 50, "y": 46 },
+               "align": "top",
                "header": "Fire Plume Right Hotspot",
-               "ends": [],
-               "starts": [],
                "objectives": ["Finding the Source"],
                "type": "objective"
             }
@@ -212,13 +223,12 @@
       },
       {
          "zone": "ungoro",
-         "experience": 52.49,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 50, "y": 46 },
+               "align": "top",
                "header": "Fire Plume Right Hotspot",
-               "ends": [],
-               "starts": [],
                "objectives": ["Finding the Source"],
                "type": "objective"
             },
@@ -227,31 +237,47 @@
                "header": "Krakle",
                "ends": ["Finding the Source"],
                "starts": ["The New Springs"],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 52, "y": 50 },
+               "align": "right",
                "header": "Ringo",
                "ends": ["Lost"],
                "starts": ["A Little Help From My Friends"],
-               "objectives": [],
                "type": "objective"
             },
             {
+               "coords": { "x": 55, "y": 41 },
+               "align": "right",
+               "header": "Un'goro Mountainside",
+               "type": "travel"
+            },
+            {
                "coords": { "x": 46, "y": 14 },
+               "align": "right",
                "header": "Lakkari Tar Pits",
-               "ends": [],
-               "starts": [],
                "objectives": ["A Little Help From My Friends"],
                "type": "objective"
             },
             {
                "coords": { "x": 44, "y": 9 },
+               "align": "right",
                "header": "Marshal's Refuge",
                "ends": ["Shizzle's Flyer", "Muigin and Larion", "A Little Help From My Friends", "Roll the Bones", "Beware of Pherrordax", "Alien Ecology", "Expedition Salvation"],
-               "starts": [],
-               "objectives": [],
+               "type": "hub"
+            }
+         ]
+      },
+      {
+         "zone": "ungoro",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 44, "y": 9 },
+               "align": "bottom",
+               "header": "Marshal's Refuge",
+               "ends": ["Shizzle's Flyer", "Muigin and Larion", "A Little Help From My Friends", "Roll the Bones", "Beware of Pherrordax", "Alien Ecology", "Expedition Salvation"],
                "type": "hub"
             },
             {
@@ -259,197 +285,184 @@
                "header": "JD Collie",
                "ends": ["Crystals of Power"],
                "starts": ["Crystals of Power", "The Northern Pylon", "The Western Pylon", "The Eastern Pylon"],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 45, "y": 6 },
+               "align": "right",
                "header": "Un'Goro Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Fly to Tanaris"],
+               "special": ["Fly to Tanaris"],
                "type": "flightpath"
             }
          ]
       },
       {
          "zone": "tanaris",
-         "experience": 52.96,
+         "experience": 0,
          "waypoints": [
             {
-               "coords": { "x": 51, "y": 29 },
+               "coords": { "x": 50, "y": 29 },
                "header": "Tanaris Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "flightpath"
             },
             {
                "coords": { "x": 52, "y": 28 },
+               "align": "right",
                "header": "Gadgetzan",
                "ends": ["Super Sticky", "Bungle in the Jungle"],
                "starts": ["Pawn Captures Queen"],
-               "objectives": [],
                "type": "hub"
             }
          ]
       },
       {
          "zone": "tanaris",
-         "experience": 53.06,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 52, "y": 28 },
+               "align": "right",
                "header": "Gadgetzan",
                "ends": ["Super Sticky", "Bungle in the Jungle"],
                "starts": ["Pawn Captures Queen"],
-               "objectives": [],
                "type": "hub"
             },
             {
-               "coords": { "x": 51, "y": 29 },
+               "coords": { "x": 50, "y": 29 },
                "header": "Tanaris Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Fly to Un'Goro"],
+               "special": ["Fly to Un'Goro"],
                "type": "flightpath"
             }
          ]
       },
       {
          "zone": "ungoro",
-         "experience": 53.06,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 45, "y": 6 },
                "header": "Un'Goro Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "flightpath"
             },
             {
                "coords": { "x": 46, "y": 13 },
                "header": "Karna Remtravel",
-               "ends": [],
-               "starts": ["Chasing A-Me 01 P1"],
-               "objectives": [],
+               "starts": [["Chasing A-Me 01", "P1"]],
                "type": "quest"
             },
             {
                "coords": { "x": 57, "y": 13 },
+               "align": "top",
                "header": "The Northern Pylon",
-               "ends": [],
-               "starts": [],
                "objectives": ["The Northern Pylon"],
                "type": "objective"
             },
             {
                "coords": { "x": 68, "y": 13 },
+               "align": "top",
                "header": "Fungal Rock",
-               "ends": [],
-               "starts": [],
                "objectives": ["The Mighty U'Cha"],
                "type": "objective"
             },
             {
                "coords": { "x": 68, "y": 17 },
+               "align": "bottom",
                "header": "A-Me 01",
-               "ends": ["Chasing A-Me 01 P1-2"],
-               "starts": ["Chasing A-Me 01 P2-3"],
-               "objectives": [],
+               "ends": [["Chasing A-Me 01", "P1-2"]],
+               "starts": [["Chasing A-Me 01", "P2-3"]],
                "type": "quest"
             },
             {
-               "coords": { "x": 47, "y": 16 },
-               "header": "",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Chasing A-Me 01 P3"],
+               "coords": { "x": 48, "y": 17 },
+               "align": "bottom",
+               "header": "Marshal's Refuge Enterance",
+               "objectives": [["Chasing A-Me 01", "P3"]],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "ungoro",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 48, "y": 17 },
+               "align": "top",
+               "header": "Marshal's Refuge Enterance",
+               "objectives": [["Chasing A-Me 01", "P3"]],
                "type": "objective"
             },
             {
                "coords": { "x": 77, "y": 50 },
+               "align": "top",
                "header": "The Eastern Pylon",
-               "ends": [],
-               "starts": [],
                "objectives": ["The Eastern Pylon"],
                "type": "objective"
             },
             {
                "coords": { "x": 80, "y": 50 },
-               "header": "",
-               "ends": [],
-               "starts": [],
+               "align": "top",
+               "header": "Placeholder",
                "objectives": ["The Bait for Lor'Korwi"],
                "type": "objective"
             },
             {
                "coords": { "x": 72, "y": 76 },
+               "align": "bottom",
                "header": "Torwa Pathfinder",
                "ends": ["The Mighty U'cha", "The Scent of Lar'Korwi"],
-               "starts": [],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 50, "y": 78 },
+               "align": "bottom",
                "header": "Hive Enterance",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             },
             {
                "coords": { "x": 44, "y": 81 },
+               "align": "bottom",
                "header": "The Slithering Scar Hive",
-               "ends": [],
-               "starts": [],
                "objectives": ["Pawn Captures Queen"],
                "type": "objective"
             },
             {
                "coords": { "x": 24, "y": 59 },
                "header": "The Western Pylon",
-               "ends": [],
-               "starts": [],
-               "objectives": ["The Western Pylon", "Hearthstone to Tanaris"],
+               "objectives": ["The Western Pylon"],
+               "special": ["Hearthstone to Tanaris"],
                "type": "objective"
             }
          ]
       },
       {
          "zone": "tanaris",
-         "experience": 53.25,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 52, "y": 28 },
+               "align": "right",
                "header": "Gadgetzan",
                "ends": ["Pawn Captures Queen"],
                "starts": ["Calm Before the Storm"],
-               "objectives": [],
                "type": "hub"
             },
             {
-               "coords": { "x": 51, "y": 29 },
+               "coords": { "x": 50, "y": 30 },
                "header": "Tanaris Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Fly to Un'Goro"],
+               "special": ["Fly to Un'Goro"],
                "type": "flightpath"
             }
          ]
       },
       {
          "zone": "ungoro",
-         "experience": 53.31,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 45, "y": 6 },
+               "align": "right",
                "header": "Un'Goro Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "flightpath"
             },
             {
@@ -457,37 +470,30 @@
                "header": "JD Collie",
                "ends": ["Crystals of Power", "The Northern Pylon", "The Western Pylon", "The Eastern Pylon", "Making Sense of it"],
                "starts": ["Making Sense of it"],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 46, "y": 13 },
                "header": "Karna Remtravel",
-               "ends": ["Chasing A-Me 01 P3"],
-               "starts": [],
-               "objectives": [],
+               "ends": [["Chasing A-Me 01", "P3"]],
                "type": "quest"
             }
          ]
       },
       {
          "zone": "ungoro",
-         "experience": 53.46,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 46, "y": 13 },
                "header": "Karna Remtravel",
-               "ends": ["Chasing A-Me 01 P3"],
-               "starts": [],
-               "objectives": [],
+               "ends": [["Chasing A-Me 01", "P3"]],
                "type": "quest"
             },
             {
                "coords": { "x": 45, "y": 6 },
                "header": "Un'Goro Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Fly to Ashenvale"],
+               "special": ["Fly to Ashenvale"],
                "type": "flightpath"
             }
          ]

@@ -3,8 +3,6 @@
 "align": "left",
 "align": "right",
 
-special
-
-GET THE FELWOOD SLIME QUEST AFTER SEARING GORGE
+FIGURE OUT WHEN TO RETURN THE AZSHARA QUESTS!!
 
 -- 415

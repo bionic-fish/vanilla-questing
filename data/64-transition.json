@@ -2,112 +2,88 @@
    "path": [
       {
          "zone": "moonglade",
-         "experience": 53.64,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 35, "y": 72 },
                "header": "Timbermaw Hold Enterance",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             },
             {
                "coords": { "x": 36, "y": 42 },
                "header": "Remulos",
                "ends": ["Seed of Life"],
-               "starts": [],
-               "objectives": [],
                "type": "quest"
             }
          ]
       },
       {
          "zone": "moonglade",
-         "experience": 53.71,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 36, "y": 42 },
                "header": "Remulos",
                "ends": ["Seed of Life"],
-               "starts": [],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 35, "y": 72 },
                "header": "Timbermaw Hold Enterance",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Turn Left to enter Winterspring"],
+               "special": ["Turn left and enter Winterspring"],
                "type": "travel"
             }
          ]
       },
       {
          "zone": "winterspring",
-         "experience": 53.71,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 28, "y": 35 },
                "header": "Timbermaw Hold Enterance",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             },
             {
                "coords": { "x": 31, "y": 45 },
                "header": "Donova Snowden",
                "ends": ["The New Springs", "It's a Secret to Everybody"],
-               "starts": ["Strange Sources"],
-               "objectives": [],
+               "starts": ["The Videre Elixir"],
                "type": "quest"
             },
             {
                "coords": { "x": 52, "y": 30 },
+               "align": "top",
                "header": "Starfall Village",
                "ends": ["To Winterspring", "The Ruins of Kel'Theril"],
                "starts": ["The Ruins of Kel'Theril"],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 61, "y": 38 },
+               "align": "bottom",
                "header": "Everlook",
                "ends": ["Felnok Steelspring"],
                "starts": ["Trouble in Winterspring", "Sister Pamela", "The Everlook Report", "Duke Nicholas Zverenhoff"],
-               "objectives": [],
                "type": "hub"
             },
             {
-               "coords": { "x": 60, "y": 73 },
-               "header": "",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Strange Sources", "Use the Bridge"],
-               "type": "objective"
-            },
-            {
                "coords": { "x": 63, "y": 37 },
+               "align": "right",
                "header": "Winterspring Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Learn the Flightpath", "Fly to Darnassus"],
+               "special": ["Learn the Flightpath", "Fly to Darnassus"],
                "type": "flightpath"
             }
          ]
       },
       {
          "zone": "teldrassil",
-         "experience": 53.81,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 58, "y": 94 },
+               "align": "right",
                "header": "Darnassus Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "flightpath"
             },
             {
@@ -115,91 +91,77 @@
                "header": "Rut'theran Village",
                "ends": ["Favored of Elune?", "The Super Snapper FX"],
                "starts": ["Moontouched Wildkin", "Return to Troyas"],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 56, "y": 90 },
+               "align": "top",
                "header": "Darnassus Teleporter",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             }
          ]
       },
       {
          "zone": "darnassus",
-         "experience": 53.86,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 31, "y": 41 },
                "header": "Darnassus Teleporter",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "travel"
             },
             {
                "coords": { "x": 40, "y": 85 },
                "header": "Temple of the Moon",
-               "ends": ["Calm Before the Storm P1", "Prayer to Elune"],
-               "starts": ["Calm Before the Storm P2"],
-               "objectives": [],
+               "ends": [["Calm Before the Storm", "P1"], "Prayer to Elune"],
+               "starts": [["Calm Before the Storm", "P2"]],
                "type": "quest"
             },
             {
                "coords": { "x": 40, "y": 42 },
                "header": "Temple of the Moon",
-               "ends": ["Calm Before the Storm P2"],
-               "starts": [],
-               "objectives": [],
+               "ends": [["Calm Before the Storm", "P2"]],
                "type": "quest"
             },
             {
                "coords": { "x": 67, "y": 16 },
+               "align": "top",
                "header": "Darnassus Inn",
-               "ends": [],
                "starts": ["Assisting Arch Druid Staghelm"],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 35, "y": 8 },
+               "align": "top",
                "header": "Arch Druid Fandral Staghelm",
                "ends": ["Assisting Arch Druid Staghelm"],
                "starts": ["Un'Goro Soil"],
-               "objectives": [],
                "type": "quest"
             },
             {
                "coords": { "x": 30, "y": 8 },
+               "align": "top",
                "header": "Jenal",
                "ends": ["Un'Goro Soil"],
-               "starts": [],
-               "objectives": ["Hearthstone to Tanaris"],
+               "special": ["Hearthstone to Tanaris"],
                "type": "quest"
             }
          ]
       },
       {
          "zone": "tanaris",
-         "experience": 54.03,
+         "experience": 0,
          "waypoints": [
             {
                "coords": { "x": 52, "y": 28 },
+               "align": "right",
                "header": "Gadgetzan Inn",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
                "type": "hub"
             },
             {
-               "coords": { "x": 51, "y": 30 },
+               "coords": { "x": 50, "y": 30 },
                "header": "Tanaris Flightpath",
-               "ends": [],
-               "starts": [],
-               "objectives": ["Fly to Feathermoon Stronghold"],
+               "special": ["Fly to Feathermoon"],
                "type": "flightpath"
             }
          ]
