@@ -25,7 +25,7 @@
                "align": "right",
                "header": "Rebel Camp",
                "ends": ["Supplies to Private Thorsen", "Jungle Secrets"],
-               "starts": ["Jungle Secrets", "Bookie Herod", "The Second Rebellion", "Bad Medicine", "Krazel's Cookery"],
+               "starts": ["Jungle Secrets", "Bookie Herod", "The Second Rebellion", "Bad Medicine", "Krazek's Cookery"],
                "type": "quest"
             },
             {
@@ -54,7 +54,7 @@
                "header": "Kurzens Compound",
                "ends": ["Bookie Herod"],
                "starts": ["The Hidden Key"],
-               "objectives": ["The Second Rebellion", "Bad Medicine", "Krazel's Cookery"],
+               "objectives": ["The Second Rebellion", "Bad Medicine", "Krazek's Cookery"],
                "type": "objective"
             },
             {

@@ -43,7 +43,7 @@
                "coords": { "x": 30, "y": 86 },
                "header": "Tommy Joe Stonefield",
                "ends": ["Young Lovers"],
-               "starts": ["Speak with Gamma"],
+               "starts": ["Speak with Gramma"],
                "type": "quest"
             }
          ]
@@ -56,14 +56,14 @@
                "coords": { "x": 30, "y": 86 },
                "header": "Tommy Joe Stonefield",
                "ends": ["Young Lovers"],
-               "starts": ["Speak with Gamma"],
+               "starts": ["Speak with Gramma"],
                "type": "quest"
             },
             {
                "coords": { "x": 35, "y": 84 },
                "align": "top",
                "header": "Gamma Stonefield",
-               "ends": ["Speak with Gamma"],
+               "ends": ["Speak with Gramma"],
                "starts": ["Note to William"],
                "type": "quest"
             },
@@ -262,7 +262,7 @@
                "coords": { "x": 74, "y": 72 },
                "align": "top",
                "header": "Guard Thomas",
-               "starts": ["Deliver Thomas's Report", "Report to Gryan Stoutmantle"],
+               "starts": ["Deliver Thomas' Report", "Report to Gryan Stoutmantle"],
                "type": "quest"
             },
             {
@@ -307,7 +307,7 @@
                "coords": { "x": 42, "y": 66 },
                "align": "top",
                "header": "Goldshire",
-               "ends": ["Collecting Kelp", "Deliver Thomas's Report", "The Jasperlode Mine"],
+               "ends": ["Collecting Kelp", "Deliver Thomas' Report", "The Jasperlode Mine"],
                "starts": ["The Escape", "Elmore's Task", "Westbrook Garrison Needs Help!"],
                "type": "hub" 
             },

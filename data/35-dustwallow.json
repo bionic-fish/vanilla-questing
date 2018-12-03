@@ -36,7 +36,7 @@
                "coords": { "x": 55, "y": 26 },
                "align": "top",
                "header": "Swamp Eye Jarl",
-               "starts": ["Eyes for Jarl"],
+               "starts": ["Jarl Needs Eyes"],
                "type": "quest"
             },
             {
@@ -71,7 +71,7 @@
                "coords": { "x": 35, "y": 22 },
                "align": "top",
                "header": "Darkmist Cavern",
-               "objectives": ["Eyes for Jarl"],
+               "objectives": ["Jarl Needs Eyes"],
                "type": "objective"
             },
             {
@@ -85,7 +85,7 @@
                "coords": { "x": 55, "y": 26 },
                "align": "bottom",
                "header": "Swamp Eye Jarl",
-               "ends": ["Eyes for Jarl"],
+               "ends": ["Jarl Needs Eyes"],
                "type": "quest"
             },
             {

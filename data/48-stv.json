@@ -80,13 +80,13 @@
                "coords": { "x": 26, "y": 73 },
                "header": "Booty Bay Harbor",
                "ends": ["Scaring Shaky"],
-               "starts": ["Return of MacKinley"],
+               "starts": ["Return to MacKinley"],
                "type": "quest"
             },
             {
                "coords": { "x": 27, "y": 77 },
                "header": "Booty Bay",
-               "ends": ["Return of MacKinley", "Pretty Boy Duncan", "Stranglethorn Fever", "The Curse of the Tides", ["The Bloodsail Buccaneers", "P2-3"]],
+               "ends": ["Return to MacKinley", "Pretty Boy Duncan", "Stranglethorn Fever", "The Curse of the Tides", ["The Bloodsail Buccaneers", "P2-3"]],
                "starts": [["The Bloodsail Buccaneers", "P3-4"], "The Curse of the Tides", "Up to Snuff", "Voodoo Dues", "Keep an Eye Out"],
                "type": "hub"
             }

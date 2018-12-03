@@ -12,7 +12,7 @@
             {
                "coords": { "x": 64, "y": 20 },
                "header": "Enohar Thunderbrew",
-               "starts": ["Ragnar Thunderbrewda"],
+               "starts": ["Ragnar Thunderbrew"],
                "type": "quest"
             }
          ]
@@ -24,7 +24,7 @@
             {
                "coords": { "x": 64, "y": 20 },
                "header": "Enohar Thunderbrew",
-               "starts": ["Ragnar Thunderbrewda"],
+               "starts": ["Ragnar Thunderbrew"],
                "type": "quest"
             },
             {
@@ -149,7 +149,7 @@
                "coords": { "x": 66, "y": 22 },
                "align": "top",
                "header": "Flame Crest",
-               "starts": [["The Heart to the Mountain", "D"], ["Ribbly Screwpigot", "D"]],
+               "starts": [["The Heart to the Mountain", "D"], ["Ribbly Screwspigot", "D"]],
                "special": ["Hearthstone to Lakeshire"],
                "type": "quest"
             }
@@ -263,8 +263,8 @@
             {
                "coords": { "x": 45, "y": 85 },
                "header": "Blackrock Depths",
-               "starts": [["Dark Iron Legacy", "D"], ["Attuned to the Core", "D"]],
-               "objectives": [["Marshal Windsor", "D"], ["The Good Stuff", "D"], ["Overmaster Pyron", "D"], ["The Heart to the Mountain", "D"], ["A Taste of Flame", "D"], ["Ribbly Screwpigot", "D"]],
+               "starts": [["Dark Iron Legacy", "D"], ["Attunement to the Core", "D"]],
+               "objectives": [["Marshal Windsor", "D"], ["The Good Stuff", "D"], ["Overmaster Pyron", "D"], ["The Heart to the Mountain", "D"], ["A Taste of Flame", "D"], ["Ribbly Screwspigot", "D"]],
                "type": "objective"
             }
          ]
@@ -300,7 +300,7 @@
                "align": "right",
                "header": "Morgan's Vigil",
                "ends": [["Abandoned Hope", "D"], ["Overmaster Pyron", "D"]],
-               "starts": [["Indendius!", "D"]],
+               "starts": [["Incendius!", "D"]],
                "type": "hub"
             }
          ]
@@ -314,7 +314,7 @@
                "align": "right",
                "header": "Morgan's Vigil",
                "ends": [["Abandoned Hope", "D"], ["Overmaster Pyron", "D"]],
-               "starts": [["Indendius!", "D"]],
+               "starts": [["Incendius!", "D"]],
                "type": "hub"
             },
             {
@@ -340,7 +340,7 @@
                "align": "top",
                "header": "King Magni Bronzebeard",
                "ends": ["The Bearer of Bad News"],
-               "starts": ["The Fate of the Kingdome"],
+               "starts": ["The Fate of the Kingdom"],
                "type": "quest"
             }
          ]
@@ -354,7 +354,7 @@
                "align": "top",
                "header": "King Magni Bronzebeard",
                "ends": ["The Bearer of Bad News"],
-               "starts": ["The Fate of the Kingdome"],
+               "starts": ["The Fate of the Kingdom"],
                "type": "quest"
             },
             {
@@ -429,7 +429,7 @@
                "coords": { "x": 66, "y": 22 },
                "align": "top",
                "header": "Flame Crest",
-               "ends": [["Ribbly Screwpigot", "D"]],
+               "ends": [["Ribbly Screwspigot", "D"]],
                "type": "quest"
             }
          ]
@@ -441,7 +441,7 @@
             {
                "coords": { "x": 66, "y": 22 },
                "header": "Flame Crest",
-               "ends": [["Ribbly Screwpigot", "D"]],
+               "ends": [["Ribbly Screwspigot", "D"]],
                "type": "quest"
             },
             {

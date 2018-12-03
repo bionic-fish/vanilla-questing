@@ -55,7 +55,7 @@
                "coords": { "x": 44, "y": 9 },
                "header": "Marshal's Refuge",
                "ends": [["It's a Secret to Everybody", "P2"]],
-               "starts": [["It's a Secret to Everybody", "P3"], "Shizzle's Flyer", "Muigin and Larion", "Lost!", "Roll the Bones", "Beware of Pherrordax", "Alien Ecology", "Expedition Salvation"],
+               "starts": [["It's a Secret to Everybody", "P3"], "Shizzle's Flyer", "Muigin and Larion", "Lost!", "Roll the Bones", "Beware of Pterrordax", "Alien Ecology", "Expedition Salvation"],
                "special": ["Pick up 7x of RGBY Crystals", "Obtain 25 Un'goro Soil"],
                "type": "hub"
             },
@@ -264,7 +264,7 @@
                "coords": { "x": 44, "y": 9 },
                "align": "right",
                "header": "Marshal's Refuge",
-               "ends": ["Shizzle's Flyer", "Muigin and Larion", "A Little Help From My Friends", "Roll the Bones", "Beware of Pherrordax", "Alien Ecology", "Expedition Salvation"],
+               "ends": ["Shizzle's Flyer", "Muigin and Larion", "A Little Help From My Friends", "Roll the Bones", "Beware of Pterrordax", "Alien Ecology", "Expedition Salvation"],
                "type": "hub"
             }
          ]
@@ -277,7 +277,7 @@
                "coords": { "x": 44, "y": 9 },
                "align": "bottom",
                "header": "Marshal's Refuge",
-               "ends": ["Shizzle's Flyer", "Muigin and Larion", "A Little Help From My Friends", "Roll the Bones", "Beware of Pherrordax", "Alien Ecology", "Expedition Salvation"],
+               "ends": ["Shizzle's Flyer", "Muigin and Larion", "A Little Help From My Friends", "Roll the Bones", "Beware of Pterrordax", "Alien Ecology", "Expedition Salvation"],
                "type": "hub"
             },
             {

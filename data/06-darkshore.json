@@ -21,7 +21,7 @@
                "coords": { "x": 39, "y": 43 },
                "align": "bottom",
                "header": "Auberdine",
-               "starts": ["For Love Eternal", "Buzzbox 827", ["Washed Ashore", "P1"], "Cave Mushrooms", "The Red Crystal", "Deep Ocean, Vast Sea", ["Bashal'Aran", "P1"], "Tools of the Highbourne", "Plagued Lands", ["How Big a Threat?", "P1"], ["The Tower of Althalaxx", "P1"]],
+               "starts": ["For Love Eternal", "Buzzbox 827", ["Washed Ashore", "P1"], "Cave Mushrooms", "The Red Crystal", "Deep Ocean, Vast Sea", ["Bashal'Aran", "P1"], "Tools of the Highborne", "Plagued Lands", ["How Big a Threat?", "P1"], ["The Tower of Althalaxx", "P1"]],
                "type": "hub"
             },
             {
@@ -234,7 +234,7 @@
             {
                "coords": { "x": 39, "y": 43 },
                "header": "Auberdine",
-               "ends": ["Cleansing The Infected", ["How Big a Threat?", "P2"], "The Red Crystal", ["Washed Ashore", "P2"], "For Love Eternal", "Tools of the Highbourne"],
+               "ends": ["Cleansing The Infected", ["How Big a Threat?", "P2"], "The Red Crystal", ["Washed Ashore", "P2"], "For Love Eternal", "Tools of the Highborne"],
                "starts": ["Tharnariun's Hope", "As Water Cascades", "Fruit of the Sea"],
                "special": ["Fill the empty vial at the Moonwell."],
                "type": "hub"
@@ -376,7 +376,7 @@
                "coords": { "x": 39, "y": 43 },
                "header": "Auberdine",
                "ends": ["The Cliffspring River", "Deep Ocean, Vast Sea", "Tharnariun's Hope", "The Fragments Within", "Cave Mushrooms", "Fruit of the Sea"],
-               "starts": ["The Blackwood Corruption"],
+               "starts": ["The Blackwood Corrupted"],
                "special": ["Fill your bowl at the Moonwell"],
                "type": "hub"
             }
@@ -390,7 +390,7 @@
                "coords": { "x": 39, "y": 43 },
                "header": "Auberdine",
                "ends": ["The Cliffspring River", "Deep Ocean, Vast Sea", "Tharnariun's Hope", "The Fragments Within", "Cave Mushrooms", "Fruit of the Sea"],
-               "starts": ["The Blackwood Corruption"],
+               "starts": ["The Blackwood Corrupted"],
                "special": ["Fill your bowl at the Moonwell"],
                "type": "hub"
             },
@@ -398,7 +398,7 @@
                "coords": { "x": 51, "y": 35 },
                "align": "top",
                "header": "Furbolg Encampment",
-               "objectives": ["The Blackwood Corruption"],
+               "objectives": ["The Blackwood Corrupted"],
                "special": ["Gather one of each Material", "Combine at the Bonfire"],
                "type": "objective"
             }
@@ -412,14 +412,14 @@
                "coords": { "x": 51, "y": 35 },
                "align": "top",
                "header": "Furbolg Encampment",
-               "objectives": ["The Blackwood Corruption"],
+               "objectives": ["The Blackwood Corrupted"],
                "special": ["Gather one of each Material", "Combine at the Bonfire"],
                "type": "objective"
             },
             {
                "coords": { "x": 39, "y": 43 },
                "header": "Auberdine",
-               "ends": ["The Blackwood Corruption"],
+               "ends": ["The Blackwood Corrupted"],
                "special": ["Hearthstone to Ironforge"],
                "type": "hub"
             }

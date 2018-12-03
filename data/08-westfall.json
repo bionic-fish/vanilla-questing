@@ -608,7 +608,7 @@
             {
                "coords": { "x": 43, "y": 72 },
                "header": "Deadmines",
-               "objectives": [["The Defias Brotherhood", "D"], ["Red Silk Bandanas", "D"], ["Underground Assault", "D"], ["Oh Brother...", "D"], ["Collecting Memories", "D"]],
+               "objectives": [["The Defias Brotherhood", "D"], ["Red Silk Bandanas", "D"], ["Underground Assault", "D"], ["Oh Brother", "D"], ["Collecting Memories", "D"]],
                "type": "objective"
             }
          ]

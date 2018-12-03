@@ -13,14 +13,14 @@
                "coords": { "x": 68, "y": 55 },
                "align": "bottom",
                "header": "Gol'Bolar Quarry",
-               "starts": ["The Public Servant", "These Blasted Troggs"],
+               "starts": ["The Public Servant", "Those Blasted Troggs"],
                "type": "quest"
             },
             {
                "coords": { "x": 71, "y": 55 },
                "align": "bottom",
                "header": "Gol'Bolar Quarry Mine",
-               "objectives": ["The Public Servant", "These Blasted Troggs"],
+               "objectives": ["The Public Servant", "Those Blasted Troggs"],
                "type": "objective"
             }
          ]
@@ -33,14 +33,14 @@
                "coords": { "x": 71, "y": 55 },
                "align": "bottom",
                "header": "Gol'Bolar Quarry Mine",
-               "objectives": ["The Public Servant", "These Blasted Troggs"],
+               "objectives": ["The Public Servant", "Those Blasted Troggs"],
                "type": "objective"
             },
             {
                "coords": { "x": 68, "y": 55 },
                "align": "bottom",
                "header": "Gol'Bolar Quarry",
-               "ends": ["The Public Servant", "These Blasted Troggs"],
+               "ends": ["The Public Servant", "Those Blasted Troggs"],
                "type": "quest"
             },
             {

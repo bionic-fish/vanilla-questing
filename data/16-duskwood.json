@@ -66,14 +66,14 @@
                "coords": { "x": 8, "y": 34 },
                "header": "The Hushed Bank",
                "ends": ["Delivery to Sven"],
-               "starts": ["Sven's Revenge", "Wolves at Out Heels"],
+               "starts": ["Sven's Revenge", "Wolves at Our Heels"],
                "type": "quest"
             },            
             {
                "coords": { "x": 12, "y": 31 },
                "align": "top",
                "header": "Duskwood Riverside",
-               "objectives": ["Seasoned Wolf Kabobs", "Wolves at Out Heels"],
+               "objectives": ["Seasoned Wolf Kabobs", "Wolves at Our Heels"],
                "type": "objective"
             }
          ]
@@ -86,14 +86,14 @@
                "coords": { "x": 12, "y": 31 },
                "align": "top",
                "header": "Duskwood Riverside",
-               "objectives": ["Seasoned Wolf Kabobs", "Wolves at Out Heels"],
+               "objectives": ["Seasoned Wolf Kabobs", "Wolves at Our Heels"],
                "type": "objective"
             },
             {
                "coords": { "x": 22, "y": 27 },
                "align": "top",
                "header": "Duskwood Riverside",
-               "objectives": ["Seasoned Wolf Kabobs", "Wolves at Out Heels"],
+               "objectives": ["Seasoned Wolf Kabobs", "Wolves at Our Heels"],
                "type": "objective"
             },
             {
@@ -116,7 +116,7 @@
                "coords": { "x": 8, "y": 34 },
                "align": "bottom",
                "header": "The Hushed Bank",
-               "ends": ["Wolves at Out Heels"],
+               "ends": ["Wolves at Our Heels"],
                "type": "quest"
             },
             {

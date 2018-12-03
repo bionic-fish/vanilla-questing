@@ -142,7 +142,7 @@
                "align": "top",
                "header": "Gadgetzan",
                "ends": ["Noxious Lair Investigation"],
-               "starts": ["The Shrimshank Redemption"],
+               "starts": ["The Scrimshank Redemption"],
                "type": "hub"
             },
             {
@@ -177,7 +177,7 @@
                "coords": { "x": 55, "y": 71 },
                "align": "right",
                "header": "The Gaping Chasm",
-               "objectives": ["The Shrimshank Redemption"],
+               "objectives": ["The Scrimshank Redemption"],
                "special": ["Hearthstone to Gadgetzan"],
                "type": "objective"
             }
@@ -191,7 +191,7 @@
                "coords": { "x": 52, "y": 28 },
                "align": "right",
                "header": "Gadgetzan",
-               "ends": ["The Shrimshank Redemption", ["Insect Part Analysis", "P1-2"], "The Thirsty Goblin", "Thistleshrub Valley", "In Good Taste", "The Dunemaul Compound"],
+               "ends": ["The Scrimshank Redemption", ["Insect Part Analysis", "P1-2"], "The Thirsty Goblin", "Thistleshrub Valley", "In Good Taste", "The Dunemaul Compound"],
                "starts": [["Insect Part Analysis", "P1-3"], "In Good Taste", "Sprinkle's Secret Ingredient"],
                "type": "hub"
             },

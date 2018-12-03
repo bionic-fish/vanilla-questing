@@ -14,7 +14,7 @@
                "coords": { "x": 43, "y": 84 },
                "header": "Chillwind Camp",
                "ends": ["A Call to Arms: The Plaguelands!", "The Everlook Report", "Argent Dawn Commission"],
-               "starts": ["A Plague Upon Three"],
+               "starts": ["A Plague Upon Thee"],
                "special": ["Equip the Trinket"],
                "type": "quest"
             },
@@ -179,8 +179,8 @@
             {
                "coords": { "x": 43, "y": 84 },
                "header": "Chillwind Camp",
-               "ends": [["A Plague Upon Three", "P1"]],
-               "starts": [["A Plague Upon Three", "P2"], "Clear the Way"],
+               "ends": [["A Plague Upon Thee", "P1"]],
+               "starts": [["A Plague Upon Thee", "P2"], "Clear the Way"],
                "type": "quest"
             },
             {
@@ -188,14 +188,14 @@
                "align": "bottom",
                "header": "Marlene Redpath",
                "ends": ["Auntie Marlene"],
-               "starts": ["A Strangle Historian"],
+               "starts": ["A Strange Historian"],
                "type": "quest"
             },
             {
                "coords": { "x": 50, "y": 77 },
                "align": "right",
                "header": "Joseph Redpath's Monument",
-               "objectives": ["A Strangle Historian", "Clear the Way"],
+               "objectives": ["A Strange Historian", "Clear the Way"],
                "type": "objective"
             }
          ]
@@ -208,7 +208,7 @@
                "coords": { "x": 50, "y": 77 },
                "align": "right",
                "header": "Joseph Redpath's Monument",
-               "objectives": ["A Strangle Historian", "Clear the Way"],
+               "objectives": ["A Strange Historian", "Clear the Way"],
                "type": "objective"
             },
             {
@@ -228,7 +228,7 @@
             {
                "coords": { "x": 39, "y": 67 },
                "header": "Chromie",
-               "ends": ["A Strangle Historian"],
+               "ends": ["A Strange Historian"],
                "starts": ["The Annals of Darrowshire", "A Matter of Time"],
                "type": "quest"
             },
@@ -475,7 +475,7 @@
                "coords": { "x": 43, "y": 84 },
                "align": "right",
                "header": "Chillwind Camp",
-               "ends": [["A Plague Upon Three", "P3"], "All Along the Watchtowers", "Return to Chillwind Camp", "Scholomance"],
+               "ends": [["A Plague Upon Thee", "P3"], "All Along the Watchtowers", "Return to Chillwind Camp", "Scholomance"],
                "starts": ["Scholomance", "Skeletal Fragments", "Target: Dalson's Tears"],
                "type": "quest"
             }

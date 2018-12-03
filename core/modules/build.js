@@ -14,54 +14,54 @@ function build() {
       $.getJSON('../data/11-transition.json'),
       $.getJSON('../data/12-darkshore.json'),
       $.getJSON('../data/13-ashenvale.json'),
-      $.getJSON('../data/15-transition.json'),
-      $.getJSON('../data/16-menethil.json'),
-      $.getJSON('../data/17-duskwood.json'),
-      $.getJSON('../data/18-transition.json'),
-      $.getJSON('../data/19-duskwood.json'),
-      $.getJSON('../data/20-redridge.json'),
-      $.getJSON('../data/21-duskwood.json'),
-      $.getJSON('../data/22-transition.json'),
-      $.getJSON('../data/23-wetlands.json'),
-      $.getJSON('../data/24-transition.json'),
-      $.getJSON('../data/25-wetlands.json'),
-      $.getJSON('../data/26-transition.json'),
-      $.getJSON('../data/27-duskwood.json'),
-      $.getJSON('../data/28-transition.json'),
-      $.getJSON('../data/29-ashenvale.json'),
-      $.getJSON('../data/30-transition.json'),
-      $.getJSON('../data/31-stv.json'),
-      $.getJSON('../data/32-southshore.json'),
-      $.getJSON('../data/33-arathi.json'),
-      $.getJSON('../data/34-transition.json'),
-      $.getJSON('../data/35-needles.json'),
-      $.getJSON('../data/36-dustwallow.json'),
-      $.getJSON('../data/37-transition.json'),
-      $.getJSON('../data/38-desolace.json'),
-      $.getJSON('../data/39-transition.json'),
-      $.getJSON('../data/40-swamp.json'),
-      $.getJSON('../data/41-transition.json'),
-      $.getJSON('../data/42-arathi.json'),
-      $.getJSON('../data/43-alterac.json'),
-      $.getJSON('../data/44-transition.json'),
-      $.getJSON('../data/45-stv.json'),
-      $.getJSON('../data/46-transition.json'),
-      $.getJSON('../data/47-badlands.json'),
-      $.getJSON('../data/48-transition.json'),
-      $.getJSON('../data/49-stv.json'),
-      $.getJSON('../data/50-tanaris.json'),
-      $.getJSON('../data/51-feralas.json'),
-      $.getJSON('../data/52-transition.json'),
-      $.getJSON('../data/53-hinterlands.json'),
-      $.getJSON('../data/54-transition.json'),
-      $.getJSON('../data/55-blasted.json'),
-      $.getJSON('../data/56-hinterlands.json'),
-      $.getJSON('../data/57-transition.json'),
-      $.getJSON('../data/58-searing.json'),
-      $.getJSON('../data/59-transition.json'),
-      $.getJSON('../data/60-steppes.json'),
-      $.getJSON('../data/61-transition.json'),
-      $.getJSON('../data/61.5-azshara.json'),
+      $.getJSON('../data/14-transition.json'),
+      $.getJSON('../data/15-menethil.json'),
+      $.getJSON('../data/16-duskwood.json'),
+      $.getJSON('../data/17-transition.json'),
+      $.getJSON('../data/18-duskwood.json'),
+      $.getJSON('../data/19-redridge.json'),
+      $.getJSON('../data/20-duskwood.json'),
+      $.getJSON('../data/21-transition.json'),
+      $.getJSON('../data/22-wetlands.json'),
+      $.getJSON('../data/23-transition.json'),
+      $.getJSON('../data/24-wetlands.json'),
+      $.getJSON('../data/25-transition.json'),
+      $.getJSON('../data/26-duskwood.json'),
+      $.getJSON('../data/27-transition.json'),
+      $.getJSON('../data/28-ashenvale.json'),
+      $.getJSON('../data/29-transition.json'),
+      $.getJSON('../data/30-stv.json'),
+      $.getJSON('../data/31-southshore.json'),
+      $.getJSON('../data/32-arathi.json'),
+      $.getJSON('../data/33-transition.json'),
+      $.getJSON('../data/34-needles.json'),
+      $.getJSON('../data/35-dustwallow.json'),
+      $.getJSON('../data/36-transition.json'),
+      $.getJSON('../data/37-desolace.json'),
+      $.getJSON('../data/38-transition.json'),
+      $.getJSON('../data/39-swamp.json'),
+      $.getJSON('../data/40-transition.json'),
+      $.getJSON('../data/41-arathi.json'),
+      $.getJSON('../data/42-alterac.json'),
+      $.getJSON('../data/43-transition.json'),
+      $.getJSON('../data/44-stv.json'),
+      $.getJSON('../data/45-transition.json'),
+      $.getJSON('../data/46-badlands.json'),
+      $.getJSON('../data/47-transition.json'),
+      $.getJSON('../data/48-stv.json'),
+      $.getJSON('../data/49-tanaris.json'),
+      $.getJSON('../data/50-feralas.json'),
+      $.getJSON('../data/51-transition.json'),
+      $.getJSON('../data/52-hinterlands.json'),
+      $.getJSON('../data/53-transition.json'),
+      $.getJSON('../data/54-blasted.json'),
+      $.getJSON('../data/55-hinterlands.json'),
+      $.getJSON('../data/56-transition.json'),
+      $.getJSON('../data/57-searing.json'),
+      $.getJSON('../data/58-transition.json'),
+      $.getJSON('../data/59-steppes.json'),
+      $.getJSON('../data/60-transition.json'),
+      $.getJSON('../data/61-azshara.json'),
       $.getJSON('../data/62-ungoro.json'),
       $.getJSON('../data/63-felwood.json'),
       $.getJSON('../data/64-transition.json'),
@@ -100,6 +100,8 @@ function build() {
             ids: ids
          };
 
+         var quests = {};
+
          // LOOK THROUGH EACH 
          response.forEach(block => {
             block.path.forEach(waypoint => {
@@ -110,16 +112,28 @@ function build() {
                // INCREMENT BLOCK COUNTER
                data.stats.blocks++;
                
+               // INCREMENT WAYPOINT COUNTER
                waypoint.waypoints.forEach(foo => {
-
-                  // INCREMENT WAYPOINT COUNTER
                   data.stats.waypoints++;
 
-                  // INCREMENT QUEST COUNTER -- IF ITS DEFINED
-                  if (foo.starts != undefined) { foo.starts.forEach(bar => { data.stats.quests++; }); }
+                  // COUNT STARTED QUESTS
+                  if (foo.starts != undefined) {
+                     foo.starts.forEach(bar => {
+
+                        // IF ITS A STRING
+                        if (typeof(bar) == 'string') { quests[bar] = 0;
+
+                        // IF ITS AN ARRAY
+                        } else { quests[bar[0]] = 0; }
+
+                     });
+                  }
                });
             });
          });
+
+         // SET QUEST COUNT
+         data.stats.quests = Object.keys(quests).length;
 
          // IF LOCALSTORAGE IS EMPTY, SET IT TO ZERO
          if (localStorage.getItem(data.storage) === null) { localStorage.setItem(data.storage, '0'); }

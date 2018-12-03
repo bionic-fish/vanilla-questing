@@ -249,8 +249,8 @@
                "coords": { "x": 75, "y": 12 },
                "align": "right",
                "header": "The Library",
-               "ends": [["The Platinum Disks", "P2"], ["The Hidden Chamber", "D"], ["Reclaimed Treasure", "D"], ["Prospect of Faith", "P2"], ["Passing Word of Threat", "P1-2"]],
-               "starts": [["Passing Word of Threat", "P1-2"], ["The Platinum Disks", "P3"]],
+               "ends": [["The Platinum Discs", "P2"], ["The Hidden Chamber", "D"], ["Reclaimed Treasure", "D"], ["Prospect of Faith", "P2"], ["Passing Word of Threat", "P1-2"]],
+               "starts": [["Passing Word of Threat", "P1-2"], ["The Platinum Discs", "P3"]],
                "type": "quest"
             },
             {
@@ -270,7 +270,7 @@
             {
                "coords": { "x": 34, "y": 60 },
                "header": "Dina Stonemantle",
-               "ends": [["The Platinum Disks", "P3"]],
+               "ends": [["The Platinum Discs", "P3"]],
                "type": "quest"
             }
          ]
@@ -283,7 +283,7 @@
                "coords": { "x": 34, "y": 60 },
                "align": "top",
                "header": "Dina Stonemantle",
-               "ends": [["The Platinum Disks", "P3"]],
+               "ends": [["The Platinum Discs", "P3"]],
                "type": "quest"
             },
             {

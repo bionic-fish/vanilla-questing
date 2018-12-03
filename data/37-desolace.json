@@ -272,7 +272,7 @@
                "coords": { "x": 36, "y": 79 },
                "header": "Uthek the Wise",
                "ends": ["Raid on the Kolkar"],
-               "starts": ["Sealing Supplies"],
+               "starts": ["Stealing Supplies"],
                "type": "quest"
             }
          ]

@@ -70,13 +70,13 @@
                "coords": { "x": 14, "y": 38 },
                "header": "Sealed Barrel",
                "ends": ["The Search Continues"],
-               "starts": ["Search More Howels"],
+               "starts": ["Search More Hovels"],
                "type": "quest"
             },
             {
                "coords": { "x": 14, "y": 35 },
                "header": "Half-Buried Barrel",
-               "ends": ["Search More Howels"],
+               "ends": ["Search More Hovels"],
                "starts": ["Return the Statuette"],
                "type": "quest"
             }
@@ -89,7 +89,7 @@
             {
                "coords": { "x": 14, "y": 35 },
                "header": "Half-Buried Barrel",
-               "ends": ["Search More Howels"],
+               "ends": ["Search More Hovels"],
                "starts": ["Return the Statuette"],
                "type": "quest"
             },
