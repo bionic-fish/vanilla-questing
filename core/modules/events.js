@@ -72,6 +72,7 @@ function general(settings) {
 
          // CHANGE THE SETTING PROPERTY TO BLOCK FURTHER EXECUTIONS
          settings.windows.preload = 1;
+         log('Started Preloading..');
 
          // ADD THE LOADING SELECTOR TO THE PROMPT TABLE & TO TOGGLE THE DISPLAY ON
          $('#prompt-inner').html('<div id="loading"><div class="lds-css ng-scope"><div style="width:100%;height:100%" class="lds-rolling"><div></div></div></div></div>');
@@ -130,17 +131,14 @@ function general(settings) {
             // PROMISE CONTAINER
             var promises = [];
 
-            // APPEND IN THE PRELOAD SELECTOR
-            $('body').append('<div id="preload-container"></div>');
-
             // GENERATE & PUSH A LOADING PROMISE FOR EACH ZONE
-            zones.forEach(zone => { promises.push( zone_promise(zone) ); });
+            zones.forEach(zone => { promises.push(zone_promise(zone)); });
 
             // WAIT FOR ALL PROMISES TO BE RESOLVED
             Promise.all(promises).then(() => {
 
                // LOG THAT THE TASK IS COMPLETE
-               log('Preload complete!');
+               log('Preload Complete!');
 
                // UPDATE THE PRELOAD LINK
                $('#show-preload').removeAttr('class');
@@ -341,19 +339,7 @@ function general(settings) {
 // GENERATE A PROMISE FOR A ZONE -- FOR PRELOADING
 function zone_promise(zone) {
    return new Promise((resolve, reject) => {
-
-      // CREATE NEW IMAGE OBJECT FOR THE ZONE
-      var img = new Image();
-      img.id = zone;
-
-      // SET ITS SOURCE AS THE MAP
-      img.src = 'interface/img/maps/' + zone + '.png';
-
-      // APPEND IT TO THE CONTAINER
-      $('#preload-container').append(img);
-
-      // RESOLVE THE PROMISE AFTER ITS DONE LOADING
-      $('#preload-container #' + zone).on('load', () => { resolve(); })
+      $.get('interface/img/maps/' + zone + '.png').done(()=> { resolve(); });
    });
 }
 
