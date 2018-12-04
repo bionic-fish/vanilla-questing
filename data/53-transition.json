@@ -220,7 +220,7 @@
             {
                "coords": { "x": 79, "y": 77 },
                "header": "The Shimmering Flats",
-               "ends": ["Ghaz'rilla"],
+               "ends": ["Gahz'rilla"],
                "type": "quest"
             }
          ]
@@ -232,7 +232,7 @@
             {
                "coords": { "x": 79, "y": 77 },
                "header": "The Shimmering Flats",
-               "ends": ["Ghaz'rilla"],
+               "ends": ["Gahz'rilla"],
                "type": "quest"
             },
             {

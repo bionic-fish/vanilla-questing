@@ -13,7 +13,7 @@
                "coords": { "x": 10, "y": 44 },
                "align": "top",
                "header": "Gryphon Master Talonaxe",
-               "ends": ["Return to Hinterlands"],
+               "ends": ["Return to the Hinterlands"],
                "starts": [["Saving Sharpbeak", "E"]],
                "type": "quest"
             },

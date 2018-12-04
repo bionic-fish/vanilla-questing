@@ -13,7 +13,7 @@
                "coords": { "x": 50, "y": 54 },
                "align": "right",
                "header": "Southshore",
-               "ends": [["Hints of a New Plague", "P5"]],
+               "ends": [["Hints of a New Plague?", "P5"]],
                "type": "quest"
             }
          ]
@@ -26,7 +26,7 @@
                "coords": { "x": 50, "y": 54 },
                "align": "right",
                "header": "Southshore",
-               "ends": [["Hints of a New Plague", "P5"]],
+               "ends": [["Hints of a New Plague?", "P5"]],
                "type": "quest"
             },
             {

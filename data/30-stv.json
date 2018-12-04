@@ -226,13 +226,13 @@
                "coords": { "x": 73, "y": 75 },
                "align": "right",
                "header": "Roland's Doom",
-               "objectives": ["The Scrythe of Elune"],
+               "objectives": ["The Scythe of Elune"],
                "type": "quest"
             },
             {
                "coords": { "x": 74, "y": 47 },
                "header": "Darkshire",
-               "ends": ["The Scrythe of Elune"],
+               "ends": ["The Scythe of Elune"],
                "type": "hub"
             },
             {

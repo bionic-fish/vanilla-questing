@@ -202,7 +202,7 @@
                "coords": { "x": 43, "y": 61 },
                "align": "right",
                "header": "Ameth'Aran",
-               "objectives": [["Bashal'Aran", "P3"], "The Fall of Ameth'Aran", "Highborne Relic", "For Love Eternal"],
+               "objectives": [["Bashal'Aran", "P3"], "The Fall of Ameth'Aran", "Tools of the Highborne", "For Love Eternal"],
                "type": "objective"
             }
          ]
@@ -215,7 +215,7 @@
                "coords": { "x": 43, "y": 61 },
                "align": "bottom",
                "header": "Ameth'Aran",
-               "objectives": [["Bashal'Aran", "P3"], "The Fall of Ameth'Aran", "Highborne Relic", "For Love Eternal"],
+               "objectives": [["Bashal'Aran", "P3"], "The Fall of Ameth'Aran", "Tools of the Highborne", "For Love Eternal"],
                "type": "objective"
             },
             {
@@ -234,7 +234,7 @@
             {
                "coords": { "x": 39, "y": 43 },
                "header": "Auberdine",
-               "ends": ["Cleansing The Infected", ["How Big a Threat?", "P2"], "The Red Crystal", ["Washed Ashore", "P2"], "For Love Eternal", "Tools of the Highborne"],
+               "ends": ["Cleansing of the Infected", ["How Big a Threat?", "P2"], "The Red Crystal", ["Washed Ashore", "P2"], "For Love Eternal", "Tools of the Highborne"],
                "starts": ["Tharnariun's Hope", "As Water Cascades", "Fruit of the Sea"],
                "special": ["Fill the empty vial at the Moonwell."],
                "type": "hub"

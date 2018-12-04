@@ -69,7 +69,7 @@
                "coords": { "x": 43, "y": 54 },
                "header": "Valley of Fangs",
                "ends": ["Martek the Exiled"],
-               "starts": ["Indurium", "Barbequed Buzzard Wings", ["Power Stones", "E"]],
+               "starts": ["Indurium", "Barbecued Buzzard Wings", ["Power Stones", "E"]],
                "type": "quest"
             }
          ]
@@ -82,7 +82,7 @@
                "coords": { "x": 43, "y": 54 },
                "header": "Valley of Fangs",
                "ends": ["Martek the Exiled"],
-               "starts": ["Indurium", "Barbequed Buzzard Wings", ["Power Stones", "E"]],
+               "starts": ["Indurium", "Barbecued Buzzard Wings", ["Power Stones", "E"]],
                "type": "quest"
             },
             {
@@ -103,8 +103,8 @@
             {
                "coords": { "x": 51, "y": 77 },
                "align": "right",
-               "header": "Thelduin the Lost",
-               "ends": ["Thelduin the Lost"],
+               "header": "Theldurin the Lost",
+               "ends": ["Theldurin the Lost"],
                "starts": ["The Lost Fragments", ["Solution to Doom", "D"]],
                "type": "quest"
             },
@@ -131,7 +131,7 @@
             {
                "coords": { "x": 51, "y": 77 },
                "align": "right",
-               "header": "Thelduin the Lost",
+               "header": "Theldurin the Lost",
                "ends": ["The Lost Fragments"],
                "starts": [["Summoning the Princess", "E"]],
                "type": "quest"
@@ -250,7 +250,7 @@
                "coords": { "x": 43, "y": 54 },
                "align": "top",
                "header": "Valley of Fangs",
-               "ends": ["Indurium", "Barbequed Buzzard Wings"],
+               "ends": ["Indurium", "Barbecued Buzzard Wings"],
                "starts": ["News For Fizzle"],
                "type": "quest"
             },

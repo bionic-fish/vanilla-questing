@@ -1,8 +1,0 @@
-"align": "top",
-"align": "bottom",
-"align": "left",
-"align": "right",
-
-FIGURE OUT WHEN TO RETURN THE AZSHARA QUESTS!!
-
--- 415

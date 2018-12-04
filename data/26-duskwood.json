@@ -207,7 +207,7 @@
                "align": "bottom",
                "header": "Darkshire",
                "ends": [["The Night Watch", "P3"], "The Weathered Grave", "Note to the Mayor", "Translate Abercrombie's Note", "Wait for Sirra to Finish", "Translation to Ello", "Morgan Ladimore"],
-               "starts": ["Morgan Ladimore", "Translate Aberscrombie's Note", "Wait for Sirra to Finish", "Translation to Ello", ["Bride of the Embalmer", "E"], ["Mor'Ladim", "E"]],
+               "starts": ["Morgan Ladimore", "Translate Abercrombie's Note", "Wait for Sirra to Finish", "Translation to Ello", ["Bride of the Embalmer", "E"], ["Mor'Ladim", "E"]],
                "type": "hub"
             },
             {
@@ -391,7 +391,7 @@
                "coords": { "x": 74, "y": 47 },
                "align": "top",
                "header": "Darkshire",
-               "ends": ["Worgen in the Woods P3-4", ["Mor'Ladim", "E"], ["Bride of the Embalmer", "E"], "The Daughter Who Lived"],
+               "ends": [["Worgen in the Woods", "P3-4"], ["Mor'Ladim", "E"], ["Bride of the Embalmer", "E"], "The Daughter Who Lived"],
                "starts": [["Worgen in the Woods", "P4"], "The Daughter Who Lived", "A Daughters Love"],
                "type": "hub"
             },

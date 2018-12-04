@@ -132,7 +132,7 @@
                "coords": { "x": 49, "y": 30 },
                "align": "top",
                "header": "Baros Alexston",
-               "ends": ["Brotherhood'd End"],
+               "ends": ["Brotherhood's End"],
                "starts": ["An Audience with the King"],
                "type": "quest"
             },

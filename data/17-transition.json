@@ -67,7 +67,7 @@
             {
                "coords": { "x": 46, "y": 38 },
                "header": "Brother Kristoff",
-               "ends": ["Return to Brother Kristoff"],
+               "ends": ["Return to Kristoff"],
                "type": "quest"
             },
             {

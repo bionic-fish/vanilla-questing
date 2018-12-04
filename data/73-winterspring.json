@@ -161,7 +161,7 @@
                "header": "Deadwood Cauldron",
                "ends": ["Falling to Corruption"],
                "starts": ["Mystery Goo"],
-               "special": ["Skipping the Furbolg quests because you need to run through the Timbermaw cave 3 extra times.", "They grant about +19% XP"],
+               "special": ["I'm skipping the furbolg questline.", "It grants about +14% XP"],
                "type": "quest"
             }
          ]
@@ -175,7 +175,7 @@
                "header": "Deadwood Cauldron",
                "ends": ["Falling to Corruption"],
                "starts": ["Mystery Goo"],
-               "special": ["Skipping the Furbolg quests because you need to run through the Timbermaw cave 3 extra times.", "They grant about +19% XP"],
+               "special": ["I'm skipping the furbolg questline.", "It grants about +14% XP"],
                "type": "quest"
             },
             {
@@ -260,7 +260,7 @@
                "coords": { "x": 66, "y": 45 },
                "align": "right",
                "header": "Ice Thistle Hills",
-               "objectives": [["Are We There Yeti?", "P1"]],
+               "objectives": [["Are We There, Yeti?", "P1"]],
                "type": "objective"
             }
          ]
@@ -273,7 +273,7 @@
                "coords": { "x": 66, "y": 45 },
                "align": "right",
                "header": "Ice Thistle Hills",
-               "objectives": [["Are We There Yeti?", "P1"]],
+               "objectives": [["Are We There, Yeti?", "P1"]],
                "type": "objective"
             },
             {

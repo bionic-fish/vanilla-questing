@@ -67,7 +67,7 @@
                "align": "top",
                "header": "Refuge Point",
                "ends": [["Trelane's Defenses", "E"], ["Wanted: Marez Cowl", "E"], ["Wanted: Otto and Falconcrest", "E"], ["Stromgarde Badges", "E"], "An Apprentice's Enchantment"],
-               "starts": ["An Apprentice's Enchantment", ["Attack the Tower", "E"]],
+               "starts": ["An Apprentice's Enchantment", ["Attack of the Tower", "E"]],
                "type": "hub"
             }
          ]
@@ -85,7 +85,7 @@
             {
                "coords": { "x": 18, "y": 68 },
                "header": "Stromgarde Tower",
-               "objectives": ["Attack the Tower"],
+               "objectives": ["Attack of the Tower"],
                "special": ["Loot the three lockboxes"],
                "type": "objective"
             },

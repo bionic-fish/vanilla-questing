@@ -118,7 +118,7 @@
                "header": "Kalaran Windblade",
                "ends": ["The Flawless Flame"],
                "starts": ["Forging the Shaft"],
-               "objectives": ["Take the Lift Up"],
+               "special": ["Take the Lift Up"],
                "type": "quest"
             },
             {

@@ -1,0 +1,4 @@
+"align": "top",
+"align": "bottom",
+"align": "left",
+"align": "right",

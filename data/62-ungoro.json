@@ -236,7 +236,7 @@
                "coords": { "x": 52, "y": 50 },
                "align": "right",
                "header": "Ringo",
-               "ends": ["Lost"],
+               "ends": ["Lost!"],
                "starts": ["A Little Help From My Friends"],
                "type": "objective"
             },
@@ -405,7 +405,7 @@
                "coords": { "x": 80, "y": 50 },
                "align": "top",
                "header": "Placeholder",
-               "objectives": ["The Bait for Lor'Korwi"],
+               "objectives": ["The Bait for Lar'Korwi"],
                "type": "objective"
             },
             {

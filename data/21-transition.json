@@ -61,7 +61,7 @@
             {
                "coords": { "x": 41, "y": 56 },
                "header": "The Stockade",
-               "objectives": [["Quell The Uprising", "D"], ["The Stockade Riots", "D"], ["Crime and Punishment", "D"], ["The Color of Blood", "D"], ["What Comes Around", "D"]],
+               "objectives": [["Quell The Uprising", "D"], ["The Stockade Riots", "D"], ["Crime and Punishment", "D"], ["The Color of Blood", "D"], ["What Comes Around...", "D"]],
                "type": "objective"
             }
          ]

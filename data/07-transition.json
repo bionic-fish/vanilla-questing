@@ -55,7 +55,7 @@
                "coords": { "x": 65, "y": 21 },
                "align": "right",
                "header": "Wilder Thistlenettle",
-               "starts": [["Oh Brother", "D"], ["Collecting Memories", "D"]],
+               "starts": [["Oh Brother...", "D"], ["Collecting Memories", "D"]],
                "type": "quest"
             },
             {

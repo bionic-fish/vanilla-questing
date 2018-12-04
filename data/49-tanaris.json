@@ -83,7 +83,7 @@
                "coords": { "x": 72, "y": 47 },
                "align": "right",
                "header": "Lost Rigger Cove",
-               "objectives": ["Wanted: Andre Firebeard", "Pirate Hats Ahoy!", "Southsea Shake Down", "Stoley's Shipment"],
+               "objectives": ["Wanted: Andre Firebeard", "Pirate Hats Ahoy!", "Southsea Shakedown", "Stoley's Shipment"],
                "special": ["Hearthstone to Gadgetzan"],
                "type": "objective"
             }
@@ -163,14 +163,14 @@
                "coords": { "x": 41, "y": 73 },
                "align": "bottom",
                "header": "Southmoon Ruins",
-               "objectives": ["Ghaz'Ridian"],
+               "objectives": ["Gahz'Ridian"],
                "type": "objective"
             },
             {
                "coords": { "x": 47, "y": 66 },
                "align": "top",
                "header": "Eastmoon Ruins",
-               "objectives": ["Ghaz'Ridian"],
+               "objectives": ["Gahz'Ridian"],
                "type": "objective"
             },
             {

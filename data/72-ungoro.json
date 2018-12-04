@@ -39,7 +39,7 @@
             {
                "coords": { "x": 42, "y": 3 },
                "header": "JD Collie",
-               "ends": ["Aquamentes"],
+               "ends": ["Aquementas"],
                "starts": ["Linken's Adventure"],
                "type": "quest"
             },

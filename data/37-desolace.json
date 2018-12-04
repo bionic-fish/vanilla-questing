@@ -21,7 +21,7 @@
                "align": "top",
                "header": "Nijel's Point",
                "ends": ["Brother Anton", "Reclaimers' Business in Desolace"],
-               "starts": ["Centaur Bounty", "Strange Alliances", ["The Karnitol Shipwreck", "P1"], ["Reagents for Reclaimers Inc.", "P1"], ["Vahlarriel's Search", "P1"], ["Down the Scarlet Path", "P1"]],
+               "starts": ["Centaur Bounty", "Strange Alliance", ["The Karnitol Shipwreck", "P1"], ["Reagents for Reclaimers Inc.", "P1"], ["Vahlarriel's Search", "P1"], ["Down the Scarlet Path", "P1"]],
                "special": ["Set Hearthstone"],
                "type": "hub"
             },
@@ -214,7 +214,7 @@
                "coords": { "x": 70, "y": 75 },
                "align": "right",
                "header": "Magram",
-               "objectives": ["Centary Bounty", "Strange Alliance"],
+               "objectives": ["Centaur Bounty", "Strange Alliance"],
                "special": ["Farm until Friendly", "Don't worry about Ears"],
                "type": "objective"
             },
@@ -256,7 +256,7 @@
                "coords": { "x": 71, "y": 45 },
                "align": "right",
                "header": "Kolkar Village",
-               "objectives": ["Raid on the Kolkar", "Centary Bounty"],
+               "objectives": ["Raid on the Kolkar", "Centaur Bounty"],
                "special": ["Don't worry about Ears"],
                "type": "objective"
             },
@@ -301,7 +301,7 @@
                "coords": { "x": 70, "y": 75 },
                "align": "top",
                "header": "Magram Village",
-               "objectives": ["Stealing Supplies", "Centary Bounty"],
+               "objectives": ["Stealing Supplies", "Centaur Bounty"],
                "special": ["Farm any remaining Ears"],
                "type": "objective"
             }
@@ -315,7 +315,7 @@
                "coords": { "x": 70, "y": 75 },
                "align": "top",
                "header": "Magram Village",
-               "objectives": ["Stealing Supplies", "Centary Bounty"],
+               "objectives": ["Stealing Supplies", "Centaur Bounty"],
                "special": ["Farm any remaining Ears"],
                "type": "objective"
             },

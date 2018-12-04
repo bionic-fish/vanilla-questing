@@ -274,7 +274,7 @@
             {
                "coords": { "x": 9, "y": 56 },
                "header": "James Halloran",
-               "ends": ["Apprentice's Duties", "Daily Deliveries"],
+               "ends": ["Apprentice's Duties", "Daily Delivery"],
                "type": "quest"
             },
             {

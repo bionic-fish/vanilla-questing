@@ -32,7 +32,7 @@
                "align": "right",
                "header": "Steamwheedle Port",
                "ends": ["The Ancient Egg"],
-               "starts": ["The God Hakkar", "Yuka Screwpigot"],
+               "starts": ["The God Hakkar", "Yuka Screwspigot"],
                "type": "quest"
             }
          ]
@@ -250,7 +250,7 @@
                "coords": { "x": 66, "y": 22 },
                "align": "right",
                "header": "Flame Crest",
-               "ends": ["Yuka Screwpigot"],
+               "ends": ["Yuka Screwspigot"],
                "type": "quest"
             },
             {

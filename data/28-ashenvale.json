@@ -248,7 +248,7 @@
             {
                "coords": { "x": 22, "y": 53 },
                "header": "The Shrine of Aessina",
-               "ends": ["Vile Satyr! Dryads in Danger!", "The Howling Wind"],
+               "ends": ["Vile Satyr! Dryads in Danger!", "The Howling Vale"],
                "starts": ["Velinde Starsong"],
                "type": "quest"
             },

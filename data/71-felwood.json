@@ -14,7 +14,7 @@
                "coords": { "x": 51, "y": 82 },
                "align": "right",
                "header": "Emerald Sanctuary",
-               "ends": ["Flute of Xavaric", "Linken's Memory", "Further Corruption", "Cleansed Water of Felwood"],
+               "ends": ["Flute of Xavaric", "Linken's Memory", "Further Corruption", "Cleansed Water Returns to Felwood"],
                "starts": ["Silver Heart"],
                "special": ["Skipping the Jaedenar Quests"],
                "type": "hub"

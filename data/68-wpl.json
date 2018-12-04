@@ -13,7 +13,7 @@
             {
                "coords": { "x": 43, "y": 84 },
                "header": "Chillwind Camp",
-               "ends": ["A Call to Arms: The Plaguelands!", "The Everlook Report", "Argent Dawn Commission"],
+               "ends": ["A Call to Arms: The Plaguelands!", "The Everlook Report"],
                "starts": ["A Plague Upon Thee"],
                "special": ["Equip the Trinket"],
                "type": "quest"
@@ -60,7 +60,7 @@
                "coords": { "x": 36, "y": 91 },
                "align": "top",
                "header": "Pamela Redpath",
-               "ends": ["Pamela Redpath"],
+               "ends": ["Sister Pamela"],
                "starts": ["Pamela's Doll"],
                "type": "quest"
             },
@@ -329,14 +329,14 @@
                "coords": { "x": 43, "y": 54 },
                "align": "right",
                "header": "Placeholder",
-               "objectives": [["The Wildlife Suffer Too", "P1"]],
+               "objectives": [["The Wildlife Suffers Too", "P1"]],
                "type": "objective"
             },
             {
                "coords": { "x": 46, "y": 48 },
                "align": "right",
                "header": "Placeholder",
-               "objectives": [["The Wildlife Suffer Too", "P1"]],
+               "objectives": [["The Wildlife Suffers Too", "P1"]],
                "type": "objective"
             },
             {

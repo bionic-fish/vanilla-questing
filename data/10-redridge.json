@@ -70,7 +70,8 @@
             {
                "coords": { "x": 16, "y": 49 },
                "header": "Redridge Peninsula",
-               "objectives": ["An Unwanted Guest", "Redridge Goulash", "Great Goretusk Snout"],
+               "objectives": ["An Unwelcome Guest", "Redridge Goulash"],
+               "special": ["Great Goretusk Snout"],
                "type": "objective"
             },
             {
@@ -166,7 +167,7 @@
                "coords": { "x": 34, "y": 69 },
                "align": "bottom",
                "header": "Lakeridge Highway",
-               "objectives": ["Underbelly Whelp Scale"],
+               "objectives": ["Underbelly Scales"],
                "type": "objective"
             }
          ]
@@ -179,7 +180,7 @@
                "coords": { "x": 34, "y": 69 },
                "align": "top",
                "header": "Lakeridge Highway",
-               "objectives": ["Underbelly Whelp Scale"],
+               "objectives": ["Underbelly Scales"],
                "type": "objective"
             },
             {

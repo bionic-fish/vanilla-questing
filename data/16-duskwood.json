@@ -65,7 +65,7 @@
             {
                "coords": { "x": 8, "y": 34 },
                "header": "The Hushed Bank",
-               "ends": ["Delivery to Sven"],
+               "ends": ["Deliveries to Sven"],
                "starts": ["Sven's Revenge", "Wolves at Our Heels"],
                "type": "quest"
             },            

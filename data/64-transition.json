@@ -55,7 +55,7 @@
                "coords": { "x": 52, "y": 30 },
                "align": "top",
                "header": "Starfall Village",
-               "ends": ["To Winterspring", "The Ruins of Kel'Theril"],
+               "ends": ["To Winterspring!", "The Ruins of Kel'Theril"],
                "starts": ["The Ruins of Kel'Theril"],
                "type": "quest"
             },
