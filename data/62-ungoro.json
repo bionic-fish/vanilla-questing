@@ -43,19 +43,19 @@
       },
       {
          "zone": "ungoro",
-         "experience": 0,
+         "experience": 53.05,
          "waypoints": [
             {
                "coords": { "x": 45, "y": 6 },
                "header": "Un'Goro Flightpath",
-               "objectives": ["Learn the Flightpath"],
+               "special": ["Learn the Flightpath"],
                "type": "flightpath"
             },
             {
                "coords": { "x": 44, "y": 9 },
                "header": "Marshal's Refuge",
                "ends": [["It's a Secret to Everybody", "P2"]],
-               "starts": [["It's a Secret to Everybody", "P3"], "Shizzle's Flyer", "Muigin and Larion", "Lost!", "Roll the Bones", "Beware of Pterrordax", "Alien Ecology", "Expedition Salvation"],
+               "starts": ["Shizzle's Flyer", "Muigin and Larion", "Lost!", "Roll the Bones", "Beware of Pterrordax", "Alien Ecology", "Expedition Salvation"],
                "special": ["Pick up 7x of RGBY Crystals", "Obtain 25 Un'goro Soil"],
                "type": "hub"
             },
@@ -69,7 +69,7 @@
       },
       {
          "zone": "ungoro",
-         "experience": 0,
+         "experience": 53.09,
          "waypoints": [
             {
                "coords": { "x": 48, "y": 33 },
@@ -116,7 +116,7 @@
       },
       {
          "zone": "ungoro",
-         "experience": 0,
+         "experience": 53.18,
          "waypoints": [
             {
                "coords": { "x": 69, "y": 37 },
@@ -144,7 +144,7 @@
       },
       {
          "zone": "ungoro",
-         "experience": 0,
+         "experience": 53.29,
          "waypoints": [
             {
                "coords": { "x": 67, "y": 73 },
@@ -190,7 +190,7 @@
       },
       {
          "zone": "ungoro",
-         "experience": 0,
+         "experience": 53.46,
          "waypoints": [
             {
                "coords": { "x": 38, "y": 66 },
@@ -223,7 +223,7 @@
       },
       {
          "zone": "ungoro",
-         "experience": 0,
+         "experience": 53.56,
          "waypoints": [
             {
                "coords": { "x": 50, "y": 46 },
@@ -231,13 +231,6 @@
                "header": "Fire Plume Right Hotspot",
                "objectives": ["Finding the Source"],
                "type": "objective"
-            },
-            {
-               "coords": { "x": 31, "y": 50 },
-               "header": "Krakle",
-               "ends": ["Finding the Source"],
-               "starts": ["The New Springs"],
-               "type": "quest"
             },
             {
                "coords": { "x": 52, "y": 50 },
@@ -265,19 +258,21 @@
                "align": "right",
                "header": "Marshal's Refuge",
                "ends": ["Shizzle's Flyer", "Muigin and Larion", "A Little Help From My Friends", "Roll the Bones", "Beware of Pterrordax", "Alien Ecology", "Expedition Salvation"],
+               "starts": ["A Visit to Gregan", ["It's a Secret to Everybody", "P3"]],
                "type": "hub"
             }
          ]
       },
       {
          "zone": "ungoro",
-         "experience": 0,
+         "experience": 53.90,
          "waypoints": [
             {
                "coords": { "x": 44, "y": 9 },
                "align": "bottom",
                "header": "Marshal's Refuge",
                "ends": ["Shizzle's Flyer", "Muigin and Larion", "A Little Help From My Friends", "Roll the Bones", "Beware of Pterrordax", "Alien Ecology", "Expedition Salvation"],
+               "starts": ["A Visit to Gregan", ["It's a Secret to Everybody", "P3"]],
                "type": "hub"
             },
             {
@@ -298,7 +293,7 @@
       },
       {
          "zone": "tanaris",
-         "experience": 0,
+         "experience": 53.95,
          "waypoints": [
             {
                "coords": { "x": 50, "y": 29 },
@@ -317,7 +312,7 @@
       },
       {
          "zone": "tanaris",
-         "experience": 0,
+         "experience": 54.03,
          "waypoints": [
             {
                "coords": { "x": 52, "y": 28 },
@@ -337,7 +332,7 @@
       },
       {
          "zone": "ungoro",
-         "experience": 0,
+         "experience": 54.03,
          "waypoints": [
             {
                "coords": { "x": 45, "y": 6 },
@@ -373,7 +368,7 @@
                "type": "quest"
             },
             {
-               "coords": { "x": 48, "y": 17 },
+               "coords": { "x": 48, "y": 20 },
                "align": "bottom",
                "header": "Marshal's Refuge Enterance",
                "objectives": [["Chasing A-Me 01", "P3"]],
@@ -383,14 +378,21 @@
       },
       {
          "zone": "ungoro",
-         "experience": 0,
+         "experience": 54.11,
          "waypoints": [
+            {
+               "coords": { "x": 48, "y": 20 },
+               "align": "left",
+               "header": "Marshal's Refuge Enterance",
+               "objectives": [["Chasing A-Me 01", "P3"]],
+               "type": "objective"
+            },
             {
                "coords": { "x": 48, "y": 17 },
                "align": "top",
                "header": "Marshal's Refuge Enterance",
-               "objectives": [["Chasing A-Me 01", "P3"]],
-               "type": "objective"
+               "ends": [["Chasing A-Me 01", "P3"]],
+               "type": "quest"
             },
             {
                "coords": { "x": 77, "y": 50 },
@@ -425,19 +427,46 @@
                "header": "The Slithering Scar Hive",
                "objectives": ["Pawn Captures Queen"],
                "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "ungoro",
+         "experience": 54.25,
+         "waypoints": [
+            {
+               "coords": { "x": 44, "y": 81 },
+               "align": "bottom",
+               "header": "The Slithering Scar Hive",
+               "objectives": ["Pawn Captures Queen"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 50, "y": 78 },
+               "align": "bottom",
+               "header": "Hive Enterance",
+               "type": "travel"
             },
             {
                "coords": { "x": 24, "y": 59 },
                "header": "The Western Pylon",
                "objectives": ["The Western Pylon"],
-               "special": ["Hearthstone to Tanaris"],
                "type": "objective"
+            },
+            {
+               "coords": { "x": 31, "y": 50 },
+               "align": "top",
+               "header": "Krakle",
+               "ends": ["Finding the Source"],
+               "starts": ["The New Springs"],
+               "special": ["Hearthstone to Tanaris"],
+               "type": "quest"
             }
          ]
       },
       {
          "zone": "tanaris",
-         "experience": 0,
+         "experience": 54.35,
          "waypoints": [
             {
                "coords": { "x": 52, "y": 28 },
@@ -457,7 +486,7 @@
       },
       {
          "zone": "ungoro",
-         "experience": 0,
+         "experience": 54.39,
          "waypoints": [
             {
                "coords": { "x": 45, "y": 6 },
@@ -471,27 +500,23 @@
                "ends": ["Crystals of Power", "The Northern Pylon", "The Western Pylon", "The Eastern Pylon", "Making Sense of it"],
                "starts": ["Making Sense of it"],
                "type": "quest"
-            },
-            {
-               "coords": { "x": 46, "y": 13 },
-               "header": "Karna Remtravel",
-               "ends": [["Chasing A-Me 01", "P3"]],
-               "type": "quest"
             }
          ]
       },
       {
          "zone": "ungoro",
-         "experience": 0,
+         "experience": 54.50,
          "waypoints": [
             {
-               "coords": { "x": 46, "y": 13 },
-               "header": "Karna Remtravel",
-               "ends": [["Chasing A-Me 01", "P3"]],
+               "coords": { "x": 42, "y": 3 },
+               "header": "JD Collie",
+               "ends": ["Crystals of Power", "The Northern Pylon", "The Western Pylon", "The Eastern Pylon", "Making Sense of it"],
+               "starts": ["Making Sense of it"],
                "type": "quest"
             },
             {
                "coords": { "x": 45, "y": 6 },
+               "align": "right",
                "header": "Un'Goro Flightpath",
                "special": ["Fly to Ashenvale"],
                "type": "flightpath"

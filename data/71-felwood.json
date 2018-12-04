@@ -2,7 +2,7 @@
    "path": [
       {
          "zone": "felwood",
-         "experience": 0,
+         "experience": 58.26,
          "waypoints": [
             {
                "coords": { "x": 55, "y": 93 },
@@ -39,7 +39,7 @@
       },
       {
          "zone": "felwood",
-         "experience": 0,
+         "experience": 58.40,
          "waypoints": [
             {
                "coords": { "x": 46, "y": 24 },
@@ -52,6 +52,7 @@
                "coords": { "x": 51, "y": 82 },
                "header": "Emerald Sanctuary",
                "ends": ["Silver Heart"],
+               "starts": ["Aquementas"],
                "special": ["Heathstone to Tanaris"],
                "type": "hub"
             }

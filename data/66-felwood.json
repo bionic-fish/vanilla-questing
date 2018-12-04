@@ -2,7 +2,7 @@
    "path": [
       {
          "zone": "ashenvale",
-         "experience": 0,
+         "experience": 55.23,
          "waypoints": [
             {
                "coords": { "x": 34, "y": 48 },
@@ -25,7 +25,7 @@
       },
       {
          "zone": "felwood",
-         "experience": 0,
+         "experience": 55.23,
          "waypoints": [
             {
                "coords": { "x": 55, "y": 93 },
@@ -59,7 +59,7 @@
       },
       {
          "zone": "felwood",
-         "experience": 0,
+         "experience": 55.42,
          "waypoints": [
             {
                "coords": { "x": 36, "y": 61 },
@@ -101,7 +101,7 @@
       },
       {
          "zone": "winterspring",
-         "experience": 0,
+         "experience": 55.51,
          "waypoints": [
             {
                "coords": { "x": 28, "y": 35 },

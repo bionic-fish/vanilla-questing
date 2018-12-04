@@ -2,7 +2,7 @@
    "path": [
       {
          "zone": "wpl",
-         "experience": 0,
+         "experience": 59.63,
          "waypoints": [
             {
                "coords": { "x": 43, "y": 87 },
@@ -44,7 +44,7 @@
       },
       {
          "zone": "wpl",
-         "experience": 0,
+         "experience": 59.72,
          "waypoints": [
             {
                "coords": { "x": 37, "y": 58 },
@@ -69,7 +69,7 @@
       },
       {
          "zone": "epl",
-         "experience": 0,
+         "experience": 59.74,
          "waypoints": [
             {
                "coords": { "x": 12, "y": 73 },
@@ -117,7 +117,7 @@
       },
       {
          "zone": "epl",
-         "experience": 0,
+         "experience": 59.77,
          "waypoints": [
             {
                "coords": { "x": 81, "y": 59 },
@@ -150,7 +150,7 @@
       },
       {
          "zone": "epl",
-         "experience": 0,
+         "experience": 59.83,
          "waypoints": [
             {
                "coords": { "x": 83, "y": 40 },
@@ -193,7 +193,7 @@
       },
       {
          "zone": "epl",
-         "experience": 0,
+         "experience": 59.98,
          "waypoints": [
             {
                "coords": { "x": 17, "y": 31 },
@@ -213,7 +213,7 @@
       },
       {
          "zone": "hillsbrad",
-         "experience": 0,
+         "experience": 59.98,
          "waypoints": [
             {
                "coords": { "x": 51, "y": 54 },
@@ -231,7 +231,7 @@
       },
       {
          "zone": "wpl",
-         "experience": 0,
+         "experience": 59.98,
          "waypoints": [
             {
                "coords": { "x": 43, "y": 87 },
@@ -264,7 +264,7 @@
       },
       {
          "zone": "wpl",
-         "experience": 0,
+         "experience": 60.19,
          "waypoints": [
             {
                "coords": { "x": 66, "y": 75 },
@@ -278,7 +278,7 @@
                "coords": { "x": 43, "y": 86 },
                "align": "top",
                "header": "Western Plaguelands Flightpath",
-               "special": ["End"],
+               "special": ["+18% XP if you did the Furbolg questline in Winterspring", "The End"],
                "type": "flightpath"
             }
          ]

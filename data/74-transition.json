@@ -2,7 +2,7 @@
    "path": [
       {
          "zone": "tanaris",
-         "experience": 0,
+         "experience": 59.58,
          "waypoints": [
             {
                "coords": { "x": 52, "y": 28 },
@@ -20,7 +20,7 @@
       },
       {
          "zone": "barrens",
-         "experience": 0,
+         "experience": 59.58,
          "waypoints": [
             {
                "coords": { "x": 63, "y": 37 },
@@ -37,7 +37,7 @@
       },
       {
          "zone": "stv",
-         "experience": 0,
+         "experience": 59.58,
          "waypoints": [
             {
                "coords": { "x": 26, "y": 73 },
@@ -54,7 +54,7 @@
       },
       {
          "zone": "steppes",
-         "experience": 0,
+         "experience": 59.58,
          "waypoints": [
             {
                "coords": { "x": 84, "y": 68 },
@@ -71,7 +71,7 @@
       },
       {
          "zone": "steppes",
-         "experience": 0,
+         "experience": 59.60,
          "waypoints": [
             {
                "coords": { "x": 66, "y": 22 },
@@ -89,7 +89,7 @@
       },
       {
          "zone": "ironforge",
-         "experience": 0,
+         "experience": 59.60,
          "waypoints": [
             {
                "coords": { "x": 56, "y": 48 },
@@ -106,7 +106,7 @@
       },
       {
          "zone": "ironforge",
-         "experience": 0,
+         "experience": 59.63,
          "waypoints": [
             {
                "coords": { "x": 75, "y": 12 },
@@ -124,7 +124,7 @@
       },
       {
          "zone": "hillsbrad",
-         "experience": 0,
+         "experience": 59.63,
          "waypoints": [
             {
                "coords": { "x": 49, "y": 52 },
@@ -142,7 +142,7 @@
       },
       {
          "zone": "hillsbrad",
-         "experience": 0,
+         "experience": 59.63,
          "waypoints": [
             {
                "coords": { "x": 51, "y": 54 },

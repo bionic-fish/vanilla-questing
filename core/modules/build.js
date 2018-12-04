@@ -100,8 +100,6 @@ function build() {
             ids: ids
          };
 
-         var quests = {};
-
          // LOOK THROUGH EACH 
          response.forEach(block => {
             block.path.forEach(waypoint => {
@@ -111,29 +109,14 @@ function build() {
       
                // INCREMENT BLOCK COUNTER
                data.stats.blocks++;
-               
-               // INCREMENT WAYPOINT COUNTER
-               waypoint.waypoints.forEach(foo => {
-                  data.stats.waypoints++;
 
-                  // COUNT STARTED QUESTS
-                  if (foo.starts != undefined) {
-                     foo.starts.forEach(bar => {
-
-                        // IF ITS A STRING
-                        if (typeof(bar) == 'string') { quests[bar] = 0;
-
-                        // IF ITS AN ARRAY
-                        } else { quests[bar[0]] = 0; }
-
-                     });
-                  }
-               });
+               // ADD TO WAYPOINT COUNTER
+               data.stats.waypoints += waypoint.waypoints.length;
             });
          });
 
          // SET QUEST COUNT
-         data.stats.quests = Object.keys(quests).length;
+         data.stats.quests = Object.keys(data.ids).length;
 
          // IF LOCALSTORAGE IS EMPTY, SET IT TO ZERO
          if (localStorage.getItem(data.storage) === null) { localStorage.setItem(data.storage, '0'); }

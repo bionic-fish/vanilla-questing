@@ -3,3 +3,17 @@ function log(stuff) { console.log(stuff); }
 
 // WAIT FOR GIVEN MILLISECONDS
 function sleep (time) { return new Promise((resolve) => setTimeout(resolve, time)); }
+
+// SHORTEN A LONG STRING
+function shorten(string, settings) {
+   
+   // CHECK IF THE STRING IS LONGER THAN 22 CHARACTERS
+   if (string.length > settings.maxlength) {
+
+      // ALLOW THE FIRST 20 CHARACTERS AND TAG ON THE TRIPLEDOT
+      string = string.substring(0, (settings.maxlength - 3));
+      string += '...';
+   }
+
+   return string;
+}

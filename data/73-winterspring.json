@@ -2,7 +2,7 @@
    "path": [
       {
          "zone": "winterspring",
-         "experience": 0,
+         "experience": 58.63,
          "waypoints": [
             {
                "coords": { "x": 63, "y": 37 },
@@ -46,7 +46,7 @@
       },
       {
          "zone": "winterspring",
-         "experience": 0,
+         "experience": 58.72,
          "waypoints": [
             {
                "coords": { "x": 53, "y": 43 },
@@ -82,7 +82,7 @@
       },
       {
          "zone": "winterspring",
-         "experience": 0,
+         "experience": 58.72,
          "waypoints": [
             {
                "coords": { "x": 31, "y": 45 },
@@ -120,7 +120,7 @@
       },
       {
          "zone": "winterspring",
-         "experience": 0,
+         "experience": 58.76,
          "waypoints": [
             {
                "coords": { "x": 41, "y": 41 },
@@ -147,7 +147,7 @@
       },
       {
          "zone": "felwood",
-         "experience": 0,
+         "experience": 58.83,
          "waypoints": [
             {
                "coords": { "x": 65, "y": 8 },
@@ -161,163 +161,43 @@
                "header": "Deadwood Cauldron",
                "ends": ["Falling to Corruption"],
                "starts": ["Mystery Goo"],
+               "special": ["Skipping the Furbolg quests because you need to run through the Timbermaw cave 3 extra times.", "They grant about +19% XP"],
                "type": "quest"
             }
          ]
       },
       {
          "zone": "felwood",
-         "experience": 0,
+         "experience": 58.87,
          "waypoints": [
             {
                "coords": { "x": 60, "y": 6 },
-               "align": "bottom",
                "header": "Deadwood Cauldron",
                "ends": ["Falling to Corruption"],
                "starts": ["Mystery Goo"],
+               "special": ["Skipping the Furbolg quests because you need to run through the Timbermaw cave 3 extra times.", "They grant about +19% XP"],
                "type": "quest"
             },
             {
-               "coords": { "x": 65, "y": 8 },
-               "align": "bottom",
-               "header": "Timbermaw Hold Enterance",
+               "coords": { "x": 62, "y": 24 },
+               "header": "Felwood Flightpath",
+               "special": ["Fly to Winterspring"],
                "type": "travel"
             }
          ]
       },
       {
          "zone": "winterspring",
-         "experience": 0,
+         "experience": 58.87,
          "waypoints": [
             {
-               "coords": { "x": 28, "y": 35 },
-               "header": "Timbermaw Hold Enterance",
-               "type": "travel"
-            },
-            {
-               "coords": { "x": 31, "y": 45 },
-               "header": "Donova Snowden",
-               "ends": ["Mystery Goo"],
-               "starts": ["Toxic Horrors"],
-               "type": "quest"
-            }
-         ]
-      },
-      {
-         "zone": "winterspring",
-         "experience": 0,
-         "waypoints": [
-            {
-               "coords": { "x": 31, "y": 45 },
-               "header": "Donova Snowden",
-               "ends": ["Mystery Goo"],
-               "starts": ["Toxic Horrors"],
-               "type": "quest"
-            },
-            {
-               "coords": { "x": 28, "y": 35 },
-               "header": "Timbermaw Hold Enterance",
-               "type": "travel"
-            }
-         ]
-      },
-      {
-         "zone": "felwood",
-         "experience": 0,
-         "waypoints": [
-            {
-               "coords": { "x": 65, "y": 8 },
-               "align": "bottom",
-               "header": "Timbermaw Hold Enterance",
-               "type": "travel"
-            },
-            {
-               "coords": { "x": 49, "y": 27 },
-               "align": "bottom",
-               "header": "Irontree Woods",
-               "objectives": ["Falling to Corruption"],
-               "type": "objective"
-            }
-         ]
-      },
-      {
-         "zone": "felwood",
-         "experience": 0,
-         "waypoints": [
-            {
-               "coords": { "x": 49, "y": 27 },
-               "align": "bottom",
-               "header": "Irontree Woods",
-               "objectives": ["Falling to Corruption"],
-               "type": "objective"
-            },
-            {
-               "coords": { "x": 65, "y": 8 },
-               "align": "bottom",
-               "header": "Timbermaw Hold Enterance",
-               "type": "travel"
-            }
-         ]
-      },
-      {
-         "zone": "winterspring",
-         "experience": 0,
-         "waypoints": [
-            {
-               "coords": { "x": 28, "y": 35 },
-               "header": "Timbermaw Hold Enterance",
-               "type": "travel"
-            },
-            {
-               "coords": { "x": 31, "y": 45 },
-               "header": "Donova Snowden",
-               "ends": ["Falling to Corruption"],
-               "starts": ["Winterfall Runners"],
-               "type": "quest"
-            }
-         ]
-      },
-      {
-         "zone": "winterspring",
-         "experience": 0,
-         "waypoints": [
-            {
-               "coords": { "x": 31, "y": 45 },
-               "header": "Donova Snowden",
-               "ends": ["Falling to Corruption"],
-               "starts": ["Winterfall Runners"],
-               "type": "quest"
-            },
-            {
-               "coords": { "x": 28, "y": 37 },
-               "header": "Placeholder",
-               "objectives": ["Winterfall Runners"],
-               "special": ["Spawns on the Road"],
-               "type": "objective"
-            }
-         ]
-      },
-      {
-         "zone": "winterspring",
-         "experience": 0,
-         "waypoints": [
-            {
-               "coords": { "x": 28, "y": 37 },
-               "header": "Placeholder",
-               "objectives": ["Winterfall Runners"],
-               "special": ["Spawns on the Road"],
-               "type": "objective"
-            },
-            {
-               "coords": { "x": 31, "y": 45 },
-               "header": "Donova Snowden",
-               "ends": ["Winterfall Runners"],
-               "starts": ["High Chief Winterfall"],
-               "type": "quest"
+               "coords": { "x": 63, "y": 37 },
+               "align": "top",
+               "header": "Winterspring Flightpath",
+               "type": "flightpath"
             },
             {
                "coords": { "x": 55, "y": 51 },
-               "align": "top",
                "header": "Haleh",
                "ends": ["The Dragon's Eye"],
                "starts": ["Drakefire Amulet"],
@@ -344,7 +224,7 @@
       },
       {
          "zone": "winterspring",
-         "experience": 0,
+         "experience": 58.97,
          "waypoints": [
             {
                "coords": { "x": 61, "y": 61 },
@@ -373,6 +253,7 @@
                "align": "right",
                "header": "Ice Thistle Hills",
                "objectives": ["Chillwind Horns"],
+               "special": ["This will take long"],
                "type": "objective"
             },
             {
@@ -381,40 +262,23 @@
                "header": "Ice Thistle Hills",
                "objectives": [["Are We There Yeti?", "P1"]],
                "type": "objective"
-            },
-            {
-               "coords": { "x": 66, "y": 34 },
-               "align": "top",
-               "header": "Move around the mountain",
-               "type": "travel"
-            },
-            {
-               "coords": { "x": 70, "y": 38 },
-               "align": "top",
-               "header": "High Chief Winterfall",
-               "starts": ["The Final Piece"],
-               "objectives": ["High Chief Winterfall"],
-               "special": ["Drops a quest starter"],
-               "type": "objective"
             }
          ]
       },
       {
          "zone": "winterspring",
-         "experience": 0,
+         "experience": 59.11,
          "waypoints": [
             {
-               "coords": { "x": 70, "y": 38 },
-               "align": "bottom",
-               "header": "High Chief Winterfall",
-               "starts": ["The Final Piece"],
-               "objectives": ["High Chief Winterfall"],
-               "special": ["Drops a quest starter"],
+               "coords": { "x": 66, "y": 45 },
+               "align": "right",
+               "header": "Ice Thistle Hills",
+               "objectives": [["Are We There Yeti?", "P1"]],
                "type": "objective"
             },
             {
                "coords": { "x": 61, "y": 38 },
-               "align": "bottom",
+               "align": "top",
                "header": "Everlook",
                "ends": ["Chillwind Horns", ["Are We There, Yeti?", "P1"], "Luck Be With You", "Cache of Mau'ari"],
                "starts": ["Return to Tinkee", "Cache of Mau'ari", ["Are We There, Yeti?", "P2"]],
@@ -422,7 +286,7 @@
             },
             {
                "coords": { "x": 52, "y": 30 },
-               "align": "bottom",
+               "align": "top",
                "header": "Starfall Village",
                "ends": [["Enraged Wildkin", "P3"]],
                "type": "quest"
@@ -431,20 +295,20 @@
                "coords": { "x": 31, "y": 45 },
                "align": "top",
                "header": "Donova Snowden",
-               "ends": ["The Final Piece", "High Chief Winterfall", "Strange Sources"],
+               "ends": ["Mystery Goo", "Strange Sources"],
                "type": "quest"
             }
          ]
       },
       {
          "zone": "winterspring",
-         "experience": 0,
+         "experience": 59.33,
          "waypoints": [
             {
                "coords": { "x": 31, "y": 45 },
                "align": "top",
                "header": "Donova Snowden",
-               "ends": ["The Final Piece", "High Chief Winterfall", "Strange Sources"],
+               "ends": ["Mystery Goo", "Strange Sources"],
                "type": "quest"
             },
             {
@@ -458,7 +322,7 @@
       },
       {
          "zone": "teldrassil",
-         "experience": 0,
+         "experience": 59.33,
          "waypoints": [
             {
                "coords": { "x": 58, "y": 94 },
@@ -478,7 +342,7 @@
       },
       {
          "zone": "teldrassil",
-         "experience": 0,
+         "experience": 59.36,
          "waypoints": [
             {
                "coords": { "x": 55, "y": 92 },
@@ -499,7 +363,7 @@
       },
       {
          "zone": "winterspring",
-         "experience": 0,
+         "experience": 59.36,
          "waypoints": [
             {
                "coords": { "x": 63, "y": 37 },
@@ -512,14 +376,15 @@
                "align": "right",
                "header": "Ice Thistle Hills Cave",
                "objectives": [["Are We There, Yeti?", "P2"]],
+               "special": ["This will take a while"],
                "type": "objective"
             },
             {
                "coords": { "x": 63, "y": 59 },
                "header": "Ranshalla",
                "ends": ["Find Ranshalla"],
-               "starts": ["Guardians of the Altar"],
-               "objectives": ["Guardians of the Altar"],
+               "starts": [["Guardians of the Altar", "F"]],
+               "objectives": [["Guardians of the Altar", "F"]],
                "type": "quest"
             },
             {
@@ -532,7 +397,7 @@
       },
       {
          "zone": "winterspring",
-         "experience": 0,
+         "experience": 59.47,
          "waypoints": [
             {
                "coords": { "x": 61, "y": 38 },
@@ -551,7 +416,7 @@
       },
       {
          "zone": "teldrassil",
-         "experience": 0,
+         "experience": 59.47,
          "waypoints": [
             {
                "coords": { "x": 58, "y": 94 },
@@ -562,7 +427,7 @@
             {
                "coords": { "x": 55, "y": 92 },
                "header": "Erelas Ambersky",
-               "ends": ["Guardians of the Altar"],
+               "ends": [["Guardians of the Altar", "F"]],
                "starts": ["Wildkin of Elune"],
                "type": "quest"
             },
@@ -576,7 +441,7 @@
       },
       {
          "zone": "darnassus",
-         "experience": 0,
+         "experience": 59.51,
          "waypoints": [
             {
                "coords": { "x": 31, "y": 41 },

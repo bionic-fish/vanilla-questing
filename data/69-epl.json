@@ -2,7 +2,7 @@
    "path": [
       {
          "zone": "epl",
-         "experience": 0,
+         "experience": 56.84,
          "waypoints": [
             {
                "coords": { "x": 12, "y": 73 },
@@ -10,13 +10,8 @@
                "type": "travel"
             },
             {
-               "coords": { "x": 8, "y": 44 },
-               "header": "Tirion Fordring",
-               "starts": ["Blood Tinged Skies", "Demon Dogs", "Carrion Grubbage"],
-               "type": "quest"
-            },
-            {
                "coords": { "x": 19, "y": 67 },
+               "align": "top",
                "header": "Placeholder",
                "objectives": ["Blood Tinged Skies", "Demon Dogs", "Carrion Grubbage"],
                "type": "objective"
@@ -39,7 +34,7 @@
       },
       {
          "zone": "epl",
-         "experience": 0,
+         "experience": 56.92,
          "waypoints": [
             {
                "coords": { "x": 32, "y": 75 },
@@ -75,24 +70,18 @@
                "header": "Horgus' Skull",
                "objectives": ["Villains of Darrowshire"],
                "type": "objective"
-            },
-            {
-               "coords": { "x": 49, "y": 39 },
-               "header": "Placeholder",
-               "objectives": ["Demon Dogs", "Carrion Grubbage"],
-               "type": "objective"
             }
          ]
       },
       {
          "zone": "epl",
-         "experience": 0,
+         "experience": 56.98,
          "waypoints": [
             {
-               "coords": { "x": 49, "y": 39 },
+               "coords": { "x": 51, "y": 50 },
                "align": "right",
-               "header": "Placeholder",
-               "objectives": ["Demon Dogs", "Carrion Grubbage"],
+               "header": "Horgus' Skull",
+               "objectives": ["Villains of Darrowshire"],
                "type": "objective"
             },
             {
@@ -120,7 +109,7 @@
       },
       {
          "zone": "epl",
-         "experience": 0,
+         "experience": 57.07,
          "waypoints": [
             {
                "coords": { "x": 8, "y": 44 },
@@ -142,7 +131,7 @@
       },
       {
          "zone": "epl",
-         "experience": 0,
+         "experience": 57.13,
          "waypoints": [
             {
                "coords": { "x": 27, "y": 85 },
@@ -169,7 +158,7 @@
       },
       {
          "zone": "wpl",
-         "experience": 0,
+         "experience": 57.17,
          "waypoints": [
             {
                "coords": { "x": 70, "y": 50 },
@@ -212,7 +201,7 @@
       },
       {
          "zone": "hillsbrad",
-         "experience": 0,
+         "experience": 57.23,
          "waypoints": [
             {
                "coords": { "x": 51, "y": 54 },
@@ -230,7 +219,7 @@
       },
       {
          "zone": "wpl",
-         "experience": 0,
+         "experience": 57.23,
          "waypoints": [
             {
                "coords": { "x": 43, "y": 87 },
@@ -247,7 +236,7 @@
       },
       {
          "zone": "wpl",
-         "experience": 0,
+         "experience": 57.28,
          "waypoints": [
             {
                "coords": { "x": 43, "y": 84 },
@@ -265,7 +254,7 @@
       },
       {
          "zone": "epl",
-         "experience": 0,
+         "experience": 57.28,
          "waypoints": [
             {
                "coords": { "x": 83, "y": 59 },
@@ -296,7 +285,7 @@
       },
       {
          "zone": "epl",
-         "experience": 0,
+         "experience": 57.38,
          "waypoints": [
             {
                "coords": { "x": 71, "y": 34 },

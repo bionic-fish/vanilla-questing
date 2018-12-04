@@ -6,9 +6,9 @@ build.then((data) => {
 
    // SETTINGS OBJECT
    var settings = {
-      'cooldown': {
-         'status': false,
-         'timer': 500
+      cooldown: {
+         status: false,
+         timer: 500
       },
       align: {
          left: { x: -20, y: -6 },
@@ -17,9 +17,10 @@ build.then((data) => {
          bottom: { x: -5, y: 10 }
       },
       windows: {
-         'preload': 0,
-         'faq': 0
-      }
+         preload: 0,
+         faq: 0
+      },
+      maxlength: 28
    }
 
    // PREPEND IN PROMPT SELECTOR
@@ -45,5 +46,5 @@ build.then((data) => {
    data = render.map(data, settings, reference);
    data = events.map(data, settings, render);
    settings = events.general(settings);
-   tooltips.map(data);
+   tooltips.map(data, settings);
 });

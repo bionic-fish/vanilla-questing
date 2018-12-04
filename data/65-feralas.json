@@ -2,7 +2,7 @@
    "path": [
       {
          "zone": "feralas",
-         "experience": 0,
+         "experience": 55.04,
          "waypoints": [
             {
                "coords": { "x": 30, "y": 43 },
@@ -62,7 +62,7 @@
       },
       {
          "zone": "feralas",
-         "experience": 0,
+         "experience": 55.09,
          "waypoints": [
             {
                "coords": { "x": 41, "y": 13 },
@@ -96,7 +96,7 @@
       },
       {
          "zone": "feralas",
-         "experience": 0,
+         "experience": 55.16,
          "waypoints": [
             {
                "coords": { "x": 38, "y": 10 },

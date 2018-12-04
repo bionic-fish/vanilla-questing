@@ -2,7 +2,7 @@
    "path": [
       {
          "zone": "tanaris",
-         "experience": 0,
+         "experience": 55.54,
          "waypoints": [
             {
                "coords": { "x": 52, "y": 28 },
@@ -28,7 +28,7 @@
       },
       {
          "zone": "tanaris",
-         "experience": 0,
+         "experience": 55.57,
          "waypoints": [
             {
                "coords": { "x": 54, "y": 23 },
@@ -56,7 +56,7 @@
       },
       {
          "zone": "ungoro",
-         "experience": 0,
+         "experience": 55.59,
          "waypoints": [
             {
                "coords": { "x": 45, "y": 6 },
@@ -82,7 +82,7 @@
       },
       {
          "zone": "ungoro",
-         "experience": 0,
+         "experience": 55.63,
          "waypoints": [
             {
                "coords": { "x": 42, "y": 3 },
@@ -95,14 +95,14 @@
                "coords": { "x": 45, "y": 6 },
                "align": "right",
                "header": "Un'Goro Flightpath",
-               "objectives": ["Fly to Ratchet"],
+               "special": ["Fly to Ratchet"],
                "type": "flightpath"
             }
          ]
       },
       {
          "zone": "barrens",
-         "experience": 0,
+         "experience": 55.63,
          "waypoints": [
             {
                "coords": { "x": 63, "y": 37 },
@@ -133,7 +133,7 @@
       },
       {
          "zone": "stv",
-         "experience": 0,
+         "experience": 55.65,
          "waypoints": [
             {
                "coords": { "x": 26, "y": 73 },
@@ -143,16 +143,14 @@
             {
                "coords": { "x": 28, "y": 78 },
                "header": "Booy Bay Flightpath",
-
-
-               "objectives": ["Fly to Ironforge"],
+               "special": ["Fly to Ironforge"],
                "type": "flightpath"
             }
          ]
       },
       {
          "zone": "ironforge",
-         "experience": 0,
+         "experience": 55.65,
          "waypoints": [
             {
                "coords": { "x": 56, "y": 48 },
@@ -185,7 +183,7 @@
       },
       {
          "zone": "ironforge",
-         "experience": 0,
+         "experience": 55.72,
          "waypoints": [
             {
                "coords": { "x": 76, "y": 23 },
@@ -204,7 +202,7 @@
       },
       {
          "zone": "hinterlands",
-         "experience": 0,
+         "experience": 55.72,
          "waypoints": [
             {
                "coords": { "x": 11, "y": 46 },
@@ -222,7 +220,7 @@
       },
       {
          "zone": "hinterlands",
-         "experience": 0,
+         "experience": 55.76,
          "waypoints": [
             {
                "coords": { "x": 34, "y": 75 },
@@ -241,7 +239,7 @@
       },
       {
          "zone": "hillsbrad",
-         "experience": 0,
+         "experience": 55.76,
          "waypoints": [
             {
                "coords": { "x": 49, "y": 52 },
@@ -265,7 +263,7 @@
       },
       {
          "zone": "alterac",
-         "experience": 0,
+         "experience": 55.76,
          "waypoints": [
             {
                "coords": { "x": 52, "y": 69 },

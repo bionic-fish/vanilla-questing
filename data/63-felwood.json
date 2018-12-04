@@ -2,7 +2,7 @@
    "path": [
       {
          "zone": "ashenvale",
-         "experience": 0,
+         "experience": 54.50,
          "waypoints": [
             {
                "coords": { "x": 34, "y": 48 },
@@ -26,7 +26,7 @@
       },
       {
          "zone": "felwood",
-         "experience": 0,
+         "experience": 54.50,
          "waypoints": [
             {
                "coords": { "x": 55, "y": 93 },
@@ -79,7 +79,7 @@
       },
       {
          "zone": "felwood",
-         "experience": 0,
+         "experience": 54.62,
          "waypoints": [
             {
                "coords": { "x": 36, "y": 61 },

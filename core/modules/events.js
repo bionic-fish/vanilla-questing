@@ -339,7 +339,7 @@ function general(settings) {
 // GENERATE A PROMISE FOR A ZONE -- FOR PRELOADING
 function zone_promise(zone) {
    return new Promise((resolve, reject) => {
-      $.get('interface/img/maps/' + zone + '.png').done(()=> { resolve(); });
+      $.get('interface/img/maps/' + zone + '.png').done(() => { resolve(); });
    });
 }
 

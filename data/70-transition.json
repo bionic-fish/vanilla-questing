@@ -2,7 +2,7 @@
    "path": [
       {
          "zone": "blasted",
-         "experience": 0,
+         "experience": 57.38,
          "waypoints": [
             {
                "coords": { "x": 66, "y": 24 },
@@ -19,7 +19,7 @@
       },
       {
          "zone": "blasted",
-         "experience": 0,
+         "experience": 57.38,
          "waypoints": [
             {
                "coords": { "x": 64, "y": 20 },
@@ -37,7 +37,7 @@
       },
       {
          "zone": "stormwind",
-         "experience": 0,
+         "experience": 57.38,
          "waypoints": [
             {
                "coords": { "x": 66, "y": 62 },
@@ -64,7 +64,7 @@
       },
       {
          "zone": "stormwind",
-         "experience": 0,
+         "experience": 57.42,
          "waypoints": [
             {
                "coords": { "x": 53, "y": 56 },
@@ -86,7 +86,7 @@
       },
       {
          "zone": "redridge",
-         "experience": 0,
+         "experience": 57.42,
          "waypoints": [
             {
                "coords": { "x": 31, "y": 59 },
@@ -103,7 +103,7 @@
       },
       {
          "zone": "redridge",
-         "experience": 0,
+         "experience": 57.42,
          "waypoints": [
             {
                "coords": { "x": 27, "y": 45 },
@@ -121,7 +121,7 @@
       },
       {
          "zone": "steppes",
-         "experience": 0,
+         "experience": 57.42,
          "waypoints": [
             {
                "coords": { "x": 84, "y": 68 },
@@ -157,7 +157,7 @@
       },
       {
          "zone": "redridge",
-         "experience": 0,
+         "experience": 57.45,
          "waypoints": [
             {
                "coords": { "x": 27, "y": 45 },
@@ -174,7 +174,7 @@
       },
       {
          "zone": "ironforge",
-         "experience": 0,
+         "experience": 57.45,
          "waypoints": [
             {
                "coords": { "x": 56, "y": 48 },
@@ -198,7 +198,7 @@
       },
       {
          "zone": "morogh",
-         "experience": 0,
+         "experience": 57.45,
          "waypoints": [
             {
                "coords": { "x": 53, "y": 35 },
@@ -216,7 +216,7 @@
       },
       {
          "zone": "morogh",
-         "experience": 0,
+         "experience": 57.45,
          "waypoints": [
             {
                "coords": { "x": 47, "y": 52 },
@@ -234,7 +234,7 @@
       },
       {
          "zone": "ironforge",
-         "experience": 0,
+         "experience": 57.45,
          "waypoints": [
             {
                "coords": { "x": 20, "y": 78 },
@@ -253,7 +253,7 @@
       },
       {
          "zone": "searing",
-         "experience": 0,
+         "experience": 57.45,
          "waypoints": [
             {
                "coords": { "x": 38, "y": 31 },
@@ -264,14 +264,15 @@
                "coords": { "x": 45, "y": 85 },
                "header": "Blackrock Depths",
                "starts": [["Dark Iron Legacy", "D"], ["Attunement to the Core", "D"]],
-               "objectives": [["Marshal Windsor", "D"], ["The Good Stuff", "D"], ["Overmaster Pyron", "D"], ["The Heart to the Mountain", "D"], ["A Taste of Flame", "D"], ["Ribbly Screwspigot", "D"]],
+               "objectives": [["Marshal Windsor", "D"], ["Overmaster Pyron", "D"]],
+               "special": ["Do both the Jail Quests", "Hearthstone to Lakeshire"],
                "type": "objective"
             }
          ]
       },
       {
          "zone": "redridge",
-         "experience": 0,
+         "experience": 57.53,
          "waypoints": [
             {
                "coords": { "x": 27, "y": 45 },
@@ -288,7 +289,7 @@
       },
       {
          "zone": "steppes",
-         "experience": 0,
+         "experience": 57.53,
          "waypoints": [
             {
                "coords": { "x": 84, "y": 68 },
@@ -307,7 +308,7 @@
       },
       {
          "zone": "steppes",
-         "experience": 0,
+         "experience": 57.58,
          "waypoints": [
             {
                "coords": { "x": 86, "y": 69 },
@@ -327,7 +328,7 @@
       },
       {
          "zone": "ironforge",
-         "experience": 0,
+         "experience": 57.58,
          "waypoints": [
             {
                "coords": { "x": 56, "y": 48 },
@@ -347,7 +348,7 @@
       },
       {
          "zone": "ironforge",
-         "experience": 0,
+         "experience": 57.62,
          "waypoints": [
             {
                "coords": { "x": 39, "y": 56 },
@@ -368,7 +369,7 @@
       },
       {
          "zone": "searing",
-         "experience": 0,
+         "experience": 57.62,
          "waypoints": [
             {
                "coords": { "x": 38, "y": 31 },
@@ -378,6 +379,8 @@
             {
                "coords": { "x": 45, "y": 85 },
                "header": "Blackrock Depths",
+               "starts": [["A Crumpled Up Note", "D"]],
+               "objectives": [["The Good Stuff", "D"], ["Incendius!", "D"], ["The Heart to the Mountain", "D"], ["A Taste of Flame", "D"], ["Ribbly Screwspigot", "D"], ["Dark Iron Legacy", "D"], ["Attunement to the Core", "D"]],
                "special": ["Farm a Crumpled Up Note", "Camp out & return MC prequest", "Hearthstone to Redridge"],
                "type": "objective"
             }
@@ -385,7 +388,7 @@
       },
       {
          "zone": "redridge",
-         "experience": 0,
+         "experience": 57.95,
          "waypoints": [
             {
                "coords": { "x": 27, "y": 45 },
@@ -402,7 +405,7 @@
       },
       {
          "zone": "steppes",
-         "experience": 0,
+         "experience": 57.95,
          "waypoints": [
             {
                "coords": { "x": 84, "y": 68 },
@@ -429,19 +432,19 @@
                "coords": { "x": 66, "y": 22 },
                "align": "top",
                "header": "Flame Crest",
-               "ends": [["Ribbly Screwspigot", "D"]],
+               "ends": [["Ribbly Screwspigot", "D"], ["The Heart of the Mountain", "D"]],
                "type": "quest"
             }
          ]
       },
       {
          "zone": "steppes",
-         "experience": 0,
+         "experience": 58.12,
          "waypoints": [
             {
                "coords": { "x": 66, "y": 22 },
                "header": "Flame Crest",
-               "ends": [["Ribbly Screwspigot", "D"]],
+               "ends": [["Ribbly Screwspigot", "D"], ["The Heart of the Mountain", "D"]],
                "type": "quest"
             },
             {
@@ -454,7 +457,7 @@
       },
       {
          "zone": "stormwind",
-         "experience": 0,
+         "experience": 58.12,
          "waypoints": [
             {
                "coords": { "x": 66, "y": 62 },
@@ -494,7 +497,7 @@
       },
       {
          "zone": "ironforge",
-         "experience": 0,
+         "experience": 58.17,
          "waypoints": [
             {
                "coords": { "x": 78, "y": 52 },
@@ -525,7 +528,7 @@
       },
       {
          "zone": "morogh",
-         "experience": 0,
+         "experience": 58.22,
          "waypoints": [
             {
                "coords": { "x": 53, "y": 35 },
@@ -542,7 +545,7 @@
       },
       {
          "zone": "morogh",
-         "experience": 0,
+         "experience": 58.25,
          "waypoints": [
             {
                "coords": { "x": 47, "y": 52 },
@@ -559,7 +562,7 @@
       },
       {
          "zone": "ironforge",
-         "experience": 0,
+         "experience": 58.25,
          "waypoints": [
             {
                "coords": { "x": 20, "y": 78 },
@@ -584,7 +587,7 @@
       },
       {
          "zone": "wetlands",
-         "experience": 0,
+         "experience": 58.25,
          "waypoints": [
             {
                "coords": { "x": 9, "y": 60 },
@@ -601,7 +604,7 @@
       },
       {
          "zone": "dustwallow",
-         "experience": 0,
+         "experience": 58.25,
          "waypoints": [
             {
                "coords": { "x": 71, "y": 56 },
@@ -619,7 +622,7 @@
       },
       {
          "zone": "tanaris",
-         "experience": 0,
+         "experience": 58.25,
          "waypoints": [
             {
                "coords": { "x": 50, "y": 29 },
@@ -639,7 +642,7 @@
       },
       {
          "zone": "tanaris",
-         "experience": 0,
+         "experience": 58.26,
          "waypoints": [
             {
                "coords": { "x": 52, "y": 28 },
@@ -660,7 +663,7 @@
       },
       {
          "zone": "ashenvale",
-         "experience": 0,
+         "experience": 58.26,
          "waypoints": [
             {
                "coords": { "x": 34, "y": 48 },

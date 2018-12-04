@@ -2,7 +2,7 @@
    "path": [
       {
          "zone": "wpl",
-         "experience": 0,
+         "experience": 55.76,
          "waypoints": [
             {
                "coords": { "x": 43, "y": 87 },
@@ -34,13 +34,19 @@
       },
       {
          "zone": "epl",
-         "experience": 0,
+         "experience": 55.81,
          "waypoints": [
             {
                "coords": { "x": 12, "y": 73 },
-               "align": "top",
+               "align": "left",
                "header": "Western Plaguelands Border",
                "type": "travel"
+            },
+            {
+               "coords": { "x": 8, "y": 44 },
+               "header": "Tirion Fordring",
+               "starts": ["Blood Tinged Skies", "Demon Dogs", "Carrion Grubbage"],
+               "type": "quest"
             },
             {
                "coords": { "x": 27, "y": 85 },
@@ -69,7 +75,7 @@
       },
       {
          "zone": "epl",
-         "experience": 0,
+         "experience": 55.85,
          "waypoints": [
             {
                "coords": { "x": 39, "y": 91 },
@@ -116,7 +122,7 @@
       },
       {
          "zone": "epl",
-         "experience": 0,
+         "experience": 55.94,
          "waypoints": [
             {
                "coords": { "x": 70, "y": 17 },
@@ -124,6 +130,14 @@
                "header": "Zul'Mashar",
                "objectives": ["Hameya's Plea"],
                "special": ["Kill the Infiltrator with CDs"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 46, "y": 38 },
+               "align": "bottom",
+               "header": "Northern Plaguelands",
+               "objectives": ["Demon Dogs"],
+               "special": ["Kill 5x Frenzied Plaguehounds"],
                "type": "objective"
             },
             {
@@ -151,7 +165,7 @@
       },
       {
          "zone": "hillsbrad",
-         "experience": 0,
+         "experience": 55.98,
          "waypoints": [
             {
                "coords": { "x": 51, "y": 54 },
@@ -169,7 +183,7 @@
       },
       {
          "zone": "wpl",
-         "experience": 0,
+         "experience": 55.98,
          "waypoints": [
             {
                "coords": { "x": 43, "y": 87 },
@@ -202,7 +216,7 @@
       },
       {
          "zone": "wpl",
-         "experience": 0,
+         "experience": 56.06,
          "waypoints": [
             {
                "coords": { "x": 50, "y": 77 },
@@ -244,7 +258,7 @@
       },
       {
          "zone": "wpl",
-         "experience": 0,
+         "experience": 56.13,
          "waypoints": [
             {
                "coords": { "x": 42, "y": 66 },
@@ -294,7 +308,7 @@
       },
       {
          "zone": "wpl",
-         "experience": 0,
+         "experience": 56.19,
          "waypoints": [
             {
                "coords": { "x": 38, "y": 54 },
@@ -342,14 +356,14 @@
             {
                "coords": { "x": 51, "y": 41 },
                "align": "right",
-               "header": "Placeholder",
+               "header": "Scarlet Encampment",
                "objectives": [["Unfinished Business", "P1"]],
                "type": "objective"
             },
             {
                "coords": { "x": 52, "y": 45 },
                "align": "right",
-               "header": "Placeholder",
+               "header": "Scarlet Encampment",
                "objectives": [["Unfinished Business", "P1"]],
                "type": "objective"
             }
@@ -357,11 +371,11 @@
       },
       {
          "zone": "wpl",
-         "experience": 0,
+         "experience": 56.27,
          "waypoints": [
             {
                "coords": { "x": 52, "y": 45 },
-               "header": "Placeholder",
+               "header": "Scarlet Encampment",
                "objectives": [["Unfinished Business", "P1"]],
                "type": "objective"
             },
@@ -390,7 +404,7 @@
       },
       {
          "zone": "wpl",
-         "experience": 0,
+         "experience": 56.32,
          "waypoints": [
             {
                "coords": { "x": 55, "y": 23 },
@@ -424,7 +438,7 @@
       },
       {
          "zone": "wpl",
-         "experience": 0,
+         "experience": 56.39,
          "waypoints": [
             {
                "coords": { "x": 58, "y": 60 },
@@ -453,7 +467,7 @@
       },
       {
          "zone": "wpl",
-         "experience": 0,
+         "experience": 56.43,
          "waypoints": [
             {
                "coords": { "x": 47, "y": 71 },
@@ -483,7 +497,7 @@
       },
       {
          "zone": "wpl",
-         "experience": 0,
+         "experience": 56.57,
          "waypoints": [
             {
                "coords": { "x": 43, "y": 84 },
@@ -507,7 +521,7 @@
                "type": "objective"
             },
             {
-               "coords": { "x": 39, "y": 67 },
+               "coords": { "x": 40, "y": 68 },
                "header": "Chromie",
                "ends": ["Counting Out Time"],
                "type": "quest"
@@ -525,7 +539,7 @@
       },
       {
          "zone": "wpl",
-         "experience": 0,
+         "experience": 56.68,
          "waypoints": [
             {
                "coords": { "x": 46, "y": 52 },
@@ -555,7 +569,7 @@
       },
       {
          "zone": "wpl",
-         "experience": 0,
+         "experience": 56.76,
          "waypoints": [
             {
                "coords": { "x": 53, "y": 66 },

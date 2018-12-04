@@ -2,7 +2,7 @@
    "path": [
       {
          "zone": "moonglade",
-         "experience": 0,
+         "experience": 54.67,
          "waypoints": [
             {
                "coords": { "x": 35, "y": 72 },
@@ -19,7 +19,7 @@
       },
       {
          "zone": "moonglade",
-         "experience": 0,
+         "experience": 54.73,
          "waypoints": [
             {
                "coords": { "x": 36, "y": 42 },
@@ -37,7 +37,7 @@
       },
       {
          "zone": "winterspring",
-         "experience": 0,
+         "experience": 54.73,
          "waypoints": [
             {
                "coords": { "x": 28, "y": 35 },
@@ -78,7 +78,7 @@
       },
       {
          "zone": "teldrassil",
-         "experience": 0,
+         "experience": 54.84,
          "waypoints": [
             {
                "coords": { "x": 58, "y": 94 },
@@ -103,7 +103,7 @@
       },
       {
          "zone": "darnassus",
-         "experience": 0,
+         "experience": 54.88,
          "waypoints": [
             {
                "coords": { "x": 31, "y": 41 },
@@ -150,7 +150,7 @@
       },
       {
          "zone": "tanaris",
-         "experience": 0,
+         "experience": 55.04,
          "waypoints": [
             {
                "coords": { "x": 52, "y": 28 },

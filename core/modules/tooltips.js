@@ -1,5 +1,5 @@
 // RENDER EVERYTHING
-function map(data) {
+function map(data, settings) {
 
    // SHOW TOOLTIP EVENT
    $('body').on('mouseover', '.flightpath, .objective, .travel, .hub, .quest', (event) => {
@@ -27,9 +27,9 @@ function map(data) {
       }
 
       // LOOP THROUGH & GENERATE A SELECTOR FOR EACH QUEST/OBJCTIVE THAT ARE DEFINED
-      if (waypoint.ends != undefined) { waypoint.ends.forEach(data => { container += row('ends', data); }); }
-      if (waypoint.starts != undefined) { waypoint.starts.forEach(data => { container += row('starts', data); }); }
-      if (waypoint.objectives != undefined) { waypoint.objectives.forEach(data => { container += row('objectives', data); }); }
+      if (waypoint.ends != undefined) { waypoint.ends.forEach(data => { container += row('ends', data, settings); }); }
+      if (waypoint.starts != undefined) { waypoint.starts.forEach(data => { container += row('starts', data, settings); }); }
+      if (waypoint.objectives != undefined) { waypoint.objectives.forEach(data => { container += row('objectives', data, settings); }); }
       if (waypoint.special != undefined) { waypoint.special.forEach(details => { container += '<div class="special">' + details + '</div>'; }); }
 
       container += '</div>';
@@ -57,7 +57,7 @@ function map(data) {
 }
 
 // GENERATE A TOOLTIP ROW FOR QUESTS/OBJECTIVES
-function row(category, data) {
+function row(category, data, settings) {
 
    // ROW CONTAINER
    var container = '';
@@ -67,14 +67,14 @@ function row(category, data) {
 
    // IF ITS A STRING -- GENERATE & APPEND A SELECTOR
    if (type === 'string') {
-      container += '<div class="' + category + '">' + shorten(data) + '</div>';
+      container += '<div class="' + category + '">' + shorten(data, settings) + '</div>';
 
    // IF ITS AN ARRAY -- GENERATE & APPEND A SELECTOR
    } else {
       container += `
          <div class="` + category + `">
             <div class="split">
-               <div id="left">` + shorten(data[0]) + `</div>
+               <div id="left">` + shorten(data[0], settings) + `</div>
                <div id="right">` + data[1] + `</div>
             </div>
          </div>
@@ -83,20 +83,6 @@ function row(category, data) {
 
    // RETURN THE CONTAINER
    return container;
-}
-
-// SHORTEN A LONG STRING
-function shorten(string) {
-   
-   // CHECK IF THE STRING IS LONGER THAN 22 CHARACTERS
-   if (string.length > 28) {
-
-      // ALLOW THE FIRST 20 CHARACTERS AND TAG ON THE TRIPLEDOT
-      string = string.substring(0, 25);
-      string += '...';
-   }
-
-   return string;
 }
 
 // EXPORT MODULES
