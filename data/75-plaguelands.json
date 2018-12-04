@@ -278,7 +278,7 @@
                "coords": { "x": 43, "y": 86 },
                "align": "top",
                "header": "Western Plaguelands Flightpath",
-               "special": ["+18% XP if you did the Furbolg questline in Winterspring", "The End"],
+               "special": ["+14% XP if you did the Furbolg questline in Winterspring", "The End"],
                "type": "flightpath"
             }
          ]
