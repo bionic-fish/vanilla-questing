@@ -149,6 +149,7 @@
             },
             {
                "coords": { "x": 85, "y": 70 },
+               "align": "right",
                "header": "Morgan's Vigil",
                "ends": [["The True Masters", "P6"]],
                "type": "hub"

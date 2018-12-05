@@ -23,7 +23,7 @@
                "align": "right",
                "header": "Onu",
                "ends": ["Onu"],
-               "starts": ["The Masters's Glaive"],
+               "starts": ["The Master's Glaive"],
                "type": "quest"
             },
             {
@@ -63,7 +63,7 @@
                "coords": { "x": 39, "y": 86 },
                "align": "bottom",
                "header": "The Master's Glaive",
-               "ends": ["The Masters's Glaive", "The Twilight Camp"],
+               "ends": ["The Master's Glaive", "The Twilight Camp"],
                "starts": ["Return to Onu", "The Twilight Camp", ["Therylune's Escape", "F"]],
                "special": ["Use your Scrying Bowl", "Click on the Book"],
                "type": "quest"

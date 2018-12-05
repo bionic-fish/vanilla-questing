@@ -78,15 +78,18 @@ function map(data, settings, reference) {
       $('#map').append('<svg>' + lines + '</svg>');
 
       // GENERATE ADDITIONAL ASSIST SELECTORS
-      var legend = '<span id="show-legend">Map Legend</span><div id="tooltip"></div>';
+      var legend = '<span id="show-legend">Map Legend</span>';
+      var hs = '<span id="hearthstone"><span id="hearthstone-inner">None</span></span>';
       var tooltip = '<div id="tooltip"></div>';
 
       // RENDER THEM IN
-      $('#map').append(legend + tooltip);
+      $('#map').append(legend + hs + tooltip);
 
       // RENDER SIDEPANEL CONTENT
       sidepanel(data, settings);
-      //quests(data);
+
+      // RENDER HEARTHSTONE LOCATION
+      hearthstone(data);
 
       // GRADUALLY TURN OPACITY ON AGAIN
       $('#map').css('opacity', 1);
@@ -209,6 +212,44 @@ function quests(data) {
    }
 
    log(quests);
+}
+
+function hearthstone(data) {
+
+   // LOCATION PLACEHOLDER
+   var location = 'none';
+
+   for (var x = data.current; x >= 0; x--) {
+
+      // BREAK THE LOOP AFTER THE FIRST HIT
+      if (location != 'none') { break; }
+
+      // WAYPOINTS SHORTHAND
+      var waypoints = data.build[x].waypoints;
+
+      // LOOP THROUGH EACH WAYPOINT
+      waypoints.forEach(waypoint => {
+      
+         // MAKE SURE SPECIAL ARRAY ISNT UNDEFINED
+         if (waypoint.special != undefined) {
+
+            // LOOP THROUGH MESSAGES
+            waypoint.special.forEach(message => {
+
+               // FORCE LOWERCASE
+               message = message.toLowerCase();
+
+               // SET AS THE LOCATION WHEN THE KEYWORD IS FOUND
+               if (message == 'set hearthstone') { location = capitalize(data.build[x].zone); }
+            });
+         }
+      });
+   }
+
+   // CAPITALIZE IF STV
+   if (location == 'Stv') { location = 'STV'; }
+
+   $('#hearthstone-inner').html(location);
 }
 
 // EXPORT MODULES

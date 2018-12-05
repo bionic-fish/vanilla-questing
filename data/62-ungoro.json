@@ -237,7 +237,7 @@
                "align": "right",
                "header": "Ringo",
                "ends": ["Lost!"],
-               "starts": ["A Little Help From My Friends"],
+               "starts": [["A Little Help From My Friends", "F"]],
                "type": "objective"
             },
             {
@@ -250,14 +250,14 @@
                "coords": { "x": 46, "y": 14 },
                "align": "right",
                "header": "Lakkari Tar Pits",
-               "objectives": ["A Little Help From My Friends"],
+               "objectives": [["A Little Help From My Friends", "F"]],
                "type": "objective"
             },
             {
                "coords": { "x": 44, "y": 9 },
                "align": "right",
                "header": "Marshal's Refuge",
-               "ends": ["Shizzle's Flyer", "Muigin and Larion", "A Little Help From My Friends", "Roll the Bones", "Beware of Pterrordax", "Alien Ecology", "Expedition Salvation"],
+               "ends": ["Shizzle's Flyer", "Muigin and Larion", ["A Little Help From My Friends", "F"], "Roll the Bones", "Beware of Pterrordax", "Alien Ecology", "Expedition Salvation"],
                "starts": ["A Visit to Gregan", ["It's a Secret to Everybody", "P3"]],
                "type": "hub"
             }
@@ -271,7 +271,7 @@
                "coords": { "x": 44, "y": 9 },
                "align": "bottom",
                "header": "Marshal's Refuge",
-               "ends": ["Shizzle's Flyer", "Muigin and Larion", "A Little Help From My Friends", "Roll the Bones", "Beware of Pterrordax", "Alien Ecology", "Expedition Salvation"],
+               "ends": ["Shizzle's Flyer", "Muigin and Larion", ["A Little Help From My Friends", "F"], "Roll the Bones", "Beware of Pterrordax", "Alien Ecology", "Expedition Salvation"],
                "starts": ["A Visit to Gregan", ["It's a Secret to Everybody", "P3"]],
                "type": "hub"
             },

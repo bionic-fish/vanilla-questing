@@ -12,10 +12,27 @@
    background: url('../img/dark.png');
    color: #CECECE;
    padding: 2px 4px;
+   padding-right: 4px;
    position: absolute;
    right: 5px;
    bottom: 5px;
    cursor: help;
+}
+
+#hearthstone {
+   background: url('../img/dark.png');
+   color: #CECECE;
+   padding: 2px 4px;
+   position: absolute;
+   top: 5px;
+   right: 5px;
+   pointer-events: none;
+}
+
+#hearthstone-inner {
+   background: url('../img/hearthstone.png') right;
+   padding-right: 20px;
+   background-repeat: no-repeat;
 }
 
 /* --- SVG STUFF --- */

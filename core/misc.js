@@ -17,3 +17,9 @@ function shorten(string, settings) {
 
    return string;
 }
+
+// CAPITALIZE STRING
+function capitalize(string) {
+   string = string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
+   return string;
+}
