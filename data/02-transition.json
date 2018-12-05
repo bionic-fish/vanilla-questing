@@ -55,7 +55,7 @@
                "coords": { "x": 74, "y": 48 },
                "align": "right",
                "header": "Osric Strange",
-               "ends": ["Shipment to Stormwind"],
+               "ends": ["Continue to Stormwind"],
                "starts": ["Dungar Longdrink"],
                "type": "quest"
             },
@@ -63,7 +63,7 @@
                "coords": { "x": 74, "y": 37 },
                "align": "right",
                "header": "Harry Burlguard",
-               "ends": [["A Warrior's Training", "C"]],
+               "ends": [["A Warrior's Training", "C"], ["Bartleby the Drunk", "C"]],
                "starts": [["Bartleby the Drunk", "C"]],
                "objectives": [["Bartleby the Drunk", "C"]],
                "type": "quest"

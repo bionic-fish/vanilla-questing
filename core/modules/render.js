@@ -86,6 +86,7 @@ function map(data, settings, reference) {
 
       // RENDER SIDEPANEL CONTENT
       sidepanel(data, settings);
+      //quests(data);
 
       // GRADUALLY TURN OPACITY ON AGAIN
       $('#map').css('opacity', 1);
@@ -164,6 +165,50 @@ function row(category, data, settings, ids) {
 
    // RETURN THE CONTAINER
    return container;
+}
+
+// GET CURRENT QUESTS
+function quests(data) {
+
+   var quests = {};
+
+   for (var x = 0; x < data.current; x++) {
+
+      var waypoints = data.build[x].waypoints;
+
+      waypoints.forEach(waypoint => {
+      
+         // STARTS
+         if (waypoint.starts != undefined) {
+
+            waypoint.starts.forEach(quest => {
+               
+               if (typeof(quest) != 'string') {
+                  quests[quest[0]] = 0;
+               } else {
+                  quests[quest] = 0;
+               }
+
+            });
+         }
+
+         // ENDS
+         if (waypoint.ends != undefined) {
+
+            waypoint.ends.forEach(quest => {
+               
+               if (typeof(quest) != 'string') {
+                  delete quests[quest[0]];
+               } else {
+                  delete quests[quest];
+               }
+
+            });
+         }
+      });
+   }
+
+   log(quests);
 }
 
 // EXPORT MODULES

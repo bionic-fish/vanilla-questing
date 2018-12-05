@@ -55,7 +55,7 @@
             {
                "coords": { "x": 34, "y": 75 },
                "header": "Atal'Ai Exile",
-               "starts": [["Jammal'An the Prophet", "D"]],
+               "starts": [["Jammal'an the Prophet", "D"]],
                "type": "quest"
             }
          ]
@@ -68,7 +68,7 @@
                "coords": { "x": 34, "y": 75 },
                "align": "right",
                "header": "Atal'Ai Exile",
-               "starts": [["Jammal'An the Prophet", "D"]],
+               "starts": [["Jammal'an the Prophet", "D"]],
                "type": "quest"
             },
             {

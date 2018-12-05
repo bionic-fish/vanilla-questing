@@ -290,7 +290,7 @@
             {
                "coords": { "x": 47, "y": 12 },
                "header": "Uldaman Enterance",
-               "starts": ["Shattered Necklace"],
+               "starts": ["The Shattered Necklace"],
                "objectives": [["Power Stones", "E"]],
                "special": ["Kill Dwarves until a Necklace drops"],
                "type": "quest"

@@ -111,7 +111,7 @@
                "coords": { "x": 46, "y": 48 },
                "align": "bottom",
                "header": "Refuge Point",
-               "ends": ["Worth Its Weight In Gold"],
+               "ends": ["Worth Its Weight in Gold"],
                "starts": ["Wand over Fist"],
                "type": "quest"
             },

@@ -149,7 +149,7 @@
                "coords": { "x": 66, "y": 22 },
                "align": "top",
                "header": "Flame Crest",
-               "starts": [["The Heart to the Mountain", "D"], ["Ribbly Screwspigot", "D"]],
+               "starts": [["The Heart of the Mountain", "D"], ["Ribbly Screwspigot", "D"]],
                "special": ["Hearthstone to Lakeshire"],
                "type": "quest"
             }
@@ -380,7 +380,7 @@
                "coords": { "x": 45, "y": 85 },
                "header": "Blackrock Depths",
                "starts": [["A Crumpled Up Note", "D"]],
-               "objectives": [["The Good Stuff", "D"], ["Incendius!", "D"], ["The Heart to the Mountain", "D"], ["A Taste of Flame", "D"], ["Ribbly Screwspigot", "D"], ["Dark Iron Legacy", "D"], ["Attunement to the Core", "D"]],
+               "objectives": [["The Good Stuff", "D"], ["Incendius!", "D"], ["The Heart of the Mountain", "D"], ["A Taste of Flame", "D"], ["Ribbly Screwspigot", "D"], ["Dark Iron Legacy", "D"], ["Attunement to the Core", "D"]],
                "special": ["Farm a Crumpled Up Note", "Camp out & return MC prequest", "Hearthstone to Redridge"],
                "type": "objective"
             }

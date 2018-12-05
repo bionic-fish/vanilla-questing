@@ -163,7 +163,7 @@
                "coords": { "x": 81, "y": 59 },
                "align": "right",
                "header": "Light's Hope Chapel",
-               "starts": ["Marauders of Darrowshire", "Defenders of Darrowshire"],
+               "ends": ["Marauders of Darrowshire", "Defenders of Darrowshire"],
                "objectives": ["Return to Chromie"],
                "type": "hub"
             },

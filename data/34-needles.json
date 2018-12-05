@@ -28,7 +28,7 @@
                "align": "right",
                "header": "The Shimmering Flats",
                "ends": ["The Brassbolts Brothers"],
-               "starts": ["Hardened Shells", "Hemet Nesingwary", "Salt Flat Venom", "Martek the Exiled", "Rocket Car Parts", "Wharfmaster Dizzywig", "Load Lightening", "A Bump In the Road"],
+               "starts": ["Hardened Shells", "Salt Flat Venom", "Martek the Exiled", "Rocket Car Parts", "Wharfmaster Dizzywig", "Load Lightening", "A Bump In the Road"],
                "type": "hub"
             },
             {

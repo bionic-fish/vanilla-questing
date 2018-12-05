@@ -14,7 +14,7 @@
                "coords": { "x": 72, "y": 76 },
                "align": "bottom",
                "header": "Torwa Pathfinder",
-               "starts": ["The Apes of Un'Goro", "The Fare of Lar'Korwi"],
+               "starts": ["The Apes of Un'Goro", "The Fare of Lar'korwi"],
                "type": "quest"
             },
             {
@@ -29,7 +29,7 @@
                "coords": { "x": 69, "y": 57 },
                "align": "right",
                "header": "Fresh Threshadon Carcass",
-               "objectives": ["The Fare of Lar'Korwi"],
+               "objectives": ["The Fare of Lar'korwi"],
                "type": "objective"
             },
             {
@@ -129,15 +129,15 @@
                "coords": { "x": 72, "y": 76 },
                "align": "bottom",
                "header": "Torwa Pathfinder",
-               "ends": ["The Apes of Un'Goro", "The Fare of Lar'Korwi"],
-               "starts": ["The Mighty U'cha", "The Scent of Lar'Korwi"],
+               "ends": ["The Apes of Un'Goro", "The Fare of Lar'korwi"],
+               "starts": ["The Mighty U'cha", "The Scent of Lar'korwi"],
                "type": "quest"
             },
             {
                "coords": { "x": 67, "y": 73 },
                "align": "bottom",
                "header": "The Marshlands",
-               "objectives": ["The Scent of Lar'Korwi"],
+               "objectives": ["The Scent of Lar'korwi"],
                "type": "objective"
             }
          ]
@@ -150,15 +150,15 @@
                "coords": { "x": 67, "y": 73 },
                "align": "top",
                "header": "The Marshlands",
-               "objectives": ["The Scent of Lar'Korwi"],
+               "objectives": ["The Scent of Lar'korwi"],
                "type": "objective"
             },
             {
                "coords": { "x": 72, "y": 76 },
                "align": "top",
                "header": "Torwa Pathfinder",
-               "ends": ["The Scent of Lar'Korwi"],
-               "starts": ["The Bait for Lar'Korwi"],
+               "ends": ["The Scent of Lar'korwi"],
+               "starts": ["The Bait for Lar'korwi"],
                "type": "quest"
             },
             {
@@ -405,14 +405,14 @@
                "coords": { "x": 80, "y": 50 },
                "align": "top",
                "header": "Placeholder",
-               "objectives": ["The Bait for Lar'Korwi"],
+               "objectives": ["The Bait for Lar'korwi"],
                "type": "objective"
             },
             {
                "coords": { "x": 72, "y": 76 },
                "align": "bottom",
                "header": "Torwa Pathfinder",
-               "ends": ["The Mighty U'cha", "The Scent of Lar'Korwi"],
+               "ends": ["The Mighty U'cha", "The Bait for Lar'korwi"],
                "type": "quest"
             },
             {

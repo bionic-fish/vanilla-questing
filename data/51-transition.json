@@ -339,8 +339,8 @@
             {
                "coords": { "x": 79, "y": 77 },
                "header": "The Shimmering Flats",
-               "ends": ["An Orphan Looking For a Home", "Short Incubation", "Razzeric's Tweaking"],
-               "starts": ["Short Incubation", "The Newest Member of the Family", "Gahz'Rilla", ["Safety First", "P1"]],
+               "ends": ["News For Fizzle", "An Orphan Looking For a Home", "Short Incubation", "Razzeric's Tweaking"],
+               "starts": ["Short Incubation", "The Newest Member of the Family", "Gahz'rilla", ["Safety First", "P1"]],
                "type": "quest"
             }
          ]
@@ -352,8 +352,8 @@
             {
                "coords": { "x": 79, "y": 77 },
                "header": "The Shimmering Flats",
-               "ends": ["An Orphan Looking For a Home", "Short Incubation", "Razzeric's Tweaking"],
-               "starts": ["Short Incubation", "The Newest Member of the Family", "Gahz'Rilla", ["Safety First", "P1"]],
+               "ends": ["News For Fizzle", "An Orphan Looking For a Home", "Short Incubation", "Razzeric's Tweaking"],
+               "starts": ["Short Incubation", "The Newest Member of the Family", "Gahz'rilla", ["Safety First", "P1"]],
                "type": "quest"
             },
             {
