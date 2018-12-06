@@ -90,6 +90,7 @@ function map(data, settings, reference) {
 
       // RENDER HEARTHSTONE LOCATION
       hearthstone(data);
+      //quests(data);
 
       // GRADUALLY TURN OPACITY ON AGAIN
       $('#map').css('opacity', 1);
@@ -173,35 +174,68 @@ function row(category, data, settings, ids) {
 // GET CURRENT QUESTS
 function quests(data) {
 
+   // INITIAL CONTAINER
    var quests = {};
 
+   // LIST OF QUESTS TO IGNORE
+   var blacklist = [
+      "The Lost Dwarves",
+      "Back to Uldaman",
+      "Into the Depths",
+      "Secret of the Circle",
+      "Legends of Maraudon",
+      "The Essence of Eranikus",
+      "Marshal Windsor",
+      "Kharan Mighthammer",
+      "Dark Iron Legacy",
+      "Attunement to the Core",
+      "The Fate of the Kingdom",
+      "A Crumpled Up Note"
+   ];
+
+   // LOOP THROUGH DATA TO CURRENT BLOCK
    for (var x = 0; x < data.current; x++) {
 
+      // WAYPOINTS SHORTHAND
       var waypoints = data.build[x].waypoints;
 
+      // LOOP THROUGH EACH WAYPOINT
       waypoints.forEach(waypoint => {
       
-         // STARTS
+         // ADD EVERY STARTED QUEST
          if (waypoint.starts != undefined) {
 
             waypoint.starts.forEach(quest => {
                
+               // STRING
                if (typeof(quest) != 'string') {
-                  quests[quest[0]] = 0;
+
+                  // CHECK IF THE QUEST IS BLACKLISTED
+                  var check = $.inArray(quest[0], blacklist);
+                  if (check == -1) { quests[quest[0]] = 0; }
+
+               // ARRAY
                } else {
-                  quests[quest] = 0;
+                  
+                  // CHECK IF THE QUEST IS BLACKLISTED
+                  var check = $.inArray(quest, blacklist);
+                  if (check == -1) { quests[quest] = 0; }
+
                }
 
             });
          }
 
-         // ENDS
+         // REMOVE EVERY ENDED QUEST
          if (waypoint.ends != undefined) {
 
             waypoint.ends.forEach(quest => {
                
+               // STRING
                if (typeof(quest) != 'string') {
                   delete quests[quest[0]];
+               
+               // ARRAY
                } else {
                   delete quests[quest];
                }
@@ -211,7 +245,17 @@ function quests(data) {
       });
    }
 
-   log(quests);
+   // TRANSFORM OBJECT INTO KEYS
+   quests = Object.keys(quests);
+
+   // SELECTOR CONTAINER
+   var content = '';
+
+   // GENERATE A ROW FOR EACH QUEST
+   quests.forEach(name => { content += name + '<br>'; });
+
+   // RENDER THEM IN
+   $('#questlog').html(content + '<br>' + quests.length);
 }
 
 function hearthstone(data) {

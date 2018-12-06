@@ -53,7 +53,7 @@
                "coords": { "x": 46, "y": 48 },
                "align": "right",
                "header": "Refuge Point",
-               "ends": ["Attack of the Tower"],
+               "ends": ["Attack on the Tower"],
                "starts": [["Malin's Request", "P2"]],
                "type": "hub"
             },
