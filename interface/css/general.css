@@ -67,7 +67,7 @@ a:hover { color: rgb(175, 30, 30); }
 
 .title, .ends, .starts, .objectives, .special {
    background: url('../img/dark.png');
-   margin-top: 2px;
+   margin-top: 1px;
    padding: 3px 5px;
 }
 
@@ -132,13 +132,4 @@ a:hover { color: rgb(175, 30, 30); }
    color: #F1F1F1;
    text-align: center;
    text-shadow: 1px 1px #242424;
-}
-
-#questlog {
-   position: absolute;
-   right: 50px;
-   top: 50px;
-   background: white;
-   width: 250px;
-   height: 500px;
 }

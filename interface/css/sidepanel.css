@@ -16,13 +16,16 @@
 #sidepanel-inner .title, #sidepanel-inner .starts, #sidepanel-inner .ends, #sidepanel-inner .objectives, #sidepanel-inner .special {
    color: rgb(218, 216, 216);
    margin: 0px;
-   margin-bottom: 2px;
+   margin-top: 1px;
 }
 
-#sidepanel-inner .title { background: url('../img/title-bg.png'); }
+#sidepanel-inner .title { background: url('../img/title-bg.png'); margin: 0px; }
 
-.section { padding: 6px; padding-bottom: 0px; }
-.section:last-child { padding-bottom: 4px; }
+.section {
+   background: url('../img/lighter.png');
+   margin: 4px;
+   padding: 2px;
+}
 
 .section a:link, .section a:visited {
    color: rgb(218, 216, 216);
@@ -30,4 +33,25 @@
 
 .section a:hover {
    color: white;
+}
+
+/* --- SUBMENU STUFF --- */
+
+#submenu {
+   background: url('../img/lighter.png');
+   margin: 4px;
+   margin-bottom: 6px;
+}
+
+#submenu #left, #submenu #right {
+   text-align: center;
+   color: rgb(151, 151, 151);
+   padding: 4px;
+}
+
+#submenu #left.current, #submenu #right.current {
+   background: url('../img/lighter.png');
+   border-bottom: 2px solid rgba(136, 136, 136, 0.267);
+   color: rgb(189, 189, 189);
+   pointer-events: none;
 }

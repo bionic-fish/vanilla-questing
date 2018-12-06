@@ -139,7 +139,17 @@ function sidepanel(data, settings) {
       container += '</div>';
    });
 
-   sidepanel.html(container);
+   // GENRATE A SUBMENU
+   var submenu = `
+   <div id="submenu">
+      <div class="split">
+         <div id="left" class="current">Objectives</div>
+         <div id="right">Quest Log</div>
+      </div>
+   </div>
+   `;
+
+   sidepanel.html(submenu + container);
 }
 
 // GENERATE SIDEPANEL ROW
