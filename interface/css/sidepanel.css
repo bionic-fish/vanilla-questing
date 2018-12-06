@@ -21,6 +21,8 @@
 
 #sidepanel-inner .title { background: url('../img/title-bg.png'); margin: 0px; }
 
+/* --- SECTION STUFF --- */
+
 .section {
    background: url('../img/lighter.png');
    margin: 4px;
@@ -43,15 +45,22 @@
    margin-bottom: 6px;
 }
 
-#submenu #left, #submenu #right {
+#show-obj, #show-quests {
    text-align: center;
    color: rgb(151, 151, 151);
+   border-bottom: 2px solid transparent;
    padding: 4px;
+   transition: 0.3s;
+   cursor: pointer;
 }
 
-#submenu #left.current, #submenu #right.current {
+#show-obj.current, #show-quests.current {
    background: url('../img/lighter.png');
    border-bottom: 2px solid rgba(136, 136, 136, 0.267);
    color: rgb(189, 189, 189);
-   pointer-events: none;
+   cursor: default;
 }
+
+/* --- OTHER --- */
+
+#quest-log { display: none; }

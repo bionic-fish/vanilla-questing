@@ -332,6 +332,48 @@ function general(settings) {
    // HIDE LEGEND EVENT
    $('body').on('mouseout', '#show-legend', () => { $('#legend').css('display', 'none'); });
 
+   // SHOW OBJECTIVES EVENT
+   $('body').on('click', '#show-obj', () => {
+
+      // PICK UP TARGET CLASS ATTRIBUTE
+      var check = $(this).attr('class');
+
+      // IF IT ISNT CURRENT
+      if (check != 'current') {
+
+         // FLIP CURRENT
+         $('#show-quests').removeAttr('class');
+         $('#show-obj').attr('class', 'current');
+
+         // FLIP WHICH PANEL IS SHOWN
+         $('#quest-log').css('display', 'none');
+         $('#obj-log').css('display', 'block');
+
+      // ELSE LOG ERROR
+      } else { log('Tab Already Open!'); }
+   });
+
+   // SHOW QUESTS EVENT
+   $('body').on('click', '#show-quests', () => {
+
+      // PICK UP TARGET CLASS ATTRIBUTE
+      var check = $(this).attr('class');
+
+      // IF IT ISNT CURRENT
+      if (check != 'current') {
+
+         // FLIP CURRENT
+         $('#show-obj').removeAttr('class');
+         $('#show-quests').attr('class', 'current');
+
+         // FLIP WHICH PANEL IS SHOWN
+         $('#obj-log').css('display', 'none');
+         $('#quest-log').css('display', 'block');
+
+      // ELSE LOG ERROR
+      } else { log('Tab Already Open!'); }
+   });
+
    // RETURN UPDATED SETTINGS OBJECT
    return settings;
 }

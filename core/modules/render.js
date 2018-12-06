@@ -90,7 +90,6 @@ function map(data, settings, reference) {
 
       // RENDER HEARTHSTONE LOCATION
       hearthstone(data);
-      //quests(data);
 
       // GRADUALLY TURN OPACITY ON AGAIN
       $('#map').css('opacity', 1);
@@ -103,53 +102,17 @@ function map(data, settings, reference) {
 // GENERATE OVERLOOK FOR THE CURRENT BLOCK
 function sidepanel(data, settings) {
 
+   // ASSIST VARS
+   var target = data.build[data.current].waypoints;   
    var ids = data.ids;
 
-   // TARGET BLOCK WAYPOINTS
-   var target = data.build[data.current].waypoints;
+   // FETCH OBJECTIVES & QUESTS
+   var obj = objectives(target, ids, settings);
+   var qs = quests(data, settings);
 
-   // MAIN SELECTOR
-   var sidepanel = $('#sidepanel-inner');
-   var container = '';
-
-   // LOOP THROUGH EACH WAYPOINT
-   $.each(target, (index, waypoint) => {
-   
-      // MAKE INDEX MORE READER FRIENDLY
-      var count = index + 1;
-
-      // GENERATE A SELECTOR & PUSH IT TO THE CONTAINER
-      container += `
-         <div class="section">
-            <div class="title">
-               <div class="split">
-                  <div id="left">` + count + `. ` + waypoint.header + `</div>
-                  <div id="right"></div>
-               </div>
-            </div>
-      `;
-
-      // LOOP THROUGH ENDS, STARTS & OBJECTIVES CONTENT THAT ARE DEFINED
-      if (waypoint.ends != undefined) { waypoint.ends.forEach(details => { container += row('ends', details, settings, ids); }); }
-      if (waypoint.starts != undefined) { waypoint.starts.forEach(details => { container += row('starts', details, settings, ids); }); }
-      if (waypoint.objectives != undefined) { waypoint.objectives.forEach(details => { container += row('objectives', details, settings, ids); }); }
-      if (waypoint.special != undefined) { waypoint.special.forEach(details => { container += '<div class="special">' + details + '</div>'; }); }
-
-      // ADD ON SUFFIX
-      container += '</div>';
-   });
-
-   // GENRATE A SUBMENU
-   var submenu = `
-   <div id="submenu">
-      <div class="split">
-         <div id="left" class="current">Objectives</div>
-         <div id="right">Quest Log</div>
-      </div>
-   </div>
-   `;
-
-   sidepanel.html(submenu + container);
+   // RENDER THE NEW INFO IN
+   $('#obj-log').html(obj);
+   $('#quest-log').html(qs);
 }
 
 // GENERATE SIDEPANEL ROW
@@ -181,8 +144,44 @@ function row(category, data, settings, ids) {
    return container;
 }
 
-// GET CURRENT QUESTS
-function quests(data) {
+// GET BLOCK OBJECTIVES
+function objectives(target, ids, settings) {
+
+   // INITIAL CONTAINER
+   var container = '';
+
+   // LOOP THROUGH EACH WAYPOINT
+   $.each(target, (index, waypoint) => {
+   
+      // MAKE INDEX MORE READER FRIENDLY
+      var count = index + 1;
+
+      // GENERATE A SELECTOR & PUSH IT TO THE CONTAINER
+      container += `
+         <div class="section">
+            <div class="title">
+               <div class="split">
+                  <div id="left">` + count + `. ` + waypoint.header + `</div>
+                  <div id="right"></div>
+               </div>
+            </div>
+      `;
+
+      // LOOP THROUGH ENDS, STARTS & OBJECTIVES CONTENT THAT ARE DEFINED
+      if (waypoint.ends != undefined) { waypoint.ends.forEach(details => { container += row('ends', details, settings, ids); }); }
+      if (waypoint.starts != undefined) { waypoint.starts.forEach(details => { container += row('starts', details, settings, ids); }); }
+      if (waypoint.objectives != undefined) { waypoint.objectives.forEach(details => { container += row('objectives', details, settings, ids); }); }
+      if (waypoint.special != undefined) { waypoint.special.forEach(details => { container += '<div class="special">' + details + '</div>'; }); }
+
+      // ADD ON SUFFIX
+      container += '</div>';
+   });
+
+   return container;
+}
+
+// GET BLOCK QUESTS
+function quests(data, settings) {
 
    // INITIAL CONTAINER
    var quests = {};
@@ -258,14 +257,21 @@ function quests(data) {
    // TRANSFORM OBJECT INTO KEYS
    quests = Object.keys(quests);
 
-   // SELECTOR CONTAINER
-   var content = '';
+   // CONTAINER + HEADER
+   var content = `
+      <div class="title">
+         <div class="split">
+            <div id="left">Current Quests</div>
+            <div id="right">` + quests.length + ` / 20</div>
+         </div>
+      </div>
+   `;
 
-   // GENERATE A ROW FOR EACH QUEST
-   quests.forEach(name => { content += name + '<br>'; });
+   // GENERATE ROWS & WRAPPER
+   quests.forEach(name => { content += `<div class="ends">` + shorten(name, settings) + `</div>`; });
+   content = '<div class="section">' + content + '</div>';
 
-   // RENDER THEM IN
-   $('#questlog').html(content + '<br>' + quests.length);
+   return content;
 }
 
 function hearthstone(data) {
