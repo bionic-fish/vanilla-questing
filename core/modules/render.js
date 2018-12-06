@@ -268,7 +268,7 @@ function quests(data, settings) {
    `;
 
    // GENERATE ROWS & WRAPPER
-   quests.forEach(name => { content += `<div class="ends">` + shorten(name, settings) + `</div>`; });
+   quests.forEach(name => { content += `<div class="ends"><a href="https://classicdb.ch/?quest=` + data.ids[name.toLowerCase()] + `" target="_blank">` + shorten(name, settings) + `</a></div>`; });
    content = '<div class="section">' + content + '</div>';
 
    return content;
