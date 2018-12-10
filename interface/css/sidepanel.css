@@ -35,6 +35,7 @@
 
 .section a:hover {
    color: white;
+   text-decoration: underline;
 }
 
 /* --- SUBMENU STUFF --- */

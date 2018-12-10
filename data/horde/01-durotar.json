@@ -1,0 +1,23 @@
+{
+   "path": [
+      {
+         "zone": "durotar",
+         "experience": 5.52,
+         "waypoints": [
+            {
+               "coords": { "x": 49, "y": 42 },
+               "align": "top",
+               "header": "Marshal McBride",
+               "starts": ["Report to Goldshire"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 46, "y": 48 },
+               "header": "Falkhaan Isenstrider",
+               "starts": ["Rest and Relaxation"],
+               "type": "quest"
+            }
+         ]
+      }
+   ]
+}

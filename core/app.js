@@ -1,15 +1,11 @@
 // FETCH THE BUILD MODULE
-var build = require('./modules/build.js')();
+var build = require('./modules/build.js')('alliance');
 
 // WAIT FOR THE NECESSARY DATA TO COMPILE
 build.then((data) => {
 
    // SETTINGS OBJECT
    var settings = {
-      cooldown: {
-         status: false,
-         timer: 500
-      },
       align: {
          left: { x: -20, y: -6 },
          right: { x: 10, y: -6 },
