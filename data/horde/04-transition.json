@@ -42,6 +42,121 @@
                "type": "travel"
             }
          ]
+      },
+      {
+         "zone": "durotar",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 51, "y": 13 },
+               "align": "bottom",
+               "header": "Zeppelin Station",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 46, "y": 12 },
+               "align": "bottom",
+               "header": "Orgrimmar Gates",
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "orgrimmar",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 49, "y": 92 },
+               "align": "right",
+               "header": "Orgrimmar Gates",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 47, "y": 53 },
+               "align": "right",
+               "header": "Cleft of Shadow",
+               "ends": ["Finding the Antidote", "Neeru Fireblade"],
+               "starts": ["Ak'Zeloth"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 36, "y": 37 },
+               "header": "Grommash Hold",
+               "starts": [["Hidden Enemies", "P2"], "The Spirits of Stonetalon"],
+               "ends": [["Hidden Enemies", "P1"]],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "orgrimmar",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 36, "y": 37 },
+               "header": "Grommash Hold",
+               "starts": [["Hidden Enemies", "P2"], "The Spirits of Stonetalon"],
+               "ends": [["Hidden Enemies", "P1"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 47, "y": 53 },
+               "align": "right",
+               "header": "Cleft of Shadow",
+               "objectives": [["Hidden Enemies", "P2"]],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "orgrimmar",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 47, "y": 53 },
+               "align": "right",
+               "header": "Cleft of Shadow",
+               "objectives": [["Hidden Enemies", "P2"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 36, "y": 37 },
+               "header": "Grommash Hold",
+               "ends": [["Hidden Enemies", "P2"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 49, "y": 92 },
+               "header": "Orgrimmar Gates",
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "durotar",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 46, "y": 12 },
+               "align": "right",
+               "header": "Orgrimmar Gates",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 42, "y": 19 },
+               "header": "Rhinag",
+               "ends": ["Need for a Cure"],
+               "starts": ["Need for a Cure"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 33, "y": 43 },
+               "header": "Far Watch Post",
+               "ends": ["Ak'Zeloth", "Conscript of the Horde"],
+               "starts": ["Crossroads Conscription", "The Demon Seed"],
+               "type": "quest"
+            }
+         ]
       }
    ]
 }

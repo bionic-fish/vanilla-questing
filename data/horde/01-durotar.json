@@ -310,7 +310,7 @@
                "align": "right",
                "header": "Razor Hill",
                "ends": ["Dark Storms", "Encroachment"],
-               "starts": ["Margoz"],
+               "starts": ["Margoz", "Conscript of the Horde"],
                "type": "hub"
             },
             {

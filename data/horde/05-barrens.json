@@ -1,0 +1,180 @@
+{
+   "path": [
+      {
+         "zone": "barrens",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 62, "y": 20 },
+               "align": "top",
+               "header": "Far Watch Post",
+               "ends": ["Ak'Zeloth", "Conscript of the Horde"],
+               "starts": ["Crossroads Conscription", "The Demon Seed"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 48, "y": 19 },
+               "align": "top",
+               "header": "The Altar of Fire",
+               "objectives": ["The Demon Seed"],
+               "special": ["Die & take Ress Sickness"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "barrens",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 50, "y": 32 },
+               "header": "Barrens Spirit Healer",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 52, "y": 31 },
+               "align": "top",
+               "header": "The Crossroads",
+               "ends": ["Sample for Helbrim", "Crossroads Conscription", "Meats to Orgrimmar"],
+               "starts": ["Plainstrider Menace", "Consumed by Hatred", "Lost in Battle", "The Forgotten Pools", "Raptor Thieves", "Disrupt the Attacks", "Happy Raiders", "Fungal Spores", "Wharfmaster Dizzywig", "Meats to Orgrimmar", "Ride to Orgrimmar"],
+               "special": ["Set Hearthstone", "Learn the Flightpath"],
+               "type": "hub"
+            }
+         ]
+      },
+      {
+         "zone": "barrens",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 52, "y": 31 },
+               "header": "The Crossroads",
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 54, "y": 33 },
+               "align": "bottom",
+               "header": "Placeholder",
+               "objectives": ["Plainstrider Menace"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 53, "y": 28 },
+               "align": "right",
+               "header": "Placeholder",
+               "objectives": ["Plainstrider Menace"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 55, "y": 24 },
+               "align": "right",
+               "header": "Thorn Hill",
+               "objectives": ["Disrupt the Attacks"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 45, "y": 28 },
+               "header": "Regthar Deathgate",
+               "starts": ["Kolkar Leaders", "Centaur Bracers"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 45, "y": 23 },
+               "header": "The Forgotten Pools",
+               "objectives": ["Centaur Bracers", "The Forgotten Pools", "Fungal Spores"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "barrens",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 45, "y": 23 },
+               "align": "right",
+               "header": "The Forgotten Pools",
+               "objectives": ["Centaur Bracers", "The Forgotten Pools", "Fungal Spores"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 43, "y": 24 },
+               "align": "bottom",
+               "header": "Barak Kodobane",
+               "objectives": ["Kolkar Leaders"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 40, "y": 17 },
+               "header": "The Dry Hills",
+               "objectives": ["Harpy Raiders"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "barrens",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 40, "y": 17 },
+               "align": "top",
+               "header": "The Dry Hills",
+               "objectives": ["Harpy Raiders"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 35, "y": 28 },
+               "align": "bottom",
+               "header": "Seereth Stonebreak",
+               "ends": ["The Spirits of Stonetalon"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 45, "y": 28 },
+               "align": "bottom",
+               "header": "Regthar Deathgate",
+               "ends": ["Kolkar Leaders", "Centaur Bracers"],
+               "starts": ["Verog the Dervish"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 59, "y": 17 },
+               "align": "top",
+               "header": "Placeholders",
+               "objectives": ["Raptor Thieves"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 62, "y": 20 },
+               "align": "right",
+               "header": "Ak'Zeloth",
+               "ends": ["The Demon Seed"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "barrens",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 62, "y": 20 },
+               "align": "right",
+               "header": "Ak'Zeloth",
+               "ends": ["The Demon Seed"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 63, "y": 48 },
+               "align": "right",
+               "header": "Ratchet",
+               "ends": ["Wharfmaster Dizzywig"],
+               "starts": ["Miner's Fortune", "Samophlange", "Southsea Freebooters", "Raptor Horns", "The Guns of Northwatch"],
+               "special": ["Learn the Flightpath", "Fly to Orgrimmar"],
+               "type": "hub"
+            }
+         ]
+      }
+   ]
+}
