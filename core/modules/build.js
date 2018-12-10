@@ -88,7 +88,10 @@ function build(faction) {
    // HORDE ROUTE & QUEST IDS
    } else {
       route = [
-         $.getJSON('../data/horde/01-durotar.json')
+         $.getJSON('../data/horde/01-durotar.json'),
+         $.getJSON('../data/horde/02-tirisfal.json'),
+         $.getJSON('../data/horde/03-silverpine.json'),
+         $.getJSON('../data/horde/04-transition.json')
       ];
       quests = $.getJSON('../data/horde/00-quest-ids.json');
    }

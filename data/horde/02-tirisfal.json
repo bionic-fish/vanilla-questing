@@ -1,0 +1,366 @@
+{
+   "path": [
+      {
+         "zone": "tirisfal",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 61, "y": 59 },
+               "align": "right",
+               "header": "Zeppelin Station",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 60, "y": 52 },
+               "align": "right",
+               "header": "Brill",
+               "starts": ["Proof of Demise", "Wanted: Maggot Eye", ["Speak with Dillinger", "C"], "Deaths in the Family", "The Haunted Mills", "The Chill of Death", "Graverobbers", "Delivery to Silverpine"],
+               "special": ["Set Hearthstone", "Buy 1x Coarse Thread"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 58, "y": 51 },
+               "header": "Deathguard Dillinger",
+               "ends": [["Speak with Dillinger", "C"]],
+               "starts": [["Ulag the Cleaver", "C"], "A Putrid Task"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 60, "y": 48 },
+               "align": "top",
+               "header": "Graveyard Mausoleum",
+               "objectives": [["Ulag the Cleaver", "C"]],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "tirisfal",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 60, "y": 48 },
+               "align": "top",
+               "header": "Graveyard Mausoleum",
+               "objectives": [["Ulag the Cleaver", "C"]],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 58, "y": 51 },
+               "header": "Deathguard Dillinger",
+               "ends": [["Ulag the Cleaver", "C"]],
+               "starts": [["Speak with Coleman", "C"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 58, "y": 56 },
+               "align": "right",
+               "header": "Tirisfal Valley",
+               "objectives": ["The Chill of Death"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 53, "y": 54 },
+               "header": "Gordo",
+               "starts": ["Gordo's Task"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 53, "y": 49 },
+               "header": "Stillwater Pond",
+               "objectives": ["Gordo's Task", "A Putrid Task"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "tirisfal",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 53, "y": 49 },
+               "align": "top",
+               "header": "Stillwater Pond",
+               "objectives": ["Gordo's Task", "A Putrid Task"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 58, "y": 49 },
+               "align": "top",
+               "header": "Junior Apothecary Holland",
+               "ends": ["Gordo's Task"],
+               "starts": ["Doom Weed"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 58, "y": 51 },
+               "align": "bottom",
+               "header": "Deathguard Dillinger",
+               "ends": ["A Putrid Task"],
+               "starts": ["The Mills Overrun"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 60, "y": 52 },
+               "align": "right",
+               "header": "Brill",
+               "ends": [["Speak with Coleman", "C"], "The Chill of Death"],
+               "starts": [[["Agamand Heirlooms", "C"], "C"]],
+               "type": "hub"
+            }
+         ]
+      },
+      {
+         "zone": "tirisfal",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 60, "y": 52 },
+               "align": "right",
+               "header": "Brill",
+               "ends": [["Speak with Coleman", "C"], "The Chill of Death"],
+               "starts": [[["Agamand Heirlooms", "C"], "C"]],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 53, "y": 49 },
+               "header": "Gnoll Encampment",
+               "objectives": ["Graverobbers", "Doom Weed"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 59, "y": 31 },
+               "header": "Garren's Haunt",
+               "objectives": ["Graverobbers", "Wanted: Maggot Eye"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "tirisfal",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 59, "y": 31 },
+               "align": "right",
+               "header": "Garren's Haunt",
+               "objectives": ["Graverobbers", "Wanted: Maggot Eye"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 52, "y": 67 },
+               "align": "right",
+               "header": "Scarlet Encampment",
+               "objectives": ["Proof of Demise"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 41, "y": 54 },
+               "align": "bottom",
+               "header": "Deathguard Simmer",
+               "starts": [["Fields of Grief", "P1"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 36, "y": 51 },
+               "align": "bottom",
+               "header": "Solliden Farmstead",
+               "objectives": [["Fields of Grief", "P1"]],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 47, "y": 41 },
+               "align": "bottom",
+               "header": "Devlin Agamand",
+               "objectives": ["The Haunted Mills", "The Mills Overrun"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 50, "y": 36 },
+               "align": "right",
+               "header": "Nissa Agamand",
+               "objectives": ["The Haunted Mills", "The Mills Overrun"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "tirisfal",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 50, "y": 36 },
+               "align": "right",
+               "header": "Nissa Agamand",
+               "objectives": ["The Haunted Mills", "The Mills Overrun"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 44, "y": 34 },
+               "header": "Thurman Agamand",
+               "objectives": ["The Haunted Mills", "The Mills Overrun"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 47, "y": 29 },
+               "align": "top",
+               "header": "Gregor Agamand",
+               "objectives": ["The Haunted Mills", "The Mills Overrun"],
+               "special": ["Hearthstone to Brill"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "tirisfal",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 60, "y": 52 },
+               "align": "top",
+               "header": "Brill",
+               "ends": ["Proof of Demise", "Wanted: Maggot Eye", "Graverobbers", "Deaths in the Family", "The Haunted Mills", "Speak with Sevren", ["Fields of Grief", "P1-2"]],
+               "starts": ["Forsaken Duties", "The Prodigal Lich", "Speak with Sevren", "The Family Crypt", ["Fields of Grief", "P2"]],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 65, "y": 60 },
+               "align": "bottom",
+               "header": "Deathguard Linnea",
+               "ends": ["Forsaken Duties"],
+               "starts": ["Return to the Magistrate", "Rear Guard Patrol"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 76, "y": 61 },
+               "align": "bottom",
+               "header": "Balnir Farmstead",
+               "objectives": ["Rear Guard Patrol"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "tirisfal",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 76, "y": 61 },
+               "align": "bottom",
+               "header": "Balnir Farmstead",
+               "objectives": ["Rear Guard Patrol"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 65, "y": 60 },
+               "align": "bottom",
+               "header": "Deathguard Linnea",
+               "ends": ["Rear Guard Patrol"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 60, "y": 52 },
+               "align": "top",
+               "header": "Brill",
+               "ends": ["Return to the Magistrate"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 58, "y": 51 },
+               "header": "Brill Graveyard",
+               "ends": ["The Mills Overrun", "Doom Weed"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 53, "y": 27 },
+               "header": "Agamand Family Crypt",
+               "objectives": [["Agamand Heirlooms", "C"], "The Family Crypt"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "tirisfal",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 60, "y": 52 },
+               "header": "Brill",
+               "ends": ["The Family Crypt", ["Agamand Heirlooms", "C"]],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 62, "y": 65 },
+               "header": "Undercity Gates",
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "undercity",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 71, "y": 44 },
+               "header": "Undercity Lifts",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 84, "y": 17 },
+               "align": "right",
+               "header": "Bethor Iceshard",
+               "ends": ["The Prodigal Lich"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 56, "y": 92 },
+               "align": "right",
+               "header": "Varimathras",
+               "starts": [["The Power to Destroy", "D"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 63, "y": 48 },
+               "header": "Undercity Flightpath",
+               "special": ["Learn the Flightpath"],
+               "type": "flightpath"
+            }
+         ]
+      },
+      {
+         "zone": "undercity",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 63, "y": 48 },
+               "header": "Undercity Flightpath",
+               "special": ["Learn the Flightpath"],
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 71, "y": 44 },
+               "align": "right",
+               "header": "Undercity Lifts",
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "tirisfal",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 62, "y": 65 },
+               "align": "right",
+               "header": "Undercity Gates",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 55, "y": 73 },
+               "header": "Silverpine Border",
+               "type": "travel"
+            }
+         ]
+      }
+   ]
+}

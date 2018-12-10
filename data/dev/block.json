@@ -5,19 +5,11 @@
          "experience": 0,
          "waypoints": [
             {
-               "coords": { "x": 0, "y": 0 },
+               "coords": { "x": 49, "y": 42 },
                "header": "",
                "ends": [],
                "starts": [],
-               "objectives": [],
-               "type": "quest"
-            },
-            {
-               "coords": { "x": 0, "y": 0 },
-               "header": "",
-               "ends": [],
-               "starts": [],
-               "objectives": [],
+               "special": [],
                "type": "quest"
             }
          ]

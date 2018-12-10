@@ -1,0 +1,47 @@
+{
+   "path": [
+      {
+         "zone": "undercity",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 63, "y": 48 },
+               "align": "bottom",
+               "header": "Undercity Flightpath",
+               "special": ["Learn the Flightpath"],
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 46, "y": 43 },
+               "align": "bottom",
+               "header": "The Apothecarium",
+               "ends": [["A Recipe For Death", "P1"], "Zinge's Delivery"],
+               "starts": [["A Recipe For Death", "P2"], "Sample for Helbrim"],
+               "special": ["Hearthstone to Brill"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "tirisfal",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 60, "y": 52 },
+               "align": "right",
+               "header": "Brill",
+               "ends": ["The Engraved Ring"],
+               "starts": ["Raleigh and the Undercity"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 61, "y": 59 },
+               "align": "right",
+               "header": "Zeppelin Station",
+               "special": ["Sail to Durotar"],
+               "type": "travel"
+            }
+         ]
+      }
+   ]
+}

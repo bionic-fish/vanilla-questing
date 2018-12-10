@@ -1,5 +1,5 @@
 // FETCH THE BUILD MODULE
-var build = require('./modules/build.js')('alliance');
+var build = require('./modules/build.js')('horde');
 
 // WAIT FOR THE NECESSARY DATA TO COMPILE
 build.then((data) => {
