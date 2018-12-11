@@ -1,0 +1,273 @@
+{
+   "path": [
+      {
+         "zone": "mulgore",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 69, "y": 61 },
+               "align": "bottom",
+               "header": "Barrens Border",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 37, "y": 30 },
+               "align": "bottom",
+               "header": "Thunder Bluff Lifts",
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "thunderbluff",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 33, "y": 65 },
+               "align": "bottom",
+               "header": "Thunder Bluff Lifts",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 47, "y": 50 },
+               "align": "bottom",
+               "header": "Thunder Bluff Flightpath",
+               "special": ["Learn the Flightpath"],
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 70, "y": 29 },
+               "align": "top",
+               "header": "Rahauro",
+               "starts": [["Testing an Enemy's Strength", "D"], ["Searching for the Lost Satchel", "D"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 23, "y": 21 },
+               "align": "top",
+               "header": "The Pools of Vision",
+               "ends": ["Apothecary Zamah"],
+               "starts": ["Until Death Do Us Part"],
+               "special": ["Hearthstone to Crossroads"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "barrens",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 52, "y": 31 },
+               "align": "bottom",
+               "header": "The Crossroads",
+               "ends": ["The Stagnant Oasis", "Lost in Battle"],
+               "starts": [],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 45, "y": 28 },
+               "align": "bottom",
+               "header": "Regthar Deathgate",
+               "ends": ["Verog the Dervish"],
+               "starts": ["Hezrul Bloodmark"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "barrens",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 45, "y": 28 },
+               "align": "bottom",
+               "header": "Regthar Deathgate",
+               "ends": ["Verog the Dervish"],
+               "starts": ["Hezrul Bloodmark"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 52, "y": 31 },
+               "align": "bottom",
+               "header": "The Crossroads",
+               "special": ["Fly to Orgrimmar"],
+               "type": "hub"
+            }
+         ]
+      },
+      {
+         "zone": "orgrimmar",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 45, "y": 64 },
+               "align": "bottom",
+               "header": "Orgrimmar Flightpath",
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 32, "y": 38 },
+               "header": "Thrall",
+               "starts": [["Hidden Enemies", "D"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 47, "y": 53 },
+               "align": "bottom",
+               "header": "Neeru Fireblade",
+               "starts": [["Slaying the Beast", "D"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 53, "y": 49 },
+               "align": "bottom",
+               "header": "Ragefire Chasm",
+               "objectives": [["Slaying the Beast", "D"], ["Hidden Enemies", "D"], ["Testing an Enemy's Strength", "D"], ["Searching for the Lost Satchel", "D"], ["The Power to Destroy", "D"]],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "orgrimmar",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 53, "y": 49 },
+               "align": "bottom",
+               "header": "Ragefire Chasm",
+               "objectives": [["Slaying the Beast", "D"], ["Hidden Enemies", "D"], ["Testing an Enemy's Strength", "D"], ["Searching for the Lost Satchel", "D"], ["The Power to Destroy", "D"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 47, "y": 53 },
+               "align": "bottom",
+               "header": "Neeru Fireblade",
+               "ends": [["Slaying the Beast", "D"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 32, "y": 38 },
+               "header": "Thrall",
+               "ends": [["Hidden Enemies", "D"]],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "orgrimmar",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 32, "y": 38 },
+               "header": "Thrall",
+               "ends": [["Hidden Enemies", "D"]],
+               "starts": [["Hidden Enemies", "P3"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 47, "y": 53 },
+               "align": "bottom",
+               "header": "Neeru Fireblade",
+               "ends": [["Hidden Enemies", "P3"]],
+               "starts": [["Hidden Enemies", "P4"]],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "orgrimmar",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 47, "y": 53 },
+               "align": "right",
+               "header": "Neeru Fireblade",
+               "ends": [["Hidden Enemies", "P3"]],
+               "starts": [["Hidden Enemies", "P4"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 32, "y": 38 },
+               "header": "Thrall",
+               "ends": [["Hidden Enemies", "P4"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 49, "y": 92 },
+               "align": "right",
+               "header": "Orgrimmar Gates",
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "durotar",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 46, "y": 12 },
+               "header": "Orgrimmar Gates",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 51, "y": 13 },
+               "align": "right",
+               "header": "Zeppelin Station",
+               "special": ["Sail to Tirisfal Glades"],
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "tirisfal",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 61, "y": 59 },
+               "header": "Zeppelin Station",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 62, "y": 65 },
+               "header": "Undercity Gates",
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "undercity",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 71, "y": 44 },
+               "align": "top",
+               "header": "Undercity Lifts",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 62, "y": 43 },
+               "align": "top",
+               "header": "Raleigh Andrean",
+               "ends": ["Raleigh and the Undercity"],
+               "starts": ["A Husband's Revenge"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 56, "y": 92 },
+               "align": "right",
+               "header": "Varimathras",
+               "ends": [["The Power to Destroy", "D"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 63, "y": 48 },
+               "align": "right",
+               "header": "Undercity Flightpath",
+               "special": ["Fly to Sepulcher"],
+               "type": "flightpath"
+            }
+         ]
+      }
+   ]
+}

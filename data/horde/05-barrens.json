@@ -36,7 +36,7 @@
                "align": "top",
                "header": "The Crossroads",
                "ends": ["Sample for Helbrim", "Crossroads Conscription", "Meats to Orgrimmar"],
-               "starts": ["Plainstrider Menace", "Consumed by Hatred", "Lost in Battle", "The Forgotten Pools", "Raptor Thieves", "Disrupt the Attacks", "Happy Raiders", "Fungal Spores", "Wharfmaster Dizzywig", "Meats to Orgrimmar", "Ride to Orgrimmar"],
+               "starts": ["Plainstrider Menace", "Lost in Battle", "The Forgotten Pools", "Raptor Thieves", "Disrupt the Attacks", "Happy Raiders", "Fungal Spores", "Wharfmaster Dizzywig", "Meats to Orgrimmar"],
                "special": ["Set Hearthstone", "Learn the Flightpath"],
                "type": "hub"
             }
@@ -150,6 +150,7 @@
                "align": "right",
                "header": "Ak'Zeloth",
                "ends": ["The Demon Seed"],
+               "special": ["Hearthstone to Crossroads"],
                "type": "quest"
             }
          ]
@@ -159,20 +160,155 @@
          "experience": 0,
          "waypoints": [
             {
-               "coords": { "x": 62, "y": 20 },
-               "align": "right",
-               "header": "Ak'Zeloth",
-               "ends": ["The Demon Seed"],
-               "type": "quest"
+               "coords": { "x": 52, "y": 31 },
+               "header": "The Crossroads",
+               "ends": ["Fungal Spores", "Disrupt the Attacks", "Harpy Raiders", "Raptor Thieves", "Plainstrider Menace", "The Forgotten Pools"],
+               "starts": ["Supplies for the Crossroads", "Stolen Silver", "The Zhevra", "The Stagnant Oasis"],
+               "type": "hub"
             },
             {
-               "coords": { "x": 63, "y": 48 },
+               "coords": { "x": 56, "y": 34 },
+               "align": "bottom",
+               "header": "Placeholder",
+               "objectives": ["The Zhevra"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 61, "y": 33 },
+               "align": "right",
+               "header": "Placeholder",
+               "objectives": ["The Zhevra", "Raptor Horns"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 59, "y": 27 },
+               "align": "top",
+               "header": "Crossroads' Supply Crates",
+               "objectives": ["Supplies for the Crossroads"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "barrens",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 59, "y": 27 },
+               "align": "right",
+               "header": "Crossroads' Supply Crates",
+               "objectives": ["Supplies for the Crossroads"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 62, "y": 38 },
                "align": "right",
                "header": "Ratchet",
                "ends": ["Wharfmaster Dizzywig"],
-               "starts": ["Miner's Fortune", "Samophlange", "Southsea Freebooters", "Raptor Horns", "The Guns of Northwatch"],
-               "special": ["Learn the Flightpath", "Fly to Orgrimmar"],
+               "starts": ["Southsea Freebooters", "Raptor Horns", "The Guns of Northwatch"],
+               "special": ["Learn the Flightpath"],
                "type": "hub"
+            },
+            {
+               "coords": { "x": 64, "y": 46 },
+               "align": "right",
+               "header": "Placeholder",
+               "objectives": ["Southsea Freebooters"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 58, "y": 54 },
+               "header": "Raptor Grounds",
+               "objectives": ["Raptor Horns", "Stolen Silver"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 58, "y": 54 },
+               "header": "Raptor Grounds",
+               "objectives": ["Raptor Horns", "Stolen Silver"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "barrens",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 58, "y": 54 },
+               "header": "Raptor Grounds",
+               "objectives": ["Raptor Horns", "Stolen Silver"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 62, "y": 56 },
+               "align": "bottom",
+               "header": "Northwatch Hold",
+               "starts": ["Free From the Hold"],
+               "objectives": ["The Guns of Northwatch"],
+               "special": ["Kill the boss in each tower"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 62, "y": 38 },
+               "align": "right",
+               "header": "Ratchet",
+               "ends": ["The Guns of Northwatch", "Free From the Hold", "Raptor Horns", "Southsea Freebooters", ["The Missing Shipment", "P1-2"]],
+               "starts": [["The Missing Shipment", "P1-2"]],
+               "special": ["Fly to Crossroads"],
+               "type": "hub"
+            }
+         ]
+      },
+      {
+         "zone": "barrens",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 62, "y": 38 },
+               "align": "right",
+               "header": "Ratchet",
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 52, "y": 31 },
+               "header": "The Crossroads",
+               "ends": ["Stolen Silver", "Supplies for the Crossroads", "The Zhevra"],
+               "starts": ["Apothecary Zamah"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 53, "y": 42 },
+               "header": "Verog the Dervish",
+               "objectives": ["Verog the Dervish"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 56, "y": 43 },
+               "align": "right",
+               "header": "Bubbling Fissure",
+               "objectives": ["The Stagnant Oasis"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 49, "y": 50 },
+               "align": "top",
+               "header": "Beaten Corpse",
+               "objectives": ["Lost in Battle"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 44, "y": 59 },
+               "align": "bottom",
+               "header": "Taurajo Flightpath",
+               "special": ["Learn the Flightpath"],
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 41, "y": 59 },
+               "align": "bottom",
+               "header": "Mulgore Border",
+               "type": "travel"
             }
          ]
       }
