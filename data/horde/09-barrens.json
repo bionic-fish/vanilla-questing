@@ -1,0 +1,962 @@
+{
+   "path": [
+      {
+         "zone": "barrens",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 52, "y": 31 },
+               "header": "The Crossroads",
+               "ends": [],
+               "starts": ["The Disruption Ends", "Report to Kadrak", "Consumed by Hatred", "Altered Beings", "Prowlers of the Barrens", "Harpy Lieutenants", "Egg Hunt"],
+               "special": ["Set Hearthstone", "Fly to Ratchet"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 62, "y": 38 },
+               "align": "right",
+               "header": "Ratchet",
+               "starts": ["Stolen Booty"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 64, "y": 49 },
+               "align": "right",
+               "header": "Fragile - Do Not Drop",
+               "objectives": ["Stolen Booty"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 63, "y": 50 },
+               "header": "Drizzlik's Emporium",
+               "objectives": ["Stolen Booty"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "barrens",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 63, "y": 50 },
+               "align": "right",
+               "header": "Drizzlik's Emporium",
+               "objectives": ["Stolen Booty"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 62, "y": 38 },
+               "align": "right",
+               "header": "Ratchet",
+               "ends": ["Stolen Booty"],
+               "starts": ["Ziz Fizziks", ["Samophlange", "P1"], "Deepmoss Spider Eggs"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 59, "y": 41 },
+               "align": "bottom",
+               "header": "Placeholder",
+               "objectives": ["Prowlers of the Barrens"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 56, "y": 42 },
+               "align": "bottom",
+               "header": "The Stagnant Oasis",
+               "objectives": ["Altered Beings"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 59, "y": 26 },
+               "align": "right",
+               "header": "Thorn Hill",
+               "objectives": ["The Disruption Ends"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 52, "y": 12 },
+               "header": "Control Console",
+               "ends": [["Samophlange", "P1"]],
+               "starts": [["Samophlange", "P2-3"]],
+               "objectives": [["Samophlange", "P2"]],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "barrens",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 52, "y": 12 },
+               "header": "Control Console",
+               "ends": [["Samophlange", "P1"]],
+               "starts": [["Samophlange", "P2-3"]],
+               "objectives": [["Samophlange", "P2"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 53, "y": 10 },
+               "align": "right",
+               "header": "Tinkerer Sniggles",
+               "objectives": [["Samophlange", "P3"]],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "barrens",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 53, "y": 10 },
+               "align": "right",
+               "header": "Tinkerer Sniggles",
+               "objectives": [["Samophlange", "P3"]],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 52, "y": 12 },
+               "align": "bottom",
+               "header": "Control Console",
+               "ends": [["Samophlange", "P3"]],
+               "starts": [["Samophlange", "P4"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 39, "y": 15 },
+               "align": "top",
+               "header": "The Dry Hills",
+               "objectives": ["Harpy Lieutenants"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 35, "y": 28 },
+               "align": "bottom",
+               "header": "Stonetalon Outpost",
+               "starts": ["Goblin Invaders", "Avenge my Village"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 33, "y": 27 },
+               "header": "Stonetalon Border",
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "stonetalon",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 82, "y": 96 },
+               "align": "right",
+               "header": "Barrens Border",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 81, "y": 88 },
+               "align": "right",
+               "header": "Greatwood Vale",
+               "objectives": ["Avenge my Village"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "stonetalon",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 81, "y": 88 },
+               "align": "right",
+               "header": "Greatwood Vale",
+               "objectives": ["Avenge my Village"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 82, "y": 96 },
+               "align": "right",
+               "header": "Barrens Border",
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "barrens",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 33, "y": 27 },
+               "header": "Stonetalon Border",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 35, "y": 28 },
+               "align": "right",
+               "header": "Stonetalon Outpost",
+               "ends": ["Avenge my Village"],
+               "starts": ["Kill Grundig Darkcloud"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "barrens",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 35, "y": 28 },
+               "align": "right",
+               "header": "Stonetalon Outpost",
+               "ends": ["Avenge my Village"],
+               "starts": ["Kill Grundig Darkcloud"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 33, "y": 27 },
+               "header": "Stonetalon Border",
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "stonetalon",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 82, "y": 96 },
+               "align": "right",
+               "header": "Barrens Border",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 71, "y": 95 },
+               "header": "Xen'Zilla",
+               "objectives": ["Blood Feeders"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 74, "y": 86 },
+               "align": "right",
+               "header": "Grimtotem Post",
+               "starts": [["Protect Kaya", "F"]],
+               "objectives": ["Avenge my Village"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 59, "y": 76 },
+               "align": "bottom",
+               "header": "Wanted Poster",
+               "starts": [["Arachnofobia", "E"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 53, "y": 74 },
+               "align": "bottom",
+               "header": "Sishir Canyon",
+               "objectives": [["Arachnofobia", "E"], "Blood Feeders"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 47, "y": 61 },
+               "align": "top",
+               "header": "Sun Rock Retreat",
+               "ends": [["Arachnofobia", "E"]],
+               "starts": ["Avenge my Village", "Boulderslide Ravine"],
+               "special": ["Set Hearthstone"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 45, "y": 60 },
+               "align": "top",
+               "header": "Sun Rock Flightpath",
+               "special": ["Learn the Flightpath"],
+               "type": "flightpath"
+            }
+         ]
+      },
+      {
+         "zone": "stonetalon",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 45, "y": 60 },
+               "align": "bottom",
+               "header": "Sun Rock Flightpath",
+               "special": ["Learn the Flightpath"],
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 59, "y": 62 },
+               "align": "bottom",
+               "header": "Ziz Fizziks",
+               "ends": ["Ziz Fizziks"],
+               "starts": ["Super Reaper 6000"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 62, "y": 60 },
+               "align": "bottom",
+               "header": "Windshear Crag",
+               "objectives": ["Deepmoss Spider Eggs"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 63, "y": 55 },
+               "align": "right",
+               "header": "Venture Co. Encampment",
+               "objectives": ["Goblin Invaders", "Super Reaper 6000"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "stonetalon",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 63, "y": 55 },
+               "align": "top",
+               "header": "Venture Co. Encampment",
+               "objectives": ["Goblin Invaders", "Super Reaper 6000"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 59, "y": 62 },
+               "header": "Ziz Fizziks",
+               "ends": ["Super Reaper 6000"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 60, "y": 91 },
+               "header": "Boulderslide Cavern",
+               "objectives": ["Boulderslide Ravine"],
+               "special": ["Discover first!"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 71, "y": 95 },
+               "align": "top",
+               "header": "Xen'Zilla",
+               "ends": ["Blood Feeders"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 82, "y": 96 },
+               "align": "top",
+               "header": "Barrens Border",
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "barrens",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 33, "y": 27 },
+               "header": "Stonetalon Border",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 35, "y": 28 },
+               "align": "right",
+               "header": "Stonetalon Outpost",
+               "ends": [["Protect Kaya", "F"], "Kill Grundig Darkcloud", "Goblin Invaders"],
+               "starts": ["Kaya's Alive", "The Elder Crone", "Shredding Machines"],
+               "special": ["Hearthstone to Sun Rock"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "stonetalon",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 47, "y": 61 },
+               "align": "right",
+               "header": "Sun Rock Retreat",
+               "ends": ["Kaya's Alive"],
+               "starts": ["Boulderslide Ravine"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 45, "y": 60 },
+               "header": "Sun Rock Flightpath",
+               "special": ["Fly to Crossroads"],
+               "type": "flightpath"
+            }
+         ]
+      },
+      {
+         "zone": "barrens",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 52, "y": 31 },
+               "header": "The Crossroads",
+               "ends": ["Prowlers of the Barrens", "Harpy Lieutenants", "Altered Beings", "The Disruption Ends"],
+               "starts": ["Echeyakee", "Hamuul Runetotem", "Mura Runetotem", "Serena Bloodfeather"],
+               "special": ["Fly to Camp Taurajo"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 45, "y": 59 },
+               "header": "Camp Taurajo",
+               "starts": ["The Ashenvale Hunt", "Melor Sends Word", "Tribes at War", "Weapons of Choice"],
+               "special": ["Fly to Thunder Bluff"],
+               "type": "hub"
+            }
+         ]
+      },
+      {
+         "zone": "thunderbluff",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 47, "y": 50 },
+               "header": "Thunder Bluff Flightpath",
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 61, "y": 81 },
+               "align": "right",
+               "header": "Melor Stonehoof",
+               "ends": ["Melor Sends Word"],
+               "starts": [],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 73, "y": 30 },
+               "align": "top",
+               "header": "Elder Rise",
+               "ends": ["Testing an Enemy's Strength", "Returning the Lost Satchel", "The Elder Crone", "Hamuul Runetotem", "Nara Wildmane"],
+               "starts": ["Forsaken Aid", "Nara Wildmane", ["Leaders of the Fang", "D"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 23, "y": 21 },
+               "align": "top",
+               "header": "Apothecary Zamah",
+               "ends": ["Forsaken Aid"],
+               "starts": [["Serpentbloom", "D"], "Journey to Tarren Mill"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "thunderbluff",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 23, "y": 21 },
+               "header": "Apothecary Zamah",
+               "ends": ["Forsaken Aid"],
+               "starts": [["Serpentbloom", "D"], "Journey to Tarren Mill"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 47, "y": 50 },
+               "align": "right",
+               "header": "Thunder Bluff Flightpath",
+               "special": ["Fly to Ratchet"],
+               "type": "flightpath"
+            }
+         ]
+      },
+      {
+         "zone": "barrens",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 62, "y": 38 },
+               "align": "top",
+               "header": "Ratchet",
+               "ends": [["Samophlange", "P4"], "Deepmoss Spider Eggs"],
+               "starts": ["Wenikee Boltbucket", ["Smart Drinks", "D"], ["Trouble at the Docks", "D"], "Miner's Fortune"],
+               "special": ["Fly to Crossroads"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 52, "y": 31 },
+               "align": "top",
+               "header": "The Crossroads",
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 46, "y": 40 },
+               "align": "bottom",
+               "header": "Lushwater Oasis",
+               "objectives": ["Hezrul Bloodmark"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 45, "y": 28 },
+               "header": "Regthar's Hut",
+               "ends": ["Hezrul Bloodmark", "Counterattack!"],
+               "starts": ["Counterattack!"],
+               "objectives": ["Counterattack!"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "barrens",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 45, "y": 28 },
+               "header": "Regthar's Hut",
+               "ends": ["Hezrul Bloodmark", "Counterattack!"],
+               "starts": ["Counterattack!"],
+               "objectives": ["Counterattack!"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 39, "y": 12 },
+               "align": "top",
+               "header": "The Dry Hills",
+               "objectives": ["Serena Bloodfeather"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 49, "y": 11 },
+               "align": "top",
+               "header": "Wenikee Boltbucket",
+               "ends": ["Wenikee Boltbucket"],
+               "starts": ["Nugget Slugs"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 56, "y": 17 },
+               "align": "bottom",
+               "header": "The Dry Hills",
+               "objectives": ["Echeyakee"],
+               "special": ["Blow the Horn"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 62, "y": 5 },
+               "align": "right",
+               "header": "Boulder Lode Mine",
+               "objectives": ["Miner's Fortune"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "barrens",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 62, "y": 5 },
+               "align": "bottom",
+               "header": "Boulder Lode Mine",
+               "objectives": ["Miner's Fortune"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 57, "y": 7 },
+               "align": "bottom",
+               "header": "The Dry Hills",
+               "starts": ["Ignition", "The Escape"],
+               "ends": ["Ignition"],
+               "objectives": ["Nugged Slugs"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 49, "y": 11 },
+               "header": "Wenikee Boltbucket",
+               "ends": ["Nugget Slugs"],
+               "starts": ["Rilli Greasygob"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 48, "y": 5 },
+               "header": "Kadrak",
+               "ends": ["Report to Kadrak"],
+               "starts": ["The Warsong Reports"],
+               "special": ["Run to Ashenvale"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "ashenvale",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 69, "y": 86 },
+               "header": "Barrens Border",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 71, "y": 68 },
+               "header": "Warsong Scout",
+               "objectives": ["The Warsong Reports"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 73, "y": 61 },
+               "header": "Splitertree Post",
+               "ends": ["The Ashenvale Hunt"],
+               "special": ["Learn the Flightpath", "Fly to Crossroads"],
+               "type": "hub"
+            }
+         ]
+      },
+      {
+         "zone": "barrens",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 52, "y": 31 },
+               "header": "The Crossroads",
+               "ends": ["Echeyakee", "Serena Bloodfeather"],
+               "starts": ["The Angry Scytheclaws", "Letter to Jin'Zil"],
+               "special": ["Set Hearthstone"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 52, "y": 47 },
+               "header": "Raptor Nests",
+               "objectives": ["The Angry Scytheclaws"],
+               "special": ["Hearthstone to Crossroads"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "barrens",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 52, "y": 31 },
+               "header": "The Crossroads",
+               "ends": ["The Angry Scytheclaws"],
+               "starts": ["Jorn Skyseer"],
+               "special": ["Fly to Camp Taurajo"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 45, "y": 59 },
+               "header": "Camp Taurajo",
+               "ends": ["Jorn Skyseer"],
+               "starts": ["Ishamuhale"],
+               "special": ["Fly to Ratchet"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 62, "y": 38 },
+               "align": "right",
+               "header": "Ratchet",
+               "ends": ["The Escape", "Miner's Fortune"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 60, "y": 30 },
+               "align": "right",
+               "header": "Thorn Hill",
+               "objectives": ["Ishamuhale"],
+               "special": ["Plant a Zhevra Carcass"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "barrens",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 60, "y": 30 },
+               "align": "right",
+               "header": "Thorn Hill",
+               "objectives": ["Ishamuhale"],
+               "special": ["Plant a Zhevra Carcass"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 62, "y": 38 },
+               "align": "right",
+               "header": "Ratchet",
+               "special": ["Fly to Camp Taurajo"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 45, "y": 59 },
+               "header": "Camp Taurajo",
+               "ends": ["Ishamuhale"],
+               "starts": ["Enraged Thunder Lizards"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 44, "y": 62 },
+               "header": "Southern Barrens",
+               "objectives": ["Enraged Thunder Lizards"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "barrens",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 44, "y": 62 },
+               "header": "Southern Barrens",
+               "objectives": ["Enraged Thunder Lizards"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 45, "y": 59 },
+               "align": "right",
+               "header": "Camp Taurajo",
+               "ends": ["Enraged Thunder Lizards"],
+               "starts": ["Cry of the Thunderhawk"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 44, "y": 52 },
+               "header": "Agama'gor",
+               "objectives": ["Consumed by Hatred", "Tribes at War"],
+               "special": ["Thornweavers & Water Seekers"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 44, "y": 47 },
+               "header": "Agama'gor",
+               "objectives": ["Consumed by Hatred", "Tribes at War"],
+               "special": ["Geomancers"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "barrens",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 44, "y": 47 },
+               "header": "Agama'gor",
+               "objectives": ["Consumed by Hatred", "Tribes at War"],
+               "special": ["Geomancers"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 45, "y": 59 },
+               "header": "Mangletooth",
+               "ends": ["Tribes at War", "Blood Shards for Agamaggan"],
+               "starts": ["Blood Shards for Agamaggan", ["Betrayal from Within", "P1"]],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 50, "y": 61 },
+               "align": "right",
+               "header": "Owatanka",
+               "starts": ["Owatanka"],
+               "objectives": ["Cry of the Thunderhawk"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 44, "y": 71 },
+               "header": "Field of Giants",
+               "objectives": ["Egg Hunt"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 46, "y": 77 },
+               "align": "right",
+               "header": "Gann's Stonespine",
+               "starts": ["Gann's Reclamation"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "barrens",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 46, "y": 77 },
+               "align": "right",
+               "header": "Gann's Stonespine",
+               "starts": ["Gann's Reclamation"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 45, "y": 80 },
+               "align": "right",
+               "header": "Kaz",
+               "objectives": ["Betrayal from Within"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 42, "y": 80 },
+               "align": "top",
+               "header": "Blackthorn Ridge",
+               "objectives": ["Weapons of Choice"],
+               "special": ["Warfrenzies & Seers"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 40, "y": 81 },
+               "align": "bottom",
+               "header": "Lok Orcbane",
+               "objectives": ["Betrayal from Within"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 44, "y": 83 },
+               "align": "bottom",
+               "header": "Nak",
+               "objectives": ["Betrayal from Within", "Weapons of Choice"],
+               "special": ["Stalkers"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "barrens",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 44, "y": 83 },
+               "align": "bottom",
+               "header": "Nak",
+               "objectives": ["Betrayal from Within", "Weapons of Choice"],
+               "special": ["Stalkers"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 47, "y": 86 },
+               "align": "bottom",
+               "header": "Bael Modan",
+               "objectives": ["Gann's Reclamation"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 49, "y": 86 },
+               "align": "right",
+               "header": "Feegly the Exiled",
+               "starts": [["The Tear of the Moons", "E"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 49, "y": 84 },
+               "align": "top",
+               "header": "General Twinbraid's Strongbox",
+               "objectives": [["The Tear of the Moons", "E"]],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "barrens",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 49, "y": 84 },
+               "align": "top",
+               "header": "General Twinbraid's Strongbox",
+               "objectives": [["The Tear of the Moons", "E"]],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 49, "y": 86 },
+               "align": "right",
+               "header": "Feegly the Exiled",
+               "ends": [["The Tear of the Moons", "E"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 46, "y": 77 },
+               "header": "Gann's Stonespine",
+               "ends": ["Gann's Reclamation"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 44, "y": 91 },
+               "header": "Thousand Needles Border",
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "needles",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 32, "y": 20 },
+               "header": "Thousand Needles Border",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 45, "y": 49 },
+               "align": "right",
+               "header": "Freewind Post Flightpath",
+               "special": ["Learn the Flightpath", "Fly to Taurajo"],
+               "type": "flightpath"
+            }
+         ]
+      },
+      {
+         "zone": "barrens",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 45, "y": 59 },
+               "header": "Camp Taurajo",
+               "ends": ["Cry of the Thunderhawk", "Owatanka", ["Betrayal from Within", "P1"]],
+               "starts": [["Betrayal from Within", "P2"], "Mahren Skyseer", "Weapons of Choice"],
+               "special": ["Fly to Ratchet"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 62, "y": 38 },
+               "align": "right",
+               "header": "Ratchet",
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 66, "y": 44 },
+               "align": "right",
+               "header": "Mahren Skyseer",
+               "ends": ["Mahren Skyseer"],
+               "starts": ["Isha Awak"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 63, "y": 53 },
+               "align": "right",
+               "header": "Northwatch Shore",
+               "objectives": ["Isha Awak"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "barrens",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 63, "y": 53 },
+               "align": "right",
+               "header": "Northwatch Shore",
+               "objectives": ["Isha Awak"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 66, "y": 44 },
+               "align": "right",
+               "header": "Mahren Skyseer",
+               "ends": ["Isha Awak"],
+               "special": ["Hearthstone to Crossroads"],
+               "type": "quest"
+            }
+         ]
+      }
+   ]
+}

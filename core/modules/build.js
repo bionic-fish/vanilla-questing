@@ -96,6 +96,9 @@ function build(faction) {
          $.getJSON('../data/horde/06-transition.json'),
          $.getJSON('../data/horde/07-silverpine.json'),
          $.getJSON('../data/horde/08-transition.json'),
+         $.getJSON('../data/horde/09-barrens.json'),
+         $.getJSON('../data/horde/10-transition.json'),
+         $.getJSON('../data/horde/11-hillsbrad.json'),
       ];
       quests = $.getJSON('../data/horde/00-quest-ids.json');
    }

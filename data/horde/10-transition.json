@@ -1,0 +1,313 @@
+{
+   "path": [
+      {
+         "zone": "barrens",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 52, "y": 31 },
+               "align": "right",
+               "header": "The Crossroads",
+               "ends": [["Betrayal from Within", "P2"], "Consumed by Hatred", "Egg Hunt"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 46, "y": 35 },
+               "header": "Wailing Caverns",
+               "starts": [["Deviate Eradication", "D"], ["Deviate Hides", "D"]],
+               "objectives": [["Smart Drinks", "D"], ["Trouble at the Docks", "D"], ["Serpentbloom", "D"], ["Leaders of the Fang", "D"]],
+               "special": ["Hearthstone to Crossroads"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "barrens",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 52, "y": 31 },
+               "header": "The Crossroads",
+               "special": ["Fly to Ratchet"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 62, "y": 38 },
+               "align": "right",
+               "header": "Ratchet",
+               "ends": [["Smart Drinks", "D"], ["Trouble at the Docks", "D"]],
+               "objectives": [],
+               "special": ["Talk to Sputtervale", "Fly to Crossroads"],
+               "type": "hub"
+            }
+         ]
+      },
+      {
+         "zone": "barrens",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 62, "y": 38 },
+               "align": "right",
+               "header": "Ratchet",
+               "ends": [["Smart Drinks", "D"], ["Trouble at the Docks", "D"]],
+               "objectives": [],
+               "special": ["Talk to Sputtervale", "Fly to Crossroads"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 52, "y": 31 },
+               "align": "top",
+               "header": "Crossroads Flightpath",
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 48, "y": 33 },
+               "align": "top",
+               "header": "Falla Sagewind",
+               "ends": ["The Glowing Shard"],
+               "starts": ["In Nightmares"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 46, "y": 36 },
+               "header": "Wailing Caverns Enterance",
+               "ends": [["Deviate Eradication", "D"], ["Deviate Hides", "D"]],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "barrens",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 46, "y": 36 },
+               "header": "Wailing Caverns Enterance",
+               "ends": [["Deviate Eradication", "D"], ["Deviate Hides", "D"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 52, "y": 31 },
+               "align": "right",
+               "header": "Crossroads Flightpath",
+               "special": ["Fly to Thunder Bluff"],
+               "type": "flightpath"
+            }
+         ]
+      },
+      {
+         "zone": "thunderbluff",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 47, "y": 50 },
+               "header": "Thunder Bluff Flightpath",
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 73, "y": 30 },
+               "align": "top",
+               "header": "Elder Rise",
+               "ends": ["In Nightmares", ["Leaders of the Fang", "D"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 23, "y": 21 },
+               "align": "top",
+               "header": "Apothecary Zamah",
+               "ends": [["Serpentbloom", "D"]],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "thunderbluff",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 23, "y": 21 },
+               "header": "Apothecary Zamah",
+               "ends": [["Serpentbloom", "D"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 47, "y": 50 },
+               "align": "right",
+               "header": "Thunder Bluff Flightpath",
+               "special": ["Fly to Orgrimmar"],
+               "type": "flightpath"
+            }
+         ]
+      },
+      {
+         "zone": "orgrimmar",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 45, "y": 64 },
+               "header": "Orgrimmar Flightpath",
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 76, "y": 25 },
+               "align": "top",
+               "header": "Rilli Greasygob",
+               "ends": ["Rilli Greasygob"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 80, "y": 32 },
+               "align": "right",
+               "header": "Sorek",
+               "ends": ["Speak with Ruga"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 49, "y": 92 },
+               "header": "Orgrimmar Gates",
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "durotar",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 46, "y": 12 },
+               "align": "bottom",
+               "header": "Orgrimmar Gates",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 51, "y": 13 },
+               "align": "bottom",
+               "header": "Zeppelin Station",
+               "special": ["Sail to Tirisfal"],
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "tirisfal",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 61, "y": 59 },
+               "header": "Zeppelin Station",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 62, "y": 65 },
+               "header": "Undercity Gates",
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "undercity",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 71, "y": 44 },
+               "align": "bottom",
+               "header": "Undercity Lifts",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 54, "y": 54 },
+               "header": "Keeper Bel'dugur",
+               "starts": [["The Book of Ur", "D"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 84, "y": 17 },
+               "align": "right",
+               "header": "Bethor Iceshard",
+               "starts": ["Thule Ravenclaw"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 63, "y": 47 },
+               "header": "Undercity Flightpath",
+               "special": ["Fly to Sepulcher"],
+               "type": "flightpath"
+            }
+         ]
+      },
+      {
+         "zone": "silverpine",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 46, "y": 43 },
+               "align": "bottom",
+               "header": "Sepulcher Flightpath",
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 43, "y": 41 },
+               "header": "Sepulcher",
+               "ends": ["Mura Runetotem", "Thule Ravenclaw", "Report to Hadrec"],
+               "starts": ["The Weaver", ["Arugal Must Die", "D"], ["Deathstalkers in Shadowfang", "D"], "Report to Hadrec", "Journey to the Hillsbrad Foothills", ["Assault on Fenris Isle", "E"]],
+               "special": ["Set Hearthstone"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 66, "y": 24 },
+               "align": "top",
+               "header": "Fenris Keep",
+               "objectives": [["Assault on Fenris Isle", "E"]],
+               "special": ["Hearthstone to Sepulcher"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "silverpine",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 43, "y": 41 },
+               "header": "Sepulcher",
+               "ends": [["Assault on Fenris Isle", "E"]],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 64, "y": 64 },
+               "align": "right",
+               "header": "Ambermill",
+               "objectives": ["The Weaver"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 45, "y": 68 },
+               "align": "bottom",
+               "header": "Shadowfang Keep",
+               "objectives": [["The Book of Ur", "D"], ["Arugal Must Die", "D"], ["Deathstalkers in Shadowfang", "D"]],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "silverpine",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 43, "y": 41 },
+               "header": "Sepulcher",
+               "ends": ["The Weaver", ["Arugal Must Die", "D"]],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 46, "y": 43 },
+               "align": "bottom",
+               "header": "Sepulcher Flightpath",
+               "special": ["Fly to Tarren Mill"],
+               "type": "flightpath"
+            }
+         ]
+      }
+   ]
+}
