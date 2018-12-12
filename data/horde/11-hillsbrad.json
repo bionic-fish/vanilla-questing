@@ -16,6 +16,7 @@
                "header": "Tarren Mill",
                "ends": ["Journey to Hillsbrad Foothills", "Journey to Tarren Mill"],
                "starts": ["Elixir of Suffering", "Elixir of Pain", "Elixir of Agony", "Blood of Innocents", "Battle of Hillsbrad", "The Rescue"],
+               "special": ["Set Hearthstone"],
                "type": "hub"
             }
          ]
