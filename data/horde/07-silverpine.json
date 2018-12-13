@@ -1,6 +1,56 @@
 {
    "path": [
       {
+         "zone": "tirisfal",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 61, "y": 59 },
+               "header": "Zeppelin Station",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 62, "y": 65 },
+               "header": "Undercity Gates",
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "undercity",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 71, "y": 44 },
+               "align": "top",
+               "header": "Undercity Lifts",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 62, "y": 43 },
+               "align": "top",
+               "header": "Raleigh Andrean",
+               "ends": ["Raleigh and the Undercity"],
+               "starts": ["A Husbands Revenge"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 56, "y": 92 },
+               "align": "right",
+               "header": "Varimathras",
+               "ends": [["The Power to Destroy", "D"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 64, "y": 47 },
+               "align": "right",
+               "header": "Undercity Flightpath",
+               "special": ["Fly to Sepulcher"],
+               "type": "flightpath"
+            }
+         ]
+      },
+      {
          "zone": "silverpine",
          "experience": 0,
          "waypoints": [
@@ -13,7 +63,7 @@
             {
                "coords": { "x": 43, "y": 41 },
                "header": "Sepulcher",
-               "ends": ["Until Death Do Us Part"],
+               "ends": ["Until Death Do Us Part", "Mura Runetotem"],
                "starts": ["Border Crossings", "Beren's Peril", ["Arugal's Folly", "P2"], "Rot Hide Ichor"],
                "special": ["Set Hearthstone"],
                "type": "hub"
@@ -104,11 +154,48 @@
                "type": "travel"
             },
             {
-               "coords": { "x": 60, "y": 19 },
+               "coords": { "x": 21, "y": 47 },
                "align": "bottom",
+               "header": "Deathstalker Lesh",
+               "starts": ["Time to Strike"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 60, "y": 19 },
+               "align": "right",
                "header": "Tarren Mill Flightpath",
-               "special": ["Learn the Flightpath", "Fly to Sepulcher"],
-               "type": "flightpath"
+               "ends": ["Journey to Hillsbrad Foothills", "Time to Strike"],
+               "starts": ["Elixir of Suffering"],
+               "special": ["Learn the Flightpath"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 59, "y": 32 },
+               "align": "right",
+               "header": "Placeholder",
+               "objectives": ["Elixir of Suffering"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "hillsbrad",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 59, "y": 32 },
+               "align": "right",
+               "header": "Placeholder",
+               "objectives": ["Elixir of Suffering"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 60, "y": 19 },
+               "align": "right",
+               "header": "Tarren Mill",
+               "ends": ["Elixir of Suffering"],
+               "special": ["Fly to Sepulcher"],
+               "type": "hub"
             }
          ]
       },
@@ -143,6 +230,35 @@
                "ends": [["Pyrewood Ambusher", "E"]],
                "starts": [["Pyrewood Ambusher", "E"]],
                "objectives": [["Arugal's Folly", "E"], ["A Recipe For Death", "E"]],
+               "special": ["Hearthstone to Sepulcher"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "silverpine",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 43, "y": 41 },
+               "align": "bottom",
+               "header": "Sepulcher",
+               "ends": ["Ambermill Investigations", ["Arugal's Folly", "E"], ["A Recipe For Death", "E"]],
+               "starts": [["A Recipe For Death", "P3"], "The Weaver"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 63, "y": 64 },
+               "align": "bottom",
+               "header": "Ambermill Townhouse",
+               "objectives": ["The Weaver"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 76, "y": 34 },
+               "align": "right",
+               "header": "Fenris Isle",
+               "objectives": [["A Recipe For Death", "P3"]],
                "special": ["Die & take Ress Sickness"],
                "type": "objective"
             }
@@ -155,12 +271,12 @@
             {
                "coords": { "x": 43, "y": 41 },
                "header": "Sepulcher",
-               "ends": ["Ambermill Investigations", ["Arugal's Folly", "E"], "A Recipe For Death"],
+               "ends": ["The Weaver"],
                "type": "hub"
             },
             {
-               "coords": { "x": 46, "y": 43 },
-               "align": "right",
+               "coords": { "x": 46, "y": 44 },
+               "align": "bottom",
                "header": "Sepulcher Flightpath",
                "special": ["Fly to Undercity"],
                "type": "flightpath"
@@ -188,10 +304,29 @@
                "header": "Bethor Iceshard",
                "ends": ["Rot Hid Origins", "Wand to Bethor"],
                "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "undercity",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 84, "y": 17 },
+               "align": "right",
+               "header": "Bethor Iceshard",
+               "ends": ["Rot Hid Origins", "Wand to Bethor"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 49, "y": 69 },
+               "header": "Master Apothecary Faranell",
+               "ends": [["A Recipe For Death", "P3"]],
+               "type": "quest"
             },
             {
                "coords": { "x": 71, "y": 44 },
-               "align": "bottom",
+               "align": "right",
                "header": "Undercity Lifts",
                "type": "travel"
             }

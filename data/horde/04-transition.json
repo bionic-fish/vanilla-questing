@@ -12,7 +12,7 @@
                "type": "flightpath"
             },
             {
-               "coords": { "x": 46, "y": 43 },
+               "coords": { "x": 49, "y": 69 },
                "align": "bottom",
                "header": "The Apothecarium",
                "ends": [["A Recipe For Death", "P1"], "Zinge's Delivery"],
@@ -150,7 +150,15 @@
                "type": "quest"
             },
             {
+               "coords": { "x": 51, "y": 44 },
+               "align": "bottom",
+               "header": "Takrin Pathseeker",
+               "starts": ["Conscript of the Horde"],
+               "type": "quest"
+            },
+            {
                "coords": { "x": 33, "y": 43 },
+               "align": "bottom",
                "header": "Far Watch Post",
                "ends": ["Ak'Zeloth", "Conscript of the Horde"],
                "starts": ["Crossroads Conscription", "The Demon Seed"],

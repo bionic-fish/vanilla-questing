@@ -33,7 +33,7 @@
             },
             {
                "coords": { "x": 52, "y": 31 },
-               "align": "top",
+               "align": "right",
                "header": "The Crossroads",
                "ends": ["Sample for Helbrim", "Crossroads Conscription", "Meats to Orgrimmar"],
                "starts": ["Plainstrider Menace", "Lost in Battle", "The Forgotten Pools", "Raptor Thieves", "Disrupt the Attacks", "Happy Raiders", "Fungal Spores", "Wharfmaster Dizzywig", "Meats to Orgrimmar"],
@@ -122,13 +122,6 @@
                "header": "The Dry Hills",
                "objectives": ["Harpy Raiders"],
                "type": "objective"
-            },
-            {
-               "coords": { "x": 35, "y": 28 },
-               "align": "bottom",
-               "header": "Seereth Stonebreak",
-               "ends": ["The Spirits of Stonetalon"],
-               "type": "quest"
             },
             {
                "coords": { "x": 45, "y": 28 },
@@ -244,17 +237,64 @@
                "coords": { "x": 62, "y": 56 },
                "align": "bottom",
                "header": "Northwatch Hold",
-               "starts": ["Free From the Hold"],
+               "starts": [["Free From the Hold", "F"]],
                "objectives": ["The Guns of Northwatch"],
-               "special": ["Kill the boss in each tower"],
+               "special": ["Kill the boss in each tower", "Do the escort last"],
                "type": "objective"
             },
             {
                "coords": { "x": 62, "y": 38 },
                "align": "right",
                "header": "Ratchet",
-               "ends": ["The Guns of Northwatch", "Free From the Hold", "Raptor Horns", "Southsea Freebooters", ["The Missing Shipment", "P1-2"]],
-               "starts": [["The Missing Shipment", "P1-2"]],
+               "ends": ["The Guns of Northwatch", ["Free From the Hold", "F"], "Raptor Horns", "Southsea Freebooters", ["The Missing Shipment", "P1-2"]],
+               "starts": [["The Missing Shipment", "P1-2"], "Stolen Booty"],
+               "type": "hub"
+            }
+         ]
+      },
+      {
+         "zone": "barrens",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 62, "y": 38 },
+               "align": "right",
+               "header": "Ratchet",
+               "ends": ["The Guns of Northwatch", ["Free From the Hold", "F"], "Raptor Horns", "Southsea Freebooters", ["The Missing Shipment", "P1-2"]],
+               "starts": [["The Missing Shipment", "P1-2"], "Stolen Booty"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 64, "y": 49 },
+               "align": "right",
+               "header": "Fragile - Do Not Drop",
+               "objectives": ["Stolen Booty"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 63, "y": 50 },
+               "header": "Drizzlik's Emporium",
+               "objectives": ["Stolen Booty"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "barrens",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 63, "y": 50 },
+               "align": "right",
+               "header": "Drizzlik's Emporium",
+               "objectives": ["Stolen Booty"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 62, "y": 38 },
+               "align": "right",
+               "header": "Ratchet",
+               "ends": ["Stolen Booty"],
                "special": ["Fly to Crossroads"],
                "type": "hub"
             }
@@ -275,6 +315,7 @@
                "header": "The Crossroads",
                "ends": ["Stolen Silver", "Supplies for the Crossroads", "The Zhevra"],
                "starts": ["Apothecary Zamah"],
+               "special": ["Edit -- Pick up everything! not egg q!"],
                "type": "hub"
             },
             {

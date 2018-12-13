@@ -275,6 +275,7 @@
                "coords": { "x": 53, "y": 27 },
                "header": "Agamand Family Crypt",
                "objectives": [["Agamand Heirlooms", "C"], "The Family Crypt"],
+               "special": ["Hearthstone to Brill"],
                "type": "objective"
             }
          ]

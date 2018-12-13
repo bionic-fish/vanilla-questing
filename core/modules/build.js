@@ -94,6 +94,7 @@ function build(faction) {
          $.getJSON('../data/horde/04-transition.json'),
          $.getJSON('../data/horde/05-barrens.json'),
          $.getJSON('../data/horde/06-transition.json'),
+         $.getJSON('../data/horde/06.5-barrens.json'),
          $.getJSON('../data/horde/07-silverpine.json'),
          $.getJSON('../data/horde/08-transition.json'),
          $.getJSON('../data/horde/09-barrens.json'),

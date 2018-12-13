@@ -194,77 +194,10 @@
                "type": "quest"
             },
             {
-               "coords": { "x": 49, "y": 92 },
-               "align": "right",
-               "header": "Orgrimmar Gates",
-               "type": "travel"
-            }
-         ]
-      },
-      {
-         "zone": "durotar",
-         "experience": 0,
-         "waypoints": [
-            {
-               "coords": { "x": 46, "y": 12 },
-               "header": "Orgrimmar Gates",
-               "type": "travel"
-            },
-            {
-               "coords": { "x": 51, "y": 13 },
-               "align": "right",
-               "header": "Zeppelin Station",
-               "special": ["Sail to Tirisfal Glades"],
-               "type": "travel"
-            }
-         ]
-      },
-      {
-         "zone": "tirisfal",
-         "experience": 0,
-         "waypoints": [
-            {
-               "coords": { "x": 61, "y": 59 },
-               "header": "Zeppelin Station",
-               "type": "travel"
-            },
-            {
-               "coords": { "x": 62, "y": 65 },
-               "header": "Undercity Gates",
-               "type": "travel"
-            }
-         ]
-      },
-      {
-         "zone": "undercity",
-         "experience": 0,
-         "waypoints": [
-            {
-               "coords": { "x": 71, "y": 44 },
-               "align": "top",
-               "header": "Undercity Lifts",
-               "type": "travel"
-            },
-            {
-               "coords": { "x": 62, "y": 43 },
-               "align": "top",
-               "header": "Raleigh Andrean",
-               "ends": ["Raleigh and the Undercity"],
-               "starts": ["A Husband's Revenge"],
-               "type": "quest"
-            },
-            {
-               "coords": { "x": 56, "y": 92 },
-               "align": "right",
-               "header": "Varimathras",
-               "ends": [["The Power to Destroy", "D"]],
-               "type": "quest"
-            },
-            {
-               "coords": { "x": 63, "y": 48 },
-               "align": "right",
-               "header": "Undercity Flightpath",
-               "special": ["Fly to Sepulcher"],
+               "coords": { "x": 45, "y": 64 },
+               "align": "bottom",
+               "header": "Orgrimmar Flightpath",
+               "special": ["Fly to Ratchet"],
                "type": "flightpath"
             }
          ]
