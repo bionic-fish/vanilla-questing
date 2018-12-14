@@ -87,20 +87,7 @@ function build(faction) {
    
    // HORDE ROUTE & QUEST IDS
    } else {
-      route = [
-         $.getJSON('../data/horde/01-durotar.json'),
-         $.getJSON('../data/horde/02-tirisfal.json'),
-         $.getJSON('../data/horde/03-silverpine.json'),
-         $.getJSON('../data/horde/04-transition.json'),
-         $.getJSON('../data/horde/05-barrens.json'),
-         $.getJSON('../data/horde/06-transition.json'),
-         $.getJSON('../data/horde/06.5-barrens.json'),
-         $.getJSON('../data/horde/07-silverpine.json'),
-         $.getJSON('../data/horde/08-transition.json'),
-         $.getJSON('../data/horde/09-barrens.json'),
-         $.getJSON('../data/horde/10-transition.json'),
-         $.getJSON('../data/horde/11-hillsbrad.json'),
-      ];
+      route = [$.getJSON('../data/horde/route.json')];
       quests = $.getJSON('../data/horde/00-quest-ids.json');
    }
 
