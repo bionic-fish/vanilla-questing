@@ -1006,7 +1006,7 @@
                "align": "right",
                "header": "Rane Yorick",
                "ends": ["Ivar the Foul"],
-               "special": ["Die & take Ress Sickness"],
+               "special": ["Hearthstone to Sepulcher"],
                "type": "quest"
             }
          ]
@@ -1018,13 +1018,81 @@
             {
                "coords": { "x": 43, "y": 41 },
                "header": "Sepulcher",
-               "ends": [["Arugal's Folly", "P1"], "Rot Hide Clues"],
-               "starts": ["The Engraved Ring"],
+               "ends": ["Rot Hide Clues", ["Arugal's Folly", "P1"]],
+               "starts": [["Arugal's Folly", "P2"], "The Engraved Ring"],
                "type": "hub"
             },
             {
-               "coords": { "x": 46, "y": 43 },
+               "coords": { "x": 56, "y": 46 },
                "align": "right",
+               "header": "Sepulcher Flightpath",
+               "objectives": [["Arugal's Folly", "P2"]],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "silverpine",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 56, "y": 46 },
+               "align": "right",
+               "header": "Sepulcher Flightpath",
+               "objectives": [["Arugal's Folly", "P2"]],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 43, "y": 41 },
+               "header": "Deep Elem Mine",
+               "ends": [["Arugal's Folly", "P2"]],
+               "starts": [["Arugal's Folly", "P3"]],
+               "type": "hub"
+            }
+         ]
+      },
+      {
+         "zone": "silverpine",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 43, "y": 41 },
+               "header": "Deep Elem Mine",
+               "ends": [["Arugal's Folly", "P2"]],
+               "starts": [["Arugal's Folly", "P3"]],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 56, "y": 46 },
+               "align": "right",
+               "header": "Deep Elem Mine",
+               "objectives": [["Arugal's Folly", "P3"]],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 50, "y": 60 },
+               "align": "bottom",
+               "header": "Dalaran Crate",
+               "objectives": ["Maps and Runes"],
+               "special": ["Die and corpse res"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "silverpine",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 43, "y": 41 },
+               "header": "Sepulcher",
+               "ends": [["Arugal's Folly", "P3"], "Maps and Runes", "Dalar's Analysis", "Dalaran's Intentions"],
+               "starts": ["Dalar's Analysis", "Dalaran's Intentions"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 46, "y": 44 },
+               "align": "bottom",
                "header": "Sepulcher Flightpath",
                "special": ["Fly to Undercity"],
                "type": "flightpath"
@@ -1037,7 +1105,7 @@
          "waypoints": [
             {
                "coords": { "x": 63, "y": 48 },
-               "align": "bottom",
+               "align": "top",
                "header": "Undercity Flightpath",
                "special": ["Learn the Flightpath"],
                "type": "flightpath"
@@ -1048,8 +1116,13 @@
                "header": "The Apothecarium",
                "ends": [["A Recipe For Death", "P1"], "Zinge's Delivery"],
                "starts": [["A Recipe For Death", "P2"], "Sample for Helbrim"],
-               "special": ["Hearthstone to Brill"],
                "type": "quest"
+            },
+            {
+               "coords": { "x": 71, "y": 44 },
+               "align": "top",
+               "header": "Undercity Lifts",
+               "type": "travel"
             }
          ]
       },
@@ -1057,6 +1130,12 @@
          "zone": "tirisfal",
          "experience": 0,
          "waypoints": [
+            {
+               "coords": { "x": 62, "y": 65 },
+               "align": "right",
+               "header": "Undercity Gates",
+               "type": "travel"
+            },
             {
                "coords": { "x": 60, "y": 52 },
                "align": "right",
@@ -1066,8 +1145,7 @@
                "type": "hub"
             },
             {
-               "coords": { "x": 61, "y": 59 },
-               "align": "right",
+               "coords": { "x": 60, "y": 59 },
                "header": "Zeppelin Station",
                "special": ["Sail to Durotar"],
                "type": "travel"
@@ -1367,7 +1445,7 @@
                "coords": { "x": 61, "y": 33 },
                "align": "right",
                "header": "Placeholder",
-               "objectives": ["The Zhevra", "Raptor Horns"],
+               "objectives": ["The Zhevra"],
                "type": "objective"
             },
             {
@@ -1674,7 +1752,7 @@
                "align": "bottom",
                "header": "Ragefire Chasm",
                "objectives": [["Slaying the Beast", "D"], ["Hidden Enemies", "D"], ["Testing an Enemy's Strength", "D"], ["Searching for the Lost Satchel", "D"], ["The Power to Destroy", "D"]],
-               "type": "quest"
+               "type": "objective"
             }
          ]
       },
@@ -1687,7 +1765,7 @@
                "align": "bottom",
                "header": "Ragefire Chasm",
                "objectives": [["Slaying the Beast", "D"], ["Hidden Enemies", "D"], ["Testing an Enemy's Strength", "D"], ["Searching for the Lost Satchel", "D"], ["The Power to Destroy", "D"]],
-               "type": "quest"
+               "type": "objective"
             },
             {
                "coords": { "x": 47, "y": 53 },
@@ -2229,7 +2307,7 @@
                "align": "right",
                "header": "Ratchet",
                "ends": ["The Escape", "Miner's Fortune"],
-               "special": ["Fly to Thunder Bluff"],
+               "special": ["Be level 20.", "Fly to Thunder Bluff"],
                "type": "hub"
             }
          ]
@@ -2240,8 +2318,16 @@
          "waypoints": [
             {
                "coords": { "x": 47, "y": 50 },
+               "align": "top",
                "header": "Thunder Bluff Flightpath",
                "type": "flightpath"
+            },
+            {
+               "coords": { "x": 40, "y": 59 },
+               "align": "bottom",
+               "header": "Bluff Runner Windstrider",
+               "starts": ["Ashenvale Hunt"],
+               "type": "quest"
             },
             {
                "coords": { "x": 55, "y": 51 },
@@ -2257,20 +2343,6 @@
                "ends": [["Testing an Enemy's Strength", "D"], ["Returning the Lost Satchel", "D"], "Hamuul Runetotem", "Nara Wildmane"],
                "starts": ["Nara Wildmane", ["Leaders of the Fang", "D"]],
                "type": "quest"
-            },
-            {
-               "coords": { "x": 23, "y": 21 },
-               "align": "top",
-               "header": "Apothecary Zamah",
-               "starts": [["Serpentbloom", "D"]],
-               "type": "quest"
-            },
-            {
-               "coords": { "x": 40, "y": 59 },
-               "align": "bottom",
-               "header": "Bluff Runner Windstrider",
-               "starts": ["Ashenvale Hunt"],
-               "type": "quest"
             }
          ]
       },
@@ -2279,9 +2351,11 @@
          "experience": 0,
          "waypoints": [
             {
-               "coords": { "x": 40, "y": 59 },
-               "header": "Bluff Runner Windstrider",
-               "starts": ["Ashenvale Hunt"],
+               "coords": { "x": 73, "y": 30 },
+               "align": "top",
+               "header": "Elder Rise",
+               "ends": [["Testing an Enemy's Strength", "D"], ["Returning the Lost Satchel", "D"], "Hamuul Runetotem", "Nara Wildmane"],
+               "starts": ["Nara Wildmane", ["Leaders of the Fang", "D"]],
                "type": "quest"
             },
             {
@@ -2313,7 +2387,7 @@
                "coords": { "x": 80, "y": 32 },
                "align": "right",
                "header": "Sorek",
-               "starts": ["Speak with Ruga"],
+               "starts": [["Speak with Ruga", "C"]],
                "type": "quest"
             },
             {
@@ -2406,7 +2480,7 @@
                "coords": { "x": 43, "y": 41 },
                "header": "Sepulcher",
                "ends": ["Until Death Do Us Part", "Mura Runetotem"],
-               "starts": ["Border Crossings", "Beren's Peril", "Rot Hide Ichor"],
+               "starts": ["Ambermill Investigations", "Beren's Peril", "Rot Hide Ichor", "Journey to Hillsbrad Foothills"],
                "type": "hub"
             },
             {
@@ -2434,20 +2508,19 @@
          "experience": 0,
          "waypoints": [
             {
-               "coords": { "x": 43, "y": 41 },
-               "align": "top",
-               "header": "Sepulcher",
-               "ends": ["Rot Hide Ichor"],
-               "starts": ["Rot Hide Origins"],
-               "type": "hub"
+               "coords": { "x": 65, "y": 25 },
+               "align": "right",
+               "header": "Fenris Keep",
+               "ends": ["The Hidden Niche"],
+               "starts": ["Wand to Bethor"],
+               "type": "objective"
             },
             {
-               "coords": { "x": 50, "y": 60 },
+               "coords": { "x": 57, "y": 64 },
                "align": "right",
-               "header": "Dalaran Crate",
-               "ends": ["Border Crossings"],
-               "starts": ["Maps and Runes"],
-               "type": "quest"
+               "header": "Ambermill",
+               "objectives": ["Ambermill Investigations"],
+               "type": "objective"
             },
             {
                "coords": { "x": 46, "y": 84 },
@@ -2458,14 +2531,14 @@
             },
             {
                "coords": { "x": 60, "y": 72 },
-               "align": "top",
+               "align": "bottom",
                "header": "Beren's Peril Cave",
                "objectives": ["Beren's Peril"],
                "type": "objective"
             },
             {
                "coords": { "x": 67, "y": 80 },
-               "align": "top",
+               "align": "bottom",
                "header": "Hillsbrad Border",
                "type": "travel"
             }
@@ -2491,18 +2564,10 @@
             {
                "coords": { "x": 60, "y": 19 },
                "align": "right",
-               "header": "Tarren Mill Flightpath",
+               "header": "Tarren Mill",
                "ends": ["Journey to Hillsbrad Foothills", "Time to Strike"],
-               "starts": ["Elixir of Suffering", "Elixir of Pain", "Wanted: Syndicate Personnel", "The Rescue"],
-               "special": ["Learn the Flightpath"],
+               "starts": ["Elixir of Suffering", "Wanted: Syndicate Personnel", "The Rescue"],
                "type": "hub"
-            },
-            {
-               "coords": { "x": 53, "y": 31 },
-               "align": "bottom",
-               "header": "Placeholder",
-               "objectives": ["Elixir of Pain"],
-               "type": "objective"
             },
             {
                "coords": { "x": 59, "y": 32 },
@@ -2534,7 +2599,7 @@
             {
                "coords": { "x": 60, "y": 19 },
                "header": "Tarren Mill",
-               "ends": ["Elixir of Suffering", "Elixir of Pain", "Wanted: Syndicate Personnel", "The Rescue"],
+               "ends": ["Elixir of Suffering", ["Elixir of Pain", "P1"], "Wanted: Syndicate Personnel", "The Rescue"],
                "special": ["Fly to Sepulcher"],
                "type": "hub"
             }
@@ -2553,8 +2618,7 @@
             {
                "coords": { "x": 43, "y": 41 },
                "header": "Sepulcher",
-               "ends": ["Maps and Runes", "Beren's Peril", "Dalar's Analysis", "Dalaran's Intentions"],
-               "starts": ["Dalar's Analysis", "Dalaran's Intentions"],
+               "ends": ["Beren's Peril", "Ambermill Investigations"],
                "type": "hub"
             }
          ]
@@ -2566,8 +2630,7 @@
             {
                "coords": { "x": 43, "y": 41 },
                "header": "Sepulcher",
-               "ends": ["Maps and Runes", "Beren's Peril", "Dalar's Analysis", "Dalaran's Intentions"],
-               "starts": ["Dalar's Analysis", "Dalaran's Intentions"],
+               "ends": ["Beren's Peril", "Ambermill Investigations"],
                "type": "hub"
             },
             {
@@ -2626,7 +2689,6 @@
                "coords": { "x": 52, "y": 47 },
                "header": "Raptor Nests",
                "objectives": ["The Angry Scytheclaws"],
-               "special": ["Hearthstone to Crossroads"],
                "type": "objective"
             }
          ]
@@ -2637,10 +2699,15 @@
          "waypoints": [
             {
                "coords": { "x": 52, "y": 47 },
-               "align": "right",
+               "align": "bottom",
                "header": "Raptor Nests",
                "objectives": ["The Angry Scytheclaws"],
-               "special": ["Hearthstone to Crossroads"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 46, "y": 40 },
+               "header": "Lushwater Oasis",
+               "objectives": ["Hezrul Bloodmark"],
                "type": "objective"
             },
             {
@@ -2650,13 +2717,6 @@
                "ends": ["The Angry Scytheclaws"],
                "starts": ["Jorn Skyseer"],
                "type": "hub"
-            },
-            {
-               "coords": { "x": 46, "y": 40 },
-               "align": "bottom",
-               "header": "Lushwater Oasis",
-               "objectives": ["Hezrul Bloodmark"],
-               "type": "objective"
             },
             {
                "coords": { "x": 45, "y": 28 },
@@ -2671,7 +2731,7 @@
                "coords": { "x": 35, "y": 28 },
                "align": "top",
                "header": "Stonetalon Outpost",
-               "starts": ["Goblin Invaders"],
+               "starts": ["Goblin Invaders", "Kaya's Alive"],
                "type": "quest"
             },
             {
@@ -2852,7 +2912,7 @@
             {
                "coords": { "x": 45, "y": 59 },
                "header": "Camp Taurajo",
-               "ends": ["Jorn Skyseer", "Speak With Ruga"],
+               "ends": ["Jorn Skyseer", ["Speak With Ruga", "C"]],
                "starts": ["Ishamuhale", "Melor Sends Word", "Weapons of Choice", "Tribes at War"],
                "special": ["Fly to Ratchet"],
                "type": "hub"
@@ -2862,8 +2922,7 @@
                "align": "right",
                "header": "Ratchet",
                "ends": ["Deepmoss Spider Eggs", ["Further Instructions", "P1"]],
-               "starts": [["Further Instructions", "P2"], ["Blueleaf Tubers", "D"]],
-               "special": ["Loot the garbage"],
+               "starts": [["Further Instructions", "P2"], ["Smart Drinks", "D"], ["Trouble at the Docks", "D"]],
                "type": "hub"
             },
             {
@@ -2959,7 +3018,7 @@
                "coords": { "x": 45, "y": 59 },
                "header": "Camp Taurajo",
                "ends": ["Tribes at War", "Blood Shards for Agamaggan"],
-               "starts": ["Blood Shards for Agamaggan", [["Betrayal from Within", "P1"], "P1"], ["Trial at the Fields of Giants", "C"]],
+               "starts": ["Blood Shards for Agamaggan", ["Betrayal from Within", "P1"], ["Trial at the Fields of Giants", "C"]],
                "type": "hub"
             },
             {
@@ -3256,7 +3315,7 @@
             {
                "coords": { "x": 46, "y": 35 },
                "header": "Wailing Caverns",
-               "starts": [["Deviate Eradication", "D"], ["Deviate Hides", "D"]],
+               "starts": [["Deviate Eradication", "D"], ["Deviate Hides", "D"], "The Glowing Shard"],
                "objectives": [["Smart Drinks", "D"], ["Trouble at the Docks", "D"], ["Serpentbloom", "D"], ["Leaders of the Fang", "D"]],
                "special": ["Hearthstone to Crossroads"],
                "type": "objective"
@@ -3333,6 +3392,61 @@
                "coords": { "x": 52, "y": 31 },
                "align": "right",
                "header": "Crossroads Flightpath",
+               "special": ["Fly to Thunder Bluff"],
+               "type": "flightpath"
+            }
+         ]
+      },
+      {
+         "zone": "thunderbluff",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 47, "y": 50 },
+               "align": "top",
+               "header": "Thunder Bluff Flightpath",
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 61, "y": 81 },
+               "align": "right",
+               "header": "Melor Stonehoof",
+               "ends": ["Melor Sends Word"],
+               "starts": ["Steelsnap"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 73, "y": 30 },
+               "align": "top",
+               "header": "Elder Rise",
+               "ends": ["The Elder Crone", ["Leaders of the Fang", "D"]],
+               "starts": ["Forsaken Aid"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 23, "y": 21 },
+               "align": "top",
+               "header": "Apothecary Zamah",
+               "ends": [["Serpentbloom", "D"], "Forsaken Aid"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "thunderbluff",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 23, "y": 21 },
+               "align": "top",
+               "header": "Apothecary Zamah",
+               "ends": [["Serpentbloom", "D"], "Forsaken Aid"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 47, "y": 50 },
+               "align": "top",
+               "header": "Thunder Bluff Flightpath",
                "special": ["Fly to Stonetalon"],
                "type": "flightpath"
             }
@@ -3416,11 +3530,424 @@
                "type": "quest"
             },
             {
-               "coords": { "x": 47, "y": 61 },
+               "coords": { "x": 84, "y": 97 },
+               "align": "right",
+               "header": "Stonetalon Outpost",
+               "ends": ["Shredding Machines"],
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "barrens",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 50, "y": 32 },
+               "header": "Barrens Spirit Healer",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 52, "y": 31 },
+               "align": "right",
+               "header": "Crossroads Flightpath",
+               "special": ["Fly to Orgrimmar"],
+               "type": "flightpath"
+            }
+         ]
+      },
+      {
+         "zone": "orgrimmar",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 45, "y": 64 },
+               "header": "Orgrimmar Flightpath",
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 49, "y": 92 },
+               "header": "Orgrimmar Gates",
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "durotar",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 46, "y": 12 },
                "align": "bottom",
-               "header": "Sun Rock Retreat",
-               "starts": ["Calling in the Reserves", "Harpies Threaten", "Cenarius' Legacy", "Cycle of Rebirth", "Elemental War"],
+               "header": "Orgrimmar Gates",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 51, "y": 13 },
+               "align": "bottom",
+               "header": "Zeppelin Station",
+               "special": ["Sail to Tirisfal"],
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "tirisfal",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 61, "y": 59 },
+               "header": "Zeppelin Station",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 62, "y": 65 },
+               "header": "Undercity Gates",
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "undercity",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 71, "y": 44 },
+               "align": "right",
+               "header": "Undercity Lifts",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 84, "y": 17 },
+               "align": "right",
+               "header": "Bethor Iceshard",
+               "starts": ["Thule Ravenclaw"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 54, "y": 54 },
+               "align": "bottom",
+               "header": "Keeper Bel'dugur",
+               "starts": [["The Book of Ur", "D"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 64, "y": 47 },
+               "align": "bottom",
+               "header": "Undercity Flightpath",
+               "special": ["Fly to Sepulcher"],
+               "type": "flightpath"
+            }
+         ]
+      },
+      {
+         "zone": "silverpine",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 46, "y": 43 },
+               "align": "bottom",
+               "header": "Sepulcher Flightpath",
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 43, "y": 41 },
+               "header": "Sepulcher",
+               "ends": ["Thule Ravenclaw", "Report to Hadec"],
+               "starts": ["Report to Hadec", ["Assault on Fenris Isle", "E"], "The Weaver", ["Arugal Must Die", "D"], ["Deathstalkers in Shadowfang", "D"]],
+               "special": ["Set Hearthstone"],
                "type": "hub"
+            },
+            {
+               "coords": { "x": 65, "y": 25 },
+               "align": "right",
+               "header": "Fenris Keep",
+               "objectives": [["Assault on Fenris Isle", "E"]],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 63, "y": 64 },
+               "align": "right",
+               "header": "Ambermill Townhouse",
+               "objectives": ["The Weaver"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 42, "y": 68 },
+               "align": "bottom",
+               "header": "Shadowfang Keep",
+               "objectives": [["Arugal Must Die", "D"], ["Deathstalkers in Shadowfang", "D"], ["The Book of Ur", "D"]],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "silverpine",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 43, "y": 41 },
+               "header": "Sepulcher",
+               "ends": [["Assault on Fenris Isle", "E"], "The Weaver", ["Arugal Must Die", "D"]],
+               "starts": [],
+               "special": ["Set Hearthstone"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 46, "y": 43 },
+               "align": "right",
+               "header": "Sepulcher Flightpath",
+               "special": ["Fly to Tarren Mill"],
+               "type": "flightpath"
+            }
+         ]
+      },
+      {
+         "zone": "hillsbrad",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 60, "y": 19 },
+               "align": "right",
+               "header": "Tarren Mill",
+               "ends": ["Journey to Tarren Mill"],
+               "starts": [["Elixir of Pain", "P1"], ["Battle of Hillsbrad", "P1"], "Dangerous!", ["Elixir of Agony", "P1"], "Blood of Innocents"],
+               "special": ["Set Hearthstone"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 66, "y": 48 },
+               "align": "right",
+               "header": "Syndicate Tower",
+               "objectives": ["Blood of Innocents"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 64, "y": 61 },
+               "align": "bottom",
+               "header": "Nethander Steed",
+               "objectives": [["Elixir of Agony", "P1"]],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 53, "y": 32 },
+               "header": "Placeholder",
+               "objectives": [["Elixir of Pain", "P1"]],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "hillsbrad",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 53, "y": 32 },
+               "align": "bottom",
+               "header": "Placeholder",
+               "objectives": [["Elixir of Pain", "P1"]],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 60, "y": 19 },
+               "align": "right",
+               "header": "Tarren Mill",
+               "ends": [["Elixir of Pain", "P1"], ["Elixir of Agony", "P1"], "Blood of Innocents"],
+               "starts": [["Elixir of Pain", "P2"], "Return to Thunder Bluff", ["Elixir of Agony", "P2"]],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 34, "y": 43 },
+               "align": "bottom",
+               "header": "Hillsbrad Fields",
+               "objectives": [["Elixir of Pain", "P2"], ["Battle of Hillsbrad", "P1"]],
+               "special": ["Hearthstone to Tarren Mill"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "hillsbrad",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 60, "y": 19 },
+               "align": "right",
+               "header": "Tarren Mill",
+               "ends": [["Battle of Hillsbrad", "P1"]],
+               "starts": [["Battle of Hillsbrad", "P2"], "Souvenirs of Death"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 34, "y": 43 },
+               "align": "bottom",
+               "header": "Hillsbrad Fields",
+               "objectives": [["Battle of Hillsbrad", "P2"], "Souvenirs of Death"],
+               "special": ["Don't worry about Skulls", "Die & spirit res"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "hillsbrad",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 60, "y": 19 },
+               "align": "right",
+               "header": "Tarren Mill",
+               "ends": [["Battle of Hillsbrad", "P2"]],
+               "starts": [["Battle of Hillsbrad", "P3"]],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 34, "y": 43 },
+               "align": "bottom",
+               "header": "Hillsbrad Fields",
+               "objectives": [["Battle of Hillsbrad", "P3"], "Souvenirs of Death"],
+               "special": ["Don't worry about Skulls", "Die & spirit res"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "hillsbrad",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 60, "y": 19 },
+               "align": "right",
+               "header": "Tarren Mill",
+               "ends": [["Battle of Hillsbrad", "P3"]],
+               "starts": [["Battle of Hillsbrad", "P4"]],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 34, "y": 43 },
+               "align": "bottom",
+               "header": "Hillsbrad Fields",
+               "objectives": [["Battle of Hillsbrad", "P4"], "Souvenirs of Death"],
+               "special": ["Don't worry about Skulls", "Die & spirit res"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "hillsbrad",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 60, "y": 19 },
+               "align": "right",
+               "header": "Tarren Mill",
+               "ends": [["Battle of Hillsbrad", "P4"]],
+               "starts": [["Battle of Hillsbrad", "P5"]],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 27, "y": 59 },
+               "align": "bottom",
+               "header": "Azurelode Mine",
+               "objectives": [["Battle of Hillsbrad", "P5"], "Souvenirs of Death", ["Brutal Armor", "C"]],
+               "special": ["Powders", "Hearthstone to Tarren Mill"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "hillsbrad",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 60, "y": 19 },
+               "align": "right",
+               "header": "Tarren Mill",
+               "ends": [["Battle of Hillsbrad", "P5"], "Dangerous!", "Souvenirs of Death"],
+               "special": ["Fly to Undercity"],
+               "type": "hub"
+            }
+         ]
+      },
+      {
+         "zone": "undercity",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 64, "y": 45 },
+               "align": "top",
+               "header": "Undercity Flightpath",
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 54, "y": 54 },
+               "align": "top",
+               "header": "Keeper Bel'dugur",
+               "ends": [["The Book of Ur", "D"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 49, "y": 69 },
+               "header": "Master Apothecary Faranell",
+               "ends": [["Elixir of Agony", "P2"]],
+               "starts": [["Elixir of Agony", "P3"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 71, "y": 44 },
+               "align": "bottom",
+               "header": "Undercity Lifts",
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "tirisfal",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 62, "y": 65 },
+               "header": "Undercity Gates",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 61, "y": 59 },
+               "header": "Zeppelin Station",
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "durotar",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 51, "y": 13 },
+               "align": "bottom",
+               "header": "Zeppelin Station",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 46, "y": 12 },
+               "align": "bottom",
+               "header": "Orgrimmar Gates",
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "orgrimmar",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 49, "y": 92 },
+               "header": "Orgrimmar Gates",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 45, "y": 64 },
+               "header": "Orgrimmar Flightpath",
+               "special": ["Fly to Stonetalon"],
+               "type": "flightpath"
             }
          ]
       },
@@ -3433,6 +3960,7 @@
                "align": "right",
                "header": "Sun Rock Retreat",
                "starts": ["Calling in the Reserves", "Harpies Threaten", "Cenarius' Legacy", "Cycle of Rebirth", "Elemental War"],
+               "special": ["Set Hearthstone"],
                "type": "hub"
             },
             {
@@ -3454,7 +3982,7 @@
                "coords": { "x": 36, "y": 13 },
                "header": "Stonetalon Peak",
                "objectives": ["Cenarius' Legacy", "Jin'Zil's Forest Magic"],
-               "special": ["Fey Dragons", "Sap Beasts", "Prowlers", "Hearthstone to Sun Rock"],
+               "special": ["Everything Else", "Hearthstone to Sun Rock"],
                "type": "objective"
             }
          ]
@@ -3474,7 +4002,6 @@
                "header": "Sun Rock Retreat",
                "ends": ["Cenarius' Legacy", "Cycle of Rebirth"],
                "starts": ["Ordanus", "New Life"],
-               "special": ["Fly to Crossroads"],
                "type": "hub"
             },
             {
@@ -3487,10 +4014,9 @@
             {
                "coords": { "x": 85, "y": 97 },
                "align": "top",
-               "header": "Stonetalon Outpost",
-               "ends": ["Shredding Machines"],
-               "special": ["Die & take Ress Sickness"],
-               "type": "quest"
+               "header": "The Barrens",
+               "special": ["Die & spirit ress"],
+               "type": "travel"
             }
          ]
       },
@@ -3507,70 +4033,8 @@
                "coords": { "x": 52, "y": 31 },
                "align": "right",
                "header": "The Crossroads",
-               "special": ["Fly to Thunder Bluff"],
+               "special": ["Fly to Zoram Strand"],
                "type": "hub"
-            }
-         ]
-      },
-      {
-         "zone": "thunderbluff",
-         "experience": 0,
-         "waypoints": [
-            {
-               "coords": { "x": 47, "y": 50 },
-               "align": "top",
-               "header": "Thunder Bluff Flightpath",
-               "type": "flightpath"
-            },
-            {
-               "coords": { "x": 39, "y": 51 },
-               "align": "top",
-               "header": "TB Auction House",
-               "objectives": ["Buy 1x Gun", "Buy the ashenvale pages"],
-               "type": "objective"
-            },
-            {
-               "coords": { "x": 61, "y": 81 },
-               "align": "right",
-               "header": "Melor Stonehoof",
-               "ends": ["Melor Sends Word"],
-               "starts": ["Steelsnap"],
-               "type": "quest"
-            },
-            {
-               "coords": { "x": 73, "y": 30 },
-               "align": "top",
-               "header": "Elder Rise",
-               "ends": ["The Elder Crone", ["Leaders of the Fang", "D"]],
-               "starts": ["Forsaken Aid"],
-               "type": "quest"
-            },
-            {
-               "coords": { "x": 23, "y": 21 },
-               "align": "top",
-               "header": "Apothecary Zamah",
-               "ends": [["Serpentbloom", "D"], "Forsaken Aid"],
-               "type": "quest"
-            }
-         ]
-      },
-      {
-         "zone": "thunderbluff",
-         "experience": 0,
-         "waypoints": [
-            {
-               "coords": { "x": 23, "y": 21 },
-               "align": "top",
-               "header": "Apothecary Zamah",
-               "ends": [["Serpentbloom", "D"], "Forsaken Aid"],
-               "type": "quest"
-            },
-            {
-               "coords": { "x": 47, "y": 50 },
-               "align": "right",
-               "header": "Thunder Bluff Flightpath",
-               "special": ["Shadowfang Keep?", "Fly to Zoram Strand"],
-               "type": "flightpath"
             }
          ]
       },
