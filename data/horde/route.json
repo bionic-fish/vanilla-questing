@@ -4072,7 +4072,6 @@
                "coords": { "x": 70, "y": 71 },
                "align": "bottom",
                "header": "Gurda Ragescar",
-               "ends": ["The Lost Pages"],
                "starts": ["The Lost Pages"],
                "type": "quest"
             }
@@ -4326,7 +4325,62 @@
             {
                "coords": { "x": 62, "y": 38 },
                "header": "Ratchet Flightpath",
-               "special": ["Fly to Splintertree"],
+               "special": ["Fly to Thunder Bluff"],
+               "type": "flightpath"
+            }
+         ]
+      },
+      {
+         "zone": "thunderbluff",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 47, "y": 50 },
+               "align": "bottom",
+               "header": "Thunder Bluff Flightpath",
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 55, "y": 51 },
+               "align": "bottom",
+               "header": "Zangen Stonehoof",
+               "ends": [["The Sacred Flame", "P3"]],
+               "starts": [["The Sacred Flame", "P4"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 23, "y": 21 },
+               "align": "top",
+               "header": "Apothecary Zamah",
+               "ends": ["Return to Thunder Bluff"],
+               "starts": ["The Flying Machine Airport"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 40, "y": 51 },
+               "align": "bottom",
+               "header": "TB Auction House",
+               "special": ["Buy the remaining pages", "Buy 1x Deadly Blunderbuss"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "thunderbluff",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 40, "y": 51 },
+               "align": "bottom",
+               "header": "TB Auction House",
+               "special": ["Buy the remaining pages", "Buy 1x Deadly Blunderbuss"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 47, "y": 50 },
+               "align": "bottom",
+               "header": "Thunder Bluff Flightpath",
+               "special": ["Fly to Ashenvale"],
                "type": "flightpath"
             }
          ]
@@ -4343,9 +4397,16 @@
             },
             {
                "coords": { "x": 71, "y": 68 },
-               "align": "bottom",
+               "align": "right",
                "header": "Placeholder",
                "ends": ["Warsong Supplies"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 70, "y": 71 },
+               "align": "bottom",
+               "header": "Gurda Ragescar",
+               "ends": ["The Lost Pages"],
                "type": "quest"
             },
             {
@@ -4381,13 +4442,6 @@
          "zone": "ashenvale",
          "experience": 0,
          "waypoints": [
-            {
-               "coords": { "x": 71, "y": 68 },
-               "align": "right",
-               "header": "Placeholder",
-               "ends": ["Warsong Supplies"],
-               "type": "quest"
-            },
             {
                "coords": { "x": 73, "y": 61 },
                "align": "right",
@@ -4450,15 +4504,15 @@
                "align": "bottom",
                "header": "Sun Rock Retreat",
                "ends": ["Ordanus"],
-               "starts": [["The Den", "E"], ["Bloodfury Bloodlines", "E"]],
+               "starts": [["The Den", "E"]],
                "special": ["Set Hearthstone"],
                "type": "hub"
             },
             {
-               "coords": { "x": 31, "y": 62 },
+               "coords": { "x": 32, "y": 70 },
                "align": "bottom",
                "header": "Bloodfury Ripper",
-               "objectives": [["Bloodfury Bloodlines", "E"]],
+               "objectives": ["Harpies Threaten", "Elemental War", "New Life"],
                "type": "objective"
             },
             {
@@ -4479,8 +4533,56 @@
                "coords": { "x": 47, "y": 61 },
                "align": "bottom",
                "header": "Sun Rock Retreat",
+               "ends": ["Harpies Threaten", "Elemental War", "New Life"],
+               "starts": [["Bloodfury Bloodlines", "E"]],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 32, "y": 70 },
+               "align": "bottom",
+               "header": "Bloodfury Ripper",
+               "objectives": [["Bloodfury Bloodlines", "E"]],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "stonetalon",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 32, "y": 70 },
+               "align": "bottom",
+               "header": "Bloodfury Ripper",
+               "objectives": [["Bloodfury Bloodlines", "E"]],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 47, "y": 61 },
+               "align": "bottom",
+               "header": "Sun Rock Retreat",
                "ends": [["Bloodfury Bloodlines", "E"]],
                "type": "hub"
+            },
+            {
+               "coords": { "x": 66, "y": 45 },
+               "align": "bottom",
+               "header": "Cragpool Helipad",
+               "objectives": ["The Flying Machine Airport"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "stonetalon",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 66, "y": 45 },
+               "align": "top",
+               "header": "Cragpool Helipad",
+               "objectives": ["The Flying Machine Airport"],
+               "type": "objective"
             },
             {
                "coords": { "x": 45, "y": 59 },
@@ -4497,16 +4599,15 @@
          "waypoints": [
             {
                "coords": { "x": 47, "y": 50 },
-               "align": "bottom",
+               "align": "right",
                "header": "Thunder Bluff Flightpath",
                "type": "flightpath"
             },
             {
-               "coords": { "x": 55, "y": 51 },
-               "align": "bottom",
-               "header": "Zangen Stonehoof",
-               "ends": [["The Sacred Flame", "P2"]],
-               "starts": [["The Sacred Flame", "P3"]],
+               "coords": { "x": 23, "y": 21 },
+               "align": "top",
+               "header": "Apothecary Zamah",
+               "ends": ["The Flying Machine Airport"],
                "type": "quest"
             },
             {
@@ -4760,7 +4861,7 @@
                "align": "right",
                "header": "Dorn Plainstalker",
                "ends": ["Test of Strength"],
-               "starts": [["Test of Lore", "P2S"]],
+               "starts": [["Test of Lore", "P2"]],
                "type": "quest"
             },
             {
@@ -4954,7 +5055,7 @@
                "coords": { "x": 52, "y": 31 },
                "align": "right",
                "header": "The Crossroads",
-               "starts": [["The Swarm Grows", "P1"]],
+               "starts": [[["The Swarm Grows", "P1"], "P1"]],
                "special": ["Fly to Orgrimmar"],
                "type": "hub"
             }
@@ -4973,12 +5074,219 @@
                "coords": { "x": 75, "y": 34 },
                "align": "top",
                "header": "Belgrom Rockmaul",
+               "ends": [[["The Swarm Grows", "P1"], "P1"]],
+               "starts": [[["The Swarm Grows", "P1"], "P2"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 80, "y": 32 },
+               "align": "top",
+               "header": "Sorek",
+               "starts": [["The Islander", "C"]],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "orgrimmar",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 80, "y": 32 },
+               "align": "top",
+               "header": "Sorek",
+               "starts": [["The Islander", "C"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 45, "y": 64 },
+               "header": "Orgrimmar Flightpath",
+               "special": ["Fly to Ratchet"],
+               "type": "flightpath"
+            }
+         ]
+      },
+      {
+         "zone": "barrens",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 62, "y": 38 },
+               "header": "Ratchet Flightpath",
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 69, "y": 49 },
+               "align": "bottom",
+               "header": "Fray Island",
+               "ends": [["The Islander", "C"], ["The Affray", "C"]],
+               "starts": [["The Islander", "C"], ["The Affray", "C"], ["The Windwatcher", "C"]],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "barrens",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 69, "y": 49 },
+               "align": "bottom",
+               "header": "Fray Island",
+               "ends": [["The Islander", "C"], ["The Affray", "C"]],
+               "starts": [["The Islander", "C"], ["The Affray", "C"], ["The Windwatcher", "C"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 62, "y": 38 },
+               "header": "Ratchet Flightpath",
+               "special": ["Fly to Freewind Post"],
+               "type": "flightpath"
+            }
+         ]
+      },
+      {
+         "zone": "needles",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 45, "y": 50 },
+               "align": "bottom",
+               "header": "Freewind Post",
+               "special": ["Set Hearthstone"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 32, "y": 32 },
+               "header": "Document Chest",
+               "objectives": ["Grimtotem Spying"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 33, "y": 40 },
+               "header": "Document Chest",
+               "objectives": ["Grimtotem Spying"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "needles",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 33, "y": 40 },
+               "align": "bottom",
+               "header": "Document Chest",
+               "objectives": ["Grimtotem Spying"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 39, "y": 42 },
+               "align": "bottom",
+               "header": "Document Chest",
+               "objectives": ["Grimtotem Spying"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 38, "y": 35 },
+               "align": "right",
+               "header": "Sacred Fire of Life",
+               "objectives": ["Akikara"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 38, "y": 27 },
+               "align": "top",
+               "header": "Darkcloud Pinnacle",
+               "objectives": ["Wanted: Arnak Grimtotem"],
+               "starts": [["Free at Last", "F"]],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 21, "y": 32 },
+               "align": "top",
+               "header": "Whitereach Post",
+               "ends": ["Akikara"],
+               "special": ["Hearthstone to Freewind Post"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "needles",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 45, "y": 50 },
+               "align": "top",
+               "header": "Freewind Post",
+               "ends": ["Grimtotem Spying", "Wanted: Arnak Grimtotem", ["Free at Last", "F"]],
+               "special": ["Be level 31"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 68, "y": 64 },
+               "align": "top",
+               "header": "Ironstone Camp",
                "ends": [["The Swarm Grows", "P1"]],
                "starts": [["The Swarm Grows", "P2"]],
                "type": "quest"
             },
             {
+               "coords": { "x": 78, "y": 77 },
+               "align": "right",
+               "header": "Kravel Boalbeard",
+               "starts": ["Hemet Nesingwary"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 75, "y": 96 },
+               "align": "right",
+               "header": "Tanaris Border",
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "tanaris",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 51, "y": 21 },
+               "align": "top",
+               "header": "Thousand Needles Border",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 52, "y": 25 },
+               "align": "bottom",
+               "header": "Tanaris Flightpath",
+               "special": ["Learn the Flightpath", "Fly to Orgrimmar"],
+               "type": "flightpath"
+            }
+         ]
+      },
+      {
+         "zone": "orgrimmar",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 45, "y": 64 },
+               "align": "top",
+               "header": "Orgrimmar Flightpath",
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 56, "y": 63 },
+               "align": "top",
+               "header": "Orgrimmar Auction House",
+               "special": ["Buy 1x Strong Troll's Blood Potion"],
+               "type": "objective"
+            },
+            {
                "coords": { "x": 49, "y": 92 },
+               "align": "right",
                "header": "Orgrimmar Gates",
                "type": "travel"
             }
@@ -5031,13 +5339,23 @@
             },
             {
                "coords": { "x": 58, "y": 65 },
+               "align": "bottom",
                "header": "Parquel Fintallas",
                "ends": [["Test of Lore", "P5"]],
                "type": "quest"
             },
             {
+               "coords": { "x": 49, "y": 69 },
+               "align": "bottom",
+               "header": "Master Apothecary Faranell",
+               "starts": ["Going, Going, Guano"],
+               "type": "quest"
+            },
+            {
                "coords": { "x": 64, "y": 47 },
+               "align": "top",
                "header": "Undercity Flightpath",
+               "starts": ["To Steal From Thieves"],
                "special": ["Fly to Tarren Mill"],
                "type": "flightpath"
             }
