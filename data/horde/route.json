@@ -5113,6 +5113,8 @@
             {
                "coords": { "x": 62, "y": 38 },
                "header": "Ratchet Flightpath",
+               "starts": [["Blueleaf Tubers", "D"]],
+               "special": ["Pick up all the garbage"],
                "type": "flightpath"
             },
             {
@@ -5234,13 +5236,6 @@
                "type": "quest"
             },
             {
-               "coords": { "x": 78, "y": 77 },
-               "align": "right",
-               "header": "Kravel Boalbeard",
-               "starts": ["Hemet Nesingwary"],
-               "type": "quest"
-            },
-            {
                "coords": { "x": 75, "y": 96 },
                "align": "right",
                "header": "Tanaris Border",
@@ -5281,7 +5276,7 @@
                "coords": { "x": 56, "y": 63 },
                "align": "top",
                "header": "Orgrimmar Auction House",
-               "special": ["Buy 1x Strong Troll's Blood Potion"],
+               "special": ["Buy 1x Strong Troll's Blood Potion", "Buy 10x Iron Bar"],
                "type": "objective"
             },
             {
@@ -5348,7 +5343,7 @@
                "coords": { "x": 49, "y": 69 },
                "align": "bottom",
                "header": "Master Apothecary Faranell",
-               "starts": ["Going, Going, Guano"],
+               "starts": [["Going, Going, Guano", "D"]],
                "type": "quest"
             },
             {
@@ -5358,6 +5353,610 @@
                "starts": ["To Steal From Thieves"],
                "special": ["Fly to Tarren Mill"],
                "type": "flightpath"
+            }
+         ]
+      },
+      {
+         "zone": "hillsbrad",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 60, "y": 19 },
+               "align": "bottom",
+               "header": "Tarren Mill",
+               "starts": [["Battle of Hillsbrad", "E"], ["Humbert's Sword", "E"], "Regthar Deathgate", "Infiltration", ["Helcular's Revenge", "P1"], "The Hammer May Fall", "Stone Tokens", "Prison Break In"],
+               "special": ["Set Hearthstone"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 79, "y": 7 },
+               "align": "right",
+               "header": "Bath'rah the Windwatcher",
+               "ends": [["The Windwatcher", "C"]],
+               "starts": [["Cyclonian", "C"]],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 60, "y": 8 },
+               "align": "top",
+               "header": "Sofera's Naze",
+               "objectives": ["Infiltration"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 46, "y": 32 },
+               "header": "Darrow Hill Cave",
+               "objectives": [["Helcular's Revenge", "P1"]],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "hillsbrad",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 46, "y": 32 },
+               "align": "bottom",
+               "header": "Darrow Hill Cave",
+               "objectives": [["Helcular's Revenge", "P1"]],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 27, "y": 23 },
+               "align": "top",
+               "header": "Internment Camp",
+               "objectives": ["Stone Tokens", "Prison Break In"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 23, "y": 66 },
+               "align": "bottom",
+               "header": "Western Strand",
+               "objectives": [["Elixir of Agony", "P3"]],
+               "special": ["Torn Fin Eyes"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 58, "y": 70 },
+               "align": "bottom",
+               "header": "Eastern Strand",
+               "objectives": [["Elixir of Agony", "P3"]],
+               "special": ["Naga Scales", "Hearthstone to Tarren Mill"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "hillsbrad",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 60, "y": 19 },
+               "header": "Tarren Mill",
+               "ends": ["Infiltration", "Stone Tokens", "Prison Break In", ["Elixir of Agony", "P3"], ["Helcular's Revenge", "P1"]],
+               "starts": [["Elixir of Agony", "P4"]],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 71, "y": 79 },
+               "header": "Dun Garok",
+               "objectives": [["Elixir of Agony", "P4"], ["Battle of Hillsbrad", "E"], ["Humbert's Sword", "E"]],
+               "special": ["Die & corpse ress"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "hillsbrad",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 60, "y": 19 },
+               "header": "Tarren Mill",
+               "ends": [["Elixir of Agony", "P4-5"], ["Battle of Hillsbrad", "E"], ["Humbert's Sword", "E"]],
+               "starts": [["Battle of Hillsbrad", "P7"], ["Elixir of Agony", "P5"]],
+               "special": ["Fly to Undercity"],
+               "type": "hub"
+            }
+         ]
+      },
+      {
+         "zone": "undercity",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 64, "y": 47 },
+               "header": "Undercity Flightpath",
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 56, "y": 92 },
+               "align": "right",
+               "header": "Varimathras",
+               "ends": [["Battle of Hillsbrad", "P7"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 71, "y": 44 },
+               "align": "right",
+               "header": "Undercity Lifts",
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "tirisfal",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 62, "y": 65 },
+               "header": "Undercity Gates",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 61, "y": 59 },
+               "header": "Zeppelin Station",
+               "special": ["Sail to Stranglethorn"],
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "stv",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 32, "y": 29 },
+               "align": "right",
+               "header": "Grom'gol Basecamp",
+               "special": ["Learn the Flightpath", "Sail to Orgrimmar"],
+               "type": "hub"
+            }
+         ]
+      },
+      {
+         "zone": "durotar",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 51, "y": 13 },
+               "align": "bottom",
+               "header": "Zeppelin Station",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 46, "y": 12 },
+               "align": "bottom",
+               "header": "Orgrimmar Gates",
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "orgrimmar",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 49, "y": 92 },
+               "align": "right",
+               "header": "Orgrimmar Gates",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 48, "y": 50 },
+               "align": "top",
+               "header": "Craven Drok",
+               "starts": [["Alliance Relations", "P1"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 22, "y": 53 },
+               "align": "top",
+               "header": "Keldran",
+               "ends": [["Alliance Relations", "P1"]],
+               "starts": [["Alliance Relations", "P2"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 45, "y": 64 },
+               "align": "bottom",
+               "header": "Orgrimmar Flightpath",
+               "special": ["Fly to Taurajo"],
+               "type": "flightpath"
+            }
+         ]
+      },
+      {
+         "zone": "barrens",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 45, "y": 59 },
+               "header": "Camp Taurajo",
+               "ends": ["Jorn Skyseer", ["Speak With Ruga", "C"]],
+               "starts": ["Ishamuhale", "Melor Sends Word", "Weapons of Choice", "Tribes at War"],
+               "special": ["Set Hearthstone", "Fly to Ratchet"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 43, "y": 90 },
+               "header": "Razorfen Kraul",
+               "starts": [["Willix the Importer", "D"]],
+               "objectives": [["Blueleaf Tubers", "D"], ["Going, Going, Guano", "D"], ["A Vengeful Fate", "D"], ["Willix the Importer", "D"], ["Brutal Armor", "C"]],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "barrens",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 45, "y": 59 },
+               "header": "Camp Taurajo",
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 62, "y": 38 },
+               "align": "right",
+               "header": "Ratchet",
+               "ends": [["Blueleaf Tubers", "D"]],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 57, "y": 30 },
+               "align": "top",
+               "header": "Thun'grim Firegaze",
+               "ends": [["Brutal Armor", "C"], ["Brutal Hauberk", "C"]],
+               "starts": [["Brutal Hauberk", "C"], ["Orm Stonehoof and the Brutal Helm", "C"], ["Velora Nitely and the Brutal Legguards", "C"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 45, "y": 28 },
+               "header": "Regthar Deathgate",
+               "ends": ["Regthar Deathgate"],
+               "starts": ["The Kolkar of Desolace"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 51, "y": 32 },
+               "align": "bottom",
+               "header": "Crossroads Flightpath",
+               "special": ["Fly to Thunder Bluff"],
+               "type": "flightpath"
+            }
+         ]
+      },
+      {
+         "zone": "thunderbluff",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 47, "y": 50 },
+               "align": "top",
+               "header": "Thunder Bluff Flightpath",
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 38, "y": 58 },
+               "align": "top",
+               "header": "Placeholder",
+               "ends": [["Orm Stonehoof and the Brutal Helm", "C"], ["A Vengeful Fate", "D"]],
+               "starts": [["Chimaeric Horn", "C"]],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "thunderbluff",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 38, "y": 58 },
+               "align": "top",
+               "header": "Placeholder",
+               "ends": [["Orm Stonehoof and the Brutal Helm", "C"], ["A Vengeful Fate", "D"]],
+               "starts": [["Chimaeric Horn", "C"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 47, "y": 50 },
+               "align": "top",
+               "header": "Thunder Bluff Flightpath",
+               "special": ["Fly to Tanaris"],
+               "type": "flightpath"
+            }
+         ]
+      },
+      {
+         "zone": "tanaris",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 52, "y": 25 },
+               "align": "bottom",
+               "header": "Tanaris Flightpath",
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 51, "y": 21 },
+               "align": "top",
+               "header": "Thousand Needles Border",
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "needles",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 75, "y": 96 },
+               "header": "Tanaris Border",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 70, "y": 86 },
+               "header": "Rustmaul Digsite",
+               "objectives": [["The Swarm Grows", "P2"]],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 78, "y": 77 },
+               "align": "top",
+               "header": "Shimmering Flats",
+               "starts": ["Hemet Nesingwary", "Wharfmaster Dizzywig", "Martek the Exiled", "Hardened Shells", "Salt Flat Venom", "Rocket Car Parts", "Load Lightening", "A Bump in the Road"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 78, "y": 88 },
+               "align": "bottom",
+               "header": "Tahonda Ruins",
+               "objectives": ["A Bump In the Road", "Rocket Car Parts"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 88, "y": 65 },
+               "align": "right",
+               "header": "Eastern Flats",
+               "objectives": ["Load Lightening"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "needles",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 88, "y": 65 },
+               "align": "right",
+               "header": "Eastern Flats",
+               "objectives": ["Load Lightening"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 84, "y": 60 },
+               "align": "right",
+               "header": "Northern Flats",
+               "objectives": ["Salt Flat Venom", "Rocket Car Parts"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 82, "y": 54 },
+               "align": "top",
+               "header": "Old Shipwreck",
+               "objectives": ["Hardened Shells"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 73, "y": 63 },
+               "align": "top",
+               "header": "Western Flats",
+               "objectives": ["A Bump In the Road", "Rocket Car Parts"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 68, "y": 64 },
+               "align": "top",
+               "header": "Ironstone Camp",
+               "ends": [["The Swarm Grows", "P2"]],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "needles",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 68, "y": 64 },
+               "align": "top",
+               "header": "Ironstone Camp",
+               "ends": [["The Swarm Grows", "P2"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 78, "y": 77 },
+               "align": "right",
+               "header": "Shimmering Flats",
+               "ends": ["Hardened Shells", "Salt Flat Venom", "Rocket Car Parts", "Load Lightening", "A Bump in the Road"],
+               "starts": [["Encrusted Tail Fins", "E"], ["Goblin Sponsorship", "P1"]],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 75, "y": 96 },
+               "align": "right",
+               "header": "Tanaris Border",
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "tanaris",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 51, "y": 21 },
+               "align": "top",
+               "header": "Thousand Needles Border",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 52, "y": 25 },
+               "align": "bottom",
+               "header": "Tanaris Flightpath",
+               "special": ["Fly to Stonetalon"],
+               "type": "flightpath"
+            }
+         ]
+      },
+      {
+         "zone": "stonetalon",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 45, "y": 60 },
+               "align": "top",
+               "header": "Sun Rock Flightpath",
+               "special": ["Learn the Flightpath"],
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 34, "y": 73 },
+               "align": "top",
+               "header": "The Charred Vale",
+               "objectives": [["Chimaeric Horn", "C"]],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 30, "y": 78 },
+               "header": "Desolace Border",
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "desolace",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 54, "y": 4 },
+               "align": "right",
+               "header": "Desolace Border",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 56, "y": 56 },
+               "align": "right",
+               "header": "Ghost Walker Post",
+               "ends": [["Alliance Relations", "P2-3"], "The Kolkar of Desolace"],
+               "starts": [["Alliance Relations", "P3"], "Catch of the Day"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 24, "y": 71 },
+               "header": "Shadowprey Village",
+               "starts": ["Hunting in Stranglethorn"],
+               "special": ["Learn the Flightpath", "Fly to Thunder Bluff"],
+               "type": "flightpath"
+            }
+         ]
+      },
+      {
+         "zone": "thunderbluff",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 47, "y": 50 },
+               "align": "top",
+               "header": "Thunder Bluff Flightpath",
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 40, "y": 51 },
+               "align": "top",
+               "header": "TB Auction House",
+               "special": ["Buy x8 Liferoot", "Buy 8x Burning Charm", "Buy 8x Thundering Charm", "Buy 8x Cresting Charm"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 38, "y": 58 },
+               "header": "Orm Stonehoof",
+               "ends": [["Chimaeric Horn", "C"], ["Brutal Helm", "C"]],
+               "starts": [["Brutal Helm", "C"]],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "thunderbluff",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 38, "y": 58 },
+               "align": "top",
+               "header": "Orm Stonehoof",
+               "ends": [["Chimaeric Horn", "C"], ["Brutal Helm", "C"]],
+               "starts": [["Brutal Helm", "C"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 47, "y": 50 },
+               "align": "top",
+               "header": "Thunder Bluff Flightpath",
+               "special": ["Fly to Ratchet"],
+               "type": "flightpath"
+            }
+         ]
+      },
+      {
+         "zone": "barrens",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 62, "y": 38 },
+               "header": "Ratchet Flightpath",
+               "ends": ["Wharfmaster Dizzywig", ["Goblin Sponsorship", "P1"]],
+               "starts": [["Goblin Sponsorship", "P2"], "Parts for Kravel"],
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 64, "y": 39 },
+               "align": "right",
+               "header": "Ratchet Harbor",
+               "special": ["Sail to Booty Bay"],
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "stv",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 25, "y": 73 },
+               "header": "Booty Bay Harbor",
+               "ends": [["Goblin Sponsorship", "P2"]],
+               "starts": [["Goblin Sponsorship", "P3"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 27, "y": 77 },
+               "align": "right",
+               "header": "Booty Bay",
+               "ends": [["Goblin Sponsorship", "P3"]],
+               "starts": ["Investigate the Camp", "Bloodscalp Ears", "Supply and Demand"],
+               "special": ["Fly to Grom'gol Basecamp"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 32, "y": 29 },
+               "align": "right",
+               "header": "Grom'gol Basecamp",
+               "starts": ["The Defense of Grom'gol", "Hunt for Yenniku", "Trollbane", "The Vile Reef", "Bloody Bone Necklaces"],
+               "type": "hub"
             }
          ]
       }
