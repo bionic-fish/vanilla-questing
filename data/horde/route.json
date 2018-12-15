@@ -5350,7 +5350,6 @@
                "coords": { "x": 64, "y": 47 },
                "align": "top",
                "header": "Undercity Flightpath",
-               "starts": ["To Steal From Thieves"],
                "special": ["Fly to Tarren Mill"],
                "type": "flightpath"
             }
@@ -5364,7 +5363,7 @@
                "coords": { "x": 60, "y": 19 },
                "align": "bottom",
                "header": "Tarren Mill",
-               "starts": [["Battle of Hillsbrad", "E"], ["Humbert's Sword", "E"], "Regthar Deathgate", "Infiltration", ["Helcular's Revenge", "P1"], "The Hammer May Fall", "Stone Tokens", "Prison Break In"],
+               "starts": [["Battle of Hillsbrad", "E"], ["Humbert's Sword", "E"], "Regthar Deathgate", "Infiltration", ["Helcular's Revenge", "P1"], "Stone Tokens", "Prison Break In"],
                "special": ["Set Hearthstone"],
                "type": "hub"
             },
@@ -5875,13 +5874,6 @@
                "type": "flightpath"
             },
             {
-               "coords": { "x": 40, "y": 51 },
-               "align": "top",
-               "header": "TB Auction House",
-               "special": ["Buy x8 Liferoot", "Buy 8x Burning Charm", "Buy 8x Thundering Charm", "Buy 8x Cresting Charm"],
-               "type": "quest"
-            },
-            {
                "coords": { "x": 38, "y": 58 },
                "header": "Orm Stonehoof",
                "ends": [["Chimaeric Horn", "C"], ["Brutal Helm", "C"]],
@@ -5956,6 +5948,570 @@
                "align": "right",
                "header": "Grom'gol Basecamp",
                "starts": ["The Defense of Grom'gol", "Hunt for Yenniku", "Trollbane", "The Vile Reef", "Bloody Bone Necklaces"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 25, "y": 25 },
+               "align": "top",
+               "header": "The Vile Reef",
+               "objectives": ["The Vile Reef", ["Encrusted Tail Fins", "E"]],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "stv",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 25, "y": 25 },
+               "header": "The Vile Reef",
+               "objectives": ["The Vile Reef", ["Encrusted Tail Fins", "E"]],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 33, "y": 9 },
+               "align": "top",
+               "header": "Stranglethorn River",
+               "objectives": ["Supply and Demand"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 36, "y": 11 },
+               "align": "top",
+               "header": "Nesingwary's Expedition",
+               "ends": ["Hemet Nesingwary", "Hunting in Stranglethorn", "Welcome to the Jungle"],
+               "starts": ["Welcome to the Jungle", ["Tiger Mastery", "P1"], ["Panther Mastery", "P1"], ["Raptor Mastery", "P1"]],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 42, "y": 12 },
+               "align": "top",
+               "header": "Panther Valley",
+               "objectives": [["Panther Mastery", "P1"]],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "stv",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 42, "y": 12 },
+               "align": "bottom",
+               "header": "Panther Valley",
+               "objectives": [["Panther Mastery", "P1"]],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 34, "y": 14 },
+               "align": "bottom",
+               "header": "Tiger Valley",
+               "objectives": [["Tiger Mastery", "P1"]],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 36, "y": 11 },
+               "align": "top",
+               "header": "Nesingwary's Expedition",
+               "ends": [["Tiger Mastery", "P1"], ["Panther Mastery", "P1"]],
+               "starts": [["Tiger Mastery", "P2"], ["Panther Mastery", "P2"]],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 29, "y": 11 },
+               "align": "top",
+               "header": "Placeholder",
+               "objectives": [["Tiger Mastery", "P2"], ["Panther Mastery", "P2"]],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 27, "y": 16 },
+               "header": "Raptor Valley",
+               "objectives": [["Raptor Mastery", "P1"]],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "stv",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 27, "y": 16 },
+               "header": "Raptor Valley",
+               "objectives": [["Raptor Mastery", "P1"]],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 36, "y": 11 },
+               "align": "top",
+               "header": "Nesingwary's Expedition",
+               "ends": [["Tiger Mastery", "P2"], ["Panther Mastery", "P2"], ["Raptor Mastery", "P1"]],
+               "starts": [["Tiger Mastery", "P3"], ["Raptor Mastery", "P2"]],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 32, "y": 19 },
+               "header": "Placeholder",
+               "objectives": [["Tiger Mastery", "P3"]],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 33, "y": 25 },
+               "align": "right",
+               "header": "Placeholder",
+               "objectives": [["Raptor Mastery", "P2"], "In Defense of Grom'Gols"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 32, "y": 29 },
+               "align": "bottom",
+               "header": "Grom'gol Basecamp",
+               "ends": ["The Defense of Grom'gol", "The Vile Reef"],
+               "type": "hub"
+            }
+         ]
+      },
+      {
+         "zone": "stv",
+         "experience": 33.83,
+         "waypoints": [
+            {
+               "coords": { "x": 32, "y": 29 },
+               "align": "bottom",
+               "header": "Grom'gol Basecamp",
+               "ends": ["The Defense of Grom'gol", "The Vile Reef"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 36, "y": 11 },
+               "align": "top",
+               "header": "Nesingwary's Expedition",
+               "ends": [["Tiger Mastery", "P3"], ["Raptor Mastery", "P2"]],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 33, "y": 16 },
+               "header": "Troll Encampment",
+               "objectives": [["Cyclonian", "C"], "Hunt for Yenniku", "Bloody Bone Necklaces"],
+               "special": ["This might take hours", "Hearthstone to booty bay"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "stv",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 27, "y": 77 },
+               "header": "Booty Bay",
+               "ends": ["Bloodscalp Ears", "Supply and Demand", "Investigate the Camp"],
+               "special": ["Bank your STV Pages", "Fly to Grom'gol Basecamp"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 32, "y": 29 },
+               "header": "Grom'gol Basecamp",
+               "ends": ["Hunt for Yenniku", "Bloody Bone Necklaces"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 41, "y": 4 },
+               "align": "right",
+               "header": "Duskwood Border",
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "duskwood",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 45, "y": 86 },
+               "header": "Stranglethorn Border",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 88, "y": 41 },
+               "align": "right",
+               "header": "Deadwind Border",
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "deadwind",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 33, "y": 36 },
+               "header": "Duskwood Border",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 58, "y": 42 },
+               "align": "right",
+               "header": "Swamp Border",
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "swamp",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 6, "y": 61 },
+               "header": "Deadwind Border",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 46, "y": 54 },
+               "align": "right",
+               "header": "Stonard",
+               "starts": ["Neeka Bloodscar"],
+               "special": ["Learn the Flightpath"],
+               "type": "hub"
+            }
+         ]
+      },
+      {
+         "zone": "swamp",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 46, "y": 54 },
+               "align": "right",
+               "header": "Stonard",
+               "starts": ["Neeka Bloodscar"],
+               "special": ["Learn the Flightpath"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 6, "y": 61 },
+               "header": "Deadwind Border",
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "deadwind",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 58, "y": 42 },
+               "align": "right",
+               "header": "Swamp Border",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 33, "y": 36 },
+               "header": "Duskwood Border",
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "duskwood",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 88, "y": 41 },
+               "header": "Deadwind Border",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 93, "y": 12 },
+               "header": "Redridge Border",
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "redridge",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 8, "y": 89 },
+               "header": "Duskwood Border",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 48, "y": 12 },
+               "align": "right",
+               "header": "Burning Steppes Border",
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "steppes",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 78, "y": 79 },
+               "header": "Redridge Border",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 65, "y": 24 },
+               "align": "top",
+               "header": "Flame Crest",
+               "special": ["Learn the Flightpath"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 29, "y": 37 },
+               "align": "top",
+               "header": "Blackrock Mountain",
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "searing",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 35, "y": 84 },
+               "header": "Blackrock Mountain",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 74, "y": 56 },
+               "align": "right",
+               "header": "Badlands Border",
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "badlands",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 3, "y": 63 },
+               "align": "right",
+               "header": "Searing Gorge Border",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 6, "y": 45 },
+               "align": "right",
+               "header": "Kargath",
+               "ends": ["Neeka Bloodscar"],
+               "special": ["Learn the Flightpath", "Fly to Undercity"],
+               "type": "hub"
+            }
+         ]
+      },
+      {
+         "zone": "undercity",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 63, "y": 48 },
+               "align": "right",
+               "header": "Undercity Flightpath",
+               "starts": ["To Seal From Thieves"],
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 62, "y": 39 },
+               "align": "top",
+               "header": "Placeholder",
+               "ends": [["Velora Nitely and the Brutal Legguards", "C"]],
+               "starts": [["Dragonmaw Shinbones", "C"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 49, "y": 69 },
+               "header": "Master Apothecary Faranell",
+               "ends": [["Going, Going, Guano", "D"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 58, "y": 93 },
+               "align": "right",
+               "header": "Sharlindra",
+               "starts": ["The Crown of Will"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "undercity",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 58, "y": 93 },
+               "header": "Sharlindra",
+               "starts": ["The Crown of Will"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 60, "y": 42 },
+               "align": "top",
+               "header": "UC Auction House",
+               "special": ["Buy x8 Liferoot", "Buy 8x Burning Charm", "Buy 8x Thundering Charm", "Buy 8x Cresting Charm"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 63, "y": 48 },
+               "align": "right",
+               "header": "Undercity Flightpath",
+               "special": ["Fly to Tarren Mill"],
+               "type": "flightpath"
+            }
+         ]
+      },
+      {
+         "zone": "hillsbrad",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 60, "y": 19 },
+               "header": "Tarren Mill",
+               "ends": ["The Crown of Will"],
+               "starts": ["Gol'dir", "The Hammer May Fall", "Dalaran Patrols", "Bracers of Binding", ["Helcular's Revenge", "P3"]],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 79, "y": 7 },
+               "align": "right",
+               "header": "Bath'rah the Windwatcher",
+               "ends": [["Cyclonian", "C"], ["The Summoning", "C"]],
+               "starts": [["The Summoning", "C"], ["Whirlwind Weapon", "C"]],
+               "special": ["Dump the mats in the cauldron"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "alterac",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 80, "y": 67 },
+               "align": "right",
+               "header": "Bath'rah the Windwatcher",
+               "ends": [["Cyclonian", "C"], ["The Summoning", "C"]],
+               "starts": [["The Summoning", "C"], ["Whirlwind Weapon", "C"]],
+               "special": ["Dump the mats in the cauldron"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 63, "y": 44 },
+               "align": "top",
+               "header": "Strahnbrad",
+               "ends": ["Gol'dir"],
+               "starts": ["Blackmoore's Legacy"],
+               "special": ["Kill Jailor Borhuin for the key"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 38, "y": 66 },
+               "align": "top",
+               "header": "Flame of Uzel",
+               "objectives": [["Helcular's Revenge", "P3"]],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 33, "y": 68 },
+               "align": "top",
+               "header": "Frostmaw",
+               "objectives": ["Frostmaw"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 18, "y": 76 },
+               "align": "top",
+               "header": "Dalaran",
+               "objectives": ["Dalaran Patrols", "Bracers of Binding"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 24, "y": 89 },
+               "align": "bottom",
+               "header": "Hillsbrad Border",
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "hillsbrad",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 32, "y": 28 },
+               "align": "top",
+               "header": "Alterac Border",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 46, "y": 32 },
+               "align": "top",
+               "header": "Darrow Hill Cave",
+               "objectives": [["Helcular's Revenge", "P3"]],
+               "special": ["The two remaining fires"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 53, "y": 53 },
+               "align": "bottom",
+               "header": "Helcular's Grave",
+               "ends": [["Helcular's Revenge", "P3"]],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 81, "y": 56 },
+               "align": "bottom",
+               "header": "Arathi Border",
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "arathi",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 21, "y": 30 },
+               "header": "Hillsbrad Border",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 35, "y": 44 },
+               "align": "bottom",
+               "header": "Boulder'gor",
+               "objectives": ["The Hammer May Fall"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 56, "y": 38 },
+               "align": "bottom",
+               "header": "Dabyrie's Farmstead",
+               "objectives": ["To Steal From Thieves"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 62, "y": 34 },
+               "align": "top",
+               "header": "Shards of Myzrael",
+               "starts": ["The Princess Trapped"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 74, "y": 36 },
+               "align": "top",
+               "header": "Hammerfall",
+               "ends": ["Trollbane", "To Steal From Thieves", "Hammerfall"],
+               "starts": ["Hammerfall", "Call to Arms", "Raising Spirits", "Foul Magics"],
+               "special": ["Set Hearthstone", "Learn the Flightpath"],
                "type": "hub"
             }
          ]
