@@ -5847,8 +5847,15 @@
                "type": "travel"
             },
             {
+               "coords": { "x": 39, "y": 27 },
+               "align": "top",
+               "header": "Azore Aldamort",
+               "starts": ["Sceptre of Light"],
+               "type": "quest"
+            },
+            {
                "coords": { "x": 56, "y": 56 },
-               "align": "right",
+               "align": "bottom",
                "header": "Ghost Walker Post",
                "ends": [["Alliance Relations", "P2-3"], "The Kolkar of Desolace"],
                "starts": [["Alliance Relations", "P3"], "Catch of the Day"],
@@ -5856,6 +5863,7 @@
             },
             {
                "coords": { "x": 24, "y": 71 },
+               "align": "bottom",
                "header": "Shadowprey Village",
                "starts": ["Hunting in Stranglethorn"],
                "special": ["Learn the Flightpath", "Fly to Thunder Bluff"],
@@ -6869,6 +6877,361 @@
                "type": "flightpath"
             }
          ]
+      },
+      {
+         "zone": "desolace",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 24, "y": 71 },
+               "align": "top",
+               "header": "Shadowprey Village",
+               "starts": ["Hand of Iruxos", "Other Fish to Fry", "Clam Bait"],
+               "special": ["Set Hearthstone"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 19, "y": 77 },
+               "header": "The Veiled Sea",
+               "special": ["Loot 4x Shelfish from the traps"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "desolace",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 19, "y": 77 },
+               "header": "The Veiled Sea",
+               "special": ["Loot 10x Shelfish from the traps"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 24, "y": 71 },
+               "align": "top",
+               "header": "Jinar'Zillen",
+               "ends": ["Fish in a Bucket"],
+               "special": ["Turn it in twice"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 48, "y": 62 },
+               "align": "top",
+               "header": "Hornizz Brimbuzzle",
+               "starts": ["Ghost-o-plasm Round Up"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 56, "y": 56 },
+               "align": "top",
+               "header": "Ghost Walker Post",
+               "ends": ["Catch of the Day", "Family Tree"],
+               "starts": ["Khan Dez'hepah", "Gelkis Alliance", "Befouled by Satyr", "The Burning of Spirits"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 61, "y": 62 },
+               "align": "right",
+               "header": "Smeed Scrabblescrew",
+               "starts": ["Kodo Roundup"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "desolace",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 61, "y": 62 },
+               "align": "bottom",
+               "header": "Smeed Scrabblescrew",
+               "starts": ["Kodo Roundup"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 73, "y": 42 },
+               "align": "right",
+               "header": "Kolkar Village",
+               "objectives": ["Khan Dez'hepah"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 62, "y": 39 },
+               "header": "Bibbly F'utzbuckle",
+               "starts": ["Bone Collector"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 73, "y": 21 },
+               "align": "top",
+               "header": "Sargeron",
+               "objectives": ["Befouled by Satyr"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 56, "y": 29 },
+               "align": "top",
+               "header": "Thunder Axe Fortress",
+               "objectives": ["The Burning of Spirits", "The Sceptre of Light", "Hand of Iruxos"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 39, "y": 27 },
+               "header": "Azore Aldamort",
+               "ends": ["Sceptre of Light"],
+               "starts": ["Book of the Ancients"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "desolace",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 39, "y": 27 },
+               "align": "right",
+               "header": "Azore Aldamort",
+               "ends": ["Sceptre of Light"],
+               "starts": ["Book of the Ancients"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 38, "y": 24 },
+               "align": "top",
+               "header": "Sar'theris Isle",
+               "objectives": ["Other Fish to Fry"],
+               "special": ["Naga"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 34, "y": 29 },
+               "align": "bottom",
+               "header": "Sar'theris Strand",
+               "objectives": ["Clam Bait"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 33, "y": 23 },
+               "header": "Sar'theris Isle",
+               "objectives": ["Other Fish to Fry"],
+               "special": ["Myrmidions & Sorcerers"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 28, "y": 7 },
+               "header": "Serpent Statue",
+               "objectives": ["Book of the Ancients"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "desolace",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 28, "y": 7 },
+               "header": "Serpent Statue",
+               "objectives": ["Book of the Ancients"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 39, "y": 27 },
+               "align": "right",
+               "header": "Azore Aldamort",
+               "ends": ["Book of the Ancients"],
+               "special": ["Hearthstone to Shadowprey"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "desolace",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 24, "y": 71 },
+               "align": "top",
+               "header": "Shadowprey Village",
+               "ends": ["Hand of Iruxos", "Other Fish to Fry", "Clam Bait"],
+               "starts": ["Portals of the Legion"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 50, "y": 59 },
+               "align": "top",
+               "header": "Kodo Graveyard",
+               "objectives": ["Bone Collection", "Kodo Roundup"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 61, "y": 62 },
+               "align": "right",
+               "header": "Smeed Scrabblescrew",
+               "ends": ["Kodo Roundup"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 56, "y": 56 },
+               "header": "Ghost Walker Post",
+               "ends": ["Khan Dez'hepah", "Befouled by Satyr", "The Burning of Spirits"],
+               "starts": ["Alliance Relations", "Centaur Bounty"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 62, "y": 39 },
+               "align": "top",
+               "header": "Bibbly F'utzbuckle",
+               "ends": ["Bone Collector"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "desolace",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 62, "y": 39 },
+               "header": "Bibbly F'utzbuckle",
+               "ends": ["Bone Collector"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 69, "y": 76 },
+               "align": "right",
+               "header": "Magram Village",
+               "objectives": ["Centaur Bounty", "Gelkis Alliance"],
+               "special": ["Farm to Friendly"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 64, "y": 93 },
+               "align": "right",
+               "header": "Valley of Bones",
+               "objectives": ["Ghost-o-plasm Round Up"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 50, "y": 76 },
+               "align": "top",
+               "header": "Mannoroc Coven",
+               "objectives": ["Portals of the Legion"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 36, "y": 79 },
+               "align": "top",
+               "header": "Uthek the Wise",
+               "ends": ["Gelkis Alliance"],
+               "starts": ["Stealing Supplies"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "desolace",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 36, "y": 79 },
+               "header": "Uthek the Wise",
+               "ends": ["Gelkis Alliance"],
+               "starts": ["Stealing Supplies"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 69, "y": 76 },
+               "align": "right",
+               "header": "Magram Village",
+               "objectives": ["Stealing Supplies", "Centaur Bounty"],
+               "special": ["Farm the remaining Ears"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 56, "y": 56 },
+               "align": "top",
+               "header": "Ghost Walker Post",
+               "starts": ["Centaur Bounty"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 48, "y": 62 },
+               "header": "Hornizz Brimbuzzle",
+               "ends": ["Ghost-o-plasm Round Up"],
+               "special": ["Hearthstone to Shadowprey"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "desolace",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 24, "y": 71 },
+               "header": "Shadowprey Village",
+               "ends": ["Portals of the Legion"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 36, "y": 79 },
+               "align": "right",
+               "header": "Uthek the Wise",
+               "ends": ["Stealing Supplies"],
+               "starts": ["Ongeku"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "desolace",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 36, "y": 79 },
+               "align": "right",
+               "header": "Uthek the Wise",
+               "ends": ["Stealing Supplies"],
+               "starts": ["Ongeku"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 24, "y": 71 },
+               "header": "Shadowprey Village",
+               "special": ["Fly to Orgrimmar"],
+               "type": "hub"
+            }
+         ]
+      },
+      {
+         "zone": "orgrimmar",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 45, "y": 64 },
+               "align": "bottom",
+               "header": "Orgrimmar Flightpath",
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 22, "y": 53 },
+               "align": "top",
+               "header": "Keldran",
+               "ends": [["Alliance Relations", "P3"]],
+               "special": ["Grind mobs to level 40 for mount money."],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "farmfarmfarm",
+         "experience": 37.61,
+         "waypoints": []
       }
    ]
 }
