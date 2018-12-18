@@ -1,0 +1,307 @@
+{
+   "path": [
+      {
+         "zone": "badlands",
+         "experience": 42.80,
+         "waypoints": [
+            {
+               "coords": { "x": 49, "y": 8 },
+               "header": "Loch Modan Border",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 54, "y": 44 },
+               "header": "Hillside Camp",
+               "starts": ["A Dwarf and His Tools", "Mirages", "Fiery Blaze Enchantments"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 54, "y": 33 },
+               "align": "top",
+               "header": "Hammertoe's Digsite",
+               "starts": ["A Sign of Hope"],
+               "objectives": ["A Dwarf and His Tools"],
+               "special": ["Look for the Crumpled Map"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 67, "y": 23 },
+               "align": "top",
+               "header": "Excavation Supply Crate",
+               "objectives": ["Mirages"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "badlands",
+         "experience": 42.84,
+         "waypoints": [
+            {
+               "coords": { "x": 67, "y": 23 },
+               "align": "right",
+               "header": "Excavation Supply Crate",
+               "objectives": ["Mirages"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 54, "y": 44 },
+               "header": "Hillside Camp",
+               "ends": ["A Dwarf and His Tools", "Mirages", "A Sign of Hope"],
+               "starts": ["Scrounging", ["A Sign of Hope", "D"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 57, "y": 51 },
+               "header": "Badlands Canyon",
+               "objectives": ["Badlands Reagent Run"],
+               "special": ["Crag Coyote Fang"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 62, "y": 54 },
+               "align": "right",
+               "header": "Garek",
+               "starts": ["Tremors of the Earth"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 43, "y": 54 },
+               "header": "Valley of Fangs",
+               "ends": ["Martek the Exiled"],
+               "starts": ["Indurium", "Barbecued Buzzard Wings", ["Power Stones", "E"]],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "badlands",
+         "experience": 42.92,
+         "waypoints": [
+            {
+               "coords": { "x": 43, "y": 54 },
+               "header": "Valley of Fangs",
+               "ends": ["Martek the Exiled"],
+               "starts": ["Indurium", "Barbecued Buzzard Wings", ["Power Stones", "E"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 51, "y": 62 },
+               "align": "right",
+               "header": "Battered Dwarven Skeleton",
+               "ends": ["Find Agmond"],
+               "starts": ["Murdaloc"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 50, "y": 70 },
+               "align": "right",
+               "header": "Agmond's End",
+               "objectives": ["Murdaloc", "Indurium"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 51, "y": 77 },
+               "align": "right",
+               "header": "Theldurin the Lost",
+               "ends": ["Theldurin the Lost"],
+               "starts": ["The Lost Fragments", ["Solution to Doom", "D"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 54, "y": 83 },
+               "align": "right",
+               "header": "Southern Badlands",
+               "objectives": ["The Lost Fragments"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "badlands",
+         "experience": 43.01,
+         "waypoints": [
+            {
+               "coords": { "x": 54, "y": 83 },
+               "align": "right",
+               "header": "Southern Badlands",
+               "objectives": ["The Lost Fragments"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 51, "y": 77 },
+               "align": "right",
+               "header": "Theldurin the Lost",
+               "ends": ["The Lost Fragments"],
+               "starts": [["Summoning the Princess", "E"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 26, "y": 45 },
+               "align": "top",
+               "header": "Gnome Encampment",
+               "ends": ["Coolant Heads Prevail", "Gyro.. What?"],
+               "starts": ["Coolant Heads Prevail", "Gyro.. What?", ["Study of the Elements: Rock", "P1"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 20, "y": 45 },
+               "align": "top",
+               "header": "Western Badlands",
+               "objectives": [["Study of the Elements: Rock", "P1"], "Badlands Reagent Run"],
+               "special": ["Rock Elemental Shard"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "badlands",
+         "experience": 43.13,
+         "waypoints": [
+            {
+               "coords": { "x": 20, "y": 45 },
+               "align": "bottom",
+               "header": "The Dustbowl",
+               "objectives": [["Study of the Elements: Rock", "P1"], "Badlands Reagent Run"],
+               "special": ["Rock Elemental Shard"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 26, "y": 45 },
+               "align": "bottom",
+               "header": "Gnome Encampment",
+               "ends": [["Study of the Elements: Rock", "P1"]],
+               "starts": [["Study of the Elements: Rock", "P2"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 15, "y": 37 },
+               "header": "The Dustbowl",
+               "objectives": [["Study of the Elements: Rock", "P2"], "Badlands Reagent Run"],
+               "special": ["Rock Elemental Shard"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "badlands",
+         "experience": 43.18,
+         "waypoints": [
+            {
+               "coords": { "x": 15, "y": 37 },
+               "header": "The Dustbowl",
+               "objectives": [["Study of the Elements: Rock", "P2"], "Badlands Reagent Run"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 26, "y": 45 },
+               "align": "right",
+               "header": "Gnome Encampment",
+               "ends": [["Study of the Elements: Rock", "P2"]],
+               "starts": [["Study of the Elements: Rock", "P3"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 16, "y": 60 },
+               "align": "right",
+               "header": "Apocryphan's Rest",
+               "objectives": ["Barbecued Buzzard Wings", "Badlands Reagent Run"],
+               "special": ["Buzzard Gizzard", "Buzzard Wing"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 13, "y": 76 },
+               "align": "bottom",
+               "header": "Ogre Encampment",
+               "objectives": ["Scrounging", "Tremors of the Earth"],
+               "special": ["Kill Boss Tho'grun"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 2, "y": 80 },
+               "align": "bottom",
+               "header": "Camp Cagg",
+               "objectives": [["Study of the Elements: Rock", "P3"]],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "badlands",
+         "experience": 43.30,
+         "waypoints": [
+            {
+               "coords": { "x": 2, "y": 80 },
+               "align": "bottom",
+               "header": "Camp Cagg",
+               "objectives": [["Study of the Elements: Rock", "P3"]],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 26, "y": 45 },
+               "align": "top",
+               "header": "Gnome Encampment",
+               "ends": [["Study of the Elements: Rock", "P3"], ["This Is Going to Be Hard", "P1-3"], "Liquid Stone", "Stone is Better Than Cloth"],
+               "starts": [["This Is Going to Be Hard", "P2-3"], "Liquid Stone", "Stone is Better Than Cloth"],
+               "objectives": [["This Is Going to Be Hard", "P3"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 43, "y": 54 },
+               "align": "top",
+               "header": "Valley of Fangs",
+               "ends": ["Indurium", "Barbecued Buzzard Wings"],
+               "starts": ["News For Fizzle"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 62, "y": 54 },
+               "align": "top",
+               "header": "Garek",
+               "ends": ["Tremors of the Earth"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 73, "y": 59 },
+               "align": "top",
+               "header": "Lethlor Ravine",
+               "objectives": ["Fiery Blaze Enchantments"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "badlands",
+         "experience": 43.57,
+         "waypoints": [
+            {
+               "coords": { "x": 73, "y": 59 },
+               "align": "right",
+               "header": "Lethlor Ravine",
+               "objectives": ["Fiery Blaze Enchantments"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 54, "y": 44 },
+               "header": "Hillside Camp",
+               "ends": ["Scrounging", "Fiery Blaze Enchantments"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 47, "y": 12 },
+               "header": "Uldaman Enterance",
+               "starts": ["The Shattered Necklace"],
+               "objectives": [["Power Stones", "E"]],
+               "special": ["Kill Dwarves until a Necklace drops"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 49, "y": 8 },
+               "align": "right",
+               "header": "Loch Modan Border",
+               "type": "travel"
+            }
+         ]
+      }
+   ]
+}

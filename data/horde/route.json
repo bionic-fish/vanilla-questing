@@ -8127,7 +8127,7 @@
                "align": "right",
                "header": "Stonard",
                "ends": ["Report to Helgrum"],
-               "starts": ["Lack of Surplus", "Fresh Meat", "Pool of Tears"],
+               "starts": [["Lack of Surplus", "P1"], "Pool of Tears"],
                "type": "hub"
             },
             {
@@ -8175,7 +8175,7 @@
                "coords": { "x": 55, "y": 43 },
                "align": "top",
                "header": "Placeholder",
-               "objectives": ["Lack of Surplus"],
+               "objectives": [["Lack of Surplus", "P1"]],
                "type": "objective"
             },
             {
@@ -8601,7 +8601,8 @@
                "coords": { "x": 59, "y": 36 },
                "align": "right",
                "header": "Dran Droffers",
-               "ends": [["Necklace Recovery", "D"]],
+               "starts": [["Necklace Recovery", "E"]],
+               "special": ["Hearthstone to Booty Bay"],
                "type": "quest"
             }
          ]
@@ -8624,9 +8625,2920 @@
          "waypoints": [
             {
                "coords": { "x": 6, "y": 45 },
+               "align": "bottom",
                "header": "Kargath",
                "starts": ["Broken Alliances", "Badlands Reagent Run", "Coyote Thieves"],
+               "special": ["Set Hearthstone"],
                "type": "hub"
+            },
+            {
+               "coords": { "x": 43, "y": 54 },
+               "align": "bottom",
+               "header": "Valley of Fangs",
+               "ends": ["Martek the Exiled"],
+               "starts": ["Indurium", "Barbecued Buzzard Wings", ["Power Stones", "E"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 48, "y": 12 },
+               "align": "top",
+               "header": "Uldaman Enterance",
+               "objectives": [["Power Stones", "E"], ["Stattered Necklace", "E"]],
+               "special": ["Farm a Necklace"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 60, "y": 51 },
+               "align": "right",
+               "header": "Placeholder",
+               "objectives": ["Coyote Thieves", "Badlands Reagent Run"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "badlands",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 60, "y": 51 },
+               "align": "right",
+               "header": "Placeholder",
+               "objectives": ["Coyote Thieves", "Badlands Reagent Run"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 50, "y": 70 },
+               "header": "Agmond's End",
+               "objectives": ["Indurium"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 51, "y": 77 },
+               "header": "Theldurin the Lost",
+               "ends": ["Theldurin the Lost"],
+               "starts": ["The Lost Fragments", ["Solution to Doom", "D"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 54, "y": 83 },
+               "align": "bottom",
+               "header": "Southern Badlands",
+               "objectives": ["The Lost Fragments"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "badlands",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 54, "y": 83 },
+               "align": "right",
+               "header": "Southern Badlands",
+               "objectives": ["The Lost Fragments"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 51, "y": 77 },
+               "align": "right",
+               "header": "Theldurin the Lost",
+               "ends": ["The Lost Fragments"],
+               "starts": [["Summoning the Princess", "E"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 26, "y": 45 },
+               "align": "top",
+               "header": "Gnome Encampment",
+               "ends": ["Coolant Heads Prevail", "Gyro.. What?"],
+               "starts": ["Coolant Heads Prevail", "Gyro.. What?", ["Study of the Elements: Rock", "P1"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 20, "y": 45 },
+               "align": "top",
+               "header": "Western Badlands",
+               "objectives": [["Study of the Elements: Rock", "P1"], "Badlands Reagent Run"],
+               "special": ["Rock Elemental Shard"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "badlands",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 20, "y": 45 },
+               "align": "bottom",
+               "header": "The Dustbowl",
+               "objectives": [["Study of the Elements: Rock", "P1"], "Badlands Reagent Run"],
+               "special": ["Rock Elemental Shard"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 26, "y": 45 },
+               "align": "bottom",
+               "header": "Gnome Encampment",
+               "ends": [["Study of the Elements: Rock", "P1"]],
+               "starts": [["Study of the Elements: Rock", "P2"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 15, "y": 37 },
+               "header": "The Dustbowl",
+               "objectives": [["Study of the Elements: Rock", "P2"], "Badlands Reagent Run"],
+               "special": ["Rock Elemental Shard"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "badlands",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 15, "y": 37 },
+               "header": "The Dustbowl",
+               "objectives": [["Study of the Elements: Rock", "P2"], "Badlands Reagent Run"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 26, "y": 45 },
+               "align": "right",
+               "header": "Gnome Encampment",
+               "ends": [["Study of the Elements: Rock", "P2"]],
+               "starts": [["Study of the Elements: Rock", "P3"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 16, "y": 60 },
+               "align": "right",
+               "header": "Apocryphan's Rest",
+               "objectives": ["Barbecued Buzzard Wings", "Badlands Reagent Run"],
+               "special": ["Buzzard Gizzard", "Buzzard Wing"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 13, "y": 76 },
+               "align": "bottom",
+               "header": "Ogre Encampment",
+               "objectives": ["Tremors of the Earth"],
+               "special": ["Kill Boss Tho'grun"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 2, "y": 80 },
+               "align": "bottom",
+               "header": "Camp Cagg",
+               "objectives": [["Study of the Elements: Rock", "P3"]],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "badlands",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 2, "y": 80 },
+               "align": "right",
+               "header": "Camp Cagg",
+               "objectives": [["Study of the Elements: Rock", "P3"]],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 6, "y": 45 },
+               "align": "right",
+               "header": "Kargath",
+               "ends": ["Broken Alliances", "Badlands Reagent Run", "Coyote Thieves"],
+               "starts": [["Uldaman Reagent Run", "D"]],
+               "special": ["Buy a portal to Orgrimmar"],
+               "type": "hub"
+            }
+         ]
+      },
+      {
+         "zone": "orgrimmar",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 39, "y": 85 },
+               "header": "OG Portal Area",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 59, "y": 36 },
+               "align": "right",
+               "header": "Dran Droffers",
+               "ends": [["Necklace Recovery", "E"], ["Ripple Recovery", "P2"]],
+               "starts": [["Necklace Recovery, Take Two", "D"], ["Ripple Recovery", "P1-2"]],
+               "special": ["Hearthstone to Kargath"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "badlands",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 6, "y": 45 },
+               "align": "top",
+               "header": "Kargath",
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 26, "y": 45 },
+               "align": "top",
+               "header": "Gnome Encampment",
+               "ends": [["Study of the Elements: Rock", "P3"], ["This Is Going to Be Hard", "P1-3"], "Liquid Stone", "Stone is Better Than Cloth"],
+               "starts": [["This Is Going to Be Hard", "P2-3"], "Liquid Stone", "Stone is Better Than Cloth"],
+               "objectives": [["This Is Going to Be Hard", "P3"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 43, "y": 54 },
+               "align": "right",
+               "header": "Valley of Fangs",
+               "ends": ["Indurium", "Barbecued Buzzard Wings", ["Power Stones", "E"]],
+               "starts": ["News For Fizzle"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "badlands",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 43, "y": 54 },
+               "align": "right",
+               "header": "Valley of Fangs",
+               "ends": ["Indurium", "Barbecued Buzzard Wings", ["Power Stones", "E"]],
+               "starts": ["News For Fizzle"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 41, "y": 12 },
+               "align": "right",
+               "header": "Uldaman",
+               "starts": ["The Platinum Discs"],
+               "objectives": [["Uldaman Reagent Run", "D"], ["Solution to Doom", "D"], ["Reclaimed Treasures", "D"], ["Necklace Recovery, Take Two", "D"]],
+               "special": ["Hearthstone to Kargath"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "badlands",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 6, "y": 45 },
+               "align": "top",
+               "header": "Kargath",
+               "ends": [["Find the Gems and Power Source", "D"], ["Uldaman Reagent Run", "D"]],
+               "starts": ["Deliver the Gems"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 51, "y": 77 },
+               "align": "top",
+               "header": "Theldurin the Lost",
+               "ends": [["Solution to Doom", "D"]],
+               "starts": ["To the Undercity for Yagyin's Digest"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "badlands",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 51, "y": 77 },
+               "align": "top",
+               "header": "Theldurin the Lost",
+               "ends": [["Solution to Doom", "D"]],
+               "starts": ["To the Undercity for Yagyin's Digest"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 6, "y": 45 },
+               "align": "top",
+               "header": "Kargath",
+               "special": ["Fly to Swamp of Sorrows"],
+               "type": "hub"
+            }
+         ]
+      },
+      {
+         "zone": "swamp",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 46, "y": 54 },
+               "header": "Stonard",
+               "starts": ["The Atal'ai Exile", "Fresh Meat"],
+               "special": ["Have 8x Sawtooth Flanks", "Set Hearthstone"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 81, "y": 81 },
+               "align": "bottom",
+               "header": "Misty Reed Post",
+               "ends": [["Lack of Surplus", "P1"]],
+               "starts": [["Lack of Surplus", "P2"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 92, "y": 33 },
+               "align": "right",
+               "header": "Misty Reed Strand",
+               "objectives": ["Fresh Meat"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 82, "y": 15 },
+               "align": "top",
+               "header": "Misty Reed Strand",
+               "objectives": [["Lack of Surplus", "P2"]],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "swamp",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 82, "y": 15 },
+               "header": "Misty Reed Strand",
+               "objectives": [["Lack of Surplus", "P2"]],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 81, "y": 81 },
+               "align": "bottom",
+               "header": "Misty Reed Post",
+               "ends": [["Lack of Surplus", "P2"], ["Threat From the Sea", "P1"]],
+               "starts": [["Threat From the Sea", "P1-2"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 66, "y": 78 },
+               "align": "bottom",
+               "header": "Stagalbog Cave",
+               "objectives": [["Threat From the Sea", "P2"]],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "swamp",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 66, "y": 78 },
+               "align": "bottom",
+               "header": "Stagalbog Cave",
+               "objectives": [["Threat From the Sea", "P2"]],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 81, "y": 81 },
+               "align": "bottom",
+               "header": "Misty Reed Post",
+               "ends": [["Threat From the Sea", "P2-3"]],
+               "starts": [["Threat From the Sea", "P3"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 46, "y": 54 },
+               "header": "Stonard",
+               "ends": ["Fresh Meat"],
+               "special": ["Fly to Grom'gol Basecamp"],
+               "type": "hub"
+            }
+         ]
+      },
+      {
+         "zone": "stv",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 32, "y": 29 },
+               "header": "Grom'gol Basecamp",
+               "starts": [["Mok'thardin's Enchantment", "P2"], "Split Bone Necklace", "Speaking with Nezzliok", "Speaking with Gan'zulah"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 27, "y": 77 },
+               "header": "Booty Bay",
+               "starts": ["Scaring Shaky", ["The Bloodsail Buccaneers", "P1"]],
+               "type": "hub"
+            }
+         ]
+      },
+      {
+         "zone": "stv",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 27, "y": 77 },
+               "header": "Booty Bay",
+               "starts": ["Scaring Shaky", ["The Bloodsail Buccaneers", "P1"]],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 27, "y": 69 },
+               "header": "Bloodsail Correspondence",
+               "ends": [["The Bloodsail Buccaneers", "P1"]],
+               "starts": [["The Bloodsail Buccaneers", "P1"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 32, "y": 67 },
+               "align": "top",
+               "header": "Mistvale Valley",
+               "objectives": ["Scaring Shaky", ["Mok'thardin's Enchantment", "P2"]],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "stv",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 32, "y": 67 },
+               "align": "top",
+               "header": "Mistvale Valley",
+               "objectives": ["Scaring Shaky", ["Mok'thardin's Enchantment", "P2"]],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 27, "y": 77 },
+               "header": "Booty Bay",
+               "ends": ["Scaring Shaky", ["The Bloodsail Buccaneers", "P2-3"], "Return to MacKindley"],
+               "starts": ["Return to MacKindley", "The Captain's Chest", ["The Bloodsail Buccaneers", "P3"], "Voodoo Dues", "Fool's Stout", "Venture Company Mining", "Skullsplitter Tusks", "Stranglethorn Fever"],
+               "special": ["Fly to Grom'gol"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 32, "y": 29 },
+               "align": "right",
+               "header": "Grom'gol Basecamp",
+               "ends": [["Mok'thardin's Enchantment", "P2"]],
+               "starts": [["Mok'thardin's Enchantment", "P3"]],
+               "type": "hub"
+            }
+         ]
+      },
+      {
+         "zone": "stv",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 32, "y": 29 },
+               "header": "Grom'gol Basecamp",
+               "ends": [["Mok'thardin's Enchantment", "P2"]],
+               "starts": [["Mok'thardin's Enchantment", "P3"]],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 36, "y": 11 },
+               "align": "top",
+               "header": "Nesingwary's Expedition",
+               "starts": [["Panther Mastery", "P3"], ["Raptor Mastery", "P3"]],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 50, "y": 24 },
+               "align": "right",
+               "header": "Bhag'thera",
+               "objectives": [["Panther Mastery", "P3"]],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 46, "y": 32 },
+               "align": "right",
+               "header": "First Trophy",
+               "objectives": ["Speaking with Nezzliok"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 42, "y": 36 },
+               "header": "Second Trophy",
+               "objectives": ["Speaking with Nezzliok"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 48, "y": 39 },
+               "align": "bottom",
+               "header": "Third Trophy",
+               "objectives": ["Speaking with Nezzliok"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "stv",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 48, "y": 39 },
+               "align": "right",
+               "header": "Third Trophy",
+               "objectives": ["Speaking with Nezzliok"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 48, "y": 43 },
+               "align": "right",
+               "header": "Ruins of Zul'Mamwe",
+               "objectives": ["Speaking with Nezzliok", "Speaking with Gan'zulah"],
+               "special": ["This might take hours"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 44, "y": 45 },
+               "align": "bottom",
+               "header": "Zul'Mamwe Cave",
+               "objectives": ["Speaking with Gan'zulah"],
+               "special": ["The Boss"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 41, "y": 44 },
+               "align": "bottom",
+               "header": "Venture Co. Encampment",
+               "objectives": ["Venture Company Mining"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "stv",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 41, "y": 44 },
+               "align": "bottom",
+               "header": "Venture Co. Encampment",
+               "objectives": ["Venture Company Mining"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 29, "y": 45 },
+               "header": "Tethis",
+               "objectives": [["Raptor Mastery", "P3"]],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 32, "y": 29 },
+               "header": "Grom'gol Basecamp",
+               "ends": ["Split Bone Necklace", "Speaking with Nezzliok", "Speaking with Gan'zulah", "The Fate of Yenniku"],
+               "starts": ["The Fate of Yenniku", "The Singing Crystals"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 36, "y": 11 },
+               "header": "Nesingwary's Expedition",
+               "ends": [["Panther Mastery", "P3"], ["Raptor Mastery", "P3"]],
+               "starts": [["Big Game Hunter", "E"]],
+               "type": "hub"
+            }
+         ]
+      },
+      {
+         "zone": "stv",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 36, "y": 11 },
+               "header": "Nesingwary's Expedition",
+               "ends": [["Panther Mastery", "P3"], ["Raptor Mastery", "P3"]],
+               "starts": [["Big Game Hunter", "E"]],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 29, "y": 45 },
+               "header": "King Bangalash",
+               "objectives": [["Big Game Hunter", "E"]],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 42, "y": 50 },
+               "align": "top",
+               "header": "Crystalvein Mine",
+               "objectives": ["The Singing Crystals"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 35, "y": 52 },
+               "header": "Ruins of Jubuwal",
+               "objectives": ["Fool's Stout", "Voodoo Dues"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 40, "y": 59 },
+               "align": "right",
+               "header": "Ruins of Aboraz",
+               "objectives": ["Fool's Stout", "Voodoo Dues"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 35, "y": 61 },
+               "align": "bottom",
+               "header": "Spirit Den",
+               "objectives": ["Stranglethorn Fever"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "stv",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 35, "y": 61 },
+               "align": "top",
+               "header": "Spirit Den",
+               "objectives": ["Stranglethorn Fever"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 37, "y": 69 },
+               "align": "right",
+               "header": "The Crystal Shore",
+               "objectives": ["The Captain's Chest"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 27, "y": 77 },
+               "header": "Booty Bay",
+               "ends": ["The Captain's Chest", "Voodoo Dues", "Fool's Stout", "Venture Company Mining", "Skullsplitter Tusks", "Stranglethorn Fever"],
+               "starts": [["Cracking Maury's Foot", "E"], ["The Bloodsail Buccaneers", "P4"], "Up to Snuff", "Akiris by the Bundle", "Keep An Eye Out"],
+               "type": "hub"
+            }
+         ]
+      },
+      {
+         "zone": "stv",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 27, "y": 77 },
+               "header": "Booty Bay",
+               "ends": ["The Captain's Chest", "Voodoo Dues", "Fool's Stout", "Venture Company Mining", "Skullsplitter Tusks", "Stranglethorn Fever"],
+               "starts": [["Cracking Maury's Foot", "E"], ["The Bloodsail Buccaneers", "P4"], "Up to Snuff", "Akiris by the Bundle", "Keep An Eye Out"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 27, "y": 83 },
+               "header": "Wild Shore",
+               "objectives": [["The Bloodsail Buccaneers", "P4"], "Up to Snuff", "Keep An Eye Out"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "stv",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 27, "y": 83 },
+               "header": "Wild Shore",
+               "objectives": [["The Bloodsail Buccaneers", "P4"], "Up to Snuff", "Keep An Eye Out"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 27, "y": 77 },
+               "header": "Booty Bay",
+               "ends": [["The Bloodsail Buccaneers", "P4"], "Up to Snuff", "Keep An Eye Out"],
+               "starts": [["The Bloodsail Buccaneers", "P5"]],
+               "type": "hub"
+            }
+         ]
+      },
+      {
+         "zone": "stv",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 27, "y": 77 },
+               "header": "Booty Bay",
+               "ends": [["The Bloodsail Buccaneers", "P4"], "Up to Snuff", "Keep An Eye Out"],
+               "starts": [["The Bloodsail Buccaneers", "P5"]],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 30, "y": 89 },
+               "align": "bottom",
+               "header": "Western Pirate Ships",
+               "objectives": [["The Bloodsail Buccaneers", "P5"]],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 34, "y": 87 },
+               "align": "right",
+               "header": "Eastern Pirate Ship",
+               "objectives": [["The Bloodsail Buccaneers", "P5"]],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 26, "y": 62 },
+               "align": "top",
+               "header": "Naga Isle",
+               "objectives": ["Akiris by the Bundle", ["Mok'thardin's Enchantment", "P3"]],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "stv",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 26, "y": 62 },
+               "header": "Naga Isle",
+               "objectives": ["Akiris by the Bundle", ["Mok'thardin's Enchantment", "P3"]],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 27, "y": 77 },
+               "header": "Booty Bay",
+               "ends": [["The Bloodsail Buccaneers", "P5"], "Akiris by the Bundle"],
+               "special": ["Fly to Grom'gol"],
+               "type": "hub"
+            }
+         ]
+      },
+      {
+         "zone": "stv",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 27, "y": 77 },
+               "header": "Booty Bay",
+               "ends": [["The Bloodsail Buccaneers", "P5"], "Akiris by the Bundle"],
+               "special": ["Fly to Grom'gol"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 32, "y": 29 },
+               "align": "top",
+               "header": "Grom'gol Basecamp",
+               "ends": [["Mok'thardin's Enchantment", "P3"], "The Singing Crystals"],
+               "starts": ["The Mind's Eye"],
+               "special": ["Set Hearthstone"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 50, "y": 28 },
+               "align": "top",
+               "header": "Mosh'Ogg Cave",
+               "objectives": [["Cracking Maury's Foot", "E"], "The Mind's Eye"],
+               "special": ["Hearthstone to Grom'gol"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "stv",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 50, "y": 28 },
+               "align": "top",
+               "header": "Mosh'Ogg Cave",
+               "objectives": [["Cracking Maury's Foot", "E"], "The Mind's Eye"],
+               "special": ["Hearthstone to Grom'gol"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 32, "y": 29 },
+               "align": "top",
+               "header": "Grom'gol Basecamp",
+               "ends": ["The Mind's Eye"],
+               "starts": ["Saving Yenniku", "Grim Message"],
+               "special": ["Fly to Booty Bay"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 27, "y": 77 },
+               "header": "Booty Bay",
+               "ends": [["Cracking Maury's Foot", "E"]],
+               "starts": ["Whiskey Slim's Lost Grog"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 40, "y": 59 },
+               "align": "right",
+               "header": "Yenniku",
+               "ends": ["Saving Yenniku"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "stv",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 40, "y": 59 },
+               "align": "right",
+               "header": "Yenniku",
+               "ends": ["Saving Yenniku"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 36, "y": 11 },
+               "header": "Nesingwary's Expedition",
+               "ends": [["Big Game Hunter", "E"]],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 32, "y": 29 },
+               "header": "Grom'gol Basecamp",
+               "ends": ["Saving Yenniku"],
+               "special": ["Sail to Undercity"],
+               "type": "hub"
+            }
+         ]
+      },
+      {
+         "zone": "tirisfal",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 61, "y": 59 },
+               "header": "Zeppelin Station",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 62, "y": 65 },
+               "header": "Undercity Gates",
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "undercity",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 71, "y": 44 },
+               "align": "top",
+               "header": "Undercity Lifts",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 54, "y": 54 },
+               "align": "bottom",
+               "header": "Keeper Bel'dugur",
+               "ends": ["To the Undercity for Yagyin's Digest"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 64, "y": 46 },
+               "align": "top",
+               "header": "Undercity Flightpath",
+               "ends": [["Reclaimed Treasure", "D"]],
+               "special": ["Fly to Hammerfall"],
+               "type": "flightpath"
+            }
+         ]
+      },
+      {
+         "zone": "arathi",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 74, "y": 36 },
+               "align": "top",
+               "header": "Hammerfall",
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 63, "y": 34 },
+               "align": "top",
+               "header": "Placeholder",
+               "ends": ["The Princess Trapped"],
+               "objectives": ["The Princess Trapped"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "arathi",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 63, "y": 34 },
+               "align": "top",
+               "header": "Placeholder",
+               "ends": ["The Princess Trapped"],
+               "objectives": ["The Princess Trapped"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 74, "y": 36 },
+               "align": "top",
+               "header": "Hammerfall",
+               "special": ["Fly to Tarren Mill"],
+               "type": "hub"
+            }
+         ]
+      },
+      {
+         "zone": "hillsbrad",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 60, "y": 19 },
+               "align": "bottom",
+               "header": "Tarren Mill",
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 89, "y": 27 },
+               "align": "bottom",
+               "header": "Hinterlands Border",
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "hinterlands",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 7, "y": 60 },
+               "align": "bottom",
+               "header": "Hillsbrad Border",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 23, "y": 58 },
+               "align": "bottom",
+               "header": "Zun'watha",
+               "objectives": ["Grim Message"],
+               "starts": ["Venom Bottles"],
+               "special": ["Click the bottles"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 27, "y": 48 },
+               "align": "top",
+               "header": "Gilveradin Sunchaser",
+               "ends": ["Ripple Recovery"],
+               "starts": ["A Sticky Situation"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 33, "y": 75 },
+               "align": "bottom",
+               "header": "Atal'ai Exile",
+               "ends": ["Atal'ai Exile"],
+               "starts": ["Return to Fel'Zerul"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 76, "y": 72 },
+               "align": "top",
+               "header": "Placeholder",
+               "objectives": ["Whiskey Slim's Lost Grog"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 82, "y": 82 },
+               "align": "right",
+               "header": "Revantusk Flightpath",
+               "special": ["Learn the Flightpath", "Fly to Tarren Mill"],
+               "type": "flightpath"
+            }
+         ]
+      },
+      {
+         "zone": "hillsbrad",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 60, "y": 19 },
+               "align": "bottom",
+               "header": "Tarren Mill",
+               "ends": ["Venom Bottles"],
+               "starts": ["Undamaged Venom Sac"],
+               "special": ["Hearthstone to Grom'gol"],
+               "type": "hub"
+            }
+         ]
+      },
+      {
+         "zone": "stv",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 32, "y": 29 },
+               "align": "right",
+               "header": "Grom'gol Basecamp",
+               "ends": ["Grim Message"],
+               "special": ["Fly to Stonard"],
+               "type": "hub"
+            }
+         ]
+      },
+      {
+         "zone": "swamp",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 46, "y": 54 },
+               "align": "right",
+               "header": "Stonard",
+               "ends": ["Return to Fel'Zerul"],
+               "special": ["Learn the Booty Bay"],
+               "type": "hub"
+            }
+         ]
+      },
+      {
+         "zone": "stv",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 27, "y": 77 },
+               "header": "Booty Bay",
+               "ends": ["Whiskey Slim's Lost Grog"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 26, "y": 73 },
+               "header": "Booty Bay Harbor",
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "barrens",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 64, "y": 39 },
+               "align": "right",
+               "header": "Ratchet Harbor",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 62, "y": 38 },
+               "header": "Ratchet Flightpath",
+               "special": ["Fly to Dustwallow Marsh"],
+               "type": "flightpath"
+            }
+         ]
+      },
+      {
+         "zone": "dustwallow",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 36, "y": 31 },
+               "header": "Brackenwall Village",
+               "starts": [["Overlord Mok'Morokk's Concern", "E"], ["Army of the Black Dragon", "E"], "Identifying the Brood"],
+               "special": ["Set Hearthstone"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 46, "y": 57 },
+               "align": "right",
+               "header": "Tabetha",
+               "starts": ["Tiara of the Deep"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 45, "y": 66 },
+               "align": "bottom",
+               "header": "Snuffbarrel",
+               "objectives": [["Overlord Mok'Morokk's Concern", "E"], "Identifying the Brood"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 39, "y": 66 },
+               "align": "bottom",
+               "header": "Den of Flame",
+               "objectives": [["Overlord Mok'Morokk's Concern", "E"], ["Army of the Black Dragon", "E"]],
+               "special": ["Grog Bottle", "Stongbox", "Hearthstone to Brackenwall"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "dustwallow",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 36, "y": 31 },
+               "header": "Brackenwall Village",
+               "ends": [["Overlord Mok'Morokk's Concern", "E"], ["Army of the Black Dragon", "E"], "Identifying the Brood", ["The Brood of Onyxia", "P1-2"]],
+               "starts": [["The Brood of Onyxia", "P1-3"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 45, "y": 75 },
+               "align": "bottom",
+               "header": "Eggs",
+               "objectives": [["The Brood of Onyxia", "P3"]],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "dustwallow",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 45, "y": 75 },
+               "align": "bottom",
+               "header": "Eggs",
+               "objectives": [["The Brood of Onyxia", "P3"]],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 36, "y": 31 },
+               "header": "Brackenwall Village",
+               "ends": [["The Brood of Onyxia", "P3"], "Challenge Overlord Mok'Morokk"],
+               "starts": ["Challenge Overlord Mok'Morokk"],
+               "special": ["Fly to Orgrimmar"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "orgrimmar",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 45, "y": 64 },
+               "header": "Orgrimmar Flightpath",
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 59, "y": 36 },
+               "align": "top",
+               "header": "Dran Droffers",
+               "ends": ["Deliver the Gems"],
+               "starts": ["Necklace Recovery, Take 3"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 75, "y": 34 },
+               "align": "top",
+               "header": "Belgrom Rockmaul",
+               "starts": ["A Threat in Feralas"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "orgrimmar",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 75, "y": 34 },
+               "align": "top",
+               "header": "Belgrom Rockmaul",
+               "starts": ["A Threat in Feralas"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 45, "y": 64 },
+               "header": "Orgrimmar Flightpath",
+               "special": ["Fly to Thunder Bluff"],
+               "type": "flightpath"
+            }
+         ]
+      },
+      {
+         "zone": "thunderbluff",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 47, "y": 50 },
+               "align": "bottom",
+               "header": "Thunder Bluff Flightpath",
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 34, "y": 47 },
+               "header": "Sage Truthseeker",
+               "ends": [["The Platinum Discs", "P1"]],
+               "starts": [["The Platinum Discs", "P2"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 47, "y": 33 },
+               "align": "top",
+               "header": "Bena Winterhoof",
+               "ends": [["The Platinum Discs", "P2"]],
+               "starts": [["The Platinum Discs", "P3"]],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "thunderbluff",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 47, "y": 33 },
+               "align": "top",
+               "header": "Bena Winterhoof",
+               "ends": [["The Platinum Discs", "P2"]],
+               "starts": [["The Platinum Discs", "P3"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 34, "y": 47 },
+               "header": "Sage Truthseeker",
+               "starts": ["Portents of Uldum"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 76, "y": 31 },
+               "align": "bottom",
+               "header": "Nara Wildmane",
+               "ends": ["Portents of Uldum"],
+               "starts": ["Seeing What Happens"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 47, "y": 50 },
+               "align": "bottom",
+               "header": "Thunder Bluff Flightpath",
+               "special": ["Fly to Tanaris"],
+               "type": "flightpath"
+            }
+         ]
+      },
+      {
+         "zone": "tanaris",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 52, "y": 28 },
+               "header": "Gadgetzan",
+               "starts": ["Slake That Thirsty", "Wanted: Caliph Scorpidsting", "Wanted: Andre Firebeard", "Gadgetzan Water Survey", "Wastewander Justice", "Water Pouch Bounty"],
+               "special": ["Set Hearthstone"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 51, "y": 21 },
+               "header": "Thousand Needles Border",
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "needles",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 75, "y": 96 },
+               "header": "Tanaris Border",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 78, "y": 77 },
+               "align": "top",
+               "header": "Shimmering Flats",
+               "ends": ["News for Fizzle"],
+               "starts": [["Gahz'rilla", "D"]],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "needles",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 78, "y": 77 },
+               "align": "top",
+               "header": "Shimmering Flats",
+               "ends": ["News for Fizzle"],
+               "starts": [["Gahz'rilla", "D"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 75, "y": 96 },
+               "header": "Tanaris Border",
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "tanaris",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 51, "y": 21 },
+               "align": "top",
+               "header": "Thousand Needles Border",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 60, "y": 23 },
+               "align": "top",
+               "header": "Noonshade Ruins",
+               "objectives": ["Wastewander Justice", "Water Pouch Bounty", "Slake That Thirst"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 52, "y": 28 },
+               "align": "bottom",
+               "header": "Gadgetzan",
+               "ends": ["Slake That Thirsty", "Wastewander Justice", "Water Pouch Bounty"],
+               "starts": ["More Wastewander Justice", "Tanaris Field Sampling"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 39, "y": 29 },
+               "header": "Sandsorrow Watch",
+               "objectives": ["Gadgetzan Water Survey"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 48, "y": 37 },
+               "align": "bottom",
+               "header": "Abyssal Sands",
+               "objectives": ["Tanaris Field Sampling"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "tanaris",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 48, "y": 37 },
+               "align": "bottom",
+               "header": "Abyssal Sands",
+               "objectives": ["Tanaris Field Sampling"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 52, "y": 28 },
+               "align": "top",
+               "header": "Gadgetzan",
+               "ends": ["Tanaris Field Sampling", "Gadgetzan Water Survey"],
+               "starts": ["Return to Apothecary Zinge", "Noxious Lair Investigation"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 36, "y": 42 },
+               "align": "bottom",
+               "header": "The Noxious Lair",
+               "objectives": ["Noxious Lair Investigation"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "tanaris",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 36, "y": 42 },
+               "align": "bottom",
+               "header": "The Noxious Lair",
+               "objectives": ["Noxious Lair Investigation"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 61, "y": 38 },
+               "align": "bottom",
+               "header": "Waterspring Field",
+               "objectives": ["Wanted: Caliph Scorpidsting", "More Wastewander Justice"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 67, "y": 23 },
+               "align": "top",
+               "header": "Steamwheedle Port",
+               "ends": ["Stoley's Debt"],
+               "starts": ["Pirate Hats Ahoy!", "Screecher Spirits", "Stoley's Shipment", "Southsea Shakedown"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 72, "y": 47 },
+               "align": "right",
+               "header": "Lost Rigger Cove",
+               "objectives": ["Wanted: Andre Firebeard", "Pirate Hats Ahoy!", "Southsea Shakedown", "Stoley's Shipment"],
+               "special": ["Hearthstone to Gadgetzan"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "tanaris",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 52, "y": 28 },
+               "align": "top",
+               "header": "Gadgetzan",
+               "ends": ["Gadgetzan Water Survey", "More Wastewander Justice", "Wanted: Caliph Scorpidsting", "Noxious Lair Investigation"],
+               "starts": ["The Scrimshank Redemption", "The Thirsty Goblin", "The Dunemaul Compound", "Thistleshrub Valley"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 67, "y": 23 },
+               "align": "top",
+               "header": "Steamwheedle Port",
+               "ends": ["Pirate Hats Ahoy!", "Stoley's Shipment", "Southsea Shakedown", "Wanted: Andre Firebeard"],
+               "starts": ["Deliver to MacKinley"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 53, "y": 46 },
+               "align": "bottom",
+               "header": "Marvon",
+               "starts": ["Gahz'Ridian"],
+               "special": ["Equip the Helmet"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "tanaris",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 53, "y": 46 },
+               "align": "top",
+               "header": "Marvon",
+               "starts": ["Gahz'Ridian"],
+               "special": ["Equip the Helmet"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 41, "y": 56 },
+               "align": "top",
+               "header": "Dunemaul Compound",
+               "objectives": ["The Dunemaul Compound"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 29, "y": 65 },
+               "header": "Thistleshrub Valley",
+               "objectives": ["The Thirsty Goblin", "Thistleshrub Valley"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 38, "y": 81 },
+               "align": "bottom",
+               "header": "Uldum Pedestal",
+               "ends": ["Seeing What Happens", "The Stone Watcher"],
+               "starts": ["The Stone Watcher", "Return to Thunder Bluff"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 41, "y": 73 },
+               "align": "right",
+               "header": "Southmoon Ruins",
+               "objectives": ["Gahz'Ridian"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "tanaris",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 41, "y": 73 },
+               "header": "Southmoon Ruins",
+               "objectives": ["Gahz'Ridian"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 47, "y": 66 },
+               "align": "top",
+               "header": "Eastmoon Ruins",
+               "objectives": ["Gahz'Ridian"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 55, "y": 71 },
+               "align": "right",
+               "header": "The Gaping Chasm",
+               "objectives": ["The Scrimshank Redemption"],
+               "special": ["Hearthstone to Gadgetzan"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "tanaris",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 52, "y": 28 },
+               "align": "top",
+               "header": "Gadgetzan",
+               "ends": ["The Scrimshank Redemption", ["Insect Part Analysis", "P1-2"], "The Thirsty Goblin", "Thistleshrub Valley", "In Good Taste", "The Dunemaul Compound"],
+               "starts": [["Insect Part Analysis", "P1-3"], "In Good Taste", "Sprinkle's Secret Ingredient", "Rise of the Silithid"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 53, "y": 46 },
+               "align": "bottom",
+               "header": "Marvon",
+               "ends": ["Gahz'Ridian"],
+               "special": ["Equip your normal Helmet"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "tanaris",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 53, "y": 46 },
+               "align": "bottom",
+               "header": "Marvon",
+               "ends": ["Gahz'Ridian"],
+               "special": ["Equip your normal Helmet"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 52, "y": 28 },
+               "align": "top",
+               "header": "Gadgetzan",
+               "special": ["Fly to Freewind Post"],
+               "type": "hub"
+            }
+         ]
+      },
+      {
+         "zone": "needles",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 45, "y": 50 },
+               "align": "bottom",
+               "header": "Freewind Post",
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 10, "y": 15 },
+               "header": "Feralas Border",
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "feralas",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 89, "y": 41 },
+               "align": "bottom",
+               "header": "Feralas Border",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 75, "y": 44 },
+               "align": "bottom",
+               "header": "Camp Mojache",
+               "ends": ["A Threat In Feralas"],
+               "starts": [["The Ogres of Feralas", "P1"], "A New Cloak's Sheen", "Gordunni Cobalt", "War on the Woodpaw", "The Mark of Quality", "A Strange Request", "Natural Materials", "The Sunken Temple"],
+               "special": ["Set Hearthstone"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 73, "y": 38 },
+               "header": "Gnoll Encampment",
+               "objectives": ["War on the Woodpaw", "Natural Materials"],
+               "special": ["Splintered Log"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 76, "y": 34 },
+               "align": "top",
+               "header": "Gordunni Outpost",
+               "objectives": [["The Ogres of Feralas", "P1"], "Gordunni Cobalt"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "feralas",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 76, "y": 34 },
+               "align": "top",
+               "header": "Gordunni Outpost",
+               "objectives": [["The Ogres of Feralas", "P1"], "Gordunni Cobalt"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 69, "y": 49 },
+               "header": "Gnoll Encampment",
+               "objectives": ["A New Cloak's Sheen", "Natural Materials"],
+               "special": ["Encrusted Minerals"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 75, "y": 44 },
+               "align": "bottom",
+               "header": "Camp Mojache",
+               "ends": [["The Ogres of Feralas", "P1"], "A New Cloak's Sheen", "Gordunni Cobalt", "War on the Woodpaw"],
+               "starts": [["The Ogres of Feralas", "P2"], ["A Grim Discovery", "P1"]],
+               "type": "hub"
+            }
+         ]
+      },
+      {
+         "zone": "feralas",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 75, "y": 44 },
+               "align": "top",
+               "header": "Camp Mojache",
+               "ends": [["The Ogres of Feralas", "P1"], "A New Cloak's Sheen", "Gordunni Cobalt", "War on the Woodpaw"],
+               "starts": [["The Ogres of Feralas", "P2"], ["A Grim Discovery", "P1"]],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 67, "y": 46 },
+               "align": "top",
+               "header": "Grimtotem Encampment",
+               "objectives": [["A Grim Discovery", "P1"]],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 60, "y": 60 },
+               "align": "top",
+               "header": "Ruins of Isildien",
+               "objectives": [["The Ogres of Feralas", "P2"]],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 55, "y": 64 },
+               "align": "top",
+               "header": "High Wilderness",
+               "objectives": ["Natural Materials"],
+               "special": ["Metallic Fragments", "Resilient Sinews"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "feralas",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 55, "y": 64 },
+               "header": "High Wilderness",
+               "objectives": ["Natural Materials"],
+               "special": ["Metallic Fragments", "Resilient Sinews"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 55, "y": 56 },
+               "header": "Feral Scar Vale",
+               "objectives": ["The Mark of Quality"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 57, "y": 55 },
+               "align": "top",
+               "header": "Placeholder",
+               "objectives": ["Screecher Spirits"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 75, "y": 44 },
+               "align": "top",
+               "header": "Camp Mojache",
+               "ends": [["The Ogres of Feralas", "P2"], ["A Grim Discovery", "P1"], "The Mark of Quality", "Natural Materials"],
+               "starts": [["A Grim Discovery", "P2"], "Improved Quality"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 45, "y": 43 },
+               "align": "top",
+               "header": "Zorbin Fandazzle",
+               "starts": ["Zapped Giants", "Fuel for the Zapping"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "feralas",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 45, "y": 43 },
+               "align": "top",
+               "header": "Zorbin Fandazzle",
+               "starts": ["Zapped Giants", "Fuel for the Zapping"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 46, "y": 52 },
+               "header": "The Forgotten Coast",
+               "objectives": ["Zapped Giants", "Fuel for the Zapping"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 46, "y": 59 },
+               "header": "The Forgotten Coast",
+               "objectives": ["Zapped Giants", "Fuel for the Zapping"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "feralas",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 46, "y": 59 },
+               "header": "The Forgotten Coast",
+               "objectives": ["Zapped Giants", "Fuel for the Zapping"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 45, "y": 43 },
+               "header": "Zorbin Fandazzle",
+               "ends": ["Zapped Giants", "Fuel for the Zapping"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 53, "y": 32 },
+               "align": "top",
+               "header": "Rage Scar Hold",
+               "starts": [["Pristine Yeti Hide", "R"]],
+               "objectives": ["Improved Quality"],
+               "special": ["Hearthstone to Camp Mojache"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "feralas",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 75, "y": 44 },
+               "align": "top",
+               "header": "Camp Mojache",
+               "ends": ["Improved Quality", "Pristine Yeti Hide"],
+               "starts": ["Alpha Strikes"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 71, "y": 56 },
+               "header": "Woodpaw Hills",
+               "objectives": ["Alpha Strikes"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "feralas",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 71, "y": 56 },
+               "header": "Woodpaw Hills",
+               "objectives": ["Alpha Strikes"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 75, "y": 44 },
+               "align": "top",
+               "header": "Camp Mojache",
+               "ends": ["Alpha Strikes"],
+               "starts": ["Woodpaw Investigation"],
+               "type": "hub"
+            }
+         ]
+      },
+      {
+         "zone": "feralas",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 75, "y": 44 },
+               "align": "top",
+               "header": "Camp Mojache",
+               "ends": ["Alpha Strikes"],
+               "starts": ["Woodpaw Investigation"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 72, "y": 56 },
+               "header": "Woodpaw Battle Map",
+               "ends": ["Woodpaw Investigation"],
+               "starts": ["The Battle Plans"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "feralas",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 72, "y": 56 },
+               "header": "Woodpaw Battle Map",
+               "ends": ["Woodpaw Investigation"],
+               "starts": ["The Battle Plans"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 75, "y": 44 },
+               "align": "right",
+               "header": "Camp Mojache",
+               "ends": ["The Battle Plans"],
+               "starts": ["Zukk'ash Infestation", "Stinglasher"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 76, "y": 61 },
+               "align": "right",
+               "header": "The Writing Deep",
+               "objectives": ["Zukk'ash Infestation", "Stinglasher"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "feralas",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 76, "y": 61 },
+               "align": "right",
+               "header": "The Writing Deep",
+               "objectives": ["Zukk'ash Infestation", "Stinglasher"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 75, "y": 44 },
+               "align": "right",
+               "header": "Camp Mojache",
+               "ends": ["Zukk'ash Infestation", "Stinglasher"],
+               "starts": ["Zukk'ash Report"],
+               "special": ["Fly to Thunder Bluff"],
+               "type": "hub"
+            }
+         ]
+      },
+      {
+         "zone": "thunderbluff",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 47, "y": 50 },
+               "align": "bottom",
+               "header": "Thunder Bluff Flightpath",
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 76, "y": 31 },
+               "align": "bottom",
+               "header": "Nara Wildmane",
+               "ends": ["Return to Thunder Bluff"],
+               "starts": ["A Future Task"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 34, "y": 47 },
+               "align": "bottom",
+               "header": "Sage Truthseeker",
+               "ends": ["A Future Task"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "thunderbluff",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 34, "y": 47 },
+               "align": "bottom",
+               "header": "Sage Truthseeker",
+               "ends": ["A Future Task"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 47, "y": 50 },
+               "align": "bottom",
+               "header": "Thunder Bluff Flightpath",
+               "special": ["Fly to Orgrimmar"],
+               "type": "flightpath"
+            }
+         ]
+      },
+      {
+         "zone": "orgrimmar",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 45, "y": 64 },
+               "header": "Orgrimmar Flightpath",
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 47, "y": 53 },
+               "header": "Neeru Fireblade",
+               "ends": ["A Strange Request"],
+               "starts": ["Return to Witch Doctor Uzer'i"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 56, "y": 47 },
+               "align": "top",
+               "header": "Zilzibin Drumlore",
+               "ends": ["Rise of the Silithid", "Zukk'ash Report"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 75, "y": 34 },
+               "align": "top",
+               "header": "Belgrom Rockmaul",
+               "ends": [["A Grim Discovery", "P2"]],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "orgrimmar",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 75, "y": 34 },
+               "align": "top",
+               "header": "Belgrom Rockmaul",
+               "ends": [["A Grim Discovery", "P2"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 45, "y": 64 },
+               "header": "Orgrimmar Flightpath",
+               "special": ["Fly to Camp Mojache"],
+               "type": "flightpath"
+            }
+         ]
+      },
+      {
+         "zone": "feralas",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 75, "y": 44 },
+               "align": "right",
+               "header": "Camp Mojache",
+               "ends": ["Return to Witch Doctor Uzer'i"],
+               "starts": ["Testing the Vessel"],
+               "special": ["Fly to Tanaris"],
+               "type": "hub"
+            }
+         ]
+      },
+      {
+         "zone": "tanaris",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 50, "y": 29 },
+               "align": "bottom",
+               "header": "Gadgetzan",
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 66, "y": 22 },
+               "align": "top",
+               "header": "Steamwheedle Port",
+               "ends": ["Screecher Spirits"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 53, "y": 46 },
+               "align": "bottom",
+               "header": "Marvon",
+               "ends": ["The Sunken Temple"],
+               "starts": ["The Stone Circle"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "tanaris",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 53, "y": 46 },
+               "header": "Marvon",
+               "ends": ["The Sunken Temple"],
+               "starts": ["The Stone Circle"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 50, "y": 29 },
+               "header": "Gadgetzan",
+               "special": ["Fly to Ratchet"],
+               "type": "flightpath"
+            }
+         ]
+      },
+      {
+         "zone": "barrens",
+         "experience": 47.93,
+         "waypoints": [
+            {
+               "coords": { "x": 63, "y": 37 },
+               "align": "top",
+               "header": "Ratchet Flightpath",
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 63, "y": 39 },
+               "align": "bottom",
+               "header": "Marvon's Chest",
+               "objectives": ["The Stone Circle"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "barrens",
+         "experience": 47.93,
+         "waypoints": [
+            {
+               "coords": { "x": 63, "y": 39 },
+               "align": "bottom",
+               "header": "Marvon's Chest",
+               "objectives": ["The Stone Circle"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 63, "y": 37 },
+               "align": "top",
+               "header": "Ratchet Flightpath",
+               "special": ["Fly to Orgrimmar"],
+               "type": "flightpath"
+            }
+         ]
+      },
+      {
+         "zone": "orgrimmar",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 45, "y": 64 },
+               "header": "Orgrimmar Flightpath",
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 49, "y": 92 },
+               "header": "Orgrimmar Gates",
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "tirisfal",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 61, "y": 59 },
+               "header": "Zeppelin Station",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 62, "y": 65 },
+               "header": "Undercity Gates",
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "undercity",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 71, "y": 44 },
+               "align": "right",
+               "header": "Undercity Lifts",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 73, "y": 32 },
+               "align": "top",
+               "header": "Oran Snakewrithe",
+               "starts": ["Lines of Communication"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 49, "y": 67 },
+               "header": "Apothecary Zinge",
+               "starts": ["Return to Apothecary Zinge"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 64, "y": 48 },
+               "align": "right",
+               "header": "Undercity Flightpath",
+               "special": ["Fly to Hinterlands"],
+               "type": "flightpath"
+            }
+         ]
+      },
+      {
+         "zone": "hinterlands",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 82, "y": 82 },
+               "align": "bottom",
+               "header": "Revantusk Flightpath",
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 78, "y": 80 },
+               "align": "bottom",
+               "header": "Revantusk Village",
+               "starts": ["Snapjaws, Mon!", "Stalking the Stalkers", "Avenging the Fallen", "Hunt the Savages", "Message to the Wildhammer", "Cannibalistic Cousins", "Lard Lost His Lunch", "Vilebranch Hooligans"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 78, "y": 64 },
+               "align": "right",
+               "header": "The Overlook Cliffs",
+               "objectives": ["Snapjaws, Mon!"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 67, "y": 59 },
+               "align": "bottom",
+               "header": "Placeholder",
+               "objectives": ["Stalking the Stalkers"],
+               "special": ["Stalkers"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 73, "y": 53 },
+               "align": "right",
+               "header": "Shaol'watha",
+               "objectives": ["Vilebranch Hooligans"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "hinterlands",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 73, "y": 53 },
+               "align": "right",
+               "header": "Shaol'watha",
+               "objectives": ["Vilebranch Hooligans"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 71, "y": 48 },
+               "align": "right",
+               "header": "Placeholder",
+               "objectives": ["Vilebranch Hooligans", "Cannibalistic Cousins"],
+               "special": ["Soothsayers"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 66, "y": 45 },
+               "align": "top",
+               "header": "Placeholder",
+               "objectives": ["Vilebranch Hooligans", "Cannibalistic Cousins"],
+               "special": ["Scalpers"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 57, "y": 39 },
+               "header": "Skulk Rock",
+               "objectives": ["A Sticky Situation"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 56, "y": 49 },
+               "header": "Placeholder",
+               "objectives": ["Avenging the Fallen", "Hunt the Savages", "Testing the Vessel"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "hinterlands",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 56, "y": 49 },
+               "align": "bottom",
+               "header": "Placeholder",
+               "objectives": ["Avenging the Fallen", "Hunt the Savages", "Testing the Vessel"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 49, "y": 59 },
+               "align": "bottom",
+               "header": "Placeholder",
+               "objectives": ["Stalking the Stalkers"],
+               "special": ["Howlers"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 49, "y": 59 },
+               "align": "bottom",
+               "header": "Placeholder",
+               "objectives": ["Stalking the Stalkers"],
+               "special": ["Howlers"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 40, "y": 60 },
+               "align": "bottom",
+               "header": "Vaorwind Lake",
+               "objectives": ["Sprinkle's Secret Ingredient"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 35, "y": 67 },
+               "align": "bottom",
+               "header": "Shadra'Alor",
+               "objectives": ["Undamaged Venom Sac"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "hinterlands",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 35, "y": 67 },
+               "align": "bottom",
+               "header": "Shadra'Alor",
+               "objectives": ["Undamaged Venom Sac"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 31, "y": 48 },
+               "align": "top",
+               "header": "Quel'Danil Lodge",
+               "objectives": ["Message to the Wildhammer", "Lines of Communication"],
+               "starts": [["Rin'ji Is Trapped", "F"]],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 27, "y": 48 },
+               "align": "top",
+               "header": "Gilveradin Sunchaser",
+               "ends": ["A Sticky Situation"],
+               "starts": ["Ripple Delivery"],
+               "special": ["Hearthstone to Revantusk Village"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "hinterlands",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 78, "y": 80 },
+               "align": "bottom",
+               "header": "Revantusk Village",
+               "ends": ["Snapjaws, Mon!", "Stalking the Stalkers", "Avenging the Fallen", "Hunt the Savages", "Message to the Wildhammer", "Cannibalistic Cousins", "Vilebranch Hooligans"],
+               "starts": [["Gammerita, Mon!", "E"]],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 78, "y": 62 },
+               "header": "Gammerita",
+               "objectives": [["Gammerita, Mon!", "E"]],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 86, "y": 59 },
+               "align": "right",
+               "header": "Rin'ji's Secret",
+               "ends": [["Rin'ji Is Trapped", "F"]],
+               "starts": ["Rin'ji's Secret"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 85, "y": 41 },
+               "align": "right",
+               "header": "Placeholder",
+               "objectives": ["Lard Lost His Lunch"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "hinterlands",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 85, "y": 41 },
+               "align": "right",
+               "header": "Placeholder",
+               "objectives": ["Lard Lost His Lunch"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 78, "y": 80 },
+               "align": "bottom",
+               "header": "Revantusk Village",
+               "starts": [["Gammerita, Mon!", "E"], "Lard Lost His Lunch"],
+               "special": ["Fly to Tarren Mill"],
+               "type": "hub"
+            }
+         ]
+      },
+      {
+         "zone": "hillsbrad",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 60, "y": 19 },
+               "align": "right",
+               "header": "Tarren Mill",
+               "ends": ["Undamaged Venom Sac"],
+               "starts": ["Consult Master Gadrin"],
+               "special": ["Fly to Undercity"],
+               "type": "hub"
+            }
+         ]
+      },
+      {
+         "zone": "undercity",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 63, "y": 48 },
+               "header": "Undercity Flightpath",
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 73, "y": 32 },
+               "align": "top",
+               "header": "Oran Snakewrithe",
+               "ends": ["Lines of Communication", "Rin'ji's Secret", "Oran's Gratitude"],
+               "starts": ["Oran's Gratitude"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 71, "y": 44 },
+               "align": "right",
+               "header": "Undercity Lifts",
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "tirisfal",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 62, "y": 65 },
+               "header": "Undercity Gates",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 61, "y": 59 },
+               "header": "Zeppelin Station",
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "durotar",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 51, "y": 13 },
+               "align": "right",
+               "header": "Zeppelin Station",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 56, "y": 75 },
+               "align": "bottom",
+               "header": "Master Gadrin",
+               "ends": ["Consult Master Gadrin"],
+               "starts": ["The Spider God"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 46, "y": 12 },
+               "header": "Orgrimmar Gates",
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "orgrimmar",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 49, "y": 92 },
+               "header": "Orgrimmar Gates",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 59, "y": 36 },
+               "align": "right",
+               "header": "Dran Droffers",
+               "ends": ["Ripple Delivery"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 39, "y": 86 },
+               "header": "Uthel'nay",
+               "starts": [["Shadowshard Fragments", "D"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 45, "y": 64 },
+               "header": "Orgrimmar Flightpath",
+               "special": ["Fly to Tanaris"],
+               "type": "flightpath"
+            }
+         ]
+      },
+      {
+         "zone": "tanaris",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 50, "y": 29 },
+               "align": "bottom",
+               "header": "Gadgetzan",
+               "ends": ["Sprinkle's Secret Ingredient", "Delivery for Marin"],
+               "starts": ["Delivery for Marin", ["Divino-matic Rod", "D"], ["Scarab Shells", "D"], ["Troll Temper", "D"]],
+               "special": ["Set Hearthstone"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 66, "y": 22 },
+               "align": "top",
+               "header": "Steamwheedle Port",
+               "starts": [["The Prophecy of Mosh'aru", "D"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 53, "y": 46 },
+               "align": "bottom",
+               "header": "Marvon",
+               "ends": ["The Stone Circle"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 39, "y": 20 },
+               "header": "Zul'Farrak",
+               "objectives": [["The Prophecy of Mosh'Aru", "D"], ["Divino-matic Rod", "D"], ["Troll Temper", "D"], ["Scarab Shells", "D"], ["Gahz'rilla", "D"], ["Tiara of the Deep", "D"]],
+               "special": ["Hearthstone to Gadgetzan"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "tanaris",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 50, "y": 29 },
+               "align": "bottom",
+               "header": "Gadgetzan",
+               "ends": [["Divino-matic Rod", "D"], ["Scarab Shells", "D"], ["Troll Temper", "D"]],
+               "special": ["Set Hearthstone"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 66, "y": 22 },
+               "align": "top",
+               "header": "Steamwheedle Port",
+               "ends": [["The Prophecy of Mosh'aru", "D"]],
+               "starts": ["The Ancient Egg"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 51, "y": 21 },
+               "align": "top",
+               "header": "Thousand Needles Border",
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "needles",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 75, "y": 96 },
+               "header": "Tanaris Border",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 78, "y": 77 },
+               "align": "top",
+               "header": "Shimmering Flats",
+               "ends": [["Gahz'rilla", "D"]],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "needles",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 78, "y": 77 },
+               "align": "top",
+               "header": "Shimmering Flats",
+               "ends": [["Gahz'rilla", "D"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 75, "y": 96 },
+               "header": "Tanaris Border",
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "tanaris",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 51, "y": 21 },
+               "align": "top",
+               "header": "Thousand Needles Border",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 52, "y": 25 },
+               "align": "bottom",
+               "header": "Tanaris Flightpath",
+               "special": ["Fly to Desolace"],
+               "type": "flightpath"
+            }
+         ]
+      },
+      {
+         "zone": "desolace",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 24, "y": 71 },
+               "header": "Shadowprey Village",
+               "starts": ["Vyletongue Corruptions"],
+               "special": ["Set Hearthstone"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 27, "y": 78 },
+               "align": "bottom",
+               "header": "Selendra",
+               "starts": ["Corruption of Earth and Seed"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 50, "y": 87 },
+               "align": "right",
+               "header": "Centaur Pariah",
+               "starts": [["The Pariah's Instructions", "D"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 62, "y": 40 },
+               "align": "right",
+               "header": "Willow",
+               "starts": [["Twisted Evils", "D"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 30, "y": 62 },
+               "header": "Maraudon",
+               "starts": [["Legends of Maraudon", "D"], ["Seed of Life", "D"]],
+               "objectives": [["Shadowshard Fragments", "D"], ["Vyletongue Corruption", "D"], ["Corruption of Earth and Seed", "D"], ["Twisted Evils", "D"], ["The Pariah's Instructions", "D"]],
+               "special": ["Hearthstone to Shadowprey"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "desolace",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 24, "y": 71 },
+               "header": "Shadowprey Village",
+               "ends": ["Vyletongue Corruptions"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 27, "y": 78 },
+               "align": "bottom",
+               "header": "Selendra",
+               "ends": ["Corruption of Earth and Seed"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 50, "y": 87 },
+               "align": "right",
+               "header": "Centaur Pariah",
+               "ends": [["The Pariah's Instructions", "D"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 62, "y": 40 },
+               "align": "right",
+               "header": "Willow",
+               "ends": [["Twisted Evils", "D"]],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "desolace",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 62, "y": 40 },
+               "align": "right",
+               "header": "Willow",
+               "ends": [["Twisted Evils", "D"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 24, "y": 71 },
+               "header": "Shadowprey Village",
+               "ends": ["Vyletongue Corruptions"],
+               "special": ["Fly to Feralas"],
+               "type": "hub"
+            }
+         ]
+      },
+      {
+         "zone": "feralas",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 75, "y": 44 },
+               "align": "top",
+               "header": "Camp Mojache",
+               "ends": ["Testing the Vessel"],
+               "special": ["Fly to Dustwallow Marsh"],
+               "type": "hub"
+            }
+         ]
+      },
+      {
+         "zone": "dustwallow",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 36, "y": 31 },
+               "header": "Brackenwall Village",
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 46, "y": 57 },
+               "align": "right",
+               "header": "Tabetha",
+               "ends": ["Tiara of the Deep"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "dustwallow",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 46, "y": 57 },
+               "align": "right",
+               "header": "Tabetha",
+               "ends": ["Tiara of the Deep"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 36, "y": 31 },
+               "header": "Brackenwall Village",
+               "special": ["Fly to Orgrimmar"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "orgrimmar",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 45, "y": 64 },
+               "align": "top",
+               "header": "Orgrimmar Flightpath",
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 39, "y": 86 },
+               "header": "Uthel'nay",
+               "ends": [["Shadowshard Fragments", "D"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 56, "y": 63 },
+               "align": "right",
+               "header": "OG Auction House",
+               "special": ["Buy 15x Silk Cloth"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 49, "y": 92 },
+               "align": "right",
+               "header": "Orgrimmar Gates",
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "durotar",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 46, "y": 12 },
+               "align": "right",
+               "header": "Orgrimmar Gates",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 56, "y": 75 },
+               "align": "bottom",
+               "header": "Master Gadrin",
+               "ends": ["The Spider God"],
+               "starts": ["Summoning Shadra"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 35, "y": 79 },
+               "align": "bottom",
+               "header": "Ratchet Harbor",
+               "special": ["Sail to Booty Bay"],
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "stv",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 26, "y": 73 },
+               "align": "top",
+               "header": "Booty Bay Harbor",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 34, "y": 76 },
+               "align": "top",
+               "header": "Half-Buried Bottle",
+               "starts": [["Message in a Bottle", "P1"]],
+               "special": ["Plenty of bottles on the Beach"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 39, "y": 81 },
+               "align": "top",
+               "header": "Princess Poobah",
+               "ends": [["Message in a Bottle", "P1"]],
+               "starts": [["Message in a Bottle", "P2"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 41, "y": 84 },
+               "align": "right",
+               "header": "Januero Isle",
+               "objectives": [["Message in a Bottle", "P2"]],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "stv",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 41, "y": 84 },
+               "align": "right",
+               "header": "Januero Isle",
+               "objectives": [["Message in a Bottle", "P2"]],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 39, "y": 81 },
+               "align": "top",
+               "header": "Princess Poobah",
+               "ends": [["Message in a Bottle", "P2"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 25, "y": 85 },
+               "header": "Swim Around",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 23, "y": 72 },
+               "header": "Mok'Rash",
+               "starts": ["The Monogrammed Sash"],
+               "special": ["Kill & Loot the Giant"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "stv",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 23, "y": 72 },
+               "header": "Mok'Rash",
+               "starts": ["The Monogrammed Sash"],
+               "special": ["Kill & Loot the Giant"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 26, "y": 73 },
+               "align": "top",
+               "header": "Captain Hecklebury Smotts",
+               "ends": ["The Monogrammed Sash", "Sprogger"],
+               "starts": ["Sprogger"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 28, "y": 78 },
+               "align": "right",
+               "header": "Booy Bay",
+               "ends": ["Deliver to MacKinley"],
+               "special": ["Fly to Kargath"],
+               "type": "hub"
+            }
+         ]
+      },
+      {
+         "zone": "badlands",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 6, "y": 45 },
+               "align": "right",
+               "header": "Kargath",
+               "ends": ["Necklace Recovery, Take 3"],
+               "special": ["Fly to Undercity"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 3, "y": 63 },
+               "align": "right",
+               "header": "Searing Gorge Border",
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "searing",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 74, "y": 56 },
+               "align": "right",
+               "header": "Badlands Border",
+               "type": "travel"
             }
          ]
       }
