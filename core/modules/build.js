@@ -100,7 +100,7 @@ function build(faction) {
          // DECLARE DATA OBJECT
          var data = {
             build: [],
-            storage: 'questing-page',
+            storage: 'horde',
             current: '0',
             stats: {
                blocks: 0,
