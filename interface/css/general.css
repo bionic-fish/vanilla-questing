@@ -133,3 +133,8 @@ a:hover { color: rgb(175, 30, 30); }
    text-align: center;
    text-shadow: 1px 1px #242424;
 }
+
+#alert a:link, #alert a:visited {
+   color: white;
+   text-decoration: underline;
+}

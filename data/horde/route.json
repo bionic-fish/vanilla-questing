@@ -5055,7 +5055,7 @@
                "coords": { "x": 52, "y": 31 },
                "align": "right",
                "header": "The Crossroads",
-               "starts": [[["The Swarm Grows", "P1"], "P1"]],
+               "starts": [["The Swarm Grows", "P1"]],
                "special": ["Fly to Orgrimmar"],
                "type": "hub"
             }
@@ -12184,7 +12184,7 @@
             {
                "coords": { "x": 58, "y": 87 },
                "header": "Jintha'Alor Cave",
-               "objectives": [[["The Ancient Egg", "E"], "E"], ["Recover the Key!", "E"], ["Wanted: Vile Priestess Hexx and Her Minions", "E"]],
+               "objectives": [["The Ancient Egg", "E"], ["Recover the Key!", "E"], ["Wanted: Vile Priestess Hexx and Her Minions", "E"]],
                "type": "objective"
             }
          ]
@@ -12197,7 +12197,7 @@
                "coords": { "x": 58, "y": 87 },
                "align": "right",
                "header": "Jintha'Alor Cave",
-               "objectives": [[["The Ancient Egg", "E"], "E"], ["Recover the Key!", "E"], ["Wanted: Vile Priestess Hexx and Her Minions", "E"]],
+               "objectives": [["The Ancient Egg", "E"], ["Recover the Key!", "E"], ["Wanted: Vile Priestess Hexx and Her Minions", "E"]],
                "type": "objective"
             },
             {
@@ -12273,7 +12273,7 @@
                "align": "bottom",
                "header": "The Apothecarium",
                "ends": ["Venom to the Undercity"],
-               "starts": ["Seeping Corruption", "A Sample of Slime", "And a Batch of Ooze"],
+               "starts": ["Seeping Corruption", "A Sample of Slime", "And a Batch of Ooze", "Vivian Lagrave"],
                "type": "quest"
             },
             {
@@ -13951,7 +13951,6 @@
                "coords": { "x": 62, "y": 39 },
                "header": "Ratchet",
                "ends": ["Marvon's Workshop"],
-               "starts": ["Volcanic Activity"],
                "type": "quest"
             },
             {
@@ -13995,6 +13994,7 @@
                "coords": { "x": 6, "y": 45 },
                "align": "right",
                "header": "Kargath",
+               "ends": ["Vivian Lagrave"],
                "starts": ["Dreadmaul Rock", ["The Rise of the Machines", "P1"]],
                "special": ["Fly to Burning Steppes"],
                "type": "hub"
@@ -14121,7 +14121,7 @@
                "coords": { "x": 6, "y": 45 },
                "align": "top",
                "header": "Kargath",
-               "starts": [["Disharmony of Flames", "D"], ["The Last Element", "D"], ["Kill on Sight: Dark Iron Dwarves", "D"]],
+               "starts": [["Disharmony of Flames", "D"], ["The Last Element", "D"], ["Kill on Sight: Dark Iron Dwarves", "D"], ["Lost Thunderbrew Recipe", "D"]],
                "type": "hub"
             },
             {
@@ -14146,7 +14146,7 @@
                "coords": { "x": 35, "y": 84 },
                "header": "Blackrock Depths",
                "starts": ["Attunement to the Core", ["Dark Iron Legacy", "D"]],
-               "objectives": [["A Taste of Flame", "D"], ["Disharmony of Flames", "D"], ["The Last Element", "D"], ["Kill on Sight: Dark Iron Dwarves", "D"], ["The Heart of the Mountain", "D"], ["Ribbly Screwspigot", "D"], ["The Rise of the Machines", "D"]],
+               "objectives": [["A Taste of Flame", "D"], ["Disharmony of Flames", "D"], ["The Last Element", "D"], ["Kill on Sight: Dark Iron Dwarves", "D"], ["The Heart of the Mountain", "D"], ["Ribbly Screwspigot", "D"], ["The Rise of the Machines", "D"], ["Lost Thunderbrew Recipe", "D"]],
                "special": ["HS after kill quest"],
                "type": "objective"
             }
@@ -14185,7 +14185,7 @@
             {
                "coords": { "x": 35, "y": 84 },
                "header": "Blackrock Depths",
-               "objectives": [["A Taste of Flame", "D"], ["The Last Element", "D"], ["The Heart of the Mountain", "D"], ["Ribbly Screwspigot", "D"], ["The Rise of the Machines", "D"], ["Attunement to the Core", "D"], ["Dark Iron Legacy", "D"], ["Kill on Sight: High Ranking Drak Iron Officials", "D"], ["Commander Gor'shak", "D"], ["Disharmony of Fire", "D"]],
+               "objectives": [["A Taste of Flame", "D"], ["The Last Element", "D"], ["The Heart of the Mountain", "D"], ["Ribbly Screwspigot", "D"], ["The Rise of the Machines", "D"], ["Attunement to the Core", "D"], ["Dark Iron Legacy", "D"], ["Kill on Sight: High Ranking Drak Iron Officials", "D"], ["Commander Gor'shak", "D"], ["Disharmony of Fire", "D"], ["Lost Thunderbrew Recipe", "D"]],
                "special": ["Camp out & return the MC quest"],
                "type": "objective"
             }
@@ -14199,7 +14199,7 @@
                "coords": { "x": 6, "y": 45 },
                "align": "top",
                "header": "Kargath",
-               "ends": [["Kill on Sight: High Ranking Drak Iron Officials", "D"], ["Disharmony of Fire", "D"], ["The Last Element", "D"]],
+               "ends": [["Kill on Sight: High Ranking Drak Iron Officials", "D"], ["Disharmony of Fire", "D"], ["The Last Element", "D"], ["Lost Thunderbrew Recipe", "D"]],
                "type": "hub"
             },
             {
@@ -14300,7 +14300,7 @@
                "coords": { "x": 49, "y": 69 },
                "header": "The Apothecarium",
                "ends": ["A Sample of Slime", "And a Batch of Ooze", "Seeping Corruption"],
-               "starts": ["Melding of Influences", "Seeping Corruption"],
+               "starts": ["Seeping Corruption"],
                "special": ["Use the cauldrons"],
                "type": "quest"
             },
@@ -14355,7 +14355,1804 @@
                "align": "top",
                "header": "The Bulwark",
                "ends": ["A Call to Arms: The Plaguelands!", "The Everlook Report"],
-               "starts": ["Scarlet Diversions", "A Plague Upon Thee"],
+               "starts": ["Scarlet Diversions", ["A Plague Upon Thee", "P1"]],
+               "type": "hub"
+            }
+         ]
+      },
+      {
+         "zone": "wpl",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 27, "y": 58 },
+               "header": "The Bulwark",
+               "ends": ["A Call to Arms: The Plaguelands!", "The Everlook Report"],
+               "starts": ["Scarlet Diversions", ["A Plague Upon Thee", "P1"]],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 38, "y": 54 },
+               "align": "top",
+               "header": "Janice Felstone",
+               "starts": [["Better Late Than Never", "P1"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 39, "y": 55 },
+               "align": "bottom",
+               "header": "Janice's Parcel",
+               "ends": [["Better Late Than Never", "P1"]],
+               "starts": [["Better Late Than Never", "P2"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 52, "y": 28 },
+               "align": "right",
+               "header": "Kirsta Deepshadow",
+               "starts": [["Unfinished Business", "P1"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 52, "y": 45 },
+               "align": "right",
+               "header": "Scarlet Encampment",
+               "objectives": [["Unfinished Business", "P1"]],
+               "special": ["Mages & Knights"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "wpl",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 52, "y": 45 },
+               "align": "top",
+               "header": "Scarlet Encampment",
+               "objectives": [["Unfinished Business", "P1"]],
+               "special": ["Mages & Knights"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 41, "y": 52 },
+               "header": "Scarlet Tent",
+               "objectives": [["Unfinished Business", "P1"], "Scarlet Diversions"],
+               "special": ["Medics & Hunters"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 54, "y": 65 },
+               "align": "bottom",
+               "header": "Mulgris Deepriver",
+               "starts": [["The Wildlife Suffers Too", "P1"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 70, "y": 50 },
+               "align": "right",
+               "header": "Eastern Plaguelands Border",
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "epl",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 12, "y": 73 },
+               "header": "Western Plaguelands Border",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 8, "y": 44 },
+               "header": "Tirion Fordring",
+               "starts": ["Blood Tinged Skies", "Demon Dogs", "Carrion Grubbage"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 20, "y": 69 },
+               "align": "top",
+               "header": "Placeholder",
+               "objectives": ["Blood Tinged Skies", "Demon Dogs", "Carrion Grubbage"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 27, "y": 75 },
+               "align": "right",
+               "header": "Nathanos Blightcaller",
+               "ends": ["The Champion of the Banshee Queen"],
+               "starts": ["To Kill With Purpose", "Un-Life's Little Annoyances", "The Call to Command", "The Ranger Lord's Behest"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "epl",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 27, "y": 75 },
+               "header": "Nathanos Blightcaller",
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 27, "y": 85 },
+               "header": "The Undercroft",
+               "starts": ["Hameya's Plea"],
+               "special": ["Click the scroll downstairs"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 37, "y": 80 },
+               "align": "top",
+               "header": "Placeholder",
+               "objectives": ["Blood Tinged Skies", "Demon Dogs", "Carrion Grubbage"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 36, "y": 91 },
+               "align": "bottom",
+               "header": "Pamela Redpath",
+               "ends": ["Sister Pamela"],
+               "starts": ["Pamela's Doll"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 39, "y": 91 },
+               "align": "bottom",
+               "header": "Darrowshire",
+               "objectives": ["Pamela's Doll"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "epl",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 39, "y": 91 },
+               "align": "right",
+               "header": "Darrowshire",
+               "objectives": ["Pamela's Doll"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 36, "y": 91 },
+               "header": "Pamela Redpath",
+               "ends": ["Pamela's Doll"],
+               "starts": ["Auntie Marlene", "Uncle Carlin"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 59, "y": 69 },
+               "align": "top",
+               "header": "Corin's Crossing",
+               "objectives": ["To Kill With Purpose"],
+               "special": ["Farm 7x Living Rot"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 80, "y": 64 },
+               "align": "bottom",
+               "header": "Caretaker Alen",
+               "starts": ["Zaeldarr the Outcast"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 83, "y": 59 },
+               "align": "right",
+               "header": "Eastern Plaguelands Flightpath",
+               "special": ["Learn the Flightpath"],
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 81, "y": 59 },
+               "align": "top",
+               "header": "Light's Hope Chapel",
+               "ends": ["Duke Nicholas Zverenhoff", "Uncle Carlin"],
+               "type": "hub"
+            }
+         ]
+      },
+      {
+         "zone": "epl",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 81, "y": 59 },
+               "align": "right",
+               "header": "Light's Hope Chapel",
+               "ends": ["Duke Nicholas Zverenhoff", "Uncle Carlin"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 57, "y": 57 },
+               "align": "bottom",
+               "header": "Placeholder",
+               "objectives": ["Demon Dogs", "Un-Life's Little Annoyances"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 50, "y": 40 },
+               "align": "top",
+               "header": "Placeholder",
+               "objectives": ["Demon Dogs", "Un-Life's Little Annoyances"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 43, "y": 34 },
+               "align": "top",
+               "header": "Large Termite Mound",
+               "objectives": [["A Plague Upon Thee", "P1"]],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 42, "y": 38 },
+               "header": "Large Termite Mound",
+               "objectives": [["A Plague Upon Thee", "P1"]],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "epl",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 42, "y": 38 },
+               "align": "bottom",
+               "header": "Large Termite Mound",
+               "objectives": [["A Plague Upon Thee", "P1"]],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 39, "y": 35 },
+               "header": "Large Termite Mound",
+               "objectives": [["A Plague Upon Thee", "P1"]],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 53, "y": 19 },
+               "align": "top",
+               "header": "Quel'Lithien Lodge",
+               "objectives": [ "The Ranger Lord's Behest"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 70, "y": 17 },
+               "align": "top",
+               "header": "Zul'Mashar",
+               "objectives": ["Hameya's Plea"],
+               "special": ["Kill the Infiltrator with CDs", "Hearthstone to Undercity"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "undercity",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 68, "y": 38 },
+               "align": "top",
+               "header": "Innkeeper Norman",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 70, "y": 43 },
+               "align": "right",
+               "header": "Royal Overseer Bauhaus",
+               "ends": [["Better Late Than Never", "P2"]],
+               "starts": ["The Jeremiah Blues"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 67, "y": 44 },
+               "header": "Jeremiah Payson",
+               "ends": ["The Jeremiah Blues"],
+               "starts": ["Good Luck Charm"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "undercity",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 67, "y": 44 },
+               "header": "Jeremiah Payson",
+               "ends": ["The Jeremiah Blues"],
+               "starts": ["Good Luck Charm"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 56, "y": 92 },
+               "align": "bottom",
+               "header": "Varimathras",
+               "ends": ["The Call to Command"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 71, "y": 44 },
+               "align": "right",
+               "header": "Undercity Lifts",
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "tirisfal",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 62, "y": 65 },
+               "align": "top",
+               "header": "Undercity Gates",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 83, "y": 71 },
+               "align": "top",
+               "header": "The Bulwark",
+               "ends": ["Scarlet Diversions", "The Scourge Cauldrons", ["A Plague Upon Thee", "P1"]],
+               "starts": [["A Plague Upon Thee", "P2"], "All Along the Watchtowers", "The Scourge Cauldrons", "Target: Felstone Field"],
+               "type": "hub"
+            }
+         ]
+      },
+      {
+         "zone": "wpl",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 27, "y": 58 },
+               "header": "The Bulwark",
+               "ends": ["Scarlet Diversions", "The Scourge Cauldrons", ["A Plague Upon Thee", "P1"]],
+               "starts": [["A Plague Upon Thee", "P2"], "All Along the Watchtowers", "The Scourge Cauldrons", "Target: Felstone Field"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 38, "y": 54 },
+               "align": "top",
+               "header": "Janice Felstone",
+               "ends": ["Good Luck Charm"],
+               "starts": ["Two Halves Become One"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 37, "y": 57 },
+               "header": "Felstone Field",
+               "objectives": ["Two Halves Become One"],
+               "ends": ["Target: Felstone Field"],
+               "starts": ["Return to The Bulwark"],
+               "special": ["Kill the Ghoul & Cauldron Lord"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "wpl",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 37, "y": 57 },
+               "header": "Felstone Field",
+               "objectives": ["Two Halves Become One"],
+               "ends": ["Target: Felstone Field"],
+               "starts": ["Return to The Bulwark"],
+               "special": ["Kill the Ghoul & Cauldron Lord"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 38, "y": 54 },
+               "align": "top",
+               "header": "Janice Felstone",
+               "ends": ["Two Halves Become One"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 43, "y": 54 },
+               "align": "bottom",
+               "header": "Placeholder",
+               "objectives": [["The Wildlife Suffers Too", "P1"]],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 46, "y": 48 },
+               "align": "right",
+               "header": "Placeholder",
+               "objectives": [["The Wildlife Suffers Too", "P1"]],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 48, "y": 32 },
+               "align": "right",
+               "header": "Termite Barrel",
+               "ends": [["A Plague Upon Thee", "P2"]],
+               "starts": [["A Plague Upon Thee", "P3"]],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "wpl",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 48, "y": 32 },
+               "header": "Termite Barrel",
+               "ends": [["A Plague Upon Thee", "P2"]],
+               "starts": [["A Plague Upon Thee", "P3"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 52, "y": 28 },
+               "align": "top",
+               "header": "Kirsta Deepshadow",
+               "ends": [["Unfinished Business", "P1"]],
+               "starts": [["Unfinished Business", "P2"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 58, "y": 36 },
+               "align": "right",
+               "header": "Huntsman Radley",
+               "objectives": [["Unfinished Business", "P2"]],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 55, "y": 23 },
+               "align": "right",
+               "header": "Cavalier Durden",
+               "objectives": [["Unfinished Business", "P2"]],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "wpl",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 55, "y": 23 },
+               "align": "top",
+               "header": "Cavalier Durden",
+               "objectives": [["Unfinished Business", "P2"]],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 52, "y": 28 },
+               "header": "Kirsta Deepshadow",
+               "ends": [["Unfinished Business", "P2"]],
+               "starts": [["Unfinished Business", "P3"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 54, "y": 65 },
+               "header": "Mulgris Deepriver",
+               "ends": [["The Wildlife Suffers Too", "P1"]],
+               "starts": [["The Wildlife Suffers Too", "P2"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 58, "y": 60 },
+               "align": "right",
+               "header": "Placeholder",
+               "objectives": [["The Wildlife Suffers Too", "P2"]],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "wpl",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 58, "y": 60 },
+               "align": "right",
+               "header": "Placeholder",
+               "objectives": [["The Wildlife Suffers Too", "P2"]],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 54, "y": 65 },
+               "align": "bottom",
+               "header": "Mulgris Deepriver",
+               "ends": [["The Wildlife Suffers Too", "P2"]],
+               "starts": ["Glyphed Oaken Branch"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 47, "y": 71 },
+               "header": "Fourth Tower",
+               "objectives": ["All Along the Watchtowers"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 49, "y": 79 },
+               "align": "bottom",
+               "header": "Marlene Redpath",
+               "ends": ["Auntie Marlene"],
+               "starts": ["A Strange Historian"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "wpl",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 49, "y": 79 },
+               "align": "bottom",
+               "header": "Marlene Redpath",
+               "ends": ["Auntie Marlene"],
+               "starts": ["A Strange Historian"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 50, "y": 77 },
+               "align": "right",
+               "header": "Joseph Redpath's Monument",
+               "objectives": ["A Strange Historian"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 40, "y": 72 },
+               "header": "First Tower",
+               "objectives": ["All Along the Watchtowers"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 39, "y": 67 },
+               "header": "Chromie",
+               "ends": ["A Strange Historian"],
+               "starts": ["The Annals of Darrowshire", "A Matter of Time"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 42, "y": 66 },
+               "align": "top",
+               "header": "Second Tower",
+               "objectives": ["All Along the Watchtowers"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 43, "y": 69 },
+               "align": "right",
+               "header": "Ruins of Andorhal",
+               "objectives": ["The Annals of Darrowshire"],
+               "special": ["Smooth page transitions"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "wpl",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 43, "y": 69 },
+               "align": "right",
+               "header": "Ruins of Andorhal",
+               "objectives": ["The Annals of Darrowshire"],
+               "special": ["Smooth page transitions"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 44, "y": 63 },
+               "header": "Third Tower",
+               "objectives": ["All Along the Watchtowers"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 45, "y": 61 },
+               "align": "right",
+               "header": "Ruins of Andorhal",
+               "objectives": ["A Matter of Time"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 27, "y": 58 },
+               "header": "The Bulwark",
+               "ends": [["A Plague Upon Thee", "P3"], "All Along the Watchtowers", "Target: Felstone Field", "Scholomance"],
+               "starts": ["Target: Dalson's Tears", "Scholomance", "Skeletal Fragments"],
+               "type": "hub"
+            }
+         ]
+      },
+      {
+         "zone": "wpl",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 27, "y": 58 },
+               "align": "top",
+               "header": "The Bulwark",
+               "ends": [["A Plague Upon Thee", "P3"], "All Along the Watchtowers", "Return to The Bulwark", "Scholomance"],
+               "starts": ["Target: Dalson's Tears", "Scholomance", "Skeletal Fragments"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 39, "y": 67 },
+               "align": "top",
+               "header": "Chromie",
+               "ends": ["The Annals of Darrowshire", "A Matter of Time"],
+               "starts": ["Brother Carlin", "Counting Out Time"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 41, "y": 70 },
+               "align": "right",
+               "header": "Ruins of Andorhal",
+               "objectives": ["Skeletal Fragments", "Counting Out Time"],
+               "special": ["Loot tiny lockboxes"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "wpl",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 41, "y": 70 },
+               "align": "right",
+               "header": "Ruins of Andorhal",
+               "objectives": ["Skeletal Fragments", "Counting Out Time"],
+               "special": ["Loot tiny lockboxes"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 39, "y": 67 },
+               "header": "Chromie",
+               "ends": ["Counting Out Time"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 46, "y": 52 },
+               "align": "top",
+               "header": "Scourge Cauldron",
+               "ends": ["Target: Dalson's Tears"],
+               "starts": ["Return to The Bulwark"],
+               "special": ["Kill the Cauldron Lord first"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 27, "y": 58 },
+               "align": "top",
+               "header": "The Bulwark",
+               "ends": ["Return to The Bulwark", "Skeletal Fragments"],
+               "starts": ["Mold Rhymes With", "Target: Writing Haunt"],
+               "type": "hub"
+            }
+         ]
+      },
+      {
+         "zone": "wpl",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 27, "y": 58 },
+               "align": "top",
+               "header": "The Bulwark",
+               "ends": ["Return to The Bulwark", "Skeletal Fragments"],
+               "starts": ["Mold Rhymes With", "Target: Writing Haunt"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 53, "y": 66 },
+               "align": "top",
+               "header": "Scourge Cauldron",
+               "ends": ["Target: Writhing Haunt"],
+               "starts": ["Return to The Bulwark"],
+               "special": ["Kill the Cauldron Lord first"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "wpl",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 53, "y": 66 },
+               "align": "right",
+               "header": "Scourge Cauldron",
+               "ends": ["Target: Writhing Haunt"],
+               "starts": ["Return to The Bulwark"],
+               "special": ["Kill the Cauldron Lord first"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 27, "y": 58 },
+               "align": "top",
+               "header": "The Bulwark",
+               "ends": ["Return to The Bulwark"],
+               "starts": ["Target: Gahrron's Withering"],
+               "type": "hub"
+            }
+         ]
+      },
+      {
+         "zone": "wpl",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 27, "y": 58 },
+               "align": "top",
+               "header": "The Bulwark",
+               "ends": ["Return to The Bulwark"],
+               "starts": ["Target: Gahrron's Withering"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 70, "y": 50 },
+               "align": "top",
+               "header": "Eastern Plaguelands Border",
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "epl",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 12, "y": 73 },
+               "header": "Western Plaguelands Border",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 8, "y": 44 },
+               "header": "Tirion Fordring",
+               "ends": ["Blood Tinged Skies", "Demon Dogs", "Carrion Grubbage", "Redemption"],
+               "starts": ["Redemption", "Of Forgotten Memories"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 27, "y": 75 },
+               "align": "bottom",
+               "header": "Nathanos Blightcaller",
+               "ends": ["To Kill With Purpose", "Un-Life's Little Annoyances", "The Ranger Lord's Behest"],
+               "starts": [["Duskwing, Oh How I Hate Thee", "E"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 33, "y": 73 },
+               "align": "top",
+               "header": "Duskwing",
+               "objectives": [["Duskwing, Oh How I Hate Thee", "E"]],
+               "special": ["He patrols around"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "epl",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 33, "y": 73 },
+               "align": "top",
+               "header": "Duskwing",
+               "objectives": [["Duskwing, Oh How I Hate Thee", "E"]],
+               "special": ["He patrols around"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 27, "y": 85 },
+               "align": "right",
+               "header": "The Undercroft",
+               "ends": ["Hameya's Plea"],
+               "objectives": ["Of Forgotten Memories", "Zaeldarr the Outcast"],
+               "special": ["Click the dirtpile in the back", "Kill the spawned Dwarf"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 27, "y": 75 },
+               "align": "right",
+               "header": "Nathanos Blightcaller",
+               "ends": [["Duskwing, Oh How I Hate Thee", "E"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 8, "y": 44 },
+               "align": "top",
+               "header": "Tirion Fordring",
+               "ends": ["Of Forgotten Memories"],
+               "starts": ["Of Lost Honor"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 80, "y": 64 },
+               "align": "top",
+               "header": "Caretaker Alen",
+               "ends": ["Zaeldarr the Outcast"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "epl",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 80, "y": 64 },
+               "align": "bottom",
+               "header": "Caretaker Alen",
+               "ends": ["Zaeldarr the Outcast"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 81, "y": 59 },
+               "align": "top",
+               "header": "Light's Hope Chapel",
+               "ends": ["Brother Carlin"],
+               "starts": ["Villains of Darrowshire", "Defenders of Darrowshire", "Heroes of Darrowshire"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 71, "y": 34 },
+               "align": "top",
+               "header": "Symbol of Lost Hope",
+               "objectives": ["Of Lost Honor"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 67, "y": 41 },
+               "align": "bottom",
+               "header": "Placeholder",
+               "objectives": ["Defenders of Darrowshire"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 51, "y": 50 },
+               "header": "Horgus' Skull",
+               "objectives": ["Villains of Darrowshire"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 54, "y": 66 },
+               "align": "bottom",
+               "header": "Shattered Sword of Marduk",
+               "objectives": ["Villains of Darrowshire"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "epl",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 54, "y": 66 },
+               "align": "top",
+               "header": "Shattered Sword of Marduk",
+               "objectives": ["Villains of Darrowshire"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 8, "y": 44 },
+               "align": "top",
+               "header": "Tirion Fordring",
+               "ends": ["Of Lost Honor"],
+               "starts": ["Of Love and Family"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 12, "y": 73 },
+               "header": "Western Plaguelands Border",
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "wpl",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 70, "y": 50 },
+               "align": "right",
+               "header": "Eastern Plaguelands Border",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 65, "y": 57 },
+               "align": "top",
+               "header": "Redpath's Shield",
+               "objectives": ["Heroes of Darrowshire"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 63, "y": 59 },
+               "align": "top",
+               "header": "Scourge Cauldron",
+               "ends": ["Target: Gahrron's Withering"],
+               "starts": ["Return to The Bulwark"],
+               "special": ["Kill the Cauldron Lord first"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 66, "y": 75 },
+               "align": "right",
+               "header": "Artist Renfray",
+               "ends": ["Of Love and Family"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 46, "y": 19 },
+               "align": "top",
+               "header": "Heathglen Tower",
+               "objectives": [["Unfinished Business", "P3"]],
+               "special": ["Discover the top"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 43, "y": 19 },
+               "align": "top",
+               "header": "Davil's Libram",
+               "objectives": ["Heroes of Darrowshire"],
+               "special": ["Have someone distract the Elites"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "wpl",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 43, "y": 19 },
+               "align": "top",
+               "header": "Davil's Libram",
+               "objectives": ["Heroes of Darrowshire"],
+               "special": ["Have someone distract the Elites"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 52, "y": 28 },
+               "align": "right",
+               "header": "Kirsta Deepshadow",
+               "ends": [["Unfinished Business", "P3"]],
+               "special": ["Hearthstone to Undercity"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "undercity",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 68, "y": 38 },
+               "align": "top",
+               "header": "Innkeeper Norman",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 63, "y": 48 },
+               "header": "Undercity Flightpath",
+               "special": ["Fly to EPL"],
+               "type": "flightpath"
+            }
+         ]
+      },
+      {
+         "zone": "epl",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 83, "y": 59 },
+               "align": "right",
+               "header": "Eastern Plaguelands Flightpath",
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 81, "y": 59 },
+               "align": "bottom",
+               "header": "Light's Hope Chapel",
+               "ends": ["Villains of Darrowshire", "Defenders of Darrowshire", "Heroes of Darrowshire"],
+               "starts": ["Marauders of Darrowshire"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 78, "y": 47 },
+               "header": "Placeholder",
+               "objectives": ["Marauders of Darrowshire"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 83, "y": 40 },
+               "align": "top",
+               "header": "Placeholder",
+               "objectives": ["Marauders of Darrowshire"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "epl",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 83, "y": 40 },
+               "align": "top",
+               "header": "Placeholder",
+               "objectives": ["Marauders of Darrowshire"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 81, "y": 59 },
+               "align": "bottom",
+               "header": "Light's Hope Chapel",
+               "ends": ["Marauders of Darrowshire"],
+               "starts": [],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 83, "y": 59 },
+               "align": "right",
+               "header": "Eastern Plaguelands Flightpath",
+               "special": ["Fly to Undercity"],
+               "type": "flightpath"
+            }
+         ]
+      },
+      {
+         "zone": "undercity",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 63, "y": 48 },
+               "align": "top",
+               "header": "Undercity Flightpath",
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 49, "y": 69 },
+               "header": "The Apothecarium",
+               "starts": ["Melding of Influences"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 71, "y": 44 },
+               "align": "top",
+               "header": "Undercity Lifts",
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "tirisfal",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 62, "y": 65 },
+               "header": "Undercity Gates",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 61, "y": 59 },
+               "header": "Zeppelin Station",
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "durotar",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 51, "y": 13 },
+               "align": "bottom",
+               "header": "Zeppelin Station",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 46, "y": 12 },
+               "align": "bottom",
+               "header": "Orgrimmar Gates",
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "orgrimmar",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 49, "y": 92 },
+               "header": "Orgrimmar Gates",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 32, "y": 38 },
+               "align": "top",
+               "header": "Thrall",
+               "starts": [["What Is Going On?", "D"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 45, "y": 64 },
+               "align": "right",
+               "header": "Orgrimmar Flightpath",
+               "special": ["Fly to Azshara"],
+               "type": "flightpath"
+            }
+         ]
+      },
+      {
+         "zone": "azshara",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 21, "y": 50 },
+               "align": "top",
+               "header": "Azshara Flightpath",
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 21, "y": 53 },
+               "align": "bottom",
+               "header": "Valormok",
+               "ends": ["Andron's Payment to Jediga"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 28, "y": 50 },
+               "align": "right",
+               "header": "Sanath Lim-yo",
+               "special": ["Teleport Up"],
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 30, "y": 40 },
+               "align": "right",
+               "header": "Archmage Xylem",
+               "ends": ["Delivery to Xylem"],
+               "starts": ["Xylem's Payment to Jediga"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "azshara",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 30, "y": 40 },
+               "align": "right",
+               "header": "Archmage Xylem",
+               "ends": ["Delivery to Xylem"],
+               "starts": ["Xylem's Payment to Jediga"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 21, "y": 53 },
+               "align": "bottom",
+               "header": "Valormok",
+               "ends": ["Xylem's Payment to Jediga"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 21, "y": 50 },
+               "align": "top",
+               "header": "Azshara Flightpath",
+               "special": ["Fly to Tanaris"],
+               "type": "flightpath"
+            }
+         ]
+      },
+      {
+         "zone": "thunderbluff",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 47, "y": 50 },
+               "align": "bottom",
+               "header": "Thunder Bluff Flightpath",
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 76, "y": 31 },
+               "align": "bottom",
+               "header": "Nara Wildmane",
+               "ends": ["Glyphed Oaken Branch"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "thunderbluff",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 76, "y": 31 },
+               "align": "bottom",
+               "header": "Nara Wildmane",
+               "ends": ["Glyphed Oaken Branch"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 40, "y": 51 },
+               "align": "bottom",
+               "header": "TB Auction House",
+               "special": ["Buy 2x Thorim Bar"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 47, "y": 50 },
+               "align": "bottom",
+               "header": "Thunder Bluff Flightpath",
+               "special": ["Fly to Ratchet"],
+               "type": "flightpath"
+            }
+         ]
+      },
+      {
+         "zone": "barrens",
+         "experience": 47.93,
+         "waypoints": [
+            {
+               "coords": { "x": 63, "y": 36 },
+               "align": "top",
+               "header": "Ratchet Flightpath",
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 63, "y": 39 },
+               "align": "bottom",
+               "header": "Liv Rizzlefix",
+               "starts": ["Volcanic Activity"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "barrens",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 63, "y": 39 },
+               "align": "bottom",
+               "header": "Liv Rizzlefix",
+               "starts": ["Volcanic Activity"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 63, "y": 36 },
+               "align": "top",
+               "header": "Ratchet Flightpath",
+               "special": ["Fly to Tanaris"],
+               "type": "flightpath"
+            }
+         ]
+      },
+      {
+         "zone": "tanaris",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 52, "y": 25 },
+               "align": "top",
+               "header": "Tanaris Flightpath",
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 50, "y": 29 },
+               "align": "bottom",
+               "header": "Gadgetzan",
+               "ends": ["Mold Rhymes With"],
+               "starts": ["Fire Plume Forged"],
+               "type": "hub"
+            }
+         ]
+      },
+      {
+         "zone": "tanaris",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 50, "y": 29 },
+               "align": "bottom",
+               "header": "Gadgetzan",
+               "ends": ["Mold Rhymes With"],
+               "starts": ["Fire Plume Forged"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 52, "y": 25 },
+               "align": "top",
+               "header": "Tanaris Flightpath",
+               "special": ["Fly to Un'goro"],
+               "type": "flightpath"
+            }
+         ]
+      },
+      {
+         "zone": "ungoro",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 45, "y": 6 },
+               "align": "right",
+               "header": "Un'Goro Flightpath",
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 44, "y": 9 },
+               "header": "Marshal's Refuge",
+               "starts": ["It's Dangerous To Go Alone"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 48, "y": 33 },
+               "header": "Lakkari Tar Pits",
+               "objectives": ["Melding of Influences"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 49, "y": 48 },
+               "header": "Fire Plume Ridge Top",
+               "objectives": ["Fire Plume Forged", "Volcanic Activity", ["It's Dangerous to Go Alone", "E"]],
+               "special": ["Chest behind Blazerunner"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "ungoro",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 49, "y": 48 },
+               "header": "Fire Plume Ridge Top",
+               "objectives": ["Fire Plume Forged", "Volcanic Activity", ["It's Dangerous to Go Alone", "E"]],
+               "special": ["Chest behind Blazerunner"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 44, "y": 9 },
+               "header": "Marshal's Refuge",
+               "ends": ["It's Dangerous To Go Alone"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 45, "y": 6 },
+               "align": "right",
+               "header": "Un'Goro Flightpath",
+               "special": ["Fly to Ratchet"],
+               "type": "flightpath"
+            }
+         ]
+      },
+      {
+         "zone": "barrens",
+         "experience": 47.93,
+         "waypoints": [
+            {
+               "coords": { "x": 63, "y": 36 },
+               "align": "top",
+               "header": "Ratchet Flightpath",
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 63, "y": 39 },
+               "align": "bottom",
+               "header": "Liv Rizzlefix",
+               "ends": ["Volcanic Activity"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "barrens",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 63, "y": 39 },
+               "align": "bottom",
+               "header": "Liv Rizzlefix",
+               "ends": ["Volcanic Activity"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 63, "y": 36 },
+               "align": "top",
+               "header": "Ratchet Flightpath",
+               "special": ["Fly to Felwood"],
+               "type": "flightpath"
+            }
+         ]
+      },
+      {
+         "zone": "felwood",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 35, "y": 53 },
+               "align": "top",
+               "header": "Bloodvenom Post",
+               "starts": [["Wild Guardians", "P2"]],
+               "special": ["Fly to Winterspring"],
+               "type": "hub"
+            }
+         ]
+      },
+      {
+         "zone": "winterspring",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 61, "y": 38 },
+               "align": "right",
+               "header": "Everlook",
+               "ends": ["Felnok Steelspring", "A Little Luck"],
+               "starts": ["Chillwind Horns", "A Little Luck", ["Are We There, Yeti?", "P1"], "Luck Be With You", ["Ursius of the Shardtooth", "E"]],
+               "special": ["Set Hearthstone"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 63, "y": 29 },
+               "align": "top",
+               "header": "Ursius",
+               "objectives": [["Ursius of the Shardtooth", "E"]],
+               "special": ["He patrols around"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 31, "y": 45 },
+               "header": "Donova Snowden",
+               "starts": ["Threat of the Winterfall"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 32, "y": 36 },
+               "align": "top",
+               "header": "Placeholder",
+               "starts": ["Winterfall Firewater"],
+               "objectives": ["Threat of the Winterfall"],
+               "special": ["Firewater drops randomly"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "winterspring",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 32, "y": 36 },
+               "align": "top",
+               "header": "Placeholder",
+               "starts": ["Winterfall Firewater"],
+               "objectives": ["Threat of the Winterfall"],
+               "special": ["Firewater drops randomly"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 40, "y": 40 },
+               "align": "top",
+               "header": "Placeholder",
+               "starts": ["Winterfall Firewater"],
+               "objectives": ["Threat of the Winterfall"],
+               "special": ["Firewater drops randomly"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 31, "y": 45 },
+               "header": "Donova Snowden",
+               "end": ["Threat of the Winterfall", "Winterfall Firewater"],
+               "special": ["Hearthstone to Everlook"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "winterspring",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 61, "y": 38 },
+               "align": "top",
+               "header": "Everlook",
+               "ends": [["Ursius of the Shardtooth", "E"]],
+               "starts": [["Brumeran of the Chillwind", "E"]],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 66, "y": 42 },
+               "align": "top",
+               "header": "Ice Thistle Hills",
+               "objectives": [["Are We There, Yeti?", "P1"]],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 66, "y": 52 },
+               "align": "right",
+               "header": "Ice Thistle Hills",
+               "objectives": ["Chillwind Horns"],
+               "special": ["This might take hours"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 65, "y": 60 },
+               "align": "right",
+               "header": "Owl Wing Thicket",
+               "objectives": [["Wild Guardians", "P2"]],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 61, "y": 60 },
+               "header": "Brumeran",
+               "objectives": [["Brumeran of the Chillwind", "E"]],
+               "special": ["He patrols around"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 62, "y": 65 },
+               "align": "bottom",
+               "header": "Frostwhisper Gorge",
+               "objectives": ["Luck Be With You"],
+               "special": ["Hearthstone to Everlook"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "winterspring",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 61, "y": 38 },
+               "align": "top",
+               "header": "Everlook",
+               "ends": ["Chillwind Horns", "A Little Luck", ["Are We There, Yeti?", "P1"], "Luck Be With You", ["Brumeran of the Chillwind", "E"]],
+               "starts": [["Are We There, Yeti?", "P2"], "Return to Tinkee", "Shy-Rotam"],
+               "special": ["Fly to Felwood"],
+               "type": "hub"
+            }
+         ]
+      },
+      {
+         "zone": "felwood",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 35, "y": 53 },
+               "align": "top",
+               "header": "Bloodvenom Post",
+               "ends": [["Wild Guardians", "P2"]],
+               "starts": [["Wild Guardians", "P3"]],
+               "special": ["Fly to Winterspring"],
+               "type": "hub"
+            }
+         ]
+      },
+      {
+         "zone": "winterspring",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 61, "y": 38 },
+               "align": "top",
+               "header": "Everlook",
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 68, "y": 41 },
+               "align": "right",
+               "header": "Ice Thistle Hills Cave",
+               "objectives": [["Are We There, Yeti?", "P2"]],
+               "special": ["This will take a while"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 65, "y": 60 },
+               "align": "bottom",
+               "header": "Owl Wing Thicket",
+               "objectives": [["Wild Guardians", "P3"]],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 50, "y": 10 },
+               "header": "Placeholder",
+               "objectives": ["Shy-Rotam"],
+               "special": ["Kill tigers for the material"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "winterspring",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 50, "y": 10 },
+               "header": "Placeholder",
+               "objectives": ["Shy-Rotam"],
+               "special": ["Kill tigers for the material"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 61, "y": 38 },
+               "align": "right",
+               "header": "Everlook",
+               "ends": ["Shy-Rotam", ["Are We There, Yeti?", "P2"], "Past Endeavors"],
+               "special": ["Fly to Felwood"],
+               "type": "hub"
+            }
+         ]
+      },
+      {
+         "zone": "felwood",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 35, "y": 53 },
+               "align": "top",
+               "header": "Bloodvenom Post",
+               "ends": [["Wild Guardians", "P3"]],
+               "special": ["Fly to Orgrimmar"],
+               "type": "hub"
+            }
+         ]
+      },
+      {
+         "zone": "orgrimmar",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 45, "y": 64 },
+               "header": "Orgrimmar Flightpath",
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 49, "y": 92 },
+               "header": "Orgrimmar Gates",
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "durotar",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 46, "y": 12 },
+               "align": "bottom",
+               "header": "Orgrimmar Gates",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 51, "y": 13 },
+               "align": "bottom",
+               "header": "Zeppelin Station",
+               "special": ["Sail to Tirisfal"],
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "tirisfal",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 61, "y": 59 },
+               "header": "Zeppelin Station",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 62, "y": 65 },
+               "header": "Undercity Gates",
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "undercity",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 71, "y": 44 },
+               "align": "top",
+               "header": "Undercity Lifts",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 49, "y": 69 },
+               "header": "The Apothecarium",
+               "ends": ["Melding of Influences"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "undercity",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 49, "y": 69 },
+               "header": "The Apothecarium",
+               "ends": ["Melding of Influences"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 71, "y": 44 },
+               "align": "top",
+               "header": "Undercity Lifts",
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "tirisfal",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 62, "y": 65 },
+               "align": "top",
+               "header": "Undercity Gates",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 83, "y": 71 },
+               "align": "top",
+               "header": "The Bulwark",
+               "ends": ["Fire Plume Forged", "Return to The Bulwark", "Mission Accomplished"],
+               "starts": ["Araj's Scarab", "Alas, Andorhal"],
+               "type": "hub"
+            }
+         ]
+      },
+      {
+         "zone": "wpl",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 27, "y": 58 },
+               "header": "The Bulwark",
+               "ends": ["Fire Plume Forged", "Return to The Bulwark", "Mission Accomplished"],
+               "starts": [["Araj's Scarab", "E"], ["Alas, Andorhal", "E"]],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 39, "y": 67 },
+               "align": "top",
+               "header": "Chromie",
+               "ends": ["Return to Chromie"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 46, "y": 70 },
+               "align": "right",
+               "header": "Ruins of Andorhal",
+               "objectives": [["Araj's Scarab", "E"], ["Alas, Andorhal", "E"]],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "wpl",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 46, "y": 70 },
+               "align": "right",
+               "header": "Ruins of Andorhal",
+               "objectives": [["Araj's Scarab", "E"], ["Alas, Andorhal", "E"]],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 27, "y": 58 },
+               "header": "The Bulwark",
+               "ends": [["Araj's Scarab", "E"], ["Alas, Andorhal", "E"], "The Key to Scholomance"],
                "type": "hub"
             }
          ]
