@@ -36,13 +36,6 @@
                "header": "Terror Wing Path",
                "objectives": ["Dragonkin Menace", "Broodling Essence", "Fifty! Yep!"],
                "type": "objective"
-            },
-            {
-               "coords": { "x": 86, "y": 31 },
-               "align": "top",
-               "header": "Terror Wing Path",
-               "objectives": ["Dragonkin Menace", "Broodling Essence", "Fifty! Yep!"],
-               "type": "objective"
             }
          ]
       },

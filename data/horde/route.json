@@ -2213,7 +2213,7 @@
             {
                "coords": { "x": 73, "y": 61 },
                "align": "top",
-               "header": "Splitertree Post",
+               "header": "Splintertree Post",
                "special": ["Learn the Flightpath"],
                "type": "hub"
             },
@@ -2278,7 +2278,7 @@
             {
                "coords": { "x": 73, "y": 61 },
                "align": "right",
-               "header": "Splitertree Post",
+               "header": "Splintertree Post",
                "type": "hub"
             },
             {
@@ -4055,7 +4055,7 @@
             {
                "coords": { "x": 73, "y": 61 },
                "align": "top",
-               "header": "Splitertree Post",
+               "header": "Splintertree Post",
                "ends": ["The Ashenvale Hunt"],
                "starts": ["Satyr Horns", "Stonetalon Standstill"],
                "special": ["Set Hearthstone"],
@@ -4126,7 +4126,7 @@
             },
             {
                "coords": { "x": 73, "y": 61 },
-               "header": "Splitertree Post",
+               "header": "Splintertree Post",
                "ends": [["Torek's Assault", "F"], "Sharptalon's Claw"],
                "objectives": ["Warsong Supplies"],
                "special": ["Warsong Saw Blades"],
@@ -4228,7 +4228,7 @@
             {
                "coords": { "x": 73, "y": 61 },
                "align": "top",
-               "header": "Splitertree Post",
+               "header": "Splintertree Post",
                "ends": ["Satyr Horns", "Stonetalon Standstill", "Ursangous's Paw", "Shadumbra's Head", ["Freedom to Ruul", "F"]],
                "special": ["Fly to Zoram Strand"],
                "type": "hub"
@@ -4242,7 +4242,7 @@
             {
                "coords": { "x": 73, "y": 61 },
                "align": "top",
-               "header": "Splitertree Post",
+               "header": "Splintertree Post",
                "ends": ["Satyr Horns", "Stonetalon Standstill", "Ursangous's Paw", "Shadumbra's Head", ["Freedom to Ruul", "F"]],
                "special": ["Fly to Zoram Strand"],
                "type": "hub"
@@ -4392,7 +4392,7 @@
             {
                "coords": { "x": 73, "y": 61 },
                "align": "right",
-               "header": "Splitertree Post",
+               "header": "Splintertree Post",
                "type": "hub"
             },
             {
@@ -4432,7 +4432,7 @@
             {
                "coords": { "x": 73, "y": 61 },
                "align": "top",
-               "header": "Splitertree Post",
+               "header": "Splintertree Post",
                "special": ["Fly to Zoram Strand"],
                "type": "hub"
             }
@@ -4445,7 +4445,7 @@
             {
                "coords": { "x": 73, "y": 61 },
                "align": "right",
-               "header": "Splitertree Post",
+               "header": "Splintertree Post",
                "special": ["Fly to Zoram Strand"],
                "type": "hub"
             },
@@ -4994,7 +4994,7 @@
          "waypoints": [
             {
                "coords": { "x": 73, "y": 61 },
-               "header": "Splitertree Post",
+               "header": "Splintertree Post",
                "type": "hub"
             },
             {
@@ -5074,8 +5074,8 @@
                "coords": { "x": 75, "y": 34 },
                "align": "top",
                "header": "Belgrom Rockmaul",
-               "ends": [[["The Swarm Grows", "P1"], "P1"]],
-               "starts": [[["The Swarm Grows", "P1"], "P2"]],
+               "ends": [["The Swarm Grows", "P1"]],
+               "starts": [["The Swarm Grows", "P2"]],
                "type": "quest"
             },
             {
@@ -9717,7 +9717,7 @@
                "coords": { "x": 46, "y": 57 },
                "align": "right",
                "header": "Tabetha",
-               "starts": ["Tiara of the Deep"],
+               "starts": [["Tiara of the Deep", "D"]],
                "type": "quest"
             },
             {
@@ -11144,7 +11144,7 @@
                "align": "top",
                "header": "Steamwheedle Port",
                "ends": [["The Prophecy of Mosh'aru", "D"]],
-               "starts": ["The Ancient Egg"],
+               "starts": [[["The Ancient Egg", "E"], "E"]],
                "type": "quest"
             },
             {
@@ -11332,7 +11332,7 @@
                "coords": { "x": 46, "y": 57 },
                "align": "right",
                "header": "Tabetha",
-               "ends": ["Tiara of the Deep"],
+               "ends": [["Tiara of the Deep", "D"]],
                "type": "quest"
             }
          ]
@@ -11345,14 +11345,90 @@
                "coords": { "x": 46, "y": 57 },
                "align": "right",
                "header": "Tabetha",
-               "ends": ["Tiara of the Deep"],
+               "ends": [["Tiara of the Deep", "D"]],
                "type": "quest"
             },
             {
                "coords": { "x": 36, "y": 31 },
                "header": "Brackenwall Village",
-               "special": ["Fly to Orgrimmar"],
+               "special": ["Fly to Ashenvale"],
                "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "ashenvale",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 73, "y": 61 },
+               "align": "top",
+               "header": "Splintertree Post",
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 94, "y": 47 },
+               "align": "top",
+               "header": "Azshara Border",
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "azshara",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 9, "y": 74 },
+               "header": "Ashenvale Border",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 11, "y": 78 },
+               "align": "bottom",
+               "header": "Loh'atu",
+               "starts": ["Spiritual Unrest", "A Land Filled With Hatred"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 15, "y": 72 },
+               "align": "right",
+               "header": "Shadowmoon Shrine",
+               "objectives": ["Spiritual Unrest"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 20, "y": 62 },
+               "align": "right",
+               "header": "Haldarr Encampment",
+               "objectives": ["A Land Filled With Hatred"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "azshara",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 20, "y": 62 },
+               "align": "right",
+               "header": "Haldarr Encampment",
+               "objectives": ["A Land Filled With Hatred"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 11, "y": 78 },
+               "header": "Loh'atu",
+               "ends": ["Spiritual Unrest", "A Land Filled With Hatred"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 22, "y": 50 },
+               "align": "top",
+               "header": "Azshara Flightpath",
+               "special": ["Fly to Orgrimmar"],
+               "type": "flightpath"
             }
          ]
       },
@@ -11402,7 +11478,7 @@
                "align": "bottom",
                "header": "Master Gadrin",
                "ends": ["The Spider God"],
-               "starts": ["Summoning Shadra"],
+               "starts": [["Summoning Shadra", "E"]],
                "type": "quest"
             },
             {
@@ -11539,6 +11615,2748 @@
                "align": "right",
                "header": "Badlands Border",
                "type": "travel"
+            },
+            {
+               "coords": { "x": 66, "y": 63 },
+               "align": "bottom",
+               "header": "Wooden Outhouse",
+               "ends": ["Caught!"],
+               "starts": ["Caught!"],
+               "objectives": ["Caught!"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 39, "y": 39 },
+               "header": "Kalaran Windblade",
+               "ends": ["Divine Retribution"],
+               "starts": ["Divine Retribution", "The Flawless Flame"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 35, "y": 31 },
+               "header": "Searing Gorge Flightpath",
+               "special": ["Learn the Flightpath"],
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 37, "y": 27 },
+               "align": "top",
+               "header": "Thorium Point",
+               "starts": [["Wanted: Overseer Maltorius", "E"], "Stolen: Smithing Tuyere and Lookout's Spyglass", "Job Opportunity: Culling the Competition", "Curse These Fat Fingers", "Fiery Menace!", "Incendosaurs? Whateverosaur is More Like It", "What the Flux?"],
+               "type": "hub"
+            }
+         ]
+      },
+      {
+         "zone": "searing",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 37, "y": 27 },
+               "header": "Thorium Point",
+               "starts": [["Wanted: Overseer Maltorius", "E"], "Stolen: Smithing Tuyere and Lookout's Spyglass", "Job Opportunity: Culling the Competition", "Curse These Fat Fingers", "Fiery Menace!", "Incendosaurs? Whateverosaur is More Like It", "What the Flux?"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 37, "y": 44 },
+               "header": "Placeholder",
+               "objectives": ["Curse These Fat Fingers", "The Flawless Flame"],
+               "special": ["Don't worry about the golemcount"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 38, "y": 49 },
+               "align": "bottom",
+               "header": "The Cauldron",
+               "objectives": ["Curse These Fat Fingers", "The Flawless Flame", "Stolen: Smithing Tuyere and Lookout's Spyglass"],
+               "special": ["Kill & Loot Steamsmiths"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "searing",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 38, "y": 49 },
+               "align": "bottom",
+               "header": "The Cauldron",
+               "objectives": ["Curse These Fat Fingers", "The Flawless Flame", "Stolen: Smithing Tuyere and Lookout's Spyglass"],
+               "special": ["Kill & Loot Steamsmiths"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 44, "y": 37 },
+               "align": "right",
+               "header": "Placeholder",
+               "objectives": ["Curse These Fat Fingers", "The Flawless Flame"],
+               "special": ["Don't worry about the golemcount"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 39, "y": 39 },
+               "align": "top",
+               "header": "Kalaran Windblade",
+               "ends": ["The Flawless Flame"],
+               "starts": ["Forging the Shaft"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 35, "y": 42 },
+               "header": "The Slag Pit Opening",
+               "special": ["Jump Down"],
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 36, "y": 36 },
+               "align": "top",
+               "header": "The Slag Pit - Underground",
+               "objectives": ["Job Opportunity: Culling the Competition", "Forging the Shaft"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "searing",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 38, "y": 36 },
+               "header": "The Slag Pit - Underground",
+               "objectives": ["Job Opportunity: Culling the Competition", "Forging the Shaft"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 42, "y": 24 },
+               "align": "top",
+               "header": "The Slag Pit - Underground",
+               "objectives": ["Job Opportunity: Culling the Competition", "Forging the Shaft"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 41, "y": 36 },
+               "align": "bottom",
+               "header": "The Slag Pit - Underground",
+               "objectives": ["Wanted: Overseer Maltorius", "What the Flux?"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 49, "y": 25 },
+               "align": "top",
+               "header": "The Slag Pit - Underground",
+               "objectives": ["Incendosaurs? Whateverosaur is More Like It"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 50, "y": 47 },
+               "align": "right",
+               "header": "Run Back Outside",
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "searing",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 50, "y": 47 },
+               "align": "right",
+               "header": "Run Back Outside",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 28, "y": 73 },
+               "header": "Placeholder",
+               "objectives": ["Fiery Menace!"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 28, "y": 56 },
+               "header": "Placeholder",
+               "objectives": ["Fiery Menace!"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 30, "y": 44 },
+               "header": "Placeholder",
+               "objectives": ["Fiery Menace!"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 34, "y": 48 },
+               "align": "right",
+               "header": "Placeholder",
+               "objectives": ["Curse These Fat Fingers", "Stolen: Smithing Tuyere and Lookout's Spyglass"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "searing",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 34, "y": 49 },
+               "header": "Placeholder",
+               "objectives": ["Curse These Fat Fingers", "Stolen: Smithing Tuyere and Lookout's Spyglass"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 37, "y": 27 },
+               "align": "top",
+               "header": "Thorium Point",
+               "ends": ["Wanted: Overseer Maltorius", "Stolen: Smithing Tuyere and Lookout's Spyglass", "Job Opportunity: Culling the Competition", "Curse These Fat Fingers", "Fiery Menace!", "Incendosaurs? Whateverosaur is More Like It", "What the Flux?"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 39, "y": 39 },
+               "align": "right",
+               "header": "Kalaran Windblade",
+               "ends": ["Forging the Shaft"],
+               "starts": [["The Flame's Casing", "E"]],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "searing",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 39, "y": 39 },
+               "align": "top",
+               "header": "Kalaran Windblade",
+               "ends": ["Forging the Shaft"],
+               "starts": [["The Flame's Casing", "E"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 24, "y": 35 },
+               "align": "top",
+               "header": "Firewatch Ridge",
+               "objectives": [["The Flame's Casing", "E"]],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "searing",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 24, "y": 35 },
+               "align": "top",
+               "header": "Firewatch Ridge",
+               "objectives": [["The Flame's Casing", "E"]],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 39, "y": 39 },
+               "align": "top",
+               "header": "Kalaran Windblade",
+               "ends": ["The Flame's Casing", "The Torch of Retribution", "Squire Maltrake"],
+               "starts": ["The Torch of Retribution", "Squire Maltrake", "Set Them Ablaze!", "The Key to Freedom"],
+               "special": ["Check for Grimesilt Outhouse Key"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 33, "y": 54 },
+               "header": "First Sentry Brazier",
+               "objectives": ["Set Them Ablaze!"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 36, "y": 61 },
+               "align": "bottom",
+               "header": "Second Sentry Brazier",
+               "objectives": ["Set Them Ablaze!"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "searing",
+         "experience": 51.44,
+         "waypoints": [
+            {
+               "coords": { "x": 36, "y": 61 },
+               "align": "bottom",
+               "header": "Second Sentry Brazier",
+               "objectives": ["Set Them Ablaze!"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 44, "y": 61 },
+               "align": "bottom",
+               "header": "Third Sentry Brazier",
+               "objectives": ["Set Them Ablaze!"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 50, "y": 55 },
+               "align": "bottom",
+               "header": "Fourth Sentry Brazier",
+               "objectives": ["Set Them Ablaze!"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 66, "y": 63 },
+               "align": "top",
+               "header": "Grimesilk Dig Site",
+               "ends": ["The Key to Freedom"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 39, "y": 39 },
+               "align": "bottom",
+               "header": "Squire Maltrake",
+               "ends": ["Set Them Ablaze!"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 35, "y": 31 },
+               "header": "Searing Gorge Flightpath",
+               "special": ["Fly to Stonard"],
+               "type": "flightpath"
+            }
+         ]
+      },
+      {
+         "zone": "swamp",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 46, "y": 54 },
+               "align": "right",
+               "header": "Stonard",
+               "special": ["Set Hearthstone"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 34, "y": 66 },
+               "header": "Fallen Hero of the Horde",
+               "starts": ["Fall From Grace", "The Disgraced One"],
+               "ends": ["Fall From Grace"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "blasted",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 52, "y": 9 },
+               "align": "right",
+               "header": "Swamp Border",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 51, "y": 14 },
+               "align": "right",
+               "header": "Bloof Elf Encampment",
+               "starts": ["Snickerfang Jowls", "A Boar's Vitality", "The Decisive Striker", "The Basilisk's Bite", "Vulture's Vigor"],
+               "special": ["14x Vulture Gizzard", "5x Snickerfang Jowl", "11x Basilisk Brain", "6x Blasted Boar Lung", "6x Scorpok Pincer"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 48, "y": 19 },
+               "header": "Placeholder",
+               "special": ["Scorpok Pincer"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 46, "y": 35 },
+               "header": "Placeholder",
+               "special": ["Snickerfang Jowl"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "blasted",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 46, "y": 35 },
+               "header": "Placeholder",
+               "special": ["Snickerfang Jowl"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 52, "y": 36 },
+               "align": "top",
+               "header": "Kum'Isha the Collector",
+               "starts": ["Everything Counts In Large Amounts"],
+               "ends": ["Everything Counts In Large Amounts"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 55, "y": 41 },
+               "align": "bottom",
+               "header": "Placeholder",
+               "special": ["Vulture Gizzard"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 61, "y": 42 },
+               "align": "bottom",
+               "header": "Placeholder",
+               "special": ["Basilisk Brain", "Blasted Boar Lung"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 61, "y": 28 },
+               "align": "right",
+               "header": "Placeholder",
+               "special": ["Basilisk Brain", "Blasted Boar Lung"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "blasted",
+         "experience": 50.25,
+         "waypoints": [
+            {
+               "coords": { "x": 61, "y": 28 },
+               "align": "bottom",
+               "header": "Placeholder",
+               "special": ["Basilisk Brain", "Blasted Boar Lung"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 51, "y": 14 },
+               "header": "Bloof Elf Encampment",
+               "ends": ["Snickerfang Jowls", "A Boar's Vitality", "The Decisive Striker", "The Basilisk's Bite", "Vulture's Vigor"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 52, "y": 9 },
+               "align": "top",
+               "header": "Swamp Border",
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "swamp",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 34, "y": 65 },
+               "header": "Blasted Lands Border",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 46, "y": 54 },
+               "align": "top",
+               "header": "Stonard",
+               "ends": ["The Disgraced One", "The Missing Orders"],
+               "starts": ["The Missing Orders", "The Swamp Talker"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 66, "y": 77 },
+               "align": "right",
+               "header": "Stalbog Cave",
+               "objectives": ["The Swamp Talker"],
+               "special": ["Hearthstone to Stonard"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "swamp",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 46, "y": 54 },
+               "align": "right",
+               "header": "Stonard",
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 34, "y": 66 },
+               "header": "Fallen Hero of the Horde",
+               "ends": ["The Swamp Talker", "A Tale of Sorrow"],
+               "starts": ["A Tale of Sorrow"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "swamp",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 34, "y": 66 },
+               "header": "Fallen Hero of the Horde",
+               "ends": ["The Swamp Talker", "A Tale of Sorrow"],
+               "starts": ["A Tale of Sorrow"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 46, "y": 54 },
+               "align": "right",
+               "header": "Stonard",
+               "special": ["Fly to Hinterlands"],
+               "type": "hub"
+            }
+         ]
+      },
+      {
+         "zone": "hinterlands",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 82, "y": 82 },
+               "align": "bottom",
+               "header": "Revantusk Flightpath",
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 78, "y": 80 },
+               "align": "bottom",
+               "header": "Revantusk Village",
+               "starts": [["Separation Anxiety", "E"], ["Wanted: Vile Priestess Hexx and Her Minions", "E"], ["Job Opening: Guard Captain of Reventusk Village", "E"], ["Kidnapped Elder Tornhusk", "E"], ["Dark Vessels", "E"]],
+               "special": ["Set Hearthstone"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 67, "y": 64 },
+               "align": "top",
+               "header": "Jintha'Alor Enterance",
+               "special": ["Get the Mallet now if you want"],
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 65, "y": 72 },
+               "align": "right",
+               "header": "First Tier",
+               "objectives": ["Job Opening: Guard Captain of Reventusk Village", "Dark Vessels"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 61, "y": 68 },
+               "header": "Second Tier",
+               "objectives": ["Job Opening: Guard Captain of Reventusk Village", "Dark Vessels"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 62, "y": 75 },
+               "align": "bottom",
+               "header": "Pile of Bones",
+               "objectives": [["Separation Anxiety", "E"]],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "hinterlands",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 62, "y": 75 },
+               "align": "right",
+               "header": "Pile of Bones",
+               "objectives": [["Separation Anxiety", "E"]],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 59, "y": 65 },
+               "align": "top",
+               "header": "Pile of Bones",
+               "objectives": [["Separation Anxiety", "E"]],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 60, "y": 78 },
+               "align": "right",
+               "header": "Elder Torntusk",
+               "ends": ["Kidnapped Elder Tornhusk"],
+               "starts": [["Recover the Key!", "E"]],
+               "special": ["Kill the patrolling Priestess", "Forge your Mallet"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 58, "y": 87 },
+               "header": "Jintha'Alor Cave",
+               "objectives": [[["The Ancient Egg", "E"], "E"], ["Recover the Key!", "E"], ["Wanted: Vile Priestess Hexx and Her Minions", "E"]],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "hinterlands",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 58, "y": 87 },
+               "align": "right",
+               "header": "Jintha'Alor Cave",
+               "objectives": [[["The Ancient Egg", "E"], "E"], ["Recover the Key!", "E"], ["Wanted: Vile Priestess Hexx and Her Minions", "E"]],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 60, "y": 78 },
+               "align": "top",
+               "header": "Elder Torntusk",
+               "ends": [["Recover the Key!", "E"]],
+               "starts": ["Return to Primal Torntusk"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 34, "y": 71 },
+               "align": "top",
+               "header": "Shadra'Alor",
+               "objectives": [["Summoning Shadra", "E"]],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 33, "y": 75 },
+               "header": "Atal'ai Exile",
+               "special": ["Hearthstone to Revantusk Village"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "hinterlands",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 78, "y": 80 },
+               "align": "bottom",
+               "header": "Revantusk Village",
+               "ends": [["Separation Anxiety", "E"], ["Wanted: Vile Priestess Hexx and Her Minions", "E"], ["Job Opening: Guard Captain of Reventusk Village", "E"], ["Kidnapped Elder Tornhusk", "E"], ["Dark Vessels", "E"]],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 82, "y": 82 },
+               "align": "bottom",
+               "header": "Revantusk Flightpath",
+               "special": ["Fly to Tarren Mill"],
+               "type": "flightpath"
+            }
+         ]
+      },
+      {
+         "zone": "hillsbrad",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 60, "y": 19 },
+               "align": "right",
+               "header": "Tarren Mill",
+               "ends": [["Summoning Shadra", "E"]],
+               "starts": ["Venom to the Undercity"],
+               "special": ["Fly to Undercity"],
+               "type": "hub"
+            }
+         ]
+      },
+      {
+         "zone": "undercity",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 63, "y": 48 },
+               "align": "top",
+               "header": "Undercity Flightpath",
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 49, "y": 69 },
+               "align": "bottom",
+               "header": "The Apothecarium",
+               "ends": ["Venom to the Undercity"],
+               "starts": ["Seeping Corruption", "A Sample of Slime", "And a Batch of Ooze"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 71, "y": 44 },
+               "align": "top",
+               "header": "Undercity Lifts",
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "tirisfal",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 62, "y": 65 },
+               "header": "Undercity Gates",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 61, "y": 59 },
+               "header": "Zeppelin Station",
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "durotar",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 51, "y": 13 },
+               "align": "bottom",
+               "header": "Zeppelin Station",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 46, "y": 12 },
+               "align": "bottom",
+               "header": "Orgrimmar Gates",
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "orgrimmar",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 49, "y": 92 },
+               "header": "Orgrimmar Gates",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 56, "y": 63 },
+               "align": "bottom",
+               "header": "OG Auction House",
+               "special": ["Buy 1x Mithil Casing"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 56, "y": 47 },
+               "align": "top",
+               "header": "Zilzibin Drumlore",
+               "starts": ["Rise of the Silithid"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 75, "y": 34 },
+               "align": "top",
+               "header": "Belgrom Rockmaul",
+               "starts": [["Betrayed", "P1"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 55, "y": 34 },
+               "align": "top",
+               "header": "Jes'rimon",
+               "starts": ["Bone-Bladed Weapons"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 45, "y": 64 },
+               "header": "Orgrimmar Flightpath",
+               "special": ["Fly to Azshara"],
+               "type": "flightpath"
+            }
+         ]
+      },
+      {
+         "zone": "azshara",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 21, "y": 50 },
+               "align": "top",
+               "header": "Azshara Flightpath",
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 21, "y": 53 },
+               "header": "Valormok",
+               "ends": [["Betrayed", "P1"]],
+               "starts": [["Betrayed", "P2"], "Stealing Knowledge"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 53, "y": 22 },
+               "align": "top",
+               "header": "Kim'jael",
+               "starts": ["Kim'jael Indeed!"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 59, "y": 28 },
+               "align": "right",
+               "header": "Thalassian Base Camp",
+               "objectives": ["Stealing Knowledge", ["Betrayed", "P3"], "Kim'jael Indeed!"],
+               "ends": [["Betrayed", "P2"]],
+               "starts": [["Betrayed", "P3"]],
+               "special": ["Loot Boxes"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "azshara",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 59, "y": 28 },
+               "align": "right",
+               "header": "Thalassian Base Camp",
+               "objectives": ["Stealing Knowledge", ["Betrayed", "P3"], "Kim'jael Indeed!"],
+               "ends": [["Betrayed", "P2"]],
+               "starts": [["Betrayed", "P3"]],
+               "special": ["Loot Boxes"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 53, "y": 22 },
+               "align": "top",
+               "header": "Kim'jael",
+               "ends": ["Kim'jael Indeed!"],
+               "starts": ["Kim'jael's Missing Equipment"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 47, "y": 46 },
+               "header": "Fourth Puddle",
+               "objectives": ["Seeping Corruption"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 49, "y": 49 },
+               "align": "right",
+               "header": "Third Puddle",
+               "objectives": ["Seeping Corruption"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 48, "y": 51 },
+               "header": "Second Puddle",
+               "objectives": ["Seeping Corruption"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "azshara",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 48, "y": 51 },
+               "align": "right",
+               "header": "Second Puddle",
+               "objectives": ["Seeping Corruption"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 48, "y": 61 },
+               "align": "right",
+               "header": "First Puddle",
+               "objectives": ["Seeping Corruption"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 42, "y": 65 },
+               "align": "bottom",
+               "header": "Tablet of Jin'yael",
+               "objectives": ["Sealing Knowledge"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 37, "y": 60 },
+               "align": "bottom",
+               "header": "Tablet of Sael'hai",
+               "objectives": ["Sealing Knowledge"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 36, "y": 57 },
+               "header": "Tablet of Markri",
+               "objectives": ["Sealing Knowledge"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 39, "y": 53 },
+               "align": "top",
+               "header": "Tablet of Beth'Amara",
+               "objectives": ["Sealing Knowledge"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 42, "y": 53 },
+               "align": "top",
+               "header": "Temple of Zin-Malor",
+               "objectives": ["Kim'jael's Missing Equipment"],
+               "special": ["Kill Myrmidions & Sirens"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "azshara",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 42, "y": 53 },
+               "align": "right",
+               "header": "Temple of Zin-Malor",
+               "objectives": ["Kim'jael's Missing Equipment"],
+               "special": ["Kill Myrmidions & Sirens"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 53, "y": 22 },
+               "align": "right",
+               "header": "Kim'jael",
+               "ends": ["Kim'jael's Missing Equipment"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 21, "y": 53 },
+               "header": "Valormok",
+               "ends": [["Betrayed", "P3"], "Stealing Knowledge"],
+               "starts": [["Betrayed", "P4"], "Delivery to Magatha", "Delivery to Jes'rimon", "Delivery to Andron Gant"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 21, "y": 50 },
+               "align": "top",
+               "header": "Azshara Flightpath",
+               "special": ["Fly to Tanaris"],
+               "type": "flightpath"
+            }
+         ]
+      },
+      {
+         "zone": "tanaris",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 51, "y": 28 },
+               "align": "top",
+               "header": "Gadgetzan",
+               "ends": ["March of the Silithid"],
+               "starts": ["Super Sticky", "Bungle in the Jungle"],
+               "special": ["Set Hearthstone", "Buy some Noggenfogger"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 67, "y": 23 },
+               "align": "bottom",
+               "header": "Steamwheedle Port",
+               "ends": [["The Ancient Egg", "E"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 32, "y": 43 },
+               "align": "bottom",
+               "header": "Un'Goro Border",
+               "special": ["Slow fall down"],
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "ungoro",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 77, "y": 67 },
+               "align": "right",
+               "header": "Tanaris Border",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 72, "y": 76 },
+               "align": "bottom",
+               "header": "Torwa Pathfinder",
+               "starts": ["The Apes of Un'Goro", "The Fare of Lar'korwi"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 63, "y": 69 },
+               "header": "A Wrecked Raft",
+               "ends": [["It's a Secret to Everybody", "P1"]],
+               "starts": [["It's a Secret to Everybody", "P1-2"]],
+               "objectives": [["It's a Secret to Everybody", "P1"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 69, "y": 57 },
+               "align": "right",
+               "header": "Fresh Threshadon Carcass",
+               "objectives": ["The Fare of Lar'korwi"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 45, "y": 6 },
+               "align": "right",
+               "header": "Un'Goro Flightpath",
+               "special": ["Learn the Flightpath"],
+               "type": "flightpath"
+            }
+         ]
+      },
+      {
+         "zone": "ungoro",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 45, "y": 6 },
+               "align": "right",
+               "header": "Un'Goro Flightpath",
+               "special": ["Learn the Flightpath"],
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 44, "y": 9 },
+               "header": "Marshal's Refuge",
+               "ends": [["It's a Secret to Everybody", "P2"]],
+               "starts": ["Shizzle's Flyer", "Muigin and Larion", "Lost!", "Roll the Bones", "Beware of Pterrordax", "Alien Ecology", "Expedition Salvation"],
+               "special": ["Pick up 7x of RGBY Crystals", "Obtain 25 Un'goro Soil"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 48, "y": 33 },
+               "header": "Lakkari Tar Pits",
+               "objectives": ["Super Sticky"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "ungoro",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 48, "y": 33 },
+               "header": "Lakkari Tar Pits",
+               "objectives": ["Super Sticky"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 57, "y": 10 },
+               "header": "Placeholder",
+               "objectives": ["Beware of Pterrordax", "Shizzle's Flyer"],
+               "special": ["Farm half the scales"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 60, "y": 23 },
+               "align": "bottom",
+               "header": "Lakkari Tar Pits",
+               "objectives": ["Super Sticky"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 63, "y": 17 },
+               "align": "top",
+               "header": "Fungal Rock",
+               "objectives": ["The Apes of Un'Goro"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 69, "y": 23 },
+               "align": "right",
+               "header": "Placeholder",
+               "objectives": ["Muigin and Larion"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 69, "y": 37 },
+               "align": "right",
+               "header": "Crate of Foodstuffs",
+               "objectives": ["Expedition Salvation"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "ungoro",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 69, "y": 37 },
+               "align": "right",
+               "header": "Crate of Foodstuffs",
+               "objectives": ["Expedition Salvation"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 72, "y": 76 },
+               "align": "bottom",
+               "header": "Torwa Pathfinder",
+               "ends": ["The Apes of Un'Goro", "The Fare of Lar'korwi"],
+               "starts": ["The Mighty U'cha", "The Scent of Lar'korwi"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 67, "y": 73 },
+               "align": "bottom",
+               "header": "The Marshlands",
+               "objectives": ["The Scent of Lar'korwi", "Bone-Bladed Weapons"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "ungoro",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 67, "y": 73 },
+               "align": "top",
+               "header": "The Marshlands",
+               "objectives": ["The Scent of Lar'korwi", "Bone-Bladed Weapons"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 72, "y": 76 },
+               "align": "top",
+               "header": "Torwa Pathfinder",
+               "ends": ["The Scent of Lar'korwi"],
+               "starts": ["The Bait for Lar'korwi"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 50, "y": 78 },
+               "align": "top",
+               "header": "Hive Enterance",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 49, "y": 85 },
+               "align": "bottom",
+               "header": "The Slithering Scar Hive",
+               "objectives": ["Alien Ecology", "Bungle in the Jungle"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 40, "y": 70 },
+               "header": "Terror Run",
+               "objectives": ["Beware of Pterrordax", "Shizzle's Flyer", "Roll the Bones", "Larion and Muigin"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 38, "y": 66 },
+               "header": "Research Equipment",
+               "objectives": ["Expedition Salvation"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "ungoro",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 38, "y": 66 },
+               "align": "top",
+               "header": "Research Equipment",
+               "objectives": ["Expedition Salvation"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 21, "y": 60 },
+               "header": "Terror Run",
+               "objectives": ["Beware of Pterrordax", "Shizzle's Flyer"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 31, "y": 50 },
+               "align": "top",
+               "header": "Krakle",
+               "starts": ["Finding the Source"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 39, "y": 38 },
+               "align": "top",
+               "header": "Placeholder",
+               "objectives": ["And a Batch of Ooze"],
+               "special": ["Grind atleast 15 samples"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 50, "y": 46 },
+               "align": "top",
+               "header": "Fire Plume Right Hotspot",
+               "objectives": ["Finding the Source"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "ungoro",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 50, "y": 46 },
+               "align": "top",
+               "header": "Fire Plume Right Hotspot",
+               "objectives": ["Finding the Source"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 52, "y": 50 },
+               "align": "right",
+               "header": "Ringo",
+               "ends": ["Lost!"],
+               "starts": [["A Little Help From My Friends", "F"]],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 55, "y": 41 },
+               "align": "right",
+               "header": "Un'goro Mountainside",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 46, "y": 14 },
+               "align": "right",
+               "header": "Lakkari Tar Pits",
+               "objectives": [["A Little Help From My Friends", "F"]],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 44, "y": 9 },
+               "align": "right",
+               "header": "Marshal's Refuge",
+               "ends": ["Shizzle's Flyer", "Muigin and Larion", ["A Little Help From My Friends", "F"], "Roll the Bones", "Beware of Pterrordax", "Alien Ecology", "Expedition Salvation"],
+               "starts": [["It's a Secret to Everybody", "P3"], "Marvon's Workshop"],
+               "type": "hub"
+            }
+         ]
+      },
+      {
+         "zone": "ungoro",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 44, "y": 9 },
+               "align": "bottom",
+               "header": "Marshal's Refuge",
+               "ends": ["Shizzle's Flyer", "Muigin and Larion", ["A Little Help From My Friends", "F"], "Roll the Bones", "Beware of Pterrordax", "Alien Ecology", "Expedition Salvation"],
+               "starts": ["A Visit to Gregan", ["It's a Secret to Everybody", "P3"]],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 42, "y": 3 },
+               "header": "JD Collie",
+               "ends": ["Crystals of Power"],
+               "starts": ["Crystals of Power", "The Northern Pylon", "The Western Pylon", "The Eastern Pylon"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 45, "y": 6 },
+               "align": "right",
+               "header": "Un'Goro Flightpath",
+               "special": ["Fly to Tanaris"],
+               "type": "flightpath"
+            }
+         ]
+      },
+      {
+         "zone": "tanaris",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 50, "y": 29 },
+               "header": "Tanaris Flightpath",
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 52, "y": 28 },
+               "align": "right",
+               "header": "Gadgetzan",
+               "ends": ["Super Sticky", "Bungle in the Jungle"],
+               "starts": ["Pawn Captures Queen"],
+               "type": "hub"
+            }
+         ]
+      },
+      {
+         "zone": "tanaris",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 52, "y": 28 },
+               "align": "right",
+               "header": "Gadgetzan",
+               "ends": ["Super Sticky", "Bungle in the Jungle"],
+               "starts": ["Pawn Captures Queen"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 50, "y": 29 },
+               "header": "Tanaris Flightpath",
+               "special": ["Fly to Un'Goro"],
+               "type": "flightpath"
+            }
+         ]
+      },
+      {
+         "zone": "ungoro",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 45, "y": 6 },
+               "header": "Un'Goro Flightpath",
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 46, "y": 13 },
+               "header": "Karna Remtravel",
+               "starts": [["Chasing A-Me 01", "P1"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 57, "y": 13 },
+               "align": "top",
+               "header": "The Northern Pylon",
+               "objectives": ["The Northern Pylon"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 68, "y": 13 },
+               "align": "top",
+               "header": "Fungal Rock",
+               "objectives": ["The Mighty U'Cha"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 68, "y": 17 },
+               "align": "bottom",
+               "header": "A-Me 01",
+               "ends": [["Chasing A-Me 01", "P1-2"]],
+               "starts": [["Chasing A-Me 01", "P2-3"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 48, "y": 20 },
+               "align": "bottom",
+               "header": "Marshal's Refuge Enterance",
+               "objectives": [["Chasing A-Me 01", "P3"]],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "ungoro",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 48, "y": 20 },
+               "align": "left",
+               "header": "Marshal's Refuge Enterance",
+               "objectives": [["Chasing A-Me 01", "P3"]],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 48, "y": 17 },
+               "align": "top",
+               "header": "Marshal's Refuge Enterance",
+               "ends": [["Chasing A-Me 01", "P3"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 77, "y": 50 },
+               "align": "top",
+               "header": "The Eastern Pylon",
+               "objectives": ["The Eastern Pylon"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 80, "y": 50 },
+               "align": "top",
+               "header": "Placeholder",
+               "objectives": ["The Bait for Lar'korwi"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 72, "y": 76 },
+               "align": "bottom",
+               "header": "Torwa Pathfinder",
+               "ends": ["The Mighty U'cha", "The Bait for Lar'korwi"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 50, "y": 78 },
+               "align": "bottom",
+               "header": "Hive Enterance",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 44, "y": 81 },
+               "align": "bottom",
+               "header": "The Slithering Scar Hive",
+               "objectives": ["Pawn Captures Queen"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "ungoro",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 44, "y": 81 },
+               "align": "bottom",
+               "header": "The Slithering Scar Hive",
+               "objectives": ["Pawn Captures Queen"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 50, "y": 78 },
+               "align": "bottom",
+               "header": "Hive Enterance",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 24, "y": 59 },
+               "header": "The Western Pylon",
+               "objectives": ["The Western Pylon"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 31, "y": 50 },
+               "align": "top",
+               "header": "Krakle",
+               "ends": ["Finding the Source"],
+               "starts": ["The New Springs"],
+               "special": ["Hearthstone to Tanaris"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "tanaris",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 52, "y": 28 },
+               "align": "right",
+               "header": "Gadgetzan",
+               "ends": ["Pawn Captures Queen"],
+               "starts": [["Calm Before the Storm", "P1"]],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 67, "y": 23 },
+               "align": "bottom",
+               "header": "Steamwheedle Port",
+               "starts": ["Yuka Screwspigot"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 50, "y": 30 },
+               "header": "Tanaris Flightpath",
+               "special": ["Fly to Un'Goro"],
+               "type": "flightpath"
+            }
+         ]
+      },
+      {
+         "zone": "ungoro",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 45, "y": 6 },
+               "align": "right",
+               "header": "Un'Goro Flightpath",
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 42, "y": 3 },
+               "header": "JD Collie",
+               "ends": ["Crystals of Power", "The Northern Pylon", "The Western Pylon", "The Eastern Pylon", "Making Sense of it"],
+               "starts": ["Making Sense of it"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "ungoro",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 42, "y": 3 },
+               "header": "JD Collie",
+               "ends": ["Crystals of Power", "The Northern Pylon", "The Western Pylon", "The Eastern Pylon", "Making Sense of it"],
+               "starts": ["Making Sense of it"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 45, "y": 6 },
+               "align": "right",
+               "header": "Un'Goro Flightpath",
+               "special": ["Fly to Feralas"],
+               "type": "flightpath"
+            }
+         ]
+      },
+      {
+         "zone": "feralas",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 75, "y": 44 },
+               "align": "right",
+               "header": "Camp Mojache",
+               "starts": ["The Strength of Corruption"],
+               "special": ["Fly to Thunder Bluff"],
+               "type": "hub"
+            }
+         ]
+      },
+      {
+         "zone": "thunderbluff",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 47, "y": 50 },
+               "align": "top",
+               "header": "Thunder Bluff Flightpath",
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 40, "y": 51 },
+               "header": "TB Auction House",
+               "special": ["Buy 10x Morrowgrain"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 46, "y": 64 },
+               "align": "bottom",
+               "header": "Innkeeper Pala",
+               "starts": ["Assisting Arch Druid Runetotem"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 70, "y": 31 },
+               "align": "bottom",
+               "header": "Magatha Grimtotem",
+               "ends": ["Delivery to Magatha"],
+               "starts": ["Magatha's Payment to Jediga"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 77, "y": 29 },
+               "align": "right",
+               "header": "Elder Rise",
+               "ends": ["Assisting Arch Druid Runetotem", "Morrowgrain Research"],
+               "starts": ["Un'goro Soil", "Morrowgrain Research"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 77, "y": 22 },
+               "align": "top",
+               "header": "Gheda",
+               "end": ["Un'goro Soil"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "thunderbluff",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 77, "y": 22 },
+               "align": "top",
+               "header": "Gheda",
+               "end": ["Un'goro Soil"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 47, "y": 50 },
+               "align": "top",
+               "header": "Thunder Bluff Flightpath",
+               "special": ["Fly to Orgrimmar"],
+               "type": "flightpath"
+            }
+         ]
+      },
+      {
+         "zone": "orgrimmar",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 45, "y": 64 },
+               "align": "bottom",
+               "header": "Orgrimmar Flightpath",
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 56, "y": 47 },
+               "align": "right",
+               "header": "Zilzibin Drumlore",
+               "ends": [["Calm Before the Storm", "P1"]],
+               "starts": [["Calm Before the Storm", "P2"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 55, "y": 34 },
+               "align": "top",
+               "header": "Jes'rimon",
+               "ends": ["Bone-Bladed Weapons", "Delivery to Jes'rimon"],
+               "starts": ["Jes'rimon's Payment to Jediga"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 75, "y": 34 },
+               "align": "top",
+               "header": "Belgrom Rockmaul",
+               "ends": [["Betrayed", "P4"]],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "orgrimmar",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 75, "y": 34 },
+               "align": "top",
+               "header": "Belgrom Rockmaul",
+               "ends": [["Betrayed", "P4"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 38, "y": 57 },
+               "align": "bottom",
+               "header": "Warcaller Gorlach",
+               "ends": ["Camp Mojache"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 50, "y": 69 },
+               "align": "bottom",
+               "header": "Karus",
+               "ends": [["Calm Before the Storm", "P2"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 45, "y": 64 },
+               "header": "Orgrimmar Flightpath",
+               "special": ["Fly to Azshara"],
+               "type": "flightpath"
+            }
+         ]
+      },
+      {
+         "zone": "azshara",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 21, "y": 50 },
+               "align": "top",
+               "header": "Azshara Flightpath",
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 21, "y": 53 },
+               "header": "Valormok",
+               "ends": ["Jes'rimon's Payment to Jediga", "Magatha's Payment to Jediga"],
+               "type": "hub"
+            }
+         ]
+      },
+      {
+         "zone": "azshara",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 21, "y": 53 },
+               "header": "Valormok",
+               "ends": ["Jes'rimon's Payment to Jediga", "Magatha's Payment to Jediga"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 21, "y": 50 },
+               "align": "top",
+               "header": "Azshara Flightpath",
+               "special": ["Fly to Tanaris"],
+               "type": "flightpath"
+            }
+         ]
+      },
+      {
+         "zone": "felwood",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 55, "y": 93 },
+               "align": "right",
+               "header": "Azshara Border",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 51, "y": 82 },
+               "align": "right",
+               "header": "Emerald Sanctuary",
+               "starts": ["Forces of Jaedenar", "Verifying the Corruption"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 47, "y": 83 },
+               "align": "bottom",
+               "header": "Maybess Riverbreeze",
+               "starts": ["Cleansing Felwood"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 41, "y": 67 },
+               "align": "right",
+               "header": "Southern Slimepools",
+               "objectives": ["A Sample of Slime"],
+               "special": ["Farm atleast 15 samples"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 41, "y": 59 },
+               "align": "right",
+               "header": "Northern Slimepools",
+               "objectives": ["A Sample of Slime"],
+               "special": ["Farm atleast 15 samples"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 35, "y": 53 },
+               "header": "Bloodvenom Post",
+               "objectives": ["A Husband's Last Battle", ["Wild Guardians", "P1"], "Well of Corruption"],
+               "special": ["Learn the Flightpath"],
+               "type": "hub"
+            }
+         ]
+      },
+      {
+         "zone": "felwood",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 35, "y": 53 },
+               "align": "top",
+               "header": "Bloodvenom Post",
+               "objectives": ["A Husband's Last Battle", ["Wild Guardians", "P1"], "Well of Corruption"],
+               "special": ["Learn the Flightpath"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 36, "y": 61 },
+               "align": "right",
+               "header": "Jaedenar",
+               "objectives": ["Forces of Jaedenar"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 33, "y": 67 },
+               "header": "Corrupted Moonwell",
+               "objectives": ["Well of Corruption"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 51, "y": 82 },
+               "align": "right",
+               "header": "Emerald Sanctuary",
+               "ends": ["Forces of Jaedenar"],
+               "starts": ["Collection of the Corrupt Water"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 48, "y": 94 },
+               "header": "Overlord Ror",
+               "objectives": ["A Husband's Last Battle"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "felwood",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 48, "y": 94 },
+               "header": "Overlord Ror",
+               "objectives": ["A Husband's Last Battle"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 41, "y": 41 },
+               "header": "Shattered Svar Vale",
+               "objectives": ["Verifying the Corruption"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 52, "y": 15 },
+               "align": "top",
+               "header": "Placeholder",
+               "objectives": ["The Strength of Corruption"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 56, "y": 17 },
+               "align": "bottom",
+               "header": "Irontree Cavern",
+               "objectives": ["Cleansing Felwood"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 65, "y": 8 },
+               "align": "top",
+               "header": "Timbermaw Hold Enterance",
+               "special": ["Turn left and enter Moonglade"],
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "moonglade",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 35, "y": 72 },
+               "header": "Timbermaw Hold Enterance",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 36, "y": 42 },
+               "header": "Remulos",
+               "ends": ["Seed of Life"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "moonglade",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 36, "y": 42 },
+               "header": "Remulos",
+               "ends": ["Seed of Life"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 35, "y": 72 },
+               "header": "Timbermaw Hold Enterance",
+               "special": ["Turn left and enter Winterspring"],
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "winterspring",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 28, "y": 35 },
+               "header": "Timbermaw Hold Enterance",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 31, "y": 45 },
+               "header": "Donova Snowden",
+               "ends": ["The New Springs", "It's a Secret to Everybody"],
+               "starts": ["The Videre Elixir", "Strange Sources"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 41, "y": 37 },
+               "align": "top",
+               "header": "Placeholder",
+               "objectives": [["Wild Guardians", "P1"]],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 59, "y": 31 },
+               "align": "top",
+               "header": "Placeholder",
+               "objectives": [["Wild Guardians", "P1"]],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "winterspring",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 59, "y": 31 },
+               "align": "top",
+               "header": "Placeholder",
+               "objectives": [["Wild Guardians", "P1"]],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 60, "y": 74 },
+               "align": "bottom",
+               "header": "Placeholder",
+               "objectives": ["Strange Sources"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 61, "y": 38 },
+               "align": "right",
+               "header": "Everlook",
+               "starts": ["Trouble in Winterspring", "Sister Pamela", "The Everlook Report", "Duke Nicholas Zverenhoff"],
+               "special": ["Set Hearthstone", "Learn the Flightpath", "Fly to Felwood"],
+               "type": "hub"
+            }
+         ]
+      },
+      {
+         "zone": "felwood",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 35, "y": 53 },
+               "header": "Bloodvenom Post",
+               "ends": ["A Husband's Last Battle", ["Wild Guardians", "P1"], "Well of Corruption"],
+               "starts": ["Corrupted Sabers"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 36, "y": 61 },
+               "header": "Jaedenar Moonwell",
+               "objectives": ["Collection of the Corrupt Water"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 47, "y": 83 },
+               "align": "bottom",
+               "header": "Maybess Riverbreeze",
+               "ends": ["Cleansing Felwood"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 51, "y": 82 },
+               "align": "bottom",
+               "header": "Emerald Sanctuary",
+               "ends": ["Collection of the Corrupt Water", "Verifying the Corruption"],
+               "starts": ["Seeking Spiritual Aid"],
+               "type": "hub"
+            }
+         ]
+      },
+      {
+         "zone": "felwood",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 51, "y": 82 },
+               "align": "bottom",
+               "header": "Emerald Sanctuary",
+               "ends": ["Collection of the Corrupt Water", "Verifying the Corruption"],
+               "starts": ["Seeking Spiritual Aid"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 32, "y": 67 },
+               "header": "Corrupted Moonwell",
+               "objectives": ["Corrupted Sabers"],
+               "special": ["Let your cat out"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 35, "y": 53 },
+               "header": "Bloodvenom Post",
+               "ends": ["Corrupted Sabers"],
+               "special": ["Fly to Feralas"],
+               "type": "hub"
+            }
+         ]
+      },
+      {
+         "zone": "feralas",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 75, "y": 44 },
+               "align": "right",
+               "header": "Camp Mojache",
+               "ends": ["Camp Mojache", "The Strength of Corruption"],
+               "starts": ["Vengeance on the Northspring", ["Dark Heart", "E"], "The Strength of Corruption"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 45, "y": 10 },
+               "align": "top",
+               "header": "Ruins of Ravenwind",
+               "objectives": ["The Videre Elixir"],
+               "special": ["Loot an Evoroot"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 39, "y": 13 },
+               "header": "Ruins of Ravenwind",
+               "objectives": ["Vengeance on the Northspring"],
+               "special": ["Loot a Horn of Hatetalon"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 41, "y": 9 },
+               "align": "top",
+               "header": "Ruins of Ravenwind",
+               "objectives": [["Dark Heart", "E"]],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "feralas",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 41, "y": 9 },
+               "align": "top",
+               "header": "Ruins of Ravenwind",
+               "objectives": [["Dark Heart", "E"]],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 45, "y": 26 },
+               "align": "right",
+               "header": "Gregan Brewspewer",
+               "ends": ["The Videre Elixir"],
+               "special": ["Save the Elixirs!"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 45, "y": 5 },
+               "align": "right",
+               "header": "Desolace Border",
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "desolace",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 42, "y": 95 },
+               "align": "right",
+               "header": "Feralas Border",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 24, "y": 71 },
+               "align": "top",
+               "header": "Shadowprey Village",
+               "special": ["Fly to Feralas"],
+               "type": "flightpath"
+            }
+         ]
+      },
+      {
+         "zone": "feralas",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 75, "y": 44 },
+               "align": "right",
+               "header": "Camp Mojache",
+               "ends": ["Vengeance on the Northspring", ["Dark Heart", "E"], "The Strength of Corruption"],
+               "special": ["Hearthstone to Winterspring"],
+               "type": "hub"
+            }
+         ]
+      },
+      {
+         "zone": "winterspring",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 61, "y": 38 },
+               "align": "top",
+               "header": "Everlook",
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 31, "y": 45 },
+               "align": "top",
+               "header": "Donova Snowden",
+               "ends": ["The Videre Elixir", "Strange Sources", "Trouble in Winterspring"],
+               "starts": ["Meet at the Grave"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "winterspring",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 31, "y": 45 },
+               "align": "top",
+               "header": "Donova Snowden",
+               "ends": ["The Videre Elixir", "Strange Sources", "Trouble in Winterspring"],
+               "starts": ["Meet at the Grave"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 61, "y": 38 },
+               "align": "top",
+               "header": "Everlook",
+               "special": ["Fly to Tanaris"],
+               "type": "hub"
+            }
+         ]
+      },
+      {
+         "zone": "tanaris",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 52, "y": 28 },
+               "header": "Gadgetzan",
+               "special": ["Set Hearthstone"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 54, "y": 29 },
+               "align": "right",
+               "header": "Gadgetzan Graveyard",
+               "special": ["Drink a Videre Elixir"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 54, "y": 23 },
+               "align": "right",
+               "header": "Gaeriyan",
+               "ends": ["Meet at the Grave"],
+               "starts": ["A Grave Situation"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "tanaris",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 54, "y": 23 },
+               "align": "right",
+               "header": "Gaeriyan",
+               "ends": ["Meet at the Grave"],
+               "starts": ["A Grave Situation"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 54, "y": 29 },
+               "align": "right",
+               "header": "Gadgetzan Graveyard",
+               "ends": ["A Grave Situation"],
+               "starts": ["Linken's Sword"],
+               "special": ["Resurrect & Loot the Tombstone"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 51, "y": 28 },
+               "header": "Tanaris Flightpath",
+               "special": ["Fly to Un'goro"],
+               "type": "flightpath"
+            }
+         ]
+      },
+      {
+         "zone": "ungoro",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 45, "y": 6 },
+               "align": "right",
+               "header": "Un'Goro Flightpath",
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 44, "y": 9 },
+               "header": "Marshal's Refuge",
+               "ends": ["Linken's Sword"],
+               "starts": ["A Gnome's Assistance"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 42, "y": 3 },
+               "header": "JD Collie",
+               "ends": ["A Gnome's Assistance"],
+               "starts": ["Linken's Memory"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "ungoro",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 42, "y": 3 },
+               "header": "JD Collie",
+               "ends": ["A Gnome's Assistance"],
+               "starts": ["Linken's Memory"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 45, "y": 6 },
+               "align": "right",
+               "header": "Un'Goro Flightpath",
+               "special": ["Fly to Felwood"],
+               "type": "flightpath"
+            }
+         ]
+      },
+      {
+         "zone": "felwood",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 35, "y": 53 },
+               "align": "top",
+               "header": "Bloodvenom Post",
+               "objectives": ["A Husband's Last Battle", ["Wild Guardians", "P1"], "Well of Corruption"],
+               "special": ["Learn the Flightpath"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 51, "y": 82 },
+               "align": "right",
+               "header": "Emerald Sanctuary",
+               "ends": ["Cleansed Water Returns to Felwood", "Linken's Memory"],
+               "starts": ["Silver Heart"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 44, "y": 65 },
+               "align": "right",
+               "header": "Placeholder",
+               "objectives": ["Silver Heart"],
+               "special": ["Bears"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 46, "y": 24 },
+               "align": "right",
+               "header": "Placeholder",
+               "objectives": ["Silver Heart"],
+               "special": ["Trees"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "felwood",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 46, "y": 24 },
+               "align": "right",
+               "header": "Placeholder",
+               "objectives": ["Silver Heart"],
+               "special": ["Trees"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 51, "y": 82 },
+               "align": "right",
+               "header": "Emerald Sanctuary",
+               "ends": ["Silver Heart"],
+               "starts": ["Aquementas"],
+               "special": ["Hearthstone to Tanaris"],
+               "type": "hub"
+            }
+         ]
+      },
+      {
+         "zone": "tanaris",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 52, "y": 28 },
+               "align": "top",
+               "header": "Gadgetzan",
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 70, "y": 50 },
+               "align": "right",
+               "header": "Circle of Aquamentas",
+               "objectives": ["Aquementas"],
+               "special": ["Behind the Pirate Encampment"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 51, "y": 30 },
+               "header": "Tanaris Flightpath",
+               "special": ["Fly to Un'Goro"],
+               "type": "flightpath"
+            }
+         ]
+      },
+      {
+         "zone": "ungoro",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 45, "y": 6 },
+               "align": "right",
+               "header": "Un'Goro Flightpath",
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 42, "y": 3 },
+               "header": "JD Collie",
+               "ends": ["Aquementas"],
+               "starts": ["Linken's Adventure"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 45, "y": 9 },
+               "header": "Linken",
+               "ends": ["Linken's Adventure"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "ungoro",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 45, "y": 9 },
+               "header": "Linken",
+               "ends": ["Linken's Adventure"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 45, "y": 6 },
+               "align": "right",
+               "header": "Un'Goro Flightpath",
+               "special": ["Fly to Ratchetd"],
+               "type": "flightpath"
+            }
+         ]
+      },
+      {
+         "zone": "barrens",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 62, "y": 39 },
+               "header": "Ratchet",
+               "ends": ["Marvon's Workshop"],
+               "starts": ["Volcanic Activity"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 65, "y": 44 },
+               "align": "bottom",
+               "header": "Islen Waterseer",
+               "ends": ["Seeking Spiritual Aid"],
+               "starts": ["Cleansed Water Returns to Felwood"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 65, "y": 39 },
+               "align": "right",
+               "header": "Ratchet Harbor",
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "stv",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 26, "y": 73 },
+               "header": "Booty Bay Harbor",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 27, "y": 77 },
+               "header": "Booty Bay Flightpath",
+               "special": ["Fly to Kargath"],
+               "type": "flightpath"
+            }
+         ]
+      },
+      {
+         "zone": "badlands",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 6, "y": 45 },
+               "align": "right",
+               "header": "Kargath",
+               "starts": ["Dreadmaul Rock", ["The Rise of the Machines", "P1"]],
+               "special": ["Fly to Burning Steppes"],
+               "type": "hub"
+            }
+         ]
+      },
+      {
+         "zone": "steppes",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 65, "y": 24 },
+               "align": "top",
+               "header": "Flame Crest",
+               "ends": ["Yuka Screwspigot"],
+               "starts": ["Tablet of the Seven", "Broodling Essence"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 58, "y": 33 },
+               "align": "top",
+               "header": "Placeholder",
+               "objectives": [["The Rise of the Machines", "P1"]],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 54, "y": 41 },
+               "align": "bottom",
+               "header": "Tablet of the Seven",
+               "objectives": ["Tablet of the Seven"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 75, "y": 32 },
+               "align": "top",
+               "header": "Terror Wing Path",
+               "objectives": ["Broodling Essence"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 86, "y": 31 },
+               "align": "top",
+               "header": "Terror Wing Path",
+               "objectives": ["Broodling Essence"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "steppes",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 86, "y": 31 },
+               "align": "top",
+               "header": "Terror Wing Path",
+               "objectives": ["Broodling Essence"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 95, "y": 32 },
+               "align": "top",
+               "header": "Cyrus Therepentous",
+               "ends": [["A Taste of Flame", "P1"]],
+               "starts": [["A Taste of Flame", "P1-2"]],
+               "objectives": [["A Taste of Flame", "P1"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 80, "y": 45 },
+               "align": "bottom",
+               "header": "Sha'ni Proudtusk",
+               "ends": ["Dreadmaul Rock"],
+               "starts": ["Krom'Grul"],
+               "objectives": ["Krom'Grul"],
+               "special": ["Krom is in one of the caves"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 65, "y": 24 },
+               "header": "Flame Crest",
+               "ends": ["Tablet of the Seven", "Broodling Essence"],
+               "starts": ["Felnok Steelspring", ["The Heart of the Mountain", "D"], ["Ribbly Screwspigot", "D"]],
+               "special": ["Fly to Kargath"],
+               "type": "hub"
+            }
+         ]
+      },
+      {
+         "zone": "badlands",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 6, "y": 45 },
+               "align": "top",
+               "header": "Kargath",
+               "ends": ["Krom'Grul", ["The Rise of the Machines", "P1"]],
+               "starts": [["The Rise of the Machines", "P2"]],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 26, "y": 45 },
+               "align": "top",
+               "header": "Lotwil Veriatus",
+               "ends": [["The Rise of the Machines", "P2"]],
+               "starts": [["The Rise of the Machines", "D"]],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "badlands",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 26, "y": 45 },
+               "align": "top",
+               "header": "Lotwil Veriatus",
+               "ends": [["The Rise of the Machines", "P2"]],
+               "starts": [["The Rise of the Machines", "D"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 6, "y": 45 },
+               "align": "top",
+               "header": "Kargath",
+               "starts": [["Disharmony of Flames", "D"], ["The Last Element", "D"], ["Kill on Sight: Dark Iron Dwarves", "D"]],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 3, "y": 63 },
+               "align": "right",
+               "header": "Searing Gorge Border",
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "searing",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 74, "y": 56 },
+               "align": "right",
+               "header": "Badlands Border",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 35, "y": 84 },
+               "header": "Blackrock Depths",
+               "starts": ["Attunement to the Core", ["Dark Iron Legacy", "D"]],
+               "objectives": [["A Taste of Flame", "D"], ["Disharmony of Flames", "D"], ["The Last Element", "D"], ["Kill on Sight: Dark Iron Dwarves", "D"], ["The Heart of the Mountain", "D"], ["Ribbly Screwspigot", "D"], ["The Rise of the Machines", "D"]],
+               "special": ["HS after kill quest"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "badlands",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 6, "y": 45 },
+               "align": "top",
+               "header": "Kargath",
+               "ends": [["Disharmony of Flames", "D"], ["Kill on Sight: Dark Iron Dwarves", "D"]],
+               "starts": [["Kill on Sight: High Ranking Drak Iron Officials", "D"], ["Commander Gor'shak", "D"], ["Disharmony of Fire", "D"]],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 3, "y": 63 },
+               "align": "right",
+               "header": "Searing Gorge Border",
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "searing",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 74, "y": 56 },
+               "align": "right",
+               "header": "Badlands Border",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 35, "y": 84 },
+               "header": "Blackrock Depths",
+               "objectives": [["A Taste of Flame", "D"], ["The Last Element", "D"], ["The Heart of the Mountain", "D"], ["Ribbly Screwspigot", "D"], ["The Rise of the Machines", "D"], ["Attunement to the Core", "D"], ["Dark Iron Legacy", "D"], ["Kill on Sight: High Ranking Drak Iron Officials", "D"], ["Commander Gor'shak", "D"], ["Disharmony of Fire", "D"]],
+               "special": ["Camp out & return the MC quest"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "badlands",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 6, "y": 45 },
+               "align": "top",
+               "header": "Kargath",
+               "ends": [["Kill on Sight: High Ranking Drak Iron Officials", "D"], ["Disharmony of Fire", "D"], ["The Last Element", "D"]],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 26, "y": 45 },
+               "align": "top",
+               "header": "Lotwil Veriatus",
+               "ends": [["The Rise of the Machines", "D"]],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "badlands",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 26, "y": 45 },
+               "align": "top",
+               "header": "Lotwil Veriatus",
+               "ends": [["The Rise of the Machines", "D"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 6, "y": 45 },
+               "align": "top",
+               "header": "Kargath",
+               "special": ["Fly to Burning Steppes"],
+               "type": "hub"
+            }
+         ]
+      },
+      {
+         "zone": "steppes",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 65, "y": 24 },
+               "align": "top",
+               "header": "Flame Crest",
+               "ends": [["The Heart of the Mountain", "D"], ["Ribbly Screwspigot", "D"]],
+               "special": ["Fly to Undercity"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 95, "y": 32 },
+               "align": "top",
+               "header": "Cyrus Therepentous",
+               "ends": [["A Taste of Flame", "P2"]],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "steppes",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 95, "y": 32 },
+               "align": "top",
+               "header": "Cyrus Therepentous",
+               "ends": [["A Taste of Flame", "P2"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 65, "y": 24 },
+               "align": "top",
+               "header": "Flame Crest",
+               "special": ["Fly to Undercity"],
+               "type": "hub"
+            }
+         ]
+      },
+      {
+         "zone": "undercity",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 63, "y": 48 },
+               "align": "bottom",
+               "header": "Undercity Flightpath",
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 68, "y": 38 },
+               "align": "top",
+               "header": "Innkeeper Norman",
+               "special": ["Set Hearthstone"],
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 54, "y": 41 },
+               "align": "top",
+               "header": "Berbinger Blathazad",
+               "objectives": ["A Call to Arms: The Plaguelands!"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 49, "y": 69 },
+               "header": "The Apothecarium",
+               "ends": ["A Sample of Slime", "And a Batch of Ooze", "Seeping Corruption"],
+               "starts": ["Melding of Influences", "Seeping Corruption"],
+               "special": ["Use the cauldrons"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 55, "y": 76 },
+               "align": "bottom",
+               "header": "Andron Gant",
+               "ends": ["Delivery to Andron Gant"],
+               "starts": ["Andron's Payment to Jediga"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "undercity",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 55, "y": 76 },
+               "header": "Andron Gant",
+               "ends": ["Delivery to Andron Gant"],
+               "starts": ["Andron's Payment to Jediga"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 58, "y": 92 },
+               "align": "bottom",
+               "header": "Sylvanas Windrunner",
+               "starts": ["The Champion of the Banshee Queen"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 71, "y": 44 },
+               "align": "right",
+               "header": "Undercity Lifts",
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "tirisfal",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 62, "y": 65 },
+               "align": "top",
+               "header": "Undercity Gates",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 83, "y": 71 },
+               "align": "top",
+               "header": "The Bulwark",
+               "ends": ["A Call to Arms: The Plaguelands!", "The Everlook Report"],
+               "starts": ["Scarlet Diversions", "A Plague Upon Thee"],
+               "type": "hub"
             }
          ]
       }
