@@ -10069,7 +10069,7 @@
             {
                "coords": { "x": 53, "y": 46 },
                "align": "bottom",
-               "header": "Marvon",
+               "header": "Marvon Rivetseeker",
                "starts": ["Gahz'Ridian"],
                "special": ["Equip the Helmet"],
                "type": "quest"
@@ -10083,7 +10083,7 @@
             {
                "coords": { "x": 53, "y": 46 },
                "align": "top",
-               "header": "Marvon",
+               "header": "Marvon Rivetseeker",
                "starts": ["Gahz'Ridian"],
                "special": ["Equip the Helmet"],
                "type": "quest"
@@ -10160,7 +10160,7 @@
             {
                "coords": { "x": 53, "y": 46 },
                "align": "bottom",
-               "header": "Marvon",
+               "header": "Marvon Rivetseeker",
                "ends": ["Gahz'Ridian"],
                "special": ["Equip your normal Helmet"],
                "type": "quest"
@@ -10174,7 +10174,7 @@
             {
                "coords": { "x": 53, "y": 46 },
                "align": "bottom",
-               "header": "Marvon",
+               "header": "Marvon Rivetseeker",
                "ends": ["Gahz'Ridian"],
                "special": ["Equip your normal Helmet"],
                "type": "quest"
@@ -10641,7 +10641,7 @@
             {
                "coords": { "x": 53, "y": 46 },
                "align": "bottom",
-               "header": "Marvon",
+               "header": "Marvon Rivetseeker",
                "ends": ["The Sunken Temple"],
                "starts": ["The Stone Circle"],
                "type": "quest"
@@ -10654,7 +10654,7 @@
          "waypoints": [
             {
                "coords": { "x": 53, "y": 46 },
-               "header": "Marvon",
+               "header": "Marvon Rivetseeker",
                "ends": ["The Sunken Temple"],
                "starts": ["The Stone Circle"],
                "type": "quest"
@@ -11115,7 +11115,7 @@
             {
                "coords": { "x": 53, "y": 46 },
                "align": "bottom",
-               "header": "Marvon",
+               "header": "Marvon Rivetseeker",
                "ends": ["The Stone Circle"],
                "type": "quest"
             }
@@ -11128,7 +11128,7 @@
             {
                "coords": { "x": 53, "y": 46 },
                "align": "bottom",
-               "header": "Marvon",
+               "header": "Marvon Rivetseeker",
                "ends": ["The Stone Circle"],
                "type": "quest"
             },
@@ -13764,6 +13764,7 @@
                "coords": { "x": 62, "y": 39 },
                "header": "Ratchet",
                "ends": ["Marvon's Workshop"],
+               "starts": [["Zapper Fuel", "D"]],
                "type": "quest"
             },
             {
@@ -13866,6 +13867,13 @@
                "type": "hub"
             },
             {
+               "coords": { "x": 66, "y": 22 },
+               "align": "top",
+               "header": "Steamwheedle Port",
+               "starts": [["The God Hakkar", "D"]],
+               "type": "quest"
+            },
+            {
                "coords": { "x": 70, "y": 50 },
                "align": "right",
                "header": "Circle of Aquamentas",
@@ -13874,10 +13882,31 @@
                "type": "objective"
             },
             {
-               "coords": { "x": 51, "y": 30 },
-               "header": "Tanaris Flightpath",
-               "special": ["Fly to Un'Goro"],
-               "type": "flightpath"
+               "coords": { "x": 53, "y": 46 },
+               "align": "bottom",
+               "header": "Marvon Rivetseeker",
+               "starts": ["Secret of the Circle", "Into the Depths"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "tanaris",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 53, "y": 46 },
+               "align": "bottom",
+               "header": "Marvon Rivetseeker",
+               "starts": ["Secret of the Circle", "Into the Depths"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 52, "y": 28 },
+               "align": "top",
+               "header": "Gadgetzan",
+               "special": ["Fly to Un'goro"],
+               "type": "hub"
             }
          ]
       },
@@ -13955,8 +13984,54 @@
                "coords": { "x": 27, "y": 77 },
                "align": "right",
                "header": "Booty Bay Flightpath",
-               "special": ["Sunken Temple?", "Fly to Kargath"],
+               "special": ["Fly to Stonard"],
                "type": "flightpath"
+            }
+         ]
+      },
+      {
+         "zone": "swamp",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 46, "y": 54 },
+               "align": "top",
+               "header": "Stonard",
+               "starts": ["The Temple of Atal'Hakkar"],
+               "special": ["Set Hearthstone"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 70, "y": 54 },
+               "align": "top",
+               "header": "Sunken Temple",
+               "starts": [["The Essence of Eranikus", "D"]],
+               "objectives": [["The Temple of Atal'Hakkar", "D"], ["Into the Depths", "D"], ["Secret of the Circle", "D"], ["The God Hakkar", "D"]],
+               "special": ["Hearthstone to Stonard"],
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "swamp",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 70, "y": 54 },
+               "align": "top",
+               "header": "Sunken Temple",
+               "starts": [["The Essence of Eranikus", "D"]],
+               "objectives": [["The Temple of Atal'Hakkar", "D"], ["Into the Depths", "D"], ["Secret of the Circle", "D"], ["The God Hakkar", "D"]],
+               "special": ["Hearthstone to Stonard"],
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 46, "y": 54 },
+               "align": "top",
+               "header": "Stonard",
+               "ends": ["The Temple of Atal'Hakkar"],
+               "special": ["Fly to Kargath"],
+               "type": "hub"
             }
          ]
       },
@@ -14120,8 +14195,8 @@
                "coords": { "x": 35, "y": 84 },
                "header": "Blackrock Depths",
                "starts": ["Attunement to the Core", ["Dark Iron Legacy", "D"]],
-               "objectives": [["A Taste of Flame", "D"], ["Disharmony of Flames", "D"], ["The Last Element", "D"], ["Kill on Sight: Dark Iron Dwarves", "D"], ["The Heart of the Mountain", "D"], ["Ribbly Screwspigot", "D"], ["The Rise of the Machines", "D"], ["Lost Thunderbrew Recipe", "D"]],
-               "special": ["HS after kill quest"],
+               "objectives": [["Disharmony of Flames", "D"], ["Kill on Sight: Dark Iron Dwarves", "D"]],
+               "special": ["HS after the kill quest"],
                "type": "objective"
             }
          ]
@@ -15619,6 +15694,13 @@
                "type": "flightpath"
             },
             {
+               "coords": { "x": 66, "y": 22 },
+               "align": "top",
+               "header": "Steamwheedle Port",
+               "ends": [["The God Hakkar", "D"]],
+               "type": "quest"
+            },
+            {
                "coords": { "x": 50, "y": 29 },
                "align": "bottom",
                "header": "Gadgetzan",
@@ -15662,6 +15744,7 @@
             {
                "coords": { "x": 44, "y": 9 },
                "header": "Marshal's Refuge",
+               "ends": [["Zapper Fuel", "D"]],
                "starts": ["It's Dangerous To Go Alone"],
                "type": "hub"
             },
@@ -15669,6 +15752,7 @@
                "coords": { "x": 48, "y": 33 },
                "header": "Lakkari Tar Pits",
                "objectives": ["Melding of Influences"],
+               "special": ["Loot a bloodpetal Sprout"],
                "type": "objective"
             },
             {
@@ -15694,7 +15778,7 @@
             {
                "coords": { "x": 44, "y": 9 },
                "header": "Marshal's Refuge",
-               "ends": ["It's Dangerous To Go Alone"],
+               "ends": ["It's Dangerous To Go Alone", "Bloodpetal Zapper"],
                "type": "hub"
             },
             {
