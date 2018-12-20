@@ -88,7 +88,7 @@ function build(faction) {
    // HORDE ROUTE & QUEST IDS
    } else {
       route = [$.getJSON('../data/horde/route.json')];
-      quests = $.getJSON('../data/horde/00-quest-ids.json');
+      quests = $.getJSON('../data/horde/quest-ids.json');
    }
 
    // WAIT FOR ALL PROMISES TO BE RESOLVED

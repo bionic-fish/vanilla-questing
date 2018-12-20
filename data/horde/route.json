@@ -213,7 +213,7 @@
                "coords": { "x": 52, "y": 42 },
                "align": "right",
                "header": "Razor Hill",
-               "ends": ["Return to Orgnil", "From the Wreckage", "Break a Few Eggs"],
+               "ends": ["Report to Orgnil", "From the Wreckage", "Break a Few Eggs"],
                "starts": ["Dark Storms"],
                "type": "hub"
             },
@@ -881,7 +881,7 @@
             {
                "coords": { "x": 43, "y": 41 },
                "header": "Sepulcher",
-               "ends": ["The Deathstalkers Report", "Delivery to Silverpine Forest", "Speak with Renferrel"],
+               "ends": ["The Deathstalkers Report", "Delivery to Silverpine", "Speak with Renferrel"],
                "starts": [["A Recipe For Death", "P1"], "Speak with Renferrel", "Lost Deathstalkers", "The Dead Fields", "Zinge's Delivery", "Prove Your Worth"],
                "type": "hub"
             }
@@ -1311,7 +1311,7 @@
                "align": "right",
                "header": "The Crossroads",
                "ends": ["Sample for Helbrim", "Crossroads Conscription", "Meats to Orgrimmar"],
-               "starts": ["Plainstrider Menace", "Lost in Battle", "The Forgotten Pools", "Raptor Thieves", "Disrupt the Attacks", "Happy Raiders", "Fungal Spores", "Wharfmaster Dizzywig", "Meats to Orgrimmar"],
+               "starts": ["Plainstrider Menace", "Lost in Battle", "The Forgotten Pools", "Raptor Thieves", "Disrupt the Attacks", "Harpy Raiders", "Fungal Spores", "Wharfmaster Dizzywig", "Meats to Orgrimmar"],
                "special": ["Set Hearthstone", "Learn the Flightpath"],
                "type": "hub"
             }
@@ -2326,7 +2326,7 @@
                "coords": { "x": 40, "y": 59 },
                "align": "bottom",
                "header": "Bluff Runner Windstrider",
-               "starts": ["Ashenvale Hunt"],
+               "starts": ["The Ashenvale Hunt"],
                "type": "quest"
             },
             {
@@ -2387,7 +2387,7 @@
                "coords": { "x": 80, "y": 32 },
                "align": "right",
                "header": "Sorek",
-               "starts": [["Speak with Ruga", "C"]],
+               "starts": [["Speak With Ruga", "C"]],
                "type": "quest"
             },
             {
@@ -2447,7 +2447,7 @@
                "align": "top",
                "header": "Raleigh Andrean",
                "ends": ["Raleigh and the Undercity"],
-               "starts": ["A Husbands Revenge"],
+               "starts": ["A Husband's Revenge"],
                "type": "quest"
             },
             {
@@ -2618,7 +2618,8 @@
             {
                "coords": { "x": 43, "y": 41 },
                "header": "Sepulcher",
-               "ends": ["Beren's Peril", "Ambermill Investigations"],
+               "ends": ["Beren's Peril", "Ambermill Investigations", "Rot Hide Ichor"],
+               "starts": ["Rot Hide Origins"],
                "type": "hub"
             }
          ]
@@ -2630,7 +2631,8 @@
             {
                "coords": { "x": 43, "y": 41 },
                "header": "Sepulcher",
-               "ends": ["Beren's Peril", "Ambermill Investigations"],
+               "ends": ["Beren's Peril", "Ambermill Investigations", "Rot Hide Ichor"],
+               "starts": ["Rot Hide Origins"],
                "type": "hub"
             },
             {
@@ -2661,7 +2663,7 @@
                "coords": { "x": 84, "y": 17 },
                "align": "right",
                "header": "Bethor Iceshard",
-               "ends": ["Rot Hid Origins", "Wand to Bethor"],
+               "ends": ["Rot Hide Origins", "Wand to Bethor"],
                "special": ["Hearthstone to Crossroads"],
                "type": "quest"
             }
@@ -2763,22 +2765,22 @@
                "coords": { "x": 59, "y": 76 },
                "align": "bottom",
                "header": "Wanted Poster",
-               "starts": [["Arachnofobia", "E"]],
+               "starts": [["Arachnophobia", "E"]],
                "type": "quest"
             },
             {
                "coords": { "x": 53, "y": 74 },
                "align": "bottom",
                "header": "Sishir Canyon",
-               "objectives": [["Arachnofobia", "E"], "Blood Feeders"],
+               "objectives": [["Arachnophobia", "E"], "Blood Feeders"],
                "type": "objective"
             },
             {
                "coords": { "x": 47, "y": 61 },
                "align": "top",
                "header": "Sun Rock Retreat",
-               "ends": [["Arachnofobia", "E"], "Kaya's Alive"],
-               "starts": ["Boulderslide Ravine", "Trouble at the Deeps"],
+               "ends": [["Arachnophobia", "E"], "Kaya's Alive"],
+               "starts": ["Boulderslide Ravine", "Trouble in the Deeps"],
                "special": ["Set Hearthstone"],
                "type": "hub"
             },
@@ -3017,8 +3019,8 @@
             {
                "coords": { "x": 45, "y": 59 },
                "header": "Camp Taurajo",
-               "ends": ["Tribes at War", "Blood Shards for Agamaggan"],
-               "starts": ["Blood Shards for Agamaggan", ["Betrayal from Within", "P1"], ["Trial at the Fields of Giants", "C"]],
+               "ends": ["Tribes at War", "Blood Shards of Agamaggan"],
+               "starts": ["Blood Shards of Agamaggan", ["Betrayal from Within", "P1"], ["Trial at the Field of Giants", "C"]],
                "type": "hub"
             },
             {
@@ -3032,7 +3034,7 @@
             {
                "coords": { "x": 44, "y": 71 },
                "header": "Field of Giants",
-               "objectives": ["Egg Hunt", ["Trial at the Fields of Giants", "C"]],
+               "objectives": ["Egg Hunt", ["Trial at the Field of Giants", "C"]],
                "type": "objective"
             }
          ]
@@ -3044,14 +3046,14 @@
             {
                "coords": { "x": 44, "y": 71 },
                "header": "Field of Giants",
-               "objectives": ["Egg Hunt", ["Trial at the Fields of Giants", "C"]],
+               "objectives": ["Egg Hunt", ["Trial at the Field of Giants", "C"]],
                "type": "objective"
             },
             {
                "coords": { "x": 45, "y": 59 },
                "align": "right",
                "header": "Camp Taurajo",
-               "ends": ["Owatanka", ["Trial at the Fields of Giants", "C"]],
+               "ends": ["Owatanka", ["Trial at the Field of Giants", "C"], "Cry of the Thunderhawk"],
                "starts": [["Speak with Thun'grim", "C"]],
                "type": "hub"
             },
@@ -3132,7 +3134,7 @@
                "align": "right",
                "header": "Gann's Stonespine",
                "ends": ["Gann's Reclamation"],
-               "starts": [["Gann's Revenge", "E"]],
+               "starts": [["Revenge of Gann", "E"]],
                "type": "quest"
             }
          ]
@@ -3145,7 +3147,7 @@
                "coords": { "x": 46, "y": 77 },
                "header": "Gann's Stonespine",
                "ends": ["Gann's Reclamation"],
-               "starts": [["Gann's Revenge", "E"]],
+               "starts": [["Revenge of Gann", "E"]],
                "type": "quest"
             },
             {
@@ -3159,7 +3161,7 @@
                "coords": { "x": 49, "y": 84 },
                "align": "right",
                "header": "General Twinbraid's Strongbox",
-               "objectives": [["The Tear of the Moons", "E"], ["Gann's Revenge", "E"]],
+               "objectives": [["The Tear of the Moons", "E"], ["Revenge of Gann", "E"]],
                "type": "objective"
             }
          ]
@@ -3172,7 +3174,7 @@
                "coords": { "x": 49, "y": 84 },
                "align": "right",
                "header": "General Twinbraid's Strongbox",
-               "objectives": [["The Tear of the Moons", "E"], ["Gann's Revenge", "E"]],
+               "objectives": [["The Tear of the Moons", "E"], ["Revenge of Gann", "E"]],
                "type": "objective"
             },
             {
@@ -3185,8 +3187,8 @@
             {
                "coords": { "x": 46, "y": 77 },
                "header": "Gann's Stonespine",
-               "ends": [["Gann's Revenge", "E"]],
-               "starts": [["Gann's Revenge", "P3"]],
+               "ends": [["Revenge of Gann", "E"]],
+               "starts": [["Revenge of Gann", "P3"]],
                "type": "quest"
             }
          ]
@@ -3198,14 +3200,14 @@
             {
                "coords": { "x": 46, "y": 77 },
                "header": "Gann's Stonespine",
-               "ends": [["Gann's Revenge", "E"]],
-               "starts": [["Gann's Revenge", "P3"]],
+               "ends": [["Revenge of Gann", "E"]],
+               "starts": [["Revenge of Gann", "P3"]],
                "type": "quest"
             },
             {
                "coords": { "x": 47, "y": 86 },
                "header": "Bael Modan Flying Machine",
-               "objectives": [["Gann's Revenge", "P3"]],
+               "objectives": [["Revenge of Gann", "P3"]],
                "type": "objective"
             }
          ]
@@ -3217,13 +3219,13 @@
             {
                "coords": { "x": 47, "y": 86 },
                "header": "Bael Modan Flying Machine",
-               "objectives": [["Gann's Revenge", "P3"]],
+               "objectives": [["Revenge of Gann", "P3"]],
                "type": "objective"
             },
             {
                "coords": { "x": 46, "y": 77 },
                "header": "Gann's Stonespine",
-               "ends": [["Gann's Revenge", "P3"]],
+               "ends": [["Revenge of Gann", "P3"]],
                "type": "quest"
             },
             {
@@ -3419,7 +3421,7 @@
                "coords": { "x": 73, "y": 30 },
                "align": "top",
                "header": "Elder Rise",
-               "ends": ["The Elder Crone", ["Leaders of the Fang", "D"]],
+               "ends": ["The Elder Crone", ["Leaders of the Fang", "D"], "In Nightmares"],
                "starts": ["Forsaken Aid"],
                "type": "quest"
             },
@@ -3466,8 +3468,6 @@
                "coords": { "x": 47, "y": 61 },
                "align": "bottom",
                "header": "Sun Rock Retreat",
-               "ends": [["Arachnofobia", "E"], "Kaya's Alive"],
-               "starts": ["Boulderslide Ravine", "Trouble at the Deeps"],
                "type": "hub"
             },
             {
@@ -3653,8 +3653,8 @@
             {
                "coords": { "x": 43, "y": 41 },
                "header": "Sepulcher",
-               "ends": ["Thule Ravenclaw", "Report to Hadec"],
-               "starts": ["Report to Hadec", ["Assault on Fenris Isle", "E"], "The Weaver", ["Arugal Must Die", "D"], ["Deathstalkers in Shadowfang", "D"]],
+               "ends": ["Thule Ravenclaw", "Report to Hadrec"],
+               "starts": ["Report to Hadrec", ["Assault on Fenris Isle", "E"], "The Weaver", ["Arugal Must Die", "D"], ["Deathstalkers in Shadowfang", "D"]],
                "special": ["Set Hearthstone"],
                "type": "hub"
             },
@@ -4534,14 +4534,14 @@
                "align": "bottom",
                "header": "Sun Rock Retreat",
                "ends": ["Harpies Threaten", "Elemental War", "New Life"],
-               "starts": [["Bloodfury Bloodlines", "E"]],
+               "starts": [["Bloodfury Bloodline", "E"]],
                "type": "hub"
             },
             {
                "coords": { "x": 32, "y": 70 },
                "align": "bottom",
                "header": "Bloodfury Ripper",
-               "objectives": [["Bloodfury Bloodlines", "E"]],
+               "objectives": [["Bloodfury Bloodline", "E"]],
                "type": "objective"
             }
          ]
@@ -4554,14 +4554,14 @@
                "coords": { "x": 32, "y": 70 },
                "align": "bottom",
                "header": "Bloodfury Ripper",
-               "objectives": [["Bloodfury Bloodlines", "E"]],
+               "objectives": [["Bloodfury Bloodline", "E"]],
                "type": "objective"
             },
             {
                "coords": { "x": 47, "y": 61 },
                "align": "bottom",
                "header": "Sun Rock Retreat",
-               "ends": [["Bloodfury Bloodlines", "E"]],
+               "ends": [["Bloodfury Bloodline", "E"]],
                "type": "hub"
             },
             {
@@ -4614,7 +4614,7 @@
                "coords": { "x": 73, "y": 30 },
                "align": "top",
                "header": "Bushana Runetotem",
-               "ends": [["Blackfathom Villany", "D"]],
+               "ends": [["Blackfathom Villainy", "D"]],
                "type": "quest"
             }
          ]
@@ -4627,7 +4627,7 @@
                "coords": { "x": 73, "y": 30 },
                "align": "top",
                "header": "Bushana Runetotem",
-               "ends": [["Blackfathom Villany", "D"]],
+               "ends": [["Blackfathom Villainy", "D"]],
                "type": "quest"
             },
             {
@@ -4676,7 +4676,7 @@
                "align": "bottom",
                "header": "Freewind Post",
                "ends": ["Message to Freewind Post", ["The Sacred Flame", "P3"]],
-               "starts": ["Pacify the Centaur", ["The Sacred Flame", "P4"], "Alien Egg", "Windrider"],
+               "starts": ["Pacify the Centaur", ["The Sacred Flame", "P4"], "Alien Egg", "Wind Rider"],
                "special": ["Learn the Flightpath", "Set Hearthstone"],
                "type": "hub"
             },
@@ -4902,7 +4902,7 @@
                "align": "top",
                "header": "Magatha Grimtotem",
                "ends": ["Sacred Fire"],
-               "starts": ["Akikara"],
+               "starts": ["Arikara"],
                "type": "quest"
             },
             {
@@ -4962,8 +4962,8 @@
                "coords": { "x": 79, "y": 46 },
                "align": "bottom",
                "header": "Braug Dimspirit",
-               "ends": [["A Test of Lore", "P2"]],
-               "starts": [["A Test of Lore", "P3"]],
+               "ends": [["Test of Lore", "P2"]],
+               "starts": [["Test of Lore", "P3"]],
                "special": ["Die & take Ress Sickness"],
                "type": "quest"
             }
@@ -5000,7 +5000,7 @@
             {
                "coords": { "x": 76, "y": 75 },
                "header": "Barrow Den",
-               "objectives": [["A Test of Lore", "P3"]],
+               "objectives": [["Test of Lore", "P3"]],
                "special": ["Hearthstone to Stonetalon"],
                "type": "objective"
             }
@@ -5021,8 +5021,8 @@
                "coords": { "x": 79, "y": 46 },
                "align": "bottom",
                "header": "Braug Dimspirit",
-               "ends": [["A Test of Lore", "P3-4"]],
-               "starts": [["A Test of Lore", "P4-5"]],
+               "ends": [["Test of Lore", "P3-4"]],
+               "starts": [["Test of Lore", "P4-5"]],
                "special": ["Answer is Neltharion", "Die & take Ress Sickness"],
                "type": "quest"
             }
@@ -5194,7 +5194,7 @@
                "coords": { "x": 38, "y": 35 },
                "align": "right",
                "header": "Sacred Fire of Life",
-               "objectives": ["Akikara"],
+               "objectives": ["Arikara"],
                "type": "objective"
             },
             {
@@ -5209,7 +5209,7 @@
                "coords": { "x": 21, "y": 32 },
                "align": "top",
                "header": "Whitereach Post",
-               "ends": ["Akikara"],
+               "ends": ["Arikara"],
                "special": ["Hearthstone to Freewind Post"],
                "type": "quest"
             }
@@ -5573,9 +5573,7 @@
             {
                "coords": { "x": 45, "y": 59 },
                "header": "Camp Taurajo",
-               "ends": ["Jorn Skyseer", ["Speak With Ruga", "C"]],
-               "starts": ["Ishamuhale", "Melor Sends Word", "Weapons of Choice", "Tribes at War"],
-               "special": ["Set Hearthstone", "Fly to Ratchet"],
+               "special": ["Set Hearthstone"],
                "type": "hub"
             },
             {
@@ -5583,6 +5581,7 @@
                "header": "Razorfen Kraul",
                "starts": [["Willix the Importer", "D"]],
                "objectives": [["Blueleaf Tubers", "D"], ["Going, Going, Guano", "D"], ["A Vengeful Fate", "D"], ["Willix the Importer", "D"], ["Brutal Armor", "C"]],
+               "special": ["Hearthstone to Camp Taurajo"],
                "type": "objective"
             }
          ]
@@ -6070,7 +6069,7 @@
                "coords": { "x": 33, "y": 25 },
                "align": "right",
                "header": "Placeholder",
-               "objectives": [["Raptor Mastery", "P2"], "In Defense of Grom'Gols"],
+               "objectives": [["Raptor Mastery", "P2"], "The Defense of Grom'gols"],
                "type": "objective"
             },
             {
@@ -6326,7 +6325,7 @@
                "coords": { "x": 63, "y": 48 },
                "align": "right",
                "header": "Undercity Flightpath",
-               "starts": ["To Seal From Thieves"],
+               "starts": ["To Steal From Thieves"],
                "type": "flightpath"
             },
             {
@@ -6392,8 +6391,8 @@
                "coords": { "x": 79, "y": 7 },
                "align": "right",
                "header": "Bath'rah the Windwatcher",
-               "ends": [["Cyclonian", "C"], ["The Summoning", "C"]],
-               "starts": [["The Summoning", "C"], ["Whirlwind Weapon", "C"]],
+               "ends": [["Cyclonian", "C"], ["The Summoning", "C"], ["Whirlwind Weapon", "C"]],
+               "starts": [["The Summoning", "C"]],
                "special": ["Dump the mats in the cauldron"],
                "type": "quest"
             }
@@ -6407,8 +6406,8 @@
                "coords": { "x": 80, "y": 67 },
                "align": "right",
                "header": "Bath'rah the Windwatcher",
-               "ends": [["Cyclonian", "C"], ["The Summoning", "C"]],
-               "starts": [["The Summoning", "C"], ["Whirlwind Weapon", "C"]],
+               "ends": [["Cyclonian", "C"], ["The Summoning", "C"], ["Whirlwind Weapon", "C"]],
+               "starts": [["The Summoning", "C"]],
                "special": ["Dump the mats in the cauldron"],
                "type": "quest"
             },
@@ -6676,7 +6675,7 @@
                "coords": { "x": 60, "y": 19 },
                "align": "right",
                "header": "Tarren Mill",
-               "ends": ["Gol'dir", "Dalaran Patrols", "Bracers of Binding"],
+               "ends": ["Blackmoore's Legacy", "Dalaran Patrols", "Bracers of Binding", "The Hammer May Fall"],
                "special": ["Fly to Undercity"],
                "type": "hub"
             }
@@ -7165,7 +7164,7 @@
                "coords": { "x": 56, "y": 56 },
                "align": "top",
                "header": "Ghost Walker Post",
-               "starts": ["Centaur Bounty"],
+               "ends": ["Centaur Bounty"],
                "type": "hub"
             },
             {
@@ -7282,7 +7281,7 @@
                "coords": { "x": 51, "y": 79 },
                "align": "right",
                "header": "Shady Rest Inn",
-               "starts": [["The Black Shield", "P1"], "Lietenant Paval Reethe", "Suspicious Hoofprints"],
+               "starts": [["The Black Shield", "P1"], "Lieutenant Paval Reethe", "Suspicious Hoofprints"],
                "type": "quest"
             }
          ]
@@ -7295,7 +7294,7 @@
                "coords": { "x": 30, "y": 48 },
                "align": "bottom",
                "header": "Shady Rest Inn",
-               "starts": [["The Black Shield", "P1"], "Lietenant Paval Reethe", "Suspicious Hoofprints"],
+               "starts": [["The Black Shield", "P1"], "Lieutenant Paval Reethe", "Suspicious Hoofprints"],
                "type": "quest"
             },
             {
@@ -7316,7 +7315,7 @@
                "coords": { "x": 36, "y": 31 },
                "align": "top",
                "header": "Brackenwall Village",
-               "ends": [["The Black Shield", "P1-2"], "Lietenant Paval Reethe", "Suspicious Hoofprints"],
+               "ends": [["The Black Shield", "P1-2"], "Lieutenant Paval Reethe", "Suspicious Hoofprints"],
                "starts": [["The Black Shield", "P2-3"], "Theramore Spies"],
                "special": ["Set Hearthstone"],
                "type": "quest"
@@ -7330,7 +7329,7 @@
             {
                "coords": { "x": 36, "y": 31 },
                "header": "Brackenwall Village",
-               "ends": [["The Black Shield", "P1-2"], "Lietenant Paval Reethe", "Suspicious Hoofprints"],
+               "ends": [["The Black Shield", "P1-2"], "Lieutenant Paval Reethe", "Suspicious Hoofprints"],
                "starts": [["The Black Shield", "P2-3"], "Theramore Spies"],
                "special": ["Set Hearthstone"],
                "type": "quest"
@@ -7633,7 +7632,7 @@
                "coords": { "x": 49, "y": 69 },
                "header": "The Apothecarium",
                "ends": [["Hearts of Zeal", "D"], ["Errand for Apothecary Zinge", "P2"]],
-               "starts": ["Into the Fields"],
+               "starts": ["Into The Field"],
                "type": "quest"
             },
             {
@@ -8050,7 +8049,7 @@
                "coords": { "x": 60, "y": 19 },
                "align": "right",
                "header": "Tarren Mill",
-               "ends": [["The Crown of Will", "P3"], "Lord Aliden Perenolde", "Wanted: Baron Vardus", ["Vorrel's Revenge", "E"]],
+               "ends": [["The Crown of Will", "P3"], "Lord Aliden Perenolde", "Wanted: Baron Vardus", ["Vorrel's Revenge", "E"], "Taretha's Gift"],
                "starts": [["The Crown of Will", "P4"]],
                "special": ["Fly to Undercity"],
                "type": "hub"
@@ -8218,7 +8217,7 @@
             {
                "coords": { "x": 32, "y": 29 },
                "header": "Grom'gol Basecamp",
-               "starts": ["Headhunting", "Split Bone Necklace", "In Defense of Grom'Gol"],
+               "starts": ["Headhunting", "Split Bone Necklace", "The Defense of Grom'gol"],
                "special": ["Set Hearthstone"],
                "type": "hub"
             },
@@ -8233,7 +8232,7 @@
                "coords": { "x": 37, "y": 31 },
                "align": "right",
                "header": "Mizjah Ruins",
-               "objectives": ["In Defense of Grom'Gol"],
+               "objectives": ["The Defense of Grom'gol"],
                "type": "objective"
             }
          ]
@@ -8246,7 +8245,7 @@
                "coords": { "x": 37, "y": 31 },
                "align": "right",
                "header": "Mizjah Ruins",
-               "objectives": ["In Defense of Grom'Gol"],
+               "objectives": ["The Defense of Grom'gol"],
                "type": "objective"
             },
             {
@@ -8274,7 +8273,7 @@
                "coords": { "x": 32, "y": 29 },
                "align": "bottom",
                "header": "Grom'gol Basecamp",
-               "ends": ["Headhunting", "In Defense of Grom'Gol"],
+               "ends": ["Headhunting", "The Defense of Grom'gol"],
                "starts": ["Bloodscalp Clan Heads", ["Mok'thardin's Enchantment", "P1"]],
                "type": "hub"
             }
@@ -8288,7 +8287,7 @@
                "coords": { "x": 32, "y": 29 },
                "align": "bottom",
                "header": "Grom'gol Basecamp",
-               "ends": ["Headhunting", "In Defense of Grom'Gol"],
+               "ends": ["Headhunting", "The Defense of Grom'gol"],
                "starts": ["Bloodscalp Clan Heads", ["Mok'thardin's Enchantment", "P1"]],
                "type": "hub"
             },
@@ -8430,7 +8429,7 @@
                "coords": { "x": 66, "y": 22 },
                "align": "top",
                "header": "Steamwheedle Port",
-               "ends": ["Into The Fields", "Tran'Rek"],
+               "ends": ["Into The Field", "Tran'Rek"],
                "type": "quest"
             },
             {
@@ -9528,8 +9527,8 @@
                "coords": { "x": 63, "y": 34 },
                "align": "top",
                "header": "Placeholder",
-               "ends": ["The Princess Trapped"],
-               "objectives": ["The Princess Trapped"],
+               "ends": [["Summoning the Princess", "E"]],
+               "objectives": [["Summoning the Princess", "E"]],
                "type": "quest"
             }
          ]
@@ -9542,8 +9541,8 @@
                "coords": { "x": 63, "y": 34 },
                "align": "top",
                "header": "Placeholder",
-               "ends": ["The Princess Trapped"],
-               "objectives": ["The Princess Trapped"],
+               "ends": [["Summoning the Princess", "E"]],
+               "objectives": [["Summoning the Princess", "E"]],
                "type": "quest"
             },
             {
@@ -9604,7 +9603,7 @@
                "coords": { "x": 33, "y": 75 },
                "align": "bottom",
                "header": "Atal'ai Exile",
-               "ends": ["Atal'ai Exile"],
+               "ends": ["The Atal'ai Exile"],
                "starts": ["Return to Fel'Zerul"],
                "type": "quest"
             },
@@ -9892,7 +9891,7 @@
             {
                "coords": { "x": 52, "y": 28 },
                "header": "Gadgetzan",
-               "starts": ["Slake That Thirsty", "Wanted: Caliph Scorpidsting", "Wanted: Andre Firebeard", "Gadgetzan Water Survey", "Wastewander Justice", "Water Pouch Bounty"],
+               "starts": ["Slake That Thirst", "Wanted: Caliph Scorpidsting", "Wanted: Andre Firebeard", "Gadgetzan Water Survey", "Wastewander Justice", "Water Pouch Bounty"],
                "special": ["Set Hearthstone"],
                "type": "hub"
             },
@@ -9916,7 +9915,7 @@
                "coords": { "x": 78, "y": 77 },
                "align": "top",
                "header": "Shimmering Flats",
-               "ends": ["News for Fizzle"],
+               "ends": ["News For Fizzle"],
                "starts": [["Gahz'rilla", "D"]],
                "type": "quest"
             }
@@ -9930,7 +9929,7 @@
                "coords": { "x": 78, "y": 77 },
                "align": "top",
                "header": "Shimmering Flats",
-               "ends": ["News for Fizzle"],
+               "ends": ["News For Fizzle"],
                "starts": [["Gahz'rilla", "D"]],
                "type": "quest"
             },
@@ -9962,7 +9961,7 @@
                "coords": { "x": 52, "y": 28 },
                "align": "bottom",
                "header": "Gadgetzan",
-               "ends": ["Slake That Thirsty", "Wastewander Justice", "Water Pouch Bounty"],
+               "ends": ["Slake That Thirst", "Wastewander Justice", "Water Pouch Bounty"],
                "starts": ["More Wastewander Justice", "Tanaris Field Sampling"],
                "type": "hub"
             },
@@ -10218,7 +10217,7 @@
                "coords": { "x": 75, "y": 44 },
                "align": "bottom",
                "header": "Camp Mojache",
-               "ends": ["A Threat In Feralas"],
+               "ends": ["A Threat in Feralas"],
                "starts": [["The Ogres of Feralas", "P1"], "A New Cloak's Sheen", "Gordunni Cobalt", "War on the Woodpaw", "The Mark of Quality", "A Strange Request", "Natural Materials", "The Sunken Temple"],
                "special": ["Set Hearthstone"],
                "type": "hub"
@@ -10405,13 +10404,13 @@
                "align": "top",
                "header": "Camp Mojache",
                "ends": ["Improved Quality", "Pristine Yeti Hide"],
-               "starts": ["Alpha Strikes"],
+               "starts": ["Alpha Strike"],
                "type": "hub"
             },
             {
                "coords": { "x": 71, "y": 56 },
                "header": "Woodpaw Hills",
-               "objectives": ["Alpha Strikes"],
+               "objectives": ["Alpha Strike"],
                "type": "objective"
             }
          ]
@@ -10423,14 +10422,14 @@
             {
                "coords": { "x": 71, "y": 56 },
                "header": "Woodpaw Hills",
-               "objectives": ["Alpha Strikes"],
+               "objectives": ["Alpha Strike"],
                "type": "objective"
             },
             {
                "coords": { "x": 75, "y": 44 },
                "align": "top",
                "header": "Camp Mojache",
-               "ends": ["Alpha Strikes"],
+               "ends": ["Alpha Strike"],
                "starts": ["Woodpaw Investigation"],
                "type": "hub"
             }
@@ -10444,7 +10443,7 @@
                "coords": { "x": 75, "y": 44 },
                "align": "top",
                "header": "Camp Mojache",
-               "ends": ["Alpha Strikes"],
+               "ends": ["Alpha Strike"],
                "starts": ["Woodpaw Investigation"],
                "type": "hub"
             },
@@ -10757,7 +10756,7 @@
             {
                "coords": { "x": 49, "y": 67 },
                "header": "Apothecary Zinge",
-               "starts": ["Return to Apothecary Zinge"],
+               "ends": ["Return to Apothecary Zinge"],
                "type": "quest"
             },
             {
@@ -10974,7 +10973,7 @@
                "coords": { "x": 78, "y": 80 },
                "align": "bottom",
                "header": "Revantusk Village",
-               "starts": [["Gammerita, Mon!", "E"], "Lard Lost His Lunch"],
+               "ends": [["Gammerita, Mon!", "E"], "Lard Lost His Lunch"],
                "special": ["Fly to Tarren Mill"],
                "type": "hub"
             }
@@ -11144,7 +11143,7 @@
                "align": "top",
                "header": "Steamwheedle Port",
                "ends": [["The Prophecy of Mosh'aru", "D"]],
-               "starts": [[["The Ancient Egg", "E"], "E"]],
+               "starts": [["The Ancient Egg", "E"]],
                "type": "quest"
             },
             {
@@ -11217,7 +11216,7 @@
             {
                "coords": { "x": 24, "y": 71 },
                "header": "Shadowprey Village",
-               "starts": ["Vyletongue Corruptions"],
+               "starts": ["Vyletongue Corruption"],
                "special": ["Set Hearthstone"],
                "type": "hub"
             },
@@ -11259,7 +11258,7 @@
             {
                "coords": { "x": 24, "y": 71 },
                "header": "Shadowprey Village",
-               "ends": ["Vyletongue Corruptions"],
+               "ends": ["Vyletongue Corruption"],
                "type": "hub"
             },
             {
@@ -11299,7 +11298,7 @@
             {
                "coords": { "x": 24, "y": 71 },
                "header": "Shadowprey Village",
-               "ends": ["Vyletongue Corruptions"],
+               "ends": ["Vyletongue Corruption"],
                "special": ["Fly to Feralas"],
                "type": "hub"
             }
@@ -11572,8 +11571,8 @@
                "coords": { "x": 26, "y": 73 },
                "align": "top",
                "header": "Captain Hecklebury Smotts",
-               "ends": ["The Monogrammed Sash", "Sprogger"],
-               "starts": ["Sprogger"],
+               "ends": ["The Monogrammed Sash", "The Captain's Cutlass"],
+               "starts": ["The Captain's Cutlass"],
                "type": "quest"
             },
             {
@@ -12121,7 +12120,7 @@
                "coords": { "x": 78, "y": 80 },
                "align": "bottom",
                "header": "Revantusk Village",
-               "starts": [["Separation Anxiety", "E"], ["Wanted: Vile Priestess Hexx and Her Minions", "E"], ["Job Opening: Guard Captain of Reventusk Village", "E"], ["Kidnapped Elder Tornhusk", "E"], ["Dark Vessels", "E"]],
+               "starts": [["Separation Anxiety", "E"], ["Wanted: Vile Priestess Hexx and Her Minions", "E"], ["Job Opening: Guard Captain of Reventusk Village", "E"], ["Kidnapped Elder Torntusk", "E"], ["Dark Vessels", "E"]],
                "special": ["Set Hearthstone"],
                "type": "hub"
             },
@@ -12176,7 +12175,7 @@
                "coords": { "x": 60, "y": 78 },
                "align": "right",
                "header": "Elder Torntusk",
-               "ends": ["Kidnapped Elder Tornhusk"],
+               "ends": ["Kidnapped Elder Torntusk"],
                "starts": [["Recover the Key!", "E"]],
                "special": ["Kill the patrolling Priestess", "Forge your Mallet"],
                "type": "quest"
@@ -12231,7 +12230,7 @@
                "coords": { "x": 78, "y": 80 },
                "align": "bottom",
                "header": "Revantusk Village",
-               "ends": [["Separation Anxiety", "E"], ["Wanted: Vile Priestess Hexx and Her Minions", "E"], ["Job Opening: Guard Captain of Reventusk Village", "E"], ["Kidnapped Elder Tornhusk", "E"], ["Dark Vessels", "E"]],
+               "ends": [["Separation Anxiety", "E"], ["Wanted: Vile Priestess Hexx and Her Minions", "E"], ["Job Opening: Guard Captain of Reventusk Village", "E"], "Return to Primal Torntusk", ["Dark Vessels", "E"]],
                "type": "hub"
             },
             {
@@ -12338,7 +12337,7 @@
                "coords": { "x": 56, "y": 47 },
                "align": "top",
                "header": "Zilzibin Drumlore",
-               "starts": ["Rise of the Silithid"],
+               "starts": ["March of the Silithid"],
                "type": "quest"
             },
             {
@@ -12617,7 +12616,7 @@
                "coords": { "x": 44, "y": 9 },
                "header": "Marshal's Refuge",
                "ends": [["It's a Secret to Everybody", "P2"]],
-               "starts": ["Shizzle's Flyer", "Muigin and Larion", "Lost!", "Roll the Bones", "Beware of Pterrordax", "Alien Ecology", "Expedition Salvation"],
+               "starts": ["Shizzle's Flyer", "Larion and Muigin", "Lost!", "Roll the Bones", "Beware of Pterrordax", "Alien Ecology", "Expedition Salvation"],
                "special": ["Pick up 7x of RGBY Crystals", "Obtain 25 Un'goro Soil"],
                "type": "hub"
             },
@@ -12664,7 +12663,7 @@
                "coords": { "x": 69, "y": 23 },
                "align": "right",
                "header": "Placeholder",
-               "objectives": ["Muigin and Larion"],
+               "objectives": ["Larion and Muigin"],
                "type": "objective"
             },
             {
@@ -12827,7 +12826,7 @@
                "coords": { "x": 44, "y": 9 },
                "align": "right",
                "header": "Marshal's Refuge",
-               "ends": ["Shizzle's Flyer", "Muigin and Larion", ["A Little Help From My Friends", "F"], "Roll the Bones", "Beware of Pterrordax", "Alien Ecology", "Expedition Salvation"],
+               "ends": ["Shizzle's Flyer", "Larion and Muigin", ["A Little Help From My Friends", "F"], "Roll the Bones", "Beware of Pterrordax", "Alien Ecology", "Expedition Salvation"],
                "starts": [["It's a Secret to Everybody", "P3"], "Marvon's Workshop"],
                "type": "hub"
             }
@@ -12841,8 +12840,8 @@
                "coords": { "x": 44, "y": 9 },
                "align": "bottom",
                "header": "Marshal's Refuge",
-               "ends": ["Shizzle's Flyer", "Muigin and Larion", ["A Little Help From My Friends", "F"], "Roll the Bones", "Beware of Pterrordax", "Alien Ecology", "Expedition Salvation"],
-               "starts": ["A Visit to Gregan", ["It's a Secret to Everybody", "P3"]],
+               "ends": ["Shizzle's Flyer", "Larion and Muigin", ["A Little Help From My Friends", "F"], "Roll the Bones", "Beware of Pterrordax", "Alien Ecology", "Expedition Salvation"],
+               "starts": ["Marvon's Workshop", ["It's a Secret to Everybody", "P3"]],
                "type": "hub"
             },
             {
@@ -13157,7 +13156,7 @@
                "coords": { "x": 77, "y": 22 },
                "align": "top",
                "header": "Gheda",
-               "end": ["Un'goro Soil"],
+               "ends": ["Un'goro Soil"],
                "type": "quest"
             }
          ]
@@ -13170,7 +13169,7 @@
                "coords": { "x": 77, "y": 22 },
                "align": "top",
                "header": "Gheda",
-               "end": ["Un'goro Soil"],
+               "ends": ["Un'goro Soil"],
                "type": "quest"
             },
             {
@@ -13807,8 +13806,48 @@
                "coords": { "x": 45, "y": 6 },
                "align": "right",
                "header": "Un'Goro Flightpath",
-               "special": ["Fly to Felwood"],
+               "special": ["Fly to Ratchet"],
                "type": "flightpath"
+            }
+         ]
+      },
+      {
+         "zone": "barrens",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 62, "y": 39 },
+               "header": "Ratchet",
+               "ends": ["Marvon's Workshop"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 65, "y": 44 },
+               "align": "bottom",
+               "header": "Islen Waterseer",
+               "ends": ["Seeking Spiritual Aid"],
+               "starts": ["Cleansed Water Returns to Felwood"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "barrens",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 65, "y": 44 },
+               "align": "bottom",
+               "header": "Islen Waterseer",
+               "ends": ["Seeking Spiritual Aid"],
+               "starts": ["Cleansed Water Returns to Felwood"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 62, "y": 39 },
+               "header": "Ratchet",
+               "special": ["Fly to Felwood"],
+               "type": "quest"
             }
          ]
       },
@@ -13950,15 +13989,6 @@
             {
                "coords": { "x": 62, "y": 39 },
                "header": "Ratchet",
-               "ends": ["Marvon's Workshop"],
-               "type": "quest"
-            },
-            {
-               "coords": { "x": 65, "y": 44 },
-               "align": "bottom",
-               "header": "Islen Waterseer",
-               "ends": ["Seeking Spiritual Aid"],
-               "starts": ["Cleansed Water Returns to Felwood"],
                "type": "quest"
             },
             {
@@ -14161,7 +14191,7 @@
                "align": "top",
                "header": "Kargath",
                "ends": [["Disharmony of Flames", "D"], ["Kill on Sight: Dark Iron Dwarves", "D"]],
-               "starts": [["Kill on Sight: High Ranking Drak Iron Officials", "D"], ["Commander Gor'shak", "D"], ["Disharmony of Fire", "D"]],
+               "starts": [["Kill on Sight: High Ranking Dark Iron Officials", "D"], ["Commander Gor'shak", "D"], ["Disharmony of Fire", "D"]],
                "type": "hub"
             },
             {
@@ -14185,7 +14215,7 @@
             {
                "coords": { "x": 35, "y": 84 },
                "header": "Blackrock Depths",
-               "objectives": [["A Taste of Flame", "D"], ["The Last Element", "D"], ["The Heart of the Mountain", "D"], ["Ribbly Screwspigot", "D"], ["The Rise of the Machines", "D"], ["Attunement to the Core", "D"], ["Dark Iron Legacy", "D"], ["Kill on Sight: High Ranking Drak Iron Officials", "D"], ["Commander Gor'shak", "D"], ["Disharmony of Fire", "D"], ["Lost Thunderbrew Recipe", "D"]],
+               "objectives": [["A Taste of Flame", "D"], ["The Last Element", "D"], ["The Heart of the Mountain", "D"], ["Ribbly Screwspigot", "D"], ["The Rise of the Machines", "D"], ["Attunement to the Core", "D"], ["Dark Iron Legacy", "D"], ["Kill on Sight: High Ranking Dark Iron Officials", "D"], ["Commander Gor'shak", "D"], ["Disharmony of Fire", "D"], ["Lost Thunderbrew Recipe", "D"]],
                "special": ["Camp out & return the MC quest"],
                "type": "objective"
             }
@@ -14199,7 +14229,7 @@
                "coords": { "x": 6, "y": 45 },
                "align": "top",
                "header": "Kargath",
-               "ends": [["Kill on Sight: High Ranking Drak Iron Officials", "D"], ["Disharmony of Fire", "D"], ["The Last Element", "D"], ["Lost Thunderbrew Recipe", "D"]],
+               "ends": [["Kill on Sight: High Ranking Dark Iron Officials", "D"], ["Disharmony of Fire", "D"], ["The Last Element", "D"], ["Lost Thunderbrew Recipe", "D"]],
                "type": "hub"
             },
             {
@@ -15028,7 +15058,7 @@
                "align": "top",
                "header": "The Bulwark",
                "ends": ["Return to The Bulwark", "Skeletal Fragments"],
-               "starts": ["Mold Rhymes With", "Target: Writing Haunt"],
+               "starts": ["Mold Rhymes With", "Target: Writhing Haunt"],
                "type": "hub"
             }
          ]
@@ -15042,7 +15072,7 @@
                "align": "top",
                "header": "The Bulwark",
                "ends": ["Return to The Bulwark", "Skeletal Fragments"],
-               "starts": ["Mold Rhymes With", "Target: Writing Haunt"],
+               "starts": ["Mold Rhymes With", "Target: Writhing Haunt"],
                "type": "hub"
             },
             {
@@ -15475,7 +15505,7 @@
                "coords": { "x": 32, "y": 38 },
                "align": "top",
                "header": "Thrall",
-               "starts": [["What Is Going On?", "D"]],
+               "ends": [["What Is Going On?", "D"]],
                "type": "quest"
             },
             {
@@ -15515,7 +15545,7 @@
                "coords": { "x": 30, "y": 40 },
                "align": "right",
                "header": "Archmage Xylem",
-               "ends": ["Delivery to Xylem"],
+               "ends": ["Delivery to Archmage Xylem"],
                "starts": ["Xylem's Payment to Jediga"],
                "type": "quest"
             }
@@ -15529,7 +15559,7 @@
                "coords": { "x": 30, "y": 40 },
                "align": "right",
                "header": "Archmage Xylem",
-               "ends": ["Delivery to Xylem"],
+               "ends": ["Delivery to Archmage Xylem"],
                "starts": ["Xylem's Payment to Jediga"],
                "type": "quest"
             },
@@ -15848,7 +15878,7 @@
             {
                "coords": { "x": 31, "y": 45 },
                "header": "Donova Snowden",
-               "end": ["Threat of the Winterfall", "Winterfall Firewater"],
+               "ends": ["Threat of the Winterfall", "Winterfall Firewater"],
                "special": ["Hearthstone to Everlook"],
                "type": "quest"
             }

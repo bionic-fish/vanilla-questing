@@ -136,7 +136,7 @@ function build(faction) {
    // HORDE ROUTE & QUEST IDS
    } else {
       route = [$.getJSON('../data/horde/route.json')];
-      quests = $.getJSON('../data/horde/00-quest-ids.json');
+      quests = $.getJSON('../data/horde/quest-ids.json');
    }
 
    // WAIT FOR ALL PROMISES TO BE RESOLVED
@@ -763,7 +763,7 @@ function objectives(target, ids, settings) {
    return container;
 }
 
-// GET BLOCK QUESTS
+// GET CURRENT QUESTS
 function quests(data, settings) {
 
    // INITIAL CONTAINER
@@ -771,6 +771,8 @@ function quests(data, settings) {
 
    // LIST OF QUESTS TO IGNORE
    var blacklist = [
+
+      // ALLIANCE SIDE
       "The Lost Dwarves",
       "Back to Uldaman",
       "Into the Depths",
@@ -782,7 +784,16 @@ function quests(data, settings) {
       "Dark Iron Legacy",
       "Attunement to the Core",
       "The Fate of the Kingdom",
-      "A Crumpled Up Note"
+      "A Crumpled Up Note",
+
+      // HORDE SIDE
+      "Araj's Scarab",
+      "Alas, Andorhal",
+      "Commander Gor'shak",
+      "Necklace Recovery, Take Two",
+      "Willix the Importer",
+      "Deathstalkers in Shadowfang",
+      "Searching for the Lost Satchel"
    ];
 
    // LOOP THROUGH DATA TO CURRENT BLOCK
@@ -796,7 +807,6 @@ function quests(data, settings) {
       
          // ADD EVERY STARTED QUEST
          if (waypoint.starts != undefined) {
-
             waypoint.starts.forEach(quest => {
                
                // STRING
@@ -812,7 +822,6 @@ function quests(data, settings) {
                   // CHECK IF THE QUEST IS BLACKLISTED
                   var check = $.inArray(quest, blacklist);
                   if (check == -1) { quests[quest] = 0; }
-
                }
 
             });
@@ -820,17 +829,13 @@ function quests(data, settings) {
 
          // REMOVE EVERY ENDED QUEST
          if (waypoint.ends != undefined) {
-
             waypoint.ends.forEach(quest => {
                
                // STRING
-               if (typeof(quest) != 'string') {
-                  delete quests[quest[0]];
+               if (typeof(quest) != 'string') { delete quests[quest[0]];
                
                // ARRAY
-               } else {
-                  delete quests[quest];
-               }
+               } else { delete quests[quest]; }
 
             });
          }
