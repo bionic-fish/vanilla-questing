@@ -7215,7 +7215,7 @@
       },
       {
          "zone": "farmfarmfarm",
-         "experience": 37.61,
+         "experience": 37.40,
          "waypoints": []
       },
       {
@@ -7246,7 +7246,7 @@
       },
       {
          "zone": "barrens",
-         "experience": 0,
+         "experience": 40.00,
          "waypoints": [
             {
                "coords": { "x": 45, "y": 59 },
@@ -7264,7 +7264,7 @@
       },
       {
          "zone": "dustwallow",
-         "experience": 0,
+         "experience": 40.00,
          "waypoints": [
             {
                "coords": { "x": 30, "y": 48 },
@@ -7300,7 +7300,7 @@
       },
       {
          "zone": "dustwallow",
-         "experience": 0,
+         "experience": 40.08,
          "waypoints": [
             {
                "coords": { "x": 36, "y": 31 },
@@ -7344,7 +7344,7 @@
       },
       {
          "zone": "dustwallow",
-         "experience": 0,
+         "experience": 40.20,
          "waypoints": [
             {
                "coords": { "x": 36, "y": 31 },
@@ -7386,7 +7386,7 @@
       },
       {
          "zone": "dustwallow",
-         "experience": 0,
+         "experience": 40.39,
          "waypoints": [
             {
                "coords": { "x": 40, "y": 31 },
@@ -7407,7 +7407,7 @@
       },
       {
          "zone": "barrens",
-         "experience": 0,
+         "experience": 40.49,
          "waypoints": [
             {
                "coords": { "x": 62, "y": 38 },
@@ -7426,7 +7426,7 @@
       },
       {
          "zone": "stv",
-         "experience": 0,
+         "experience": 40.54,
          "waypoints": [
             {
                "coords": { "x": 26, "y": 73 },
@@ -7467,7 +7467,7 @@
       },
       {
          "zone": "stv",
-         "experience": 0,
+         "experience": 40.62,
          "waypoints": [
             {
                "coords": { "x": 44, "y": 20 },
@@ -7488,7 +7488,7 @@
       },
       {
          "zone": "tirisfal",
-         "experience": 0,
+         "experience": 40.62,
          "waypoints": [
             {
                "coords": { "x": 61, "y": 59 },
@@ -7504,7 +7504,7 @@
       },
       {
          "zone": "undercity",
-         "experience": 0,
+         "experience": 40.62,
          "waypoints": [
             {
                "coords": { "x": 71, "y": 44 },
@@ -7543,7 +7543,7 @@
       },
       {
          "zone": "undercity",
-         "experience": 0,
+         "experience": 40.62,
          "waypoints": [
             {
                "coords": { "x": 56, "y": 92 },
@@ -7568,7 +7568,7 @@
       },
       {
          "zone": "tirisfal",
-         "experience": 0,
+         "experience": 40.63,
          "waypoints": [
             {
                "coords": { "x": 62, "y": 65 },
@@ -7588,7 +7588,7 @@
       },
       {
          "zone": "undercity",
-         "experience": 0,
+         "experience": 40.71,
          "waypoints": [
             {
                "coords": { "x": 68, "y": 38 },
@@ -7623,7 +7623,7 @@
       },
       {
          "zone": "undercity",
-         "experience": 0,
+         "experience": 40.82,
          "waypoints": [
             {
                "coords": { "x": 56, "y": 92 },
@@ -7641,7 +7641,7 @@
       },
       {
          "zone": "arathi",
-         "experience": 0,
+         "experience": 40.82,
          "waypoints": [
             {
                "coords": { "x": 74, "y": 36 },
@@ -7683,7 +7683,7 @@
       },
       {
          "zone": "arathi",
-         "experience": 0,
+         "experience": 40.87,
          "waypoints": [
             {
                "coords": { "x": 74, "y": 36 },
@@ -7718,7 +7718,7 @@
       },
       {
          "zone": "arathi",
-         "experience": 0,
+         "experience": 41.07,
          "waypoints": [
             {
                "coords": { "x": 36, "y": 58 },
@@ -7739,7 +7739,7 @@
       },
       {
          "zone": "arathi",
-         "experience": 0,
+         "experience": 41.13,
          "waypoints": [
             {
                "coords": { "x": 74, "y": 36 },
@@ -7760,7 +7760,7 @@
       },
       {
          "zone": "arathi",
-         "experience": 0,
+         "experience": 41.15,
          "waypoints": [
             {
                "coords": { "x": 28, "y": 58 },
@@ -7781,7 +7781,7 @@
       },
       {
          "zone": "arathi",
-         "experience": 0,
+         "experience": 41.19,
          "waypoints": [
             {
                "coords": { "x": 74, "y": 36 },
@@ -7817,7 +7817,7 @@
       },
       {
          "zone": "arathi",
-         "experience": 0,
+         "experience": 41.28,
          "waypoints": [
             {
                "coords": { "x": 32, "y": 82 },
@@ -7853,7 +7853,7 @@
        },
        {
          "zone": "arathi",
-         "experience": 0,
+         "experience": 41.31,
          "waypoints": [
             {
                "coords": { "x": 21, "y": 86 },
@@ -7884,7 +7884,7 @@
       },
       {
          "zone": "alterac",
-         "experience": 0,
+         "experience": 41.47,
          "waypoints": [
             {
                "coords": { "x": 62, "y": 82 },
@@ -7904,7 +7904,7 @@
       },
       {
          "zone": "alterac",
-         "experience": 0,
+         "experience": 41.49,
          "waypoints": [
             {
                "coords": { "x": 45, "y": 47 },
@@ -7924,7 +7924,7 @@
       },
       {
          "zone": "alterac",
-         "experience": 0,
+         "experience": 41.52,
          "waypoints": [
             {
                "coords": { "x": 62, "y": 82 },
@@ -7957,7 +7957,7 @@
       },
       {
          "zone": "alterac",
-         "experience": 0,
+         "experience": 41.54,
          "waypoints": [
             {
                "coords": { "x": 40, "y": 53 },
@@ -7977,7 +7977,7 @@
       },
       {
          "zone": "alterac",
-         "experience": 0,
+         "experience": 41.58,
          "waypoints": [
             {
                "coords": { "x": 62, "y": 82 },
@@ -8020,7 +8020,7 @@
       },
       {
          "zone": "hillsbrad",
-         "experience": 0,
+         "experience": 41.67,
          "waypoints": [
             {
                "coords": { "x": 60, "y": 19 },
@@ -8035,7 +8035,7 @@
       },
       {
          "zone": "undercity",
-         "experience": 0,
+         "experience": 41.81,
          "waypoints": [
             {
                "coords": { "x": 63, "y": 48 },
@@ -8066,7 +8066,7 @@
       },
       {
          "zone": "tirisfal",
-         "experience": 0,
+         "experience": 41.85,
          "waypoints": [
             {
                "coords": { "x": 62, "y": 65 },
@@ -8083,7 +8083,7 @@
       },
       {
          "zone": "stv",
-         "experience": 0,
+         "experience": 41.85,
          "waypoints": [
             {
                "coords": { "x": 32, "y": 29 },
@@ -8096,7 +8096,7 @@
       },
       {
          "zone": "swamp",
-         "experience": 0,
+         "experience": 41.85,
          "waypoints": [
             {
                "coords": { "x": 46, "y": 54 },
@@ -8124,15 +8124,14 @@
                "align": "top",
                "header": "Draenei Encampment",
                "starts": ["Galen's Escape"],
-               "objectives": ["The Lost Caravan", "Draenethyst Crystals"],
-               "special": ["Loot the Chest"],
+               "objectives": ["Draenethyst Crystals", "Ongeku"],
                "type": "objective"
             }
          ]
       },
       {
          "zone": "swamp",
-         "experience": 0,
+         "experience": 41.96,
          "waypoints": [
             {
                "coords": { "x": 65, "y": 18 },
@@ -8181,7 +8180,7 @@
       },
       {
          "zone": "stv",
-         "experience": 0,
+         "experience": 42.13,
          "waypoints": [
             {
                "coords": { "x": 27, "y": 77 },
@@ -8194,7 +8193,7 @@
             {
                "coords": { "x": 32, "y": 29 },
                "header": "Grom'gol Basecamp",
-               "starts": ["Headhunting", "Split Bone Necklace", "The Defense of Grom'gol"],
+               "starts": ["Headhunting", "The Defense of Grom'gol"],
                "special": ["Set Hearthstone"],
                "type": "hub"
             },
@@ -8216,7 +8215,7 @@
       },
       {
          "zone": "stv",
-         "experience": 0,
+         "experience": 42.28,
          "waypoints": [
             {
                "coords": { "x": 37, "y": 31 },
@@ -8244,6 +8243,7 @@
                "align": "top",
                "header": "Ruins of Zul'Kunda",
                "objectives": ["Headhunting"],
+               "special": ["Kill Headhunters"],
                "type": "objective"
             },
             {
@@ -8258,7 +8258,7 @@
       },
       {
          "zone": "stv",
-         "experience": 0,
+         "experience": 42.35,
          "waypoints": [
             {
                "coords": { "x": 32, "y": 29 },
@@ -8293,7 +8293,7 @@
       },
       {
          "zone": "stv",
-         "experience": 0,
+         "experience": 42.49,
          "waypoints": [
             {
                "coords": { "x": 48, "y": 22 },
@@ -8326,7 +8326,7 @@
       },
       {
          "zone": "stv",
-         "experience": 0,
+         "experience": 42.62,
          "waypoints": [
             {
                "coords": { "x": 32, "y": 40 },
@@ -8353,7 +8353,7 @@
       },
       {
          "zone": "stv",
-         "experience": 0,
+         "experience": 42.69,
          "waypoints": [
             {
                "coords": { "x": 27, "y": 77 },
@@ -8371,7 +8371,7 @@
       },
       {
          "zone": "barrens",
-         "experience": 0,
+         "experience": 42.74,
          "waypoints": [
             {
                "coords": { "x": 64, "y": 39 },
@@ -8389,7 +8389,7 @@
       },
       {
          "zone": "tanaris",
-         "experience": 0,
+         "experience": 42.74,
          "waypoints": [
             {
                "coords": { "x": 51, "y": 25 },
@@ -8420,7 +8420,7 @@
       },
       {
          "zone": "needles",
-         "experience": 0,
+         "experience": 42.78,
          "waypoints": [
             {
                "coords": { "x": 75, "y": 96 },
@@ -8453,7 +8453,7 @@
       },
       {
          "zone": "thunderbluff",
-         "experience": 0,
+         "experience": 42.87,
          "waypoints": [
             {
                "coords": { "x": 47, "y": 50 },
@@ -8486,7 +8486,7 @@
       },
       {
          "zone": "thunderbluff",
-         "experience": 0,
+         "experience": 42.98,
          "waypoints": [
             {
                "coords": { "x": 61, "y": 81 },
@@ -8506,7 +8506,7 @@
       },
       {
          "zone": "desolace",
-         "experience": 0,
+         "experience": 42.98,
          "waypoints": [
             {
                "coords": { "x": 24, "y": 71 },
@@ -8532,7 +8532,7 @@
       },
       {
          "zone": "desolace",
-         "experience": 0,
+         "experience": 43.01,
          "waypoints": [
             {
                "coords": { "x": 66, "y": 80 },
@@ -8558,7 +8558,7 @@
       },
       {
          "zone": "orgrimmar",
-         "experience": 0,
+         "experience": 43.04,
          "waypoints": [
             {
                "coords": { "x": 45, "y": 64 },
@@ -8585,7 +8585,7 @@
       },
       {
          "zone": "stv",
-         "experience": 0,
+         "experience": 43.04,
          "waypoints": [
             {
                "coords": { "x": 27, "y": 77 },
@@ -8597,7 +8597,7 @@
       },
       {
          "zone": "badlands",
-         "experience": 0,
+         "experience": 43.04,
          "waypoints": [
             {
                "coords": { "x": 6, "y": 45 },
@@ -8634,7 +8634,7 @@
       },
       {
          "zone": "badlands",
-         "experience": 0,
+         "experience": 43.12,
          "waypoints": [
             {
                "coords": { "x": 60, "y": 51 },
@@ -8667,7 +8667,7 @@
       },
       {
          "zone": "badlands",
-         "experience": 0,
+         "experience": 43.19,
          "waypoints": [
             {
                "coords": { "x": 54, "y": 83 },
@@ -8704,7 +8704,7 @@
       },
       {
          "zone": "badlands",
-         "experience": 0,
+         "experience": 43.31,
          "waypoints": [
             {
                "coords": { "x": 20, "y": 45 },
@@ -8733,7 +8733,7 @@
       },
       {
          "zone": "badlands",
-         "experience": 0,
+         "experience": 43.35,
          "waypoints": [
             {
                "coords": { "x": 15, "y": 37 },
@@ -8776,7 +8776,7 @@
       },
       {
          "zone": "badlands",
-         "experience": 0,
+         "experience": 43.44,
          "waypoints": [
             {
                "coords": { "x": 2, "y": 80 },
@@ -8798,7 +8798,7 @@
       },
       {
          "zone": "orgrimmar",
-         "experience": 0,
+         "experience": 43.53,
          "waypoints": [
             {
                "coords": { "x": 39, "y": 85 },
@@ -8818,7 +8818,7 @@
       },
       {
          "zone": "badlands",
-         "experience": 0,
+         "experience": 43.56,
          "waypoints": [
             {
                "coords": { "x": 6, "y": 45 },
@@ -8847,7 +8847,7 @@
       },
       {
          "zone": "badlands",
-         "experience": 0,
+         "experience": 43.76,
          "waypoints": [
             {
                "coords": { "x": 43, "y": 54 },
@@ -8870,7 +8870,7 @@
       },
       {
          "zone": "badlands",
-         "experience": 0,
+         "experience": 43.98,
          "waypoints": [
             {
                "coords": { "x": 6, "y": 45 },
@@ -8892,7 +8892,7 @@
       },
       {
          "zone": "badlands",
-         "experience": 0,
+         "experience": 44.07,
          "waypoints": [
             {
                "coords": { "x": 51, "y": 77 },
@@ -8913,7 +8913,7 @@
       },
       {
          "zone": "swamp",
-         "experience": 0,
+         "experience": 44.07,
          "waypoints": [
             {
                "coords": { "x": 46, "y": 54 },
@@ -8948,7 +8948,7 @@
       },
       {
          "zone": "swamp",
-         "experience": 0,
+         "experience": 44.19,
          "waypoints": [
             {
                "coords": { "x": 82, "y": 15 },
@@ -8975,7 +8975,7 @@
       },
       {
          "zone": "swamp",
-         "experience": 0,
+         "experience": 44.29,
          "waypoints": [
             {
                "coords": { "x": 66, "y": 78 },
@@ -9003,7 +9003,7 @@
       },
       {
          "zone": "stv",
-         "experience": 0,
+         "experience": 44.40,
          "waypoints": [
             {
                "coords": { "x": 32, "y": 29 },
@@ -9021,7 +9021,7 @@
       },
       {
          "zone": "stv",
-         "experience": 0,
+         "experience": 44.40,
          "waypoints": [
             {
                "coords": { "x": 27, "y": 77 },
@@ -9047,7 +9047,7 @@
       },
       {
          "zone": "stv",
-         "experience": 0,
+         "experience": 44.45,
          "waypoints": [
             {
                "coords": { "x": 32, "y": 67 },
@@ -9076,7 +9076,7 @@
       },
       {
          "zone": "stv",
-         "experience": 0,
+         "experience": 44.53,
          "waypoints": [
             {
                "coords": { "x": 32, "y": 29 },
@@ -9123,7 +9123,7 @@
       },
       {
          "zone": "stv",
-         "experience": 0,
+         "experience": 44.57,
          "waypoints": [
             {
                "coords": { "x": 48, "y": 39 },
@@ -9159,7 +9159,7 @@
       },
       {
          "zone": "stv",
-         "experience": 0,
+         "experience": 44.77,
          "waypoints": [
             {
                "coords": { "x": 41, "y": 44 },
@@ -9192,7 +9192,7 @@
       },
       {
          "zone": "stv",
-         "experience": 0,
+         "experience": 44.94,
          "waypoints": [
             {
                "coords": { "x": 36, "y": 11 },
@@ -9202,14 +9202,14 @@
                "type": "hub"
             },
             {
-               "coords": { "x": 29, "y": 45 },
+               "coords": { "x": 38, "y": 36 },
                "header": "King Bangalash",
                "objectives": [["Big Game Hunter", "E"]],
                "type": "objective"
             },
             {
                "coords": { "x": 42, "y": 50 },
-               "align": "top",
+               "align": "right",
                "header": "Crystalvein Mine",
                "objectives": ["The Singing Crystals"],
                "type": "objective"
@@ -9238,7 +9238,7 @@
       },
       {
          "zone": "stv",
-         "experience": 0,
+         "experience": 45.09,
          "waypoints": [
             {
                "coords": { "x": 35, "y": 61 },
@@ -9265,7 +9265,7 @@
       },
       {
          "zone": "stv",
-         "experience": 0,
+         "experience": 45.26,
          "waypoints": [
             {
                "coords": { "x": 27, "y": 77 },
@@ -9284,7 +9284,7 @@
       },
       {
          "zone": "stv",
-         "experience": 0,
+         "experience": 45.29,
          "waypoints": [
             {
                "coords": { "x": 27, "y": 83 },
@@ -9303,7 +9303,7 @@
       },
       {
          "zone": "stv",
-         "experience": 0,
+         "experience": 45.35,
          "waypoints": [
             {
                "coords": { "x": 27, "y": 77 },
@@ -9337,7 +9337,7 @@
       },
       {
          "zone": "stv",
-         "experience": 0,
+         "experience": 45.47,
          "waypoints": [
             {
                "coords": { "x": 26, "y": 62 },
@@ -9356,7 +9356,7 @@
       },
       {
          "zone": "stv",
-         "experience": 0,
+         "experience": 48.54,
          "waypoints": [
             {
                "coords": { "x": 27, "y": 77 },
@@ -9386,7 +9386,7 @@
       },
       {
          "zone": "stv",
-         "experience": 0,
+         "experience": 48.64,
          "waypoints": [
             {
                "coords": { "x": 50, "y": 28 },
@@ -9423,7 +9423,7 @@
       },
       {
          "zone": "stv",
-         "experience": 0,
+         "experience": 45.73,
          "waypoints": [
             {
                "coords": { "x": 40, "y": 59 },
@@ -9449,7 +9449,7 @@
       },
       {
          "zone": "tirisfal",
-         "experience": 0,
+         "experience": 45.82,
          "waypoints": [
             {
                "coords": { "x": 61, "y": 59 },
@@ -9465,7 +9465,7 @@
       },
       {
          "zone": "undercity",
-         "experience": 0,
+         "experience": 45.82,
          "waypoints": [
             {
                "coords": { "x": 71, "y": 44 },
@@ -9492,7 +9492,7 @@
       },
       {
          "zone": "arathi",
-         "experience": 0,
+         "experience": 45.86,
          "waypoints": [
             {
                "coords": { "x": 74, "y": 36 },
@@ -9512,7 +9512,7 @@
       },
       {
          "zone": "arathi",
-         "experience": 0,
+         "experience": 45.92,
          "waypoints": [
             {
                "coords": { "x": 63, "y": 34 },
@@ -9533,7 +9533,7 @@
       },
       {
          "zone": "hillsbrad",
-         "experience": 0,
+         "experience": 45.92,
          "waypoints": [
             {
                "coords": { "x": 60, "y": 19 },
@@ -9551,7 +9551,7 @@
       },
       {
          "zone": "hinterlands",
-         "experience": 0,
+         "experience": 45.92,
          "waypoints": [
             {
                "coords": { "x": 7, "y": 60 },
