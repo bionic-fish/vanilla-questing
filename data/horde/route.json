@@ -9602,7 +9602,7 @@
       },
       {
          "zone": "hillsbrad",
-         "experience": 0,
+         "experience": 46.07,
          "waypoints": [
             {
                "coords": { "x": 60, "y": 19 },
@@ -9617,7 +9617,7 @@
       },
       {
          "zone": "stv",
-         "experience": 0,
+         "experience": 46.09,
          "waypoints": [
             {
                "coords": { "x": 32, "y": 29 },
@@ -9631,7 +9631,7 @@
       },
       {
          "zone": "swamp",
-         "experience": 0,
+         "experience": 46.12,
          "waypoints": [
             {
                "coords": { "x": 46, "y": 54 },
@@ -9645,7 +9645,7 @@
       },
       {
          "zone": "stv",
-         "experience": 0,
+         "experience": 46.15,
          "waypoints": [
             {
                "coords": { "x": 27, "y": 77 },
@@ -9662,7 +9662,7 @@
       },
       {
          "zone": "barrens",
-         "experience": 0,
+         "experience": 46.19,
          "waypoints": [
             {
                "coords": { "x": 64, "y": 39 },
@@ -9680,7 +9680,7 @@
       },
       {
          "zone": "dustwallow",
-         "experience": 0,
+         "experience": 46.19,
          "waypoints": [
             {
                "coords": { "x": 36, "y": 31 },
@@ -9715,7 +9715,7 @@
       },
       {
          "zone": "dustwallow",
-         "experience": 0,
+         "experience": 46.29,
          "waypoints": [
             {
                "coords": { "x": 36, "y": 31 },
@@ -9735,7 +9735,7 @@
       },
       {
          "zone": "dustwallow",
-         "experience": 0,
+         "experience": 46.45,
          "waypoints": [
             {
                "coords": { "x": 45, "y": 75 },
@@ -9756,7 +9756,7 @@
       },
       {
          "zone": "orgrimmar",
-         "experience": 0,
+         "experience": 46.55,
          "waypoints": [
             {
                "coords": { "x": 45, "y": 64 },
@@ -9782,7 +9782,7 @@
       },
       {
          "zone": "orgrimmar",
-         "experience": 0,
+         "experience": 46.57,
          "waypoints": [
             {
                "coords": { "x": 75, "y": 34 },
@@ -9801,7 +9801,7 @@
       },
       {
          "zone": "thunderbluff",
-         "experience": 0,
+         "experience": 46.57,
          "waypoints": [
             {
                "coords": { "x": 47, "y": 50 },
@@ -9828,7 +9828,7 @@
       },
       {
          "zone": "thunderbluff",
-         "experience": 0,
+         "experience": 46.61,
          "waypoints": [
             {
                "coords": { "x": 47, "y": 33 },
@@ -9863,7 +9863,7 @@
       },
       {
          "zone": "tanaris",
-         "experience": 0,
+         "experience": 46.62,
          "waypoints": [
             {
                "coords": { "x": 52, "y": 28 },
@@ -9881,7 +9881,7 @@
       },
       {
          "zone": "needles",
-         "experience": 0,
+         "experience": 46.62,
          "waypoints": [
             {
                "coords": { "x": 75, "y": 96 },
@@ -9893,14 +9893,14 @@
                "align": "top",
                "header": "Shimmering Flats",
                "ends": ["News For Fizzle"],
-               "starts": [["Gahz'rilla", "D"]],
+               "starts": [["Gahz'rilla", "D"], "Back to Booty Bay"],
                "type": "quest"
             }
          ]
       },
       {
          "zone": "needles",
-         "experience": 0,
+         "experience": 46.63,
          "waypoints": [
             {
                "coords": { "x": 78, "y": 77 },
@@ -9919,7 +9919,7 @@
       },
       {
          "zone": "tanaris",
-         "experience": 0,
+         "experience": 46.63,
          "waypoints": [
             {
                "coords": { "x": 51, "y": 21 },
@@ -9959,7 +9959,7 @@
       },
       {
          "zone": "tanaris",
-         "experience": 0,
+         "experience": 46.82,
          "waypoints": [
             {
                "coords": { "x": 48, "y": 37 },
@@ -9987,7 +9987,7 @@
       },
       {
          "zone": "tanaris",
-         "experience": 0,
+         "experience": 46.94,
          "waypoints": [
             {
                "coords": { "x": 36, "y": 42 },
@@ -10007,7 +10007,6 @@
                "coords": { "x": 67, "y": 23 },
                "align": "top",
                "header": "Steamwheedle Port",
-               "ends": ["Stoley's Debt"],
                "starts": ["Pirate Hats Ahoy!", "Screecher Spirits", "Stoley's Shipment", "Southsea Shakedown"],
                "type": "quest"
             },
@@ -10023,7 +10022,7 @@
       },
       {
          "zone": "tanaris",
-         "experience": 0,
+         "experience": 47.12,
          "waypoints": [
             {
                "coords": { "x": 52, "y": 28 },
@@ -10053,7 +10052,7 @@
       },
       {
          "zone": "tanaris",
-         "experience": 0,
+         "experience": 47.42,
          "waypoints": [
             {
                "coords": { "x": 53, "y": 46 },
@@ -10095,7 +10094,7 @@
       },
       {
          "zone": "tanaris",
-         "experience": 0,
+         "experience": 47.67,
          "waypoints": [
             {
                "coords": { "x": 41, "y": 73 },
@@ -10122,7 +10121,7 @@
       },
       {
          "zone": "tanaris",
-         "experience": 0,
+         "experience": 47.71,
          "waypoints": [
             {
                "coords": { "x": 52, "y": 28 },
@@ -10130,34 +10129,6 @@
                "header": "Gadgetzan",
                "ends": ["The Scrimshank Redemption", ["Insect Part Analysis", "P1-2"], "The Thirsty Goblin", "Thistleshrub Valley", "In Good Taste", "The Dunemaul Compound"],
                "starts": [["Insect Part Analysis", "P1-3"], "In Good Taste", "Sprinkle's Secret Ingredient", "Rise of the Silithid"],
-               "type": "hub"
-            },
-            {
-               "coords": { "x": 53, "y": 46 },
-               "align": "bottom",
-               "header": "Marvon Rivetseeker",
-               "ends": ["Gahz'Ridian"],
-               "special": ["Equip your normal Helmet"],
-               "type": "quest"
-            }
-         ]
-      },
-      {
-         "zone": "tanaris",
-         "experience": 0,
-         "waypoints": [
-            {
-               "coords": { "x": 53, "y": 46 },
-               "align": "bottom",
-               "header": "Marvon Rivetseeker",
-               "ends": ["Gahz'Ridian"],
-               "special": ["Equip your normal Helmet"],
-               "type": "quest"
-            },
-            {
-               "coords": { "x": 52, "y": 28 },
-               "align": "top",
-               "header": "Gadgetzan",
                "special": ["Fly to Freewind Post"],
                "type": "hub"
             }
@@ -10165,7 +10136,7 @@
       },
       {
          "zone": "needles",
-         "experience": 0,
+         "experience": 47.93,
          "waypoints": [
             {
                "coords": { "x": 45, "y": 50 },
@@ -10182,7 +10153,7 @@
       },
       {
          "zone": "feralas",
-         "experience": 0,
+         "experience": 47.93,
          "waypoints": [
             {
                "coords": { "x": 89, "y": 41 },
@@ -10195,7 +10166,7 @@
                "align": "bottom",
                "header": "Camp Mojache",
                "ends": ["A Threat in Feralas"],
-               "starts": [["The Ogres of Feralas", "P1"], "A New Cloak's Sheen", "Gordunni Cobalt", "War on the Woodpaw", "The Mark of Quality", "A Strange Request", "Natural Materials", "The Sunken Temple"],
+               "starts": [["The Ogres of Feralas", "P1"], "A New Cloak's Sheen", "Gordunni Cobalt", "War on the Woodpaw", "The Mark of Quality", "Natural Materials"],
                "special": ["Set Hearthstone"],
                "type": "hub"
             },
@@ -10217,7 +10188,7 @@
       },
       {
          "zone": "feralas",
-         "experience": 0,
+         "experience": 48.01,
          "waypoints": [
             {
                "coords": { "x": 76, "y": 34 },
@@ -10245,14 +10216,14 @@
       },
       {
          "zone": "feralas",
-         "experience": 0,
+         "experience": 48.17,
          "waypoints": [
             {
                "coords": { "x": 75, "y": 44 },
                "align": "top",
                "header": "Camp Mojache",
                "ends": [["The Ogres of Feralas", "P1"], "A New Cloak's Sheen", "Gordunni Cobalt", "War on the Woodpaw"],
-               "starts": [["The Ogres of Feralas", "P2"], ["A Grim Discovery", "P1"]],
+               "starts": [["The Ogres of Feralas", "P2"], ["A Grim Discovery", "P1"], "A Strange Request", "The Sunken Temple"],
                "type": "hub"
             },
             {
@@ -10281,7 +10252,7 @@
       },
       {
          "zone": "feralas",
-         "experience": 0,
+         "experience": 48.31,
          "waypoints": [
             {
                "coords": { "x": 55, "y": 64 },
@@ -10322,7 +10293,7 @@
       },
       {
          "zone": "feralas",
-         "experience": 0,
+         "experience": 48.51,
          "waypoints": [
             {
                "coords": { "x": 45, "y": 43 },
@@ -10347,7 +10318,7 @@
       },
       {
          "zone": "feralas",
-         "experience": 0,
+         "experience": 48.59,
          "waypoints": [
             {
                "coords": { "x": 46, "y": 59 },
@@ -10374,7 +10345,7 @@
       },
       {
          "zone": "feralas",
-         "experience": 0,
+         "experience": 48.71,
          "waypoints": [
             {
                "coords": { "x": 75, "y": 44 },
@@ -10394,7 +10365,7 @@
       },
       {
          "zone": "feralas",
-         "experience": 0,
+         "experience": 48.79,
          "waypoints": [
             {
                "coords": { "x": 71, "y": 56 },
@@ -10414,7 +10385,7 @@
       },
       {
          "zone": "feralas",
-         "experience": 0,
+         "experience": 48.82,
          "waypoints": [
             {
                "coords": { "x": 75, "y": 44 },
@@ -10435,7 +10406,7 @@
       },
       {
          "zone": "feralas",
-         "experience": 0,
+         "experience": 48.84,
          "waypoints": [
             {
                "coords": { "x": 72, "y": 56 },
@@ -10463,7 +10434,7 @@
       },
       {
          "zone": "feralas",
-         "experience": 0,
+         "experience": 48.92,
          "waypoints": [
             {
                "coords": { "x": 76, "y": 61 },
@@ -10485,7 +10456,7 @@
       },
       {
          "zone": "thunderbluff",
-         "experience": 0,
+         "experience": 49.00,
          "waypoints": [
             {
                "coords": { "x": 47, "y": 50 },
@@ -10512,7 +10483,7 @@
       },
       {
          "zone": "thunderbluff",
-         "experience": 0,
+         "experience": 49.06,
          "waypoints": [
             {
                "coords": { "x": 34, "y": 47 },
@@ -10532,7 +10503,7 @@
       },
       {
          "zone": "orgrimmar",
-         "experience": 0,
+         "experience": 49.06,
          "waypoints": [
             {
                "coords": { "x": 45, "y": 64 },
@@ -10564,7 +10535,7 @@
       },
       {
          "zone": "orgrimmar",
-         "experience": 0,
+         "experience": 49.22,
          "waypoints": [
             {
                "coords": { "x": 75, "y": 34 },
@@ -10583,7 +10554,7 @@
       },
       {
          "zone": "feralas",
-         "experience": 0,
+         "experience": 49.22,
          "waypoints": [
             {
                "coords": { "x": 75, "y": 44 },
@@ -10598,11 +10569,10 @@
       },
       {
          "zone": "tanaris",
-         "experience": 0,
+         "experience": 49.24,
          "waypoints": [
             {
                "coords": { "x": 50, "y": 29 },
-               "align": "bottom",
                "header": "Gadgetzan",
                "type": "flightpath"
             },
@@ -10617,21 +10587,24 @@
                "coords": { "x": 53, "y": 46 },
                "align": "bottom",
                "header": "Marvon Rivetseeker",
-               "ends": ["The Sunken Temple"],
+               "ends": ["The Sunken Temple", "Gahz'Ridian"],
                "starts": ["The Stone Circle"],
+               "special": ["Equip your normal Helmet"],
                "type": "quest"
             }
          ]
       },
       {
          "zone": "tanaris",
-         "experience": 0,
+         "experience": 49.34,
          "waypoints": [
             {
                "coords": { "x": 53, "y": 46 },
+               "align": "bottom",
                "header": "Marvon Rivetseeker",
-               "ends": ["The Sunken Temple"],
+               "ends": ["The Sunken Temple", "Gahz'Ridian"],
                "starts": ["The Stone Circle"],
+               "special": ["Equip your normal Helmet"],
                "type": "quest"
             },
             {
@@ -10644,7 +10617,7 @@
       },
       {
          "zone": "barrens",
-         "experience": 47.93,
+         "experience": 49.34,
          "waypoints": [
             {
                "coords": { "x": 63, "y": 37 },
@@ -10663,7 +10636,7 @@
       },
       {
          "zone": "barrens",
-         "experience": 0,
+         "experience": 49.34,
          "waypoints": [
             {
                "coords": { "x": 63, "y": 40 },
@@ -10683,7 +10656,7 @@
       },
       {
          "zone": "orgrimmar",
-         "experience": 0,
+         "experience": 49.34,
          "waypoints": [
             {
                "coords": { "x": 45, "y": 64 },
@@ -10698,8 +10671,26 @@
          ]
       },
       {
+         "zone": "durotar",
+         "experience": 49.34,
+         "waypoints": [
+            {
+               "coords": { "x": 46, "y": 12 },
+               "align": "bottom",
+               "header": "Orgrimmar Gates",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 51, "y": 13 },
+               "align": "bottom",
+               "header": "Zeppelin Station",
+               "type": "travel"
+            }
+         ]
+      },
+      {
          "zone": "tirisfal",
-         "experience": 0,
+         "experience": 49.34,
          "waypoints": [
             {
                "coords": { "x": 61, "y": 59 },
@@ -10715,7 +10706,7 @@
       },
       {
          "zone": "undercity",
-         "experience": 0,
+         "experience": 49.34,
          "waypoints": [
             {
                "coords": { "x": 71, "y": 44 },
@@ -10747,7 +10738,7 @@
       },
       {
          "zone": "hinterlands",
-         "experience": 0,
+         "experience": 49.38,
          "waypoints": [
             {
                "coords": { "x": 82, "y": 82 },
@@ -10788,7 +10779,7 @@
       },
       {
          "zone": "hinterlands",
-         "experience": 0,
+         "experience": 49.47,
          "waypoints": [
             {
                "coords": { "x": 73, "y": 53 },
@@ -10829,7 +10820,7 @@
       },
       {
          "zone": "hinterlands",
-         "experience": 0,
+         "experience": 49.53,
          "waypoints": [
             {
                "coords": { "x": 56, "y": 49 },
@@ -10872,7 +10863,7 @@
       },
       {
          "zone": "hinterlands",
-         "experience": 0,
+         "experience": 49.57,
          "waypoints": [
             {
                "coords": { "x": 35, "y": 67 },
@@ -10902,7 +10893,7 @@
       },
       {
          "zone": "hinterlands",
-         "experience": 0,
+         "experience": 49.65,
          "waypoints": [
             {
                "coords": { "x": 78, "y": 80 },
@@ -10937,7 +10928,7 @@
       },
       {
          "zone": "hinterlands",
-         "experience": 0,
+         "experience": 49.92,
          "waypoints": [
             {
                "coords": { "x": 85, "y": 41 },
@@ -10958,7 +10949,7 @@
       },
       {
          "zone": "hillsbrad",
-         "experience": 0,
+         "experience": 49.98,
          "waypoints": [
             {
                "coords": { "x": 60, "y": 19 },
@@ -10973,7 +10964,7 @@
       },
       {
          "zone": "undercity",
-         "experience": 0,
+         "experience": 50.00,
          "waypoints": [
             {
                "coords": { "x": 63, "y": 48 },
@@ -10998,7 +10989,7 @@
       },
       {
          "zone": "tirisfal",
-         "experience": 0,
+         "experience": 50.07,
          "waypoints": [
             {
                "coords": { "x": 62, "y": 65 },
@@ -11014,7 +11005,7 @@
       },
       {
          "zone": "durotar",
-         "experience": 0,
+         "experience": 50.07,
          "waypoints": [
             {
                "coords": { "x": 51, "y": 13 },
@@ -11039,7 +11030,7 @@
       },
       {
          "zone": "orgrimmar",
-         "experience": 0,
+         "experience": 50.09,
          "waypoints": [
             {
                "coords": { "x": 49, "y": 92 },
@@ -11069,7 +11060,7 @@
       },
       {
          "zone": "tanaris",
-         "experience": 0,
+         "experience": 50.13,
          "waypoints": [
             {
                "coords": { "x": 50, "y": 29 },
@@ -11098,7 +11089,7 @@
       },
       {
          "zone": "tanaris",
-         "experience": 0,
+         "experience": 50.23,
          "waypoints": [
             {
                "coords": { "x": 53, "y": 46 },
@@ -11118,7 +11109,7 @@
       },
       {
          "zone": "tanaris",
-         "experience": 0,
+         "experience": 50.28,
          "waypoints": [
             {
                "coords": { "x": 50, "y": 29 },
@@ -11152,7 +11143,7 @@
       },
       {
          "zone": "desolace",
-         "experience": 0,
+         "experience": 50.57,
          "waypoints": [
             {
                "coords": { "x": 24, "y": 71 },
@@ -11194,7 +11185,7 @@
       },
       {
          "zone": "desolace",
-         "experience": 0,
+         "experience": 50.77,
          "waypoints": [
             {
                "coords": { "x": 24, "y": 71 },
@@ -11227,7 +11218,7 @@
       },
       {
          "zone": "desolace",
-         "experience": 0,
+         "experience": 51.03,
          "waypoints": [
             {
                "coords": { "x": 62, "y": 40 },
@@ -11246,7 +11237,7 @@
       },
       {
          "zone": "feralas",
-         "experience": 0,
+         "experience": 51.03,
          "waypoints": [
             {
                "coords": { "x": 75, "y": 44 },
@@ -11260,12 +11251,12 @@
       },
       {
          "zone": "dustwallow",
-         "experience": 0,
+         "experience": 51.07,
          "waypoints": [
             {
                "coords": { "x": 36, "y": 31 },
                "header": "Brackenwall Village",
-               "type": "quest"
+               "type": "hub"
             },
             {
                "coords": { "x": 46, "y": 57 },
@@ -11278,7 +11269,7 @@
       },
       {
          "zone": "dustwallow",
-         "experience": 0,
+         "experience": 51.13,
          "waypoints": [
             {
                "coords": { "x": 46, "y": 57 },
@@ -11291,13 +11282,13 @@
                "coords": { "x": 36, "y": 31 },
                "header": "Brackenwall Village",
                "special": ["Fly to Ashenvale"],
-               "type": "quest"
+               "type": "hub"
             }
          ]
       },
       {
          "zone": "ashenvale",
-         "experience": 0,
+         "experience": 51.13,
          "waypoints": [
             {
                "coords": { "x": 73, "y": 61 },
@@ -11315,7 +11306,7 @@
       },
       {
          "zone": "azshara",
-         "experience": 0,
+         "experience": 51.13,
          "waypoints": [
             {
                "coords": { "x": 9, "y": 74 },
@@ -11347,7 +11338,7 @@
       },
       {
          "zone": "azshara",
-         "experience": 0,
+         "experience": 51.16,
          "waypoints": [
             {
                "coords": { "x": 20, "y": 62 },
@@ -11366,14 +11357,14 @@
                "coords": { "x": 22, "y": 50 },
                "align": "top",
                "header": "Azshara Flightpath",
-               "special": ["Fly to Orgrimmar"],
+               "special": ["Learn the Flightpath", "Fly to Orgrimmar"],
                "type": "flightpath"
             }
          ]
       },
       {
          "zone": "orgrimmar",
-         "experience": 0,
+         "experience": 51.23,
          "waypoints": [
             {
                "coords": { "x": 45, "y": 64 },
@@ -11404,7 +11395,7 @@
       },
       {
          "zone": "durotar",
-         "experience": 0,
+         "experience": 51.25,
          "waypoints": [
             {
                "coords": { "x": 46, "y": 12 },
@@ -11431,7 +11422,7 @@
       },
       {
          "zone": "stv",
-         "experience": 0,
+         "experience": 51.29,
          "waypoints": [
             {
                "coords": { "x": 26, "y": 73 },
@@ -11466,7 +11457,7 @@
       },
       {
          "zone": "stv",
-         "experience": 0,
+         "experience": 51.31,
          "waypoints": [
             {
                "coords": { "x": 41, "y": 84 },
@@ -11498,7 +11489,7 @@
       },
       {
          "zone": "stv",
-         "experience": 0,
+         "experience": 51.37,
          "waypoints": [
             {
                "coords": { "x": 23, "y": 72 },
@@ -11519,7 +11510,7 @@
                "coords": { "x": 28, "y": 78 },
                "align": "right",
                "header": "Booy Bay",
-               "ends": ["Deliver to MacKinley"],
+               "ends": ["Deliver to MacKinley", "Back to Booty Bay"],
                "special": ["Fly to Kargath"],
                "type": "hub"
             }
@@ -11527,14 +11518,13 @@
       },
       {
          "zone": "badlands",
-         "experience": 0,
+         "experience": 51.42,
          "waypoints": [
             {
                "coords": { "x": 6, "y": 45 },
                "align": "right",
                "header": "Kargath",
                "ends": ["Necklace Recovery, Take 3"],
-               "special": ["Fly to Undercity"],
                "type": "hub"
             },
             {
@@ -11547,7 +11537,7 @@
       },
       {
          "zone": "searing",
-         "experience": 0,
+         "experience": 51.45,
          "waypoints": [
             {
                "coords": { "x": 74, "y": 56 },
