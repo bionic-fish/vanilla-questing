@@ -11578,7 +11578,7 @@
       },
       {
          "zone": "searing",
-         "experience": 0,
+         "experience": 51.48,
          "waypoints": [
             {
                "coords": { "x": 37, "y": 27 },
@@ -11605,7 +11605,7 @@
       },
       {
          "zone": "searing",
-         "experience": 0,
+         "experience": 51.56,
          "waypoints": [
             {
                "coords": { "x": 38, "y": 49 },
@@ -11648,7 +11648,7 @@
       },
       {
          "zone": "searing",
-         "experience": 0,
+         "experience": 51.61,
          "waypoints": [
             {
                "coords": { "x": 38, "y": 36 },
@@ -11687,7 +11687,7 @@
       },
       {
          "zone": "searing",
-         "experience": 0,
+         "experience": 51.67,
          "waypoints": [
             {
                "coords": { "x": 50, "y": 47 },
@@ -11724,7 +11724,7 @@
       },
       {
          "zone": "searing",
-         "experience": 0,
+         "experience": 51.72,
          "waypoints": [
             {
                "coords": { "x": 34, "y": 49 },
@@ -11759,7 +11759,7 @@
       },
       {
          "zone": "searing",
-         "experience": 0,
+         "experience": 51.95,
          "waypoints": [
             {
                "coords": { "x": 37, "y": 27 },
@@ -11793,7 +11793,7 @@
       },
       {
          "zone": "searing",
-         "experience": 0,
+         "experience": 52.04,
          "waypoints": [
             {
                "coords": { "x": 36, "y": 61 },
@@ -11840,13 +11840,12 @@
       },
       {
          "zone": "swamp",
-         "experience": 0,
+         "experience": 52.11,
          "waypoints": [
             {
                "coords": { "x": 46, "y": 54 },
                "align": "right",
                "header": "Stonard",
-               "special": ["Set Hearthstone"],
                "type": "hub"
             },
             {
@@ -11860,7 +11859,7 @@
       },
       {
          "zone": "blasted",
-         "experience": 0,
+         "experience": 52.12,
          "waypoints": [
             {
                "coords": { "x": 52, "y": 9 },
@@ -11892,7 +11891,7 @@
       },
       {
          "zone": "blasted",
-         "experience": 0,
+         "experience": 52.17,
          "waypoints": [
             {
                "coords": { "x": 46, "y": 35 },
@@ -11926,7 +11925,7 @@
       },
       {
          "zone": "blasted",
-         "experience": 0,
+         "experience": 52.24,
          "waypoints": [
             {
                "coords": { "x": 61, "y": 28 },
@@ -11959,7 +11958,7 @@
       },
       {
          "zone": "swamp",
-         "experience": 0,
+         "experience": 52.43,
          "waypoints": [
             {
                "coords": { "x": 34, "y": 65 },
@@ -11986,7 +11985,7 @@
       },
       {
          "zone": "swamp",
-         "experience": 0,
+         "experience": 52.45,
          "waypoints": [
             {
                "coords": { "x": 46, "y": 54 },
@@ -12005,7 +12004,7 @@
       },
       {
          "zone": "swamp",
-         "experience": 0,
+         "experience": 52.49,
          "waypoints": [
             {
                "coords": { "x": 34, "y": 66 },
@@ -12025,7 +12024,7 @@
       },
       {
          "zone": "hinterlands",
-         "experience": 0,
+         "experience": 52.49,
          "waypoints": [
             {
                "coords": { "x": 82, "y": 82 },
@@ -12072,7 +12071,7 @@
       },
       {
          "zone": "hinterlands",
-         "experience": 0,
+         "experience": 52.56,
          "waypoints": [
             {
                "coords": { "x": 62, "y": 75 },
@@ -12107,7 +12106,7 @@
       },
       {
          "zone": "hinterlands",
-         "experience": 0,
+         "experience": 52.62,
          "waypoints": [
             {
                "coords": { "x": 58, "y": 87 },
@@ -12141,7 +12140,7 @@
       },
       {
          "zone": "hinterlands",
-         "experience": 0,
+         "experience": 52.66,
          "waypoints": [
             {
                "coords": { "x": 78, "y": 80 },
@@ -12161,7 +12160,7 @@
       },
       {
          "zone": "hillsbrad",
-         "experience": 0,
+         "experience": 52.85,
          "waypoints": [
             {
                "coords": { "x": 60, "y": 19 },
@@ -12176,7 +12175,7 @@
       },
       {
          "zone": "undercity",
-         "experience": 0,
+         "experience": 52.90,
          "waypoints": [
             {
                "coords": { "x": 63, "y": 48 },
@@ -12202,7 +12201,7 @@
       },
       {
          "zone": "tirisfal",
-         "experience": 0,
+         "experience": 52.95,
          "waypoints": [
             {
                "coords": { "x": 62, "y": 65 },
@@ -12218,7 +12217,7 @@
       },
       {
          "zone": "durotar",
-         "experience": 0,
+         "experience": 52.95,
          "waypoints": [
             {
                "coords": { "x": 51, "y": 13 },
@@ -12236,7 +12235,7 @@
       },
       {
          "zone": "orgrimmar",
-         "experience": 0,
+         "experience": 52.95,
          "waypoints": [
             {
                "coords": { "x": 49, "y": 92 },
@@ -12281,7 +12280,7 @@
       },
       {
          "zone": "azshara",
-         "experience": 0,
+         "experience": 52.95,
          "waypoints": [
             {
                "coords": { "x": 21, "y": 50 },
@@ -12317,7 +12316,7 @@
       },
       {
          "zone": "azshara",
-         "experience": 0,
+         "experience": 53.07,
          "waypoints": [
             {
                "coords": { "x": 59, "y": 28 },
@@ -12360,7 +12359,7 @@
       },
       {
          "zone": "azshara",
-         "experience": 0,
+         "experience": 53.15,
          "waypoints": [
             {
                "coords": { "x": 48, "y": 51 },
@@ -12415,7 +12414,7 @@
       },
       {
          "zone": "azshara",
-         "experience": 0,
+         "experience": 53.19,
          "waypoints": [
             {
                "coords": { "x": 42, "y": 53 },
@@ -12436,7 +12435,7 @@
                "coords": { "x": 21, "y": 53 },
                "header": "Valormok",
                "ends": [["Betrayed", "P3"], "Stealing Knowledge"],
-               "starts": [["Betrayed", "P4"], "Delivery to Magatha", "Delivery to Jes'rimon", "Delivery to Andron Gant"],
+               "starts": [["Betrayed", "P4"], "Delivery to Magatha", "Delivery to Jes'rimon"],
                "type": "hub"
             },
             {
@@ -12450,7 +12449,7 @@
       },
       {
          "zone": "tanaris",
-         "experience": 0,
+         "experience": 53.33,
          "waypoints": [
             {
                "coords": { "x": 51, "y": 28 },
@@ -12479,7 +12478,7 @@
       },
       {
          "zone": "ungoro",
-         "experience": 0,
+         "experience": 53.39,
          "waypoints": [
             {
                "coords": { "x": 77, "y": 67 },
@@ -12520,7 +12519,7 @@
       },
       {
          "zone": "ungoro",
-         "experience": 0,
+         "experience": 53.41,
          "waypoints": [
             {
                "coords": { "x": 45, "y": 6 },
@@ -12547,7 +12546,7 @@
       },
       {
          "zone": "ungoro",
-         "experience": 0,
+         "experience": 53.47,
          "waypoints": [
             {
                "coords": { "x": 48, "y": 33 },
@@ -12594,7 +12593,7 @@
       },
       {
          "zone": "ungoro",
-         "experience": 0,
+         "experience": 53.56,
          "waypoints": [
             {
                "coords": { "x": 69, "y": 37 },
@@ -12622,7 +12621,7 @@
       },
       {
          "zone": "ungoro",
-         "experience": 0,
+         "experience": 53.69,
          "waypoints": [
             {
                "coords": { "x": 67, "y": 73 },
@@ -12668,7 +12667,7 @@
       },
       {
          "zone": "ungoro",
-         "experience": 0,
+         "experience": 53.87,
          "waypoints": [
             {
                "coords": { "x": 38, "y": 66 },
@@ -12709,7 +12708,7 @@
       },
       {
          "zone": "ungoro",
-         "experience": 0,
+         "experience": 53.95,
          "waypoints": [
             {
                "coords": { "x": 50, "y": 46 },
@@ -12750,7 +12749,7 @@
       },
       {
          "zone": "ungoro",
-         "experience": 0,
+         "experience": 54.25,
          "waypoints": [
             {
                "coords": { "x": 44, "y": 9 },
@@ -12778,7 +12777,7 @@
       },
       {
          "zone": "tanaris",
-         "experience": 0,
+         "experience": 54.29,
          "waypoints": [
             {
                "coords": { "x": 50, "y": 29 },
@@ -12797,7 +12796,7 @@
       },
       {
          "zone": "tanaris",
-         "experience": 0,
+         "experience": 54.38,
          "waypoints": [
             {
                "coords": { "x": 52, "y": 28 },
@@ -12817,7 +12816,7 @@
       },
       {
          "zone": "ungoro",
-         "experience": 0,
+         "experience": 54.38,
          "waypoints": [
             {
                "coords": { "x": 45, "y": 6 },
@@ -12863,7 +12862,7 @@
       },
       {
          "zone": "ungoro",
-         "experience": 0,
+         "experience": 54.51,
          "waypoints": [
             {
                "coords": { "x": 48, "y": 17 },
@@ -12904,19 +12903,21 @@
                "align": "bottom",
                "header": "The Slithering Scar Hive",
                "objectives": ["Pawn Captures Queen"],
+               "special": ["This quest is very difficult alone"],
                "type": "objective"
             }
          ]
       },
       {
          "zone": "ungoro",
-         "experience": 0,
+         "experience": 54.63,
          "waypoints": [
             {
                "coords": { "x": 44, "y": 81 },
                "align": "bottom",
                "header": "The Slithering Scar Hive",
                "objectives": ["Pawn Captures Queen"],
+               "special": ["This quest is very difficult alone"],
                "type": "objective"
             },
             {
@@ -12944,7 +12945,7 @@
       },
       {
          "zone": "tanaris",
-         "experience": 0,
+         "experience": 54.68,
          "waypoints": [
             {
                "coords": { "x": 51, "y": 27 },
@@ -12953,13 +12954,6 @@
                "ends": ["Pawn Captures Queen"],
                "starts": [["Calm Before the Storm", "P1"]],
                "type": "hub"
-            },
-            {
-               "coords": { "x": 67, "y": 23 },
-               "align": "bottom",
-               "header": "Steamwheedle Port",
-               "starts": ["Yuka Screwspigot"],
-               "type": "quest"
             },
             {
                "coords": { "x": 50, "y": 30 },
@@ -12972,7 +12966,7 @@
       },
       {
          "zone": "ungoro",
-         "experience": 0,
+         "experience": 54.72,
          "waypoints": [
             {
                "coords": { "x": 45, "y": 6 },
@@ -12991,7 +12985,7 @@
       },
       {
          "zone": "ungoro",
-         "experience": 0,
+         "experience": 54.83,
          "waypoints": [
             {
                "coords": { "x": 42, "y": 3 },
@@ -13011,7 +13005,7 @@
       },
       {
          "zone": "feralas",
-         "experience": 0,
+         "experience": 54.83,
          "waypoints": [
             {
                "coords": { "x": 75, "y": 44 },
@@ -13025,7 +13019,7 @@
       },
       {
          "zone": "thunderbluff",
-         "experience": 0,
+         "experience": 54.83,
          "waypoints": [
             {
                "coords": { "x": 47, "y": 50 },
@@ -13038,7 +13032,7 @@
                "align": "top",
                "header": "TB Auction House",
                "special": ["Buy 10x Morrowgrain"],
-               "type": "quest"
+               "type": "objective"
             },
             {
                "coords": { "x": 46, "y": 64 },
@@ -13074,7 +13068,7 @@
       },
       {
          "zone": "thunderbluff",
-         "experience": 0,
+         "experience": 54.94,
          "waypoints": [
             {
                "coords": { "x": 77, "y": 22 },
@@ -13093,7 +13087,7 @@
       },
       {
          "zone": "orgrimmar",
-         "experience": 0,
+         "experience": 54.94,
          "waypoints": [
             {
                "coords": { "x": 45, "y": 64 },
@@ -13128,7 +13122,7 @@
       },
       {
          "zone": "orgrimmar",
-         "experience": 0,
+         "experience": 55.06,
          "waypoints": [
             {
                "coords": { "x": 75, "y": 34 },
@@ -13160,7 +13154,7 @@
       },
       {
          "zone": "azshara",
-         "experience": 0,
+         "experience": 55.13,
          "waypoints": [
             {
                "coords": { "x": 21, "y": 50 },
@@ -13172,13 +13166,14 @@
                "coords": { "x": 21, "y": 53 },
                "header": "Valormok",
                "ends": ["Jes'rimon's Payment to Jediga", "Magatha's Payment to Jediga"],
+               "starts": ["Delivery to Andron Gant"],
                "type": "hub"
             }
          ]
       },
       {
          "zone": "azshara",
-         "experience": 0,
+         "experience": 55.19,
          "waypoints": [
             {
                "coords": { "x": 21, "y": 53 },
@@ -13190,14 +13185,32 @@
                "coords": { "x": 21, "y": 50 },
                "align": "top",
                "header": "Azshara Flightpath",
-               "special": ["Fly to Felwood"],
+               "special": ["Fly to Ashenvale"],
                "type": "flightpath"
             }
          ]
       },
       {
+         "zone": "ashenvale",
+         "experience": 55.19,
+         "waypoints": [
+            {
+               "coords": { "x": 73, "y": 61 },
+               "align": "bottom",
+               "header": "Splintertree Post",
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 56, "y": 28 },
+               "align": "top",
+               "header": "Felwood Border",
+               "type": "travel"
+            }
+         ]
+      },
+      {
          "zone": "felwood",
-         "experience": 0,
+         "experience": 55.19,
          "waypoints": [
             {
                "coords": { "x": 55, "y": 93 },
@@ -13239,7 +13252,7 @@
                "coords": { "x": 35, "y": 53 },
                "align": "top",
                "header": "Bloodvenom Post",
-               "objectives": ["A Husband's Last Battle", ["Wild Guardians", "P1"], "Well of Corruption"],
+               "starts": ["A Husband's Last Battle", ["Wild Guardians", "P1"], "Well of Corruption"],
                "special": ["Learn the Flightpath"],
                "type": "hub"
             }
@@ -13247,7 +13260,7 @@
       },
       {
          "zone": "felwood",
-         "experience": 0,
+         "experience": 55.22,
          "waypoints": [
             {
                "coords": { "x": 35, "y": 53 },
@@ -13289,7 +13302,7 @@
       },
       {
          "zone": "felwood",
-         "experience": 0,
+         "experience": 55.30,
          "waypoints": [
             {
                "coords": { "x": 48, "y": 94 },
@@ -13328,7 +13341,7 @@
       },
       {
          "zone": "moonglade",
-         "experience": 0,
+         "experience": 55.34,
          "waypoints": [
             {
                "coords": { "x": 35, "y": 72 },
@@ -13345,7 +13358,7 @@
       },
       {
          "zone": "moonglade",
-         "experience": 0,
+         "experience": 55.40,
          "waypoints": [
             {
                "coords": { "x": 36, "y": 42 },
@@ -13363,7 +13376,7 @@
       },
       {
          "zone": "winterspring",
-         "experience": 0,
+         "experience": 55.40,
          "waypoints": [
             {
                "coords": { "x": 28, "y": 35 },
@@ -13395,7 +13408,7 @@
       },
       {
          "zone": "winterspring",
-         "experience": 0,
+         "experience": 55.53,
          "waypoints": [
             {
                "coords": { "x": 59, "y": 31 },
@@ -13423,7 +13436,7 @@
       },
       {
          "zone": "felwood",
-         "experience": 0,
+         "experience": 55.53,
          "waypoints": [
             {
                "coords": { "x": 35, "y": 53 },
@@ -13457,7 +13470,7 @@
       },
       {
          "zone": "felwood",
-         "experience": 0,
+         "experience": 55.80,
          "waypoints": [
             {
                "coords": { "x": 51, "y": 82 },
@@ -13485,14 +13498,14 @@
       },
       {
          "zone": "feralas",
-         "experience": 0,
+         "experience": 55.85,
          "waypoints": [
             {
                "coords": { "x": 75, "y": 44 },
                "align": "right",
                "header": "Camp Mojache",
                "ends": ["Camp Mojache", "The Strength of Corruption"],
-               "starts": ["Vengeance on the Northspring", ["Dark Heart", "E"], "The Strength of Corruption"],
+               "starts": ["Vengeance on the Northspring", ["Dark Heart", "E"]],
                "type": "hub"
             },
             {
@@ -13521,7 +13534,7 @@
       },
       {
          "zone": "feralas",
-         "experience": 0,
+         "experience": 55.92,
          "waypoints": [
             {
                "coords": { "x": 41, "y": 9 },
@@ -13547,7 +13560,7 @@
       },
       {
          "zone": "desolace",
-         "experience": 0,
+         "experience": 55.94,
          "waypoints": [
             {
                "coords": { "x": 42, "y": 95 },
@@ -13566,7 +13579,7 @@
       },
       {
          "zone": "feralas",
-         "experience": 0,
+         "experience": 55.94,
          "waypoints": [
             {
                "coords": { "x": 75, "y": 44 },
@@ -13580,7 +13593,7 @@
       },
       {
          "zone": "winterspring",
-         "experience": 0,
+         "experience": 56.00,
          "waypoints": [
             {
                "coords": { "x": 61, "y": 38 },
@@ -13600,7 +13613,7 @@
       },
       {
          "zone": "winterspring",
-         "experience": 0,
+         "experience": 56.09,
          "waypoints": [
             {
                "coords": { "x": 31, "y": 45 },
@@ -13621,7 +13634,7 @@
       },
       {
          "zone": "tanaris",
-         "experience": 0,
+         "experience": 56.09,
          "waypoints": [
             {
                "coords": { "x": 52, "y": 28 },
@@ -13648,7 +13661,7 @@
       },
       {
          "zone": "tanaris",
-         "experience": 0,
+         "experience": 56.09,
          "waypoints": [
             {
                "coords": { "x": 54, "y": 23 },
@@ -13677,7 +13690,7 @@
       },
       {
          "zone": "ungoro",
-         "experience": 0,
+         "experience": 56.12,
          "waypoints": [
             {
                "coords": { "x": 45, "y": 6 },
@@ -13703,7 +13716,7 @@
       },
       {
          "zone": "ungoro",
-         "experience": 0,
+         "experience": 56.16,
          "waypoints": [
             {
                "coords": { "x": 42, "y": 3 },
@@ -13723,7 +13736,7 @@
       },
       {
          "zone": "barrens",
-         "experience": 0,
+         "experience": 56.16,
          "waypoints": [
             {
                "coords": { "x": 62, "y": 39 },
@@ -13744,7 +13757,7 @@
       },
       {
          "zone": "barrens",
-         "experience": 0,
+         "experience": 56.20,
          "waypoints": [
             {
                "coords": { "x": 65, "y": 44 },
@@ -13764,7 +13777,7 @@
       },
       {
          "zone": "felwood",
-         "experience": 0,
+         "experience": 56.20,
          "waypoints": [
             {
                "coords": { "x": 35, "y": 53 },
@@ -13800,7 +13813,7 @@
       },
       {
          "zone": "felwood",
-         "experience": 0,
+         "experience": 56.29,
          "waypoints": [
             {
                "coords": { "x": 46, "y": 24 },
@@ -13823,7 +13836,7 @@
       },
       {
          "zone": "tanaris",
-         "experience": 0,
+         "experience": 56.29,
          "waypoints": [
             {
                "coords": { "x": 52, "y": 28 },
@@ -13835,7 +13848,7 @@
                "coords": { "x": 66, "y": 22 },
                "align": "top",
                "header": "Steamwheedle Port",
-               "starts": [["The God Hakkar", "D"]],
+               "starts": [["The God Hakkar", "D"], "Yuka Screwspigot"],
                "type": "quest"
             },
             {
@@ -13857,7 +13870,7 @@
       },
       {
          "zone": "tanaris",
-         "experience": 0,
+         "experience": 56.29,
          "waypoints": [
             {
                "coords": { "x": 53, "y": 46 },
@@ -13877,7 +13890,7 @@
       },
       {
          "zone": "ungoro",
-         "experience": 0,
+         "experience": 56.29,
          "waypoints": [
             {
                "coords": { "x": 45, "y": 6 },
@@ -13902,7 +13915,7 @@
       },
       {
          "zone": "ungoro",
-         "experience": 0,
+         "experience": 56.40,
          "waypoints": [
             {
                "coords": { "x": 45, "y": 9 },
@@ -13921,7 +13934,7 @@
       },
       {
          "zone": "barrens",
-         "experience": 0,
+         "experience": 56.40,
          "waypoints": [
             {
                "coords": { "x": 62, "y": 39 },
@@ -13938,7 +13951,7 @@
       },
       {
          "zone": "stv",
-         "experience": 0,
+         "experience": 56.40,
          "waypoints": [
             {
                "coords": { "x": 26, "y": 73 },
@@ -13956,7 +13969,7 @@
       },
       {
          "zone": "swamp",
-         "experience": 0,
+         "experience": 56.40,
          "waypoints": [
             {
                "coords": { "x": 46, "y": 54 },
@@ -13971,7 +13984,7 @@
                "align": "top",
                "header": "Sunken Temple",
                "starts": [["The Essence of Eranikus", "D"]],
-               "objectives": [["The Temple of Atal'Hakkar", "D"], ["Into the Depths", "D"], ["Secret of the Circle", "D"], ["The God Hakkar", "D"]],
+               "objectives": [["The Temple of Atal'Hakkar", "D"], ["Into the Depths", "D"], ["Zapper Fuel", "D"], ["Secret of the Circle", "D"], ["The God Hakkar", "D"]],
                "special": ["Hearthstone to Stonard"],
                "type": "travel"
             }
@@ -13979,7 +13992,7 @@
       },
       {
          "zone": "swamp",
-         "experience": 0,
+         "experience": 56.50,
          "waypoints": [
             {
                "coords": { "x": 70, "y": 54 },
@@ -14002,7 +14015,7 @@
       },
       {
          "zone": "badlands",
-         "experience": 0,
+         "experience": 56.53,
          "waypoints": [
             {
                "coords": { "x": 6, "y": 45 },
@@ -14017,7 +14030,7 @@
       },
       {
          "zone": "steppes",
-         "experience": 0,
+         "experience": 56.56,
          "waypoints": [
             {
                "coords": { "x": 65, "y": 24 },
@@ -14059,7 +14072,7 @@
       },
       {
          "zone": "steppes",
-         "experience": 0,
+         "experience": 56.62,
          "waypoints": [
             {
                "coords": { "x": 86, "y": 31 },
@@ -14099,7 +14112,7 @@
       },
       {
          "zone": "badlands",
-         "experience": 0,
+         "experience": 56.73,
          "waypoints": [
             {
                "coords": { "x": 6, "y": 45 },
@@ -14121,7 +14134,7 @@
       },
       {
          "zone": "badlands",
-         "experience": 0,
+         "experience": 56.80,
          "waypoints": [
             {
                "coords": { "x": 26, "y": 45 },
@@ -14148,7 +14161,7 @@
       },
       {
          "zone": "searing",
-         "experience": 0,
+         "experience": 56.80,
          "waypoints": [
             {
                "coords": { "x": 74, "y": 56 },
@@ -14168,7 +14181,7 @@
       },
       {
          "zone": "badlands",
-         "experience": 0,
+         "experience": 56.84,
          "waypoints": [
             {
                "coords": { "x": 6, "y": 45 },
@@ -14188,7 +14201,7 @@
       },
       {
          "zone": "searing",
-         "experience": 0,
+         "experience": 56.90,
          "waypoints": [
             {
                "coords": { "x": 74, "y": 56 },
@@ -14207,7 +14220,7 @@
       },
       {
          "zone": "badlands",
-         "experience": 0,
+         "experience": 57.08,
          "waypoints": [
             {
                "coords": { "x": 6, "y": 45 },
@@ -14227,7 +14240,7 @@
       },
       {
          "zone": "badlands",
-         "experience": 0,
+         "experience": 57.24,
          "waypoints": [
             {
                "coords": { "x": 26, "y": 45 },
@@ -14247,14 +14260,13 @@
       },
       {
          "zone": "steppes",
-         "experience": 0,
+         "experience": 57.24,
          "waypoints": [
             {
                "coords": { "x": 65, "y": 24 },
                "align": "top",
                "header": "Flame Crest",
                "ends": [["The Heart of the Mountain", "D"], ["Ribbly Screwspigot", "D"]],
-               "special": ["Fly to Undercity"],
                "type": "hub"
             },
             {
@@ -14268,7 +14280,7 @@
       },
       {
          "zone": "steppes",
-         "experience": 0,
+         "experience": 57.31,
          "waypoints": [
             {
                "coords": { "x": 95, "y": 32 },
@@ -14288,7 +14300,7 @@
       },
       {
          "zone": "undercity",
-         "experience": 0,
+         "experience": 57.31,
          "waypoints": [
             {
                "coords": { "x": 63, "y": 48 },
@@ -14330,7 +14342,7 @@
       },
       {
          "zone": "undercity",
-         "experience": 0,
+         "experience": 57.40,
          "waypoints": [
             {
                "coords": { "x": 55, "y": 76 },
@@ -14356,7 +14368,7 @@
       },
       {
          "zone": "tirisfal",
-         "experience": 0,
+         "experience": 57.40,
          "waypoints": [
             {
                "coords": { "x": 62, "y": 65 },
@@ -14376,7 +14388,7 @@
       },
       {
          "zone": "wpl",
-         "experience": 0,
+         "experience": 57.42,
          "waypoints": [
             {
                "coords": { "x": 27, "y": 58 },
@@ -14419,7 +14431,7 @@
       },
       {
          "zone": "wpl",
-         "experience": 0,
+         "experience": 57.47,
          "waypoints": [
             {
                "coords": { "x": 52, "y": 45 },
@@ -14437,13 +14449,6 @@
                "type": "objective"
             },
             {
-               "coords": { "x": 54, "y": 65 },
-               "align": "bottom",
-               "header": "Mulgris Deepriver",
-               "starts": [["The Wildlife Suffers Too", "P1"]],
-               "type": "quest"
-            },
-            {
                "coords": { "x": 70, "y": 50 },
                "align": "right",
                "header": "Eastern Plaguelands Border",
@@ -14453,7 +14458,7 @@
       },
       {
          "zone": "epl",
-         "experience": 0,
+         "experience": 57.49,
          "waypoints": [
             {
                "coords": { "x": 12, "y": 73 },
@@ -14485,7 +14490,7 @@
       },
       {
          "zone": "epl",
-         "experience": 0,
+         "experience": 57.54,
          "waypoints": [
             {
                "coords": { "x": 27, "y": 75 },
@@ -14525,7 +14530,7 @@
       },
       {
          "zone": "epl",
-         "experience": 0,
+         "experience": 57.64,
          "waypoints": [
             {
                "coords": { "x": 39, "y": 91 },
@@ -14550,14 +14555,7 @@
                "type": "objective"
             },
             {
-               "coords": { "x": 80, "y": 64 },
-               "align": "bottom",
-               "header": "Caretaker Alen",
-               "starts": ["Zaeldarr the Outcast"],
-               "type": "quest"
-            },
-            {
-               "coords": { "x": 83, "y": 59 },
+               "coords": { "x": 82, "y": 61 },
                "align": "right",
                "header": "Eastern Plaguelands Flightpath",
                "special": ["Learn the Flightpath"],
@@ -14574,7 +14572,7 @@
       },
       {
          "zone": "epl",
-         "experience": 0,
+         "experience": 57.72,
          "waypoints": [
             {
                "coords": { "x": 81, "y": 59 },
@@ -14582,6 +14580,13 @@
                "header": "Light's Hope Chapel",
                "ends": ["Duke Nicholas Zverenhoff", "Uncle Carlin"],
                "type": "hub"
+            },
+            {
+               "coords": { "x": 80, "y": 64 },
+               "align": "bottom",
+               "header": "Caretaker Alen",
+               "starts": ["Zaeldarr the Outcast"],
+               "type": "quest"
             },
             {
                "coords": { "x": 57, "y": 57 },
@@ -14614,7 +14619,7 @@
       },
       {
          "zone": "epl",
-         "experience": 0,
+         "experience": 57.78,
          "waypoints": [
             {
                "coords": { "x": 42, "y": 38 },
@@ -14648,7 +14653,7 @@
       },
       {
          "zone": "undercity",
-         "experience": 0,
+         "experience": 57.82,
          "waypoints": [
             {
                "coords": { "x": 68, "y": 38 },
@@ -14675,7 +14680,7 @@
       },
       {
          "zone": "undercity",
-         "experience": 0,
+         "experience": 57.86,
          "waypoints": [
             {
                "coords": { "x": 67, "y": 44 },
@@ -14701,7 +14706,7 @@
       },
       {
          "zone": "tirisfal",
-         "experience": 0,
+         "experience": 57.86,
          "waypoints": [
             {
                "coords": { "x": 62, "y": 65 },
@@ -14721,7 +14726,7 @@
       },
       {
          "zone": "wpl",
-         "experience": 0,
+         "experience": 57.92,
          "waypoints": [
             {
                "coords": { "x": 27, "y": 58 },
@@ -14740,6 +14745,7 @@
             },
             {
                "coords": { "x": 37, "y": 57 },
+               "align": "bottom",
                "header": "Felstone Field",
                "objectives": ["Two Halves Become One"],
                "ends": ["Target: Felstone Field"],
@@ -14751,7 +14757,7 @@
       },
       {
          "zone": "wpl",
-         "experience": 0,
+         "experience": 57.98,
          "waypoints": [
             {
                "coords": { "x": 37, "y": 57 },
@@ -14770,22 +14776,21 @@
                "type": "quest"
             },
             {
-               "coords": { "x": 43, "y": 54 },
+               "coords": { "x": 54, "y": 65 },
                "align": "bottom",
-               "header": "Placeholder",
-               "objectives": [["The Wildlife Suffers Too", "P1"]],
-               "type": "objective"
+               "header": "Mulgris Deepriver",
+               "starts": [["The Wildlife Suffers Too", "P1"]],
+               "type": "quest"
             },
             {
                "coords": { "x": 46, "y": 48 },
-               "align": "right",
                "header": "Placeholder",
                "objectives": [["The Wildlife Suffers Too", "P1"]],
                "type": "objective"
             },
             {
                "coords": { "x": 48, "y": 32 },
-               "align": "right",
+               "align": "top",
                "header": "Termite Barrel",
                "ends": [["A Plague Upon Thee", "P2"]],
                "starts": [["A Plague Upon Thee", "P3"]],
@@ -14795,7 +14800,7 @@
       },
       {
          "zone": "wpl",
-         "experience": 0,
+         "experience": 58.03,
          "waypoints": [
             {
                "coords": { "x": 48, "y": 32 },
@@ -14830,7 +14835,7 @@
       },
       {
          "zone": "wpl",
-         "experience": 0,
+         "experience": 58.07,
          "waypoints": [
             {
                "coords": { "x": 55, "y": 23 },
@@ -14864,7 +14869,7 @@
       },
       {
          "zone": "wpl",
-         "experience": 0,
+         "experience": 58.13,
          "waypoints": [
             {
                "coords": { "x": 58, "y": 60 },
@@ -14899,7 +14904,7 @@
       },
       {
          "zone": "wpl",
-         "experience": 0,
+         "experience": 58.18,
          "waypoints": [
             {
                "coords": { "x": 49, "y": 79 },
@@ -14948,7 +14953,7 @@
       },
       {
          "zone": "wpl",
-         "experience": 0,
+         "experience": 58.21,
          "waypoints": [
             {
                "coords": { "x": 43, "y": 69 },
@@ -14982,7 +14987,7 @@
       },
       {
          "zone": "wpl",
-         "experience": 0,
+         "experience": 58.29,
          "waypoints": [
             {
                "coords": { "x": 27, "y": 58 },
@@ -15012,7 +15017,7 @@
       },
       {
          "zone": "wpl",
-         "experience": 0,
+         "experience": 58.38,
          "waypoints": [
             {
                "coords": { "x": 41, "y": 70 },
@@ -15049,7 +15054,7 @@
       },
       {
          "zone": "wpl",
-         "experience": 0,
+         "experience": 58.48,
          "waypoints": [
             {
                "coords": { "x": 27, "y": 58 },
@@ -15072,7 +15077,7 @@
       },
       {
          "zone": "wpl",
-         "experience": 0,
+         "experience": 58.52,
          "waypoints": [
             {
                "coords": { "x": 53, "y": 66 },
@@ -15083,20 +15088,6 @@
                "special": ["Kill the Cauldron Lord first"],
                "type": "quest"
             },
-            {
-               "coords": { "x": 27, "y": 58 },
-               "align": "top",
-               "header": "The Bulwark",
-               "ends": ["Return to The Bulwark"],
-               "starts": ["Target: Gahrron's Withering"],
-               "type": "hub"
-            }
-         ]
-      },
-      {
-         "zone": "wpl",
-         "experience": 0,
-         "waypoints": [
             {
                "coords": { "x": 27, "y": 58 },
                "align": "top",
@@ -15115,7 +15106,7 @@
       },
       {
          "zone": "epl",
-         "experience": 0,
+         "experience": 58.54,
          "waypoints": [
             {
                "coords": { "x": 12, "y": 73 },
@@ -15149,7 +15140,7 @@
       },
       {
          "zone": "epl",
-         "experience": 0,
+         "experience": 58.72,
          "waypoints": [
             {
                "coords": { "x": 33, "y": 73 },
@@ -15194,7 +15185,7 @@
       },
       {
          "zone": "epl",
-         "experience": 0,
+         "experience": 58.84,
          "waypoints": [
             {
                "coords": { "x": 80, "y": 64 },
@@ -15242,7 +15233,7 @@
       },
       {
          "zone": "epl",
-         "experience": 0,
+         "experience": 58.91,
          "waypoints": [
             {
                "coords": { "x": 54, "y": 66 },
@@ -15268,7 +15259,7 @@
       },
       {
          "zone": "wpl",
-         "experience": 0,
+         "experience": 58.98,
          "waypoints": [
             {
                "coords": { "x": 70, "y": 50 },
@@ -15319,7 +15310,7 @@
       },
       {
          "zone": "wpl",
-         "experience": 0,
+         "experience": 59.04,
          "waypoints": [
             {
                "coords": { "x": 43, "y": 19 },
@@ -15341,7 +15332,7 @@
       },
       {
          "zone": "undercity",
-         "experience": 0,
+         "experience": 59.07,
          "waypoints": [
             {
                "coords": { "x": 68, "y": 38 },
@@ -15359,7 +15350,7 @@
       },
       {
          "zone": "epl",
-         "experience": 0,
+         "experience": 59.07,
          "waypoints": [
             {
                "coords": { "x": 83, "y": 59 },
@@ -15392,7 +15383,7 @@
       },
       {
          "zone": "epl",
-         "experience": 0,
+         "experience": 59.16,
          "waypoints": [
             {
                "coords": { "x": 83, "y": 40 },
@@ -15420,7 +15411,7 @@
       },
       {
          "zone": "undercity",
-         "experience": 0,
+         "experience": 59.19,
          "waypoints": [
             {
                "coords": { "x": 63, "y": 48 },
@@ -15444,7 +15435,7 @@
       },
       {
          "zone": "tirisfal",
-         "experience": 0,
+         "experience": 59.19,
          "waypoints": [
             {
                "coords": { "x": 62, "y": 65 },
@@ -15460,7 +15451,7 @@
       },
       {
          "zone": "durotar",
-         "experience": 0,
+         "experience": 59.19,
          "waypoints": [
             {
                "coords": { "x": 51, "y": 13 },
@@ -15478,7 +15469,7 @@
       },
       {
          "zone": "orgrimmar",
-         "experience": 0,
+         "experience": 59.19,
          "waypoints": [
             {
                "coords": { "x": 49, "y": 92 },
@@ -15503,7 +15494,7 @@
       },
       {
          "zone": "azshara",
-         "experience": 0,
+         "experience": 59.20,
          "waypoints": [
             {
                "coords": { "x": 21, "y": 50 },
@@ -15537,7 +15528,7 @@
       },
       {
          "zone": "azshara",
-         "experience": 0,
+         "experience": 59.24,
          "waypoints": [
             {
                "coords": { "x": 30, "y": 40 },
@@ -15558,14 +15549,14 @@
                "coords": { "x": 21, "y": 50 },
                "align": "top",
                "header": "Azshara Flightpath",
-               "special": ["Fly to Tanaris"],
+               "special": ["Fly to Thunder Bluff"],
                "type": "flightpath"
             }
          ]
       },
       {
          "zone": "thunderbluff",
-         "experience": 0,
+         "experience": 59.24,
          "waypoints": [
             {
                "coords": { "x": 47, "y": 50 },
@@ -15584,7 +15575,7 @@
       },
       {
          "zone": "thunderbluff",
-         "experience": 0,
+         "experience": 59.27,
          "waypoints": [
             {
                "coords": { "x": 76, "y": 31 },
@@ -15611,7 +15602,7 @@
       },
       {
          "zone": "barrens",
-         "experience": 0,
+         "experience": 59.27,
          "waypoints": [
             {
                "coords": { "x": 63, "y": 36 },
@@ -15630,7 +15621,7 @@
       },
       {
          "zone": "barrens",
-         "experience": 0,
+         "experience": 59.27,
          "waypoints": [
             {
                "coords": { "x": 63, "y": 39 },
@@ -15650,7 +15641,7 @@
       },
       {
          "zone": "tanaris",
-         "experience": 0,
+         "experience": 59.27,
          "waypoints": [
             {
                "coords": { "x": 52, "y": 25 },
@@ -15677,7 +15668,7 @@
       },
       {
          "zone": "tanaris",
-         "experience": 0,
+         "experience": 59.30,
          "waypoints": [
             {
                "coords": { "x": 50, "y": 29 },
@@ -15698,7 +15689,7 @@
       },
       {
          "zone": "ungoro",
-         "experience": 0,
+         "experience": 59.30,
          "waypoints": [
             {
                "coords": { "x": 45, "y": 6 },
@@ -15731,7 +15722,7 @@
       },
       {
          "zone": "ungoro",
-         "experience": 0,
+         "experience": 59.33,
          "waypoints": [
             {
                "coords": { "x": 49, "y": 48 },
@@ -15757,7 +15748,7 @@
       },
       {
          "zone": "barrens",
-         "experience": 0,
+         "experience": 59.40,
          "waypoints": [
             {
                "coords": { "x": 63, "y": 36 },
@@ -15776,7 +15767,7 @@
       },
       {
          "zone": "barrens",
-         "experience": 0,
+         "experience": 59.44,
          "waypoints": [
             {
                "coords": { "x": 63, "y": 39 },
@@ -15796,7 +15787,7 @@
       },
       {
          "zone": "felwood",
-         "experience": 0,
+         "experience": 59.51,
          "waypoints": [
             {
                "coords": { "x": 35, "y": 53 },
@@ -15810,7 +15801,7 @@
       },
       {
          "zone": "winterspring",
-         "experience": 0,
+         "experience": 59.51,
          "waypoints": [
             {
                "coords": { "x": 61, "y": 38 },
@@ -15848,7 +15839,7 @@
       },
       {
          "zone": "winterspring",
-         "experience": 0,
+         "experience": 59.53,
          "waypoints": [
             {
                "coords": { "x": 32, "y": 36 },
@@ -15872,14 +15863,14 @@
                "coords": { "x": 31, "y": 45 },
                "header": "Donova Snowden",
                "ends": ["Threat of the Winterfall", "Winterfall Firewater"],
-               "special": ["Hearthstone to Everlook"],
+               "special": ["Skipping the furbolg questline", "Hearthstone to Everlook"],
                "type": "quest"
             }
          ]
       },
       {
          "zone": "winterspring",
-         "experience": 0,
+         "experience": 59.59,
          "waypoints": [
             {
                "coords": { "x": 61, "y": 38 },
@@ -15930,7 +15921,7 @@
       },
       {
          "zone": "winterspring",
-         "experience": 0,
+         "experience": 59.76,
          "waypoints": [
             {
                "coords": { "x": 61, "y": 38 },
@@ -15945,7 +15936,7 @@
       },
       {
          "zone": "felwood",
-         "experience": 0,
+         "experience": 59.92,
          "waypoints": [
             {
                "coords": { "x": 35, "y": 53 },
@@ -15960,7 +15951,7 @@
       },
       {
          "zone": "winterspring",
-         "experience": 0,
+         "experience": 59.96,
          "waypoints": [
             {
                "coords": { "x": 61, "y": 38 },
@@ -15994,7 +15985,7 @@
       },
       {
          "zone": "winterspring",
-         "experience": 0,
+         "experience": 60.02,
          "waypoints": [
             {
                "coords": { "x": 50, "y": 10 },
@@ -16015,7 +16006,7 @@
       },
       {
          "zone": "felwood",
-         "experience": 0,
+         "experience": 60.12,
          "waypoints": [
             {
                "coords": { "x": 35, "y": 53 },
@@ -16029,7 +16020,7 @@
       },
       {
          "zone": "orgrimmar",
-         "experience": 0,
+         "experience": 60.16,
          "waypoints": [
             {
                "coords": { "x": 45, "y": 64 },
@@ -16045,7 +16036,7 @@
       },
       {
          "zone": "durotar",
-         "experience": 0,
+         "experience": 60.16,
          "waypoints": [
             {
                "coords": { "x": 46, "y": 12 },
@@ -16064,7 +16055,7 @@
       },
       {
          "zone": "tirisfal",
-         "experience": 0,
+         "experience": 60.16,
          "waypoints": [
             {
                "coords": { "x": 61, "y": 59 },
@@ -16080,7 +16071,7 @@
       },
       {
          "zone": "undercity",
-         "experience": 0,
+         "experience": 60.16,
          "waypoints": [
             {
                "coords": { "x": 71, "y": 44 },
@@ -16098,7 +16089,7 @@
       },
       {
          "zone": "undercity",
-         "experience": 0,
+         "experience": 60.19,
          "waypoints": [
             {
                "coords": { "x": 49, "y": 69 },
@@ -16116,7 +16107,7 @@
       },
       {
          "zone": "tirisfal",
-         "experience": 0,
+         "experience": 60.19,
          "waypoints": [
             {
                "coords": { "x": 62, "y": 65 },
@@ -16136,7 +16127,7 @@
       },
       {
          "zone": "wpl",
-         "experience": 0,
+         "experience": 60.28,
          "waypoints": [
             {
                "coords": { "x": 27, "y": 58 },
@@ -16163,7 +16154,7 @@
       },
       {
          "zone": "wpl",
-         "experience": 0,
+         "experience": 60.42,
          "waypoints": [
             {
                "coords": { "x": 46, "y": 70 },
@@ -16176,6 +16167,7 @@
                "coords": { "x": 27, "y": 58 },
                "header": "The Bulwark",
                "ends": [["Araj's Scarab", "E"], ["Alas, Andorhal", "E"], "The Key to Scholomance"],
+               "special": ["+14% XP if you did the Furbolg questline in Winterspring", "The End"],
                "type": "hub"
             }
          ]
