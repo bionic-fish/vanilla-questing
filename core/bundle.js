@@ -1,532 +1,425 @@
 (function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
-// FETCH THE BUILD MODULE
-var build = require('./modules/build.js')('horde');
+// FETCH NEEDED MODULES
+var func = require('./modules/func.js');
+var map = require('./modules/map.js');
+var events = require('./modules/events.js');
+var build = require('./modules/build.js');
+var storage = require('./modules/storage.js');
+var render = require('./modules/render.js');
 
-// WAIT FOR THE NECESSARY DATA TO COMPILE
-build.then((data) => {
+// START THE LOADING PROMPT
+func.loading();
 
-   // SETTINGS OBJECT
-   var settings = {
-      align: {
-         left: { x: -20, y: -6 },
-         right: { x: 10, y: -6 },
-         top: { x: -5, y: -21 },
-         bottom: { x: -5, y: 10 }
-      },
-      windows: {
-         preload: 0,
-         faq: 0
-      },
-      maxlength: 28
-   }
+// GLOBAL SETTINGS OBJECT
+var settings = {
+   background: {
+      width: 1440,
+      height: 960
+   },
+   storage: 'vanilla-questing',
+   cooldown: 1000,
+   moving: false,
+   lastevent: null
+}
 
-   // PREPEND IN PROMPT SELECTOR
-   $('body').prepend('<div id="prompt"><div id="prompt-inner"></div></div>');
+// CALIBRATE SELECTOR SIZES & CENTER MAP
+settings = func.calibrate(settings);
+map.position(settings);
 
-   // RENDER IN BUILD STATISTICS TO HEADER
-   $('#block-count').html(data.stats.blocks);
-   $('#waypoint-count').html(data.stats.waypoints);
-   $('#quest-count').html(data.stats.quests);
+// CHECK STORAGE
+storage.check(settings.storage);
 
-   // SET MAX PROPERTY FOR RANGE INPUT
-   $('#range').attr('max', data.stats.blocks - 1);
+// RECALIBRATE & CENTER AGAIN IF WINDOW SIZE CHANGES
+window.onresize = () => {
+   settings = func.calibrate(settings);
+   map.position(settings);
+}
 
-   // FETCH LOCALSTORAGE VALUE
-   var reference = localStorage.getItem(data.storage);
+// ADD VARIOUS EVENTS
+events.move_map(settings);
+events.map_highlight();
+events.submenu();
+events.log_menu();
+events.preload(func);
+events.new_profile(func, storage, render, build);
+events.load(render, build, func);
 
-   // IMPORT MODULES
-   var render = require('./modules/render.js');
-   var events = require('./modules/events.js');
-   var tooltips = require('./modules/tooltips.js');
+// RENDER RANDOM BLOCK ON LOAD
+build.random().then((data) => {
 
-   // RENDER THE MAP + ADD EVENTS & TOOLTIPS
-   data = render.map(data, settings, reference);
-   data = events.map(data, settings, render);
-   settings = events.general(settings);
-   tooltips.map(data, settings);
+   // RENDER A RANDOM BLOCK & ENABLE BROWSING ON LOAD
+   render.map(data);
+   events.browsing(data, render, settings, storage);
+
+   // CLOSE THE LOADING PROMPT AFTER 1s
+   sleep(settings.cooldown).then(() => { func.close_prompt(); });
 });
-},{"./modules/build.js":2,"./modules/events.js":3,"./modules/render.js":4,"./modules/tooltips.js":5}],2:[function(require,module,exports){
-function build(faction) {
+},{"./modules/build.js":2,"./modules/events.js":3,"./modules/func.js":4,"./modules/map.js":5,"./modules/render.js":6,"./modules/storage.js":7}],2:[function(require,module,exports){
+// ASSEMBLE JSON DATA
+function route(race) {
 
-   // PLACEHOLDERS
-   var route;
-   var quests;
-
-   // ALLIANCE ROUTE DATA & QUEST IDS
-   if (faction == 'alliance') {
-      route = [
-         $.getJSON('../data/alliance/01-elwynn.json'),
-         $.getJSON('../data/alliance/02-transition.json'),
-         $.getJSON('../data/alliance/03-morogh.json'),
-         $.getJSON('../data/alliance/04-loch.json'),
-         $.getJSON('../data/alliance/05-transition.json'),
-         $.getJSON('../data/alliance/06-darkshore.json'),
-         $.getJSON('../data/alliance/07-transition.json'),
-         $.getJSON('../data/alliance/08-westfall.json'),
-         $.getJSON('../data/alliance/09-transition.json'),
-         $.getJSON('../data/alliance/10-redridge.json'),
-         $.getJSON('../data/alliance/11-transition.json'),
-         $.getJSON('../data/alliance/12-darkshore.json'),
-         $.getJSON('../data/alliance/13-ashenvale.json'),
-         $.getJSON('../data/alliance/14-transition.json'),
-         $.getJSON('../data/alliance/15-menethil.json'),
-         $.getJSON('../data/alliance/16-duskwood.json'),
-         $.getJSON('../data/alliance/17-transition.json'),
-         $.getJSON('../data/alliance/18-duskwood.json'),
-         $.getJSON('../data/alliance/19-redridge.json'),
-         $.getJSON('../data/alliance/20-duskwood.json'),
-         $.getJSON('../data/alliance/21-transition.json'),
-         $.getJSON('../data/alliance/22-wetlands.json'),
-         $.getJSON('../data/alliance/23-transition.json'),
-         $.getJSON('../data/alliance/24-wetlands.json'),
-         $.getJSON('../data/alliance/25-transition.json'),
-         $.getJSON('../data/alliance/26-duskwood.json'),
-         $.getJSON('../data/alliance/27-transition.json'),
-         $.getJSON('../data/alliance/28-ashenvale.json'),
-         $.getJSON('../data/alliance/29-transition.json'),
-         $.getJSON('../data/alliance/30-stv.json'),
-         $.getJSON('../data/alliance/31-southshore.json'),
-         $.getJSON('../data/alliance/32-arathi.json'),
-         $.getJSON('../data/alliance/33-transition.json'),
-         $.getJSON('../data/alliance/34-needles.json'),
-         $.getJSON('../data/alliance/35-dustwallow.json'),
-         $.getJSON('../data/alliance/36-transition.json'),
-         $.getJSON('../data/alliance/37-desolace.json'),
-         $.getJSON('../data/alliance/38-transition.json'),
-         $.getJSON('../data/alliance/39-swamp.json'),
-         $.getJSON('../data/alliance/40-transition.json'),
-         $.getJSON('../data/alliance/41-arathi.json'),
-         $.getJSON('../data/alliance/42-alterac.json'),
-         $.getJSON('../data/alliance/43-transition.json'),
-         $.getJSON('../data/alliance/44-stv.json'),
-         $.getJSON('../data/alliance/45-transition.json'),
-         $.getJSON('../data/alliance/46-badlands.json'),
-         $.getJSON('../data/alliance/47-transition.json'),
-         $.getJSON('../data/alliance/48-stv.json'),
-         $.getJSON('../data/alliance/49-tanaris.json'),
-         $.getJSON('../data/alliance/50-feralas.json'),
-         $.getJSON('../data/alliance/51-transition.json'),
-         $.getJSON('../data/alliance/52-hinterlands.json'),
-         $.getJSON('../data/alliance/53-transition.json'),
-         $.getJSON('../data/alliance/54-blasted.json'),
-         $.getJSON('../data/alliance/55-hinterlands.json'),
-         $.getJSON('../data/alliance/56-transition.json'),
-         $.getJSON('../data/alliance/57-searing.json'),
-         $.getJSON('../data/alliance/58-transition.json'),
-         $.getJSON('../data/alliance/59-steppes.json'),
-         $.getJSON('../data/alliance/60-transition.json'),
-         $.getJSON('../data/alliance/61-azshara.json'),
-         $.getJSON('../data/alliance/62-ungoro.json'),
-         $.getJSON('../data/alliance/63-felwood.json'),
-         $.getJSON('../data/alliance/64-transition.json'),
-         $.getJSON('../data/alliance/65-feralas.json'),
-         $.getJSON('../data/alliance/66-felwood.json'),
-         $.getJSON('../data/alliance/67-transition.json'),
-         $.getJSON('../data/alliance/68-wpl.json'),
-         $.getJSON('../data/alliance/69-epl.json'),
-         $.getJSON('../data/alliance/70-transition.json'),
-         $.getJSON('../data/alliance/71-felwood.json'),
-         $.getJSON('../data/alliance/72-ungoro.json'),
-         $.getJSON('../data/alliance/73-winterspring.json'),
-         $.getJSON('../data/alliance/74-transition.json'),
-         $.getJSON('../data/alliance/75-plaguelands.json')
-      ];
-      quests = $.getJSON('../data/alliance/00-quest-ids.json');
-   
-   // HORDE ROUTE & QUEST IDS
-   } else {
-      route = [$.getJSON('../data/horde/route.json')];
-      quests = $.getJSON('../data/horde/quest-ids.json');
+   // ROUTE & ID COMBOS
+   var options = {
+      human: {
+         route: $.getJSON('../data/alliance/route.json'),
+         quests: $.getJSON('../data/alliance/quests.json')
+      },
+      dwarf: {
+         route: $.getJSON('../data/alliance/route.json'),
+         quests: $.getJSON('../data/alliance/quests.json')
+      },
+      gnome: {
+         route: $.getJSON('../data/alliance/route.json'),
+         quests: $.getJSON('../data/alliance/quests.json')
+      },
+      nelf: {
+         route: $.getJSON('../data/alliance/route.json'),
+         quests: $.getJSON('../data/alliance/quests.json')
+      },
+      orc: {
+         route: $.getJSON('../data/horde/route.json'),
+         quests: $.getJSON('../data/horde/quests.json')
+      },
+      troll: {
+         route: $.getJSON('../data/horde/route.json'),
+         quests: $.getJSON('../data/horde/quests.json')
+      },
+      tauren: {
+         route: $.getJSON('../data/horde/route.json'),
+         quests: $.getJSON('../data/horde/quests.json')
+      },
+      undead: {
+         route: $.getJSON('../data/horde/route.json'),
+         quests: $.getJSON('../data/horde/quests.json')
+      }
    }
 
-   // WAIT FOR ALL PROMISES TO BE RESOLVED
-   return Promise.all(route).then((response) => {
+   // CHECK IF RACE IS FOUND
+   var keys = Object.keys(options);
+   var check = $.inArray(race, keys);
 
-      // WAIT FOR QUEST-ID PROMISE TO RESOLVE
-      return quests.then((ids) => {
+   // IF ITS FOUND
+   if (check != -1) {
 
-         // DECLARE DATA OBJECT
+      // SHORTHANDS
+      var route = options[race].route;
+      var quest_ids = options[race].quests;
+
+      // WAIT FOR ALL PROMISES TO BE RESOLVED
+      return Promise.all([route, quest_ids]).then((response) => {
+      
+         // DATA OBJECT
          var data = {
-            build: [],
-            storage: 'horde',
-            current: '0',
-            stats: {
-               blocks: 0,
-               waypoints: 0,
-               quests: 0,
-               progress: 0
-            },
-            ids: ids
+            route: response[0],
+            quests: response[1]
          };
-
-         // LOOK THROUGH EACH 
-         response.forEach(block => {
-            block.path.forEach(waypoint => {
-      
-               // PUSH WAYPOINT OBJECT INTO THE CONTAINER
-               data.build.push(waypoint);
-      
-               // INCREMENT BLOCK COUNTER
-               data.stats.blocks++;
-
-               // ADD TO WAYPOINT COUNTER
-               data.stats.waypoints += waypoint.waypoints.length;
-            });
-         });
-
-         // SET QUEST COUNT
-         data.stats.quests = Object.keys(data.ids).length;
-
-         // IF LOCALSTORAGE IS EMPTY, SET IT TO ZERO
-         if (localStorage.getItem(data.storage) === null) { localStorage.setItem(data.storage, '0'); }
 
          return data;
       });
+
+   // LOG AN ERROR IF IT ISNT
+   } else { log('Race not found!') }
+}
+
+// COMPILE RANDOM DATASET
+function random() {
+
+   // PICK A RACE RANDOMLY
+   var races = ['human', 'dwarf', 'gnome', 'nelf', 'orc', 'troll', 'tauren', 'undead'];
+   var randomize = Math.floor((Math.random() * races.length) + 0);
+
+   // BUILD ROUTE & RENDER IT
+   return route(races[randomize]).then((data) => {
+
+      // RANDOMIZE BLOCK NUMBER & SET IS AS CURRENT
+      data.current = Math.floor((Math.random() * data.route.path.length - 1) + 1);
+
+      // RETURN THE DATA OBJECT
+      return data;
    });
 }
 
-// EXPORT FUNCTION
-module.exports = build;
+// COMPILE SPECIFIC DATASET
+function specific(race, block) {
+
+   // BUILD ROUTE & RENDER IT
+   return route(race).then((data) => {
+
+      // SET THE TARGET BLOCK
+      data.current = parseInt(block);
+
+      // RETURN THE DATA OBJECT
+      return data;
+   });
+}
+
+// EXPORT MODULES
+module.exports = {
+   random: random,
+   specific: specific
+}
 },{}],3:[function(require,module,exports){
-// MAP RELATED EVENTS
-function map(data, settings, render) {
+// MAKE INSTANCE DATA PUBLIC FOR ALL FUNCTIONS
+var instance_data;
+var cooldown;
+
+// MAP MOVEMENT
+function move_map(settings) {
+
+   // MOUSEDOWN
+   $('#map').on('mousedown', (event) => {
+      
+      // BLOCK DEFAULT ACTION
+      event.preventDefault();
+
+      // ENABLE MAP MOVEMENT & SAVE TRIGGER EVENT
+      settings.moving = true;
+      settings.lastevent = event;
+   });
+
+   // MOUSEMOVE -- IF MOUSEDOWN IS ACTIVE
+   $('#map').on('mousemove', (event) => {
+
+      // BLOCK DEFAULT ACTION
+      event.preventDefault();
+
+      if (settings.moving === true) {
+
+         // STARTING COORDS
+         var starting = {
+            x: settings.lastevent.clientX,
+            y: settings.lastevent.clientY
+         }
+
+         // ENDING COORDS
+         var ending = {
+            x: event.clientX,
+            y: event.clientY
+         }
+
+         // DELTA COORDS
+         var delta = {
+            x: starting.x - ending.x,
+            y: starting.y - ending.y,
+         }
+
+         // CURRENT POSITION
+         var position = {
+            x: $('#map').css('left').replace('px', ''),
+            y: $('#map').css('top').replace('px', '')
+         }
+
+         // NEW POSITION
+         var new_position = {
+            x: position.x - delta.x,
+            y: position.y - delta.y
+         }
+
+         // LIMIT THE MOVEMENT
+         var limit = {
+            x: -(settings.background.width - ($('#map-inner')[0].offsetWidth - 4)),
+            y: -(settings.background.height - ($('#map-inner')[0].offsetHeight - 4))
+         }
+
+         // RECALIBRATE OVERFLOW
+         if (new_position.x < limit.x) { new_position.x = limit.x; }
+         if (new_position.y < limit.y) { new_position.y = limit.y; }
+         if (new_position.x > 0) { new_position.x = 0; }
+         if (new_position.y > 0) { new_position.y = 0; }
+
+         // EXECUTE MOVEMENT -- IF THERE IS EXTRA SPACE
+         if (limit.x <= 0) { $('#map').css('left', new_position.x + 'px'); }
+         if (limit.y <= 0) { $('#map').css('top', new_position.y + 'px'); }
+
+         // REFRESH LAST EVENT
+         settings.lastevent = event;
+      }
+   });
+
+   // MOUSEUP -- DISABLE MAP MOVEMENT
+   $(document).on('mouseup', () => { settings.moving = false; });
+}
+
+// SECTION HIGHLIGHTING
+function map_highlight() {
+
+   var selector;
+
+   // TURN MOUSEOVER CIRCLE ON
+   $('body').on('mouseover', '.section', (event) => {
+
+      // FIND SECTION ATTR NUMBER
+      var id = $(event.currentTarget).attr('section');
+
+      // TURN HIGHLIGHT CIRCLE OPACITY ON & NUMBER OPACITY OFF
+      $('#waypoint-' + id).css('opacity', 0.7);
+      $('.number-' + id).css('opacity', 0);
+      selector = $('.number-' + id);
+   });
+
+   // TURN MOUSEOVER CIRCLE OFF
+   $('body').on('mouseout', '.section', () => {
+
+      // TURN HIGHLIGHT CIRCLE OPACITY OFF & NUMBER OPACITY ON
+      $('circle').css('opacity', 0);
+      $(selector).css('opacity', 1);
+   });
+}
+
+// ROUTE BROWSING
+function browsing(data, render, settings, storage) {
+
+   // SET INSTANCE DATA
+   instance_data = data;
+   cooldown = settings.cooldown;
 
    // LISTEN FOR KEY-UPS
    $(document).on('keyup', (event) => {
 
-      // WHEN 'A' IS PRESSED
-      if (event.keyCode == 65) {
+      // MAKE SURE PROMPT TABLE ISNT ACTIVE
+      if ($('#prompt').css('display') != 'table') {
+
+         // WHEN 'A' IS PRESSED
+         if (event.keyCode == 65) {
+            
+            // THE PREVIOUS BLOCK
+            var previous = instance_data.current - 1;
+
+            // IF IT FALLS WITHIN RANGE, RENDER MAP AGAIN
+            if (previous >= 0) {
+
+               // SET NEW CURRENT
+               instance_data.current = previous;
+
+               // UPDATE STORAGE & SUBMENU
+               storage.update(instance_data);
+
+               // RENDER NEW MAP
+               render.map(instance_data);
+            }
+
+         // WHEN 'D' IS PRESSED
+         } else if (event.keyCode == 68) {
          
-         // THE PREVIOUS BLOCK
-         var previous = parseInt(data.current) - 1;
+            // THE NEXT BLOCK
+            var next = instance_data.current + 1;
 
-         // IF IT FALLS WITHIN RANGE, RENDER MAP AGAIN
-         if (previous >= 0) { data = render.map(data, settings, previous); }
+            // IF IT FALLS WITHIN RANGE, RENDER MAP AGAIN
+            if (next < instance_data.route.path.length) {
 
-      // WHEN 'D' IS PRESSED
-      } else if (event.keyCode == 68) {
-      
-         // THE NEXT BLOCK
-         var next = parseInt(data.current) + 1;
+               // SET NEW CURRENT
+               instance_data.current = next;
 
-         // IF IT FALLS WITHIN RANGE, RENDER MAP AGAIN
-         if (next < data.stats.blocks) { data = render.map(data, settings, next); }
+               // UPDATE STORAGE & SUBMENU
+               storage.update(instance_data);
+
+               // RENDER NEW MAP
+               render.map(instance_data);
+            }
+         }
       }
+
    });
 
    // WHEN THE INPUT RANGE IS USED
-   $('#range').on('change', () => { data = render.map(data, settings, $('#range').val()); });
+   $('body').on('click', '#progress', (event) => {
+      
+      // EVENT PROPS
+      var mouse_click = event.clientX;
+      var selector_position = event.currentTarget.offsetLeft;
 
-   // DISABLE ARROW KEYS WHEN THE INPUT RANGE IS SELECTED
-   $(document).on('keyup keydown', (event) => { if (event.keyCode == 37 || event.keyCode == 38 ||event.keyCode == 39 || event.keyCode == 40) { event.preventDefault(); } });
+      // DO THE MATH
+      var difference = mouse_click - selector_position;
+      var selector_width = event.currentTarget.offsetWidth;
 
-   // RETURN UPDATED DATA OBJECT
-   return data;
+      // CONVERT TO PERCENTAGE
+      var percent = difference / selector_width;
+
+      // FIND CLOSEST BLOCK
+      var block = Math.floor(percent * instance_data.route.path.length);
+
+      // MAKE SURE ITS IN RANGE
+      if (block <= instance_data.route.path.length && block != instance_data.current) {
+
+         // SET NEW CURRENT PROP & RENDER
+         instance_data.current = block;
+
+         // UPDATE STORAGE & SUBMENU
+         storage.update(instance_data);
+
+         // RENDER NEW MAP
+         render.map(instance_data);
+
+      } else { log('Range Issue!'); }
+   });
 }
 
-// GENERAL EVENTS
-function general(settings) {
+// SUBMENU DROPDOWNS
+function submenu() {
 
-   // FIND MAP COORD ON CLICK
-   $('#map').on('click', (event) => {
+   // PLACEHOLDERS
+   var menu;
+   var last_selector;
 
-      // CHECK THAT A WAYPOINT WASNT CLICKED
-      if (event.target.tagName != 'IMG') {
+   // MOUSEOVER
+   $('body').on('mouseover', '#sub', (event) => {
 
-         // MAP HEIGHT & WIDTH PROPS
-         var map = {
-            width: event.currentTarget.clientWidth,
-            height: event.currentTarget.clientHeight
-         }
+      // HIDE THE PREVIOUS MENU
+      if (last_selector != undefined) { last_selector.css('display', 'none'); }
 
-         // CLICKED COORDS
-         var clicked = {
-            x: event.offsetX,
-            y: event.offsetY,
-         }
+      // SAVE EVENT TARGET & SET NEW POSITION
+      menu = $(event.target);
 
-         // FIGURE OUT % COORS
-         var x = ((clicked.x / map.width) * 100).toFixed(0);
-         var y = ((clicked.y / map.height) * 100).toFixed(0);
+      // DEFAULT X POSITION
+      var position = $(event.target)[0].offsetLeft;
 
-         // LOG THEM OUT
-         log(x + '.' + y)
+      // RIGHT ALIGNMENT
+      if (menu[0].innerText != 'Overview') {
+         var submenu_width = parseInt($('#submenu').css('width').replace('px', '')) + 4;
+         position = ($(event.target)[0].offsetLeft + $(event.target)[0].offsetWidth) - submenu_width;
       }
+
+      // DEFAULT SELECTOR
+      var selector = $('#overview');
+
+      if (menu[0].innerText == 'Load From Storage') {
+         selector = $('#storage');
+      } else if (menu[0].innerText == 'Create New Profile') {
+         selector = $('#create');
+      } else if (menu[0].innerText == 'Actions') {
+         selector = $('#actions');
+      }
+
+      // SHOW THE CORRECT MENU
+      selector.css('display', 'block');
+
+      // REGISTER THE LAST MENU FOR HIDING PURPOSES
+      last_selector = selector;
+
+      // FIND MENU HEIGHT FOR POSITIONING
+      var menu_height = $('#menu')[0].offsetHeight - 2;
+
+      // POSITION & SHOW THE SUBMENU
+      $('#submenu').css('top', menu_height);
+      $('#submenu').css('left', position);
+      $('#submenu').css('display', 'block');
    });
 
-   // PRELOAD EVENT
-   $('#show-preload').on('click', () => {
-
-      // MAKE SURE CHECK PROPERTY IS FALSE
-      if (settings.windows.preload == 0) {
-
-         // CHANGE THE SETTING PROPERTY TO BLOCK FURTHER EXECUTIONS
-         settings.windows.preload = 1;
-         log('Started Preloading..');
-
-         // ADD THE LOADING SELECTOR TO THE PROMPT TABLE & TO TOGGLE THE DISPLAY ON
-         $('#prompt-inner').html('<div id="loading"><div class="lds-css ng-scope"><div style="width:100%;height:100%" class="lds-rolling"><div></div></div></div></div>');
-         $('#prompt').css('display', 'table');
-
-         // WAIT 50MS TO SMOOTHEN CSS TRANSITION
-         sleep(50).then(() => {
-         
-            // GRADUALLY TURN OPACITY ON
-            $('#prompt').css('opacity', '1');
-
-            // LIST OUT ALL ZONES
-            var zones = [
-               'alterac',
-               'arathi',
-               'ashenvale',
-               'azshara',
-               'badlands',
-               'barrens',
-               'blasted',
-               'darkshore',
-               'darnassus',
-               'deadwind',
-               'desolace',
-               'durotar',
-               'duskwood',
-               'dustwallow',
-               'elwynn',
-               'epl',
-               'farmfarmfarm',
-               'felwood',
-               'feralas',
-               'hillsbrad',
-               'hinterlands',
-               'ironforge',
-               'loch',
-               'moonglade',
-               'morogh',
-               'mulgore',
-               'needles',
-               'orgrimmar',
-               'redridge',
-               'searing',
-               'silverpine',
-               'steppes',
-               'stonetalon',
-               'stormwind',
-               'stv',
-               'swamp',
-               'tanaris',
-               'teldrassil',
-               'thunderbluff',
-               'tirisfal',
-               'undercity',
-               'ungoro',
-               'westfall',
-               'wetlands',
-               'winterspring',
-               'wpl'
-            ];
-
-            // PROMISE CONTAINER
-            var promises = [];
-
-            // GENERATE & PUSH A LOADING PROMISE FOR EACH ZONE
-            zones.forEach(zone => { promises.push(zone_promise(zone)); });
-
-            // WAIT FOR ALL PROMISES TO BE RESOLVED
-            Promise.all(promises).then(() => {
-
-               // LOG THAT THE TASK IS COMPLETE
-               log('Preload Complete!');
-
-               // UPDATE THE PRELOAD LINK
-               $('#show-preload').removeAttr('class');
-               $('#show-preload').attr('id', 'disabled');
-               $('#disabled').text('Backgrounds Loaded');
-
-               // GRADUALLY TURN OPACITY OFF
-               $('#prompt').css('opacity', '0');
-
-               // WAIT 200MS FOR THE FADE
-               sleep(300).then(() => {
-
-                  // TOGGLE THE PROMP DISPLAY OFF & REMOVE THE LOADING SELECTOR ENTIRELY
-                  $('#prompt').css('display', 'none');
-                  $('#loading').remove();
-               });
-            });
-         });
-      }
+   // KEEP SELECTED MENU DARKENED WHILE SUBMENU IS OPEN
+   $('body').on('mouseover', '#submenu, #sub', () => {
+      $(menu).css('background', 'rgba(2, 2, 2, 0.151)');
+      $('#submenu').css('display', 'block');
    });
 
-   // FAQ EVENT
-   $('#show-faq').on('click', () => {
-
-      // MAKE SURE CHECK PROPERTY IS FALSE
-      if (settings.windows.faq == 0) {
-
-         // TOGGLE THE PROMPT DISPLAY ON
-         $('#prompt').css('display', 'table');
-
-         // LIST OF QUESTIONS & ANSWERS
-         var questions = [
-            ['Is the route based on someone elses work?', 'No'],
-            ['Is it final/perfect?', 'No, but very easy to modify'],
-            ['Would I like to collaborate?', 'Absolutely'],
-            ['Will you route for non-humans?', 'Yes'],
-            ['Will there be a horde version?', 'Yes, probably during xmas'],
-            ['How about dungeon "quest run" guides?', 'Yes, likely in short video format'],
-            ['Do I want feedback/suggestions?', 'Yes, it\'s essential'],
-            ['Both mechanical and game related?', 'Yes'],
-            ['Will this require a login?', 'No, everything runs locally'],
-            ['My question wasn\'t answered!', 'Try the <a href="https://www.reddit.com/r/classicwow/comments/9zxi0v/inbrowser_160_questing_guide_for_classic/?" target="_blank">Reddit Thread</a>'],
-            ['How do I get in touch?', 'Strafir#9133 on <a href="https://discord.gg/classicwow" target="_blank">Discord</a>']
-         ];
-
-         // GENERATE A FAQ SELECTOR
-         var selector = `
-            <div id="faq">
-            <div id="title">Frequently Asked Questions</div>
-            <div id="content">
-         `;
-
-         // LOOP THROUGH QUESTIONS & APPEND IN A ROW FOR EACH ONE
-         questions.forEach(row => {
-            selector += `
-               <div id="question">
-                  <div class="split">
-                     <div id="left">` + row[0] + `</div>
-                     <div id="right">` + row[1] + `</div>
-                  </div>
-               </div>
-            `;
-         });
-
-         // STITCH ON THE SELECTORS ENDING
-         selector += '</div></div>';
-
-         // RENDER THE SELECTOR INTO THE PROMPT WINDOW
-         $('#prompt-inner').html(selector);
-
-         // GRADUALLY TURN THE OPACITY ON AFTER 50MS -- TO SMOOTHEN TRANSITION
-         sleep(50).then(() => { $('#prompt').css('opacity', '1'); });
-
-         // WAIT UNTIL THE FADE ENDS & SET THE SETTINGS PROPERTY TO TRUE
-         sleep(300).then(() => { settings.windows.faq = 1; })
-      }
+   // TURN OFF THE SUBMENU & MAKE THE MENU TRANSPARENT ON MOUSEOUT
+   $('body').on('mouseout', '#submenu, #sub', () => {
+      $(menu).css('background', 'rgba(2, 2, 2, 0)');
+      $('#submenu').css('display', 'none');
    });
+}
 
-   // LISTEN FOR KEY PRESSES
-   $(document).on('keyup', (evt) => {
-
-      // WHEN 'ESC' IS PRESSED
-      if (evt.keyCode == 27) {
-
-         // MAKE SURE CHECK PROPERTY IS FALSE
-         if (settings.windows.faq == 1) {
-
-            // GRADUALLY TURN OPACITY OFF
-            $('#prompt').css('opacity', '0');
-
-            // WAIT 300 MS, THEN TOGGLE THE PROMPT DISPLAY OFF & SET THE SETTINGS PROPERTY TO FALSE
-            sleep(300).then(() => {
-               $('#prompt').css('display', 'none');
-               settings.windows.faq = 0;
-            });
-         }
-      }
-
-      // WHEN 'F' IS PRESSED
-      if (evt.keyCode == 70) {
-
-         // CURRENT DISPLAY VALUE
-         var display = $('#sidepanel').css('display');
-
-         // TOGGLE SIDEPANEL & WAYPOINT NUMBERS ON
-         if (display == 'none') {
-            $('#sidepanel').css('display', 'block');
-            $('.waypoint-num').css('display', 'block');
-
-         // TOGGLE SIDEPANEL & WAYPOINT NUMBERS OFF
-         } else {
-            $('#sidepanel').css('display', 'none');
-            $('.waypoint-num').css('display', 'none');
-         }
-      }
-
-   });
-
-   // SHOW LEGEND EVENT
-   $('body').on('mouseover', '#show-legend', (event) => {
-
-      // IF LEGEND SELECTOR DOESNT EXIST FROM BEFORE
-      if ($('#legend').length == 0) {
-
-         // LIST OF MARKERS & THEIR MEANING
-         var scheme = [
-            ['blue', 'Central Hub'],
-            ['yellow', 'Quest'],
-            ['red', 'Objective'],
-            ['green', 'Flightpath'],
-            ['purple', 'Travel']
-         ];
-
-         var other = [
-            ['D', 'Dungeon'],
-            ['E', 'Elite'],
-            ['F', 'Escort'],
-            ['R', 'Random Drop'],
-            ['C', 'Class']
-         ]
-
-         // GENERATE A LEGEND SELECTOR
-         var selector = '<div id="legend"><div id="legend-inner">';
-
-         // LOOP THROUGH SCHEMES & ADD A ROW FOR EACH
-         scheme.forEach(row => {
-            selector += `
-               <div class="category">
-                  <div class="split">
-                     <div id="left"><img src="interface/img/waypoints/` + row[0] + `.png"></div>
-                     <div id="right">` + row[1] + `</div>
-                  </div>
-               </div>
-            `;
-         });
-
-         // LOOP THROUGH OTHERS & ADD A ROW FOR EACH
-         other.forEach(row => {
-            selector += `
-               <div class="category">
-                  <div class="split">
-                     <div id="left">[` + row[0] + `]</div>
-                     <div id="right">` + row[1] + `</div>
-                  </div>
-               </div>
-            `;
-         });
-
-         // STICH ON THE ENDING
-         selector += '</div></div>';
-
-         // APPEND THE SELECTOR IN
-         $('#map').append(selector);
-      }
-
-      // ASSIST VARS FOR POSITION CALIBRATION
-      var height = parseFloat($('#legend').css('height'));
-      var width = parseFloat($('#show-legend').css('width'));
-      var offset = 10;
-
-      // CALIBRATE RIGHT XY COORDINATES
-      var x = event.target.offsetLeft - (width / 2);
-      var y = event.target.offsetTop - (height + offset);
-
-      // EXECUTE CSS CHANGES & SHOW THE DATA
-      $('#legend').css('left', x);
-      $('#legend').css('top', y);
-      $('#legend').css('display', 'inline-block');
-   });
-
-   // HIDE LEGEND EVENT
-   $('body').on('mouseout', '#show-legend', () => { $('#legend').css('display', 'none'); });
+// OBJECTIVE/QUEST LOG BUTTONS
+function log_menu() {
 
    // SHOW OBJECTIVES EVENT
    $('body').on('click', '#show-obj', () => {
@@ -569,208 +462,517 @@ function general(settings) {
       // ELSE LOG ERROR
       } else { log('Tab Already Open!'); }
    });
+}
 
-   // RETURN UPDATED SETTINGS OBJECT
+// PRELOAD BUTTON
+function preload(func) {
+
+   // SHOW OBJECTIVES EVENT
+   $('body').on('click', '.preload', () => {
+      func.preload();
+   });
+}
+
+// NEW PROFILE
+function new_profile(func, storage, render, build) {
+
+   // PLACEHOLDERS
+   var race = '';
+
+   // SHOW OBJECTIVES EVENT
+   $('body').on('click', '.profile', (event) => {
+
+      // REGISTER THE SELECTED RACE
+      race = event.currentTarget.innerText.toLowerCase();
+
+      // PROMPT SELECTOR
+      var selector = `
+         <div id="input-box">
+            <input type="text" placeholder="Enter Profile Name" id="profile_name"><input type="submit" value="Create" id="bad-submit">
+         </div>
+         <img src="interface/img/close.png" id="close">
+      `;
+
+      // WAIT FOR THINGS TO RENDER -- AUTO FOCUS INPUT
+      func.open_prompt(selector).then(() => { $('#profile_name').focus(); });
+   });
+
+   // CLOSE THE WINDOW BY CLICKING
+   $('body').on('click', '#close', () => { func.close_prompt(); });
+
+   // SPECIFIC KEY EVENTS
+   $(document).on('keyup', (event) => {
+      
+      // CLOSE WINDOW WITH ESC
+      if (event.keyCode == 27 && $('#close')[0] != undefined) { func.close_prompt(); }
+
+      // CREATE NEW PROFILE
+      if (event.keyCode == 13 && $('#good-submit')[0] != undefined) {
+         
+         // PLAYER NAME -- FORCE LOWERCASE
+         var player = $('#profile_name').val().toLowerCase();
+
+         // SWITCH TO LOADING ANIMATION
+         func.loading();
+
+         // PLAYER DETAILS
+         var details = {
+            race: race,
+            level: 5,
+            block: 0
+         };
+
+         // ADD PROFILE TO STORAGE
+         storage.add(player, details);
+
+         // GENERATE NEW SUBMENU SELECTOR
+         var selector = '<div id="loaded" race="' + details.race + '" block="' + details.block + '"><div class="split"><div><img src="interface/img/icons/' + details.race + '.png"><span id="char-name">' + capitalize(player) + '</span></div><div>Level <span id="char-lvl">' + details.level + '</span></div></div></div>';
+
+         // IF OTHER PROFILES EXIST
+         if ($('#soon')[0] === undefined) {
+
+            // UNCOLOR PREVIOUS LOADED OPTION & APPEND IN NEW LOAD OPTION
+            $('#loaded').attr('id', 'opt');
+
+            // APPEND IT IN
+            $('#storage').append(selector);
+
+         // REPLACE OLD CONTENT
+         } else { $('#storage').html(selector); }
+
+         // RENDER THE MAP
+         build.specific(details.race, details.block).then((data) => {
+
+            // UPDATE INSTANCE DATA
+            instance_data = data;
+
+            // RENDER THE NEW MAP & UPDATE THE DATA OBJECT 
+            render.map(instance_data);
+
+            // CLOSE THE LOADING ANIMATION WHEN DONE
+            sleep(cooldown).then(() => { func.close_prompt(); });
+         });
+      }
+   });
+
+   // LISTEN TO INPUT KEY EVENTS
+   $('body').on('keyup', '#profile_name', (event) => {
+
+      // DONT VALIDATE WHEN ESC IS PRESSED -- TO FIX ERROR BLINKING
+      if (event.keyCode != 27) {
+
+         // REMOVE OLD ERRORS
+         $('#error').remove();
+
+         // INPUT VALUE
+         var value = $('#profile_name').val().replace(/\s/g, '');
+
+         // ERROR ARRAY
+         var errors = [];
+
+         // FETCH BLACKLISTED NAMES
+         var blacklist = storage.blacklist();
+
+         // CHECK IF ITS BLACKLISTED
+         if ($.inArray(value.toLowerCase(), blacklist) != -1) { errors.push('Name Already Exists'); }
+
+         // CHECK THAT A NAME WAS GIVEN
+         if (value == '') { errors.push('Unique Name Required'); }
+
+         // CHECK THAT A NAME WAS GIVEN
+         if (value.length < 3) { errors.push('3 Character Minimum'); }
+
+         // RENDER PROBLEM
+         if (errors.length != 0) {
+
+            // ADD ERROR SELECTOR
+            $('#prompt-inner').prepend('<div id="error">' + errors[0] + '</div>');
+
+            // TURN THE BUTTON RED BY DEFAULT
+            $('#good-submit').attr('id', 'bad-submit');
+
+            // X POSITION
+            var left = $('#input-box')[0].offsetLeft;
+            var width = $('#input-box')[0].offsetWidth;
+
+            // Y POSITION
+            var top = $('#input-box')[0].offsetTop;
+            var offset = $('#input-box')[0].offsetHeight;
+
+            // CHANGE POSITION
+            $('#error').css('top', (top - offset) + 'px');
+            $('#error').css('left', left + (width / 4) + 'px');
+
+            // DISPLAY THE BOX
+            $('#error').css('display', 'block');
+
+         // IF NO ERRORS ARE DETECTED, TURN THE BUTTON GREEN
+         } else { $('#bad-submit').attr('id', 'good-submit'); }
+      }
+   });
+
+   $('body').on('click', '#good-submit', () => {
+         
+      // PLAYER NAME -- FORCE LOWERCASE
+      var player = $('#profile_name').val().toLowerCase();
+
+      // SWITCH TO LOADING ANIMATION
+      func.loading();
+
+      // PLAYER DETAILS
+      var details = {
+         race: race,
+         level: 5,
+         block: 0
+      };
+
+      // ADD PROFILE TO STORAGE
+      storage.add(player, details);
+
+      // GENERATE NEW SUBMENU SELECTOR
+      var selector = '<div id="loaded" race="' + details.race + '" block="' + details.block + '"><div class="split"><div><img src="interface/img/icons/' + details.race + '.png"><span id="char-name">' + capitalize(player) + '</span></div><div>Level <span id="char-lvl">' + details.level + '</span></div></div></div>';
+
+      // IF OTHER PROFILES EXIST
+      if ($('#soon')[0] === undefined) {
+
+         // UNCOLOR PREVIOUS LOADED OPTION & APPEND IN NEW LOAD OPTION
+         $('#loaded').attr('id', 'opt');
+
+         // APPEND IT IN
+         $('#storage').append(selector);
+
+      // REPLACE OLD CONTENT
+      } else { $('#storage').html(selector); }
+
+      // RENDER THE MAP
+      build.specific(details.race, details.block).then((data) => {
+
+         // UPDATE INSTANCE DATA
+         instance_data = data;
+
+         // RENDER THE NEW MAP & UPDATE THE DATA OBJECT 
+         render.map(instance_data);
+
+         // CLOSE THE LOADING ANIMATION WHEN DONE
+         sleep(cooldown).then(() => { func.close_prompt(); });
+      });
+   });
+}
+
+function load(render, build, func) {
+   $('body').on('click', '#storage #opt', (event) => {
+
+      // SWITCH TO LOADING ANIMATION
+      func.loading();
+
+      $('#loaded').attr('id', 'opt');
+      $(event.currentTarget).attr('id', 'loaded');
+      
+      // REGISTER REQUESTED BLOCK & RACE
+      var block = $(event.currentTarget).attr('block');
+      var race = $(event.currentTarget).attr('race');
+
+      // RENDER THE MAP
+      build.specific(race, block).then((data) => {
+
+         // UPDATE INSTANCE DATA
+         instance_data = data;
+
+         // RENDER THE NEW MAP & UPDATE THE DATA OBJECT 
+         render.map(instance_data);
+
+         // CLOSE THE LOADING ANIMATION WHEN DONE
+         sleep(cooldown).then(() => { func.close_prompt(); });
+      });
+   });
+}
+
+// EXPORT MODULES
+module.exports = {
+   move_map: move_map,
+   map_highlight: map_highlight,
+   browsing: browsing,
+   submenu: submenu,
+   log_menu: log_menu,
+   preload: preload,
+   new_profile: new_profile,
+   load: load
+}
+},{}],4:[function(require,module,exports){
+// CALIBRATE INNERBODY SIZE
+function calibrate(settings) {
+
+   // FIND RELEVANT HEIGHTS
+   var device_height = window.innerHeight;
+   var menu_height = $('#menu')[0].offsetHeight + 2;
+
+   // SUBTRACT MARGINS/PADDINGS
+   var innerbody_height = device_height - menu_height;
+
+   // SET INNERBODYS HEIGHT APPROPRIATELY
+   $('#innerbody').css('height', innerbody_height);
+
+   // FIGURE OUT OBJECTIVE LOG SIZE
+   var panel_inner_height = $('#panel-inner')[0].clientHeight;
+   var status_height = $('#status')[0].offsetHeight;
+   var diff = (panel_inner_height - status_height) - 16;
+
+   // SET THE GENERATED SIZE  
+   $('#logs').css('height', diff);
+
    return settings;
 }
 
-// GENERATE A PROMISE FOR A ZONE -- FOR PRELOADING
-function zone_promise(zone) {
-   return new Promise((resolve, reject) => {
-      $.get('interface/img/maps/' + zone + '.png').done(() => { resolve(); });
-   });
-}
+// PRELOAD BACKGROUNDS
+function preload() {
 
-// EXPORT FUNCTIONS
-module.exports = {
-   map: map,
-   general: general
-}
-},{}],4:[function(require,module,exports){
-// RENDER EVERYTHING
-function map(data, settings, reference) {
+   // LOG EVENT START
+   log('Preload Initiated.');
 
-   // UPDATE CURRENT PROP & LOCALSTORAGE
-   data.current = reference;
-   localStorage.setItem(data.storage, String(reference));
+   // LOADING SELECTOR
+   var loading = '<div class="lds-dual-ring"></div>';
 
-   // CONVERT STRING TO INT FOR EASIER USAGE LATER
-   var current = parseInt(data.current);
+   // WAIT FOR THINGS TO RENDER
+   open_prompt(loading).then(() => {
 
-   // UPDATE THE RANGE SCROLLERS POSITION
-   $('#range').val(current);
+      // LIST OUT ALL ZONES
+      var zones = [
+         'alterac',
+         'arathi',
+         'ashenvale',
+         'azshara',
+         'badlands',
+         'barrens',
+         'blasted',
+         'darkshore',
+         'darnassus',
+         'deadwind',
+         'desolace',
+         'durotar',
+         'duskwood',
+         'dustwallow',
+         'elwynn',
+         'epl',
+         'felwood',
+         'feralas',
+         'hillsbrad',
+         'hinterlands',
+         'ironforge',
+         'loch',
+         'moonglade',
+         'morogh',
+         'mulgore',
+         'needles',
+         'orgrimmar',
+         'redridge',
+         'searing',
+         'silverpine',
+         'steppes',
+         'stonetalon',
+         'stormwind',
+         'stv',
+         'swamp',
+         'tanaris',
+         'teldrassil',
+         'thunderbluff',
+         'tirisfal',
+         'undercity',
+         'ungoro',
+         'westfall',
+         'wetlands',
+         'winterspring',
+         'wpl'
+      ];
 
-   // GRADUALLY TURN OPACITY OFF FROM MAP & SIDEPANEL
-   $('#map').css('opacity', 0);
-   $('#sidepanel-inner').css('opacity', 0);
+      // PROMISE CONTAINER
+      var promises = [];
 
-   // CALIBRATE PROGRESS & SET THE PROPERTY
-   data.stats.progress = ((current / (data.stats.blocks - 1)) * 100);
+      // GENERATE & PUSH A LOADING PROMISE FOR EACH ZONE
+      zones.forEach(zone => {
 
-   // ADD ONE FOR VISUAL PURPOSES
-   var current_fixed = current + 1;
+         // GENERATE A PROMISE
+         var p = new Promise((resolve, reject) => {
+            $.get('interface/img/maps/' + zone + '.png').done(() => { resolve(); });
+         });
 
-   // CHANGE PROGRESS BAR TEXT & SIZE
-   $('#progress-inner').html('#' + current_fixed + ' &#160;&ndash;&#160; ' + (data.stats.progress).toFixed(2) + '%');
-   $('#progress-focus').css('width', data.stats.progress + '%');
-
-   // TARGET SPECIFIC DATASET
-   var target = data.build[current];
-
-   // SEPARATE THE LEVEL & XP FROM THE EXPERIENCE PROPERTY
-   var level = parseInt(String(target.experience.toFixed(2)).split(".")[0]);
-   var xp = parseInt(String(target.experience.toFixed(2)).split(".")[1]);
-
-   // CHANGE LEVEL BAR TEXT & SIZE
-   $('#level-inner').html('Level ' + level + ' + ' + xp + '%');
-   $('#level-focus').css('width', xp + '%');
-
-   // WAIT 300MS, THEN START UPDATING MAP
-   sleep(300).then(() => {
-   
-      // EMPTY THE MAP & TOOLTIP SELECTORS & TURN OFF THE TOOLTIP TO AVOID FLICKERING
-      $('#map, #tooltip').html('');
-      $('#tooltip').css('display', 'none');
-
-      // SET THE CORRECT ZONE BACKGROUND TO THE MAP
-      $('#map').css('background', 'url("interface/img/maps/' + target.zone + '.png")');
-
-      // LOOP THROUGH EACH WAYPOINT IN BLOCK
-      $.each(target.waypoints, (id, waypoint) => {
-
-         // SET THE DEFAULT NUMBER POSITION TO LEFT
-         var align_coords = settings.align.left;
-         
-         // CHECK WHETHER ANOTHER ALIGNMENT WAS REQUESTED -- OVERWRITE
-         if (waypoint.align != undefined) { align_coords = settings.align[waypoint.align]; }
-
-         // GENERATE A WAYPOINT SELECTOR
-         var point = `
-            <div class="waypoint" style="left: ` + waypoint.coords.x + `%; top: ` + waypoint.coords.y + `%;">
-               <img src="interface/img/waypoints/space.png" class="` + waypoint.type + `" wp="` + id + `"><span class="waypoint-num" style="left: ` + align_coords.x + `;top: ` + align_coords.y + `"><img src="interface/img/numbers/` + (id + 1) + `.png"></span>
-            </div>
-         `;
-
-         // APPEND IT TO THE MAP
-         $('#map').append(point);
+         // PUSH IT TO THE CONTAINER
+         promises.push(p);
       });
 
-      // LINE CONTAINER
-      var lines = '';
+      // WAIT FOR ALL PROMISES TO BE RESOLVED
+      Promise.all(promises).then(() => {
 
-      // GENERATE LINES BETWEEN FIRST & SECOND TO LAST WAYPOINTS
-      for(var x = 0; x < target.waypoints.length - 1; x++) {
-         lines += '<line x1="' + target.waypoints[x].coords.x + '%" y1="' + target.waypoints[x].coords.y + '%" x2="' + target.waypoints[x + 1].coords.x + '%" y2="' + target.waypoints[x + 1].coords.y + '%"/>';
+         // LOG TASK COMPLETION & CLOSE THE PROMPT GRADUALLY
+         log('Preload Complete!');
+         close_prompt();
+      });
+   });
+}
+
+// OPEN PROMPT WINDOW
+function open_prompt(selector) {
+
+   // TURN OFF SUBMENU
+   $('#submenu').css('display', 'none');
+
+   // RENDER IN REQUESTED SELECTOR
+   $('body').prepend('<div id="prompt"><div id="prompt-inner">' + selector + '</div></div>');
+   
+   // WAIT 50MS & GRADUALLY TURN OPACITY ON
+   return sleep(50).then(() => { $('#prompt').css('opacity', '1'); });
+}
+
+// CLOSE PROMPT WINDOW
+function close_prompt() {
+
+   // TURN OPACITY OFF
+   $('#prompt').css('opacity', 0);
+
+   // WAIT 300MS, THEN REMOVE THE PROMPT SELECTOR
+   sleep(300).then(() => { $('#prompt').remove(); });
+}
+
+// SHORTHAND FOR RENDERING LOADING ANIMATION
+function loading() {
+
+   // LOADING SELECTOR
+   var loading = '<div class="lds-dual-ring"></div>';
+
+   if ($('#prompt')[0] != undefined) {
+
+      $('#prompt-inner').html(loading);
+
+   } else { open_prompt(loading); }
+}
+
+// EXPORT MODULES
+module.exports = {
+   calibrate: calibrate,
+   preload: preload,
+   open_prompt: open_prompt,
+   close_prompt: close_prompt,
+   loading: loading
+}
+},{}],5:[function(require,module,exports){
+// CENTER MAP
+function position(settings) {
+
+   // FIND CENTER COORDS
+   var coords = {
+      x: -(settings.background.width - ($('#map-inner')[0].offsetWidth - 4)) / 2,
+      y: -(settings.background.height - ($('#map-inner')[0].offsetHeight - 4)) / 2
+   }
+
+   // EXECUTE MOVEMENT
+   $('#map').css('left', coords.x + 'px');
+   $('#map').css('top', coords.y + 'px');
+}
+
+// EXPORT MODULES
+module.exports = {
+   position: position
+}
+},{}],6:[function(require,module,exports){
+// RENDER MAP
+function map(data) {
+
+   // MAKE MAP & LOGS TRANSPARENT
+   $('#map').css('opacity', 0);
+   $('#logs').css('opacity', 0);
+
+   // WAIT 100MS
+   sleep(200).then(() => {
+
+      // TARGET DATA
+      var target = data.route.path[data.current];
+      
+      // CHANGE THE BACKGROUND
+      $('#map').css('background', 'url("interface/img/maps/' + target.zone + '.png")');
+
+      // NUKE OLD CONTENT
+      $('#map').html('');
+      $('#obj-log').html('');
+
+      // SELECTOR CONTAINERS
+      var lines, points, circles = '';
+      
+      // LOOP THROUGH WAYPOINTS & ADD SELECTORS
+      for (var x = 0; x < target.waypoints.length; x++) {
+
+         // WAYPOINT SHORTHAND
+         var waypoint = target.waypoints[x];
+
+         // SET DEFAULT ALIGN TO LEFT
+         if (waypoint.align === undefined) { waypoint.align = 'left'; }
+
+         // GENERATE WAYPOINT
+         points += `
+            <foreignobject width="100%" height="100%">
+               <div class="waypoint" style="left: ` + waypoint.coords.x + `%; top: ` + waypoint.coords.y + `%;">
+                  <img src="interface/img/waypoints/space.png" id="` + waypoint.type + `"><span id="` + waypoint.align + `" class="number-` + x + `"><img src="interface/img/numbers/` + (x + 1) + `.png"></span>
+               </div>
+            </foreignobject>
+         `;
+
+         // GENERATE HIGHLIGHT CIRCLE
+         circles += '<circle r="24" cx="' + waypoint.coords.x + '%" cy="' + waypoint.coords.y + '%" id="waypoint-' + x + '"></circle>';
+
+         // GENERATE LINE -- IF YOU THERE IS MORE THAN ONE WAYPOINT REMAINING
+         if (x < target.waypoints.length - 1) {
+            lines += '<line x1="' + target.waypoints[x].coords.x + '%" y1="' + target.waypoints[x].coords.y + '%" x2="' + target.waypoints[x + 1].coords.x + '%" y2="' + target.waypoints[x + 1].coords.y + '%"></line>';
+         }
       }
 
-      // APPEND IN AN SVG CANVAS & LINES ONTOP OF THE MAP
-      $('#map').append('<svg>' + lines + '</svg>');
+      // RENDER IN STATUS CHANGES
+      status(data);
+      var objectives = objective_log(target.waypoints, data.quests);
+      var quests = quest_log(data);
 
-      // GENERATE ADDITIONAL ASSIST SELECTORS
-      var legend = '<span id="show-legend">Map Legend</span>';
-      var hs = '<span id="hearthstone"><span id="hearthstone-inner">None</span></span>';
-      var tooltip = '<div id="tooltip"></div>';
+      // WAIT ANOTHER 100MS
+      sleep(100).then(() => {
 
-      // RENDER THEM IN
-      $('#map').append(legend + hs + tooltip);
+         // RENDER IN MAP & LOGS
+         $('#map').html(lines + circles + points);
+         $('#obj-log').html(objectives);
+         $('#quest-log').html(quests);
 
-      // RENDER SIDEPANEL CONTENT
-      sidepanel(data, settings);
-
-      // RENDER HEARTHSTONE LOCATION
-      hearthstone(data);
-
-      // GRADUALLY TURN OPACITY ON AGAIN
-      $('#map').css('opacity', 1);
-      $('#sidepanel-inner').css('opacity', 1);
+         // TURN OPACITY BACK ON
+         $('#map').css('opacity', 1);
+         $('#logs').css('opacity', 1);
+      });
    });
-
-   return data;
 }
 
-// GENERATE OVERLOOK FOR THE CURRENT BLOCK
-function sidepanel(data, settings) {
-
-   // ASSIST VARS
-   var target = data.build[data.current].waypoints;   
-   var ids = data.ids;
-
-   // FETCH OBJECTIVES & QUESTS
-   var obj = objectives(target, ids, settings);
-   var qs = quests(data, settings);
-
-   // RENDER THE NEW INFO IN
-   $('#obj-log').html(obj);
-   $('#quest-log').html(qs);
-}
-
-// GENERATE SIDEPANEL ROW
-function row(category, data, settings, ids) {
-
-   // ROW CONTAINER
+// RENDER SIDEPANEL LOGS
+function objective_log(waypoints, quests) {
+   
+   // SELECTOR CONTAINER
    var container = '';
 
-   // CHECK THE GIVEN DATA TYPE
-   var type = typeof(data);
+   // LOOP THROUGH EACH WAYPOINT
+   for (var x = 0; x < waypoints.length; x++) {
+      
+      // SHORTHANDS
+      var waypoint = waypoints[x];
 
-   // IF ITS A STRING -- GENERATE & APPEND A SELECTOR
-   if (type === 'string') {
-      container += '<div class="' + category + '"><a href="https://classicdb.ch/?quest=' + ids[data.toLowerCase()] + '" target="_blank">' + shorten(data, settings) + '</a></div>';
+      // LOOP THROUGH SECTIONS & GENERATE ROWS
+      var rows = parse_rows(waypoint, quests);
 
-   // IF ITS AN ARRAY -- GENERATE & APPEND A SELECTOR
-   } else {
+      // GENERATE A SECTION BLOCK
       container += `
-         <div class="` + category + `">
-            <div class="split">
-               <div id="left"><a href="https://classicdb.ch/?quest=` + ids[data[0].toLowerCase()] + `" target="_blank">` + shorten(data[0], settings) + `</a></div>
-               <div id="right">` + data[1] + `</div>
-            </div>
+         <div class="section" section="` + x + `">
+            <div class="title"><div class="split"><div>` + (x + 1) + `. ` + waypoint.header + `</div><div>` + waypoint.coords.x + `.` + waypoint.coords.y + `</div></div></div>
+            ` + rows + `
          </div>
       `;
    }
 
-   // RETURN THE CONTAINER
-   return container;
-}
-
-// GET BLOCK OBJECTIVES
-function objectives(target, ids, settings) {
-
-   // INITIAL CONTAINER
-   var container = '';
-
-   // LOOP THROUGH EACH WAYPOINT
-   $.each(target, (index, waypoint) => {
-   
-      // MAKE INDEX MORE READER FRIENDLY
-      var count = index + 1;
-
-      // GENERATE A SELECTOR & PUSH IT TO THE CONTAINER
-      container += `
-         <div class="section">
-            <div class="title">
-               <div class="split">
-                  <div id="left">` + count + `. ` + waypoint.header + `</div>
-                  <div id="right"></div>
-               </div>
-            </div>
-      `;
-
-      // LOOP THROUGH ENDS, STARTS & OBJECTIVES CONTENT THAT ARE DEFINED
-      if (waypoint.ends != undefined) { waypoint.ends.forEach(details => { container += row('ends', details, settings, ids); }); }
-      if (waypoint.starts != undefined) { waypoint.starts.forEach(details => { container += row('starts', details, settings, ids); }); }
-      if (waypoint.objectives != undefined) { waypoint.objectives.forEach(details => { container += row('objectives', details, settings, ids); }); }
-      if (waypoint.special != undefined) { waypoint.special.forEach(details => { container += '<div class="special">' + details + '</div>'; }); }
-
-      // ADD ON SUFFIX
-      container += '</div>';
-   });
-
+   // RETURN CONTAINER
    return container;
 }
 
 // GET CURRENT QUESTS
-function quests(data, settings) {
+function quest_log(data) {
 
    // INITIAL CONTAINER
    var quests = {};
@@ -806,7 +1008,7 @@ function quests(data, settings) {
    for (var x = 0; x < data.current; x++) {
 
       // WAYPOINTS SHORTHAND
-      var waypoints = data.build[x].waypoints;
+      var waypoints = data.route.path[x].waypoints;
 
       // LOOP THROUGH EACH WAYPOINT
       waypoints.forEach(waypoint => {
@@ -820,14 +1022,14 @@ function quests(data, settings) {
 
                   // CHECK IF THE QUEST IS BLACKLISTED
                   var check = $.inArray(quest[0], blacklist);
-                  if (check == -1) { quests[quest[0]] = 0; }
+                  if (check == -1) { quests[quest[0]] = quest; }
 
                // ARRAY
                } else {
                   
                   // CHECK IF THE QUEST IS BLACKLISTED
                   var check = $.inArray(quest, blacklist);
-                  if (check == -1) { quests[quest] = 0; }
+                  if (check == -1) { quests[quest] = quest; }
                }
 
             });
@@ -848,27 +1050,98 @@ function quests(data, settings) {
       });
    }
 
-   // TRANSFORM OBJECT INTO KEYS
-   quests = Object.keys(quests);
+   // SAVE OBJECT KEYS
+   var keys = Object.keys(quests);
 
    // CONTAINER + HEADER
    var content = `
       <div class="title">
          <div class="split">
-            <div id="left">Current Quests</div>
-            <div id="right">` + quests.length + ` / 20</div>
+            <div>Current Quests</div>
+            <div>` + keys.length + ` / 20</div>
          </div>
       </div>
    `;
 
    // GENERATE ROWS & WRAPPER
-   quests.forEach(name => { content += `<div class="ends"><a href="https://classicdb.ch/?quest=` + data.ids[name.toLowerCase()] + `" target="_blank">` + shorten(name, settings) + `</a></div>`; });
+   keys.forEach(name => {
+      
+      // GENERATE ROW BASED ON PROP TYPE
+      if (typeof(quests[name]) != 'string') { content += `<div class="quest"><div class="split"><div><a href="https://classicdb.ch/?quest=` + data.quests[quests[name][0].toLowerCase()] + `" target="_blank">` + shorten(quests[name][0]) + `</a></div><div>` + quests[name][1] + `</div></div></div>`; 
+      } else { content += `<div class="quest"><a href="https://classicdb.ch/?quest=` + data.quests[name.toLowerCase()] + `" target="_blank">` + shorten(name) + `</a></div>`; }
+
+   });
+
+   // WRAP THE QUESTS IN A SECTION BLOCK
    content = '<div class="section">' + content + '</div>';
 
    return content;
 }
 
-function hearthstone(data) {
+// PARSE SECTION ROWS
+function parse_rows(waypoint, quests) {
+   
+   // SECTIONS CONTAINER
+   var container = '';
+
+   // PARSE ARRAY IF ITS DEFINED
+   if (waypoint.ends !== undefined) { container += row(waypoint.ends, quests, 'ends') }
+   if (waypoint.starts !== undefined) { container += row(waypoint.starts, quests, 'starts') }
+   if (waypoint.objectives !== undefined) { container += row(waypoint.objectives, quests, 'objectives') }
+   if (waypoint.special !== undefined) { container += row(waypoint.special, quests, 'special') }
+
+   return container;
+}
+
+// GENERATE SINGLE ROW
+function row(section, quests, color) {
+
+   // SECTION CONTAINER
+   var container = '';
+
+   // LOOP THROUGH SECTION
+   section.forEach(line => {
+
+      // ADD LINKS FOR STARTS, ENDS & OBJECTIVES
+      if (color != 'special') {
+
+         // GENERATE A LINE
+         if (typeof(line) == 'object') { container += '<div class="' + color + '"><div class="split"><div><a href="https://classicdb.ch/?quest=' + quests[line[0].toLowerCase()] + '" target="_blank">' + shorten(line[0]) + '</a></div><div>' + line[1] + '</div></div></div>';
+         } else { container += '<div class="' + color + '"><a href="https://classicdb.ch/?quest=' + quests[line.toLowerCase()] + '" target="_blank">' + shorten(line) + '</a></div>'; }
+
+      // PLAIN TEXT FOR SPECIAL
+      } else { container += '<div class="' + color + '">' + line + '</div>'; }
+   });
+
+   return container;
+}
+
+// RENDER SIDEPANEL STATUS
+function status(data) {
+
+   // FORMAT LEVEL/XP COMPONENTS
+   var level = data.route.path[data.current].experience.toFixed(2);
+   var experience = level.split('.')[1];
+
+   // CALCULATE PROGRESS PERCENT
+   var max = data.route.path.length;
+   var progress = (((data.current) / (max - 1)) * 100).toFixed(2);
+
+   // FIND LAST HEARTHSTONE
+   var hearthstone = find_hearthstone(data);
+
+   // SET LEVEL/PROGRESS BAR LENGTHS
+   $('#level-bar').css('width', experience + '%');
+   $('#progress-bar').css('width', progress + '%');
+
+   // SET LEVEL/PROG/HS VALUES
+   $('#lvl').html(level);
+   $('#prog').html(progress);
+   $('#hs').html(hearthstone);
+}
+
+// FIND LAST SET HEARTHSTONE
+function find_hearthstone(data) {
 
    // LOCATION PLACEHOLDER
    var location = 'none';
@@ -879,7 +1152,7 @@ function hearthstone(data) {
       if (location != 'none') { break; }
 
       // WAYPOINTS SHORTHAND
-      var waypoints = data.build[x].waypoints;
+      var waypoints = data.route.path[x].waypoints;
 
       // LOOP THROUGH EACH WAYPOINT
       waypoints.forEach(waypoint => {
@@ -894,112 +1167,183 @@ function hearthstone(data) {
                message = message.toLowerCase();
 
                // SET AS THE LOCATION WHEN THE KEYWORD IS FOUND
-               if (message == 'set hearthstone') { location = capitalize(data.build[x].zone); }
+               if (message == 'set hearthstone') { location = capitalize(data.route.path[x].zone); }
             });
          }
       });
    }
 
-   // CAPITALIZE IF STV
-   if (location == 'Stv') { location = 'STV'; }
-
-   $('#hearthstone-inner').html(location);
+   return location;
 }
 
 // EXPORT MODULES
 module.exports = {
    map: map
 }
-},{}],5:[function(require,module,exports){
-// RENDER EVERYTHING
-function map(data, settings) {
+},{}],7:[function(require,module,exports){
+// MAKE STORAGE KEY GLOBALLY AVAILABLE
+var key;
 
-   // SHOW TOOLTIP EVENT
-   $('body').on('mouseover', '.flightpath, .objective, .travel, .hub, .quest', (event) => {
-      
-      // TARGET DATASET
-      var target = data.build[data.current];
+// UPDATE STORAGE
+function add(header, details) {
 
-      // PICK UP ID ATTRIBUTE & USE IT TO FIND THE CORRECT WAYPOINT
-      var id = $(event.target).attr('wp');
-      var waypoint = target.waypoints[id];
+   // FETCH STORAGE STRING & CONVERT TO JSON
+   var storage = localStorage.getItem(key);
 
-      // TOOLTIP CONTAINER
-      var container = '<div id="tooltip-inner">';
+   // CONVERT TO JSON
+   storage = JSON.parse(storage);
 
-      // GENERATE A HEADER ROW
-      if (waypoint.header != '') {
-         container += `
-            <div class="title">
-               <div class="split">
-                  <div id="left">` + waypoint.header + `</div>
-                  <div id="right">` + waypoint.coords.x + `.` + waypoint.coords.y + `</div>
-               </div>
-            </div>
-         `;
+   // INJECT THE CHANGES
+   storage[header] = details;
+
+   // STRINGIFY STORAGE & SET IT
+   storage = JSON.stringify(storage);
+   localStorage.setItem(key, storage);
+
+   log('Property Added!');
+}
+
+// CHECK IF THERE'S SOMETHING IN LOCALSTORAGE
+function check(storage_key) {
+
+   // SET KEY
+   key = storage_key;
+
+   if (localStorage.getItem(key) === null) {
+      localStorage.setItem(key, '{}');
+   }
+    
+   // CONVERT OLD FORMAT
+   convert_old(key);
+
+   // SHORTHAND
+   var storage = localStorage.getItem(key);
+
+   // IF SOMETHING IS FOUND
+   if (storage != '{}') {
+
+      // CONVERT TO JSON
+      storage = JSON.parse(storage);
+
+      // CONTAINER
+      var container = '';
+
+      // LOOP THROUGH EACH CHARACTER
+      Object.keys(storage).forEach(character => {
+         
+         // GENERATE A SELECTOR
+         container += '<div id="opt" race="' + storage[character].race + '" block="' + storage[character].block + '"><div class="split"><div><img src="interface/img/icons/' + storage[character].race + '.png"><span id="char-name">' + capitalize(character) + '</span></div><div>Level <span id="char-lvl">' + storage[character].level + '</span></div></div></div>';
+      });
+
+      // RENDER THEM IN
+      $('#storage').html(container);
+   }
+}
+
+// UPDATE STORAGE PROPERTY
+function update(data) {
+
+   // MAKE SURE A PROFILE IS SELECTED
+   if ($('#loaded')[0] != undefined) {
+
+      // FISH OUT RELEVANT PROPERTIES
+      var level = parseInt(String(data.route.path[data.current].experience).split('.')[0]);
+      var block = data.current;
+
+      // FIND THE LOADED PROFILES NAME
+      var name = $('#loaded #char-name')[0].innerText.toLowerCase();
+
+      // CONVERT STORAGE TO JSON
+      var storage = JSON.parse(localStorage.getItem(key));
+
+      // SET NEW VALUES
+      storage[name].block = block;
+      storage[name].level = level;
+
+      // STRINGIFY & UPDATE STORAGE
+      storage = JSON.stringify(storage);
+      localStorage.setItem(key, storage);
+
+      // UPDATE THE SUBMENU
+      $('#loaded #char-lvl').text(level);
+   }
+}
+
+// CONVERTS OLD FORMAT TO NEW FORMAT
+function convert_old() {
+
+   // OLD KEYS
+   var alliance = localStorage.getItem('questing-page');
+   var horde = localStorage.getItem('horde');
+
+   // CHECK WHETHER EITHER EXISTS
+   if (alliance != null || horde != null) {
+
+      // PLACEHOLDER
+      var obj = {};
+
+      // CHECK ALLIANCE
+      if (alliance != null) {
+         
+         // INJECT NEW PROPERTY
+         obj['allygurl'] = {
+            race: 'human',
+            level: 99,
+            block: alliance
+         }
+
+         // REMOVE THE OLD ITEM
+         localStorage.removeItem('questing-page');
       }
 
-      // LOOP THROUGH & GENERATE A SELECTOR FOR EACH QUEST/OBJCTIVE THAT ARE DEFINED
-      if (waypoint.ends != undefined) { waypoint.ends.forEach(data => { container += row('ends', data, settings); }); }
-      if (waypoint.starts != undefined) { waypoint.starts.forEach(data => { container += row('starts', data, settings); }); }
-      if (waypoint.objectives != undefined) { waypoint.objectives.forEach(data => { container += row('objectives', data, settings); }); }
-      if (waypoint.special != undefined) { waypoint.special.forEach(details => { container += '<div class="special">' + details + '</div>'; }); }
+      // CHECK HORDE
+      if (horde != null) {
+         
+         // INJECT NEW PROPERTY
+         obj['hordeboi'] = {
+            race: 'orc',
+            level: 99,
+            block: horde
+         }
 
-      container += '</div>';
+         // REMOVE THE OLD ITEM
+         localStorage.removeItem('horde');
+      }
 
-      // RENDER IN THE ENTIRE TOOLTIP
-      $('#tooltip').html(container);
-
-      // ASSIST VARS FOR POSITION CALIBRATION
-      var height = parseFloat($('#tooltip').css('height'));
-      var width = parseFloat($('#tooltip').css('width'));
-      var offset = 15;
-
-      // CALIBRATE CORRECT XY COORDINATES
-      var x = event.target.offsetParent.offsetLeft - (width / 2);
-      var y = event.target.offsetParent.offsetTop - (height + offset);
-      
-      // EXECUTE CSS CHANGES & TOGGLE THE DISPLAY ON
-      $('#tooltip').css('left', x);
-      $('#tooltip').css('top', y);
-      $('#tooltip').css('display', 'inline-block');
-   });
-
-   // HIDE TOOLTIP EVENT
-   $('body').on('mouseout', '.flightpath, .objective, .travel, .hub, .quest', () => { $('#tooltip').css('display', 'none'); });
+      // STRINGIFY & SET THE NEW ITEM
+      obj = JSON.stringify(obj);
+      localStorage.setItem(key, obj)
+   }
 }
 
-// GENERATE A TOOLTIP ROW FOR QUESTS/OBJECTIVES
-function row(category, data, settings) {
+// NUKE STORAGE CONTENT
+function nuke() {
+   localStorage.removeItem(key);
+   log('Storage Nuked!');
+}
 
-   // ROW CONTAINER
-   var container = '';
+// FETCH BLACKLISTED NAMES
+function blacklist() {
 
-   // CHECK THE GIVEN DATA TYPE
-   var type = typeof(data);
+   // DEFAULT BLACKLIST
+   var blacklist = [];
 
-   // IF ITS A STRING -- GENERATE & APPEND A SELECTOR
-   if (type === 'string') {
-      container += '<div class="' + category + '">' + shorten(data, settings) + '</div>';
+   // FETCH & CONVERT STORAGE TO JSON
+   var storage = localStorage.getItem(key);
+   storage = JSON.parse(storage);
 
-   // IF ITS AN ARRAY -- GENERATE & APPEND A SELECTOR
-   } else {
-      container += `
-         <div class="` + category + `">
-            <div class="split">
-               <div id="left">` + shorten(data[0], settings) + `</div>
-               <div id="right">` + data[1] + `</div>
-            </div>
-         </div>
-      `;
-   }
+   // SET BLACKLIST IF ITS DEFINED
+   if (storage != null) { blacklist = Object.keys(storage); }
 
-   // RETURN THE CONTAINER
-   return container;
+   return blacklist;
 }
 
 // EXPORT MODULES
 module.exports = {
-   map: map
+   add: add,
+   check: check,
+   nuke: nuke,
+   update: update,
+   blacklist: blacklist
 }
 },{}]},{},[1]);

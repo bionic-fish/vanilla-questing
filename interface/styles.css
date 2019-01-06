@@ -1,7 +1,5 @@
 @import url('css/general.css');
-@import url('css/level-progress.css');
-@import url('css/loading.css');
+@import url('css/menu.css');
 @import url('css/map.css');
+@import url('css/panel.css');
 @import url('css/prompt.css');
-@import url('css/tooltip.css');
-@import url('css/sidepanel.css');

@@ -1,342 +1,264 @@
-// MAP RELATED EVENTS
-function map(data, settings, render) {
+// MAKE INSTANCE DATA PUBLIC FOR ALL FUNCTIONS
+var instance_data;
+var cooldown;
+
+// MAP MOVEMENT
+function move_map(settings) {
+
+   // MOUSEDOWN
+   $('#map').on('mousedown', (event) => {
+      
+      // BLOCK DEFAULT ACTION
+      event.preventDefault();
+
+      // ENABLE MAP MOVEMENT & SAVE TRIGGER EVENT
+      settings.moving = true;
+      settings.lastevent = event;
+   });
+
+   // MOUSEMOVE -- IF MOUSEDOWN IS ACTIVE
+   $('#map').on('mousemove', (event) => {
+
+      // BLOCK DEFAULT ACTION
+      event.preventDefault();
+
+      if (settings.moving === true) {
+
+         // STARTING COORDS
+         var starting = {
+            x: settings.lastevent.clientX,
+            y: settings.lastevent.clientY
+         }
+
+         // ENDING COORDS
+         var ending = {
+            x: event.clientX,
+            y: event.clientY
+         }
+
+         // DELTA COORDS
+         var delta = {
+            x: starting.x - ending.x,
+            y: starting.y - ending.y,
+         }
+
+         // CURRENT POSITION
+         var position = {
+            x: $('#map').css('left').replace('px', ''),
+            y: $('#map').css('top').replace('px', '')
+         }
+
+         // NEW POSITION
+         var new_position = {
+            x: position.x - delta.x,
+            y: position.y - delta.y
+         }
+
+         // LIMIT THE MOVEMENT
+         var limit = {
+            x: -(settings.background.width - ($('#map-inner')[0].offsetWidth - 4)),
+            y: -(settings.background.height - ($('#map-inner')[0].offsetHeight - 4))
+         }
+
+         // RECALIBRATE OVERFLOW
+         if (new_position.x < limit.x) { new_position.x = limit.x; }
+         if (new_position.y < limit.y) { new_position.y = limit.y; }
+         if (new_position.x > 0) { new_position.x = 0; }
+         if (new_position.y > 0) { new_position.y = 0; }
+
+         // EXECUTE MOVEMENT -- IF THERE IS EXTRA SPACE
+         if (limit.x <= 0) { $('#map').css('left', new_position.x + 'px'); }
+         if (limit.y <= 0) { $('#map').css('top', new_position.y + 'px'); }
+
+         // REFRESH LAST EVENT
+         settings.lastevent = event;
+      }
+   });
+
+   // MOUSEUP -- DISABLE MAP MOVEMENT
+   $(document).on('mouseup', () => { settings.moving = false; });
+}
+
+// SECTION HIGHLIGHTING
+function map_highlight() {
+
+   var selector;
+
+   // TURN MOUSEOVER CIRCLE ON
+   $('body').on('mouseover', '.section', (event) => {
+
+      // FIND SECTION ATTR NUMBER
+      var id = $(event.currentTarget).attr('section');
+
+      // TURN HIGHLIGHT CIRCLE OPACITY ON & NUMBER OPACITY OFF
+      $('#waypoint-' + id).css('opacity', 0.7);
+      $('.number-' + id).css('opacity', 0);
+      selector = $('.number-' + id);
+   });
+
+   // TURN MOUSEOVER CIRCLE OFF
+   $('body').on('mouseout', '.section', () => {
+
+      // TURN HIGHLIGHT CIRCLE OPACITY OFF & NUMBER OPACITY ON
+      $('circle').css('opacity', 0);
+      $(selector).css('opacity', 1);
+   });
+}
+
+// ROUTE BROWSING
+function browsing(data, render, settings, storage) {
+
+   // SET INSTANCE DATA
+   instance_data = data;
+   cooldown = settings.cooldown;
 
    // LISTEN FOR KEY-UPS
    $(document).on('keyup', (event) => {
 
-      // WHEN 'A' IS PRESSED
-      if (event.keyCode == 65) {
+      // MAKE SURE PROMPT TABLE ISNT ACTIVE
+      if ($('#prompt').css('display') != 'table') {
+
+         // WHEN 'A' IS PRESSED
+         if (event.keyCode == 65) {
+            
+            // THE PREVIOUS BLOCK
+            var previous = instance_data.current - 1;
+
+            // IF IT FALLS WITHIN RANGE, RENDER MAP AGAIN
+            if (previous >= 0) {
+
+               // SET NEW CURRENT
+               instance_data.current = previous;
+
+               // UPDATE STORAGE & SUBMENU
+               storage.update(instance_data);
+
+               // RENDER NEW MAP
+               render.map(instance_data);
+            }
+
+         // WHEN 'D' IS PRESSED
+         } else if (event.keyCode == 68) {
          
-         // THE PREVIOUS BLOCK
-         var previous = parseInt(data.current) - 1;
+            // THE NEXT BLOCK
+            var next = instance_data.current + 1;
 
-         // IF IT FALLS WITHIN RANGE, RENDER MAP AGAIN
-         if (previous >= 0) { data = render.map(data, settings, previous); }
+            // IF IT FALLS WITHIN RANGE, RENDER MAP AGAIN
+            if (next < instance_data.route.path.length) {
 
-      // WHEN 'D' IS PRESSED
-      } else if (event.keyCode == 68) {
-      
-         // THE NEXT BLOCK
-         var next = parseInt(data.current) + 1;
+               // SET NEW CURRENT
+               instance_data.current = next;
 
-         // IF IT FALLS WITHIN RANGE, RENDER MAP AGAIN
-         if (next < data.stats.blocks) { data = render.map(data, settings, next); }
+               // UPDATE STORAGE & SUBMENU
+               storage.update(instance_data);
+
+               // RENDER NEW MAP
+               render.map(instance_data);
+            }
+         }
       }
+
    });
 
    // WHEN THE INPUT RANGE IS USED
-   $('#range').on('change', () => { data = render.map(data, settings, $('#range').val()); });
+   $('body').on('click', '#progress', (event) => {
+      
+      // EVENT PROPS
+      var mouse_click = event.clientX;
+      var selector_position = event.currentTarget.offsetLeft;
 
-   // DISABLE ARROW KEYS WHEN THE INPUT RANGE IS SELECTED
-   $(document).on('keyup keydown', (event) => { if (event.keyCode == 37 || event.keyCode == 38 ||event.keyCode == 39 || event.keyCode == 40) { event.preventDefault(); } });
+      // DO THE MATH
+      var difference = mouse_click - selector_position;
+      var selector_width = event.currentTarget.offsetWidth;
 
-   // RETURN UPDATED DATA OBJECT
-   return data;
+      // CONVERT TO PERCENTAGE
+      var percent = difference / selector_width;
+
+      // FIND CLOSEST BLOCK
+      var block = Math.floor(percent * instance_data.route.path.length);
+
+      // MAKE SURE ITS IN RANGE
+      if (block <= instance_data.route.path.length && block != instance_data.current) {
+
+         // SET NEW CURRENT PROP & RENDER
+         instance_data.current = block;
+
+         // UPDATE STORAGE & SUBMENU
+         storage.update(instance_data);
+
+         // RENDER NEW MAP
+         render.map(instance_data);
+
+      } else { log('Range Issue!'); }
+   });
 }
 
-// GENERAL EVENTS
-function general(settings) {
+// SUBMENU DROPDOWNS
+function submenu() {
 
-   // FIND MAP COORD ON CLICK
-   $('#map').on('click', (event) => {
+   // PLACEHOLDERS
+   var menu;
+   var last_selector;
 
-      // CHECK THAT A WAYPOINT WASNT CLICKED
-      if (event.target.tagName != 'IMG') {
+   // MOUSEOVER
+   $('body').on('mouseover', '#sub', (event) => {
 
-         // MAP HEIGHT & WIDTH PROPS
-         var map = {
-            width: event.currentTarget.clientWidth,
-            height: event.currentTarget.clientHeight
-         }
+      // HIDE THE PREVIOUS MENU
+      if (last_selector != undefined) { last_selector.css('display', 'none'); }
 
-         // CLICKED COORDS
-         var clicked = {
-            x: event.offsetX,
-            y: event.offsetY,
-         }
+      // SAVE EVENT TARGET & SET NEW POSITION
+      menu = $(event.target);
 
-         // FIGURE OUT % COORS
-         var x = ((clicked.x / map.width) * 100).toFixed(0);
-         var y = ((clicked.y / map.height) * 100).toFixed(0);
+      // DEFAULT X POSITION
+      var position = $(event.target)[0].offsetLeft;
 
-         // LOG THEM OUT
-         log(x + '.' + y)
+      // RIGHT ALIGNMENT
+      if (menu[0].innerText != 'Overview') {
+         var submenu_width = parseInt($('#submenu').css('width').replace('px', '')) + 4;
+         position = ($(event.target)[0].offsetLeft + $(event.target)[0].offsetWidth) - submenu_width;
       }
+
+      // DEFAULT SELECTOR
+      var selector = $('#overview');
+
+      if (menu[0].innerText == 'Load From Storage') {
+         selector = $('#storage');
+      } else if (menu[0].innerText == 'Create New Profile') {
+         selector = $('#create');
+      } else if (menu[0].innerText == 'Actions') {
+         selector = $('#actions');
+      }
+
+      // SHOW THE CORRECT MENU
+      selector.css('display', 'block');
+
+      // REGISTER THE LAST MENU FOR HIDING PURPOSES
+      last_selector = selector;
+
+      // FIND MENU HEIGHT FOR POSITIONING
+      var menu_height = $('#menu')[0].offsetHeight - 2;
+
+      // POSITION & SHOW THE SUBMENU
+      $('#submenu').css('top', menu_height);
+      $('#submenu').css('left', position);
+      $('#submenu').css('display', 'block');
    });
 
-   // PRELOAD EVENT
-   $('#show-preload').on('click', () => {
-
-      // MAKE SURE CHECK PROPERTY IS FALSE
-      if (settings.windows.preload == 0) {
-
-         // CHANGE THE SETTING PROPERTY TO BLOCK FURTHER EXECUTIONS
-         settings.windows.preload = 1;
-         log('Started Preloading..');
-
-         // ADD THE LOADING SELECTOR TO THE PROMPT TABLE & TO TOGGLE THE DISPLAY ON
-         $('#prompt-inner').html('<div id="loading"><div class="lds-css ng-scope"><div style="width:100%;height:100%" class="lds-rolling"><div></div></div></div></div>');
-         $('#prompt').css('display', 'table');
-
-         // WAIT 50MS TO SMOOTHEN CSS TRANSITION
-         sleep(50).then(() => {
-         
-            // GRADUALLY TURN OPACITY ON
-            $('#prompt').css('opacity', '1');
-
-            // LIST OUT ALL ZONES
-            var zones = [
-               'alterac',
-               'arathi',
-               'ashenvale',
-               'azshara',
-               'badlands',
-               'barrens',
-               'blasted',
-               'darkshore',
-               'darnassus',
-               'deadwind',
-               'desolace',
-               'durotar',
-               'duskwood',
-               'dustwallow',
-               'elwynn',
-               'epl',
-               'farmfarmfarm',
-               'felwood',
-               'feralas',
-               'hillsbrad',
-               'hinterlands',
-               'ironforge',
-               'loch',
-               'moonglade',
-               'morogh',
-               'mulgore',
-               'needles',
-               'orgrimmar',
-               'redridge',
-               'searing',
-               'silverpine',
-               'steppes',
-               'stonetalon',
-               'stormwind',
-               'stv',
-               'swamp',
-               'tanaris',
-               'teldrassil',
-               'thunderbluff',
-               'tirisfal',
-               'undercity',
-               'ungoro',
-               'westfall',
-               'wetlands',
-               'winterspring',
-               'wpl'
-            ];
-
-            // PROMISE CONTAINER
-            var promises = [];
-
-            // GENERATE & PUSH A LOADING PROMISE FOR EACH ZONE
-            zones.forEach(zone => { promises.push(zone_promise(zone)); });
-
-            // WAIT FOR ALL PROMISES TO BE RESOLVED
-            Promise.all(promises).then(() => {
-
-               // LOG THAT THE TASK IS COMPLETE
-               log('Preload Complete!');
-
-               // UPDATE THE PRELOAD LINK
-               $('#show-preload').removeAttr('class');
-               $('#show-preload').attr('id', 'disabled');
-               $('#disabled').text('Backgrounds Loaded');
-
-               // GRADUALLY TURN OPACITY OFF
-               $('#prompt').css('opacity', '0');
-
-               // WAIT 200MS FOR THE FADE
-               sleep(300).then(() => {
-
-                  // TOGGLE THE PROMP DISPLAY OFF & REMOVE THE LOADING SELECTOR ENTIRELY
-                  $('#prompt').css('display', 'none');
-                  $('#loading').remove();
-               });
-            });
-         });
-      }
+   // KEEP SELECTED MENU DARKENED WHILE SUBMENU IS OPEN
+   $('body').on('mouseover', '#submenu, #sub', () => {
+      $(menu).css('background', 'rgba(2, 2, 2, 0.151)');
+      $('#submenu').css('display', 'block');
    });
 
-   // FAQ EVENT
-   $('#show-faq').on('click', () => {
-
-      // MAKE SURE CHECK PROPERTY IS FALSE
-      if (settings.windows.faq == 0) {
-
-         // TOGGLE THE PROMPT DISPLAY ON
-         $('#prompt').css('display', 'table');
-
-         // LIST OF QUESTIONS & ANSWERS
-         var questions = [
-            ['Is the route based on someone elses work?', 'No'],
-            ['Is it final/perfect?', 'No, but very easy to modify'],
-            ['Would I like to collaborate?', 'Absolutely'],
-            ['Will you route for non-humans?', 'Yes'],
-            ['Will there be a horde version?', 'Yes, probably during xmas'],
-            ['How about dungeon "quest run" guides?', 'Yes, likely in short video format'],
-            ['Do I want feedback/suggestions?', 'Yes, it\'s essential'],
-            ['Both mechanical and game related?', 'Yes'],
-            ['Will this require a login?', 'No, everything runs locally'],
-            ['My question wasn\'t answered!', 'Try the <a href="https://www.reddit.com/r/classicwow/comments/9zxi0v/inbrowser_160_questing_guide_for_classic/?" target="_blank">Reddit Thread</a>'],
-            ['How do I get in touch?', 'Strafir#9133 on <a href="https://discord.gg/classicwow" target="_blank">Discord</a>']
-         ];
-
-         // GENERATE A FAQ SELECTOR
-         var selector = `
-            <div id="faq">
-            <div id="title">Frequently Asked Questions</div>
-            <div id="content">
-         `;
-
-         // LOOP THROUGH QUESTIONS & APPEND IN A ROW FOR EACH ONE
-         questions.forEach(row => {
-            selector += `
-               <div id="question">
-                  <div class="split">
-                     <div id="left">` + row[0] + `</div>
-                     <div id="right">` + row[1] + `</div>
-                  </div>
-               </div>
-            `;
-         });
-
-         // STITCH ON THE SELECTORS ENDING
-         selector += '</div></div>';
-
-         // RENDER THE SELECTOR INTO THE PROMPT WINDOW
-         $('#prompt-inner').html(selector);
-
-         // GRADUALLY TURN THE OPACITY ON AFTER 50MS -- TO SMOOTHEN TRANSITION
-         sleep(50).then(() => { $('#prompt').css('opacity', '1'); });
-
-         // WAIT UNTIL THE FADE ENDS & SET THE SETTINGS PROPERTY TO TRUE
-         sleep(300).then(() => { settings.windows.faq = 1; })
-      }
+   // TURN OFF THE SUBMENU & MAKE THE MENU TRANSPARENT ON MOUSEOUT
+   $('body').on('mouseout', '#submenu, #sub', () => {
+      $(menu).css('background', 'rgba(2, 2, 2, 0)');
+      $('#submenu').css('display', 'none');
    });
+}
 
-   // LISTEN FOR KEY PRESSES
-   $(document).on('keyup', (evt) => {
-
-      // WHEN 'ESC' IS PRESSED
-      if (evt.keyCode == 27) {
-
-         // MAKE SURE CHECK PROPERTY IS FALSE
-         if (settings.windows.faq == 1) {
-
-            // GRADUALLY TURN OPACITY OFF
-            $('#prompt').css('opacity', '0');
-
-            // WAIT 300 MS, THEN TOGGLE THE PROMPT DISPLAY OFF & SET THE SETTINGS PROPERTY TO FALSE
-            sleep(300).then(() => {
-               $('#prompt').css('display', 'none');
-               settings.windows.faq = 0;
-            });
-         }
-      }
-
-      // WHEN 'F' IS PRESSED
-      if (evt.keyCode == 70) {
-
-         // CURRENT DISPLAY VALUE
-         var display = $('#sidepanel').css('display');
-
-         // TOGGLE SIDEPANEL & WAYPOINT NUMBERS ON
-         if (display == 'none') {
-            $('#sidepanel').css('display', 'block');
-            $('.waypoint-num').css('display', 'block');
-
-         // TOGGLE SIDEPANEL & WAYPOINT NUMBERS OFF
-         } else {
-            $('#sidepanel').css('display', 'none');
-            $('.waypoint-num').css('display', 'none');
-         }
-      }
-
-   });
-
-   // SHOW LEGEND EVENT
-   $('body').on('mouseover', '#show-legend', (event) => {
-
-      // IF LEGEND SELECTOR DOESNT EXIST FROM BEFORE
-      if ($('#legend').length == 0) {
-
-         // LIST OF MARKERS & THEIR MEANING
-         var scheme = [
-            ['blue', 'Central Hub'],
-            ['yellow', 'Quest'],
-            ['red', 'Objective'],
-            ['green', 'Flightpath'],
-            ['purple', 'Travel']
-         ];
-
-         var other = [
-            ['D', 'Dungeon'],
-            ['E', 'Elite'],
-            ['F', 'Escort'],
-            ['R', 'Random Drop'],
-            ['C', 'Class']
-         ]
-
-         // GENERATE A LEGEND SELECTOR
-         var selector = '<div id="legend"><div id="legend-inner">';
-
-         // LOOP THROUGH SCHEMES & ADD A ROW FOR EACH
-         scheme.forEach(row => {
-            selector += `
-               <div class="category">
-                  <div class="split">
-                     <div id="left"><img src="interface/img/waypoints/` + row[0] + `.png"></div>
-                     <div id="right">` + row[1] + `</div>
-                  </div>
-               </div>
-            `;
-         });
-
-         // LOOP THROUGH OTHERS & ADD A ROW FOR EACH
-         other.forEach(row => {
-            selector += `
-               <div class="category">
-                  <div class="split">
-                     <div id="left">[` + row[0] + `]</div>
-                     <div id="right">` + row[1] + `</div>
-                  </div>
-               </div>
-            `;
-         });
-
-         // STICH ON THE ENDING
-         selector += '</div></div>';
-
-         // APPEND THE SELECTOR IN
-         $('#map').append(selector);
-      }
-
-      // ASSIST VARS FOR POSITION CALIBRATION
-      var height = parseFloat($('#legend').css('height'));
-      var width = parseFloat($('#show-legend').css('width'));
-      var offset = 10;
-
-      // CALIBRATE RIGHT XY COORDINATES
-      var x = event.target.offsetLeft - (width / 2);
-      var y = event.target.offsetTop - (height + offset);
-
-      // EXECUTE CSS CHANGES & SHOW THE DATA
-      $('#legend').css('left', x);
-      $('#legend').css('top', y);
-      $('#legend').css('display', 'inline-block');
-   });
-
-   // HIDE LEGEND EVENT
-   $('body').on('mouseout', '#show-legend', () => { $('#legend').css('display', 'none'); });
+// OBJECTIVE/QUEST LOG BUTTONS
+function log_menu() {
 
    // SHOW OBJECTIVES EVENT
    $('body').on('click', '#show-obj', () => {
@@ -379,20 +301,239 @@ function general(settings) {
       // ELSE LOG ERROR
       } else { log('Tab Already Open!'); }
    });
-
-   // RETURN UPDATED SETTINGS OBJECT
-   return settings;
 }
 
-// GENERATE A PROMISE FOR A ZONE -- FOR PRELOADING
-function zone_promise(zone) {
-   return new Promise((resolve, reject) => {
-      $.get('interface/img/maps/' + zone + '.png').done(() => { resolve(); });
+// PRELOAD BUTTON
+function preload(func) {
+
+   // SHOW OBJECTIVES EVENT
+   $('body').on('click', '.preload', () => {
+      func.preload();
    });
 }
 
-// EXPORT FUNCTIONS
+// NEW PROFILE
+function new_profile(func, storage, render, build) {
+
+   // PLACEHOLDERS
+   var race = '';
+
+   // SHOW OBJECTIVES EVENT
+   $('body').on('click', '.profile', (event) => {
+
+      // REGISTER THE SELECTED RACE
+      race = event.currentTarget.innerText.toLowerCase();
+
+      // PROMPT SELECTOR
+      var selector = `
+         <div id="input-box">
+            <input type="text" placeholder="Enter Profile Name" id="profile_name"><input type="submit" value="Create" id="bad-submit">
+         </div>
+         <img src="interface/img/close.png" id="close">
+      `;
+
+      // WAIT FOR THINGS TO RENDER -- AUTO FOCUS INPUT
+      func.open_prompt(selector).then(() => { $('#profile_name').focus(); });
+   });
+
+   // CLOSE THE WINDOW BY CLICKING
+   $('body').on('click', '#close', () => { func.close_prompt(); });
+
+   // SPECIFIC KEY EVENTS
+   $(document).on('keyup', (event) => {
+      
+      // CLOSE WINDOW WITH ESC
+      if (event.keyCode == 27 && $('#close')[0] != undefined) { func.close_prompt(); }
+
+      // CREATE NEW PROFILE
+      if (event.keyCode == 13 && $('#good-submit')[0] != undefined) {
+         
+         // PLAYER NAME -- FORCE LOWERCASE
+         var player = $('#profile_name').val().toLowerCase();
+
+         // SWITCH TO LOADING ANIMATION
+         func.loading();
+
+         // PLAYER DETAILS
+         var details = {
+            race: race,
+            level: 5,
+            block: 0
+         };
+
+         // ADD PROFILE TO STORAGE
+         storage.add(player, details);
+
+         // GENERATE NEW SUBMENU SELECTOR
+         var selector = '<div id="loaded" race="' + details.race + '" block="' + details.block + '"><div class="split"><div><img src="interface/img/icons/' + details.race + '.png"><span id="char-name">' + capitalize(player) + '</span></div><div>Level <span id="char-lvl">' + details.level + '</span></div></div></div>';
+
+         // IF OTHER PROFILES EXIST
+         if ($('#soon')[0] === undefined) {
+
+            // UNCOLOR PREVIOUS LOADED OPTION & APPEND IN NEW LOAD OPTION
+            $('#loaded').attr('id', 'opt');
+
+            // APPEND IT IN
+            $('#storage').append(selector);
+
+         // REPLACE OLD CONTENT
+         } else { $('#storage').html(selector); }
+
+         // RENDER THE MAP
+         build.specific(details.race, details.block).then((data) => {
+
+            // UPDATE INSTANCE DATA
+            instance_data = data;
+
+            // RENDER THE NEW MAP & UPDATE THE DATA OBJECT 
+            render.map(instance_data);
+
+            // CLOSE THE LOADING ANIMATION WHEN DONE
+            sleep(cooldown).then(() => { func.close_prompt(); });
+         });
+      }
+   });
+
+   // LISTEN TO INPUT KEY EVENTS
+   $('body').on('keyup', '#profile_name', (event) => {
+
+      // DONT VALIDATE WHEN ESC IS PRESSED -- TO FIX ERROR BLINKING
+      if (event.keyCode != 27) {
+
+         // REMOVE OLD ERRORS
+         $('#error').remove();
+
+         // INPUT VALUE
+         var value = $('#profile_name').val().replace(/\s/g, '');
+
+         // ERROR ARRAY
+         var errors = [];
+
+         // FETCH BLACKLISTED NAMES
+         var blacklist = storage.blacklist();
+
+         // CHECK IF ITS BLACKLISTED
+         if ($.inArray(value.toLowerCase(), blacklist) != -1) { errors.push('Name Already Exists'); }
+
+         // CHECK THAT A NAME WAS GIVEN
+         if (value == '') { errors.push('Unique Name Required'); }
+
+         // CHECK THAT A NAME WAS GIVEN
+         if (value.length < 3) { errors.push('3 Character Minimum'); }
+
+         // RENDER PROBLEM
+         if (errors.length != 0) {
+
+            // ADD ERROR SELECTOR
+            $('#prompt-inner').prepend('<div id="error">' + errors[0] + '</div>');
+
+            // TURN THE BUTTON RED BY DEFAULT
+            $('#good-submit').attr('id', 'bad-submit');
+
+            // X POSITION
+            var left = $('#input-box')[0].offsetLeft;
+            var width = $('#input-box')[0].offsetWidth;
+
+            // Y POSITION
+            var top = $('#input-box')[0].offsetTop;
+            var offset = $('#input-box')[0].offsetHeight;
+
+            // CHANGE POSITION
+            $('#error').css('top', (top - offset) + 'px');
+            $('#error').css('left', left + (width / 4) + 'px');
+
+            // DISPLAY THE BOX
+            $('#error').css('display', 'block');
+
+         // IF NO ERRORS ARE DETECTED, TURN THE BUTTON GREEN
+         } else { $('#bad-submit').attr('id', 'good-submit'); }
+      }
+   });
+
+   $('body').on('click', '#good-submit', () => {
+         
+      // PLAYER NAME -- FORCE LOWERCASE
+      var player = $('#profile_name').val().toLowerCase();
+
+      // SWITCH TO LOADING ANIMATION
+      func.loading();
+
+      // PLAYER DETAILS
+      var details = {
+         race: race,
+         level: 5,
+         block: 0
+      };
+
+      // ADD PROFILE TO STORAGE
+      storage.add(player, details);
+
+      // GENERATE NEW SUBMENU SELECTOR
+      var selector = '<div id="loaded" race="' + details.race + '" block="' + details.block + '"><div class="split"><div><img src="interface/img/icons/' + details.race + '.png"><span id="char-name">' + capitalize(player) + '</span></div><div>Level <span id="char-lvl">' + details.level + '</span></div></div></div>';
+
+      // IF OTHER PROFILES EXIST
+      if ($('#soon')[0] === undefined) {
+
+         // UNCOLOR PREVIOUS LOADED OPTION & APPEND IN NEW LOAD OPTION
+         $('#loaded').attr('id', 'opt');
+
+         // APPEND IT IN
+         $('#storage').append(selector);
+
+      // REPLACE OLD CONTENT
+      } else { $('#storage').html(selector); }
+
+      // RENDER THE MAP
+      build.specific(details.race, details.block).then((data) => {
+
+         // UPDATE INSTANCE DATA
+         instance_data = data;
+
+         // RENDER THE NEW MAP & UPDATE THE DATA OBJECT 
+         render.map(instance_data);
+
+         // CLOSE THE LOADING ANIMATION WHEN DONE
+         sleep(cooldown).then(() => { func.close_prompt(); });
+      });
+   });
+}
+
+function load(render, build, func) {
+   $('body').on('click', '#storage #opt', (event) => {
+
+      // SWITCH TO LOADING ANIMATION
+      func.loading();
+
+      $('#loaded').attr('id', 'opt');
+      $(event.currentTarget).attr('id', 'loaded');
+      
+      // REGISTER REQUESTED BLOCK & RACE
+      var block = $(event.currentTarget).attr('block');
+      var race = $(event.currentTarget).attr('race');
+
+      // RENDER THE MAP
+      build.specific(race, block).then((data) => {
+
+         // UPDATE INSTANCE DATA
+         instance_data = data;
+
+         // RENDER THE NEW MAP & UPDATE THE DATA OBJECT 
+         render.map(instance_data);
+
+         // CLOSE THE LOADING ANIMATION WHEN DONE
+         sleep(cooldown).then(() => { func.close_prompt(); });
+      });
+   });
+}
+
+// EXPORT MODULES
 module.exports = {
-   map: map,
-   general: general
+   move_map: move_map,
+   map_highlight: map_highlight,
+   browsing: browsing,
+   submenu: submenu,
+   log_menu: log_menu,
+   preload: preload,
+   new_profile: new_profile,
+   load: load
 }

@@ -4,44 +4,63 @@
    <link rel="icon" href="interface/img/icon.ico">
    <link rel="stylesheet" href="interface/styles.css" type="text/css">
    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-   <script defer src="core/bundle.min.js"></script>
    <script defer src="core/misc.js"></script>
+   <script defer src="core/bundle.js"></script>
 </head>
 <body>
-   <div id="alert">12/19: The <a href="horde.html">Horde route</a> is done. I'm adding some missing polish & expanding the current UI to fit it.</div>
-   <div id="wrapper-tbl"><div id="wrapper-cell"><div id="wrapper">
-      <div id="header">
-         <div class="split">
-            <div id="left"><span id="block-count" class="highlight">0</span> Blocks, <span id="waypoint-count" class="highlight">0</span> Waypoints, <span id="quest-count" class="highlight">0</span> Quests</div>
-            <div id="right"><span id="show-faq" class="link">Frequently Asked Questions</span> | <span id="show-preload" class="link">Preload Backgrounds? 29MB</span></div>
+   <div id="menu">
+      <div class="split">
+         <div><a href="manifesto.html" target="_blank"><li>Manifesto</li></a><li id="sub">Overview</li><a href="manifesto.html#features" target="_blank"><li id="usage">Features and Usage</li></a><a href="manifesto.html#report" target="_blank"><li>Report Issues</li></a><a href="manifesto.html#contribute" target="_blank"><li>Donate</li></a></div>
+         <div><li id="sub">Actions</li><li id="sub">Load From Storage</li><li id="sub">Create New Profile</li></div>
+      </div>
+      <div id="submenu"><div id="submenu-inner">
+         <div id="overview">
+            <div id="unavailable"><img src="interface/img/icons/alliance2.png">Alliance</div>
+            <div id="unavailable"><img src="interface/img/icons/horde2.png"><img src="">Horde</div>
+         </div>
+         <div id="actions">
+            <div id="opt" class="preload"><img src="interface/img/icons/preload.png">Preload Backgrounds</div>
+            <div id="unavailable"><img src="interface/img/icons/import2.png">Import Custom Route</div>
+         </div>
+         <div id="storage">
+            <div id="soon">Storage is empty!</div>
+         </div>
+         <div id="create">
+            <div id="opt" class="profile"><img src="interface/img/icons/human.png">Human</div>
+            <div id="opt" class="profile"><img src="interface/img/icons/orc.png">Orc</div>
+            <div id="unavailable"><img src="interface/img/icons/dwarf2.png">Dwarf</div>
+            <div id="unavailable"><img src="interface/img/icons/gnome2.png">Gnome</div>
+            <div id="unavailable"><img src="interface/img/icons/nelf2.png">Night Elf</div>
+            <div id="unavailable"><img src="interface/img/icons/troll2.png">Troll</div>
+            <div id="unavailable"><img src="interface/img/icons/tauren2.png">Tauren</div>
+            <div id="unavailable"><img src="interface/img/icons/undead2.png">Undead</div>
+         </div>
+      </div></div>
+   </div>
+   <div id="innerbody">
+      <div id="map-outer">
+         <div id="map-inner">
+            <svg id="map"></svg>
          </div>
       </div>
-      <div class="split" id="innerbody">
-         <div id="left">
-            <div id="mainbody">
-               <div id="level"><div id="level-inner">Level 1 0%</div><div id="level-focus"></div></div>
-               <div id="map"></div>
-               <div id="progress"><div id="progress-inner">0%</div><input type="range" id="range" min="0" step="1"><div id="progress-focus"></div></div>
-            </div>
-         </div>
-         <div id="right">
-            <div id="sidepanel"><div id="sidepanel-inner">
-               <div id="submenu">
+      <div id="panel-outer">
+         <div id="panel-inner">
+            <div id="status">
+               <div id="level"><div class="split"><div>Level</div><div><span id="lvl">0.00</span></div></div><div id="level-bar"></div></div>
+               <div id="progress"><div class="split"><div>Progress</div><div><span id="prog">0.00</span>%</div></div><div id="progress-bar"></div></div>
+               <div id="hearthstone"><div class="split"><div>Hearthstone</div><div><span id="hs">None</span></div></div></div>
+               <div id="log-menu">
                   <div class="split">
-                     <div id="left"><div id="show-obj" class="current">Objectives</div></div>
-                     <div id="right"><div id="show-quests">Quest Log</div></div>
+                     <div><div id="show-obj" class="current">Objectives</div></div>
+                     <div><div id="show-quests">Quest Log</div></div>
                   </div>
                </div>
+            </div>
+            <div id="logs">
                <div id="obj-log"></div>
                <div id="quest-log"></div>
-            </div></div>
+            </div>
          </div>
       </div>
-      <div id="footer">
-         <div class="split">
-            <div id="left">Use <span class="highlight">A</span> and <span class="highlight">D</span> to move | Use the <span class="highlight">scroller</span> to jump | Use <span class="highlight">F</span> to toggle the overview</div>
-            <div id="right">Strafir#9133 @ Discord</div>
-         </div>
-      </div>
-   </div></div></div>
+   </div>
 </body>

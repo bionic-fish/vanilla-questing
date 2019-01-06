@@ -1,187 +1,103 @@
-// RENDER EVERYTHING
-function map(data, settings, reference) {
+// RENDER MAP
+function map(data) {
 
-   // UPDATE CURRENT PROP & LOCALSTORAGE
-   data.current = reference;
-   localStorage.setItem(data.storage, String(reference));
-
-   // CONVERT STRING TO INT FOR EASIER USAGE LATER
-   var current = parseInt(data.current);
-
-   // UPDATE THE RANGE SCROLLERS POSITION
-   $('#range').val(current);
-
-   // GRADUALLY TURN OPACITY OFF FROM MAP & SIDEPANEL
+   // MAKE MAP & LOGS TRANSPARENT
    $('#map').css('opacity', 0);
-   $('#sidepanel-inner').css('opacity', 0);
+   $('#logs').css('opacity', 0);
 
-   // CALIBRATE PROGRESS & SET THE PROPERTY
-   data.stats.progress = ((current / (data.stats.blocks - 1)) * 100);
+   // WAIT 100MS
+   sleep(200).then(() => {
 
-   // ADD ONE FOR VISUAL PURPOSES
-   var current_fixed = current + 1;
-
-   // CHANGE PROGRESS BAR TEXT & SIZE
-   $('#progress-inner').html('#' + current_fixed + ' &#160;&ndash;&#160; ' + (data.stats.progress).toFixed(2) + '%');
-   $('#progress-focus').css('width', data.stats.progress + '%');
-
-   // TARGET SPECIFIC DATASET
-   var target = data.build[current];
-
-   // SEPARATE THE LEVEL & XP FROM THE EXPERIENCE PROPERTY
-   var level = parseInt(String(target.experience.toFixed(2)).split(".")[0]);
-   var xp = parseInt(String(target.experience.toFixed(2)).split(".")[1]);
-
-   // CHANGE LEVEL BAR TEXT & SIZE
-   $('#level-inner').html('Level ' + level + ' + ' + xp + '%');
-   $('#level-focus').css('width', xp + '%');
-
-   // WAIT 300MS, THEN START UPDATING MAP
-   sleep(300).then(() => {
-   
-      // EMPTY THE MAP & TOOLTIP SELECTORS & TURN OFF THE TOOLTIP TO AVOID FLICKERING
-      $('#map, #tooltip').html('');
-      $('#tooltip').css('display', 'none');
-
-      // SET THE CORRECT ZONE BACKGROUND TO THE MAP
+      // TARGET DATA
+      var target = data.route.path[data.current];
+      
+      // CHANGE THE BACKGROUND
       $('#map').css('background', 'url("interface/img/maps/' + target.zone + '.png")');
 
-      // LOOP THROUGH EACH WAYPOINT IN BLOCK
-      $.each(target.waypoints, (id, waypoint) => {
+      // NUKE OLD CONTENT
+      $('#map').html('');
+      $('#obj-log').html('');
 
-         // SET THE DEFAULT NUMBER POSITION TO LEFT
-         var align_coords = settings.align.left;
-         
-         // CHECK WHETHER ANOTHER ALIGNMENT WAS REQUESTED -- OVERWRITE
-         if (waypoint.align != undefined) { align_coords = settings.align[waypoint.align]; }
+      // SELECTOR CONTAINERS
+      var lines, points, circles = '';
+      
+      // LOOP THROUGH WAYPOINTS & ADD SELECTORS
+      for (var x = 0; x < target.waypoints.length; x++) {
 
-         // GENERATE A WAYPOINT SELECTOR
-         var point = `
-            <div class="waypoint" style="left: ` + waypoint.coords.x + `%; top: ` + waypoint.coords.y + `%;">
-               <img src="interface/img/waypoints/space.png" class="` + waypoint.type + `" wp="` + id + `"><span class="waypoint-num" style="left: ` + align_coords.x + `;top: ` + align_coords.y + `"><img src="interface/img/numbers/` + (id + 1) + `.png"></span>
-            </div>
+         // WAYPOINT SHORTHAND
+         var waypoint = target.waypoints[x];
+
+         // SET DEFAULT ALIGN TO LEFT
+         if (waypoint.align === undefined) { waypoint.align = 'left'; }
+
+         // GENERATE WAYPOINT
+         points += `
+            <foreignobject width="100%" height="100%">
+               <div class="waypoint" style="left: ` + waypoint.coords.x + `%; top: ` + waypoint.coords.y + `%;">
+                  <img src="interface/img/waypoints/space.png" id="` + waypoint.type + `"><span id="` + waypoint.align + `" class="number-` + x + `"><img src="interface/img/numbers/` + (x + 1) + `.png"></span>
+               </div>
+            </foreignobject>
          `;
 
-         // APPEND IT TO THE MAP
-         $('#map').append(point);
-      });
+         // GENERATE HIGHLIGHT CIRCLE
+         circles += '<circle r="24" cx="' + waypoint.coords.x + '%" cy="' + waypoint.coords.y + '%" id="waypoint-' + x + '"></circle>';
 
-      // LINE CONTAINER
-      var lines = '';
-
-      // GENERATE LINES BETWEEN FIRST & SECOND TO LAST WAYPOINTS
-      for(var x = 0; x < target.waypoints.length - 1; x++) {
-         lines += '<line x1="' + target.waypoints[x].coords.x + '%" y1="' + target.waypoints[x].coords.y + '%" x2="' + target.waypoints[x + 1].coords.x + '%" y2="' + target.waypoints[x + 1].coords.y + '%"/>';
+         // GENERATE LINE -- IF YOU THERE IS MORE THAN ONE WAYPOINT REMAINING
+         if (x < target.waypoints.length - 1) {
+            lines += '<line x1="' + target.waypoints[x].coords.x + '%" y1="' + target.waypoints[x].coords.y + '%" x2="' + target.waypoints[x + 1].coords.x + '%" y2="' + target.waypoints[x + 1].coords.y + '%"></line>';
+         }
       }
 
-      // APPEND IN AN SVG CANVAS & LINES ONTOP OF THE MAP
-      $('#map').append('<svg>' + lines + '</svg>');
+      // RENDER IN STATUS CHANGES
+      status(data);
+      var objectives = objective_log(target.waypoints, data.quests);
+      var quests = quest_log(data);
 
-      // GENERATE ADDITIONAL ASSIST SELECTORS
-      var legend = '<span id="show-legend">Map Legend</span>';
-      var hs = '<span id="hearthstone"><span id="hearthstone-inner">None</span></span>';
-      var tooltip = '<div id="tooltip"></div>';
+      // WAIT ANOTHER 100MS
+      sleep(100).then(() => {
 
-      // RENDER THEM IN
-      $('#map').append(legend + hs + tooltip);
+         // RENDER IN MAP & LOGS
+         $('#map').html(lines + circles + points);
+         $('#obj-log').html(objectives);
+         $('#quest-log').html(quests);
 
-      // RENDER SIDEPANEL CONTENT
-      sidepanel(data, settings);
-
-      // RENDER HEARTHSTONE LOCATION
-      hearthstone(data);
-
-      // GRADUALLY TURN OPACITY ON AGAIN
-      $('#map').css('opacity', 1);
-      $('#sidepanel-inner').css('opacity', 1);
+         // TURN OPACITY BACK ON
+         $('#map').css('opacity', 1);
+         $('#logs').css('opacity', 1);
+      });
    });
-
-   return data;
 }
 
-// GENERATE OVERLOOK FOR THE CURRENT BLOCK
-function sidepanel(data, settings) {
-
-   // ASSIST VARS
-   var target = data.build[data.current].waypoints;   
-   var ids = data.ids;
-
-   // FETCH OBJECTIVES & QUESTS
-   var obj = objectives(target, ids, settings);
-   var qs = quests(data, settings);
-
-   // RENDER THE NEW INFO IN
-   $('#obj-log').html(obj);
-   $('#quest-log').html(qs);
-}
-
-// GENERATE SIDEPANEL ROW
-function row(category, data, settings, ids) {
-
-   // ROW CONTAINER
+// RENDER SIDEPANEL LOGS
+function objective_log(waypoints, quests) {
+   
+   // SELECTOR CONTAINER
    var container = '';
 
-   // CHECK THE GIVEN DATA TYPE
-   var type = typeof(data);
+   // LOOP THROUGH EACH WAYPOINT
+   for (var x = 0; x < waypoints.length; x++) {
+      
+      // SHORTHANDS
+      var waypoint = waypoints[x];
 
-   // IF ITS A STRING -- GENERATE & APPEND A SELECTOR
-   if (type === 'string') {
-      container += '<div class="' + category + '"><a href="https://classicdb.ch/?quest=' + ids[data.toLowerCase()] + '" target="_blank">' + shorten(data, settings) + '</a></div>';
+      // LOOP THROUGH SECTIONS & GENERATE ROWS
+      var rows = parse_rows(waypoint, quests);
 
-   // IF ITS AN ARRAY -- GENERATE & APPEND A SELECTOR
-   } else {
+      // GENERATE A SECTION BLOCK
       container += `
-         <div class="` + category + `">
-            <div class="split">
-               <div id="left"><a href="https://classicdb.ch/?quest=` + ids[data[0].toLowerCase()] + `" target="_blank">` + shorten(data[0], settings) + `</a></div>
-               <div id="right">` + data[1] + `</div>
-            </div>
+         <div class="section" section="` + x + `">
+            <div class="title"><div class="split"><div>` + (x + 1) + `. ` + waypoint.header + `</div><div>` + waypoint.coords.x + `.` + waypoint.coords.y + `</div></div></div>
+            ` + rows + `
          </div>
       `;
    }
 
-   // RETURN THE CONTAINER
-   return container;
-}
-
-// GET BLOCK OBJECTIVES
-function objectives(target, ids, settings) {
-
-   // INITIAL CONTAINER
-   var container = '';
-
-   // LOOP THROUGH EACH WAYPOINT
-   $.each(target, (index, waypoint) => {
-   
-      // MAKE INDEX MORE READER FRIENDLY
-      var count = index + 1;
-
-      // GENERATE A SELECTOR & PUSH IT TO THE CONTAINER
-      container += `
-         <div class="section">
-            <div class="title">
-               <div class="split">
-                  <div id="left">` + count + `. ` + waypoint.header + `</div>
-                  <div id="right"></div>
-               </div>
-            </div>
-      `;
-
-      // LOOP THROUGH ENDS, STARTS & OBJECTIVES CONTENT THAT ARE DEFINED
-      if (waypoint.ends != undefined) { waypoint.ends.forEach(details => { container += row('ends', details, settings, ids); }); }
-      if (waypoint.starts != undefined) { waypoint.starts.forEach(details => { container += row('starts', details, settings, ids); }); }
-      if (waypoint.objectives != undefined) { waypoint.objectives.forEach(details => { container += row('objectives', details, settings, ids); }); }
-      if (waypoint.special != undefined) { waypoint.special.forEach(details => { container += '<div class="special">' + details + '</div>'; }); }
-
-      // ADD ON SUFFIX
-      container += '</div>';
-   });
-
+   // RETURN CONTAINER
    return container;
 }
 
 // GET CURRENT QUESTS
-function quests(data, settings) {
+function quest_log(data) {
 
    // INITIAL CONTAINER
    var quests = {};
@@ -217,7 +133,7 @@ function quests(data, settings) {
    for (var x = 0; x < data.current; x++) {
 
       // WAYPOINTS SHORTHAND
-      var waypoints = data.build[x].waypoints;
+      var waypoints = data.route.path[x].waypoints;
 
       // LOOP THROUGH EACH WAYPOINT
       waypoints.forEach(waypoint => {
@@ -231,14 +147,14 @@ function quests(data, settings) {
 
                   // CHECK IF THE QUEST IS BLACKLISTED
                   var check = $.inArray(quest[0], blacklist);
-                  if (check == -1) { quests[quest[0]] = 0; }
+                  if (check == -1) { quests[quest[0]] = quest; }
 
                // ARRAY
                } else {
                   
                   // CHECK IF THE QUEST IS BLACKLISTED
                   var check = $.inArray(quest, blacklist);
-                  if (check == -1) { quests[quest] = 0; }
+                  if (check == -1) { quests[quest] = quest; }
                }
 
             });
@@ -259,27 +175,98 @@ function quests(data, settings) {
       });
    }
 
-   // TRANSFORM OBJECT INTO KEYS
-   quests = Object.keys(quests);
+   // SAVE OBJECT KEYS
+   var keys = Object.keys(quests);
 
    // CONTAINER + HEADER
    var content = `
       <div class="title">
          <div class="split">
-            <div id="left">Current Quests</div>
-            <div id="right">` + quests.length + ` / 20</div>
+            <div>Current Quests</div>
+            <div>` + keys.length + ` / 20</div>
          </div>
       </div>
    `;
 
    // GENERATE ROWS & WRAPPER
-   quests.forEach(name => { content += `<div class="ends"><a href="https://classicdb.ch/?quest=` + data.ids[name.toLowerCase()] + `" target="_blank">` + shorten(name, settings) + `</a></div>`; });
+   keys.forEach(name => {
+      
+      // GENERATE ROW BASED ON PROP TYPE
+      if (typeof(quests[name]) != 'string') { content += `<div class="quest"><div class="split"><div><a href="https://classicdb.ch/?quest=` + data.quests[quests[name][0].toLowerCase()] + `" target="_blank">` + shorten(quests[name][0]) + `</a></div><div>` + quests[name][1] + `</div></div></div>`; 
+      } else { content += `<div class="quest"><a href="https://classicdb.ch/?quest=` + data.quests[name.toLowerCase()] + `" target="_blank">` + shorten(name) + `</a></div>`; }
+
+   });
+
+   // WRAP THE QUESTS IN A SECTION BLOCK
    content = '<div class="section">' + content + '</div>';
 
    return content;
 }
 
-function hearthstone(data) {
+// PARSE SECTION ROWS
+function parse_rows(waypoint, quests) {
+   
+   // SECTIONS CONTAINER
+   var container = '';
+
+   // PARSE ARRAY IF ITS DEFINED
+   if (waypoint.ends !== undefined) { container += row(waypoint.ends, quests, 'ends') }
+   if (waypoint.starts !== undefined) { container += row(waypoint.starts, quests, 'starts') }
+   if (waypoint.objectives !== undefined) { container += row(waypoint.objectives, quests, 'objectives') }
+   if (waypoint.special !== undefined) { container += row(waypoint.special, quests, 'special') }
+
+   return container;
+}
+
+// GENERATE SINGLE ROW
+function row(section, quests, color) {
+
+   // SECTION CONTAINER
+   var container = '';
+
+   // LOOP THROUGH SECTION
+   section.forEach(line => {
+
+      // ADD LINKS FOR STARTS, ENDS & OBJECTIVES
+      if (color != 'special') {
+
+         // GENERATE A LINE
+         if (typeof(line) == 'object') { container += '<div class="' + color + '"><div class="split"><div><a href="https://classicdb.ch/?quest=' + quests[line[0].toLowerCase()] + '" target="_blank">' + shorten(line[0]) + '</a></div><div>' + line[1] + '</div></div></div>';
+         } else { container += '<div class="' + color + '"><a href="https://classicdb.ch/?quest=' + quests[line.toLowerCase()] + '" target="_blank">' + shorten(line) + '</a></div>'; }
+
+      // PLAIN TEXT FOR SPECIAL
+      } else { container += '<div class="' + color + '">' + line + '</div>'; }
+   });
+
+   return container;
+}
+
+// RENDER SIDEPANEL STATUS
+function status(data) {
+
+   // FORMAT LEVEL/XP COMPONENTS
+   var level = data.route.path[data.current].experience.toFixed(2);
+   var experience = level.split('.')[1];
+
+   // CALCULATE PROGRESS PERCENT
+   var max = data.route.path.length;
+   var progress = (((data.current) / (max - 1)) * 100).toFixed(2);
+
+   // FIND LAST HEARTHSTONE
+   var hearthstone = find_hearthstone(data);
+
+   // SET LEVEL/PROGRESS BAR LENGTHS
+   $('#level-bar').css('width', experience + '%');
+   $('#progress-bar').css('width', progress + '%');
+
+   // SET LEVEL/PROG/HS VALUES
+   $('#lvl').html(level);
+   $('#prog').html(progress);
+   $('#hs').html(hearthstone);
+}
+
+// FIND LAST SET HEARTHSTONE
+function find_hearthstone(data) {
 
    // LOCATION PLACEHOLDER
    var location = 'none';
@@ -290,7 +277,7 @@ function hearthstone(data) {
       if (location != 'none') { break; }
 
       // WAYPOINTS SHORTHAND
-      var waypoints = data.build[x].waypoints;
+      var waypoints = data.route.path[x].waypoints;
 
       // LOOP THROUGH EACH WAYPOINT
       waypoints.forEach(waypoint => {
@@ -305,16 +292,13 @@ function hearthstone(data) {
                message = message.toLowerCase();
 
                // SET AS THE LOCATION WHEN THE KEYWORD IS FOUND
-               if (message == 'set hearthstone') { location = capitalize(data.build[x].zone); }
+               if (message == 'set hearthstone') { location = capitalize(data.route.path[x].zone); }
             });
          }
       });
    }
 
-   // CAPITALIZE IF STV
-   if (location == 'Stv') { location = 'STV'; }
-
-   $('#hearthstone-inner').html(location);
+   return location;
 }
 
 // EXPORT MODULES

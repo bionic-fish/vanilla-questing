@@ -1,0 +1,82 @@
+#menu {
+   background: rgba(0, 0, 0, 0.185);
+   border-bottom: 2px solid rgba(2, 2, 2, 0.103);
+   min-width: 770px;
+}
+
+#menu .split li {
+   background: rgba(0, 0, 0, 0);
+   display: inline-block;
+   padding: 10px;
+   color: #CECECE;
+   cursor: pointer;
+   text-shadow: 1px 1px #242424;
+   transition: 0.3s;
+}
+
+#menu li:hover {
+   background: rgba(2, 2, 2, 0.151);
+   color: rgb(174, 248, 166);
+}
+
+#submenu {
+   background-color: rgb(41, 41, 41);
+   border: 2px solid rgb(41, 41, 41);
+   border-bottom: 1px solid rgb(41, 41, 41);
+   position: absolute;
+   left: 100px;
+   top: 100px;
+   z-index: 5;
+   width: 220px;
+   max-width: 220px;
+   display: none;
+}
+
+#submenu-inner {
+   background-image: url('../img/bg.png');
+}
+
+#submenu #opt, #soon, #unavailable, #loaded {
+   border-bottom: 1px solid rgb(41, 41, 41);
+   color: #CECECE;
+   padding: 7px 9px;
+   padding-left: 41px;
+   position: relative;
+   overflow: hidden;
+}
+
+#submenu a:link #opt { border-bottom: 1px solid rgb(41, 41, 41); }
+
+#submenu #opt:hover {
+   background: rgba(194, 66, 194, 0.123);
+   cursor: pointer;
+   color: white;
+}
+
+#submenu #opt img, #submenu #unavailable img, #submenu #loaded img {
+   position: absolute;
+   opacity: 0.7;
+   left: 0px;
+   top: 0px;
+}
+
+#soon {
+   background-color: rgba(253, 253, 253, 0.116);
+   border: 0px solid black;
+   padding: 7px 9px;
+}
+
+#unavailable {
+   background: rgba(255, 39, 39, 0.055);
+}
+
+#submenu #opt:hover > .split img, #submenu #opt:hover > img { opacity: 1; }
+
+#overview, #actions, #storage, #create { display: none; }
+
+#loaded {
+   background-color: rgba(109, 255, 65, 0.096);
+   color: white;
+}
+
+#submenu #loaded img { opacity: 1; }

@@ -1,76 +1,68 @@
-#map {
-   height: 515px;
-   width: 772px;
+#map-inner {
+   background: rgba(0, 0, 0, 0.274);
+   border: 2px solid rgba(41, 41, 41, 0.863);
+   padding: 2px;
+   overflow: hidden;
    position: relative;
-   transition: .3s;
-   margin: 2px 0px;
-}
-
-/* --- BUTTONS TRIGGERS --- */
-
-#show-legend {
-   background: url('../img/dark.png');
-   color: #CECECE;
-   padding: 2px 4px;
-   padding-right: 4px;
-   position: absolute;
-   right: 5px;
-   bottom: 5px;
-   cursor: help;
-}
-
-#hearthstone {
-   background: url('../img/dark.png');
-   color: #CECECE;
-   padding: 2px 4px;
-   position: absolute;
-   top: 5px;
-   right: 5px;
-   pointer-events: none;
-}
-
-#hearthstone-inner {
-   background: url('../img/hearthstone.png') right;
-   padding-right: 20px;
-   background-repeat: no-repeat;
 }
 
 /* --- SVG STUFF --- */
 
-svg {
-   width: 100%;
-   height: 100%
+#map {
+   width: 1440px;
+   height: 960px;
+   position: absolute;
+   opacity: 0;
+   transition: opacity 0.2s;
 }
 
 line {
-   stroke-width: 3;
+   stroke-width: 4px;
    stroke: red;
 }
 
-/* --- WAYPOINTS --- */
+foreignobject {
+   width: 100%;
+   height: 100%;
+}
+
+circle {
+   fill: red;
+   opacity: 0;
+}
+
+/* --- WAYPOINT STUFF --- */
 
 .waypoint {
    position: absolute;
-   cursor: help;
    width: 1px;
    height: 1px;
 }
 
-.waypoint .quest, .waypoint .travel, .waypoint .objective, .waypoint .flightpath, .waypoint .hub {
+.waypoint #quest, .waypoint #travel, .waypoint #objective, .waypoint #flightpath, .waypoint #hub {
    background: url('../img/waypoints/yellow.png');
    position: relative;
    left: -5px;
    top: -5px;
 }
 
-.waypoint .travel { background: url('../img/waypoints/purple.png'); }
-.waypoint .objective { background: url('../img/waypoints/red.png'); }
-.waypoint .flightpath { background: url('../img/waypoints/green.png'); }
-.waypoint .hub { background: url('../img/waypoints/blue.png'); }
+.waypoint #travel { background: url('../img/waypoints/purple.png'); }
+.waypoint #objective { background: url('../img/waypoints/red.png'); }
+.waypoint #flightpath { background: url('../img/waypoints/green.png'); }
+.waypoint #hub { background: url('../img/waypoints/blue.png'); }
 
-.waypoint-num {
-   background: url('../img/dark.png');
+.waypoint span {
+   background: rgba(0, 0, 0, 0.76);
    position: absolute;
    pointer-events: none;
    padding: 1px;
+   border-radius: 25%;
+   opacity: 1;
 }
+
+/* --- WAYPOINT NUMBER ALIGNMENTS --- */
+
+.waypoint span#left { position: absolute; left: -20; top: -6; }
+.waypoint span#right { position: absolute; left: 10; top: -6; }
+.waypoint span#top { position: absolute; left: -5; top: -21; }
+.waypoint span#bottom { position: absolute; left: -5; top: 10; }

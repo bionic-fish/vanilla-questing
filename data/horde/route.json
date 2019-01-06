@@ -2372,7 +2372,7 @@
                "coords": { "x": 52, "y": 31 },
                "align": "top",
                "header": "The Crossroads",
-               "starts": ["The Angry Scytheclaws"],
+               "ends": ["The Angry Scytheclaws"],
                "special": ["Fly to Ratchet"],
                "type": "hub"
             },
@@ -2752,7 +2752,7 @@
                "coords": { "x": 52, "y": 31 },
                "align": "top",
                "header": "The Crossroads",
-               "starts": ["Letter to Jin'Zil", "Jorn Skyseer", "Consumed By Hatred", "Egg Hunt"],
+               "starts": ["Letter to Jin'Zil", "Jorn Skyseer", "Consumed by Hatred", "Egg Hunt"],
                "type": "hub"
             },
             {
@@ -5249,7 +5249,7 @@
                "coords": { "x": 52, "y": 25 },
                "align": "bottom",
                "header": "Tanaris Flightpath",
-               "special": ["Learn the Flightpath", "Fly to Orgrimmar"],
+               "special": ["Fly to Orgrimmar"],
                "type": "flightpath"
             }
          ]
@@ -5857,7 +5857,7 @@
                "align": "bottom",
                "header": "Shadowprey Village",
                "starts": ["Hunting in Stranglethorn"],
-               "special": ["Learn the Flightpath", "Fly to Thunder Bluff"],
+               "special": ["Fly to Thunder Bluff"],
                "type": "flightpath"
             }
          ]
@@ -6304,7 +6304,7 @@
                "header": "Kargath",
                "ends": ["Neeka Bloodscar"],
                "starts": ["Report to Helgrum"],
-               "special": ["Learn the Flightpath", "Fly to Undercity"],
+               "special": ["Fly to Undercity"],
                "type": "hub"
             }
          ]
@@ -9595,7 +9595,7 @@
                "coords": { "x": 82, "y": 82 },
                "align": "right",
                "header": "Revantusk Flightpath",
-               "special": ["Learn the Flightpath", "Fly to Tarren Mill"],
+               "special": ["Fly to Tarren Mill"],
                "type": "flightpath"
             }
          ]
@@ -9638,7 +9638,7 @@
                "align": "right",
                "header": "Stonard",
                "ends": ["Return to Fel'Zerul"],
-               "special": ["Learn the Booty Bay"],
+               "special": ["Fly to Booty Bay"],
                "type": "hub"
             }
          ]
@@ -11357,7 +11357,7 @@
                "coords": { "x": 22, "y": 50 },
                "align": "top",
                "header": "Azshara Flightpath",
-               "special": ["Learn the Flightpath", "Fly to Orgrimmar"],
+               "special": ["Fly to Orgrimmar"],
                "type": "flightpath"
             }
          ]
@@ -12051,13 +12051,13 @@
                "coords": { "x": 65, "y": 72 },
                "align": "right",
                "header": "First Tier",
-               "objectives": ["Job Opening: Guard Captain of Reventusk Village", "Dark Vessels"],
+               "objectives": [["Job Opening: Guard Captain of Reventusk Village", "E"], ["Dark Vessels", "E"]],
                "type": "objective"
             },
             {
                "coords": { "x": 61, "y": 68 },
                "header": "Second Tier",
-               "objectives": ["Job Opening: Guard Captain of Reventusk Village", "Dark Vessels"],
+               "objectives": [["Job Opening: Guard Captain of Reventusk Village", "E"], ["Dark Vessels", "E"]],
                "type": "objective"
             },
             {
@@ -13429,7 +13429,7 @@
                "align": "right",
                "header": "Everlook",
                "starts": ["Trouble in Winterspring", "Sister Pamela", "The Everlook Report", "Duke Nicholas Zverenhoff"],
-               "special": ["Set Hearthstone", "Learn the Flightpath", "Fly to Felwood"],
+               "special": ["Set Hearthstone", "Fly to Felwood"],
                "type": "hub"
             }
          ]

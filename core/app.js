@@ -1,46 +1,55 @@
-// FETCH THE BUILD MODULE
-var build = require('./modules/build.js')('horde');
+// FETCH NEEDED MODULES
+var func = require('./modules/func.js');
+var map = require('./modules/map.js');
+var events = require('./modules/events.js');
+var build = require('./modules/build.js');
+var storage = require('./modules/storage.js');
+var render = require('./modules/render.js');
 
-// WAIT FOR THE NECESSARY DATA TO COMPILE
-build.then((data) => {
+// START THE LOADING PROMPT
+func.loading();
 
-   // SETTINGS OBJECT
-   var settings = {
-      align: {
-         left: { x: -20, y: -6 },
-         right: { x: 10, y: -6 },
-         top: { x: -5, y: -21 },
-         bottom: { x: -5, y: 10 }
-      },
-      windows: {
-         preload: 0,
-         faq: 0
-      },
-      maxlength: 28
-   }
+// GLOBAL SETTINGS OBJECT
+var settings = {
+   background: {
+      width: 1440,
+      height: 960
+   },
+   storage: 'vanilla-questing',
+   cooldown: 1000,
+   moving: false,
+   lastevent: null
+}
 
-   // PREPEND IN PROMPT SELECTOR
-   $('body').prepend('<div id="prompt"><div id="prompt-inner"></div></div>');
+// CALIBRATE SELECTOR SIZES & CENTER MAP
+settings = func.calibrate(settings);
+map.position(settings);
 
-   // RENDER IN BUILD STATISTICS TO HEADER
-   $('#block-count').html(data.stats.blocks);
-   $('#waypoint-count').html(data.stats.waypoints);
-   $('#quest-count').html(data.stats.quests);
+// CHECK STORAGE
+storage.check(settings.storage);
 
-   // SET MAX PROPERTY FOR RANGE INPUT
-   $('#range').attr('max', data.stats.blocks - 1);
+// RECALIBRATE & CENTER AGAIN IF WINDOW SIZE CHANGES
+window.onresize = () => {
+   settings = func.calibrate(settings);
+   map.position(settings);
+}
 
-   // FETCH LOCALSTORAGE VALUE
-   var reference = localStorage.getItem(data.storage);
+// ADD VARIOUS EVENTS
+events.move_map(settings);
+events.map_highlight();
+events.submenu();
+events.log_menu();
+events.preload(func);
+events.new_profile(func, storage, render, build);
+events.load(render, build, func);
 
-   // IMPORT MODULES
-   var render = require('./modules/render.js');
-   var events = require('./modules/events.js');
-   var tooltips = require('./modules/tooltips.js');
+// RENDER RANDOM BLOCK ON LOAD
+build.random().then((data) => {
 
-   // RENDER THE MAP + ADD EVENTS & TOOLTIPS
-   data = render.map(data, settings, reference);
-   data = events.map(data, settings, render);
-   settings = events.general(settings);
-   tooltips.map(data, settings);
+   // RENDER A RANDOM BLOCK & ENABLE BROWSING ON LOAD
+   render.map(data);
+   events.browsing(data, render, settings, storage);
+
+   // CLOSE THE LOADING PROMPT AFTER 1s
+   sleep(settings.cooldown).then(() => { func.close_prompt(); });
 });

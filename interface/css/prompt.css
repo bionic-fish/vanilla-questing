@@ -1,10 +1,10 @@
 #prompt {
-   background: url('../img/dark.png');
+   background: rgba(0, 0, 0, 0.644);
    position: absolute;
    height: 100%;
    width: 100%;
-   z-index: 2;
-   display: none;
+   z-index: 5;
+   display: table;
    opacity: 0;
    transition: 0.3s;
 }
@@ -23,28 +23,86 @@
    height: 60px;
 }
 
-#prompt-inner #faq {
-   background: url('../img/dark.png');
-   width: 550px;
-   padding: 2px;
+#input-box {
+   background: rgba(0, 0, 0, 0.363);
+   width: -moz-fit-content;
+   width: fit-content;
+   margin: auto;
+   padding: 4px;
+   margin: auto;
+   text-align: left;
+}
+
+input {
+   background: rgba(255, 255, 255, 0.904);
+   border: 2px solid white;
+   width: 200px;
+   padding: 3px 5px;
+   color: #333333;
+}
+
+#good-submit, #bad-submit {
+   background: rgba(87, 194, 65, 0.897);
+   border: 2px solid rgba(87, 194, 65, 0.911);
+   width: auto;
+   margin-left: 4px;
+   color: white;
+   transition: 0.3s;
+}
+
+#good-submit { cursor: pointer; }
+
+#bad-submit {
+   background: rgba(194, 65, 65, 0.897);
+   border: 2px solid rgba(199, 70, 70, 0.897);
+}
+
+#prompt #close {
+   position: absolute;
+   bottom: 0px;
+   right: 0px;
+   padding: 20px;
+   opacity: 0.6;
+   transition: 0.3s;
+}
+
+#prompt #close:hover {
+   cursor: pointer;
+   opacity: 1;
+}
+
+#error {
+   background: rgba(196, 26, 26, 0.692);
+   border: 2px solid rgba(196, 26, 26, 0.548);
+   position: absolute;
+   padding: 3px 5px;
+   border-radius: 5px;
+   display: none;
+   color: #CECECE;
+}
+
+/* --- https://loading.io/css/ --- */
+
+.lds-dual-ring {
+   display: block;
+   width: 80px;
+   height: 80px;
    margin: auto;
 }
 
-#faq #title {
-   background: url('../img/dark.png');
-   color: #F1F1F1;
-   padding: 6px;
-   margin-bottom: 2px;
-   text-align: center;
+.lds-dual-ring:after {
+   content: " ";
+   display: block;
+   width: 80px;
+   height: 80px;
+   margin: 1px;
+   border-radius: 50%;
+   border: 6px solid #fff;
+   border-color: #fff transparent #fff transparent;
+   animation: lds-dual-ring 1.2s linear infinite;
 }
 
-#prompt-inner #content {
-   background: url('../img/inner-bg.png');
-   padding: 2px;
+@keyframes lds-dual-ring {
+   0% { transform: rotate(0deg); }
+   100% { transform: rotate(360deg); }
 }
-
-#prompt-inner #content #question {
-   padding: 6px;
-}
-
-#prompt-inner #content #question:nth-child(even) { background: url('../img/row-bg.png'); }
