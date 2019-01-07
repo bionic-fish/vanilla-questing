@@ -905,12 +905,20 @@ function map(data) {
 
       // SELECTOR CONTAINERS
       var lines, points, circles = '';
+
+      // COLLECT DATA FOR MAP ALIGNMENT
+      var align = { x: 0, y: 0, length: 0 }
       
       // LOOP THROUGH WAYPOINTS & ADD SELECTORS
       for (var x = 0; x < target.waypoints.length; x++) {
 
          // WAYPOINT SHORTHAND
          var waypoint = target.waypoints[x];
+
+         // INCREMENT ALIGNMENT PROPERTIES
+         align.x += waypoint.coords.x;
+         align.y += waypoint.coords.y;
+         if (align.length == 0) { align.length = target.waypoints.length; }
 
          // SET DEFAULT ALIGN TO LEFT
          if (waypoint.align === undefined) { waypoint.align = 'left'; }
@@ -945,6 +953,8 @@ function map(data) {
          $('#map').html(lines + circles + points);
          $('#obj-log').html(objectives);
          $('#quest-log').html(quests);
+
+         find_pos(align);
 
          // TURN OPACITY BACK ON
          $('#map').css('opacity', 1);
@@ -1184,6 +1194,27 @@ function find_hearthstone(data) {
    }
 
    return location;
+}
+
+function find_pos(align) {
+   
+   // FIGURE OUT AVERAGE XY POSITION
+   var avg = {
+      x: align.x / align.length,
+      y: align.y / align.length
+   }
+
+   // BACKGROUND IMAGE SIZE
+   var background = {
+      x: 1440,
+      y: 960
+   }
+
+   var left = (background.x * (avg.x / 100)).toFixed(0);
+
+   var width = $('#map-inner')[0].offsetWidth - 4;
+   var height = $('#map-inner')[0].offsetHeight - 4;
+   log(height)
 }
 
 // EXPORT MODULES
