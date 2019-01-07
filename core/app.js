@@ -41,7 +41,7 @@ events.submenu();
 events.log_menu();
 events.preload(func);
 events.new_profile(func, storage, render, build);
-events.load(render, build, func);
+events.load(render, build, func, storage);
 
 // RENDER RANDOM BLOCK ON LOAD
 build.random().then((data) => {

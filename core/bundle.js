@@ -42,7 +42,7 @@ events.submenu();
 events.log_menu();
 events.preload(func);
 events.new_profile(func, storage, render, build);
-events.load(render, build, func);
+events.load(render, build, func, storage);
 
 // RENDER RANDOM BLOCK ON LOAD
 build.random().then((data) => {
@@ -526,7 +526,7 @@ function new_profile(func, storage, render, build) {
          storage.add(player, details);
 
          // GENERATE NEW SUBMENU SELECTOR
-         var selector = '<div id="loaded" race="' + details.race + '" block="' + details.block + '"><div class="split"><div><img src="interface/img/icons/' + details.race + '.png"><span id="char-name">' + capitalize(player) + '</span></div><div>Level <span id="char-lvl">' + details.level + '</span></div></div></div>';
+         var selector = '<div id="loaded" profile="' + player + '"><div class="split"><div><img src="interface/img/icons/' + details.race + '.png"><span id="char-name">' + capitalize(player) + '</span></div><div>Level <span id="char-lvl">' + details.level + '</span></div></div></div>';
 
          // IF OTHER PROFILES EXIST
          if ($('#soon')[0] === undefined) {
@@ -630,7 +630,7 @@ function new_profile(func, storage, render, build) {
       storage.add(player, details);
 
       // GENERATE NEW SUBMENU SELECTOR
-      var selector = '<div id="loaded" race="' + details.race + '" block="' + details.block + '"><div class="split"><div><img src="interface/img/icons/' + details.race + '.png"><span id="char-name">' + capitalize(player) + '</span></div><div>Level <span id="char-lvl">' + details.level + '</span></div></div></div>';
+      var selector = '<div id="loaded" profile="' + player + '"><div class="split"><div><img src="interface/img/icons/' + details.race + '.png"><span id="char-name">' + capitalize(player) + '</span></div><div>Level <span id="char-lvl">' + details.level + '</span></div></div></div>';
 
       // IF OTHER PROFILES EXIST
       if ($('#soon')[0] === undefined) {
@@ -659,7 +659,7 @@ function new_profile(func, storage, render, build) {
    });
 }
 
-function load(render, build, func) {
+function load(render, build, func, storage) {
    $('body').on('click', '#storage #opt', (event) => {
 
       // SWITCH TO LOADING ANIMATION
@@ -669,11 +669,13 @@ function load(render, build, func) {
       $(event.currentTarget).attr('id', 'loaded');
       
       // REGISTER REQUESTED BLOCK & RACE
-      var block = $(event.currentTarget).attr('block');
-      var race = $(event.currentTarget).attr('race');
+      var profile = $(event.currentTarget).attr('profile');
+
+      // FETCH PROFILE DETAILS
+      var details = storage.fetch(profile);
 
       // RENDER THE MAP
-      build.specific(race, block).then((data) => {
+      build.specific(details.race, details.block).then((data) => {
 
          // UPDATE INSTANCE DATA
          instance_data = data;
@@ -1232,7 +1234,7 @@ function check(storage_key) {
       Object.keys(storage).forEach(character => {
          
          // GENERATE A SELECTOR
-         container += '<div id="opt" race="' + storage[character].race + '" block="' + storage[character].block + '"><div class="split"><div><img src="interface/img/icons/' + storage[character].race + '.png"><span id="char-name">' + capitalize(character) + '</span></div><div>Level <span id="char-lvl">' + storage[character].level + '</span></div></div></div>';
+         container += '<div id="opt" profile="' + character + '"><div class="split"><div><img src="interface/img/icons/' + storage[character].race + '.png"><span id="char-name">' + capitalize(character) + '</span></div><div>Level <span id="char-lvl">' + storage[character].level + '</span></div></div></div>';
       });
 
       // RENDER THEM IN
@@ -1251,14 +1253,14 @@ function update(data) {
       var block = data.current;
 
       // FIND THE LOADED PROFILES NAME
-      var name = $('#loaded #char-name')[0].innerText.toLowerCase();
+      var profile = $('#loaded').attr('profile');
 
       // CONVERT STORAGE TO JSON
       var storage = JSON.parse(localStorage.getItem(key));
 
       // SET NEW VALUES
-      storage[name].block = block;
-      storage[name].level = level;
+      storage[profile].block = block;
+      storage[profile].level = level;
 
       // STRINGIFY & UPDATE STORAGE
       storage = JSON.stringify(storage);
@@ -1338,12 +1340,25 @@ function blacklist() {
    return blacklist;
 }
 
+// FETCH SPECIFIC DATA
+function fetch(name) {
+
+   // FETCH WHOLE STORAGE & CONVERT TO JSON
+   var storage = localStorage.getItem(key);
+   storage = JSON.parse(storage);
+
+   // SINGLE OUT & RETURN REQUEST 
+   var details = storage[name];
+   return details;
+}
+
 // EXPORT MODULES
 module.exports = {
    add: add,
    check: check,
    nuke: nuke,
    update: update,
-   blacklist: blacklist
+   blacklist: blacklist,
+   fetch: fetch
 }
 },{}]},{},[1]);

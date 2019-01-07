@@ -365,7 +365,7 @@ function new_profile(func, storage, render, build) {
          storage.add(player, details);
 
          // GENERATE NEW SUBMENU SELECTOR
-         var selector = '<div id="loaded" race="' + details.race + '" block="' + details.block + '"><div class="split"><div><img src="interface/img/icons/' + details.race + '.png"><span id="char-name">' + capitalize(player) + '</span></div><div>Level <span id="char-lvl">' + details.level + '</span></div></div></div>';
+         var selector = '<div id="loaded" profile="' + player + '"><div class="split"><div><img src="interface/img/icons/' + details.race + '.png"><span id="char-name">' + capitalize(player) + '</span></div><div>Level <span id="char-lvl">' + details.level + '</span></div></div></div>';
 
          // IF OTHER PROFILES EXIST
          if ($('#soon')[0] === undefined) {
@@ -469,7 +469,7 @@ function new_profile(func, storage, render, build) {
       storage.add(player, details);
 
       // GENERATE NEW SUBMENU SELECTOR
-      var selector = '<div id="loaded" race="' + details.race + '" block="' + details.block + '"><div class="split"><div><img src="interface/img/icons/' + details.race + '.png"><span id="char-name">' + capitalize(player) + '</span></div><div>Level <span id="char-lvl">' + details.level + '</span></div></div></div>';
+      var selector = '<div id="loaded" profile="' + player + '"><div class="split"><div><img src="interface/img/icons/' + details.race + '.png"><span id="char-name">' + capitalize(player) + '</span></div><div>Level <span id="char-lvl">' + details.level + '</span></div></div></div>';
 
       // IF OTHER PROFILES EXIST
       if ($('#soon')[0] === undefined) {
@@ -498,7 +498,7 @@ function new_profile(func, storage, render, build) {
    });
 }
 
-function load(render, build, func) {
+function load(render, build, func, storage) {
    $('body').on('click', '#storage #opt', (event) => {
 
       // SWITCH TO LOADING ANIMATION
@@ -508,11 +508,13 @@ function load(render, build, func) {
       $(event.currentTarget).attr('id', 'loaded');
       
       // REGISTER REQUESTED BLOCK & RACE
-      var block = $(event.currentTarget).attr('block');
-      var race = $(event.currentTarget).attr('race');
+      var profile = $(event.currentTarget).attr('profile');
+
+      // FETCH PROFILE DETAILS
+      var details = storage.fetch(profile);
 
       // RENDER THE MAP
-      build.specific(race, block).then((data) => {
+      build.specific(details.race, details.block).then((data) => {
 
          // UPDATE INSTANCE DATA
          instance_data = data;
