@@ -321,15 +321,39 @@ function find_pos(align) {
 
    // BACKGROUND IMAGE SIZE
    var background = {
-      x: 1440,
-      y: 960
+      width: 1440,
+      height: 960
    }
 
-   var left = (background.x * (avg.x / 100)).toFixed(0);
+   // SELECTOR DIMENSIONS
+   var selector = {
+      width: ($('#map-inner')[0].offsetWidth - 4) / 2,
+      height: ($('#map-inner')[0].offsetHeight - 4) / 2
+   }
 
-   var width = $('#map-inner')[0].offsetWidth - 4;
-   var height = $('#map-inner')[0].offsetHeight - 4;
-   log(height)
+   // CONVERT PERCENT TO PIXELS
+   var left = (background.width * (avg.x / 100)).toFixed(0);
+   var top = (background.height * (avg.y / 100)).toFixed(0);
+
+   // SUBTRACT THE MAP SELECTOR DIMENSIONS
+   var new_x = -(left - selector.width);
+   var new_y = -(top - selector.height);
+
+   // FIND COOR LIMITS
+   var limit = {
+      x: -(background.width - ($('#map-inner')[0].offsetWidth - 4)),
+      y: -(background.height - ($('#map-inner')[0].offsetHeight - 4))
+   }
+
+   // RECALIBRATE WHEN XY LIMITS ARE SURPASSED
+   if (new_y > 0) { new_y = 0; }
+   if (new_y < limit.y) { new_y = limit.y; }
+   if (new_x > 0) { new_x = 0; }
+   if (new_x < limit.x) { new_x = limit.x; }
+
+   // MOVE THE MAP IF THERE'S ROOM
+   if ((selector.width * 2) < background.width) { $('#map').css('left', new_x + 'px'); }
+   if ((selector.height * 2) < background.height) { $('#map').css('top', new_y + 'px'); }
 }
 
 // EXPORT MODULES
