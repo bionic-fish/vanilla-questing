@@ -3,7 +3,11 @@ var instance_data;
 var cooldown;
 
 // MAP MOVEMENT
-function move_map(settings) {
+function move_map(background) {
+
+   // ASSIST VARS
+   var moving = false;
+   var lastevent = null;
 
    // MOUSEDOWN
    $('#map').on('mousedown', (event) => {
@@ -12,8 +16,8 @@ function move_map(settings) {
       event.preventDefault();
 
       // ENABLE MAP MOVEMENT & SAVE TRIGGER EVENT
-      settings.moving = true;
-      settings.lastevent = event;
+      moving = true;
+      lastevent = event;
    });
 
    // MOUSEMOVE -- IF MOUSEDOWN IS ACTIVE
@@ -22,12 +26,12 @@ function move_map(settings) {
       // BLOCK DEFAULT ACTION
       event.preventDefault();
 
-      if (settings.moving === true) {
+      if (moving === true) {
 
          // STARTING COORDS
          var starting = {
-            x: settings.lastevent.clientX,
-            y: settings.lastevent.clientY
+            x: lastevent.clientX,
+            y: lastevent.clientY
          }
 
          // ENDING COORDS
@@ -56,8 +60,8 @@ function move_map(settings) {
 
          // LIMIT THE MOVEMENT
          var limit = {
-            x: -(settings.background.width - ($('#map-inner')[0].offsetWidth - 4)),
-            y: -(settings.background.height - ($('#map-inner')[0].offsetHeight - 4))
+            x: -(background.width - ($('#map-inner')[0].offsetWidth - 4)),
+            y: -(background.height - ($('#map-inner')[0].offsetHeight - 4))
          }
 
          // RECALIBRATE OVERFLOW
@@ -71,12 +75,12 @@ function move_map(settings) {
          if (limit.y <= 0) { $('#map').css('top', new_position.y + 'px'); }
 
          // REFRESH LAST EVENT
-         settings.lastevent = event;
+         lastevent = event;
       }
    });
 
    // MOUSEUP -- DISABLE MAP MOVEMENT
-   $(document).on('mouseup', () => { settings.moving = false; });
+   $(document).on('mouseup', () => { moving = false; });
 }
 
 // SECTION HIGHLIGHTING
@@ -312,7 +316,7 @@ function preload(func) {
    });
 }
 
-// NEW PROFILE
+// CREATE NEW PROFILE
 function new_profile(func, storage, render, build) {
 
    // PLACEHOLDERS
@@ -498,7 +502,8 @@ function new_profile(func, storage, render, build) {
    });
 }
 
-function load(render, build, func, storage) {
+// LOAD EXISTING PROFILE
+function load(func, storage, render, build) {
    $('body').on('click', '#storage #opt', (event) => {
 
       // SWITCH TO LOADING ANIMATION

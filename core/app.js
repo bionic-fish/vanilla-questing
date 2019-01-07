@@ -16,13 +16,11 @@ var settings = {
       height: 960
    },
    storage: 'vanilla-questing',
-   cooldown: 1000,
-   moving: false,
-   lastevent: null
+   cooldown: 1000
 }
 
 // CALIBRATE SELECTOR SIZES & CENTER MAP
-settings = func.calibrate(settings);
+func.calibrate();
 map.position(settings);
 
 // CHECK STORAGE
@@ -30,18 +28,18 @@ storage.check(settings.storage);
 
 // RECALIBRATE & CENTER AGAIN IF WINDOW SIZE CHANGES
 window.onresize = () => {
-   settings = func.calibrate(settings);
+   func.calibrate();
    map.position(settings);
 }
 
 // ADD VARIOUS EVENTS
-events.move_map(settings);
+events.move_map(settings.background);
 events.map_highlight();
 events.submenu();
 events.log_menu();
 events.preload(func);
 events.new_profile(func, storage, render, build);
-events.load(render, build, func, storage);
+events.load(func, storage, render, build);
 
 // RENDER RANDOM BLOCK ON LOAD
 build.random().then((data) => {

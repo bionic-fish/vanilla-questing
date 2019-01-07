@@ -1,5 +1,5 @@
 // CALIBRATE INNERBODY SIZE
-function calibrate(settings) {
+function calibrate() {
 
    // FIND RELEVANT HEIGHTS
    var device_height = window.innerHeight;
@@ -18,8 +18,6 @@ function calibrate(settings) {
 
    // SET THE GENERATED SIZE  
    $('#logs').css('height', diff);
-
-   return settings;
 }
 
 // PRELOAD BACKGROUNDS
