@@ -169,10 +169,13 @@ function move_map(background) {
    var lastevent = null;
 
    // MOUSEDOWN
-   $('#map').on('mousedown', (event) => {
+   $('#map').on('mousedown touchstart', (event) => {
       
       // BLOCK DEFAULT ACTION
       event.preventDefault();
+
+      // TURN OFF SUBMENU FOR -- FIX FOR TABLET/MOBILE DEVICES
+      $('#submenu').css('display', 'none');
 
       // ENABLE MAP MOVEMENT & SAVE TRIGGER EVENT
       moving = true;
@@ -180,11 +183,15 @@ function move_map(background) {
    });
 
    // MOUSEMOVE -- IF MOUSEDOWN IS ACTIVE
-   $('#map').on('mousemove', (event) => {
+   $('#map').on('mousemove touchmove', (event) => {
 
       // BLOCK DEFAULT ACTION
       event.preventDefault();
 
+      // MODIFY EVENT VARIABLE ON TABLET/MOBILE DEVICES
+      if (event.type == 'touchmove') { event = event.touches[0]; }
+      
+      // IF MOVING IS ENABLED
       if (moving === true) {
 
          // STARTING COORDS
@@ -239,7 +246,7 @@ function move_map(background) {
    });
 
    // MOUSEUP -- DISABLE MAP MOVEMENT
-   $(document).on('mouseup', () => { moving = false; });
+   $(document).on('mouseup touchend', () => { moving = false; });
 }
 
 // SECTION HIGHLIGHTING
@@ -360,8 +367,8 @@ function browsing(data, render, settings, storage) {
 function submenu() {
 
    // PLACEHOLDERS
-   var menu;
    var last_selector;
+   var menu;
 
    // MOUSEOVER
    $('body').on('mouseover', '#sub', (event) => {
