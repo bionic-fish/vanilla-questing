@@ -141,11 +141,26 @@ function loading() {
    } else { open_prompt(loading); }
 }
 
+// CENTER MAP
+function center_map(settings) {
+
+   // FIND CENTER COORDS
+   var coords = {
+      x: -(settings.background.width - ($('#map-inner')[0].offsetWidth - 4)) / 2,
+      y: -(settings.background.height - ($('#map-inner')[0].offsetHeight - 4)) / 2
+   }
+
+   // EXECUTE MOVEMENT
+   $('#map').css('left', coords.x + 'px');
+   $('#map').css('top', coords.y + 'px');
+}
+
 // EXPORT MODULES
 module.exports = {
    calibrate: calibrate,
    preload: preload,
    open_prompt: open_prompt,
    close_prompt: close_prompt,
-   loading: loading
+   loading: loading,
+   center_map: center_map
 }

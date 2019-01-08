@@ -1,6 +1,5 @@
 // FETCH NEEDED MODULES
 var func = require('./modules/func.js');
-var map = require('./modules/map.js');
 var events = require('./modules/events.js');
 var build = require('./modules/build.js');
 var storage = require('./modules/storage.js');
@@ -22,10 +21,10 @@ var settings = {
 // CHECK STORAGE
 storage.check(settings.storage);
 
-// RECALIBRATE & CENTER AGAIN IF WINDOW SIZE CHANGES
+// RECALIBRATE & CENTER MAP AGAIN IF WINDOW SIZE CHANGES
 $(window).resize(() => {
    func.calibrate();
-   map.position(settings);
+   func.center_map(settings);
 });
 
 // ADD VARIOUS EVENTS
@@ -42,7 +41,10 @@ build.random().then((data) => {
 
    // RENDER A RANDOM BLOCK & ENABLE BROWSING ON LOAD
    render.map(data);
+
+   // CALIBRATE INNERBODY/PANEL SELECTORS & CENTER ALIGN MAP
    func.calibrate();
+   func.center_map(settings);
 
    // ENABLE BROWSING
    events.browsing(data, render, settings, storage);

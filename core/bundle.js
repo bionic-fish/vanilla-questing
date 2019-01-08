@@ -1,7 +1,6 @@
 (function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
 // FETCH NEEDED MODULES
 var func = require('./modules/func.js');
-var map = require('./modules/map.js');
 var events = require('./modules/events.js');
 var build = require('./modules/build.js');
 var storage = require('./modules/storage.js');
@@ -23,10 +22,10 @@ var settings = {
 // CHECK STORAGE
 storage.check(settings.storage);
 
-// RECALIBRATE & CENTER AGAIN IF WINDOW SIZE CHANGES
+// RECALIBRATE & CENTER MAP AGAIN IF WINDOW SIZE CHANGES
 $(window).resize(() => {
    func.calibrate();
-   map.position(settings);
+   func.center_map(settings);
 });
 
 // ADD VARIOUS EVENTS
@@ -43,7 +42,10 @@ build.random().then((data) => {
 
    // RENDER A RANDOM BLOCK & ENABLE BROWSING ON LOAD
    render.map(data);
+
+   // CALIBRATE INNERBODY/PANEL SELECTORS & CENTER ALIGN MAP
    func.calibrate();
+   func.center_map(settings);
 
    // ENABLE BROWSING
    events.browsing(data, render, settings, storage);
@@ -51,7 +53,7 @@ build.random().then((data) => {
    // CLOSE THE LOADING PROMPT AFTER 1s
    sleep(settings.cooldown).then(() => { func.close_prompt(); });
 });
-},{"./modules/build.js":2,"./modules/events.js":3,"./modules/func.js":4,"./modules/map.js":5,"./modules/render.js":6,"./modules/storage.js":7}],2:[function(require,module,exports){
+},{"./modules/build.js":2,"./modules/events.js":3,"./modules/func.js":4,"./modules/render.js":5,"./modules/storage.js":6}],2:[function(require,module,exports){
 // ASSEMBLE JSON DATA
 function route(race) {
 
@@ -853,17 +855,8 @@ function loading() {
    } else { open_prompt(loading); }
 }
 
-// EXPORT MODULES
-module.exports = {
-   calibrate: calibrate,
-   preload: preload,
-   open_prompt: open_prompt,
-   close_prompt: close_prompt,
-   loading: loading
-}
-},{}],5:[function(require,module,exports){
 // CENTER MAP
-function position(settings) {
+function center_map(settings) {
 
    // FIND CENTER COORDS
    var coords = {
@@ -878,9 +871,14 @@ function position(settings) {
 
 // EXPORT MODULES
 module.exports = {
-   position: position
+   calibrate: calibrate,
+   preload: preload,
+   open_prompt: open_prompt,
+   close_prompt: close_prompt,
+   loading: loading,
+   center_map: center_map
 }
-},{}],6:[function(require,module,exports){
+},{}],5:[function(require,module,exports){
 // RENDER MAP
 function map(data) {
 
@@ -1243,7 +1241,7 @@ function find_pos(align) {
 module.exports = {
    map: map
 }
-},{}],7:[function(require,module,exports){
+},{}],6:[function(require,module,exports){
 // MAKE STORAGE KEY GLOBALLY AVAILABLE
 var key;
 
