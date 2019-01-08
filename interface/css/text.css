@@ -28,7 +28,7 @@ a:hover { color: rgba(131, 216, 255, 0.973); }
 
 @media (max-width:900px) {
    body { padding: 0px; }
-   #wrapper { width: 100%; border: 0px solid black; }
+   #wrapper, #zone-wrapper { width: 100%; border: 0px solid black; margin-top: 0px; }
 }
 
 #inner, #zone-inner {
