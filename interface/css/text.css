@@ -125,11 +125,15 @@ span {
 
 #split div {
    display: table-cell;
-   width: 50%;
+   width: auto;
    vertical-align: top;
 }
 
-#split div:nth-child(2) {
+#split div:nth-child(1) {
+   width: 5%;
+}
+
+#split div:nth-child(3) {
    text-align: right;
    width: 20%;
 }

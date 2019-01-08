@@ -4,25 +4,24 @@ var zones = [
    ['Silverpine Forest', 12.71],
    ['Barrens', 14.53],
    ['<span>Ragefire Chasm</span>', 17.48],
-   ['Stonetalon', 17.97],
+   ['Stonetalon Mountains', 17.97],
    ['Barrens', 18.43],
    ['Silverpine Forest', 20.33],
    ['Hillsbrad Foothills', 20.80],
-   ['Stonetalon', 21.65],
+   ['Stonetalon Mountains', 21.65],
    ['Barrens', 22.49],
    ['<span>Wailing Caverns</span>', 24.25],
-   ['Stonetalon', 24.91],
+   ['Stonetalon Mountains', 24.91],
    ['<span>Shadowfang Keep</span>', 25.25],
    ['Hillsbrad Foothills', 25.67],
-   ['Stonetalon', 26.91],
+   ['Stonetalon Mountains', 26.91],
    ['Ashenvale', 27.20],
    ['<span>Blackfathom Deep</span>', 28.57],
-   ['Stonetalon', 28.94],
+   ['Stonetalon Mountains', 28.94],
    ['Thousand Needles', 29.54],
    ['Hillsbrad Foothills', 31.13],
    ['Shimmering Flats', 32.39],
    ['Stranglethorn Vale', 33.09],
-   ['Hillsbrad Foothills', 34.33],
    ['Arathi Highlands', 34.76],
    ['Desolace', 36.15],
    ['Grind a Mount', 37.40],
@@ -66,11 +65,12 @@ var zones = [
 
 var container = '';
 
-zones.forEach(zone => {
+zones.forEach((zone, i) => {
 
    container += `
       <div id="zone">
          <div id="split">
+            <div>` + (i + 1) + `.</div>
             <div>` + zone[0] + `</div>
             <div>` + zone[1].toFixed(2) + `</div>
          </div>
