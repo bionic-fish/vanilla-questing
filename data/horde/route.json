@@ -10838,14 +10838,6 @@
                "type": "objective"
             },
             {
-               "coords": { "x": 49, "y": 59 },
-               "align": "bottom",
-               "header": "Placeholder",
-               "objectives": ["Stalking the Stalkers"],
-               "special": ["Howlers"],
-               "type": "objective"
-            },
-            {
                "coords": { "x": 40, "y": 60 },
                "align": "bottom",
                "header": "Vaorwind Lake",

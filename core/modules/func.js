@@ -3,21 +3,20 @@ function calibrate() {
 
    // FIND RELEVANT HEIGHTS
    var device_height = window.innerHeight;
-   var menu_height = $('#menu')[0].offsetHeight + 2;
+   var menu_height = $('#menu')[0].offsetHeight;
 
-   // SUBTRACT MARGINS/PADDINGS
-   var innerbody_height = device_height - menu_height;
+   // SET THE NEW INNERBODY HEIGHT
+   $('#innerbody').css('height', (device_height - menu_height) + 'px');
 
-   // SET INNERBODYS HEIGHT APPROPRIATELY
-   $('#innerbody').css('height', innerbody_height);
+   // SET LOG HEIGHT TO ONE -- FOR RE-CALIBRATION PURPOSES
+   $('#logs').css('height', '1px');
 
    // FIGURE OUT OBJECTIVE LOG SIZE
-   var panel_inner_height = $('#panel-inner')[0].clientHeight;
+   var panel_inner_height = $('#panel-inner')[0].offsetHeight - 4;
    var status_height = $('#status')[0].offsetHeight;
-   var diff = (panel_inner_height - status_height) - 16;
 
    // SET THE GENERATED SIZE  
-   $('#logs').css('height', diff);
+   $('#logs').css('height', (panel_inner_height - status_height) + 'px');
 }
 
 // PRELOAD BACKGROUNDS

@@ -19,18 +19,14 @@ var settings = {
    cooldown: 1000
 }
 
-// CALIBRATE SELECTOR SIZES & CENTER MAP
-func.calibrate();
-map.position(settings);
-
 // CHECK STORAGE
 storage.check(settings.storage);
 
 // RECALIBRATE & CENTER AGAIN IF WINDOW SIZE CHANGES
-window.onresize = () => {
+$(window).resize(() => {
    func.calibrate();
    map.position(settings);
-}
+});
 
 // ADD VARIOUS EVENTS
 events.move_map(settings.background);
@@ -46,6 +42,9 @@ build.random().then((data) => {
 
    // RENDER A RANDOM BLOCK & ENABLE BROWSING ON LOAD
    render.map(data);
+   func.calibrate();
+
+   // ENABLE BROWSING
    events.browsing(data, render, settings, storage);
 
    // CLOSE THE LOADING PROMPT AFTER 1s

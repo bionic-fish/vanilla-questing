@@ -19,6 +19,11 @@
    color: rgb(174, 248, 166);
 }
 
+@media (max-width: 800px) {
+   #menu { min-width: 100%; }
+   #menu .split .fluff { display: none; }
+}
+
 #submenu {
    background-color: rgb(41, 41, 41);
    border: 2px solid rgb(41, 41, 41);

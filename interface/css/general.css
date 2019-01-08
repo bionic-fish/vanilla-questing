@@ -55,7 +55,11 @@ a:hover { color: rgb(175, 30, 30); }
 }
 
 #innerbody #map-outer { padding-right: 0px; }
-#innerbody #panel-outer { width: 300px; padding-left: 0px; }
+#innerbody #panel-outer { width: 300px; padding-left: 0px; transition: 0.3s; }
+
+@media (max-width: 800px) {
+   #innerbody #panel-outer { width: 250px; }
+}
 
 #map-inner, #panel-inner, #map { height: 100%; }
 

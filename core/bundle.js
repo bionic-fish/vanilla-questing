@@ -20,18 +20,14 @@ var settings = {
    cooldown: 1000
 }
 
-// CALIBRATE SELECTOR SIZES & CENTER MAP
-func.calibrate();
-map.position(settings);
-
 // CHECK STORAGE
 storage.check(settings.storage);
 
 // RECALIBRATE & CENTER AGAIN IF WINDOW SIZE CHANGES
-window.onresize = () => {
+$(window).resize(() => {
    func.calibrate();
    map.position(settings);
-}
+});
 
 // ADD VARIOUS EVENTS
 events.move_map(settings.background);
@@ -47,6 +43,9 @@ build.random().then((data) => {
 
    // RENDER A RANDOM BLOCK & ENABLE BROWSING ON LOAD
    render.map(data);
+   func.calibrate();
+
+   // ENABLE BROWSING
    events.browsing(data, render, settings, storage);
 
    // CLOSE THE LOADING PROMPT AFTER 1s
@@ -716,21 +715,20 @@ function calibrate() {
 
    // FIND RELEVANT HEIGHTS
    var device_height = window.innerHeight;
-   var menu_height = $('#menu')[0].offsetHeight + 2;
+   var menu_height = $('#menu')[0].offsetHeight;
 
-   // SUBTRACT MARGINS/PADDINGS
-   var innerbody_height = device_height - menu_height;
+   // SET THE NEW INNERBODY HEIGHT
+   $('#innerbody').css('height', (device_height - menu_height) + 'px');
 
-   // SET INNERBODYS HEIGHT APPROPRIATELY
-   $('#innerbody').css('height', innerbody_height);
+   // SET LOG HEIGHT TO ONE -- FOR RE-CALIBRATION PURPOSES
+   $('#logs').css('height', '1px');
 
    // FIGURE OUT OBJECTIVE LOG SIZE
-   var panel_inner_height = $('#panel-inner')[0].clientHeight;
+   var panel_inner_height = $('#panel-inner')[0].offsetHeight - 4;
    var status_height = $('#status')[0].offsetHeight;
-   var diff = (panel_inner_height - status_height) - 16;
 
    // SET THE GENERATED SIZE  
-   $('#logs').css('height', diff);
+   $('#logs').css('height', (panel_inner_height - status_height) + 'px');
 }
 
 // PRELOAD BACKGROUNDS
