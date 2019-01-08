@@ -146,6 +146,10 @@ function specific(race, block) {
 
       // SET THE TARGET BLOCK
       data.current = parseInt(block);
+      
+      data.route.path.forEach(element => {
+         log(element.zone + ': ' + element.experience)
+      });
 
       // RETURN THE DATA OBJECT
       return data;

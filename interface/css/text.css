@@ -18,7 +18,7 @@ a:link, a:visited, a:hover {
 
 a:hover { color: rgba(131, 216, 255, 0.973); }
 
-#wrapper {
+#wrapper, #zone-wrapper {
    background: rgba(2, 2, 2, 0.151);
    border-top: 4px solid rgba(2, 2, 2, 0.151);
    border-bottom: 4px solid rgba(2, 2, 2, 0.151);
@@ -31,7 +31,7 @@ a:hover { color: rgba(131, 216, 255, 0.973); }
    #wrapper { width: 100%; border: 0px solid black; }
 }
 
-#inner {
+#inner, #zone-inner {
    padding: 30px;
    padding-top: 25px;
    text-shadow: 1px 1px #242424;
@@ -67,7 +67,7 @@ a:hover { color: rgba(131, 216, 255, 0.973); }
    margin-bottom: 0px;
 }
 
-.text span {
+span {
    color: rgb(255, 182, 122);
 }
 
@@ -95,4 +95,41 @@ a:hover { color: rgba(131, 216, 255, 0.973); }
 
 #border {
    border: 1px solid rgba(255, 255, 255, 0.658);
+}
+
+#zone-wrapper {
+   margin-top: 20px;
+}
+
+#zone-inner {
+   padding: 0px;
+}
+
+#zone {
+   padding: 8px 12px;
+}
+
+#zone:nth-child(even) {
+   background: rgba(5, 5, 5, 0.137);
+}
+
+#zone:hover {
+   background: rgba(79, 255, 79, 0.103);
+   color: white;
+}
+
+#split {
+   display: table;
+   width: 100%;
+}
+
+#split div {
+   display: table-cell;
+   width: 50%;
+   vertical-align: top;
+}
+
+#split div:nth-child(2) {
+   text-align: right;
+   width: 20%;
 }
