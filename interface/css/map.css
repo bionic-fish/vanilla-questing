@@ -71,7 +71,19 @@ circle {
    transition: 0.2s;
    cursor: pointer;
    width: 10%;
+   background-repeat: no-repeat;
+   background-position: center center;
+   top: 0px;
 }
 
-#prev { left: 0px; top: 0px; }
-#next { right: 0px; top: 0px; }
+/* --- ICONS COURTESY OF https://www.flaticon.com/authors/smashicons --- */
+
+#prev {
+   background-image: url('../img/prev.png');
+   left: 0px;
+}
+
+#next {
+   background-image: url('../img/next.png');
+   right: 0px;
+}
