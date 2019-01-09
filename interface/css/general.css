@@ -1,5 +1,5 @@
 @font-face { font-family: 'Open Sans'; src: url('../fonts/main.woff'); }
-input, span, input[type=range]::-webkit-slider-thumb, li, svg { all: unset; }
+input, span, li, svg { all: unset; }
 
 body {
    background-color: rgb(56, 56, 56);
@@ -35,33 +35,13 @@ a:hover { color: rgb(175, 30, 30); }
 
 .split div:nth-child(2) { text-align: right; }
 
-/* --- INNERBODY --- */
+/* --- WRAPPER --- */
 
-#innerbody {
+#wrapper {
    display: table;
    width: 100%;
-}
-
-#innerbody #map-outer, #innerbody #panel-outer {
-   display: table-cell;
-   width: auto;
    height: 100%;
-   padding: 10px;
-   vertical-align: top;
-
-   -webkit-box-sizing: border-box;
-   -moz-box-sizing: border-box;
-   box-sizing: border-box;
 }
-
-#innerbody #map-outer { padding-right: 0px; }
-#innerbody #panel-outer { width: 300px; padding-left: 0px; transition: 0.3s; }
-
-@media (max-width: 800px) {
-   #innerbody #panel-outer { width: 250px; }
-}
-
-#map-inner, #panel-inner, #map { height: 100%; }
 
 /* --- COLORED BOXES --- */
 

@@ -67,8 +67,8 @@ function move_map(background) {
 
          // LIMIT THE MOVEMENT
          var limit = {
-            x: -(background.width - ($('#map-inner')[0].offsetWidth - 4)),
-            y: -(background.height - ($('#map-inner')[0].offsetHeight - 4))
+            x: -(background.width - $('#map-outer').width()),
+            y: -(background.height - $('#map-outer').height())
          }
 
          // RECALIBRATE OVERFLOW
@@ -201,6 +201,68 @@ function browsing(data, render, settings, storage) {
          render.map(instance_data);
 
       } else { log('Range Issue!'); }
+   });
+}
+
+// ROUTE BROWSING FOR HANDHELD DEVICES
+function handheld_browsing(render, storage) {
+
+   // MOBILE/TABLET BROWSING MOUSEOVER
+   $('body').on('mouseover', '#map, #next, #prev', () => {
+      $('#next, #prev').css('opacity', 1);
+   });
+
+   // MOBILE/TABLET BROWSING MOUSEOUT
+   $('body').on('mouseout', '#map, #next, #prev', () => {
+      $('#next, #prev').css('opacity', 0);
+   });
+
+   $('body').on('click', '#next, #prev', (event) => {
+
+      // PREVENT DEFAULT ACTION
+      event.preventDefault();
+
+      var target = $(event.currentTarget).attr('id');
+
+      // RENDER PREVIOUS BLOCK
+      if (target == 'prev') {
+
+         // THE PREVIOUS BLOCK
+         var previous = instance_data.current - 1;
+
+         // IF IT FALLS WITHIN RANGE, RENDER MAP AGAIN
+         if (previous >= 0) {
+
+            // SET NEW CURRENT
+            instance_data.current = previous;
+
+            // UPDATE STORAGE & SUBMENU
+            storage.update(instance_data);
+
+            // RENDER NEW MAP
+            render.map(instance_data);
+         }
+
+      // RENDER NEXT BLOCK
+      } else if (target == 'next') {
+
+         // THE NEXT BLOCK
+         var next = instance_data.current + 1;
+
+         // IF IT FALLS WITHIN RANGE, RENDER MAP AGAIN
+         if (next < instance_data.route.path.length) {
+
+            // SET NEW CURRENT
+            instance_data.current = next;
+
+            // UPDATE STORAGE & SUBMENU
+            storage.update(instance_data);
+
+            // RENDER NEW MAP
+            render.map(instance_data);
+         }
+      }
+
    });
 }
 
@@ -549,5 +611,6 @@ module.exports = {
    log_menu: log_menu,
    preload: preload,
    new_profile: new_profile,
-   load: load
+   load: load,
+   handheld_browsing: handheld_browsing
 }

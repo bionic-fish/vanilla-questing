@@ -1,12 +1,7 @@
-#map-inner {
-   background: rgba(0, 0, 0, 0.274);
-   border: 2px solid rgba(41, 41, 41, 0.863);
-   padding: 2px;
+#map-outer {
    overflow: hidden;
    position: relative;
 }
-
-/* --- SVG STUFF --- */
 
 #map {
    width: 1440px;
@@ -66,3 +61,17 @@ circle {
 .waypoint span#right { position: absolute; left: 10; top: -6; }
 .waypoint span#top { position: absolute; left: -5; top: -21; }
 .waypoint span#bottom { position: absolute; left: -5; top: 10; }
+
+/* --- PREV NEXT --- */
+
+#next, #prev {
+   background: rgba(0, 0, 0, 0.24);
+   position: absolute;
+   height: 100%;
+   transition: 0.2s;
+   cursor: pointer;
+   width: 10%;
+}
+
+#prev { left: 0px; top: 0px; }
+#next { right: 0px; top: 0px; }

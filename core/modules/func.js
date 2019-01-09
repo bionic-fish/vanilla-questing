@@ -1,9 +1,11 @@
 // CALIBRATE INNERBODY SIZE
 function calibrate() {
 
+   var offset = 4;
+
    // FIND RELEVANT HEIGHTS
    var device_height = window.innerHeight;
-   var menu_height = $('#menu')[0].offsetHeight;
+   var menu_height = $('#menu')[0].offsetHeight + offset;
 
    // SET THE NEW INNERBODY HEIGHT
    $('#innerbody').css('height', (device_height - menu_height) + 'px');
@@ -13,7 +15,7 @@ function calibrate() {
 
    // FIGURE OUT OBJECTIVE LOG SIZE
    var panel_inner_height = $('#panel-inner')[0].offsetHeight - 4;
-   var status_height = $('#status')[0].offsetHeight;
+   var status_height = $('#status')[0].offsetHeight + offset;
 
    // SET THE GENERATED SIZE  
    $('#logs').css('height', (panel_inner_height - status_height) + 'px');
@@ -146,8 +148,8 @@ function center_map(settings) {
 
    // FIND CENTER COORDS
    var coords = {
-      x: -(settings.background.width - ($('#map-inner')[0].offsetWidth - 4)) / 2,
-      y: -(settings.background.height - ($('#map-inner')[0].offsetHeight - 4)) / 2
+      x: -(settings.background.width - ($('#map-outer')[0].offsetWidth - 4)) / 2,
+      y: -(settings.background.height - ($('#map-outer')[0].offsetHeight - 4)) / 2
    }
 
    // EXECUTE MOVEMENT

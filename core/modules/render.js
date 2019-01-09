@@ -16,7 +16,6 @@ function map(data) {
 
       // NUKE OLD CONTENT
       $('#map').html('');
-      $('#obj-log').html('');
 
       // SELECTOR CONTAINERS
       var lines, points, circles = '';
@@ -327,8 +326,8 @@ function find_pos(align) {
 
    // SELECTOR DIMENSIONS
    var selector = {
-      width: ($('#map-inner')[0].offsetWidth - 4) / 2,
-      height: ($('#map-inner')[0].offsetHeight - 4) / 2
+      width: $('#map-outer').width() / 2,
+      height: $('#map-outer').height() / 2
    }
 
    // CONVERT PERCENT TO PIXELS
@@ -341,8 +340,8 @@ function find_pos(align) {
 
    // FIND COOR LIMITS
    var limit = {
-      x: -(background.width - ($('#map-inner')[0].offsetWidth - 4)),
-      y: -(background.height - ($('#map-inner')[0].offsetHeight - 4))
+      x: -(background.width - $('#map-outer').width()),
+      y: -(background.height - $('#map-outer').height())
    }
 
    // RECALIBRATE WHEN XY LIMITS ARE SURPASSED

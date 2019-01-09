@@ -1,7 +1,11 @@
 #menu {
+   display: table-row;
+   height: 1px;
+}
+
+#menu-inner {
    background: rgba(0, 0, 0, 0.185);
    border-bottom: 2px solid rgba(2, 2, 2, 0.103);
-   min-width: 770px;
 }
 
 #menu .split li {
@@ -20,9 +24,10 @@
 }
 
 @media (max-width: 800px) {
-   #menu { min-width: 100%; }
    #menu .split .fluff { display: none; }
 }
+
+/* --- SUBMENU --- */
 
 #submenu {
    background-color: rgb(41, 41, 41);

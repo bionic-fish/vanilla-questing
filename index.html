@@ -10,59 +10,69 @@
    <script defer src="core/bundle.js"></script>
 </head>
 <body>
-   <div id="menu">
-      <div class="split">
-         <div><a href="manifesto.html" target="_blank"><li>Manifesto</li></a><li id="sub" class="fluff">Overview</li><a href="manifesto.html#features" target="_blank"><li id="usage">Usage</li></a><a href="manifesto.html#report" target="_blank"><li class="fluff">Report Issues</li></a><a href="manifesto.html#contribute" target="_blank"><li class="fluff">Donate</li></a></div>
-         <div><li id="sub">Actions</li><li id="sub">Load From Storage</li><li id="sub">Create New Profile</li></div>
-      </div>
-      <div id="submenu"><div id="submenu-inner">
-         <div id="overview">
-            <a href="alliance.html" target="_blank"><div id="opt"><img src="interface/img/icons/alliance.png">Alliance</div></a>
-            <a href="horde.html" target="_blank"><div id="opt"><img src="interface/img/icons/horde.png"><img src="">Horde</div></a>
+   <div id="wrapper">
+      <div id="menu"><div id="menu-inner">
+         <div class="split">
+            <div><a href="manifesto.html" target="_blank"><li>Manifesto</li></a><li id="sub" class="fluff">Overview</li><a href="manifesto.html#features" target="_blank"><li id="usage">Usage</li></a><a href="manifesto.html#report" target="_blank"><li class="fluff">Report Issues</li></a><a href="manifesto.html#contribute" target="_blank"><li class="fluff">Donate</li></a></div>
+            <div><li id="sub">Actions</li><li id="sub">Load From Storage</li><li id="sub">Create New Profile</li></div>
          </div>
-         <div id="actions">
-            <div id="opt" class="preload"><img src="interface/img/icons/preload.png">Preload Backgrounds</div>
-            <div id="unavailable"><img src="interface/img/icons/import2.png">Import Custom Route</div>
-         </div>
-         <div id="storage">
-            <div id="soon">Storage is empty!</div>
-         </div>
-         <div id="create">
-            <div id="opt" class="profile"><img src="interface/img/icons/human.png">Human</div>
-            <div id="opt" class="profile"><img src="interface/img/icons/orc.png">Orc</div>
-            <div id="unavailable"><img src="interface/img/icons/dwarf2.png">Dwarf</div>
-            <div id="unavailable"><img src="interface/img/icons/gnome2.png">Gnome</div>
-            <div id="unavailable"><img src="interface/img/icons/nelf2.png">Night Elf</div>
-            <div id="unavailable"><img src="interface/img/icons/troll2.png">Troll</div>
-            <div id="unavailable"><img src="interface/img/icons/tauren2.png">Tauren</div>
-            <div id="unavailable"><img src="interface/img/icons/undead2.png">Undead</div>
-         </div>
+         <div id="submenu"><div id="submenu-inner">
+            <div id="overview">
+               <a href="alliance.html" target="_blank"><div id="opt"><img src="interface/img/icons/alliance.png">Alliance</div></a>
+               <a href="horde.html" target="_blank"><div id="opt"><img src="interface/img/icons/horde.png"><img src="">Horde</div></a>
+            </div>
+            <div id="actions">
+               <div id="opt" class="preload"><img src="interface/img/icons/preload.png">Preload Backgrounds</div>
+               <div id="unavailable"><img src="interface/img/icons/import2.png">Import Custom Route</div>
+            </div>
+            <div id="storage">
+               <div id="soon">Storage is empty!</div>
+            </div>
+            <div id="create">
+               <div id="opt" class="profile"><img src="interface/img/icons/human.png">Human</div>
+               <div id="opt" class="profile"><img src="interface/img/icons/orc.png">Orc</div>
+               <div id="unavailable"><img src="interface/img/icons/dwarf2.png">Dwarf</div>
+               <div id="unavailable"><img src="interface/img/icons/gnome2.png">Gnome</div>
+               <div id="unavailable"><img src="interface/img/icons/nelf2.png">Night Elf</div>
+               <div id="unavailable"><img src="interface/img/icons/troll2.png">Troll</div>
+               <div id="unavailable"><img src="interface/img/icons/tauren2.png">Tauren</div>
+               <div id="unavailable"><img src="interface/img/icons/undead2.png">Undead</div>
+            </div>
+         </div></div>
       </div></div>
-   </div>
-   <div id="innerbody">
-      <div id="map-outer">
-         <div id="map-inner">
-            <svg id="map"></svg>
+      <div id="innerbody"><div id="innerbody-tbl">
+         <div id="map-wrapper">
+            <div id="map-outer">
+               <svg id="map"></svg>
+               <div id="prev"></div>
+               <div id="next"></div>
+            </div>
          </div>
-      </div>
-      <div id="panel-outer">
-         <div id="panel-inner">
-            <div id="status">
-               <div id="level"><div class="split"><div>Level</div><div><span id="lvl">0.00</span></div></div><div id="level-bar"></div></div>
-               <div id="progress"><div class="split"><div>Progress</div><div><span id="prog">0.00</span>%</div></div><div id="progress-bar"></div></div>
-               <div id="hearthstone"><div class="split"><div>Hearthstone</div><div><span id="hs">None</span></div></div></div>
-               <div id="log-menu">
-                  <div class="split">
-                     <div><div id="show-obj" class="current">Objectives</div></div>
-                     <div><div id="show-quests">Quest Log</div></div>
+         <div id="panel-wrapper">
+            <div id="panel">
+               <div id="panel-tbl">
+                  <div id="status">
+                     <div id="level"><div class="split"><div>Level</div><div><span id="lvl">0.00</span></div></div><div id="level-bar"></div></div>
+                     <div id="progress"><div class="split"><div>Progress</div><div><span id="prog">0.00</span>%</div></div><div id="progress-bar"></div></div>
+                     <div id="hearthstone"><div class="split"><div>Hearthstone</div><div><span id="hs">None</span></div></div></div>
+                     <div id="log-menu">
+                        <div class="split">
+                           <div><div id="show-obj" class="current">Objectives</div></div>
+                           <div><div id="show-quests">Quest Log</div></div>
+                        </div>
+                     </div>
+                  </div>
+                  <div id="logs">
+                     <div id="firefox-fix">
+                        <div id="logs-inner">
+                           <div id="obj-log"></div>
+                           <div id="quest-log"></div>
+                        </div>
+                     </div>
                   </div>
                </div>
             </div>
-            <div id="logs">
-               <div id="obj-log"></div>
-               <div id="quest-log"></div>
-            </div>
          </div>
-      </div>
+      </div></div>
    </div>
 </body>

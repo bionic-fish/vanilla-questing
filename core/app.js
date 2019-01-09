@@ -23,7 +23,6 @@ storage.check(settings.storage);
 
 // RECALIBRATE & CENTER MAP AGAIN IF WINDOW SIZE CHANGES
 $(window).resize(() => {
-   func.calibrate();
    func.center_map(settings);
 });
 
@@ -43,11 +42,11 @@ build.random().then((data) => {
    render.map(data);
 
    // CALIBRATE INNERBODY/PANEL SELECTORS & CENTER ALIGN MAP
-   func.calibrate();
    func.center_map(settings);
 
    // ENABLE BROWSING
    events.browsing(data, render, settings, storage);
+   events.handheld_browsing(render, storage);
 
    // CLOSE THE LOADING PROMPT AFTER 1s
    sleep(settings.cooldown).then(() => { func.close_prompt(); });

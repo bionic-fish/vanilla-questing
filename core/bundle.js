@@ -24,7 +24,6 @@ storage.check(settings.storage);
 
 // RECALIBRATE & CENTER MAP AGAIN IF WINDOW SIZE CHANGES
 $(window).resize(() => {
-   func.calibrate();
    func.center_map(settings);
 });
 
@@ -44,11 +43,11 @@ build.random().then((data) => {
    render.map(data);
 
    // CALIBRATE INNERBODY/PANEL SELECTORS & CENTER ALIGN MAP
-   func.calibrate();
    func.center_map(settings);
 
    // ENABLE BROWSING
    events.browsing(data, render, settings, storage);
+   events.handheld_browsing(render, storage);
 
    // CLOSE THE LOADING PROMPT AFTER 1s
    sleep(settings.cooldown).then(() => { func.close_prompt(); });
@@ -227,8 +226,8 @@ function move_map(background) {
 
          // LIMIT THE MOVEMENT
          var limit = {
-            x: -(background.width - ($('#map-inner')[0].offsetWidth - 4)),
-            y: -(background.height - ($('#map-inner')[0].offsetHeight - 4))
+            x: -(background.width - $('#map-outer').width()),
+            y: -(background.height - $('#map-outer').height())
          }
 
          // RECALIBRATE OVERFLOW
@@ -361,6 +360,68 @@ function browsing(data, render, settings, storage) {
          render.map(instance_data);
 
       } else { log('Range Issue!'); }
+   });
+}
+
+// ROUTE BROWSING FOR HANDHELD DEVICES
+function handheld_browsing(render, storage) {
+
+   // MOBILE/TABLET BROWSING MOUSEOVER
+   $('body').on('mouseover', '#map, #next, #prev', () => {
+      $('#next, #prev').css('opacity', 1);
+   });
+
+   // MOBILE/TABLET BROWSING MOUSEOUT
+   $('body').on('mouseout', '#map, #next, #prev', () => {
+      $('#next, #prev').css('opacity', 0);
+   });
+
+   $('body').on('click', '#next, #prev', (event) => {
+
+      // PREVENT DEFAULT ACTION
+      event.preventDefault();
+
+      var target = $(event.currentTarget).attr('id');
+
+      // RENDER PREVIOUS BLOCK
+      if (target == 'prev') {
+
+         // THE PREVIOUS BLOCK
+         var previous = instance_data.current - 1;
+
+         // IF IT FALLS WITHIN RANGE, RENDER MAP AGAIN
+         if (previous >= 0) {
+
+            // SET NEW CURRENT
+            instance_data.current = previous;
+
+            // UPDATE STORAGE & SUBMENU
+            storage.update(instance_data);
+
+            // RENDER NEW MAP
+            render.map(instance_data);
+         }
+
+      // RENDER NEXT BLOCK
+      } else if (target == 'next') {
+
+         // THE NEXT BLOCK
+         var next = instance_data.current + 1;
+
+         // IF IT FALLS WITHIN RANGE, RENDER MAP AGAIN
+         if (next < instance_data.route.path.length) {
+
+            // SET NEW CURRENT
+            instance_data.current = next;
+
+            // UPDATE STORAGE & SUBMENU
+            storage.update(instance_data);
+
+            // RENDER NEW MAP
+            render.map(instance_data);
+         }
+      }
+
    });
 }
 
@@ -709,15 +770,18 @@ module.exports = {
    log_menu: log_menu,
    preload: preload,
    new_profile: new_profile,
-   load: load
+   load: load,
+   handheld_browsing: handheld_browsing
 }
 },{}],4:[function(require,module,exports){
 // CALIBRATE INNERBODY SIZE
 function calibrate() {
 
+   var offset = 4;
+
    // FIND RELEVANT HEIGHTS
    var device_height = window.innerHeight;
-   var menu_height = $('#menu')[0].offsetHeight;
+   var menu_height = $('#menu')[0].offsetHeight + offset;
 
    // SET THE NEW INNERBODY HEIGHT
    $('#innerbody').css('height', (device_height - menu_height) + 'px');
@@ -727,7 +791,7 @@ function calibrate() {
 
    // FIGURE OUT OBJECTIVE LOG SIZE
    var panel_inner_height = $('#panel-inner')[0].offsetHeight - 4;
-   var status_height = $('#status')[0].offsetHeight;
+   var status_height = $('#status')[0].offsetHeight + offset;
 
    // SET THE GENERATED SIZE  
    $('#logs').css('height', (panel_inner_height - status_height) + 'px');
@@ -860,8 +924,8 @@ function center_map(settings) {
 
    // FIND CENTER COORDS
    var coords = {
-      x: -(settings.background.width - ($('#map-inner')[0].offsetWidth - 4)) / 2,
-      y: -(settings.background.height - ($('#map-inner')[0].offsetHeight - 4)) / 2
+      x: -(settings.background.width - ($('#map-outer')[0].offsetWidth - 4)) / 2,
+      y: -(settings.background.height - ($('#map-outer')[0].offsetHeight - 4)) / 2
    }
 
    // EXECUTE MOVEMENT
@@ -897,7 +961,6 @@ function map(data) {
 
       // NUKE OLD CONTENT
       $('#map').html('');
-      $('#obj-log').html('');
 
       // SELECTOR CONTAINERS
       var lines, points, circles = '';
@@ -1208,8 +1271,8 @@ function find_pos(align) {
 
    // SELECTOR DIMENSIONS
    var selector = {
-      width: ($('#map-inner')[0].offsetWidth - 4) / 2,
-      height: ($('#map-inner')[0].offsetHeight - 4) / 2
+      width: $('#map-outer').width() / 2,
+      height: $('#map-outer').height() / 2
    }
 
    // CONVERT PERCENT TO PIXELS
@@ -1222,8 +1285,8 @@ function find_pos(align) {
 
    // FIND COOR LIMITS
    var limit = {
-      x: -(background.width - ($('#map-inner')[0].offsetWidth - 4)),
-      y: -(background.height - ($('#map-inner')[0].offsetHeight - 4))
+      x: -(background.width - $('#map-outer').width()),
+      y: -(background.height - $('#map-outer').height())
    }
 
    // RECALIBRATE WHEN XY LIMITS ARE SURPASSED
