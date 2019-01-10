@@ -7208,15 +7208,17 @@
                "align": "top",
                "header": "Keldran",
                "ends": [["Alliance Relations", "P3"]],
-               "special": ["Grind mobs to level 40."],
+               "special": ["Grind mobs until you can afford a Mount"],
                "type": "quest"
             }
          ]
       },
       {
-         "zone": "farmfarmfarm",
+         "zone": "horde-mount",
          "experience": 37.40,
-         "waypoints": []
+         "waypoints": [
+
+         ]
       },
       {
          "zone": "orgrimmar",

@@ -7460,6 +7460,161 @@
          ]
       },
       {
+         "zone": "barrens",
+         "experience": 38.27,
+         "waypoints": [
+            {
+               "coords": { "x": 63, "y": 37 },
+               "header": "Ratchet Flightpath",
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 64, "y": 39 },
+               "align": "right",
+               "header": "Ratchet Harbor",
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "stv",
+         "experience": 38.27,
+         "waypoints": [
+            {
+               "coords": { "x": 26, "y": 73 },
+               "header": "Booty Bay Harbor",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 27, "y": 74 },
+               "align": "right",
+               "header": "Wharfmaster Lozgil",
+               "ends": [["Goblin Sponsorship", "P2"]],
+               "starts": [["Goblin Sponsorship", "P3"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 27, "y": 77 },
+               "header": "Booty Bay",
+               "ends": [["Goblin Sponsorship", "P3"]],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 28, "y": 78 },
+               "align": "right",
+               "header": "Booy Bay Flightpath",
+               "special": ["Grind mobs until you can afford a Mount", "Fly to Stormwind"],
+               "type": "flightpath"
+            }
+         ]
+      },
+      {
+         "zone": "alliance-mount",
+         "experience": 38.29,
+         "waypoints": []
+      },
+      {
+         "zone": "stormwind",
+         "experience": 40.00,
+         "waypoints": [
+            {
+               "coords": { "x": 66, "y": 62 },
+               "align": "right",
+               "header": "Stormwind Flightpath",
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 74, "y": 30 },
+               "align": "right",
+               "header": "Count Remington Ridgewell",
+               "starts": ["The Perenolde Tiara"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 64, "y": 21 },
+               "align": "top",
+               "header": "Brohann Caskbelly",
+               "starts": ["In Search of the Temple"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 41, "y": 64 },
+               "header": "Mazen's House",
+               "ends": [["Mazens Behest", "P1"]],
+               "starts": [["Mazens Behest", "P1-2"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 38, "y": 82 },
+               "header": "Mage Tower",
+               "starts": ["Vital Supplies"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "stormwind",
+         "experience": 40.01,
+         "waypoints": [
+            {
+               "coords": { "x": 38, "y": 82 },
+               "header": "Mage Tower",
+               "starts": ["Vital Supplies"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 66, "y": 62 },
+               "align": "right",
+               "header": "Stormwind Flightpath",
+               "special": ["Fly to Duskwood"],
+               "type": "flightpath"
+            }
+         ]
+      },
+      {
+         "zone": "duskwood",
+         "experience": 40.01,
+         "waypoints": [
+            {
+               "coords": { "x": 78, "y": 43 },
+               "align": "top",
+               "header": "Duskwood Flightpath",
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 76, "y": 46 },
+               "header": "Watchmaster Sorigal",
+               "ends": ["Vital Supplies"],
+               "starts": ["Supplies to Nethergarde"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 87, "y": 41 },
+               "align": "right",
+               "header": "Deadwind Pass Border",
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "deadwind",
+         "experience": 40.02,
+         "waypoints": [
+            {
+               "coords": { "x": 32, "y": 36 },
+               "align": "top",
+               "header": "Duskwood Border",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 58, "y": 42 },
+               "align": "top",
+               "header": "Swamp of Sorrows Border",
+               "type": "travel"
+            }
+         ]
+      },
+      {
          "zone": "swamp",
          "experience": 40.02,
          "waypoints": [
