@@ -26,11 +26,6 @@ a:hover { color: rgba(131, 216, 255, 0.973); }
    margin: auto;
 }
 
-@media (max-width:900px) {
-   body { padding: 0px; }
-   #wrapper, #zone-wrapper { width: 100%; border: 0px solid black; margin-top: 0px; }
-}
-
 #inner, #zone-inner {
    padding: 30px;
    padding-top: 25px;
@@ -43,7 +38,7 @@ a:hover { color: rgba(131, 216, 255, 0.973); }
    padding-bottom: 5px;
    border-bottom: 2px dotted rgba(128, 128, 128, 0.322);
    margin-bottom: 5px;
-   color: #F1F1F1;
+   color: white;
 }
 
 .header:first-child { padding-top: 0px; }
@@ -136,4 +131,11 @@ span {
 #split div:nth-child(3) {
    text-align: right;
    width: 20%;
+}
+
+@media (max-width:900px) {
+   body { padding: 0px; }
+   #wrapper, #zone-wrapper { width: 100%; }
+   #wrapper { border-top: 0px; }
+   #zone-wrapper { border-bottom: 0px; }
 }

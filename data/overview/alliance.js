@@ -63,7 +63,7 @@ zones.forEach((zone, i) => {
    container += `
       <div id="zone">
          <div id="split">
-            <div>` + (i + 1) + `. </div>
+            <div>` + (i + 1) + `.&nbsp;</div>
             <div>` + zone[0] + `</div>
             <div>` + zone[1].toFixed(2) + `</div>
          </div>

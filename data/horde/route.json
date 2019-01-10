@@ -2185,7 +2185,7 @@
                "header": "The Dry Hills",
                "starts": ["Ignition", "The Escape"],
                "ends": ["Ignition"],
-               "objectives": ["Nugged Slugs"],
+               "objectives": ["Nugget Slugs"],
                "type": "quest"
             },
             {
@@ -8761,7 +8761,7 @@
                "coords": { "x": 13, "y": 76 },
                "align": "bottom",
                "header": "Ogre Encampment",
-               "objectives": ["Tremors of the Earth"],
+               "objectives": ["Broken Alliances"],
                "special": ["Kill Boss Tho'grun"],
                "type": "objective"
             },

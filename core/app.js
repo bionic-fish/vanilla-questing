@@ -10,10 +10,7 @@ func.loading();
 
 // GLOBAL SETTINGS OBJECT
 var settings = {
-   background: {
-      width: 1440,
-      height: 960
-   },
+   background: { width: 1440, height: 960 },
    storage: 'vanilla-questing',
    cooldown: 1000
 }
@@ -21,10 +18,8 @@ var settings = {
 // CHECK STORAGE
 storage.check(settings.storage);
 
-// RECALIBRATE & CENTER MAP AGAIN IF WINDOW SIZE CHANGES
-$(window).resize(() => {
-   func.center_map(settings);
-});
+// CENTER THE MAP WHEN WINDOW SIZE CHANGES
+$(window).resize(() => { func.center_map(settings); });
 
 // ADD VARIOUS EVENTS
 events.move_map(settings.background);
@@ -41,7 +36,7 @@ build.random().then((data) => {
    // RENDER A RANDOM BLOCK & ENABLE BROWSING ON LOAD
    render.map(data);
 
-   // CALIBRATE INNERBODY/PANEL SELECTORS & CENTER ALIGN MAP
+   // CENTER THE MAP IF THE WINDOW IS LARGER THAN THE THE BACKGROUND
    func.center_map(settings);
 
    // ENABLE BROWSING

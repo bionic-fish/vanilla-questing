@@ -11,10 +11,7 @@ func.loading();
 
 // GLOBAL SETTINGS OBJECT
 var settings = {
-   background: {
-      width: 1440,
-      height: 960
-   },
+   background: { width: 1440, height: 960 },
    storage: 'vanilla-questing',
    cooldown: 1000
 }
@@ -22,10 +19,8 @@ var settings = {
 // CHECK STORAGE
 storage.check(settings.storage);
 
-// RECALIBRATE & CENTER MAP AGAIN IF WINDOW SIZE CHANGES
-$(window).resize(() => {
-   func.center_map(settings);
-});
+// CENTER THE MAP WHEN WINDOW SIZE CHANGES
+$(window).resize(() => { func.center_map(settings); });
 
 // ADD VARIOUS EVENTS
 events.move_map(settings.background);
@@ -42,7 +37,7 @@ build.random().then((data) => {
    // RENDER A RANDOM BLOCK & ENABLE BROWSING ON LOAD
    render.map(data);
 
-   // CALIBRATE INNERBODY/PANEL SELECTORS & CENTER ALIGN MAP
+   // CENTER THE MAP IF THE WINDOW IS LARGER THAN THE THE BACKGROUND
    func.center_map(settings);
 
    // ENABLE BROWSING
@@ -774,29 +769,6 @@ module.exports = {
    handheld_browsing: handheld_browsing
 }
 },{}],4:[function(require,module,exports){
-// CALIBRATE INNERBODY SIZE
-function calibrate() {
-
-   var offset = 4;
-
-   // FIND RELEVANT HEIGHTS
-   var device_height = window.innerHeight;
-   var menu_height = $('#menu')[0].offsetHeight + offset;
-
-   // SET THE NEW INNERBODY HEIGHT
-   $('#innerbody').css('height', (device_height - menu_height) + 'px');
-
-   // SET LOG HEIGHT TO ONE -- FOR RE-CALIBRATION PURPOSES
-   $('#logs').css('height', '1px');
-
-   // FIGURE OUT OBJECTIVE LOG SIZE
-   var panel_inner_height = $('#panel-inner')[0].offsetHeight - 4;
-   var status_height = $('#status')[0].offsetHeight + offset;
-
-   // SET THE GENERATED SIZE  
-   $('#logs').css('height', (panel_inner_height - status_height) + 'px');
-}
-
 // PRELOAD BACKGROUNDS
 function preload() {
 
@@ -935,7 +907,6 @@ function center_map(settings) {
 
 // EXPORT MODULES
 module.exports = {
-   calibrate: calibrate,
    preload: preload,
    open_prompt: open_prompt,
    close_prompt: close_prompt,

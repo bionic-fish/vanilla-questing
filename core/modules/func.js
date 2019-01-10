@@ -1,26 +1,3 @@
-// CALIBRATE INNERBODY SIZE
-function calibrate() {
-
-   var offset = 4;
-
-   // FIND RELEVANT HEIGHTS
-   var device_height = window.innerHeight;
-   var menu_height = $('#menu')[0].offsetHeight + offset;
-
-   // SET THE NEW INNERBODY HEIGHT
-   $('#innerbody').css('height', (device_height - menu_height) + 'px');
-
-   // SET LOG HEIGHT TO ONE -- FOR RE-CALIBRATION PURPOSES
-   $('#logs').css('height', '1px');
-
-   // FIGURE OUT OBJECTIVE LOG SIZE
-   var panel_inner_height = $('#panel-inner')[0].offsetHeight - 4;
-   var status_height = $('#status')[0].offsetHeight + offset;
-
-   // SET THE GENERATED SIZE  
-   $('#logs').css('height', (panel_inner_height - status_height) + 'px');
-}
-
 // PRELOAD BACKGROUNDS
 function preload() {
 
@@ -159,7 +136,6 @@ function center_map(settings) {
 
 // EXPORT MODULES
 module.exports = {
-   calibrate: calibrate,
    preload: preload,
    open_prompt: open_prompt,
    close_prompt: close_prompt,
