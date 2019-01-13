@@ -51,67 +51,56 @@ build.random().then((data) => {
 // ASSEMBLE JSON DATA
 function route(race) {
 
-   // ROUTE & ID COMBOS
-   var options = {
-      human: {
-         route: $.getJSON('../data/alliance/route.json'),
-         quests: $.getJSON('../data/alliance/quests.json')
-      },
-      dwarf: {
-         route: $.getJSON('../data/alliance/route.json'),
-         quests: $.getJSON('../data/alliance/quests.json')
-      },
-      gnome: {
-         route: $.getJSON('../data/alliance/route.json'),
-         quests: $.getJSON('../data/alliance/quests.json')
-      },
-      nelf: {
-         route: $.getJSON('../data/alliance/route.json'),
-         quests: $.getJSON('../data/alliance/quests.json')
-      },
-      orc: {
-         route: $.getJSON('../data/horde/route.json'),
-         quests: $.getJSON('../data/horde/quests.json')
-      },
-      troll: {
-         route: $.getJSON('../data/horde/route.json'),
-         quests: $.getJSON('../data/horde/quests.json')
-      },
-      tauren: {
-         route: $.getJSON('../data/horde/route.json'),
-         quests: $.getJSON('../data/horde/quests.json')
-      },
-      undead: {
-         route: $.getJSON('../data/horde/route.json'),
-         quests: $.getJSON('../data/horde/quests.json')
-      }
+   var alliance = ['human', 'dwarf', 'gnome', 'nelf'];
+   var horde = ['orc', 'troll', 'tauren', 'undead'];
+
+   var promises = [];
+
+   // ALLIANCE BUILD
+   if ($.inArray(race, alliance) != -1) {
+
+      // CONVERT SOME RACE NAMES TO THEIR SHORTHANDS
+      if (race == 'dwarf' || race == 'gnome') { race = 'gnorf'; }
+
+      promises = [
+         $.getJSON('../data/alliance/quests.json'),
+         $.getJSON('../data/alliance/' + race + '.json'),
+         $.getJSON('../data/alliance/shared.json'),
+      ];
+
+   // HORDE BUILD
+   } else if ($.inArray(race, horde) != -1) {
+      promises = [
+         $.getJSON('../data/horde/quests.json'),
+         $.getJSON('../data/horde/route.json'),
+      ];
    }
 
-   // CHECK IF RACE IS FOUND
-   var keys = Object.keys(options);
-   var check = $.inArray(race, keys);
+   // WAIT FOR THE REQUESTED PROMISE TO RESOLVE
+   return Promise.all(promises).then((response) => {
 
-   // IF ITS FOUND
-   if (check != -1) {
+      // DATA OBJECT
+      var data = {
+         quests: response[0],
+         route: response[1]
+      };
 
-      // SHORTHANDS
-      var route = options[race].route;
-      var quest_ids = options[race].quests;
+      // IF THE ROUTE CONSISTS OF TWO PARTS
+      if (response.length == 3) {
 
-      // WAIT FOR ALL PROMISES TO BE RESOLVED
-      return Promise.all([route, quest_ids]).then((response) => {
-      
-         // DATA OBJECT
-         var data = {
-            route: response[0],
-            quests: response[1]
-         };
+         // CONTAINER
+         var combined = [];
 
-         return data;
-      });
+         // PUSH BOTH INTO THE CONTAINER
+         response[1].path.forEach(block => { combined.push(block); });
+         response[2].path.forEach(block => { combined.push(block); });
 
-   // LOG AN ERROR IF IT ISNT
-   } else { log('Race not found!') }
+         // SET THE NEW ROUTE
+         data.route.path = combined;
+      }
+
+      return data;
+   });
 }
 
 // COMPILE RANDOM DATASET
@@ -146,15 +135,58 @@ function specific(race, block) {
    });
 }
 
+// COMPILE RANDOM DATASET
+function dev() {
+
+   // BUILD ROUTE & RENDER IT
+   return route('dev').then((data) => {
+
+      // RANDOMIZE BLOCK NUMBER & SET IS AS CURRENT
+      data.current = parseInt(localStorage.getItem('dev'));
+
+      // RETURN THE DATA OBJECT
+      return data;
+   });
+}
+
+// AUDIT LOGS FOR DEBUGGING
+function audit(data) {
+
+   var quests = {};
+
+   // LOOP THROUGH EACH BLOCK & WAYPOINT
+   for (var x = 0; x < data.route.path.length; x++) {
+      data.route.path[x].waypoints.forEach(waypoint => {
+         
+         if (waypoint.starts != undefined) {
+            waypoint.starts.forEach(quest => {
+               if (typeof(quest) == 'string') {
+                  quests[quest.toLowerCase()] = 0;
+               } else {
+                  quests[quest[0].toLowerCase()] = 0;
+               }
+            });
+         }
+
+      });
+   }
+
+   log(quests)
+}
+
 // EXPORT MODULES
 module.exports = {
    random: random,
-   specific: specific
+   specific: specific,
+   dev: dev
 }
 },{}],3:[function(require,module,exports){
 // MAKE INSTANCE DATA PUBLIC FOR ALL FUNCTIONS
 var instance_data;
 var cooldown;
+
+// WHEN DEBUGGING
+var dev = false;
 
 // MAP MOVEMENT
 function move_map(background) {
@@ -287,7 +319,7 @@ function browsing(data, render, settings, storage) {
          if (event.keyCode == 65) {
             
             // THE PREVIOUS BLOCK
-            var previous = instance_data.current - 1;
+            var previous = parseInt(instance_data.current - 1);
 
             // IF IT FALLS WITHIN RANGE, RENDER MAP AGAIN
             if (previous >= 0) {
@@ -295,8 +327,14 @@ function browsing(data, render, settings, storage) {
                // SET NEW CURRENT
                instance_data.current = previous;
 
-               // UPDATE STORAGE & SUBMENU
-               storage.update(instance_data);
+               // NORMALLY DO
+               if (dev == false) {
+
+                  // UPDATE STORAGE & SUBMENU
+                  storage.update(instance_data);
+
+               // IF DEBUGGING
+               } else { localStorage.setItem('dev', previous); log(previous); }
 
                // RENDER NEW MAP
                render.map(instance_data);
@@ -306,7 +344,7 @@ function browsing(data, render, settings, storage) {
          } else if (event.keyCode == 68) {
          
             // THE NEXT BLOCK
-            var next = instance_data.current + 1;
+            var next = parseInt(instance_data.current + 1);
 
             // IF IT FALLS WITHIN RANGE, RENDER MAP AGAIN
             if (next < instance_data.route.path.length) {
@@ -314,8 +352,14 @@ function browsing(data, render, settings, storage) {
                // SET NEW CURRENT
                instance_data.current = next;
 
-               // UPDATE STORAGE & SUBMENU
-               storage.update(instance_data);
+               // NORMALLY DO
+               if (dev == false) {
+
+                  // UPDATE STORAGE & SUBMENU
+                  storage.update(instance_data);
+
+               // IF DEBUGGING
+               } else { localStorage.setItem('dev', next); log(next); }
 
                // RENDER NEW MAP
                render.map(instance_data);

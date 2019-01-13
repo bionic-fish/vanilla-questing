@@ -2,6 +2,9 @@
 var instance_data;
 var cooldown;
 
+// WHEN DEBUGGING
+var dev = false;
+
 // MAP MOVEMENT
 function move_map(background) {
 
@@ -133,7 +136,7 @@ function browsing(data, render, settings, storage) {
          if (event.keyCode == 65) {
             
             // THE PREVIOUS BLOCK
-            var previous = instance_data.current - 1;
+            var previous = parseInt(instance_data.current - 1);
 
             // IF IT FALLS WITHIN RANGE, RENDER MAP AGAIN
             if (previous >= 0) {
@@ -141,8 +144,14 @@ function browsing(data, render, settings, storage) {
                // SET NEW CURRENT
                instance_data.current = previous;
 
-               // UPDATE STORAGE & SUBMENU
-               storage.update(instance_data);
+               // NORMALLY DO
+               if (dev == false) {
+
+                  // UPDATE STORAGE & SUBMENU
+                  storage.update(instance_data);
+
+               // IF DEBUGGING
+               } else { localStorage.setItem('dev', previous); log(previous); }
 
                // RENDER NEW MAP
                render.map(instance_data);
@@ -152,7 +161,7 @@ function browsing(data, render, settings, storage) {
          } else if (event.keyCode == 68) {
          
             // THE NEXT BLOCK
-            var next = instance_data.current + 1;
+            var next = parseInt(instance_data.current + 1);
 
             // IF IT FALLS WITHIN RANGE, RENDER MAP AGAIN
             if (next < instance_data.route.path.length) {
@@ -160,8 +169,14 @@ function browsing(data, render, settings, storage) {
                // SET NEW CURRENT
                instance_data.current = next;
 
-               // UPDATE STORAGE & SUBMENU
-               storage.update(instance_data);
+               // NORMALLY DO
+               if (dev == false) {
+
+                  // UPDATE STORAGE & SUBMENU
+                  storage.update(instance_data);
+
+               // IF DEBUGGING
+               } else { localStorage.setItem('dev', next); log(next); }
 
                // RENDER NEW MAP
                render.map(instance_data);
