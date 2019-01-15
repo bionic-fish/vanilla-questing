@@ -1,0 +1,1183 @@
+{
+   "path": [
+      {
+         "zone": "mulgore",
+         "experience": 5.19,
+         "waypoints": [
+            {
+               "coords": { "x": 44, "y": 76 },
+               "align": "bottom",
+               "header": "Camp Narache",
+               "starts": ["Rites of the Earthmother"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 39, "y": 82 },
+               "align": "bottom",
+               "header": "Antur Fallow",
+               "starts": ["A Task Unfinished"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 47, "y": 59 },
+               "align": "top",
+               "header": "Bloodhoof Village",
+               "ends": ["A Task Unfinished", "Rites of the Earthmother", ["Rite of Vision", "P1"]],
+               "starts": [["Rite of Vision", "P1-2"], "Sharing the Land", "Dangers of the Windfury", "Poison Water", "Swoop Hunting", "Mazzranache"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 59, "y": 62 },
+               "align": "top",
+               "header": "Morin Cloudstalker",
+               "starts": [["The Ravaged Caravan", "P1"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 54, "y": 66 },
+               "align": "bottom",
+               "header": "Water Well",
+               "objectives": [["Rite of Vision", "P2"]],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "mulgore",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 54, "y": 66 },
+               "align": "top",
+               "header": "Water Well",
+               "objectives": [["Rite of Vision", "P2"]],
+               "special": ["Stones"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 50, "y": 67 },
+               "align": "top",
+               "header": "Placeholder",
+               "objectives": [["Rite of Vision", "P2"]],
+               "special": ["Ambercorns"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 52, "y": 69 },
+               "align": "right",
+               "header": "Placeholder",
+               "objectives": ["Poison Water", "Mazzranache"],
+               "special": ["Wolf Heart"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 54, "y": 73 },
+               "align": "bottom",
+               "header": "Gnoll Encampment",
+               "objectives": ["Sharing the Land"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 63, "y": 70 },
+               "align": "bottom",
+               "header": "Haripie Encampment",
+               "objectives": ["Dangers of the Windfury"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "mulgore",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 63, "y": 70 },
+               "align": "bottom",
+               "header": "Haripie Encampment",
+               "objectives": ["Dangers of the Windfury"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 47, "y": 59 },
+               "header": "Bloodhoof Village",
+               "ends": [["Rite of Vision", "P2"], "Poison Water", "Sharing the Land", "Dangers of the Windfury"],
+               "starts": [["Rite of Vision", "P3"], "Dwarven Digging", "Winterhoof Cleansing"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 54, "y": 66 },
+               "align": "bottom",
+               "header": "Water Well",
+               "objectives": ["Winterhoof Cleansing"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "mulgore",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 54, "y": 66 },
+               "align": "bottom",
+               "header": "Water Well",
+               "objectives": ["Winterhoof Cleansing"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 47, "y": 59 },
+               "header": "Bloodhoof Village",
+               "ends": ["Winterhoof Cleansing"],
+               "starts": ["Thunderhorn Totem"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 59, "y": 58 },
+               "align": "bottom",
+               "header": "Placeholder",
+               "objectives": ["Thunderhorn Totem", "Mazzranache"],
+               "special": ["Cougar Femur"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 54, "y": 48 },
+               "align": "top",
+               "header": "Sealed Supply Crate",
+               "ends": [["The Ravaged Caravan", "P1"]],
+               "starts": [["The Ravaged Caravan", "P2"]],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "mulgore",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 54, "y": 48 },
+               "align": "right",
+               "header": "Sealed Supply Crate",
+               "ends": [["The Ravaged Caravan", "P1"]],
+               "starts": [["The Ravaged Caravan", "P2"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 47, "y": 59 },
+               "align": "bottom",
+               "header": "Bloodhoof Village",
+               "ends": ["Thunderhorn Totem"],
+               "starts": ["Thunderhorn Cleansing"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 44, "y": 48 },
+               "header": "Placeholder",
+               "objectives": ["Swoop Hunting", "Mazzranache"],
+               "special": ["Gizzard"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 44, "y": 45 },
+               "align": "top",
+               "header": "Water Well",
+               "objectives": ["Thunderhorn Cleansing"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 32, "y": 49 },
+               "align": "top",
+               "header": "Bael'dun Digsite",
+               "objectives": ["Dwarven Digging"],
+               "special": ["Break Picks at the Forge"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "mulgore",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 32, "y": 49 },
+               "align": "top",
+               "header": "Bael'dun Digsite",
+               "objectives": ["Dwarven Digging"],
+               "special": ["Break Picks at the Forge"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 47, "y": 59 },
+               "align": "bottom",
+               "header": "Bloodhoof Village",
+               "ends": ["Swoop Hunting", "Mazzranache", "Dwarven Digging", "Thunderhorn Cleansing"],
+               "starts": ["Wildmane Totem"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 59, "y": 62 },
+               "align": "bottom",
+               "header": "Morin Cloudstalker",
+               "ends": [["The Ravaged Caravan", "P2"]],
+               "starts": ["The Venture Co", "Supervisor Fizsprocket"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 64, "y": 60 },
+               "align": "right",
+               "header": "Placeholder",
+               "objectives": ["Wildmane Totem"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 62, "y": 47 },
+               "align": "right",
+               "header": "Venture Encampment",
+               "objectives": ["The Venture Co", "Supervisor Fizsprocket"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "mulgore",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 62, "y": 47 },
+               "align": "right",
+               "header": "Venture Encampment",
+               "objectives": ["The Venture Co", "Supervisor Fizsprocket"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 59, "y": 62 },
+               "align": "bottom",
+               "header": "Morin Cloudstalker",
+               "ends": ["The Venture Co", "Supervisor Fizsprocket"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 47, "y": 59 },
+               "align": "bottom",
+               "header": "Bloodhoof Village",
+               "ends": ["Wildmane Totem"],
+               "starts": ["Wildmane Cleansing", "The Hunter's Way"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 33, "y": 36 },
+               "header": "Bloodhoof Village",
+               "ends": [["Rite of Vision", "P3"]],
+               "starts": ["Rite of Wisdom"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 37, "y": 30 },
+               "align": "top",
+               "header": "Thunder Bluff Lifts",
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "thunderbluff",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 33, "y": 65 },
+               "align": "bottom",
+               "header": "Thunder Bluff Lifts",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 46, "y": 64 },
+               "align": "bottom",
+               "header": "Thunder Bluff Inn",
+               "special": ["Set Hearthstone"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 38, "y": 60 },
+               "align": "top",
+               "header": "Eyahn Eagletalon",
+               "starts": ["Preparation for Ceremony"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 30, "y": 52 },
+               "align": "top",
+               "header": "Thunder Bluff Outskirts",
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "mulgore",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 35, "y": 28 },
+               "align": "right",
+               "header": "Thunder Bluff Outskirts",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 31, "y": 24 },
+               "align": "top",
+               "header": "Placeholder",
+               "objectives": ["Preparation for Ceremony"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 43, "y": 14 },
+               "align": "top",
+               "header": "Water Well",
+               "objectives": ["Wildmane Cleansing"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 50, "y": 18 },
+               "align": "top",
+               "header": "The Golden Plains",
+               "objectives": ["The Hunter's Way"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 60, "y": 26 },
+               "align": "bottom",
+               "header": "Lorekeeper Raintotem",
+               "starts": ["A Sacred Burial"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 61, "y": 21 },
+               "align": "top",
+               "header": "Red Rocks",
+               "ends": ["Rite of Wisdom"],
+               "starts": ["Journey into Thunder Bluff"],
+               "objectives": ["A Sacred Burial"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "mulgore",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 61, "y": 21 },
+               "align": "top",
+               "header": "Red Rocks",
+               "ends": ["Rite of Wisdom"],
+               "starts": ["Journey into Thunder Bluff"],
+               "objectives": ["A Sacred Burial"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 60, "y": 26 },
+               "align": "bottom",
+               "header": "Lorekeeper Raintotem",
+               "ends": ["A Sacred Burial"],
+               "special": ["Hearthstone to Thunder Bluff"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "thunderbluff",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 46, "y": 64 },
+               "align": "bottom",
+               "header": "Thunder Bluff Inn",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 61, "y": 81 },
+               "align": "bottom",
+               "header": "Eyahn Eagletalon",
+               "ends": ["The Hunter's Way"],
+               "starts": ["Sergra Darkthorn"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 60, "y": 52 },
+               "header": "Cairne Bloodhoof",
+               "ends": ["Journey into Thunder Bluff"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 68, "y": 28 },
+               "align": "top",
+               "header": "Hamuul Runetotem",
+               "starts": ["The Barrens Oases"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 38, "y": 60 },
+               "header": "Eyahn Eagletalon",
+               "ends": ["Preparation for Ceremony"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 39, "y": 72 },
+               "header": "Thunder Bluff Outskirts",
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "mulgore",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 37, "y": 31 },
+               "align": "top",
+               "header": "Thunder Bluff Outskirts",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 47, "y": 59 },
+               "align": "bottom",
+               "header": "Bloodhoof Village",
+               "ends": ["Wildmane Cleansing"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 69, "y": 61 },
+               "align": "bottom",
+               "header": "Barrens Border",
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "barrens",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 41, "y": 59 },
+               "align": "bottom",
+               "header": "Mulgore Border",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 44, "y": 59 },
+               "align": "bottom",
+               "header": "Taurajo Flightpath",
+               "starts": ["Journey to Crossroads"],
+               "special": ["Learn the Flightpath"],
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 52, "y": 31 },
+               "header": "The Crossroads",
+               "ends": ["Journey to Crossroads", "Sergra Darkthorn", "The Barrens Oases"],
+               "special": ["Set Hearthstone"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 62, "y": 19 },
+               "align": "top",
+               "header": "Dutotar Border",
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "durotar",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 35, "y": 42 },
+               "align": "top",
+               "header": "Dutotar Border",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 52, "y": 42 },
+               "align": "right",
+               "header": "Razor Hill",
+               "starts": ["Encroachment"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 47, "y": 49 },
+               "align": "bottom",
+               "header": "Razormane Grounds",
+               "objectives": ["Encroachment"],
+               "special": ["Quillboars & Scouts"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 43, "y": 40 },
+               "header": "Razormane Grounds",
+               "objectives": ["Encroachment"],
+               "special": ["Battleguards & Dustrunners"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 43, "y": 30 },
+               "align": "top",
+               "header": "Misha Tor'kren",
+               "starts": ["Lost But Not Forgotten"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 35, "y": 29 },
+               "align": "top",
+               "header": "Southfury River",
+               "objectives": ["Lost But Not Forgotten"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "durotar",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 35, "y": 29 },
+               "align": "bottom",
+               "header": "Southfury River",
+               "objectives": ["Lost But Not Forgotten"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 43, "y": 30 },
+               "align": "bottom",
+               "header": "Misha Tor'kren",
+               "ends": ["Lost But Not Forgotten"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 46, "y": 23 },
+               "align": "top",
+               "header": "Rezlak",
+               "starts": ["Winds in the Desert"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 47, "y": 33 },
+               "align": "right",
+               "header": "Razorwind Canyon",
+               "objectives": ["Winds in the Desert"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 52, "y": 42 },
+               "align": "right",
+               "header": "Razor Hill",
+               "ends": ["Encroachment"],
+               "type": "hub"
+            }
+         ]
+      },
+      {
+         "zone": "durotar",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 52, "y": 42 },
+               "align": "right",
+               "header": "Razor Hill",
+               "ends": ["Encroachment"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 46, "y": 23 },
+               "align": "right",
+               "header": "Rezlak",
+               "ends": ["Winds in the Desert"],
+               "starts": ["Securing the Lines"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 42, "y": 19 },
+               "align": "left",
+               "header": "Rhinag",
+               "starts": ["Need for a Cure"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 46, "y": 12 },
+               "align": "top",
+               "header": "Orgrimmar Gates",
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "orgrimmar",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 49, "y": 92 },
+               "align": "right",
+               "header": "Orgrimmar Gates",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 47, "y": 53 },
+               "align": "right",
+               "header": "Kor'ghan",
+               "starts": ["Finding the Antidote"],
+               "special": ["Abandon Need for a Cure"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 32, "y": 38 },
+               "header": "Thrall",
+               "starts": ["Hidden Enemies"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "orgrimmar",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 32, "y": 38 },
+               "header": "Thrall",
+               "starts": ["Hidden Enemies"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 49, "y": 92 },
+               "header": "Orgrimmar Gates",
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "durotar",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 46, "y": 12 },
+               "header": "Orgrimmar Gates",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 44, "y": 18 },
+               "header": "Rocktusk Farm",
+               "objectives": ["Finding the Antidote"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 55, "y": 9 },
+               "align": "right",
+               "header": "Skull Rock Cave",
+               "objectives": ["Skull Rock", "Hidden Enemies"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 53, "y": 24 },
+               "align": "right",
+               "header": "Drygulch Ravine",
+               "objectives": ["Securing the Lines"],
+               "special": ["Die & take Ress Sickness"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "durotar",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 47, "y": 18 },
+               "align": "right",
+               "header": "Durotar Spirit Healer",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 46, "y": 23 },
+               "header": "Rezlak",
+               "ends": ["Securing the Lines"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 46, "y": 12 },
+               "header": "Orgrimmar Gates",
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "orgrimmar",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 49, "y": 92 },
+               "align": "right",
+               "header": "Orgrimmar Gates",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 36, "y": 37 },
+               "header": "Grommash Hold",
+               "starts": [["Hidden Enemies", "P2"]],
+               "ends": [["Hidden Enemies", "P1"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 47, "y": 53 },
+               "align": "right",
+               "header": "Cleft of Shadow",
+               "ends": ["Finding the Antidote"],
+               "objectives": [["Hidden Enemies", "P2"]],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "orgrimmar",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 47, "y": 53 },
+               "align": "right",
+               "header": "Cleft of Shadow",
+               "ends": ["Finding the Antidote"],
+               "objectives": [["Hidden Enemies", "P2"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 36, "y": 37 },
+               "header": "Grommash Hold",
+               "ends": [["Hidden Enemies", "P2"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 49, "y": 92 },
+               "align": "right",
+               "header": "Orgrimmar Gates",
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "durotar",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 46, "y": 12 },
+               "align": "top",
+               "header": "Orgrimmar Gates",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 42, "y": 19 },
+               "header": "Rhinag",
+               "ends": ["Need for a Cure"],
+               "starts": ["Need for a Cure"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 51, "y": 13 },
+               "align": "right",
+               "header": "Zeppelin Station",
+               "special": ["Sail to Tirisfal Glades"],
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "tirisfal",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 61, "y": 59 },
+               "header": "Zeppelin Station",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 62, "y": 52 },
+               "align": "right",
+               "header": "Brill",
+               "starts": ["Delivery to Silverpine"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 62, "y": 65 },
+               "align": "right",
+               "header": "Undercity Gates",
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "undercity",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 71, "y": 44 },
+               "align": "right",
+               "header": "Undercity Lifts",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 56, "y": 92 },
+               "align": "bottom",
+               "header": "Varimathras",
+               "starts": [["The Power to Destroy", "D"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 63, "y": 48 },
+               "header": "Undercity Flightpath",
+               "special": ["Learn the Flightpath"],
+               "type": "flightpath"
+            }
+         ]
+      },
+      {
+         "zone": "undercity",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 63, "y": 48 },
+               "align": "top",
+               "header": "Undercity Flightpath",
+               "special": ["Learn the Flightpath"],
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 71, "y": 44 },
+               "align": "top",
+               "header": "Undercity Lifts",
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "tirisfal",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 62, "y": 65 },
+               "align": "top",
+               "header": "Undercity Gates",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 55, "y": 73 },
+               "header": "Silverpine Border",
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "silverpine",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 67, "y": 6 },
+               "align": "top",
+               "header": "Tirisfal Border",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 56, "y": 9 },
+               "align": "top",
+               "header": "Deathstalker Erland",
+               "starts": [["Escorting Erland", "F"]],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 53, "y": 13 },
+               "header": "Rane Yorick",
+               "ends": [["Escorting Erland", "F"]],
+               "starts": ["The Deathstalkers Report"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "silverpine",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 53, "y": 13 },
+               "align": "right",
+               "header": "Rane Yorick",
+               "ends": [["Escorting Erland", "F"]],
+               "starts": ["The Deathstalkers Report"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 46, "y": 43 },
+               "align": "right",
+               "header": "Sepulcher Flightpath",
+               "special": ["Learn the Flightpath"],
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 43, "y": 41 },
+               "header": "Sepulcher",
+               "ends": ["The Deathstalkers Report", "Delivery to Silverpine", "Speak with Renferrel"],
+               "starts": [["A Recipe For Death", "P1"], "Speak with Renferrel", "Lost Deathstalkers", "The Dead Fields", "Zinge's Delivery", "Prove Your Worth"],
+               "type": "hub"
+            }
+         ]
+      },
+      {
+         "zone": "silverpine",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 43, "y": 41 },
+               "align": "bottom",
+               "header": "Sepulcher",
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 50, "y": 38 },
+               "align": "bottom",
+               "header": "Silverpine Crossroads",
+               "objectives": [["A Recipe For Death", "P1"], "Prove Your Worth"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 53, "y": 13 },
+               "align": "top",
+               "header": "Rane Yorick",
+               "ends": ["Lost Deathstalkers"],
+               "starts": ["Wild Hearts"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 56, "y": 13 },
+               "align": "top",
+               "header": "Silverpine Road",
+               "objectives": ["Wild Hearts"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "silverpine",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 56, "y": 13 },
+               "align": "bottom",
+               "header": "Silverpine Road",
+               "objectives": ["Wild Hearts"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 45, "y": 21 },
+               "align": "bottom",
+               "header": "The Dead Fields",
+               "objectives": ["The Dead Fields"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 36, "y": 15 },
+               "align": "bottom",
+               "header": "The Skittering Dark",
+               "objectives": [["A Recipe For Death", "P1"]],
+               "special": ["Die & take Ress Sickness"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "silverpine",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 43, "y": 41 },
+               "align": "bottom",
+               "header": "Sepulcher",
+               "ends": ["Wild Hearts", "The Dead Fields", "Prove Your Worth"],
+               "starts": ["Return to Quinn", "The Decrepit Ferry", ["Arugal's Folly", "P1"]],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 58, "y": 35 },
+               "align": "right",
+               "header": "Corpse Laden Boat",
+               "ends": ["The Decrepit Ferry"],
+               "starts": ["Rot Hide Clues"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 53, "y": 28 },
+               "header": "Dusty Spellbooks",
+               "objectives": [["Arugal's Folly", "P1"]],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 53, "y": 13 },
+               "align": "right",
+               "header": "The Ivar Patch",
+               "ends": ["Return to Quinn"],
+               "starts": ["Ivar the Foul"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 51, "y": 14 },
+               "header": "The Ivar Patch",
+               "objectives": ["Ivar the Foul"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "silverpine",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 51, "y": 14 },
+               "align": "top",
+               "header": "The Ivar Patch",
+               "objectives": ["Ivar the Foul"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 53, "y": 13 },
+               "align": "top",
+               "header": "Rane Yorick",
+               "ends": ["Ivar the Foul"],
+               "special": ["Hearthstone to Sepulcher"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 43, "y": 41 },
+               "header": "Sepulcher",
+               "ends": ["Rot Hide Clues", ["Arugal's Folly", "P1"]],
+               "starts": [["Arugal's Folly", "P2"], "The Engraved Ring", "Border Crossing"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 56, "y": 46 },
+               "align": "right",
+               "header": "Sepulcher Flightpath",
+               "objectives": [["Arugal's Folly", "P2"]],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "silverpine",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 56, "y": 46 },
+               "align": "right",
+               "header": "Sepulcher Flightpath",
+               "objectives": [["Arugal's Folly", "P2"]],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 43, "y": 41 },
+               "header": "Sepulcher",
+               "ends": [["Arugal's Folly", "P2"]],
+               "starts": [["Arugal's Folly", "P3"]],
+               "type": "hub"
+            }
+         ]
+      },
+      {
+         "zone": "silverpine",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 43, "y": 41 },
+               "header": "Sepulcher",
+               "ends": [["Arugal's Folly", "P2"]],
+               "starts": [["Arugal's Folly", "P3"]],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 56, "y": 46 },
+               "align": "right",
+               "header": "Sepulcher Flightpath",
+               "objectives": [["Arugal's Folly", "P3"]],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 50, "y": 60 },
+               "align": "bottom",
+               "header": "Dalaran Crate",
+               "ends": ["Border Crossing"],
+               "starts": ["Maps and Runes"],
+               "special": ["Die and Corpse Res"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "silverpine",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 43, "y": 41 },
+               "header": "Sepulcher",
+               "ends": [["Arugal's Folly", "P2"], "Maps and Runes", "Dalar's Analysis", "Dalaran's Intentions"],
+               "starts": ["Dalar's Analysis", "Dalaran's Intentions"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 46, "y": 44 },
+               "align": "bottom",
+               "header": "Sepulcher Flightpath",
+               "special": ["Fly to Undercity"],
+               "type": "flightpath"
+            }
+         ]
+      },
+      {
+         "zone": "undercity",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 63, "y": 48 },
+               "align": "top",
+               "header": "Undercity Flightpath",
+               "special": ["Learn the Flightpath"],
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 49, "y": 69 },
+               "align": "bottom",
+               "header": "The Apothecarium",
+               "ends": [["A Recipe For Death", "P1"], "Zinge's Delivery"],
+               "starts": [["A Recipe For Death", "P2"], "Sample for Helbrim"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 71, "y": 44 },
+               "align": "right",
+               "header": "Undercity Lifts",
+               "type": "travel"
+            }
+         ]
+      },
+      {
+         "zone": "tirisfal",
+         "experience": 0,
+         "waypoints": [
+            {
+               "coords": { "x": 62, "y": 65 },
+               "align": "right",
+               "header": "Undercity Gates",
+               "type": "travel"
+            },
+            {
+               "coords": { "x": 60, "y": 52 },
+               "align": "right",
+               "header": "Brill",
+               "ends": ["The Engraved Ring"],
+               "starts": ["Raleigh and the Undercity"],
+               "special": ["Hearthstone to Crossroads"],
+               "type": "hub"
+            }
+         ]
+      }
+   ]
+}

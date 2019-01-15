@@ -15,7 +15,7 @@
                "coords": { "x": 61, "y": 48 },
                "align": "right",
                "header": "Porthannius",
-               "starts": ["Delanaar Delivery"],
+               "starts": ["Dolanaar Delivery"],
                "type": "quest"
             },
             {
@@ -70,7 +70,7 @@
                "coords": { "x": 56, "y": 60 },
                "align": "bottom",
                "header": "Dolanaar",
-               "ends": ["Delanaar Delivery", ["Crown of the Earth", "P1"]],
+               "ends": ["Dolanaar Delivery", ["Crown of the Earth", "P1"]],
                "starts": [["Crown of the Earth", "P2"]],
                "type": "hub"
             },

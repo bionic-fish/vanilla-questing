@@ -24,6 +24,13 @@ function route(race) {
          $.getJSON('../data/horde/quests.json'),
          $.getJSON('../data/horde/route.json'),
       ];
+
+   // DEVELOPMENT
+   } else if (race == 'dev') {
+      promises = [
+         $.getJSON('../data/dev/quests.json'),
+         $.getJSON('../data/dev/route.json'),
+      ];
    }
 
    // WAIT FOR THE REQUESTED PROMISE TO RESOLVE
