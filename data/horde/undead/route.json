@@ -2,10 +2,17 @@
    "path": [
       {
          "zone": "tirisfal",
-         "experience": 5.91,
+         "experience": 5.95,
          "waypoints": [
             {
+               "coords": { "x": 32, "y": 66 },
+               "header": "Executor Arren",
+               "starts": ["Vital Intelligence"],
+               "type": "quest"
+            },
+            {
                "coords": { "x": 38, "y": 57 },
+               "align": "top",
                "header": "Calvin Montague",
                "starts": ["A Rogue's Deal"],
                "type": "quest"
@@ -37,7 +44,7 @@
       },
       {
          "zone": "tirisfal",
-         "experience": 0,
+         "experience": 6.15,
          "waypoints": [
             {
                "coords": { "x": 60, "y": 52 },
@@ -65,7 +72,7 @@
       },
       {
          "zone": "tirisfal",
-         "experience": 0,
+         "experience": 6.77,
          "waypoints": [
             {
                "coords": { "x": 49, "y": 50 },
@@ -98,7 +105,7 @@
       },
       {
          "zone": "tirisfal",
-         "experience": 0,
+         "experience": 7.50,
          "waypoints": [
             {
                "coords": { "x": 59, "y": 31 },
@@ -122,7 +129,7 @@
       },
       {
          "zone": "durotar",
-         "experience": 0,
+         "experience": 7.98,
          "waypoints": [
             {
                "coords": { "x": 51, "y": 13 },
@@ -182,7 +189,7 @@
       },
       {
          "zone": "durotar",
-         "experience": 0,
+         "experience": 8.67,
          "waypoints": [
             {
                "coords": { "x": 35, "y": 29 },
@@ -230,7 +237,7 @@
       },
       {
          "zone": "durotar",
-         "experience": 0,
+         "experience": 9.24,
          "waypoints": [
             {
                "coords": { "x": 49, "y": 40 },
@@ -264,7 +271,7 @@
       },
       {
          "zone": "orgrimmar",
-         "experience": 0,
+         "experience": 9.39,
          "waypoints": [
             {
                "coords": { "x": 49, "y": 92 },
@@ -290,7 +297,7 @@
       },
       {
          "zone": "orgrimmar",
-         "experience": 0,
+         "experience": 9.39,
          "waypoints": [
             {
                "coords": { "x": 32, "y": 38 },
@@ -307,7 +314,7 @@
       },
       {
          "zone": "durotar",
-         "experience": 0,
+         "experience": 9.39,
          "waypoints": [
             {
                "coords": { "x": 46, "y": 12 },
@@ -339,7 +346,7 @@
       },
       {
          "zone": "durotar",
-         "experience": 0,
+         "experience": 9.97,
          "waypoints": [
             {
                "coords": { "x": 53, "y": 24 },
@@ -370,7 +377,7 @@
       },
       {
          "zone": "orgrimmar",
-         "experience": 0,
+         "experience": 10.09,
          "waypoints": [
             {
                "coords": { "x": 49, "y": 92 },
@@ -397,7 +404,7 @@
       },
       {
          "zone": "orgrimmar",
-         "experience": 0,
+         "experience": 10.21,
          "waypoints": [
             {
                "coords": { "x": 47, "y": 53 },
@@ -423,7 +430,7 @@
       },
       {
          "zone": "durotar",
-         "experience": 0,
+         "experience": 10.27,
          "waypoints": [
             {
                "coords": { "x": 46, "y": 12 },
@@ -443,7 +450,7 @@
       },
       {
          "zone": "tirisfal",
-         "experience": 0,
+         "experience": 10.34,
          "waypoints": [
             {
                "coords": { "x": 60, "y": 52 },
@@ -485,7 +492,7 @@
       },
       {
          "zone": "tirisfal",
-         "experience": 0,
+         "experience": 10.78,
          "waypoints": [
             {
                "coords": { "x": 36, "y": 43 },
@@ -525,7 +532,7 @@
       },
       {
          "zone": "tirisfal",
-         "experience": 0,
+         "experience": 11.00,
          "waypoints": [
             {
                "coords": { "x": 47, "y": 29 },
@@ -553,7 +560,7 @@
       },
       {
          "zone": "tirisfal",
-         "experience": 0,
+         "experience": 11.78,
          "waypoints": [
             {
                "coords": { "x": 52, "y": 68 },
@@ -598,7 +605,7 @@
                "type": "objective"
             },
             {
-               "coords": { "x": 79, "y": 56 },
+               "coords": { "x": 86, "y": 53 },
                "align": "top",
                "header": "Venomweb Vale",
                "objectives": [["A New Plague", "P2"]],
@@ -609,7 +616,7 @@
       },
       {
          "zone": "tirisfal",
-         "experience": 0,
+         "experience": 12.36,
          "waypoints": [
             {
                "coords": { "x": 60, "y": 52 },
@@ -636,7 +643,7 @@
       },
       {
          "zone": "undercity",
-         "experience": 0,
+         "experience": 12.68,
          "waypoints": [
             {
                "coords": { "x": 71, "y": 44 },
@@ -667,7 +674,7 @@
       },
       {
          "zone": "undercity",
-         "experience": 0,
+         "experience": 12.69,
          "waypoints": [
             {
                "coords": { "x": 63, "y": 48 },
@@ -685,7 +692,7 @@
       },
       {
          "zone": "tirisfal",
-         "experience": 0,
+         "experience": 12.69,
          "waypoints": [
             {
                "coords": { "x": 62, "y": 65 },
@@ -702,7 +709,7 @@
       },
       {
          "zone": "silverpine",
-         "experience": 0,
+         "experience": 12.69,
          "waypoints": [
             {
                "coords": { "x": 67, "y": 6 },
@@ -728,7 +735,7 @@
       },
       {
          "zone": "silverpine",
-         "experience": 0,
+         "experience": 12.86,
          "waypoints": [
             {
                "coords": { "x": 53, "y": 13 },
@@ -756,7 +763,7 @@
       },
       {
          "zone": "silverpine",
-         "experience": 0,
+         "experience": 12.98,
          "waypoints": [
             {
                "coords": { "x": 43, "y": 41 },
@@ -768,7 +775,7 @@
                "coords": { "x": 50, "y": 38 },
                "align": "bottom",
                "header": "Silverpine Crossroads",
-               "objectives": [["A Recipe For Death", "P1"], "Prove Your Worth"],
+               "objectives": ["Prove Your Worth"],
                "type": "objective"
             },
             {
@@ -790,7 +797,7 @@
       },
       {
          "zone": "silverpine",
-         "experience": 0,
+         "experience": 13.11,
          "waypoints": [
             {
                "coords": { "x": 56, "y": 13 },
@@ -818,7 +825,7 @@
       },
       {
          "zone": "silverpine",
-         "experience": 0,
+         "experience": 13.39,
          "waypoints": [
             {
                "coords": { "x": 43, "y": 41 },
@@ -860,7 +867,7 @@
       },
       {
          "zone": "silverpine",
-         "experience": 0,
+         "experience": 13.88,
          "waypoints": [
             {
                "coords": { "x": 51, "y": 14 },
@@ -895,7 +902,7 @@
       },
       {
          "zone": "silverpine",
-         "experience": 0,
+         "experience": 14.13,
          "waypoints": [
             {
                "coords": { "x": 56, "y": 46 },
@@ -915,7 +922,7 @@
       },
       {
          "zone": "silverpine",
-         "experience": 0,
+         "experience": 14.21,
          "waypoints": [
             {
                "coords": { "x": 43, "y": 41 },
@@ -944,7 +951,7 @@
       },
       {
          "zone": "silverpine",
-         "experience": 0,
+         "experience": 14.37,
          "waypoints": [
             {
                "coords": { "x": 43, "y": 41 },
@@ -964,7 +971,7 @@
       },
       {
          "zone": "undercity",
-         "experience": 0,
+         "experience": 14.53,
          "waypoints": [
             {
                "coords": { "x": 63, "y": 48 },
@@ -986,7 +993,7 @@
       },
       {
          "zone": "tirisfal",
-         "experience": 0,
+         "experience": 14.60,
          "waypoints": [
             {
                "coords": { "x": 60, "y": 52 },
@@ -1005,7 +1012,7 @@
       },
       {
          "zone": "durotar",
-         "experience": 0,
+         "experience": 14.65,
          "waypoints": [
             {
                "coords": { "x": 51, "y": 13 },
@@ -1032,7 +1039,7 @@
       },
       {
          "zone": "barrens",
-         "experience": 0,
+         "experience": 14.69,
          "waypoints": [
             {
                "coords": { "x": 62, "y": 20 },
@@ -1047,6 +1054,7 @@
                "align": "right",
                "header": "The Crossroads",
                "ends": ["Sample for Helbrim", "Crossroads Conscription"],
+               "special": ["Level 14.85"],
                "type": "hub"
             }
          ]

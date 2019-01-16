@@ -2,7 +2,7 @@
    "path": [
       {
          "zone": "durotar",
-         "experience": 0,
+         "experience": 5.51,
          "waypoints": [
             {
                "coords": { "x": 43, "y": 69 },
@@ -38,7 +38,7 @@
       },
       {
          "zone": "durotar",
-         "experience": 0,
+         "experience": 5.55,
          "waypoints": [
             {
                "coords": { "x": 49, "y": 40 },
@@ -59,7 +59,7 @@
       },
       {
          "zone": "durotar",
-         "experience": 0,
+         "experience": 6.16,
          "waypoints": [
             {
                "coords": { "x": 58, "y": 57 },
@@ -88,7 +88,7 @@
       },
       {
          "zone": "durotar",
-         "experience": 0,
+         "experience": 6.52,
          "waypoints": [
             {
                "coords": { "x": 49, "y": 40 },
@@ -129,7 +129,7 @@
       },
       {
          "zone": "durotar",
-         "experience": 0,
+         "experience": 6.80,
          "waypoints": [
             {
                "coords": { "x": 48, "y": 77 },
@@ -185,7 +185,7 @@
       },
       {
          "zone": "durotar",
-         "experience": 0,
+         "experience": 7.33,
          "waypoints": [
             {
                "coords": { "x": 69, "y": 72 },
@@ -213,7 +213,7 @@
       },
       {
          "zone": "durotar",
-         "experience": 0,
+         "experience": 8.40,
          "waypoints": [
             {
                "coords": { "x": 52, "y": 42 },
@@ -256,7 +256,7 @@
       },
       {
          "zone": "durotar",
-         "experience": 0,
+         "experience": 9.18,
          "waypoints": [
             {
                "coords": { "x": 35, "y": 29 },
@@ -303,7 +303,7 @@
       },
       {
          "zone": "durotar",
-         "experience": 0,
+         "experience": 9.46,
          "waypoints": [
             {
                "coords": { "x": 47, "y": 33 },
@@ -344,7 +344,7 @@
       },
       {
          "zone": "orgrimmar",
-         "experience": 0,
+         "experience": 9.87,
          "waypoints": [
             {
                "coords": { "x": 49, "y": 92 },
@@ -370,7 +370,7 @@
       },
       {
          "zone": "orgrimmar",
-         "experience": 0,
+         "experience": 9.87,
          "waypoints": [
             {
                "coords": { "x": 32, "y": 38 },
@@ -387,7 +387,7 @@
       },
       {
          "zone": "durotar",
-         "experience": 0,
+         "experience": 9.87,
          "waypoints": [
             {
                "coords": { "x": 46, "y": 12 },
@@ -419,7 +419,7 @@
       },
       {
          "zone": "durotar",
-         "experience": 0,
+         "experience": 10.13,
          "waypoints": [
             {
                "coords": { "x": 55, "y": 9 },
@@ -465,7 +465,7 @@
       },
       {
          "zone": "orgrimmar",
-         "experience": 0,
+         "experience": 10.64,
          "waypoints": [
             {
                "coords": { "x": 49, "y": 92 },
@@ -484,7 +484,8 @@
                "coords": { "x": 47, "y": 53 },
                "align": "right",
                "header": "Cleft of Shadow",
-               "ends": ["Finding the Antidote"],
+               "ends": ["Finding the Antidote", "Neeru Fireblade"],
+               "starts": ["Ak'Zeloth"],
                "objectives": [["Hidden Enemies", "P2"]],
                "type": "quest"
             }
@@ -492,7 +493,7 @@
       },
       {
          "zone": "orgrimmar",
-         "experience": 0,
+         "experience": 10.82,
          "waypoints": [
             {
                "coords": { "x": 47, "y": 53 },
@@ -518,7 +519,7 @@
       },
       {
          "zone": "durotar",
-         "experience": 0,
+         "experience": 10.88,
          "waypoints": [
             {
                "coords": { "x": 46, "y": 12 },
@@ -544,7 +545,7 @@
       },
       {
          "zone": "tirisfal",
-         "experience": 0,
+         "experience": 11.0,
          "waypoints": [
             {
                "coords": { "x": 61, "y": 59 },
@@ -560,19 +561,6 @@
                "special": ["Set Hearthstone", "Buy 1x Coarse Thread"],
                "type": "hub"
             },
-            {
-               "coords": { "x": 58, "y": 51 },
-               "align": "top",
-               "header": "Deathguard Dillinger",
-               "starts": ["A Putrid Task"],
-               "type": "quest"
-            }
-         ]
-      },
-      {
-         "zone": "tirisfal",
-         "experience": 0,
-         "waypoints": [
             {
                "coords": { "x": 58, "y": 51 },
                "align": "top",
@@ -596,7 +584,7 @@
       },
       {
          "zone": "tirisfal",
-         "experience": 0,
+         "experience": 11.13,
          "waypoints": [
             {
                "coords": { "x": 53, "y": 49 },
@@ -632,7 +620,7 @@
       },
       {
          "zone": "tirisfal",
-         "experience": 0,
+         "experience": 11.25,
          "waypoints": [
             {
                "coords": { "x": 60, "y": 52 },
@@ -658,7 +646,7 @@
       },
       {
          "zone": "tirisfal",
-         "experience": 0,
+         "experience": 11.35,
          "waypoints": [
             {
                "coords": { "x": 59, "y": 31 },
@@ -706,7 +694,7 @@
       },
       {
          "zone": "tirisfal",
-         "experience": 0,
+         "experience": 11.65,
          "waypoints": [
             {
                "coords": { "x": 50, "y": 36 },
@@ -733,7 +721,7 @@
       },
       {
          "zone": "tirisfal",
-         "experience": 0,
+         "experience": 11.69,
          "waypoints": [
             {
                "coords": { "x": 60, "y": 52 },
@@ -762,7 +750,7 @@
       },
       {
          "zone": "tirisfal",
-         "experience": 0,
+         "experience": 12.44,
          "waypoints": [
             {
                "coords": { "x": 76, "y": 61 },
@@ -802,7 +790,7 @@
       },
       {
          "zone": "tirisfal",
-         "experience": 0,
+         "experience": 12.68,
          "waypoints": [
             {
                "coords": { "x": 60, "y": 52 },
@@ -819,7 +807,7 @@
       },
       {
          "zone": "undercity",
-         "experience": 0,
+         "experience": 12.77,
          "waypoints": [
             {
                "coords": { "x": 71, "y": 44 },
@@ -850,7 +838,7 @@
       },
       {
          "zone": "undercity",
-         "experience": 0,
+         "experience": 12.79,
          "waypoints": [
             {
                "coords": { "x": 63, "y": 48 },
@@ -868,7 +856,7 @@
       },
       {
          "zone": "tirisfal",
-         "experience": 0,
+         "experience": 12.79,
          "waypoints": [
             {
                "coords": { "x": 62, "y": 65 },
@@ -885,7 +873,7 @@
       },
       {
          "zone": "silverpine",
-         "experience": 0,
+         "experience": 12.79,
          "waypoints": [
             {
                "coords": { "x": 67, "y": 6 },
@@ -911,7 +899,7 @@
       },
       {
          "zone": "silverpine",
-         "experience": 0,
+         "experience": 12.97,
          "waypoints": [
             {
                "coords": { "x": 53, "y": 13 },
@@ -939,7 +927,7 @@
       },
       {
          "zone": "silverpine",
-         "experience": 0,
+         "experience": 13.07,
          "waypoints": [
             {
                "coords": { "x": 43, "y": 41 },
@@ -951,7 +939,7 @@
                "coords": { "x": 50, "y": 38 },
                "align": "bottom",
                "header": "Silverpine Crossroads",
-               "objectives": [["A Recipe For Death", "P1"], "Prove Your Worth"],
+               "objectives": ["Prove Your Worth"],
                "type": "objective"
             },
             {
@@ -973,7 +961,7 @@
       },
       {
          "zone": "silverpine",
-         "experience": 0,
+         "experience": 13.28,
          "waypoints": [
             {
                "coords": { "x": 56, "y": 13 },
@@ -1001,7 +989,7 @@
       },
       {
          "zone": "silverpine",
-         "experience": 0,
+         "experience": 13.43,
          "waypoints": [
             {
                "coords": { "x": 43, "y": 41 },
@@ -1044,7 +1032,7 @@
       },
       {
          "zone": "silverpine",
-         "experience": 0,
+         "experience": 13.86,
          "waypoints": [
             {
                "coords": { "x": 51, "y": 14 },
@@ -1065,7 +1053,7 @@
       },
       {
          "zone": "silverpine",
-         "experience": 0,
+         "experience": 13.92,
          "waypoints": [
             {
                "coords": { "x": 43, "y": 41 },
@@ -1081,6 +1069,48 @@
                "header": "Sepulcher Flightpath",
                "objectives": [["Arugal's Folly", "P2"]],
                "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "silverpine",
+         "experience": 14.09,
+         "waypoints": [
+            {
+               "coords": { "x": 56, "y": 46 },
+               "align": "right",
+               "header": "Sepulcher Flightpath",
+               "objectives": [["Arugal's Folly", "P2"]],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 43, "y": 41 },
+               "align": "top",
+               "header": "Sepulcher",
+               "ends": [["Arugal's Folly", "P2"]],
+               "starts": [["Arugal's Folly", "P3"]],
+               "type": "hub"
+            }
+         ]
+      },
+      {
+         "zone": "silverpine",
+         "experience": 14.17,
+         "waypoints": [
+            {
+               "coords": { "x": 43, "y": 41 },
+               "align": "top",
+               "header": "Sepulcher",
+               "ends": [["Arugal's Folly", "P2"]],
+               "starts": [["Arugal's Folly", "P3"]],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 56, "y": 46 },
+               "align": "right",
+               "header": "Sepulcher Flightpath",
+               "objectives": [["Arugal's Folly", "P3"]],
+               "type": "objective"
             },
             {
                "coords": { "x": 50, "y": 60 },
@@ -1095,13 +1125,13 @@
       },
       {
          "zone": "silverpine",
-         "experience": 0,
+         "experience": 14.32,
          "waypoints": [
             {
                "coords": { "x": 43, "y": 41 },
                "align": "top",
                "header": "Sepulcher",
-               "ends": [["Arugal's Folly", "P2"], "Maps and Runes", "Dalar's Analysis", "Dalaran's Intentions"],
+               "ends": [["Arugal's Folly", "P3"], "Maps and Runes", "Dalar's Analysis", "Dalaran's Intentions"],
                "starts": ["Dalar's Analysis", "Dalaran's Intentions"],
                "type": "hub"
             },
@@ -1116,7 +1146,7 @@
       },
       {
          "zone": "undercity",
-         "experience": 0,
+         "experience": 14.48,
          "waypoints": [
             {
                "coords": { "x": 63, "y": 48 },
@@ -1130,20 +1160,21 @@
                "header": "The Apothecarium",
                "ends": [["A Recipe For Death", "P1"], "Zinge's Delivery"],
                "starts": [["A Recipe For Death", "P2"], "Sample for Helbrim"],
-               "special": ["Hearthstone to Brill"],
                "type": "quest"
             },
             {
-               "coords": { "x": 71, "y": 44 },
-               "align": "top",
-               "header": "Undercity Lifts",
-               "type": "travel"
+               "coords": { "x": 56, "y": 92 },
+               "align": "bottom",
+               "header": "Varimathras",
+               "starts": [["The Power to Destry", "D"]],
+               "special": ["Hearthstone to Brill"],
+               "type": "quest"
             }
          ]
       },
       {
          "zone": "tirisfal",
-         "experience": 0,
+         "experience": 14.55,
          "waypoints": [
             {
                "coords": { "x": 60, "y": 52 },
@@ -1164,7 +1195,7 @@
       },
       {
          "zone": "durotar",
-         "experience": 0,
+         "experience": 14.60,
          "waypoints": [
             {
                "coords": { "x": 51, "y": 13 },
@@ -1191,7 +1222,7 @@
       },
       {
          "zone": "barrens",
-         "experience": 0,
+         "experience": 14.68,
          "waypoints": [
             {
                "coords": { "x": 62, "y": 20 },
@@ -1211,8 +1242,17 @@
             },
             {
                "coords": { "x": 50, "y": 32 },
+               "align": "bottom",
                "header": "Barrens Spirit Healer",
                "type": "travel"
+            },
+            {
+               "coords": { "x": 52, "y": 30 },
+               "align": "right",
+               "header": "Crossroads",
+               "ends": ["Sample for Helbrim", "Crossroads Conscription"],
+               "special": ["Level 14.89"],
+               "type": "hub"
             }
          ]
       }
