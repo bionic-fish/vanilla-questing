@@ -1051,10 +1051,7 @@
             },
             {
                "coords": { "x": 52, "y": 31 },
-               "align": "right",
                "header": "The Crossroads",
-               "ends": ["Sample for Helbrim", "Crossroads Conscription"],
-               "special": ["Level 14.85"],
                "type": "hub"
             }
          ]

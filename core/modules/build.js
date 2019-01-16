@@ -9,9 +9,10 @@ function route(race) {
    // ALLIANCE BUILD
    if ($.inArray(race, alliance) != -1) {
 
-      // CONVERT SOME RACE NAMES TO THEIR SHORTHANDS
+      // CONVERT DWARF & GNOME QUERIES TO 'GNORF'
       if (race == 'dwarf' || race == 'gnome') { race = 'gnorf'; }
 
+      // FIND RELEVANT FILES
       promises = [
          $.getJSON('../data/alliance/quests.json'),
          $.getJSON('../data/alliance/' + race + '.json'),
@@ -20,9 +21,15 @@ function route(race) {
 
    // HORDE BUILD
    } else if ($.inArray(race, horde) != -1) {
+  
+      // CONVERT TROLL AND ORC QUERIES TO 'TRORC'
+      if (race == 'troll' || race == 'orc') { race = 'trorc'; }
+
+      // FIND RELEVANT FILES
       promises = [
          $.getJSON('../data/horde/quests.json'),
-         $.getJSON('../data/horde/route.json'),
+         $.getJSON('../data/horde/' + race + '.json'),
+         $.getJSON('../data/horde/shared.json'),
       ];
 
    // DEVELOPMENT
@@ -101,6 +108,8 @@ function dev() {
       // RANDOMIZE BLOCK NUMBER & SET IS AS CURRENT
       data.current = parseInt(localStorage.getItem('dev'));
 
+      audit(data);
+
       // RETURN THE DATA OBJECT
       return data;
    });
@@ -112,7 +121,7 @@ function audit(data) {
    var quests = {};
 
    // LOOP THROUGH EACH BLOCK & WAYPOINT
-   for (var x = 0; x < data.route.path.length; x++) {
+   for (var x = 0; x < 20; x++) {
       data.route.path[x].waypoints.forEach(waypoint => {
          
          if (waypoint.starts != undefined) {

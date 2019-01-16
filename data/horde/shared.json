@@ -2,11 +2,14 @@
    "path": [
       {
          "zone": "barrens",
-         "experience": 15.03,
+         "experience": 14.85,
          "waypoints": [
             {
                "coords": { "x": 52, "y": 31 },
                "header": "The Crossroads",
+               "ends": ["Sample for Helbrim", "Crossroads Conscription"],
+               "starts": ["Plainstrider Menace", "Lost in Battle", "The Forgotten Pools", "Raptor Thieves", "Disrupt the Attacks", "Harpy Raiders", "Fungal Spores", "Wharfmaster Dizzywig"],
+               "special": ["Set Hearthstone", "Learn the Flightpath"],
                "type": "hub"
             },
             {
@@ -29,6 +32,19 @@
                "header": "Thorn Hill",
                "objectives": ["Disrupt the Attacks"],
                "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "barrens",
+         "experience": 15.22,
+         "waypoints": [
+            {
+               "coords": { "x": 55, "y": 24 },
+               "align": "right",
+               "header": "Thorn Hill",
+               "objectives": ["Disrupt the Attacks"],
+               "type": "objective"
             },
             {
                "coords": { "x": 45, "y": 28 },
@@ -36,18 +52,6 @@
                "starts": ["Kolkar Leaders", "Centaur Bracers"],
                "type": "quest"
             },
-            {
-               "coords": { "x": 45, "y": 23 },
-               "header": "The Forgotten Pools",
-               "objectives": ["Centaur Bracers", "The Forgotten Pools", "Fungal Spores"],
-               "type": "objective"
-            }
-         ]
-      },
-      {
-         "zone": "barrens",
-         "experience": 15.35,
-         "waypoints": [
             {
                "coords": { "x": 45, "y": 23 },
                "align": "right",
@@ -72,7 +76,7 @@
       },
       {
          "zone": "barrens",
-         "experience": 15.44,
+         "experience": 15.38,
          "waypoints": [
             {
                "coords": { "x": 40, "y": 17 },
@@ -101,14 +105,14 @@
                "align": "right",
                "header": "Ak'Zeloth",
                "ends": ["The Demon Seed"],
-               "special": ["Hearthstone to Crossroads"],
+               "special": ["Only Orcs & Trolls have this quest", "Hearthstone to Crossroads"],
                "type": "quest"
             }
          ]
       },
       {
          "zone": "barrens",
-         "experience": 15.77,
+         "experience": 15.70,
          "waypoints": [
             {
                "coords": { "x": 52, "y": 31 },
