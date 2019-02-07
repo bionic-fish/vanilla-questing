@@ -1,3 +1,6 @@
+// FETCH JQUERY
+var $ = require("jquery");
+
 // RENDER MAP
 function map(data) {
 
@@ -310,6 +313,7 @@ function find_hearthstone(data) {
    return location;
 }
 
+// FIND POSITION
 function find_pos(align) {
    
    // FIGURE OUT AVERAGE XY POSITION

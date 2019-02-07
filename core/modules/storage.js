@@ -1,3 +1,6 @@
+// FETCH JQUERY
+var $ = require("jquery");
+
 // MAKE STORAGE KEY GLOBALLY AVAILABLE
 var key;
 
@@ -48,12 +51,12 @@ function check(storage_key) {
       // LOOP THROUGH EACH CHARACTER
       Object.keys(storage).forEach(character => {
          
-         // GENERATE A SELECTOR
-         container += '<div id="opt" profile="' + character + '"><div class="split"><div><img src="interface/img/icons/' + storage[character].race + '.png"><span id="char-name">' + capitalize(character) + '</span></div><div>Level <span id="char-lvl">' + storage[character].level + '</span></div></div></div>';
+         // GENERATE & PUSH A SELECTOR
+         container += '<div rel="' + character + '"><img src="interface/img/icons/' + storage[character].race + '.png">' + capitalize(character) + '</div>';
       });
 
       // RENDER THEM IN
-      $('#storage').html(container);
+      $('#load').html(container);
    }
 }
 
@@ -68,7 +71,7 @@ function update(data) {
       var block = data.current;
 
       // FIND THE LOADED PROFILES NAME
-      var profile = $('#loaded').attr('profile');
+      var profile = $('#loaded').attr('rel');
 
       // CONVERT STORAGE TO JSON
       var storage = JSON.parse(localStorage.getItem(key));

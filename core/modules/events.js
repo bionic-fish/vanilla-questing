@@ -1,123 +1,11 @@
+// FETCH JQUERY
+var $ = require("jquery");
+
 // MAKE INSTANCE DATA PUBLIC FOR ALL FUNCTIONS
 var instance_data;
-var cooldown;
 
-// WHEN DEBUGGING
+// SET TO TRUE WHEN DEBUGGING
 var dev = false;
-
-// MAP MOVEMENT
-function move_map(background) {
-
-   // ASSIST VARS
-   var moving = false;
-   var lastevent = null;
-
-   // MOUSEDOWN
-   $('#map').on('mousedown touchstart', (event) => {
-      
-      // BLOCK DEFAULT ACTION
-      event.preventDefault();
-
-      // TURN OFF SUBMENU FOR -- FIX FOR TABLET/MOBILE DEVICES
-      $('#submenu').css('display', 'none');
-
-      // ENABLE MAP MOVEMENT & SAVE TRIGGER EVENT
-      moving = true;
-      lastevent = event;
-   });
-
-   // MOUSEMOVE -- IF MOUSEDOWN IS ACTIVE
-   $('#map').on('mousemove touchmove', (event) => {
-
-      // BLOCK DEFAULT ACTION
-      event.preventDefault();
-
-      // MODIFY EVENT VARIABLE ON TABLET/MOBILE DEVICES
-      if (event.type == 'touchmove') { event = event.touches[0]; }
-      
-      // IF MOVING IS ENABLED
-      if (moving === true) {
-
-         // STARTING COORDS
-         var starting = {
-            x: lastevent.clientX,
-            y: lastevent.clientY
-         }
-
-         // ENDING COORDS
-         var ending = {
-            x: event.clientX,
-            y: event.clientY
-         }
-
-         // DELTA COORDS
-         var delta = {
-            x: starting.x - ending.x,
-            y: starting.y - ending.y,
-         }
-
-         // CURRENT POSITION
-         var position = {
-            x: $('#map').css('left').replace('px', ''),
-            y: $('#map').css('top').replace('px', '')
-         }
-
-         // NEW POSITION
-         var new_position = {
-            x: position.x - delta.x,
-            y: position.y - delta.y
-         }
-
-         // LIMIT THE MOVEMENT
-         var limit = {
-            x: -(background.width - $('#map-outer').width()),
-            y: -(background.height - $('#map-outer').height())
-         }
-
-         // RECALIBRATE OVERFLOW
-         if (new_position.x < limit.x) { new_position.x = limit.x; }
-         if (new_position.y < limit.y) { new_position.y = limit.y; }
-         if (new_position.x > 0) { new_position.x = 0; }
-         if (new_position.y > 0) { new_position.y = 0; }
-
-         // EXECUTE MOVEMENT -- IF THERE IS EXTRA SPACE
-         if (limit.x <= 0) { $('#map').css('left', new_position.x + 'px'); }
-         if (limit.y <= 0) { $('#map').css('top', new_position.y + 'px'); }
-
-         // REFRESH LAST EVENT
-         lastevent = event;
-      }
-   });
-
-   // MOUSEUP -- DISABLE MAP MOVEMENT
-   $(document).on('mouseup touchend', () => { moving = false; });
-}
-
-// SECTION HIGHLIGHTING
-function map_highlight() {
-
-   var selector;
-
-   // TURN MOUSEOVER CIRCLE ON
-   $('body').on('mouseover', '.section', (event) => {
-
-      // FIND SECTION ATTR NUMBER
-      var id = $(event.currentTarget).attr('section');
-
-      // TURN HIGHLIGHT CIRCLE OPACITY ON & NUMBER OPACITY OFF
-      $('#waypoint-' + id).css('opacity', 0.7);
-      $('.number-' + id).css('opacity', 0);
-      selector = $('.number-' + id);
-   });
-
-   // TURN MOUSEOVER CIRCLE OFF
-   $('body').on('mouseout', '.section', () => {
-
-      // TURN HIGHLIGHT CIRCLE OPACITY OFF & NUMBER OPACITY ON
-      $('circle').css('opacity', 0);
-      $(selector).css('opacity', 1);
-   });
-}
 
 // ROUTE BROWSING
 function browsing(data, render, settings, storage) {
@@ -281,241 +169,114 @@ function handheld_browsing(render, storage) {
    });
 }
 
-// SUBMENU DROPDOWNS
-function submenu() {
-
-   // PLACEHOLDERS
-   var last_selector;
-   var menu;
-
-   // MOUSEOVER
-   $('body').on('mouseover', '#sub', (event) => {
-
-      // HIDE THE PREVIOUS MENU
-      if (last_selector != undefined) { last_selector.css('display', 'none'); }
-
-      // SAVE EVENT TARGET & SET NEW POSITION
-      menu = $(event.target);
-
-      // DEFAULT X POSITION
-      var position = $(event.target)[0].offsetLeft;
-
-      // RIGHT ALIGNMENT
-      if (menu[0].innerText != 'Overview') {
-         var submenu_width = parseInt($('#submenu').css('width').replace('px', '')) + 4;
-         position = ($(event.target)[0].offsetLeft + $(event.target)[0].offsetWidth) - submenu_width;
-      }
-
-      // DEFAULT SELECTOR
-      var selector = $('#overview');
-
-      if (menu[0].innerText == 'Load From Storage') {
-         selector = $('#storage');
-      } else if (menu[0].innerText == 'Create New Profile') {
-         selector = $('#create');
-      } else if (menu[0].innerText == 'Actions') {
-         selector = $('#actions');
-      }
-
-      // SHOW THE CORRECT MENU
-      selector.css('display', 'block');
-
-      // REGISTER THE LAST MENU FOR HIDING PURPOSES
-      last_selector = selector;
-
-      // FIND MENU HEIGHT FOR POSITIONING
-      var menu_height = $('#menu')[0].offsetHeight - 2;
-
-      // POSITION & SHOW THE SUBMENU
-      $('#submenu').css('top', menu_height);
-      $('#submenu').css('left', position);
-      $('#submenu').css('display', 'block');
-   });
-
-   // KEEP SELECTED MENU DARKENED WHILE SUBMENU IS OPEN
-   $('body').on('mouseover', '#submenu, #sub', () => {
-      $(menu).css('background', 'rgba(2, 2, 2, 0.151)');
-      $('#submenu').css('display', 'block');
-   });
-
-   // TURN OFF THE SUBMENU & MAKE THE MENU TRANSPARENT ON MOUSEOUT
-   $('body').on('mouseout', '#submenu, #sub', () => {
-      $(menu).css('background', 'rgba(2, 2, 2, 0)');
-      $('#submenu').css('display', 'none');
-   });
-}
-
-// OBJECTIVE/QUEST LOG BUTTONS
-function log_menu() {
+// ACTIONS EVENTS
+function actions() {
 
    // SHOW OBJECTIVES EVENT
-   $('body').on('click', '#show-obj', () => {
+   $('body').on('click', '#actions div', (event) => {
 
-      // PICK UP TARGET CLASS ATTRIBUTE
-      var check = $(this).attr('class');
-
-      // IF IT ISNT CURRENT
-      if (check != 'current') {
-
-         // FLIP CURRENT
-         $('#show-quests').removeAttr('class');
-         $('#show-obj').attr('class', 'current');
-
-         // FLIP WHICH PANEL IS SHOWN
-         $('#quest-log').css('display', 'none');
-         $('#obj-log').css('display', 'block');
-
-      // ELSE LOG ERROR
-      } else { log('Tab Already Open!'); }
-   });
-
-   // SHOW QUESTS EVENT
-   $('body').on('click', '#show-quests', () => {
-
-      // PICK UP TARGET CLASS ATTRIBUTE
-      var check = $(this).attr('class');
-
-      // IF IT ISNT CURRENT
-      if (check != 'current') {
-
-         // FLIP CURRENT
-         $('#show-obj').removeAttr('class');
-         $('#show-quests').attr('class', 'current');
-
-         // FLIP WHICH PANEL IS SHOWN
-         $('#obj-log').css('display', 'none');
-         $('#quest-log').css('display', 'block');
-
-      // ELSE LOG ERROR
-      } else { log('Tab Already Open!'); }
-   });
-}
-
-// PRELOAD BUTTON
-function preload(func) {
-
-   // SHOW OBJECTIVES EVENT
-   $('body').on('click', '.preload', () => {
-      func.preload();
-   });
-}
-
-// CREATE NEW PROFILE
-function new_profile(func, storage, render, build) {
-
-   // PLACEHOLDERS
-   var race = '';
-
-   // SHOW OBJECTIVES EVENT
-   $('body').on('click', '.profile', (event) => {
-
-      // REGISTER THE SELECTED RACE
-      race = event.currentTarget.innerText.toLowerCase();
-
-      // PROMPT SELECTOR
-      var selector = `
-         <div id="input-box">
-            <input type="text" placeholder="Enter Profile Name" id="profile_name"><input type="submit" value="Create" id="bad-submit">
-         </div>
-         <img src="interface/img/close.png" id="close">
-      `;
-
-      // WAIT FOR THINGS TO RENDER -- AUTO FOCUS INPUT
-      func.open_prompt(selector).then(() => { $('#profile_name').focus(); });
-   });
-
-   // CLOSE THE WINDOW BY CLICKING
-   $('body').on('click', '#close', () => { func.close_prompt(); });
-
-   // SPECIFIC KEY EVENTS
-   $(document).on('keyup', (event) => {
+      // FIND WHICH OPTION WAS REQUESTED
+      var option = $(event.target).attr('rel');
       
-      // CLOSE WINDOW WITH ESC
-      if (event.keyCode == 27 && $('#close')[0] != undefined) { func.close_prompt(); }
+      // PRELOAD BGS
+      if (option == 'preload') {
+         preload_bgs();
 
-      // CREATE NEW PROFILE
-      if (event.keyCode == 13 && $('#good-submit')[0] != undefined) {
+      // IMPORT ROUTE
+      } else if (option == 'import') {
+         import_route();
+      }
+   });
+}
+
+// LOADING EVENTS
+function load(ui, storage, build, render) {
+   $('body').on('click', '#load div', (event) => {
+
+      // FIND WHICH PROFILE WAS REQUESTED
+      var profile = $(event.target).attr('rel');
+
+      // IF ITS VALID
+      if (profile != undefined) {
+
+         // START LOADING SCREEN
+         ui.start_loading();
+
+         // FLIP 'LOADED' ID
+         $('#loaded').removeAttr('id');
+         $(event.currentTarget).attr('id', 'loaded');
          
-         // PLAYER NAME -- FORCE LOWERCASE
-         var player = $('#profile_name').val().toLowerCase();
+         // FETCH DETAILS FROM STORAGE
+         var details = storage.fetch(profile);
 
-         // SWITCH TO LOADING ANIMATION
-         func.loading();
-
-         // PLAYER DETAILS
-         var details = {
-            race: race,
-            level: 5,
-            block: 0
-         };
-
-         // ADD PROFILE TO STORAGE
-         storage.add(player, details);
-
-         // GENERATE NEW SUBMENU SELECTOR
-         var selector = '<div id="loaded" profile="' + player + '"><div class="split"><div><img src="interface/img/icons/' + details.race + '.png"><span id="char-name">' + capitalize(player) + '</span></div><div>Level <span id="char-lvl">' + details.level + '</span></div></div></div>';
-
-         // IF OTHER PROFILES EXIST
-         if ($('#soon')[0] === undefined) {
-
-            // UNCOLOR PREVIOUS LOADED OPTION & APPEND IN NEW LOAD OPTION
-            $('#loaded').attr('id', 'opt');
-
-            // APPEND IT IN
-            $('#storage').append(selector);
-
-         // REPLACE OLD CONTENT
-         } else { $('#storage').html(selector); }
-
-         // RENDER THE MAP
+         // CONSTRUCT A NEW BUILD
          build.specific(details.race, details.block).then((data) => {
 
-            // UPDATE INSTANCE DATA
+            // UPDATE INSTANCE DATA & RENDER
             instance_data = data;
-
-            // RENDER THE NEW MAP & UPDATE THE DATA OBJECT 
             render.map(instance_data);
 
-            // CLOSE THE LOADING ANIMATION WHEN DONE
-            sleep(cooldown).then(() => { func.close_prompt(); });
+            // STOP LOADING SCREEN
+            ui.stop_loading();
          });
       }
    });
+}
 
-   // LISTEN TO INPUT KEY EVENTS
+// CREATE EVENTS
+function create(ui, storage, build, render) {
+
+   // SAVE REQUESTED RACE
+   var race;
+
+   // INITIAL TRIGGER
+   $('body').on('click', '#create div', (event) => {
+
+      // FIND WHICH RACE WAS REQUESTED
+      race = $(event.target).attr('rel');
+      
+      // OPEN INPUT WINDOW
+      ui.prompt();
+   });
+
+   // GLOBAL KEY EVENTS
+   $(document).on('keyup', (event) => {
+   
+      // CLOSE WINDOW WITH 'ESC'
+      if (event.keyCode == 27) { ui.stop_loading(); }
+
+      // WHEN 'ENTER' IS PRESSED & BUTTON IS GREEN
+      if (event.keyCode == 13 && $('#good-submit')[0] != undefined) { construct(ui, storage, build, render, race); }
+   });
+
+   // VALIDATE INPUT CONTENT
    $('body').on('keyup', '#profile_name', (event) => {
 
       // DONT VALIDATE WHEN ESC IS PRESSED -- TO FIX ERROR BLINKING
       if (event.keyCode != 27) {
-
-         // REMOVE OLD ERRORS
+         
+         // NUKE THE OLD ERROR SELECTOR & DECLARE CONTAINER
          $('#error').remove();
-
-         // INPUT VALUE
-         var value = $('#profile_name').val().replace(/\s/g, '');
-
-         // ERROR ARRAY
          var errors = [];
 
-         // FETCH BLACKLISTED NAMES
+         // REMOVE SPACES FROM INPUT & FETCH BLACKLIST
+         var value = $('#profile_name').val().replace(/\s/g, '');
          var blacklist = storage.blacklist();
 
          // CHECK IF ITS BLACKLISTED
          if ($.inArray(value.toLowerCase(), blacklist) != -1) { errors.push('Name Already Exists'); }
 
-         // CHECK THAT A NAME WAS GIVEN
+         // CHECK THAT THE SELECTOR ISNT EMPTY
          if (value == '') { errors.push('Unique Name Required'); }
 
-         // CHECK THAT A NAME WAS GIVEN
+         // CHECK INPUT LENGTH
          if (value.length < 3) { errors.push('3 Character Minimum'); }
 
-         // RENDER PROBLEM
+         // IF ERRORS ARE FOUND
          if (errors.length != 0) {
 
-            // ADD ERROR SELECTOR
+            // APPEND THEM IN & TURN THE BUTTON RED
             $('#prompt-inner').prepend('<div id="error">' + errors[0] + '</div>');
-
-            // TURN THE BUTTON RED BY DEFAULT
             $('#good-submit').attr('id', 'bad-submit');
 
             // X POSITION
@@ -526,106 +287,161 @@ function new_profile(func, storage, render, build) {
             var top = $('#input-box')[0].offsetTop;
             var offset = $('#input-box')[0].offsetHeight;
 
-            // CHANGE POSITION
+            // SET ERROR FRAME POSITION & TURN IT ON
             $('#error').css('top', (top - offset) + 'px');
             $('#error').css('left', left + (width / 4) + 'px');
-
-            // DISPLAY THE BOX
             $('#error').css('display', 'block');
 
          // IF NO ERRORS ARE DETECTED, TURN THE BUTTON GREEN
          } else { $('#bad-submit').attr('id', 'good-submit'); }
+
       }
    });
 
-   $('body').on('click', '#good-submit', () => {
-         
-      // PLAYER NAME -- FORCE LOWERCASE
-      var player = $('#profile_name').val().toLowerCase();
+   // CLOSE WINDOW BY CLICKING
+   $('body').on('click', '#close', () => { ui.stop_loading(); });
 
-      // SWITCH TO LOADING ANIMATION
-      func.loading();
+   // WHEN THE GREEN BUTTON IS CLICKED
+   $('body').on('click', '#good-submit', () => { construct(ui, storage, build, render, race); });
+}
 
-      // PLAYER DETAILS
-      var details = {
-         race: race,
-         level: 5,
-         block: 0
-      };
+// PRELOAD BACKGROUNDS
+function preload_bgs() {
 
-      // ADD PROFILE TO STORAGE
-      storage.add(player, details);
+   // FETCH THE UI MODULE
+   var ui = require('../modules/ui.js');
 
-      // GENERATE NEW SUBMENU SELECTOR
-      var selector = '<div id="loaded" profile="' + player + '"><div class="split"><div><img src="interface/img/icons/' + details.race + '.png"><span id="char-name">' + capitalize(player) + '</span></div><div>Level <span id="char-lvl">' + details.level + '</span></div></div></div>';
+   // START LOADING SCREEN & LOG MSG
+   ui.start_loading();
+   log('Preload Initiated!');
 
-      // IF OTHER PROFILES EXIST
-      if ($('#soon')[0] === undefined) {
+   // LIST OUT ALL ZONES
+   var zones = [
+      'alterac',
+      'arathi',
+      'ashenvale',
+      'azshara',
+      'badlands',
+      'barrens',
+      'blasted',
+      'darkshore',
+      'darnassus',
+      'deadwind',
+      'desolace',
+      'durotar',
+      'duskwood',
+      'dustwallow',
+      'elwynn',
+      'epl',
+      'felwood',
+      'feralas',
+      'hillsbrad',
+      'hinterlands',
+      'ironforge',
+      'loch',
+      'moonglade',
+      'morogh',
+      'mulgore',
+      'needles',
+      'orgrimmar',
+      'redridge',
+      'searing',
+      'silverpine',
+      'steppes',
+      'stonetalon',
+      'stormwind',
+      'stv',
+      'swamp',
+      'tanaris',
+      'teldrassil',
+      'thunderbluff',
+      'tirisfal',
+      'undercity',
+      'ungoro',
+      'westfall',
+      'wetlands',
+      'winterspring',
+      'wpl'
+   ];
 
-         // UNCOLOR PREVIOUS LOADED OPTION & APPEND IN NEW LOAD OPTION
-         $('#loaded').attr('id', 'opt');
+   // PROMISE CONTAINER
+   var promises = [];
 
-         // APPEND IT IN
-         $('#storage').append(selector);
+   // GENERATE & PUSH A PROMISE FOR EACH ZONE
+   zones.forEach(zone => {
 
-      // REPLACE OLD CONTENT
-      } else { $('#storage').html(selector); }
-
-      // RENDER THE MAP
-      build.specific(details.race, details.block).then((data) => {
-
-         // UPDATE INSTANCE DATA
-         instance_data = data;
-
-         // RENDER THE NEW MAP & UPDATE THE DATA OBJECT 
-         render.map(instance_data);
-
-         // CLOSE THE LOADING ANIMATION WHEN DONE
-         sleep(cooldown).then(() => { func.close_prompt(); });
+      // GENERATE A PROMISE
+      var p = new Promise((resolve, reject) => {
+         $.get('interface/img/maps/' + zone + '.png').done(() => { resolve(); });
       });
+
+      // PUSH IT TO THE CONTAINER
+      promises.push(p);
+   });
+
+   // WAIT FOR ALL PROMISES TO BE RESOLVED
+   Promise.all(promises).then(() => {
+
+      // STOP LOADING & MSG
+      ui.stop_loading();
+      log('Preload Complete!');
    });
 }
 
-// LOAD EXISTING PROFILE
-function load(func, storage, render, build) {
-   $('body').on('click', '#storage #opt', (event) => {
+// IMPORT ROUTE
+function import_route() {
+   log('import func');
+}
 
-      // SWITCH TO LOADING ANIMATION
-      func.loading();
+// CREATE CHARACTER
+function construct(ui, storage, build, render, race) {
 
-      $('#loaded').attr('id', 'opt');
-      $(event.currentTarget).attr('id', 'loaded');
-      
-      // REGISTER REQUESTED BLOCK & RACE
-      var profile = $(event.currentTarget).attr('profile');
+   // FETCH THE NAME
+   var player = $('#profile_name').val().toLowerCase();
+   
+   // REPLACE INPUT WITH LOADING ANIMATION
+   ui.replace();
 
-      // FETCH PROFILE DETAILS
-      var details = storage.fetch(profile);
+   // CONSTRUCT NEW STORAGE BLOCK
+   var details = {
+      race: race,
+      level: 5,
+      block: 0
+   };
 
-      // RENDER THE MAP
-      build.specific(details.race, details.block).then((data) => {
+   // ADD IT TO STORAGE
+   storage.add(player, details);
 
-         // UPDATE INSTANCE DATA
-         instance_data = data;
+   // CONSTRUCT A NEW MENU SELECTOR
+   var selector = '<div id="loaded" rel="' + player + '"><img src="interface/img/icons/' + details.race + '.png">' + capitalize(player) + '</div>';
 
-         // RENDER THE NEW MAP & UPDATE THE DATA OBJECT 
-         render.map(instance_data);
+   // IF THERE IS SOMETHING IN THE LOAD SUBMENU
+   if ($('.dead')[0] === undefined) {
 
-         // CLOSE THE LOADING ANIMATION WHEN DONE
-         sleep(cooldown).then(() => { func.close_prompt(); });
-      });
+      // REMOVE LOADED ID FROM OLD SELECTOR & APPEND
+      $('#loaded').removeAttr('id');
+      $('#load').append(selector);
+   
+   // IF ITS EMPTY -- REPLACE FILLER TEXT
+   } else { $('#storage').html(selector); }
+
+   // CONTRUCT A NEW BUILD
+   build.specific(details.race, details.block).then((data) => {
+
+      // UPDATE INSTANCE DATA
+      instance_data = data;
+
+      // RENDER & STOP LOADING SCREEN
+      render.map(instance_data);
+      ui.stop_loading();
    });
 }
 
 // EXPORT MODULES
 module.exports = {
-   move_map: move_map,
-   map_highlight: map_highlight,
    browsing: browsing,
-   submenu: submenu,
-   log_menu: log_menu,
-   preload: preload,
-   new_profile: new_profile,
+   handheld_browsing: handheld_browsing,
+   actions: actions,
    load: load,
-   handheld_browsing: handheld_browsing
+   create: create,
 }

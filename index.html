@@ -5,40 +5,41 @@
    <link rel="icon" href="interface/img/icon.ico">
    <link rel="stylesheet" href="interface/styles.css" type="text/css">
    <script type="text/javascript" src="https://classicdb.ch/templates/wowhead/js/power.js"></script>
-   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
    <script defer src="core/misc.js"></script>
-   <script defer src="core/bundle.js"></script>
+   <script defer src="core/bundle.min.js"></script>
 </head>
 <body>
    <div id="wrapper">
-      <div id="menu"><div id="menu-inner">
+      <div id="menu"><div class="inner">
          <div class="split">
-            <div><a href="manifesto.html" target="_blank"><li>Manifesto</li></a><li id="sub">Overview</li><a href="manifesto.html#features" target="_blank"><li id="usage">Usage</li></a><a href="manifesto.html#report" target="_blank"><li class="fluff">Report Issues</li></a><a href="manifesto.html#contribute" target="_blank"><li class="fluff">Donate</li></a></div>
-            <div><li id="sub">Actions</li><li id="sub">Load From Storage</li><li id="sub">Create New Profile</li></div>
+            <div>
+               <a href="manifesto.html" target="_blank"><li>Manifesto</li></a><li class="more" rel="overview">Overview</li><a href="manifesto.html#features" target="_blank"><li>Help</li></a><a href="manifesto.html#report" target="_blank"><li class="fluff">Report Issues</li></a><a href="manifesto.html#contribute" target="_blank"><li class="fluff">Donate</li></a>
+            </div>
+            <div>
+               <li class="more" rel="actions">Actions</li><li class="more" rel="load">Load Progress</li><li class="more" rel="create">New Character</li>
+            </div>
          </div>
-         <div id="submenu"><div id="submenu-inner">
-            <div id="overview">
-               <a href="alliance.html" target="_blank"><div id="opt"><img src="interface/img/icons/alliance.png">Alliance</div></a>
-               <a href="horde.html" target="_blank"><div id="opt"><img src="interface/img/icons/horde.png"><img src="">Horde</div></a>
-            </div>
-            <div id="actions">
-               <div id="opt" class="preload"><img src="interface/img/icons/preload.png">Preload Backgrounds</div>
-               <div id="unavailable"><img src="interface/img/icons/import2.png">Import Custom Route</div>
-            </div>
-            <div id="storage">
-               <div id="soon">Storage is empty!</div>
-            </div>
-            <div id="create">
-               <div id="opt" class="profile"><img src="interface/img/icons/human.png">Human</div>
-               <div id="opt" class="profile"><img src="interface/img/icons/dwarf.png">Dwarf</div>
-               <div id="opt" class="profile"><img src="interface/img/icons/gnome.png">Gnome</div>
-               <div id="opt" class="profile"><img src="interface/img/icons/nelf.png">Nelf</div>
-               <div id="opt" class="profile"><img src="interface/img/icons/orc.png">Orc</div>
-               <div id="opt" class="profile"><img src="interface/img/icons/troll.png">Troll</div>
-               <div id="opt" class="profile"><img src="interface/img/icons/tauren.png">Tauren</div>
-               <div id="opt" class="profile"><img src="interface/img/icons/undead.png">Undead</div>
-            </div>
-         </div></div>
+         <div id="overview">
+            <a href="alliance.html" target="_blank"><div><img src="interface/img/icons/alliance.png">Alliance</div></a>
+            <a href="horde.html" target="_blank"><div><img src="interface/img/icons/horde.png"><img src="">Horde</div></a>
+         </div>
+         <div id="actions">
+            <div rel="preload"><img src="interface/img/icons/preload.png">Preload Backgrounds</div>
+            <div rel="import"><img src="interface/img/icons/import.png">Import Custom Route</div>
+         </div>
+         <div id="load">
+            <div class="dead">Storage is empty!</div>
+         </div>
+         <div id="create">
+            <div rel="human"><img src="interface/img/icons/human.png">Human</div>
+            <div rel="dwarf"><img src="interface/img/icons/dwarf.png">Dwarf</div>
+            <div rel="gnome"><img src="interface/img/icons/gnome.png">Gnome</div>
+            <div rel="nelf"><img src="interface/img/icons/nelf.png">Night Elf</div>
+            <div rel="orc"><img src="interface/img/icons/orc.png">Orc</div>
+            <div rel="troll"><img src="interface/img/icons/troll.png">Troll</div>
+            <div rel="tauren"><img src="interface/img/icons/tauren.png">Tauren</div>
+            <div rel="undead"><img src="interface/img/icons/undead.png">Undead</div>
+         </div>
       </div></div>
       <div id="innerbody"><div id="innerbody-tbl">
          <div id="map-wrapper">
@@ -57,7 +58,7 @@
                      <div id="hearthstone"><div class="split"><div>Hearthstone</div><div><span id="hs">None</span></div></div></div>
                      <div id="log-menu">
                         <div class="split">
-                           <div><div id="show-obj" class="current">Objectives</div></div>
+                           <div><div id="show-objectives" class="current">Objectives</div></div>
                            <div><div id="show-quests">Quest Log</div></div>
                         </div>
                      </div>

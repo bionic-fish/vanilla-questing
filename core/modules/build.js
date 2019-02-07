@@ -1,3 +1,6 @@
+// FETCH JQUERY
+var $ = require("jquery");
+
 // ASSEMBLE JSON DATA
 function route(race) {
 

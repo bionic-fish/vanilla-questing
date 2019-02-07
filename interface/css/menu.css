@@ -3,13 +3,13 @@
    height: 1px;
 }
 
-#menu-inner {
+#menu .inner {
    background: rgba(0, 0, 0, 0.185);
    border-bottom: 2px solid rgba(2, 2, 2, 0.103);
 }
 
-#menu .split li {
-   background: rgba(0, 0, 0, 0);
+#menu li {
+   background-color: rgba(0, 0, 0, 0);
    display: inline-block;
    padding: 10px;
    color: #CECECE;
@@ -19,34 +19,41 @@
 }
 
 #menu li:hover {
-   background: rgba(2, 2, 2, 0.151);
+   background-color: rgba(2, 2, 2, 0.151);
    color: rgb(174, 248, 166);
 }
 
 @media (max-width: 800px) {
-   #menu .split .fluff { display: none; }
+   #menu .fluff { display: none; }
+}
+
+#menu .more {
+   background-image: url('../img/dropdown.png');
+   background-repeat: no-repeat;
+   background-position: right center;
+   padding-right: 30px;
 }
 
 /* --- SUBMENU --- */
 
-#submenu {
+#overview,
+#actions,
+#load,
+#create {
    background-color: rgb(41, 41, 41);
+   background-image: url('../img/bg.png');
    border: 2px solid rgb(41, 41, 41);
-   border-bottom: 1px solid rgb(41, 41, 41);
    position: absolute;
-   left: 100px;
-   top: 100px;
-   z-index: 5;
+   z-index: 100;
    width: 220px;
    max-width: 220px;
    display: none;
 }
 
-#submenu-inner {
-   background-image: url('../img/bg.png');
-}
-
-#submenu #opt, #soon, #unavailable, #loaded {
+#overview div,
+#actions div,
+#load div,
+#create div {
    border-bottom: 1px solid rgb(41, 41, 41);
    color: #CECECE;
    padding: 7px 9px;
@@ -55,38 +62,44 @@
    overflow: hidden;
 }
 
-#submenu a:link #opt { border-bottom: 1px solid rgb(41, 41, 41); }
+#load .dead { padding: 7px 9px; }
 
-#submenu #opt:hover {
+#overview a:last-child div,
+#actions div:last-child,
+#load div:last-child,
+#create div:last-child {
+   border-bottom: 0px;
+}
+
+#overview div:hover,
+#actions div:hover,
+#load div:hover,
+#create div:hover {
    background: rgba(194, 66, 194, 0.123);
    cursor: pointer;
    color: white;
 }
 
-#submenu #opt img, #submenu #unavailable img, #submenu #loaded img {
+#overview div img,
+#actions div img,
+#load div img,
+#create div img {
    position: absolute;
    opacity: 0.7;
    left: 0px;
    top: 0px;
 }
 
-#soon {
-   background-color: rgba(253, 253, 253, 0.116);
-   border: 0px solid black;
-   padding: 7px 9px;
+#overview div:hover > img,
+#actions div:hover > img,
+#load div:hover img,
+#create div:hover > img {
+   opacity: 1;
 }
 
-#unavailable {
-   background: rgba(255, 39, 39, 0.055);
-}
-
-#submenu #opt:hover > .split img, #submenu #opt:hover > img { opacity: 1; }
-
-#overview, #actions, #storage, #create { display: none; }
-
-#loaded {
+#load #loaded {
    background-color: rgba(109, 255, 65, 0.096);
    color: white;
 }
 
-#submenu #loaded img { opacity: 1; }
+#load #loaded img { opacity: 1; }

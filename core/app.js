@@ -1,48 +1,43 @@
-// FETCH NEEDED MODULES
-var func = require('./modules/func.js');
+// FETCH NECESSARY MODULES
+var ui = require('./modules/ui.js');
+var storage = require('./modules/storage.js');
 var events = require('./modules/events.js');
 var build = require('./modules/build.js');
-var storage = require('./modules/storage.js');
 var render = require('./modules/render.js');
 
-// START THE LOADING PROMPT
-func.loading();
-
-// GLOBAL SETTINGS OBJECT
+// SETTINGS
 var settings = {
    background: { width: 1440, height: 960 },
-   storage: 'vanilla-questing',
-   cooldown: 1000
+   storage: 'vanilla-questing'
 }
 
-// CHECK STORAGE
+// START LOADING SCREEN & CHECK FOR OUTDATED STORAGE CONTENT
+ui.start_loading();
 storage.check(settings.storage);
 
-// CENTER THE MAP WHEN WINDOW SIZE CHANGES
-$(window).resize(() => { func.center_map(settings); });
+// ADD UI COMPONENTS
+ui.dropdowns();
+ui.map_movement(settings.background);
+ui.map_highlighting();
+ui.panel_menu();
+ui.resize(settings);
 
-// ADD VARIOUS EVENTS
-events.move_map(settings.background);
-events.map_highlight();
-events.submenu();
-events.log_menu();
-events.preload(func);
-events.new_profile(func, storage, render, build);
-events.load(func, storage, render, build);
+// ADD EVENT COMPONENTS
+events.actions();
+events.load(ui, storage, build, render);
+events.create(ui, storage, build, render);
 
 // RENDER RANDOM BLOCK ON LOAD
 build.random().then((data) => {
 
-   // RENDER A RANDOM BLOCK & ENABLE BROWSING ON LOAD
+   // RENDER A RANDOM BLOCK & AUTOCENTER
    render.map(data);
-
-   // CENTER THE MAP IF THE WINDOW IS LARGER THAN THE THE BACKGROUND
-   func.center_map(settings);
+   ui.map_center(settings);
 
    // ENABLE BROWSING
    events.browsing(data, render, settings, storage);
    events.handheld_browsing(render, storage);
 
-   // CLOSE THE LOADING PROMPT AFTER 1s
-   sleep(settings.cooldown).then(() => { func.close_prompt(); });
+   // END THE LOADING SCREEN
+   ui.stop_loading();
 });

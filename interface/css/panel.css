@@ -54,7 +54,7 @@
    border-bottom: 2px solid rgb(44, 44, 44);
 }
 
-#show-obj, #show-quests {
+#show-objectives, #show-quests {
    text-align: center;
    padding: 5px 7px;
    padding-bottom: 6px;
@@ -63,7 +63,7 @@
    transition: 0.2s;
 }
 
-#show-obj { border-right: 1px solid rgb(46, 46, 46); }
+#show-objectives { border-right: 1px solid rgb(46, 46, 46); }
 
 #log-menu .current {
    background: rgba(78, 255, 246, 0.089);
