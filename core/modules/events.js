@@ -170,7 +170,7 @@ function handheld_browsing(render, storage) {
 }
 
 // ACTIONS EVENTS
-function actions() {
+function actions(build, ui, render) {
 
    // SHOW OBJECTIVES EVENT
    $('body').on('click', '#actions div', (event) => {
@@ -184,7 +184,61 @@ function actions() {
 
       // IMPORT ROUTE
       } else if (option == 'import') {
-         import_route();
+         ui.prompt('file');
+      }
+   });
+
+   // WHEN A FILE IS SELECTED
+   $('body').on('change', '#input_route', (event) => {
+      
+      // FIND THE FILE
+      var the_file = event.target.files[0];
+
+      // MAKE SURE THAT ITS A JSON FILE
+      if (the_file.type === 'application/json') {
+
+         // FETCH THE READER
+         var reader = new FileReader();
+
+         // GENERATE A FETCHABLE URL
+         reader.onload = function() {
+            
+            // FETCH THE REQUESTED FACTION & SWITCH TO LOADING ANIMATION
+            var faction = $('#picked')[0].innerText.toLowerCase();
+            ui.replace();
+
+            // REMOVE THE LOADED ID FROM LOAD MENU
+            $('#loaded').removeAttr('id');
+
+            // CONTRUCT A NEW BUILD
+            build.custom(reader.result, faction).then((data) => {
+
+               // UPDATE INSTANCE DATA
+               instance_data = data;
+
+               // RENDER & STOP LOADING SCREEN
+               render.map(instance_data);
+               ui.stop_loading();
+            });
+         };
+
+         // TRIGGER THE READER
+         reader.readAsDataURL(the_file);
+
+      // OTHERWISE, LOG ERROR
+      } else { log('Bad file-type. Aborting!'); }
+   });
+
+   // WHEN A FACTION BUTTON IS PRESSED
+   $('body').on('click', '.btn', (event) => {
+      
+      // CHECK TARGET STATUS
+      var status = $(event.target).attr('id');
+
+      // IF IT ISNT PICKED, SWITCH TO IT
+      if (status != 'picked') {
+         $('#picked').removeAttr('id');
+         $(event.target).attr('id', 'picked');
       }
    });
 }
@@ -209,7 +263,7 @@ function load(ui, storage, build, render) {
          // FETCH DETAILS FROM STORAGE
          var details = storage.fetch(profile);
 
-         // CONSTRUCT A NEW BUILD
+         // create_character A NEW BUILD
          build.specific(details.race, details.block).then((data) => {
 
             // UPDATE INSTANCE DATA & RENDER
@@ -236,7 +290,7 @@ function create(ui, storage, build, render) {
       race = $(event.target).attr('rel');
       
       // OPEN INPUT WINDOW
-      ui.prompt();
+      ui.prompt('text');
    });
 
    // GLOBAL KEY EVENTS
@@ -246,7 +300,7 @@ function create(ui, storage, build, render) {
       if (event.keyCode == 27) { ui.stop_loading(); }
 
       // WHEN 'ENTER' IS PRESSED & BUTTON IS GREEN
-      if (event.keyCode == 13 && $('#good-submit')[0] != undefined) { construct(ui, storage, build, render, race); }
+      if (event.keyCode == 13 && $('#good-submit')[0] != undefined) { create_character(ui, storage, build, render, race); }
    });
 
    // VALIDATE INPUT CONTENT
@@ -302,7 +356,7 @@ function create(ui, storage, build, render) {
    $('body').on('click', '#close', () => { ui.stop_loading(); });
 
    // WHEN THE GREEN BUTTON IS CLICKED
-   $('body').on('click', '#good-submit', () => { construct(ui, storage, build, render, race); });
+   $('body').on('click', '#good-submit', () => { create_character(ui, storage, build, render, race); });
 }
 
 // PRELOAD BACKGROUNDS
@@ -388,13 +442,8 @@ function preload_bgs() {
    });
 }
 
-// IMPORT ROUTE
-function import_route() {
-   log('import func');
-}
-
 // CREATE CHARACTER
-function construct(ui, storage, build, render, race) {
+function create_character(ui, storage, build, render, race) {
 
    // FETCH THE NAME
    var player = $('#profile_name').val().toLowerCase();
@@ -402,7 +451,7 @@ function construct(ui, storage, build, render, race) {
    // REPLACE INPUT WITH LOADING ANIMATION
    ui.replace();
 
-   // CONSTRUCT NEW STORAGE BLOCK
+   // create_character NEW STORAGE BLOCK
    var details = {
       race: race,
       level: 5,
@@ -412,7 +461,7 @@ function construct(ui, storage, build, render, race) {
    // ADD IT TO STORAGE
    storage.add(player, details);
 
-   // CONSTRUCT A NEW MENU SELECTOR
+   // create_character A NEW MENU SELECTOR
    var selector = '<div id="loaded" rel="' + player + '"><img src="interface/img/icons/' + details.race + '.png">' + capitalize(player) + '</div>';
 
    // IF THERE IS SOMETHING IN THE LOAD SUBMENU

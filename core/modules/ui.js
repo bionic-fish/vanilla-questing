@@ -256,18 +256,38 @@ function stop_loading() {
 }
 
 // INPUT PROMPT
-function prompt() {
+function prompt(type) {
 
-   // GENERATE SELECTORS
-   var selectors = `
-      <div id="input-box">
-         <input type="text" placeholder="Enter Profile Name" id="profile_name"><input type="submit" value="Create" id="bad-submit">
-      </div>
-      <img src="interface/img/close.png" id="close">
-   `;
+   // PLACEHOLDER
+   var selector;
+
+   // CHARACTER CREATION
+   if (type == 'text') {
+      selector = `
+         <div id="input-box">
+            <input type="text" placeholder="Enter Profile Name" id="profile_name"><input type="submit" value="Create" id="bad-submit">
+         </div>
+      `;
+
+   // ROUTE IMPORTING
+   } else {
+      selector = `
+         <div id="input-box">
+            <div id="factions">
+               <div>
+                  <div class="btn" id="picked">Alliance</div>
+               </div>
+               <div>
+                  <div class="btn">Horde</div>
+               </div>
+            </div>
+            <input type="file" placeholder="Select Route File" id="input_route">
+         </div>
+      `;
+   }
 
    // RENDER PROMPT
-   $('body').prepend('<div id="prompt"><div id="prompt-inner">' + selectors + '</div></div>');
+   $('body').prepend('<div id="prompt"><div id="prompt-inner">' + selector + '<img src="interface/img/close.png" id="close"></div></div>');
    
    // WAIT 50MS & GRADUALLY TURN OPACITY ON
    return sleep(50).then(() => { $('#prompt').css('opacity', '1'); });

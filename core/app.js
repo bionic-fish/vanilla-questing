@@ -23,7 +23,7 @@ ui.panel_menu();
 ui.resize(settings);
 
 // ADD EVENT COMPONENTS
-events.actions();
+events.actions(build, ui, render);
 events.load(ui, storage, build, render);
 events.create(ui, storage, build, render);
 

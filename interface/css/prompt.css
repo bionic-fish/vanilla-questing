@@ -81,6 +81,35 @@ input {
    color: #CECECE;
 }
 
+#factions {
+   width: 100%;
+   display: table;
+}
+
+#factions > div {
+   width: 50%;
+   display: table-cell;
+}
+
+.btn {
+   text-align: center;
+   margin-bottom: 4px;
+   background: rgba(187, 58, 58, 0.705);
+   border-bottom: 2px solid rgba(187, 58, 58, 0.733);
+   padding: 4px;
+   cursor: pointer;
+   color: white;
+   transition: 0.2s;
+}
+
+#picked {
+   background: rgba(72, 175, 72, 0.705);
+   border-bottom: 2px solid rgba(72, 175, 72, 0.753);
+}
+
+#factions div:nth-child(1) .btn { margin-right: 2px; }
+#factions div:nth-child(2) .btn { margin-left: 2px; }
+
 /* --- https://loading.io/css/ --- */
 
 .lds-dual-ring {

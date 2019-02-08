@@ -102,6 +102,29 @@ function specific(race, block) {
    });
 }
 
+// COMPILE CUSTOM DATASET
+function custom(url, faction) {
+
+   // QUEST & ROUTE PROMISES
+   promises = [
+      $.getJSON('../data/' + faction + '/quests.json'),
+      $.getJSON(url),
+   ];
+
+   // WAIT FOR THE PROMISES TO RESOLVE
+   return Promise.all(promises).then((response) => {
+
+      // CONSTRUCT THE DATA OBJECT
+      var data = {
+         quests: response[0],
+         route: response[1],
+         current: 0
+      };
+
+      return data;
+   });
+}
+
 // COMPILE RANDOM DATASET
 function dev() {
 
@@ -136,16 +159,16 @@ function audit(data) {
                }
             });
          }
-
       });
    }
 
-   log(quests)
+   log(quests);
 }
 
 // EXPORT MODULES
 module.exports = {
    random: random,
    specific: specific,
+   custom: custom,
    dev: dev
 }

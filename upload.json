@@ -1,0 +1,131 @@
+{
+   "path": [
+      {
+         "zone": "westfall",
+         "experience": 16.81,
+         "waypoints": [
+            {
+               "coords": { "x": 57, "y": 53 },
+               "align": "bottom",
+               "header": "Westfall Flightpath",
+               "type": "flightpath"
+            },
+            {
+               "coords": { "x": 54, "y": 53 },
+               "header": "Sentinel Hill Inn",
+               "starts": ["Red Leather Bandanas"],
+               "special": ["Set Hearthstone"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 57, "y": 47 },
+               "align": "right",
+               "header": "Sentinel Tower",
+               "ends": ["Return to Lewis"],
+               "starts": [["The People's Militia", "P1"], ["The Defias Brotherhood", "P1"], "Patrolling Westfall"],
+               "type": "hub"
+            },
+            {
+               "coords": { "x": 56, "y": 31 },
+               "align": "right",
+               "header": "Saldean's Farm",
+               "starts": ["The Killing Fields", "Goretusk Liver Pie", "Westfall Stew"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 60, "y": 19 },
+               "align": "top",
+               "header": "The Jansen Stead",
+               "starts": ["Poor Old Blanchy", "The Forgotten Heirloom"],
+               "type": "quest"
+            }
+         ]
+      },
+      {
+         "zone": "westfall",
+         "experience": 16.82,
+         "waypoints": [
+            {
+               "coords": { "x": 60, "y": 19 },
+               "align": "top",
+               "header": "The Jansen Stead",
+               "starts": ["Poor Old Blanchy", "The Forgotten Heirloom"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 57, "y": 20 },
+               "align": "top",
+               "header": "The Jansen House",
+               "objectives": ["Poor Old Blanchy"],
+               "special": ["Loot Oats all over Westfall"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 49, "y": 19 },
+               "align": "top",
+               "header": "Furlbrow's Pumpin Farm",
+               "objectives": ["Poor Old Blanchy", "The Forgotten Heirloom", "The Killing Fields"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 45, "y": 24 },
+               "header": "Jangolode Mine",
+               "objectives": ["Red Leather Bandanas", ["The People's Militia", "P1"]],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 45, "y": 36 },
+               "header": "The Molsen Farm",
+               "objectives": ["The Killing Fields", "Westfall Stew"],
+               "special": ["Save 5x Hops", "Save 5x Flask of Oil", "Okra"],
+               "type": "objective"
+            }
+         ]
+      },
+      {
+         "zone": "westfall",
+         "experience": 17.08,
+         "waypoints": [
+            {
+               "coords": { "x": 45, "y": 36 },
+               "align": "top",
+               "header": "The Molsen Farm",
+               "objectives": ["The Killing Fields"],
+                  
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 42, "y": 45 },
+               "align": "right",
+               "header": "Westfall Peninsula",
+               "objectives": ["Westfall Stew"],
+               "special": ["Stringy Vulture Meat"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 27, "y": 43 },
+               "header": "Threshadon Carcass",
+               "objectives": ["Westfall Stew"],
+               "special": ["Stringy Vulture Meat"],
+               "type": "objective"
+            },
+            {
+               "coords": { "x": 26, "y": 48 },
+               "header": "Captain's Footlocker",
+               "ends": [["Captain Sander's Hidden Treasure", "P1"]],
+               "starts": [["Captain Sander's Hidden Treasure", "P1-2"]],
+               "objectives": ["Westfall Stew"],
+               "special": ["Murloc Eyes"],
+               "type": "quest"
+            },
+            {
+               "coords": { "x": 30, "y": 50 },
+               "align": "bottom",
+               "header": "Gnoll Encampment",
+               "objectives": ["Patrolling Westfall"],
+               "type": "objective"
+            }
+         ]
+      }
+   ]
+}
