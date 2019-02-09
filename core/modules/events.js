@@ -252,11 +252,12 @@ function actions(build, ui, render) {
 function load(ui, storage, build, render) {
    $('body').on('click', '#load div', (event) => {
 
-      // FIND WHICH PROFILE WAS REQUESTED
+      // CHECK TARGET ATTRIBUTES
       var profile = $(event.target).attr('rel');
+      var id = $(event.target).attr('id');
 
-      // IF ITS VALID
-      if (profile != undefined) {
+      // IF ITS VALID & ISNT CURRENTLY LOADED
+      if (profile != undefined && id != 'loaded') {
 
          // START LOADING SCREEN
          ui.start_loading();

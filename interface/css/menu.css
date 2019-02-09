@@ -60,6 +60,7 @@
    padding-left: 41px;
    position: relative;
    overflow: hidden;
+   transition: 0.2s;
 }
 
 #load .dead { padding: 7px 9px; }
@@ -88,6 +89,7 @@
    opacity: 0.7;
    left: 0px;
    top: 0px;
+   pointer-events: none;
 }
 
 #overview div:hover > img,
@@ -100,6 +102,7 @@
 #load #loaded {
    background-color: rgba(109, 255, 65, 0.096);
    color: white;
+   cursor: default;
 }
 
 #load #loaded img { opacity: 1; }

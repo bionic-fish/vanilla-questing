@@ -258,6 +258,9 @@ function stop_loading() {
 // INPUT PROMPT
 function prompt(type) {
 
+   // CLOSE ANY SUBMENU
+   $('#overview, #actions, #load, #create').css('display', 'none');
+
    // PLACEHOLDER
    var selector;
 
