@@ -11,8 +11,10 @@ var settings = {
    storage: 'vanilla-questing'
 }
 
-// START LOADING SCREEN & CHECK FOR OUTDATED STORAGE CONTENT
+// START LOADING SCREEN
 ui.start_loading();
+
+// CHECK FOR OUTDATED STORAGE CONTENT
 storage.check(settings.storage);
 
 // ADD UI COMPONENTS
@@ -35,7 +37,7 @@ build.random().then((data) => {
    ui.map_center(settings);
 
    // ENABLE BROWSING
-   events.browsing(data, render, settings, storage);
+   events.browsing(data, render, storage);
    events.handheld_browsing(render, storage);
 
    // END THE LOADING SCREEN

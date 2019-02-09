@@ -110,6 +110,8 @@ input {
 #factions div:nth-child(1) .btn { margin-right: 2px; }
 #factions div:nth-child(2) .btn { margin-left: 2px; }
 
+#filebox input { cursor: pointer; }
+
 /* --- https://loading.io/css/ --- */
 
 .lds-dual-ring {

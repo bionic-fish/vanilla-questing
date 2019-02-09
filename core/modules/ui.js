@@ -281,7 +281,9 @@ function prompt(type) {
                   <div class="btn">Horde</div>
                </div>
             </div>
-            <input type="file" placeholder="Select Route File" id="input_route">
+            <div id="filebox">
+               <input type="file" placeholder="Select Route File" id="input_route">
+            </div>
          </div>
       `;
    }

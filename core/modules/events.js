@@ -5,14 +5,13 @@ var $ = require("jquery");
 var instance_data;
 
 // SET TO TRUE WHEN DEBUGGING
-var dev = false;
+var dev = true;
 
 // ROUTE BROWSING
-function browsing(data, render, settings, storage) {
+function browsing(data, render, storage) {
 
    // SET INSTANCE DATA
    instance_data = data;
-   cooldown = settings.cooldown;
 
    // LISTEN FOR KEY-UPS
    $(document).on('keyup', (event) => {
@@ -38,8 +37,8 @@ function browsing(data, render, settings, storage) {
                   // UPDATE STORAGE & SUBMENU
                   storage.update(instance_data);
 
-               // IF DEBUGGING
-               } else { localStorage.setItem('dev', previous); log(previous); }
+               // WHEN DEBUGGING
+               } else { localStorage.setItem('dev', previous); }
 
                // RENDER NEW MAP
                render.map(instance_data);
@@ -63,8 +62,8 @@ function browsing(data, render, settings, storage) {
                   // UPDATE STORAGE & SUBMENU
                   storage.update(instance_data);
 
-               // IF DEBUGGING
-               } else { localStorage.setItem('dev', next); log(next); }
+               // WHEN DEBUGGING
+               } else { localStorage.setItem('dev', next); }
 
                // RENDER NEW MAP
                render.map(instance_data);
@@ -97,8 +96,14 @@ function browsing(data, render, settings, storage) {
          // SET NEW CURRENT PROP & RENDER
          instance_data.current = block;
 
-         // UPDATE STORAGE & SUBMENU
-         storage.update(instance_data);
+         // NORMALLY DO
+         if (dev == false) {
+
+            // UPDATE STORAGE & SUBMENU
+            storage.update(instance_data);
+
+         // WHEN DEBUGGING
+         } else { localStorage.setItem('dev', instance_data.current); }
 
          // RENDER NEW MAP
          render.map(instance_data);

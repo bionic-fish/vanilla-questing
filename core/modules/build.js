@@ -4,12 +4,14 @@ var $ = require("jquery");
 // ASSEMBLE JSON DATA
 function route(race) {
 
+   // RACES PER FACTION
    var alliance = ['human', 'dwarf', 'gnome', 'nelf'];
    var horde = ['orc', 'troll', 'tauren', 'undead'];
 
+   // CONTAINER
    var promises = [];
 
-   // ALLIANCE BUILD
+   // ALLIANCE BLOCKS
    if ($.inArray(race, alliance) != -1) {
 
       // CONVERT DWARF & GNOME QUERIES TO 'GNORF'
@@ -22,7 +24,7 @@ function route(race) {
          $.getJSON('../data/alliance/shared.json'),
       ];
 
-   // HORDE BUILD
+   // HORDE BLOCKS
    } else if ($.inArray(race, horde) != -1) {
   
       // CONVERT TROLL AND ORC QUERIES TO 'TRORC'
@@ -34,37 +36,23 @@ function route(race) {
          $.getJSON('../data/horde/' + race + '.json'),
          $.getJSON('../data/horde/shared.json'),
       ];
-
-   // DEVELOPMENT
-   } else if (race == 'dev') {
-      promises = [
-         $.getJSON('../data/dev/quests.json'),
-         $.getJSON('../data/dev/route.json'),
-      ];
    }
 
-   // WAIT FOR THE REQUESTED PROMISE TO RESOLVE
+   // WAIT FOR THE PROMISES TO RESOLVE
    return Promise.all(promises).then((response) => {
 
-      // DATA OBJECT
+      // CONTAINER
+      var combined = [];
+
+      // STITCH THE EARLY AND LATE GAME ROUTES TOGETHER
+      response[1].path.forEach(block => { combined.push(block); });
+      response[2].path.forEach(block => { combined.push(block); });
+
+      // CREATE THE INITIAL
       var data = {
          quests: response[0],
-         route: response[1]
+         route: { path: combined }
       };
-
-      // IF THE ROUTE CONSISTS OF TWO PARTS
-      if (response.length == 3) {
-
-         // CONTAINER
-         var combined = [];
-
-         // PUSH BOTH INTO THE CONTAINER
-         response[1].path.forEach(block => { combined.push(block); });
-         response[2].path.forEach(block => { combined.push(block); });
-
-         // SET THE NEW ROUTE
-         data.route.path = combined;
-      }
 
       return data;
    });
@@ -94,10 +82,8 @@ function specific(race, block) {
    // BUILD ROUTE & RENDER IT
    return route(race).then((data) => {
 
-      // SET THE TARGET BLOCK
+      // SET THE TARGET BLOCK & RETURN
       data.current = parseInt(block);
-
-      // RETURN THE DATA OBJECT
       return data;
    });
 }
@@ -106,7 +92,7 @@ function specific(race, block) {
 function custom(url, faction) {
 
    // QUEST & ROUTE PROMISES
-   promises = [
+   var promises = [
       $.getJSON('../data/' + faction + '/quests.json'),
       $.getJSON(url),
    ];
@@ -125,18 +111,31 @@ function custom(url, faction) {
    });
 }
 
-// COMPILE RANDOM DATASET
+// COMPILE DATASET FOR DEVELOPMENT PURPOSES
 function dev() {
 
-   // BUILD ROUTE & RENDER IT
-   return route('dev').then((data) => {
+   // DATASET PROMISES
+   var promises = [
+      $.getJSON('../data/dev/quests.json'),
+      $.getJSON('../data/dev/route.json'),
+   ];
 
-      // RANDOMIZE BLOCK NUMBER & SET IS AS CURRENT
-      data.current = parseInt(localStorage.getItem('dev'));
+   // WAIT FOR THE PROMISES TO RESOLVE
+   return Promise.all(promises).then((response) => {
 
-      audit(data);
+      // CREATE DEV PROPERTY IN STORAGE -- IF IT DOESNT EXIST
+      if (localStorage.getItem('dev') === null) {
+         localStorage.setItem('dev', '0');
+      }
 
-      // RETURN THE DATA OBJECT
+      // CONSTRUCT THE DATA OBJECT
+      var data = {
+         quests: response[0],
+         route: response[1],
+         current: parseInt(localStorage.getItem('dev'))
+      };
+
+      // RETURN THE OBJECT
       return data;
    });
 }
