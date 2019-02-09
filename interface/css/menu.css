@@ -97,6 +97,7 @@
 #load div:hover img,
 #create div:hover > img {
    opacity: 1;
+   transition: 0.2s;
 }
 
 #load #loaded {

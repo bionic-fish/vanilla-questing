@@ -5,7 +5,7 @@ var $ = require("jquery");
 var instance_data;
 
 // SET TO TRUE WHEN DEBUGGING
-var dev = true;
+var dev = false;
 
 // ROUTE BROWSING
 function browsing(data, render, storage) {
