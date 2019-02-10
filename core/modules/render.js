@@ -2,31 +2,29 @@
 var $ = require("jquery");
 
 // RENDER MAP
-function map(data) {
+function map(data, ui) {
 
-   // MAKE MAP & LOGS TRANSPARENT
+   // GRADUALLY MAKE MAP & LOGS TRANSPARENT
    $('#map').css('opacity', 0);
    $('#logs').css('opacity', 0);
 
-   // WAIT 100MS
+   // WAIT 200MS
    sleep(200).then(() => {
 
-      // TARGET DATA
+      // SHORTHAND FOR REQUESTED DATASET
       var target = data.route.path[data.current];
       
-      // CHANGE THE BACKGROUND
+      // CHANGE THE BACKGROUND && NUKE OLD SVG CONTENT
       $('#map').css('background', 'url("interface/img/maps/' + target.zone + '.png")');
-
-      // NUKE OLD CONTENT
       $('#map').html('');
 
-      // SELECTOR CONTAINERS
+      // DECLARE SVG CONTAINERS
       var lines, points, circles = '';
 
-      // COLLECT DATA FOR MAP ALIGNMENT
+      // COORD DATA CONTAINER
       var align = { x: 0, y: 0, length: 0 }
       
-      // LOOP THROUGH WAYPOINTS & ADD SELECTORS
+      // LOOP THROUGH WAYPOINTS & ADD SELECTORS TO CONTAINERS
       for (var x = 0; x < target.waypoints.length; x++) {
 
          // WAYPOINT SHORTHAND
@@ -58,24 +56,32 @@ function map(data) {
          }
       }
 
-      // RENDER IN STATUS CHANGES
-      status(data);
+      // CHANGE STATUS BAR VALUES & FETCH OBJECTIVE/QUEST LOG DATA
+      statusbar(data);
       var objectives = objective_log(target.waypoints, data.quests);
       var quests = quest_log(data);
 
       // WAIT ANOTHER 100MS
       sleep(100).then(() => {
 
-         // RENDER IN MAP & LOGS
+         // RENDER IN SVG & OBJECTIVE/QUEST LOG CONTENT
          $('#map').html(lines + circles + points);
          $('#obj-log').html(objectives);
          $('#quest-log').html(quests);
 
-         find_pos(align);
+         // CHECK IF THE CURRENT MAP IS RED (COLOR)
+         var blacklist = ['durotar', 'orgrimmar', 'redridge', 'azshara', 'badlands', 'searing', 'tanaris', 'blasted', 'steppes', 'epl', 'ironforge', 'stormwind', 'darnassus'];
+         var check = exists(target.zone, blacklist);
 
-         // TURN OPACITY BACK ON
+         // IF IT IS, TURN LINES BLUE
+         if (check == true) { $('line').css('stroke', 'blue'); }
+
+         // GRADUALLY TURN MAP & LOGS ON AGAIN
          $('#map').css('opacity', 1);
          $('#logs').css('opacity', 1);
+
+         // FIND THE CENTERPOINT OF ALL COORDINATES & CENTER THE MAP AROUND IT
+         ui.avg_position(align);
       });
    });
 }
@@ -254,7 +260,7 @@ function row(section, quests, color) {
 }
 
 // RENDER SIDEPANEL STATUS
-function status(data) {
+function statusbar(data) {
 
    // FORMAT LEVEL/XP COMPONENTS
    var level = data.route.path[data.current].experience.toFixed(2);
@@ -313,50 +319,19 @@ function find_hearthstone(data) {
    return location;
 }
 
-// FIND POSITION
-function find_pos(align) {
-   
-   // FIGURE OUT AVERAGE XY POSITION
-   var avg = {
-      x: align.x / align.length,
-      y: align.y / align.length
-   }
+// CHECK IF QUERY EXISTS IN ARRAY
+function exists(needle, haystack) {
 
-   // BACKGROUND IMAGE SIZE
-   var background = {
-      width: 1440,
-      height: 960
-   }
+   // DEFAULT TO FALSE
+   var response = false;
 
-   // SELECTOR DIMENSIONS
-   var selector = {
-      width: $('#map-outer').width() / 2,
-      height: $('#map-outer').height() / 2
-   }
+   // CHECK IF IT EXISTS
+   var check = $.inArray(needle, haystack);
 
-   // CONVERT PERCENT TO PIXELS
-   var left = (background.width * (avg.x / 100)).toFixed(0);
-   var top = (background.height * (avg.y / 100)).toFixed(0);
+   // IF IT DOES, CHANGE RESPONSE
+   if (check != -1) { response = true; }
 
-   // SUBTRACT THE MAP SELECTOR DIMENSIONS
-   var new_x = -(left - selector.width);
-   var new_y = -(top - selector.height);
-
-   // FIND COOR LIMITS
-   var limit = {
-      x: -(background.width - $('#map-outer').width()),
-      y: -(background.height - $('#map-outer').height())
-   }
-
-   // RECALIBRATE WHEN XY LIMITS ARE SURPASSED
-   if (new_y > 0) { new_y = 0; }
-   if (new_y < limit.y) { new_y = limit.y; }
-   if (new_x > 0) { new_x = 0; }
-   if (new_x < limit.x) { new_x = limit.x; }
-
-   // MOVE THE MAP IF THERE'S ROOM
-   if ((selector.width * 2) < background.width) { $('#map').css('left', new_x + 'px'); }
-   if ((selector.height * 2) < background.height) { $('#map').css('top', new_y + 'px'); }
+   return response;
 }
 
 // EXPORT MODULES

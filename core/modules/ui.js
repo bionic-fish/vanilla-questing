@@ -1,8 +1,12 @@
 // FETCH JQUERY
 var $ = require("jquery");
+var background;
 
 // SUBMENU DROPDOWNS
-function dropdowns() {
+function dropdowns(dimensions) {
+
+   // MAKE BACKGROUND DIMENSIONS GLOBALLY AVAILABLE ON LOAD
+   if (dimensions != undefined) { background = dimensions; }
 
    // SAVE LAST MOUSEOVER TARGET
    var last_menu;
@@ -40,20 +44,20 @@ function dropdowns() {
    });
 
    // KEEP SUBMENU VISIBLE
-   $('body').on('mouseover', '.more, #overview, #actions, #load, #create', () => {
+   $('body').on('mouseover', '.more, #overview, #classquests, #actions, #load, #create', () => {
       last_submenu.css('display', 'block');
       last_menu.css('background-color', 'rgba(2, 2, 2, 0.151)');
    });
 
    // HIDE SUBMENU
-   $('body').on('mouseout', '.more, #overview, #actions, #load, #create', () => {
+   $('body').on('mouseout', '.more, #overview, #classquests, #actions, #load, #create', () => {
       last_submenu.css('display', 'none');
       last_menu.css('background-color', 'rgba(0, 0, 0, 0)');
    });
 }
 
 // MAP MOVEMENT
-function map_movement(background) {
+function map_movement() {
 
    // ASSIST VARS
    var moving = false;
@@ -71,6 +75,9 @@ function map_movement(background) {
       // ENABLE MAP MOVEMENT & SAVE TRIGGER EVENT
       moving = true;
       lastevent = event;
+
+      // MAKE CSS TRANSITIONS INSTANT
+      $('#map').css('transition', '0s');
    });
 
    // MOUSEMOVE -- IF MOUSEDOWN IS ACTIVE
@@ -137,7 +144,12 @@ function map_movement(background) {
    });
 
    // MOUSEUP -- DISABLE MAP MOVEMENT
-   $(document).on('mouseup touchend', () => { moving = false; });
+   $(document).on('mouseup touchend', () => {
+
+      // DISABLE MAP MOVEMENT & SET CSS TRANSITION TO NORMAL
+      moving = false;
+      $('#map').css('transition', '0.2s');
+   });
 }
 
 // SECTION HIGHLIGHTING
@@ -168,12 +180,12 @@ function map_highlighting() {
 }
 
 // CENTER MAP
-function map_center(settings) {
+function map_center() {
 
    // FIND CENTER COORDS
    var coords = {
-      x: -(settings.background.width - ($('#map-outer')[0].offsetWidth - 4)) / 2,
-      y: -(settings.background.height - ($('#map-outer')[0].offsetHeight - 4)) / 2
+      x: -(background.width - ($('#map-outer')[0].offsetWidth - 4)) / 2,
+      y: -(background.height - ($('#map-outer')[0].offsetHeight - 4)) / 2
    }
 
    // EXECUTE MOVEMENT
@@ -182,8 +194,48 @@ function map_center(settings) {
 }
 
 // IF THE WINDOW SIZE CHANGES
-function resize(settings) {
-   $(window).resize(() => { map_center(settings); });
+function resize() {
+   $(window).resize(() => { map_center(); });
+}
+
+// FIND POSITION
+function avg_position(align) {
+   
+   // FIGURE OUT AVERAGE XY POSITION
+   var avg = {
+      x: align.x / align.length,
+      y: align.y / align.length
+   }
+
+   // SELECTOR DIMENSIONS
+   var selector = {
+      width: $('#map-outer').width() / 2,
+      height: $('#map-outer').height() / 2
+   }
+
+   // CONVERT PERCENT TO PIXELS
+   var left = (background.width * (avg.x / 100)).toFixed(0);
+   var top = (background.height * (avg.y / 100)).toFixed(0);
+
+   // SUBTRACT THE MAP SELECTOR DIMENSIONS
+   var new_x = -(left - selector.width);
+   var new_y = -(top - selector.height);
+
+   // FIND COOR LIMITS
+   var limit = {
+      x: -(background.width - $('#map-outer').width()),
+      y: -(background.height - $('#map-outer').height())
+   }
+
+   // RECALIBRATE WHEN XY LIMITS ARE SURPASSED
+   if (new_y > 0) { new_y = 0; }
+   if (new_y < limit.y) { new_y = limit.y; }
+   if (new_x > 0) { new_x = 0; }
+   if (new_x < limit.x) { new_x = limit.x; }
+
+   // MOVE THE MAP IF THERE'S ROOM
+   if ((selector.width * 2) < background.width) { $('#map').css('left', new_x + 'px'); }
+   if ((selector.height * 2) < background.height) { $('#map').css('top', new_y + 'px'); }
 }
 
 // OBJECTIVE/QUEST LOG BUTTONS
@@ -312,6 +364,7 @@ module.exports = {
    map_highlighting: map_highlighting,
    map_center: map_center,
    resize: resize,
+   avg_position: avg_position,
    panel_menu: panel_menu,
 
    // LOADING SCREEN RELATED

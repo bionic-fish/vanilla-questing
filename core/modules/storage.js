@@ -1,7 +1,5 @@
 // FETCH JQUERY
 var $ = require("jquery");
-
-// MAKE STORAGE KEY GLOBALLY AVAILABLE
 var key;
 
 // UPDATE STORAGE
@@ -26,7 +24,7 @@ function add(header, details) {
 // CHECK IF THERE'S SOMETHING IN LOCALSTORAGE
 function check(storage_key) {
 
-   // SET KEY
+   // MAKE THE LOCALSTORAGE KEY GLOBALLY AVAILABLE
    key = storage_key;
 
    if (localStorage.getItem(key) === null) {
@@ -83,9 +81,6 @@ function update(data) {
       // STRINGIFY & UPDATE STORAGE
       storage = JSON.stringify(storage);
       localStorage.setItem(key, storage);
-
-      // UPDATE THE SUBMENU
-      $('#loaded #char-lvl').text(level);
    }
 }
 

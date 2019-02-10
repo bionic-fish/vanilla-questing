@@ -8,12 +8,15 @@
    height: 960px;
    position: absolute;
    opacity: 0;
-   transition: opacity 0.2s;
+   transition: 0.2s;
 }
+
+line, foreignobject { transition: 0.2s; }
 
 line {
    stroke-width: 4px;
    stroke: red;
+   opacity: 0.9;
 }
 
 foreignobject {

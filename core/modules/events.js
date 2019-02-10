@@ -8,7 +8,7 @@ var instance_data;
 var dev = false;
 
 // ROUTE BROWSING
-function browsing(data, render, storage) {
+function browsing(data, render, storage, ui) {
 
    // SET INSTANCE DATA
    instance_data = data;
@@ -41,7 +41,7 @@ function browsing(data, render, storage) {
                } else { localStorage.setItem('dev', previous); }
 
                // RENDER NEW MAP
-               render.map(instance_data);
+               render.map(instance_data, ui);
             }
 
          // WHEN 'D' IS PRESSED
@@ -66,7 +66,7 @@ function browsing(data, render, storage) {
                } else { localStorage.setItem('dev', next); }
 
                // RENDER NEW MAP
-               render.map(instance_data);
+               render.map(instance_data, ui);
             }
          }
       }
@@ -106,14 +106,14 @@ function browsing(data, render, storage) {
          } else { localStorage.setItem('dev', instance_data.current); }
 
          // RENDER NEW MAP
-         render.map(instance_data);
+         render.map(instance_data, ui);
 
       } else { log('Range Issue!'); }
    });
 }
 
 // ROUTE BROWSING FOR HANDHELD DEVICES
-function handheld_browsing(render, storage) {
+function handheld_browsing(render, storage, ui) {
 
    // MOBILE/TABLET BROWSING MOUSEOVER
    $('body').on('mouseover', '#map, #next, #prev', () => {
@@ -148,7 +148,7 @@ function handheld_browsing(render, storage) {
             storage.update(instance_data);
 
             // RENDER NEW MAP
-            render.map(instance_data);
+            render.map(instance_data, ui);
          }
 
       // RENDER NEXT BLOCK
@@ -167,10 +167,9 @@ function handheld_browsing(render, storage) {
             storage.update(instance_data);
 
             // RENDER NEW MAP
-            render.map(instance_data);
+            render.map(instance_data, ui);
          }
       }
-
    });
 }
 
@@ -222,7 +221,7 @@ function actions(build, ui, render) {
                instance_data = data;
 
                // RENDER & STOP LOADING SCREEN
-               render.map(instance_data);
+               render.map(instance_data, ui);
                ui.stop_loading();
             });
          };
@@ -274,7 +273,7 @@ function load(ui, storage, build, render) {
 
             // UPDATE INSTANCE DATA & RENDER
             instance_data = data;
-            render.map(instance_data);
+            render.map(instance_data, ui);
 
             // STOP LOADING SCREEN
             ui.stop_loading();
@@ -487,7 +486,7 @@ function create_character(ui, storage, build, render, race) {
       instance_data = data;
 
       // RENDER & STOP LOADING SCREEN
-      render.map(instance_data);
+      render.map(instance_data, ui);
       ui.stop_loading();
    });
 }

@@ -18,11 +18,11 @@ ui.start_loading();
 storage.check(settings.storage);
 
 // ADD UI COMPONENTS
-ui.dropdowns();
-ui.map_movement(settings.background);
+ui.dropdowns(settings.background);
+ui.map_movement();
 ui.map_highlighting();
 ui.panel_menu();
-ui.resize(settings);
+ui.resize();
 
 // ADD EVENT COMPONENTS
 events.actions(build, ui, render);
@@ -33,12 +33,12 @@ events.create(ui, storage, build, render);
 build.random().then((data) => {
 
    // RENDER A RANDOM BLOCK & AUTOCENTER
-   render.map(data);
-   ui.map_center(settings);
+   render.map(data, ui);
+   ui.map_center();
 
    // ENABLE BROWSING
-   events.browsing(data, render, storage);
-   events.handheld_browsing(render, storage);
+   events.browsing(data, render, storage, ui);
+   events.handheld_browsing(render, storage, ui);
 
    // END THE LOADING SCREEN
    ui.stop_loading();

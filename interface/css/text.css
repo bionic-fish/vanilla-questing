@@ -58,13 +58,9 @@ a:hover { color: rgba(131, 216, 255, 0.973); }
    margin-bottom: 15px;
 }
 
-.text:last-child {
-   margin-bottom: 0px;
-}
+.text:last-child { margin-bottom: 0px; }
 
-span {
-   color: rgb(255, 182, 122);
-}
+span { color: rgb(255, 182, 122); }
 
 #contact-tbl, #color-tbl {
    display: table;
@@ -80,33 +76,15 @@ span {
    vertical-align: middle;
 }
 
-#color-tbl div {
-   width: 40px;
-}
+#color-tbl div { width: 40px; }
+#color-tbl div:last-child { width: 200px; }
 
-#color-tbl div:last-child {
-   width: 200px;
-}
+#border { border: 1px solid rgba(255, 255, 255, 0.658); }
 
-#border {
-   border: 1px solid rgba(255, 255, 255, 0.658);
-}
-
-#zone-wrapper {
-   margin-top: 20px;
-}
-
-#zone-inner {
-   padding: 0px;
-}
-
-#zone {
-   padding: 8px 12px;
-}
-
-#zone:nth-child(even) {
-   background: rgba(5, 5, 5, 0.137);
-}
+#zone-wrapper { margin-top: 20px; }
+#zone-inner { padding: 0px; }
+#zone { padding: 8px 12px; }
+#zone:nth-child(even) { background: rgba(5, 5, 5, 0.137); }
 
 #zone:hover {
    background: rgba(79, 255, 79, 0.103);
